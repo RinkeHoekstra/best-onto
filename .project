@@ -3,6 +3,7 @@
 	<name>onto</name>
 	<comment></comment>
 	<projects>
+		<project>onto-branches</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>
