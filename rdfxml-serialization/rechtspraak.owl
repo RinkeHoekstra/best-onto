@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:metalex="http://www.metalex.eu/schema#"
+    xmlns:tbcgeo="http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.rechtspraak.nl/rdf#"
+  xml:base="http://www.rechtspraak.nl/rdf">
+  <owl:Ontology rdf:about="">
+    <dc:description>Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam</dc:description>
+    <owl:imports rdf:resource="http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://www.metalex.eu/schema"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Uitspraak">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Uitspraak</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Rechtsgebied">
+    <rdfs:label xml:lang="nl">Rechtsgebied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Zittingsplaats">
+    <rdfs:label>Zittingsplaats</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Procedure">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Procedure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Status">
+    <rdfs:label xml:lang="nl">Status</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Instantie">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Instantie</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Sector">
+    <rdfs:label xml:lang="nl">Sector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="locatie">
+    <rdfs:label>Locatie</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="sector_toon">
+    <rdfs:range rdf:resource="#Sector"/>
+    <rdfs:label>Sector</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="instantie">
+    <rdfs:range rdf:resource="#Instantie"/>
+    <rdfs:label>Instantie</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="rechtsgebied_rechtspraak">
+    <rdfs:range rdf:resource="#Rechtsgebied"/>
+    <rdfs:label>Rechtsgebied</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="status">
+    <rdfs:range rdf:resource="#Status"/>
+    <rdfs:label>Status</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="procedure_soort">
+    <rdfs:range rdf:resource="#Procedure"/>
+    <rdfs:label>Procedure Soort</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="zittingsplaats">
+    <rdfs:range rdf:resource="#Zittingsplaats"/>
+    <rdfs:label>Zittingsplaats</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="ljn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>LJN</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="datum_uitspraak">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label>Datum uitspraak</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="zaaknummers">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>Zaaknummers</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="datum_gepubliceerd">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:label>Publicatiedatum</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="kop">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>Kop</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="indicatie">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>Indicatie</rdfs:label>
+  </owl:DatatypeProperty>
+  <Rechtsgebied rdf:ID="Straf">
+    <rdfs:label xml:lang="nl">Straf</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Rechtbank_Roermond">
+    <rdfs:label xml:lang="nl">Rechtbank Roermond</rdfs:label>
+  </Instantie>
+  <Zittingsplaats rdf:ID="Almelo"/>
+  <Rechtsgebied rdf:ID="Sociale_zekerheid">
+    <rdfs:label xml:lang="nl">Sociale zekerheid</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Rechtbank_Zutphen">
+    <rdfs:label xml:lang="nl">Rechtbank Zutphen</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Hoge_Raad">
+    <rdfs:label xml:lang="nl">Hoge Raad</rdfs:label>
+  </Instantie>
+  <Zittingsplaats rdf:ID="Dordrecht"/>
+  <Zittingsplaats rdf:ID="Groningen"/>
+  <Instantie rdf:ID="Rechtbank_Haarlem">
+    <rdfs:label xml:lang="nl">Rechtbank Haarlem</rdfs:label>
+  </Instantie>
+  <Sector rdf:ID="Sector_kanton">
+    <rdfs:label xml:lang="nl">Sector kanton</rdfs:label>
+  </Sector>
+  <Zittingsplaats rdf:ID="Utrecht"/>
+  <Zittingsplaats rdf:ID="Zwolle"/>
+  <Zittingsplaats rdf:ID="Amsterdam"/>
+  <Rechtsgebied rdf:ID="Personen-en_familierecht">
+    <rdfs:label xml:lang="nl">Personen- en familierecht</rdfs:label>
+  </Rechtsgebied>
+  <Rechtsgebied rdf:ID="Vreemdelingen">
+    <rdfs:label xml:lang="nl">Vreemdelingen</rdfs:label>
+  </Rechtsgebied>
+  <Zittingsplaats rdf:ID="Alkmaar">
+    <geo:long>4.744656085968018</geo:long>
+    <geo:lat>52.640081742212885</geo:lat>
+    <tbcgeo:zoom rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >16</tbcgeo:zoom>
+  </Zittingsplaats>
+  <Instantie rdf:ID="Rechtbank_Breda">
+    <rdfs:label xml:lang="nl">Rechtbank Breda</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Maastricht">
+    <rdfs:label xml:lang="nl">Rechtbank Maastricht</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Assen">
+    <rdfs:label xml:lang="nl">Rechtbank Assen</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Voorlopige_voorziening">
+    <rdfs:label xml:lang="nl">Voorlopige voorziening</rdfs:label>
+  </Procedure>
+  <Procedure rdf:ID="Eerste_aanleg_-_enkelvoudig">
+    <rdfs:label xml:lang="nl">Eerste aanleg - enkelvoudig</rdfs:label>
+  </Procedure>
+  <Instantie rdf:ID="Centrale_Raad_van_Beroep">
+    <rdfs:label xml:lang="nl">Centrale Raad van Beroep</rdfs:label>
+  </Instantie>
+  <Zittingsplaats rdf:ID="Haarlem"/>
+  <Rechtsgebied rdf:ID="Ambtenarenrecht">
+    <rdfs:label xml:lang="nl">Ambtenarenrecht</rdfs:label>
+  </Rechtsgebied>
+  <Zittingsplaats rdf:ID="Den_Haag">
+    <rdfs:label xml:lang="nl">'s-Gravenhage</rdfs:label>
+  </Zittingsplaats>
+  <Procedure rdf:ID="Herziening">
+    <rdfs:label xml:lang="nl">Herziening</rdfs:label>
+  </Procedure>
+  <Instantie rdf:ID="Gerechtshof_Leeuwarden">
+    <rdfs:label xml:lang="nl">Gerechtshof Leeuwarden</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Raad_van_State">
+    <rdfs:label xml:lang="nl">Raad van State</rdfs:label>
+  </Instantie>
+  <Zittingsplaats rdf:ID="Roermond"/>
+  <Zittingsplaats rdf:ID="Middelburg"/>
+  <Zittingsplaats rdf:ID="Den_Bosch">
+    <rdfs:label xml:lang="nl">'s-Hertogenbosch</rdfs:label>
+  </Zittingsplaats>
+  <Rechtsgebied rdf:ID="Bijstandszaken">
+    <rdfs:label xml:lang="nl">Bijstandszaken</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Gerechtshof_Den_Haag">
+    <rdfs:label xml:lang="nl">Gerechtshof 's-Gravenhage</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Gerechtshof_Arnhem">
+    <rdfs:label xml:lang="nl">Gerechtshof Arnhem</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Arnhem">
+    <rdfs:label xml:lang="nl">Rechtbank Arnhem</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Den_Bosch">
+    <rdfs:label xml:lang="nl">Rechtbank 's-Hertogenbosch</rdfs:label>
+  </Instantie>
+  <Status rdf:ID="ingetrokken">
+    <rdfs:label xml:lang="nl">ingetrokken</rdfs:label>
+  </Status>
+  <Procedure rdf:ID="Hoger_beroep">
+    <rdfs:label xml:lang="nl">Hoger beroep</rdfs:label>
+  </Procedure>
+  <Sector rdf:ID="Voorzieningenrechter">
+    <rdfs:label xml:lang="nl">Voorzieningenrechter</rdfs:label>
+  </Sector>
+  <Procedure rdf:ID="Eerste_aanleg_-_meervoudig">
+    <rdfs:label xml:lang="nl">Eerste aanleg - meervoudig</rdfs:label>
+  </Procedure>
+  <Sector rdf:ID="Douanekamer">
+    <rdfs:label xml:lang="nl">Douanekamer</rdfs:label>
+  </Sector>
+  <Rechtsgebied rdf:ID="Civiel_overig">
+    <rdfs:label xml:lang="nl">Civiel overig</rdfs:label>
+  </Rechtsgebied>
+  <Rechtsgebied rdf:ID="Bouwen">
+    <rdfs:label xml:lang="nl">Bouwen</rdfs:label>
+  </Rechtsgebied>
+  <Zittingsplaats rdf:ID="Assen"/>
+  <Zittingsplaats rdf:ID="Zutphen"/>
+  <Sector rdf:ID="President">
+    <rdfs:label xml:lang="nl">President</rdfs:label>
+  </Sector>
+  <Instantie rdf:ID="Rechtbank_Dordrecht">
+    <rdfs:label xml:lang="nl">Rechtbank Dordrecht</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Gerechtshof_Amsterdam">
+    <rdfs:label xml:lang="nl">Gerechtshof Amsterdam</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Voorlopige_voorziening_bodemzaak">
+    <rdfs:label xml:lang="nl">Voorlopige voorziening bodemzaak</rdfs:label>
+  </Procedure>
+  <Zittingsplaats rdf:ID="Maastricht"/>
+  <rdf:Description rdf:about="http://www.metalex.eu/schema#src">
+    <rdfs:label>Bronverwijzing</rdfs:label>
+  </rdf:Description>
+  <Zittingsplaats rdf:ID="Arnhem"/>
+  <Rechtsgebied rdf:ID="Faillissement">
+    <rdfs:label xml:lang="nl">Faillisement</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Rechtbank_Almelo">
+    <rdfs:label xml:lang="nl">Rechtbank Almelo</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Verzet">
+    <rdfs:label xml:lang="nl">Verzet</rdfs:label>
+  </Procedure>
+  <Procedure rdf:ID="Raadkamer">
+    <rdfs:label xml:lang="nl">Raadkamer</rdfs:label>
+  </Procedure>
+  <Sector rdf:ID="Notariskamer">
+    <rdfs:label xml:lang="nl">Notariskamer</rdfs:label>
+  </Sector>
+  <Rechtsgebied rdf:ID="Bestuursrecht_overig">
+    <rdfs:label xml:lang="nl">Bestuursrecht overig</rdfs:label>
+  </Rechtsgebied>
+  <Zittingsplaats rdf:ID="Rotterdam"/>
+  <Instantie rdf:ID="Rechtbank_Den_Haag">
+    <rdfs:label xml:lang="nl">Rechtbank 's-Gravenhage</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Rotterdam">
+    <rdfs:label xml:lang="nl">Rechtbank Rotterdam</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Kort_geding">
+    <rdfs:label xml:lang="nl">Kort geding</rdfs:label>
+  </Procedure>
+  <Instantie rdf:ID="Rechtbank_Amsterdam">
+    <rdfs:label xml:lang="nl">Rechtbank Amsterdam</rdfs:label>
+  </Instantie>
+  <Rechtsgebied rdf:ID="Belasting">
+    <rdfs:label xml:lang="nl">Belasting</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Rechtbank_Zwolle">
+    <rdfs:label xml:lang="nl">Rechtbank Zwolle</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Hoger_beroep_kort_geding">
+    <rdfs:label xml:lang="nl">Hoger beroep kort geding</rdfs:label>
+  </Procedure>
+  <Instantie rdf:ID="Rechtbank_Leeuwarden">
+    <rdfs:label xml:lang="nl">Rechtbank Leeuwarden</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="Rechtbank_Utrecht">
+    <rdfs:label xml:lang="nl">Rechtbank Utrecht</rdfs:label>
+  </Instantie>
+  <Sector rdf:ID="Voorzitter">
+    <rdfs:label xml:lang="nl">Voorzitter</rdfs:label>
+  </Sector>
+  <Instantie rdf:ID="Rechtbank_Middelburg">
+    <rdfs:label xml:lang="nl">Rechtbank Middelburg</rdfs:label>
+  </Instantie>
+  <Instantie rdf:ID="College_van_Beroep_voor_het_bedrijfsleven">
+    <rdfs:label xml:lang="nl">College van Beroep voor het bedrijfsleven</rdfs:label>
+  </Instantie>
+  <Zittingsplaats rdf:ID="Leeuwarden"/>
+  <Instantie rdf:ID="Rechtbank_Groningen">
+    <rdfs:label xml:lang="nl">Rechtbank Groningen</rdfs:label>
+  </Instantie>
+  <Status rdf:ID="gepubliceerd">
+    <rdfs:label xml:lang="nl">gepubliceerd</rdfs:label>
+  </Status>
+  <Procedure rdf:ID="Cassatie">
+    <rdfs:label xml:lang="nl">Cassatie</rdfs:label>
+  </Procedure>
+  <Sector rdf:ID="Rechtseenheidskamer">
+    <rdfs:label xml:lang="nl">Rechtseenheidskamer</rdfs:label>
+  </Sector>
+  <Sector rdf:ID="Ondernemingskamer">
+    <rdfs:label xml:lang="nl">Ondernemingskamer</rdfs:label>
+  </Sector>
+  <Rechtsgebied rdf:ID="Handelszaak">
+    <rdfs:label xml:lang="nl">Handelszaak</rdfs:label>
+  </Rechtsgebied>
+  <Instantie rdf:ID="Rechtbank_Alkmaar">
+    <rdfs:label xml:lang="nl">Rechtbank Alkmaar</rdfs:label>
+  </Instantie>
+  <Procedure rdf:ID="Verstek">
+    <rdfs:label xml:lang="nl">Verstek</rdfs:label>
+  </Procedure>
+  <Instantie rdf:ID="Gerechtshof_Den_Bosch">
+    <rdfs:label xml:lang="nl">Gerechtshof 's-Hertogenbosch</rdfs:label>
+  </Instantie>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->

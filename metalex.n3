@@ -1,0 +1,17 @@
+# Saved by TopBraid on Fri Apr 24 14:39:58 CEST 2009
+# baseURI: http://www.metalex.eu/schema
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix :        <http://www.metalex.eu/schema#> .
+
+<http://www.metalex.eu/schema>
+      a       owl:Ontology ;
+      rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:src  a       owl:DatatypeProperty ;
+      rdfs:label "Bronverwijzing" ;
+      rdfs:range xsd:anyURI .

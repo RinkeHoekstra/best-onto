@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rnlrdf:Uitspraak xmlns:rnlrdf="http://www.rechtspraak.nl/rdf#" rdf:about="#AA1040">
+<rnlrdf:status rdf:resource="http://www.rechtspraak.nl/rdf#gepubliceerd"/>
+<rnlrdf:ljn>AA1040</rnlrdf:ljn>
+<metalex:src xmlns:metalex="http://www.metalex.eu/schema">http://www.rechtspraak.nl/ljn.asp?ljn=AA1040</metalex:src>
+<rnlrdf:instantie rdf:resource="http://www.rechtspraak.nl/rdf#Rechtbank_'s-Gravenhage"/>
+<rnlrdf:datum_uitspraak>10-11-1999</rnlrdf:datum_uitspraak>
+<rnlrdf:datum_gepubliceerd>10-11-1999</rnlrdf:datum_gepubliceerd>
+<rnlrdf:zaaknummers>AWB 99/6235 VRWET</rnlrdf:zaaknummers>
+<rnlrdf:rechtsgebied_rechtspraak rdf:resource="http://www.rechtspraak.nl/rdf#Vreemdelingen"/>
+<rnlrdf:sector_toon rdf:resource="http://www.rechtspraak.nl/rdf#Rechtseenheidskamer"/>
+<rnlrdf:procedure_soort rdf:resource="http://www.rechtspraak.nl/rdf#Eerste_aanleg_-_meervoudig"/>
+</rnlrdf:Uitspraak>
+</rdf:RDF>

@@ -1,0 +1,30 @@
+#
+# Sesame configuration template for a BEST owlim repository
+#
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rep: <http://www.openrdf.org/config/repository#>.
+@prefix sr: <http://www.openrdf.org/config/repository/sail#>.
+@prefix sail: <http://www.openrdf.org/config/sail#>.
+@prefix owlim: <http://www.ontotext.com/trree/owlim#>.
+
+[] a rep:Repository ;
+rep:repositoryID "best" ;
+rdfs:label "BEST Store" ;
+rep:repositoryImpl [
+  rep:repositoryType "openrdf:SailRepository" ;
+  sr:sailImpl [
+     sail:sailType "swiftowlim:Sail" ;
+     owlim:ruleset "owl-max" ;
+  owlim:partialRDFS  "true" ;
+     owlim:noPersist "false" ;
+     owlim:storage-folder "best-storage" ;
+   owlim:base-URL "http://www.best-project.nl/owl/mapping.owl#" ;
+     owlim:new-triples-file "new-triples-file.nt" ;
+     owlim:entity-index-size "200000" ;
+     owlim:jobsize "200" ;
+   owlim:repository-type "in-memory-repository" ;
+   owlim:imports "" ;
+   owlim:defaultNS "http://www.best-project.nl/owl/mapping.owl#"
+ 
+  ]
+].

@@ -1,0 +1,16 @@
+# Saved by TopBraid on Wed Apr 15 15:40:41 CEST 2009
+# baseURI: http://www.best-project.nl/owl/laymen-ontology.owl
+# imports: http://www.best-project.nl/owl/best.owl
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix :        <http://www.best-project.nl/owl/laymen-ontology.owl#> .
+
+<http://www.best-project.nl/owl/laymen-ontology.owl>
+      a       owl:Ontology ;
+      rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
+      owl:imports <http://www.best-project.nl/owl/best.owl> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

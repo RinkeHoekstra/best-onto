@@ -1,0 +1,43 @@
+# Saved by TopBraid on Tue May 26 09:46:54 CEST 2009
+# baseURI: http://www.best-project.nl/owl/best.owl
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix :        <http://www.best-project.nl/owl/best.owl#> .
+
+<http://www.best-project.nl/owl/best.owl>
+      a       owl:Ontology ;
+      rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Case
+      a       owl:Class .
+
+:Concept
+      a       owl:Class .
+
+:Mapping
+      a       owl:Class ;
+      rdfs:subClassOf :Case .
+
+:Query
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (:query)
+              ] .
+
+:described_by
+      a       owl:ObjectProperty ;
+      rdfs:label "described by" , "Beschreven door"@nl .
+
+:describes
+      a       owl:ObjectProperty ;
+      rdfs:label "Beschrijft"@nl , "describes" ;
+      owl:inverseOf :described_by .
+
+:query
+      a       :Query .

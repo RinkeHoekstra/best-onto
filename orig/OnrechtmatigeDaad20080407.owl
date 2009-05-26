@@ -1,0 +1,2431 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.owl-ontologies.com/OnrechtmatigeDaad.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/OnrechtmatigeDaad.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Absoluut_recht">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Beperkt_recht"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Vermogensrecht"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Niet_commerciele_producten">
+    <rdfs:label xml:lang="nl">vervaardigd of verspreid in het kader van de uitoefening van beroep of bedrijf</rdfs:label>
+    <rdfs:label xml:lang="nl">verspreiding met een economisch doel</rdfs:label>
+    <rdfs:label xml:lang="nl">het product noch voor de verkoop of voor enige andere vorm van verspreiding met een economisch doel van de producent is vervaardigd</rdfs:label>
+    <rdfs:label xml:lang="nl">niet-commerciële producten</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Uitzondering_producten_6_185"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Gebrekkig_bestanddeel">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Uitzondering_producten_6_185"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Aansprakelijkheid_voor_personen">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Misleidende_en_vergelijkende_reclame"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Aansprakelijkheid_voor_zaken"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Aansprakelijkheid_voor_personen_en_zaken"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Invulling_beoordelingscriterium">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Criterium"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Vereiste"/>
+  <owl:Class rdf:about="#Aansprakelijkheid_voor_zaken">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Aansprakelijkheid_voor_personen_en_zaken"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="heeft_vereiste"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="Toerekening_vestigingsfase"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Aansprakelijkheid_voor_personen"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Uitzondering_6_175_tot_6_177">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wettelijke_uitzondering"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Toerekening_vestigingsfase">
+    <rdfs:label xml:lang="nl">toerekening</rdfs:label>
+    <rdfs:label xml:lang="nl">verwijtbaarheid</rdfs:label>
+    <rdfs:label xml:lang="nl">toegerekend</rdfs:label>
+    <rdfs:label xml:lang="nl">schuld</rdfs:label>
+    <rdfs:label xml:lang="nl">toerekenen</rdfs:label>
+    <rdfs:label xml:lang="nl">toerekenbaarheid</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Immateriele_schade">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Zorgvuldigheidsnorm"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ongeschreven_vereiste_persoonlijke_aansprakelijkheid">
+    <rdfs:subClassOf rdf:resource="#Vereiste"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Rechtvaardigingsgrond"/>
+  <owl:Class rdf:ID="Rechtvaardigingsgrond_krachtens_wet">
+    <rdfs:subClassOf rdf:resource="#Rechtvaardigingsgrond"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Wettelijke_vereiste_aansprakelijkheid_voor_personen">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wettelijk_vereiste_kwalitatieve_aansprakelijkheid"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Wettelijk_vereiste_aansprakelijkheid_voor_zaken"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="Toestand"/>
+  <owl:Class rdf:ID="Kind">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Persoon"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Toestand"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="heeft_toestand"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Beoordelingscriterium">
+    <rdfs:subClassOf rdf:resource="#Criterium"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid">
+    <rdfs:subClassOf rdf:resource="#Vereiste"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Kwalitatieve_aansprakelijkheid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Aansprakeljkheid"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">risicoaansprakelijkheid</rdfs:label>
+    <rdfs:label xml:lang="nl">risico-aansprakelijkheid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Aansprakelijkheid_voor_personen_en_zaken">
+    <rdfs:subClassOf rdf:resource="#Kwalitatieve_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Misleidende_en_vergelijkende_reclame">
+    <owl:disjointWith rdf:resource="#Aansprakelijkheid_voor_personen"/>
+    <rdfs:subClassOf rdf:resource="#Kwalitatieve_aansprakelijkheid"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#heeft_vereiste"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#Toerekening_vestigingsfase"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Zuivere_vermogensschade">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Zorgvuldigheidsnorm"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Verkeer_en_veiligheidsnorm">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Zorgvuldigheidsnorm"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Doorbaak_van_aansprakelijkheid">
+    <rdfs:subClassOf rdf:resource="#Zuivere_vermogensschade"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Wettelijke_vereiste_aansprakelijkheid_voor_producten">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wettelijk_vereiste_kwalitatieve_aansprakelijkheid"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Aansprakelijkheid_voor_ondergeschikten">
+    <rdfs:subClassOf rdf:resource="#Aansprakelijkheid_voor_personen_en_zaken"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Toerekening_vestigingsfase"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#heeft_vereiste"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">werkgeversaansprakelijkheid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Aantasting_van_de_eer_en_goede_naam">
+    <rdfs:subClassOf rdf:resource="#Immateriele_schade"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Zorgvuldigheidsnorm">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Onvoldoende_rekening_houden_met_andermans_belangen">
+    <rdfs:subClassOf rdf:resource="#Zuivere_vermogensschade"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Wettelijk_vereiste_aansprakelijkheid_voor_zaken">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wettelijk_vereiste_kwalitatieve_aansprakelijkheid"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Wettelijke_vereiste_aansprakelijkheid_voor_personen"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Persoonlijke_aansprakelijkheid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Aansprakeljkheid"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fase"/>
+  <owl:Class rdf:about="#Beperkt_recht">
+    <owl:disjointWith rdf:resource="#Absoluut_recht"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Vermogensrecht"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Groep"/>
+  <owl:Class rdf:ID="Omvangsfase">
+    <rdfs:subClassOf rdf:resource="#Fase"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="Toerekeningsverband"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="voldoet_aan"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Fysieke_toestand">
+    <rdfs:subClassOf rdf:resource="#Toestand"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Causaal_verband">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Artikel_6_162"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Wettelijk_vereiste_kwalitatieve_aansprakelijkheid">
+    <rdfs:subClassOf rdf:resource="#Vereiste"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Hypothetische_causaliteit">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Csqn_verband_omvangsfase"/>
+    </owl:disjointWith>
+    <rdfs:label xml:lang="nl">momentschade</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Toerekeningsverband"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Schulduitsluitingsgrond"/>
+  <owl:Class rdf:ID="Subjectief_recht">
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Recht"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#Artikel_6_162">
+    <rdfs:comment xml:lang="nl">synonym:art.6:162,synonym:162</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wetsbepaling"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Persoonlijkheidsrecht">
+    <rdfs:subClassOf rdf:resource="#Subjectief_recht"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Vermogensrecht"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Csqn_verband_omvangsfase">
+    <owl:disjointWith rdf:resource="#Hypothetische_causaliteit"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Toerekeningsverband"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wettelijke_plicht">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Uitzondering_producten_6_185">
+    <rdfs:subClassOf rdf:resource="#Wettelijke_uitzondering"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame">
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_kwalitatieve_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Vermogensrecht">
+    <owl:disjointWith rdf:resource="#Persoonlijkheidsrecht"/>
+    <rdfs:subClassOf rdf:resource="#Subjectief_recht"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Zaak">
+    <rdfs:subClassOf rdf:resource="#Artikel_6_162"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Mentale_toestand">
+    <rdfs:subClassOf rdf:resource="#Toestand"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Aansprakeljkheid">
+    <rdfs:subClassOf rdf:resource="#Artikel_6_162"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame">
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_kwalitatieve_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Onrechtmatigheid">
+    <rdfs:subClassOf rdf:resource="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Toerekeningsverband">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >omkeringsregel</rdfs:label>
+    <rdfs:label xml:lang="nl">toerekeningsvraag</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Causaal_verband"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Schuld_van_de_benadeelde">
+    <rdfs:label xml:lang="nl">schuld van de persoon voor wie de benadeelde aansprakelijk is</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Uitzondering_producten_6_185"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Verontschuldigbare_dwaling">
+    <rdfs:subClassOf rdf:resource="#Schulduitsluitingsgrond"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="heeft_verband">
+    <rdfs:range rdf:resource="#Causaal_verband"/>
+    <rdfs:domain rdf:resource="#Aansprakeljkheid"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="heeft_relatie_met">
+    <rdfs:range rdf:resource="#Wetsbepaling"/>
+    <rdfs:domain rdf:resource="#Aansprakeljkheid"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="handelt_in_strijd_met"/>
+  <owl:ObjectProperty rdf:ID="betreft_persoon">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Persoon"/>
+          <owl:Class rdf:about="#Groep"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Vereiste"/>
+          <owl:Class rdf:about="#Persoon"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#voldoet_aan">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Criterium"/>
+          <owl:Class rdf:about="#Causaal_verband"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Aansprakeljkheid"/>
+          <owl:Class rdf:about="#Invulling_beoordelingscriterium"/>
+          <owl:Class rdf:about="#Fase"/>
+          <owl:Class rdf:about="#Vereiste"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="heeft_uitzondering">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="is_uitzondering_van"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Wettelijke_uitzondering"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#heeft_toestand">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="is_toestand_van"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Persoon"/>
+    <rdfs:range rdf:resource="#Toestand"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#heeft_vereiste">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Vereiste"/>
+          <owl:Class rdf:about="#Recht"/>
+          <owl:Class rdf:about="#Criterium"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Aansprakeljkheid"/>
+          <owl:Class rdf:about="#Beoordelingscriterium"/>
+          <owl:Class rdf:about="#Vereiste"/>
+          <owl:Class rdf:about="#Wettelijke_uitzondering"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#is_uitzondering_van">
+    <owl:inverseOf rdf:resource="#heeft_uitzondering"/>
+    <rdfs:domain rdf:resource="#Wettelijke_uitzondering"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="heeft_deelnemer">
+    <rdfs:domain rdf:resource="#Groep"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="is_beschreven_in"/>
+  <owl:ObjectProperty rdf:about="#is_toestand_van">
+    <owl:inverseOf rdf:resource="#heeft_toestand"/>
+    <rdfs:range rdf:resource="#Persoon"/>
+    <rdfs:domain rdf:resource="#Toestand"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="ingevuld_door">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Invulling_beoordelingscriterium"/>
+          <owl:Class rdf:about="#Beoordelingscriterium"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Beoordelingscriterium"/>
+          <owl:Class rdf:about="#Wettelijke_uitzondering"/>
+          <owl:Class rdf:about="#Criterium"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="vult_in"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#vult_in">
+    <owl:inverseOf rdf:resource="#ingevuld_door"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Criterium"/>
+          <owl:Class rdf:about="#Beoordelingscriterium"/>
+          <owl:Class rdf:about="#Wettelijke_uitzondering"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Invulling_beoordelingscriterium"/>
+          <owl:Class rdf:about="#Beoordelingscriterium"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Causaliteit_vestigingsfase"/>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Ondergeschikte">
+    <voldoet_aan>
+      <Beoordelingscriterium rdf:ID="Ondergeschiktheidscriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Hulppersonen">
+            <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+            <vult_in>
+              <Beoordelingscriterium rdf:ID="Niet-ondergeschiktheidscriterium">
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Doel_van_de_contractspartijen">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Praktische_indicatoren">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Beschermingsbehoefte">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Opdracht">
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_aanwijzing">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Aanwijzingsbevoegdheid">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door rdf:resource="#Hulppersonen"/>
+                <ingevuld_door>
+                  <Beoordelingscriterium rdf:ID="Zeggenschapscriterium1">
+                    <vult_in rdf:resource="#Ondergeschiktheidscriterium"/>
+                    <vult_in rdf:resource="#Niet-ondergeschiktheidscriterium"/>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Zeggenschap">
+                        <vult_in rdf:resource="#Zeggenschapscriterium1"/>
+                        <vult_in>
+                          <Beoordelingscriterium rdf:ID="Functioneel_verbandcriterium">
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Tijdstip_van_de_fout">
+                                <vult_in rdf:resource="#Functioneel_verbandcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Hulpmiddel">
+                                <vult_in rdf:resource="#Functioneel_verbandcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Plaats_van_de_daad">
+                                <vult_in rdf:resource="#Functioneel_verbandcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_fout">
+                                <vult_in rdf:resource="#Functioneel_verbandcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Kansvergroting">
+                                <vult_in>
+                                  <Beoordelingscriterium rdf:ID="Kanscriterium">
+                                    <ingevuld_door rdf:resource="#Kansvergroting"/>
+                                  </Beoordelingscriterium>
+                                </vult_in>
+                                <vult_in rdf:resource="#Functioneel_verbandcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door rdf:resource="#Zeggenschap"/>
+                            <rdfs:label xml:lang="nl">functioneel verband</rdfs:label>
+                          </Beoordelingscriterium>
+                        </vult_in>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Omstandigheden_van_het_geval">
+                        <vult_in>
+                          <Beoordelingscriterium rdf:ID="Zeggenschapscriterium2">
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Afwezigheid_van_zeggenschap">
+                                <vult_in rdf:resource="#Zeggenschapscriterium2"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Verklaringen_over_en_weerr">
+                                <vult_in rdf:resource="#Zeggenschapscriterium2"/>
+                                <vult_in rdf:resource="#Zeggenschapscriterium1"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door rdf:resource="#Omstandigheden_van_het_geval"/>
+                          </Beoordelingscriterium>
+                        </vult_in>
+                        <vult_in rdf:resource="#Zeggenschapscriterium1"/>
+                        <vult_in>
+                          <Beoordelingscriterium rdf:ID="Gebrekscriterium">
+                            <ingevuld_door rdf:resource="#Omstandigheden_van_het_geval"/>
+                          </Beoordelingscriterium>
+                        </vult_in>
+                        <vult_in>
+                          <Beoordelingscriterium rdf:ID="Eisen_die_men_daaraan_mag_stellen">
+                            <ingevuld_door rdf:resource="#Omstandigheden_van_het_geval"/>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Veiligheidsvoorschriften">
+                                <vult_in rdf:resource="#Eisen_die_men_daaraan_mag_stellen"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                          </Beoordelingscriterium>
+                        </vult_in>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door rdf:resource="#Verklaringen_over_en_weerr"/>
+                  </Beoordelingscriterium>
+                </ingevuld_door>
+              </Beoordelingscriterium>
+            </vult_in>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <rdfs:label xml:lang="nl">ondergeschiktheid</rdfs:label>
+        <rdfs:label xml:lang="nl">ondergeschikte</rdfs:label>
+        <ingevuld_door rdf:resource="#Aanwijzingsbevoegdheid"/>
+        <ingevuld_door rdf:resource="#Beschermingsbehoefte"/>
+        <ingevuld_door rdf:resource="#Praktische_indicatoren"/>
+        <ingevuld_door rdf:resource="#Doel_van_de_contractspartijen"/>
+        <ingevuld_door rdf:resource="#Aard_van_de_aanwijzing"/>
+        <ingevuld_door rdf:resource="#Zeggenschapscriterium1"/>
+      </Beoordelingscriterium>
+    </voldoet_aan>
+  </Wettelijke_vereiste_aansprakelijkheid_voor_personen>
+  <Zuivere_vermogensschade rdf:ID="Verkeersongeval">
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_geschonden_norm">
+        <vult_in>
+          <Criterium rdf:ID="Csqn_criteria_toerekeningsverband">
+            <ingevuld_door>
+              <Invulling_beoordelingscriterium rdf:ID="Persoon_van_de_laedens">
+                <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+              </Invulling_beoordelingscriterium>
+            </ingevuld_door>
+            <ingevuld_door rdf:resource="#Aard_van_de_geschonden_norm"/>
+            <ingevuld_door>
+              <Invulling_beoordelingscriterium rdf:ID="Persoon_van_de_gelaedeerde">
+                <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+              </Invulling_beoordelingscriterium>
+            </ingevuld_door>
+            <ingevuld_door>
+              <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_aansprakelijkheid">
+                <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+                <vult_in>
+                  <Beoordelingscriterium rdf:ID="Omvang_schadecriterium">
+                    <ingevuld_door rdf:resource="#Aard_van_de_aansprakelijkheid"/>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Voorzienbaarheid_van_de_schade">
+                        <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+                        <vult_in rdf:resource="#Omvang_schadecriterium"/>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_schade">
+                        <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+                        <vult_in rdf:resource="#Omvang_schadecriterium"/>
+                        <vult_in>
+                          <Beoordelingscriterium rdf:ID="Gebrekkig_productcriterium">
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Beschikbare_alternatieven">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Tijdstip_waarop_het_product_in_het_verkeer_is_gebracht">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Redelijkerwijs_te_verwachten_gebruik">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Prijs_van_het_product">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door rdf:resource="#Aard_van_de_schade"/>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Presentatie_van_het_product">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                            <ingevuld_door>
+                              <Invulling_beoordelingscriterium rdf:ID="Product_dat_niet_de_veiligheid_biedt">
+                                <vult_in rdf:resource="#Gebrekkig_productcriterium"/>
+                              </Invulling_beoordelingscriterium>
+                            </ingevuld_door>
+                          </Beoordelingscriterium>
+                        </vult_in>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_gedraging">
+                        <vult_in rdf:resource="#Omvang_schadecriterium"/>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                  </Beoordelingscriterium>
+                </vult_in>
+              </Invulling_beoordelingscriterium>
+            </ingevuld_door>
+            <ingevuld_door rdf:resource="#Voorzienbaarheid_van_de_schade"/>
+            <ingevuld_door>
+              <Invulling_beoordelingscriterium rdf:ID="Verzekerbaarheid_van_de_schade">
+                <vult_in rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+              </Invulling_beoordelingscriterium>
+            </ingevuld_door>
+            <ingevuld_door rdf:resource="#Aard_van_de_schade"/>
+          </Criterium>
+        </vult_in>
+      </Invulling_beoordelingscriterium>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Beoordelingscriterium rdf:ID="Kelderluikcriteria">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Ernst_van_de_gevolgen">
+            <vult_in rdf:resource="#Kelderluikcriteria"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Bezwaarlijkheid_veiligheidsmaatregelen">
+            <vult_in rdf:resource="#Kelderluikcriteria"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Kans_dat_anderen_niet_goed_opletten">
+            <vult_in rdf:resource="#Kelderluikcriteria"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Kans_dat_daardoor_ongevallen_ontstaan">
+            <vult_in rdf:resource="#Kelderluikcriteria"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <rdfs:label xml:lang="nl">kelderluikcriterium</rdfs:label>
+        <rdfs:label xml:lang="nl">kelderluik-factor</rdfs:label>
+        <rdfs:label xml:lang="nl">kelderluik-arrest</rdfs:label>
+      </Beoordelingscriterium>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Kenbaarheid">
+        <vult_in>
+          <Beoordelingscriterium rdf:ID="Bodembewegingscriterium">
+            <ingevuld_door>
+              <Invulling_beoordelingscriterium rdf:ID="Delfstoffen">
+                <vult_in>
+                  <Beoordelingscriterium rdf:ID="Uitstroom_delfstoffencriterium">
+                    <ingevuld_door rdf:resource="#Delfstoffen"/>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Bodembeweging">
+                        <vult_in rdf:resource="#Uitstroom_delfstoffencriterium"/>
+                        <vult_in rdf:resource="#Bodembewegingscriterium"/>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Onbeheersbare_ondergrondse_natuurlijke_krachten">
+                        <vult_in rdf:resource="#Uitstroom_delfstoffencriterium"/>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                    <ingevuld_door>
+                      <Invulling_beoordelingscriterium rdf:ID="Schadeveroorzakende_gebeurtenis">
+                        <vult_in rdf:resource="#Uitstroom_delfstoffencriterium"/>
+                      </Invulling_beoordelingscriterium>
+                    </ingevuld_door>
+                  </Beoordelingscriterium>
+                </vult_in>
+                <vult_in rdf:resource="#Bodembewegingscriterium"/>
+              </Invulling_beoordelingscriterium>
+            </ingevuld_door>
+            <ingevuld_door rdf:resource="#Bodembeweging"/>
+            <ingevuld_door rdf:resource="#Kenbaarheid"/>
+          </Beoordelingscriterium>
+        </vult_in>
+      </Invulling_beoordelingscriterium>
+    </voldoet_aan>
+  </Zuivere_vermogensschade>
+  <Niet_commerciele_producten rdf:ID="Geen_economisch_doel"/>
+  <Wettelijke_uitzondering rdf:ID="Uitzondering_zaakschade_beneden_de_500_euro"/>
+  <Invulling_beoordelingscriterium rdf:ID="Leveringsvoorwaarden">
+    <vult_in>
+      <Beoordelingscriterium rdf:ID="Misleidend_karaktercriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Verklaring_of_beoordelin">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Garantie">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Omvang_van_de_voorraad">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door rdf:resource="#Leveringsvoorwaarden"/>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Betalingsvoorwaarden">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Wijze_of_tijdstip_van_vervaardigen_van_het_product">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Eigenschappen_van_het_product">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Aanbieder">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Aanduiding_of_het_doel_van_de_aanbieding">
+            <vult_in rdf:resource="#Misleidend_karaktercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+      </Beoordelingscriterium>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Wetsbepaling rdf:ID="Artikel_6_166"/>
+  <Wetsbepaling rdf:ID="Artikel_6_186"/>
+  <Invulling_beoordelingscriterium rdf:ID="Dier_als_instrument"/>
+  <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Gedraging_van_een_dier">
+    <voldoet_aan rdf:resource="#Dier_als_instrument"/>
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Eigen_energie_van_het_dier"/>
+    </voldoet_aan>
+  </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+  <Immateriele_schade rdf:ID="Toelaatbaarheid_van_het_gedrag_van_toezichthouders">
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+  </Immateriele_schade>
+  <Omvangsfase rdf:ID="Rectificatie">
+    <voldoet_aan>
+      <Hypothetische_causaliteit rdf:ID="Zaakschade"/>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Toerekeningsverband rdf:ID="Onderbreking_van_de_causaliteit">
+        <rdfs:label xml:lang="nl">hypothetische causaliteit</rdfs:label>
+      </Toerekeningsverband>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Toerekeningsverband rdf:ID="Toerekening_naar_redelijkheid">
+        <rdfs:label xml:lang="nl">multi-factor benadering</rdfs:label>
+      </Toerekeningsverband>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Toerekeningsverband rdf:ID="Adequatietheorie"/>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Csqn_verband_omvangsfase rdf:ID="Alternatieve_causaliteit"/>
+    </voldoet_aan>
+    <voldoet_aan rdf:resource="#Csqn_criteria_toerekeningsverband"/>
+    <voldoet_aan>
+      <Toerekeningsverband rdf:ID="Statistische_causaliteit"/>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Hypothetische_causaliteit rdf:ID="Momentschade"/>
+    </voldoet_aan>
+    <voldoet_aan>
+      <Csqn_verband_omvangsfase rdf:ID="Gelijktijdig_werkende_oorzaak"/>
+    </voldoet_aan>
+  </Omvangsfase>
+  <Beperkt_recht rdf:ID="Vruchtgebruik"/>
+  <Invulling_beoordelingscriterium rdf:ID="Afwijking_in_de_gronddekking"/>
+  <Wetsbepaling rdf:ID="Artikel_6_167"/>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_gebrekkige_zaken">
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_180"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_185"/>
+    </heeft_relatie_met>
+    <voldoet_aan>
+      <Beoordelingscriterium rdf:ID="Roerende_zaakcriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Roerende_zaken">
+            <vult_in rdf:resource="#Roerende_zaakcriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Zaak rdf:ID="Stoffelijke_objecten">
+            <vult_in rdf:resource="#Roerende_zaakcriterium"/>
+            <rdf:type rdf:resource="#Invulling_beoordelingscriterium"/>
+          </Zaak>
+        </ingevuld_door>
+      </Beoordelingscriterium>
+    </voldoet_aan>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_178"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_175"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_168"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_194"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_170"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_179"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_181"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_171"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_190"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_176"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_169"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_195"/>
+    </heeft_relatie_met>
+    <heeft_vereiste>
+      <Onrechtmatigheid rdf:ID="Doen_in_strijd_met_recht">
+        <heeft_vereiste>
+          <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Inbreuk_op_een_recht">
+            <voldoet_aan>
+              <Beoordelingscriterium rdf:ID="Inbreukcriterium">
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Intensiteit_van_de_inbreuk">
+                    <vult_in rdf:resource="#Inbreukcriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <heeft_vereiste>
+                  <Persoonlijkheidsrecht rdf:ID="Recht_op_vrijheid"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Persoonlijkheidsrecht rdf:ID="Recht_op_een_goede_naam"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Persoonlijkheidsrecht rdf:ID="Recht_op_lichamelijke_integriteit"/>
+                </heeft_vereiste>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Beoordeling_rangorde_grondrechten">
+                    <vult_in rdf:resource="#Inbreukcriterium"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <heeft_vereiste>
+                  <Persoonlijkheidsrecht rdf:ID="Recht_op_leven"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Absoluut_recht rdf:ID="Eigendomsrecht"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Beperkt_recht rdf:ID="Rechten_van_pachter"/>
+                </heeft_vereiste>
+                <heeft_vereiste rdf:resource="#Vruchtgebruik"/>
+                <heeft_vereiste>
+                  <Ongeschreven_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Verhindering_in_de_uitoefening_van_bevoegdheden">
+                    <voldoet_aan>
+                      <Invulling_beoordelingscriterium rdf:ID="Ernst_en_duur"/>
+                    </voldoet_aan>
+                    <voldoet_aan rdf:resource="#Omstandigheden_van_het_geval"/>
+                    <voldoet_aan>
+                      <Invulling_beoordelingscriterium rdf:ID="Maatschappelijke_betamelijkheid">
+                        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+                      </Invulling_beoordelingscriterium>
+                    </voldoet_aan>
+                    <voldoet_aan>
+                      <Invulling_beoordelingscriterium rdf:ID="Voorzorgsmaatregelen"/>
+                    </voldoet_aan>
+                  </Ongeschreven_vereiste_persoonlijke_aansprakelijkheid>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Persoonlijkheidsrecht rdf:ID="Recht_op_privacy"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Beperkt_recht rdf:ID="Rechten_van_de_huurder"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Absoluut_recht rdf:ID="Recht_op_voortbrengselen_van_de_geest"/>
+                </heeft_vereiste>
+                <heeft_vereiste>
+                  <Ongeschreven_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Onbevoegd_uitoefenen_bevoegdheden"/>
+                </heeft_vereiste>
+              </Beoordelingscriterium>
+            </voldoet_aan>
+          </Wettelijk_vereiste_persoonlijke_aansprakelijkheid>
+        </heeft_vereiste>
+        <heeft_vereiste>
+          <Ongeschreven_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Kennis_van_belang"/>
+        </heeft_vereiste>
+        <heeft_vereiste>
+          <Ongeschreven_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Aantasting_van_belang"/>
+        </heeft_vereiste>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt">
+            <vult_in>
+              <Beoordelingscriterium rdf:ID="Onrechtmatigheidscriteria">
+                <heeft_vereiste rdf:resource="#Inbreuk_op_een_recht"/>
+                <ingevuld_door>
+                  <Invulling_beoordelingscriterium rdf:ID="Handelen_in_strijd_met_een_wettelijke_plicht">
+                    <vult_in rdf:resource="#Onrechtmatigheidscriteria"/>
+                  </Invulling_beoordelingscriterium>
+                </ingevuld_door>
+                <ingevuld_door rdf:resource="#Handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+              </Beoordelingscriterium>
+            </vult_in>
+          </Invulling_beoordelingscriterium>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Handelen_in_strijd_met_een_wettelijke_plicht"/>
+      </Onrechtmatigheid>
+    </heeft_vereiste>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_182"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_163"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_172"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_191"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_177"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_196"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_164"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_183"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_1622"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_188"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_197"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_173"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_192"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_vereiste>
+      <Onrechtmatigheid rdf:ID="Nalaten_in_strijd_met_recht">
+        <heeft_vereiste rdf:resource="#Kennis_van_belang"/>
+        <heeft_vereiste rdf:resource="#Aantasting_van_belang"/>
+        <voldoet_aan rdf:resource="#Handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+        <voldoet_aan rdf:resource="#Handelen_in_strijd_met_een_wettelijke_plicht"/>
+        <voldoet_aan rdf:resource="#Voorzorgsmaatregelen"/>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Gevaarlijke_toestand"/>
+        </voldoet_aan>
+      </Onrechtmatigheid>
+    </heeft_vereiste>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Bezitter"/>
+    </heeft_vereiste>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_165"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_184"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_189"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_193"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met>
+      <Wetsbepaling rdf:ID="Artikel_6_174"/>
+    </heeft_relatie_met>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Gebrek">
+        <voldoet_aan rdf:resource="#Gebrekscriterium"/>
+      </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+    </heeft_vereiste>
+  </Aansprakelijkheid_voor_zaken>
+  <Aansprakelijkheid_voor_ondergeschikten rdf:ID="Fout_begaan_in_de_zakelijke_sfeer">
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Fout"/>
+    </heeft_vereiste>
+    <heeft_vereiste>
+      <Vereiste rdf:ID="Toerekening_omvangsfase">
+        <voldoet_aan rdf:resource="#Omvang_schadecriterium"/>
+        <voldoet_aan>
+          <Beoordelingscriterium rdf:ID="Omkeringsregelcriterium"/>
+        </voldoet_aan>
+      </Vereiste>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_vereiste rdf:resource="#Ondergeschikte"/>
+    <heeft_vereiste>
+      <Toerekening_vestigingsfase rdf:ID="Schuld">
+        <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+        <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+        <voldoet_aan>
+          <Causaal_verband rdf:ID="Csqn_verband_vestigingsfase">
+            <rdfs:label xml:lang="nl">conditio sine qua non-verband</rdfs:label>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            ></rdfs:comment>
+          </Causaal_verband>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Omkeringsregelcriterium"/>
+        <betreft_persoon>
+          <Kind rdf:ID="Kind_tussen_de_14_en_16_jaar"/>
+        </betreft_persoon>
+        <betreft_persoon>
+          <Kind rdf:ID="Kind_16_jaar_en_ouder"/>
+        </betreft_persoon>
+        <betreft_persoon>
+          <Persoon rdf:ID="Volwassene">
+            <heeft_toestand>
+              <Fysieke_toestand rdf:ID="Lichamelijk_gezond">
+                <is_toestand_van rdf:resource="#Volwassene"/>
+                <is_toestand_van>
+                  <Persoon rdf:ID="Groepsdeelnemer">
+                    <heeft_toestand rdf:resource="#Lichamelijk_gezond"/>
+                    <betreft_persoon>
+                      <Persoon rdf:ID="Overheid"/>
+                    </betreft_persoon>
+                    <heeft_toestand>
+                      <Fysieke_toestand rdf:ID="Lichamelijke_tekortkoming">
+                        <is_toestand_van rdf:resource="#Volwassene"/>
+                        <is_toestand_van rdf:resource="#Groepsdeelnemer"/>
+                      </Fysieke_toestand>
+                    </heeft_toestand>
+                    <betreft_persoon>
+                      <Persoon rdf:ID="Rechtspersoon"/>
+                    </betreft_persoon>
+                    <betreft_persoon>
+                      <Kind rdf:ID="Kind_jonger_dan_14_jaar"/>
+                    </betreft_persoon>
+                    <betreft_persoon rdf:resource="#Kind_tussen_de_14_en_16_jaar"/>
+                    <betreft_persoon rdf:resource="#Volwassene"/>
+                    <heeft_toestand>
+                      <Mentale_toestand rdf:ID="Geestelijke_tekortkoming">
+                        <is_toestand_van rdf:resource="#Volwassene"/>
+                        <is_toestand_van rdf:resource="#Groepsdeelnemer"/>
+                      </Mentale_toestand>
+                    </heeft_toestand>
+                    <heeft_toestand>
+                      <Mentale_toestand rdf:ID="Geestelijk_gezond">
+                        <is_toestand_van rdf:resource="#Volwassene"/>
+                        <is_toestand_van rdf:resource="#Groepsdeelnemer"/>
+                      </Mentale_toestand>
+                    </heeft_toestand>
+                    <betreft_persoon rdf:resource="#Kind_16_jaar_en_ouder"/>
+                  </Persoon>
+                </is_toestand_van>
+              </Fysieke_toestand>
+            </heeft_toestand>
+            <heeft_toestand rdf:resource="#Geestelijke_tekortkoming"/>
+            <heeft_toestand rdf:resource="#Geestelijk_gezond"/>
+            <heeft_toestand rdf:resource="#Lichamelijke_tekortkoming"/>
+          </Persoon>
+        </betreft_persoon>
+      </Toerekening_vestigingsfase>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Functioneel_verband">
+        <voldoet_aan rdf:resource="#Functioneel_verbandcriterium"/>
+      </Wettelijke_vereiste_aansprakelijkheid_voor_personen>
+    </heeft_vereiste>
+    <heeft_vereiste>
+      <Toerekening_vestigingsfase rdf:ID="Toerekening_krachtens_wet">
+        <betreft_persoon rdf:resource="#Kind_tussen_de_14_en_16_jaar"/>
+        <betreft_persoon rdf:resource="#Kind_16_jaar_en_ouder"/>
+        <betreft_persoon rdf:resource="#Volwassene"/>
+        <voldoet_aan rdf:resource="#Csqn_verband_vestigingsfase"/>
+        <voldoet_aan rdf:resource="#Omkeringsregelcriterium"/>
+        <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+        <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+      </Toerekening_vestigingsfase>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Relativiteit">
+        <heeft_vereiste>
+          <Zorgvuldigheidsnorm rdf:ID="Norm_ter_bescherming_schade">
+            <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+            <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+            <voldoet_aan rdf:resource="#Kenbaarheid"/>
+          </Zorgvuldigheidsnorm>
+        </heeft_vereiste>
+        <heeft_vereiste>
+          <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Correctie_langemeijer"/>
+        </heeft_vereiste>
+      </Wettelijk_vereiste_persoonlijke_aansprakelijkheid>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_vereiste>
+      <Toerekening_vestigingsfase rdf:ID="Toerekening_krachtens_verkeersopvatting">
+        <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+        <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+        <betreft_persoon rdf:resource="#Kind_tussen_de_14_en_16_jaar"/>
+        <betreft_persoon rdf:resource="#Kind_16_jaar_en_ouder"/>
+        <betreft_persoon rdf:resource="#Volwassene"/>
+        <voldoet_aan rdf:resource="#Omkeringsregelcriterium"/>
+        <voldoet_aan rdf:resource="#Csqn_verband_vestigingsfase"/>
+      </Toerekening_vestigingsfase>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+  </Aansprakelijkheid_voor_ondergeschikten>
+  <Schuld_van_de_benadeelde rdf:ID="Medeschuld"/>
+  <Invulling_beoordelingscriterium rdf:ID="Toestemming_van_de_benadeelde"/>
+  <Aansprakelijkheid_voor_personen rdf:ID="Aansprakelijkheid_voor_niet-ondergeschikten">
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_vereiste rdf:resource="#Fout"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_vereiste rdf:resource="#Functioneel_verband"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Niet-ondergeschikte"/>
+    </heeft_vereiste>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Bedrijf"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+  </Aansprakelijkheid_voor_personen>
+  <Invulling_beoordelingscriterium rdf:ID="Goed_houden_voor_een_ander">
+    <vult_in>
+      <Beoordelingscriterium rdf:ID="Bezitterscriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Verkeersopvatting">
+            <vult_in rdf:resource="#Bezitterscriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Goed_houden_voor_zichzelf">
+            <vult_in rdf:resource="#Bezitterscriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door rdf:resource="#Goed_houden_voor_een_ander"/>
+      </Beoordelingscriterium>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Verkeer_en_veiligheidsnorm rdf:ID="Sport_en_spel">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Verkeer_en_veiligheidsnorm>
+  <Gebrekkig_bestanddeel rdf:ID="Instructies_van_de_hoofdfabrikant"/>
+  <Beoordelingscriterium rdf:ID="Exploitant_stortplaatscriterium">
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Legaal_storten">
+        <vult_in rdf:resource="#Exploitant_stortplaatscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Illegaal_storten">
+        <vult_in rdf:resource="#Exploitant_stortplaatscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Vergunninghouder">
+        <vult_in rdf:resource="#Exploitant_stortplaatscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Exploitant_stortplaats_zonder_vergunning">
+        <vult_in rdf:resource="#Exploitant_stortplaatscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+  </Beoordelingscriterium>
+  <Invulling_beoordelingscriterium rdf:ID="Aard_en_de_werkwijze_van_de_media"/>
+  <Zuivere_vermogensschade rdf:ID="Beroepsfout">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Zuivere_vermogensschade>
+  <Aansprakelijkheid_voor_personen rdf:ID="Aansprakelijkheid_voor_kinderen">
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <rdfs:label xml:lang="nl">aansprakelijkheid van de ouders of voogd</rdfs:label>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+  </Aansprakelijkheid_voor_personen>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame rdf:ID="Mededeling_in_de_uitoefening_van_beroep_of_bedrijf"/>
+  <Verontschuldigbare_dwaling rdf:ID="Rechtsdwaling"/>
+  <Invulling_beoordelingscriterium rdf:ID="Onmiddelijk_gevaar"/>
+  <Invulling_beoordelingscriterium rdf:ID="Beperking_van_het_nadeel_door_perspublicatie"/>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_boorgaten">
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Exploitant_mijnbouwwerk">
+        <voldoet_aan rdf:resource="#Vergunninghouder"/>
+      </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Uitstroming_van_delfstoffen">
+        <voldoet_aan rdf:resource="#Uitstroom_delfstoffencriterium"/>
+        <voldoet_aan rdf:resource="#Bodembewegingscriterium"/>
+      </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+  </Aansprakelijkheid_voor_zaken>
+  <Invulling_beoordelingscriterium rdf:ID="Ieder_die_zich_als_producent_presenteert">
+    <vult_in>
+      <Beoordelingscriterium rdf:ID="Producentcriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Fabrikant_van_een_eindproduct">
+            <vult_in rdf:resource="#Producentcriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door rdf:resource="#Ieder_die_zich_als_producent_presenteert"/>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Fabrikant_van_een_onderdeel">
+            <vult_in rdf:resource="#Producentcriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Producent_van_een_grondstof">
+            <vult_in rdf:resource="#Producentcriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+      </Beoordelingscriterium>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Invulling_beoordelingscriterium rdf:ID="Doel_te_bereiken_via_andere_weg"/>
+  <Invulling_beoordelingscriterium rdf:ID="Overtreding_gebruiksvoorschriften_bij_de_sluiting">
+    <vult_in>
+      <Wettelijke_uitzondering rdf:ID="Uitzondering_stortplaats_6_175">
+        <ingevuld_door rdf:resource="#Overtreding_gebruiksvoorschriften_bij_de_sluiting"/>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Bekendwording_20_jaar_na_sluiting">
+            <vult_in rdf:resource="#Uitzondering_stortplaats_6_175"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+      </Wettelijke_uitzondering>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Verkeer_en_veiligheidsnorm rdf:ID="Gevaarzetting">
+    <voldoet_aan rdf:resource="#Toestemming_van_de_benadeelde"/>
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Hulpbetoon"/>
+    </voldoet_aan>
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Verkeer_en_veiligheidsnorm>
+  <Invulling_beoordelingscriterium rdf:ID="Bestaan_van_andere_gegevens"/>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Vandalisme"/>
+  <Zuivere_vermogensschade rdf:ID="Staking">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Onevenredig_getroffen"/>
+    </voldoet_aan>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+    <voldoet_aan rdf:resource="#Onmiddelijk_gevaar"/>
+  </Zuivere_vermogensschade>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_dieren"/>
+  <Beoordelingscriterium rdf:ID="Vertegenwoordigingscriterium">
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Krachtens_wet">
+        <vult_in rdf:resource="#Vertegenwoordigingscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Krachtens_volmacht">
+        <vult_in rdf:resource="#Vertegenwoordigingscriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+  </Beoordelingscriterium>
+  <Onvoldoende_rekening_houden_met_andermans_belangen rdf:ID="Onvolledige_informatie">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Onvoldoende_rekening_houden_met_andermans_belangen>
+  <Invulling_beoordelingscriterium rdf:ID="Redelijk_bekwaam_vakgenoot"/>
+  <Invulling_beoordelingscriterium rdf:ID="Inkleding_van_de_verdenkingen"/>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_gevaarlijke_stoffen">
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Verwezenlijking_van_het_gevaar"/>
+    </heeft_vereiste>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Bijzonder_gevaar"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_vereiste>
+      <Zaak rdf:ID="Stof">
+        <rdf:type rdf:resource="#Wettelijk_vereiste_aansprakelijkheid_voor_zaken"/>
+      </Zaak>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Bekendheidseis">
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+      </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+    </heeft_vereiste>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+  </Aansprakelijkheid_voor_zaken>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_opstallen">
+    <heeft_vereiste rdf:resource="#Verwezenlijking_van_het_gevaar"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <rdfs:label xml:lang="nl">aansprakelijkheid voor opstal</rdfs:label>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_vereiste rdf:resource="#Bezitter"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aansprakelijkheid voor een opstal</rdfs:label>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_vereiste>
+      <Zaak rdf:ID="Opstal">
+        <rdf:type rdf:resource="#Wettelijk_vereiste_aansprakelijkheid_voor_zaken"/>
+      </Zaak>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <voldoet_aan rdf:resource="#Eisen_die_men_daaraan_mag_stellen"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+  </Aansprakelijkheid_voor_zaken>
+  <Kwalitatieve_aansprakelijkheid rdf:ID="Aansprakelijkheid_bij_electronisch_rechtsverkeer">
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+  </Kwalitatieve_aansprakelijkheid>
+  <Invulling_beoordelingscriterium rdf:ID="Onbehoorlijk_aanhaken_producten_of_diensten"/>
+  <Verkeer_en_veiligheidsnorm rdf:ID="Ongelukkige_samenloop_van_omstandigheden">
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Verkeer_en_veiligheidsnorm>
+  <Rechtvaardigingsgrond_krachtens_wet rdf:ID="Overmacht"/>
+  <Uitzondering_producten_6_185 rdf:ID="Ontwikkelingsrisico"/>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Natuurgeweld"/>
+  <Uitzondering_producten_6_185 rdf:ID="Niet_in_het_verkeer_gebrachte_producten">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >product niet in het verkeer gebracht</rdfs:label>
+  </Uitzondering_producten_6_185>
+  <Invulling_beoordelingscriterium rdf:ID="Tolerantiegrenzen"/>
+  <Wettelijke_plicht rdf:ID="Algemeen_verbindend_voorschrift"/>
+  <Invulling_beoordelingscriterium rdf:ID="Eigendomsvoorbehoud">
+    <vult_in>
+      <Wettelijke_uitzondering rdf:ID="Uitzondering_bezit_6_173_174_179">
+        <heeft_vereiste rdf:resource="#Bedrijf"/>
+        <ingevuld_door rdf:resource="#Eigendomsvoorbehoud"/>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Medebezitter">
+            <vult_in rdf:resource="#Uitzondering_bezit_6_173_174_179"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+      </Wettelijke_uitzondering>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Beoordelingscriterium rdf:ID="Stofcriterium">
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Krachtens_amvb">
+        <vult_in rdf:resource="#Stofcriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Art_6_175_lid_1">
+        <vult_in rdf:resource="#Stofcriterium"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >art. 6:175 lid 1</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >art.6:175 lid 1</rdfs:label>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Art_6_175_lid_6">
+        <vult_in rdf:resource="#Stofcriterium"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >art. 6:175 lid 6</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >art.6:175 lid 6</rdfs:label>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Aanwijzing_conform_art_34_lid_3_wms">
+        <vult_in rdf:resource="#Stofcriterium"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >aanwijzing conform art.34 lid 3 wms</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >aanwijzing conform art. 34 lid 3 wms</rdfs:label>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+    <ingevuld_door>
+      <Invulling_beoordelingscriterium rdf:ID="Stand_van_techniek_en_ontwikkelingsrisico">
+        <vult_in rdf:resource="#Stofcriterium"/>
+      </Invulling_beoordelingscriterium>
+    </ingevuld_door>
+  </Beoordelingscriterium>
+  <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_gepubliceerde_verdenking"/>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Aan_ouders_verwijtbaar_handelen"/>
+  <Zuivere_vermogensschade rdf:ID="Oneerlijke_concurrentie">
+    <voldoet_aan rdf:resource="#Onbehoorlijk_aanhaken_producten_of_diensten"/>
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Zuivere_vermogensschade>
+  <Invulling_beoordelingscriterium rdf:ID="Eigenaar_van_een_dier">
+    <vult_in>
+      <Beoordelingscriterium rdf:ID="Bezitter_van_een_diercriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Eigenaar_van_het_dier">
+            <vult_in rdf:resource="#Bezitter_van_een_diercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Houder_van_een_dier">
+            <vult_in rdf:resource="#Bezitter_van_een_diercriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door rdf:resource="#Eigenaar_van_een_dier"/>
+      </Beoordelingscriterium>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Wettelijke_plicht rdf:ID="Formele_wet"/>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Ondergeschikte_in_dienst_natuurlijk_persoon">
+    <voldoet_aan>
+      <Beoordelingscriterium rdf:ID="Ondergeschikt_in_dienst_natuurlijk_persooncriterium">
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Gezagsverhouding">
+            <vult_in rdf:resource="#Ondergeschikt_in_dienst_natuurlijk_persooncriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Werkzaamheden_met_een_incidenteel_karakter">
+            <vult_in rdf:resource="#Ondergeschikt_in_dienst_natuurlijk_persooncriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Opgedragen_taak">
+            <vult_in rdf:resource="#Ondergeschikt_in_dienst_natuurlijk_persooncriterium"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+        <rdfs:label xml:lang="nl">ondergeschikt in dienst van een natuurlijk persoon</rdfs:label>
+      </Beoordelingscriterium>
+    </voldoet_aan>
+  </Wettelijke_vereiste_aansprakelijkheid_voor_personen>
+  <Invulling_beoordelingscriterium rdf:ID="Gezag_van_de_bron"/>
+  <Schuld_van_de_benadeelde rdf:ID="Eigen_schuld_van_de_benadeelde"/>
+  <Wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame rdf:ID="Ongeoorloofde_reclame"/>
+  <Aansprakelijkheid_voor_ondergeschikten rdf:ID="Fout_begaan_in_de_prive-sfeer">
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_vereiste rdf:resource="#Fout"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_vereiste rdf:resource="#Ondergeschikte_in_dienst_natuurlijk_persoon"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_vereiste>
+      <Vereiste rdf:ID="Ongeschreven_vereiste_kwalitatieve_aansprakelijkheid"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_vereiste rdf:resource="#Ondergeschikte"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Niet_werkzaam_voor_beroep_of_bedrijf"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <rdfs:label xml:lang="nl">fout begaan in de privé-sfeer</rdfs:label>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_vereiste rdf:resource="#Functioneel_verband"/>
+  </Aansprakelijkheid_voor_ondergeschikten>
+  <rdf:Description rdf:ID="__deleted__">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >synonym:16 jaar,synonym:17 jaren,synonym:zeventien jaar,synonym:zeventien jaren,synonym:17 jaar,synonym:17 jaren,synonym:zeventien jaar,synonym:zeventien jaren</rdfs:comment>
+  </rdf:Description>
+  <Omvangsfase rdf:ID="Schadevergoeding">
+    <voldoet_aan rdf:resource="#Adequatietheorie"/>
+    <voldoet_aan rdf:resource="#Alternatieve_causaliteit"/>
+    <voldoet_aan rdf:resource="#Momentschade"/>
+    <voldoet_aan rdf:resource="#Toerekening_naar_redelijkheid"/>
+    <voldoet_aan rdf:resource="#Onderbreking_van_de_causaliteit"/>
+    <voldoet_aan rdf:resource="#Zaakschade"/>
+    <voldoet_aan rdf:resource="#Statistische_causaliteit"/>
+    <voldoet_aan rdf:resource="#Gelijktijdig_werkende_oorzaak"/>
+  </Omvangsfase>
+  <Invulling_beoordelingscriterium rdf:ID="Aard_van_de_vergunning">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >belang van de regeling waarop de vergunning rust</rdfs:label>
+  </Invulling_beoordelingscriterium>
+  <Recht rdf:ID="Objectief_recht"/>
+  <Schulduitsluitingsgrond rdf:ID="Noodweer_exces"/>
+  <Invulling_beoordelingscriterium rdf:ID="Luchtvaartuigen">
+    <vult_in>
+      <Wettelijke_uitzondering rdf:ID="Uitzondering_zaak_6_173">
+        <ingevuld_door rdf:resource="#Luchtvaartuigen"/>
+        <ingevuld_door>
+          <Zaak rdf:ID="Dier">
+            <vult_in rdf:resource="#Uitzondering_zaak_6_173"/>
+            <rdf:type rdf:resource="#Invulling_beoordelingscriterium"/>
+          </Zaak>
+        </ingevuld_door>
+        <ingevuld_door>
+          <Invulling_beoordelingscriterium rdf:ID="Schepen">
+            <vult_in rdf:resource="#Uitzondering_zaak_6_173"/>
+          </Invulling_beoordelingscriterium>
+        </ingevuld_door>
+      </Wettelijke_uitzondering>
+    </vult_in>
+  </Invulling_beoordelingscriterium>
+  <Uitzondering_producten_6_185 rdf:ID="Bestanddeel_van_het_product"/>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Molest"/>
+  <Misleidende_en_vergelijkende_reclame rdf:ID="Misleidende_reclame">
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame rdf:ID="Openbaarmaking_van_de_mededeling"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame rdf:ID="Misleidend_karakter">
+        <voldoet_aan rdf:resource="#Misleidend_karaktercriterium"/>
+      </Wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_vereiste rdf:resource="#Mededeling_in_de_uitoefening_van_beroep_of_bedrijf"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+  </Misleidende_en_vergelijkende_reclame>
+  <Invulling_beoordelingscriterium rdf:ID="Hoedanigheid_van_de_gegevensverstrekker"/>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Vertegenwoordiging"/>
+  <Invulling_beoordelingscriterium rdf:ID="Mate_van_waarschijnlijkheid_schade"/>
+  <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Niet_voldoen_aan_vereisten">
+    <voldoet_aan rdf:resource="#Eisen_die_men_daaraan_mag_stellen"/>
+  </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+  <Gebrekkig_bestanddeel rdf:ID="Ontwerp_van_het_product"/>
+  <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Tekortkoming"/>
+  <Zuivere_vermogensschade rdf:ID="Milieu">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+    <voldoet_aan>
+      <Invulling_beoordelingscriterium rdf:ID="Aantasting_kwaliteit_van_leven"/>
+    </voldoet_aan>
+  </Zuivere_vermogensschade>
+  <Persoon rdf:ID="Pleger_onrechtmatige_daad">
+    <rdf:type rdf:resource="#Wettelijk_vereiste_persoonlijke_aansprakelijkheid"/>
+  </Persoon>
+  <Onvoldoende_rekening_houden_met_andermans_belangen rdf:ID="Verkeerde_informatie">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Onvoldoende_rekening_houden_met_andermans_belangen>
+  <Rechtvaardigingsgrond_krachtens_wet rdf:ID="Wettelijk_voorschrift"/>
+  <Invulling_beoordelingscriterium rdf:ID="Steun_van_verdenking_in_feitenmateriaal"/>
+  <Uitzondering_producten_6_185 rdf:ID="Overheidstoestemming"/>
+  <Invulling_beoordelingscriterium rdf:ID="Zoeken_van_de_publiciteit"/>
+  <Doorbaak_van_aansprakelijkheid rdf:ID="Gewone_doorbraak_van_aansprakelijkheid">
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+  </Doorbaak_van_aansprakelijkheid>
+  <Aansprakelijkheid_voor_zaken rdf:ID="Aansprakelijkheid_voor_stortplaatsen">
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Exploitant_stortplaats"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_vereiste>
+      <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Verontreiniging"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+  </Aansprakelijkheid_voor_zaken>
+  <Verontschuldigbare_dwaling rdf:ID="Dwaling_omtrent_de_feiten"/>
+  <Kwalitatieve_aansprakelijkheid rdf:ID="Productenaansprakelijkheid">
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_producten rdf:ID="Gebrekkig_product">
+        <voldoet_aan rdf:resource="#Gebrekkig_productcriterium"/>
+      </Wettelijke_vereiste_aansprakelijkheid_voor_producten>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_vereiste>
+      <Wettelijke_vereiste_aansprakelijkheid_voor_producten rdf:ID="Producent">
+        <voldoet_aan rdf:resource="#Producentcriterium"/>
+      </Wettelijke_vereiste_aansprakelijkheid_voor_producten>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+  </Kwalitatieve_aansprakelijkheid>
+  <Invulling_beoordelingscriterium rdf:ID="Onjuistheid_van_de_gegevens"/>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Tenzij_hinder"/>
+  <Zuivere_vermogensschade rdf:ID="Bestuurdersaansprakelijkheid">
+    <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+    <voldoet_aan rdf:resource="#Kenbaarheid"/>
+    <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+  </Zuivere_vermogensschade>
+  <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Roerende_zaak">
+    <voldoet_aan rdf:resource="#Roerende_zaakcriterium"/>
+    <rdf:type rdf:resource="#Zaak"/>
+    <rdf:type rdf:resource="#Invulling_beoordelingscriterium"/>
+  </Wettelijk_vereiste_aansprakelijkheid_voor_zaken>
+  <Uitzondering_producten_6_185 rdf:ID="Aanvankelijk_niet_gebrekkige_producten">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tijdstip waarop hij het product in het verkeer heeft gebracht</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >het gebrek dat de schade heeft veroorzaakt bestond niet op het tijdstip dat het product in het verkeer is gebracht</rdfs:label>
+  </Uitzondering_producten_6_185>
+  <Recht rdf:ID="Grondrecht"/>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Gebruik_gevaarlijke_stof_voor_eigen_bestwil"/>
+  <Invulling_beoordelingscriterium rdf:ID="Blootstelling_aan_verdachtmaking"/>
+  <Invulling_beoordelingscriterium rdf:ID="Onnodig_grievend"/>
+  <Persoonlijke_aansprakelijkheid rdf:ID="Onrechtmatige_daad">
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_vereiste rdf:resource="#Staking"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_vereiste rdf:resource="#Beroepsfout"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_vereiste>
+      <Zuivere_vermogensschade rdf:ID="Niet_nakoming_overeenkomst">
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+      </Zuivere_vermogensschade>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_vereiste>
+      <Wettelijke_plicht rdf:ID="EG_recht"/>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_vereiste rdf:resource="#Bestuurdersaansprakelijkheid"/>
+    <heeft_vereiste rdf:resource="#Verkeerde_informatie"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_vereiste rdf:resource="#Verkeersongeval"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_vereiste rdf:resource="#Gewone_doorbraak_van_aansprakelijkheid"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_vereiste rdf:resource="#Pleger_onrechtmatige_daad"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_vereiste>
+      <Wettelijke_plicht rdf:ID="Vergunningvoorwaarde"/>
+    </heeft_vereiste>
+    <heeft_vereiste rdf:resource="#Norm_ter_bescherming_schade"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <voldoet_aan rdf:resource="#Inbreukcriterium"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_vereiste>
+      <Zuivere_vermogensschade rdf:ID="Vergunning">
+        <voldoet_aan rdf:resource="#Aard_van_de_vergunning"/>
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Omstandigheden_van_het_geval"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+      </Zuivere_vermogensschade>
+    </heeft_vereiste>
+    <heeft_vereiste rdf:resource="#Milieu"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_vereiste>
+      <Zuivere_vermogensschade rdf:ID="Wanprestatie">
+        <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+        <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+        <heeft_vereiste rdf:resource="#Schuld"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+        <rdf:type rdf:resource="#Aansprakeljkheid"/>
+        <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+        <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+        <heeft_vereiste rdf:resource="#Tekortkoming"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+        <heeft_vereiste>
+          <Wettelijk_vereiste_persoonlijke_aansprakelijkheid rdf:ID="Schade"/>
+        </heeft_vereiste>
+        <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+        <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+        <heeft_verband rdf:resource="#Csqn_verband_vestigingsfase"/>
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+        <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+      </Zuivere_vermogensschade>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_vereiste rdf:resource="#Toelaatbaarheid_van_het_gedrag_van_toezichthouders"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_vereiste rdf:resource="#Sport_en_spel"/>
+    <heeft_vereiste rdf:resource="#Algemeen_verbindend_voorschrift"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_vereiste>
+      <Doorbaak_van_aansprakelijkheid rdf:ID="Omgekeerde_doorbraak_van_aansprakelijkheid">
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+      </Doorbaak_van_aansprakelijkheid>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_vereiste rdf:resource="#Oneerlijke_concurrentie"/>
+    <heeft_vereiste rdf:resource="#Formele_wet"/>
+    <heeft_vereiste>
+      <Aantasting_van_de_eer_en_goede_naam rdf:ID="Aantasting_van_de_eer">
+        <voldoet_aan rdf:resource="#Aard_en_de_werkwijze_van_de_media"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+        <voldoet_aan rdf:resource="#Inkleding_van_de_verdenkingen"/>
+        <voldoet_aan rdf:resource="#Gezag_van_de_bron"/>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Voortbestaan_niet_bekende_misstanden"/>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Blootstelling_aan_verdachtmaking"/>
+        <voldoet_aan rdf:resource="#Zoeken_van_de_publiciteit"/>
+        <voldoet_aan rdf:resource="#Beperking_van_het_nadeel_door_perspublicatie"/>
+        <voldoet_aan rdf:resource="#Doel_te_bereiken_via_andere_weg"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Recht_op_vrijheid_van_meningsuiting"/>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Steun_van_verdenking_in_feitenmateriaal"/>
+      </Aantasting_van_de_eer_en_goede_naam>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_vereiste rdf:resource="#Gevaarzetting"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_vereiste>
+      <Verkeer_en_veiligheidsnorm rdf:ID="Leidingschade">
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Onduidelijkheid_van_de_verstrekte_gegevens"/>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Onjuistheid_van_de_gegevens"/>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Veroudering_van_gegevens"/>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Tolerantiegrenzen"/>
+        <voldoet_aan>
+          <Invulling_beoordelingscriterium rdf:ID="Afwijking_van_de_normaalbladen"/>
+        </voldoet_aan>
+        <voldoet_aan rdf:resource="#Afwijking_in_de_gronddekking"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Hoedanigheid_van_de_gegevensverstrekker"/>
+        <voldoet_aan rdf:resource="#Bestaan_van_andere_gegevens"/>
+      </Verkeer_en_veiligheidsnorm>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_vereiste rdf:resource="#Ongelukkige_samenloop_van_omstandigheden"/>
+    <heeft_vereiste rdf:resource="#Onvolledige_informatie"/>
+    <heeft_vereiste>
+      <Zuivere_vermogensschade rdf:ID="Hinder">
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Omstandigheden_van_het_geval"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+        <voldoet_aan rdf:resource="#Ernst_en_duur"/>
+        <voldoet_aan rdf:resource="#Aard_van_de_schade"/>
+      </Zuivere_vermogensschade>
+    </heeft_vereiste>
+    <heeft_vereiste>
+      <Aantasting_van_de_eer_en_goede_naam rdf:ID="Aantasting_van_de_goede_naam">
+        <voldoet_aan rdf:resource="#Gezag_van_de_bron"/>
+        <voldoet_aan rdf:resource="#Doel_te_bereiken_via_andere_weg"/>
+        <voldoet_aan rdf:resource="#Kenbaarheid"/>
+        <voldoet_aan rdf:resource="#Kelderluikcriteria"/>
+        <voldoet_aan rdf:resource="#Beperking_van_het_nadeel_door_perspublicatie"/>
+        <voldoet_aan rdf:resource="#Steun_van_verdenking_in_feitenmateriaal"/>
+        <voldoet_aan rdf:resource="#Inkleding_van_de_verdenkingen"/>
+        <voldoet_aan rdf:resource="#Blootstelling_aan_verdachtmaking"/>
+        <voldoet_aan rdf:resource="#Recht_op_vrijheid_van_meningsuiting"/>
+        <voldoet_aan rdf:resource="#Zoeken_van_de_publiciteit"/>
+        <voldoet_aan rdf:resource="#Aard_en_de_werkwijze_van_de_media"/>
+        <voldoet_aan rdf:resource="#Aard_van_de_geschonden_norm"/>
+        <voldoet_aan rdf:resource="#Voortbestaan_niet_bekende_misstanden"/>
+      </Aantasting_van_de_eer_en_goede_naam>
+    </heeft_vereiste>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+  </Persoonlijke_aansprakelijkheid>
+  <Wettelijke_uitzondering rdf:ID="Uitzondering_ontbreken_aansprakelijkheid_6_162"/>
+  <Wettelijk_vereiste_aansprakelijkheid_voor_zaken rdf:ID="Bezitter_van_een_dier"/>
+  <Invulling_beoordelingscriterium rdf:ID="Gebruiksmogelijkheden"/>
+  <Invulling_beoordelingscriterium rdf:ID="Uitvoerbaarheid_overeenkomst"/>
+  <Schulduitsluitingsgrond rdf:ID="Onbevoegd_gegeven_ambtelijk_bevel"/>
+  <Rechtvaardigingsgrond_krachtens_wet rdf:ID="Noodweer"/>
+  <Wettelijke_uitzondering rdf:ID="Uitzondering_afdeling_6_3_3"/>
+  <Rechtvaardigingsgrond rdf:ID="Ongeschreven_rechtvaardigingsgrond"/>
+  <Omvangsfase rdf:ID="Bewijslast">
+    <voldoet_aan rdf:resource="#Adequatietheorie"/>
+    <voldoet_aan rdf:resource="#Alternatieve_causaliteit"/>
+    <voldoet_aan rdf:resource="#Momentschade"/>
+    <voldoet_aan rdf:resource="#Toerekening_naar_redelijkheid"/>
+    <voldoet_aan rdf:resource="#Onderbreking_van_de_causaliteit"/>
+    <voldoet_aan rdf:resource="#Zaakschade"/>
+    <voldoet_aan rdf:resource="#Statistische_causaliteit"/>
+    <voldoet_aan rdf:resource="#Gelijktijdig_werkende_oorzaak"/>
+  </Omvangsfase>
+  <Rechtvaardigingsgrond_krachtens_wet rdf:ID="Bevoegd_gegeven_ambtelijk_bevel"/>
+  <Niet_commerciele_producten rdf:ID="Niet_in_de_uitoefening_van_beroep_of_bedrijf"/>
+  <Fase rdf:ID="Vestigingsfase">
+    <voldoet_aan rdf:resource="#Csqn_verband_vestigingsfase"/>
+  </Fase>
+  <Wettelijke_vereiste_aansprakelijkheid_voor_personen rdf:ID="Niet_aan_ouders_verwijtbaar_handelen"/>
+  <Misleidende_en_vergelijkende_reclame rdf:ID="Vergelijkende_reclame">
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_vereiste rdf:resource="#Ongeoorloofde_reclame"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+  </Misleidende_en_vergelijkende_reclame>
+  <Uitzondering_6_175_tot_6_177 rdf:ID="Dwingende_overheidsvoorschriften"/>
+  <Aansprakelijkheid_voor_personen rdf:ID="Aansprakelijkheid_voor_vertegenwoordigers">
+    <heeft_relatie_met rdf:resource="#Artikel_6_177"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_191"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_194"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_wet"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_166"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_180"/>
+    <heeft_vereiste rdf:resource="#Relativiteit"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_163"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_174"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_167"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_195"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_181"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_171"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_184"/>
+    <heeft_vereiste rdf:resource="#Doen_in_strijd_met_recht"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_192"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_175"/>
+    <heeft_vereiste rdf:resource="#Nalaten_in_strijd_met_recht"/>
+    <heeft_vereiste rdf:resource="#Toerekening_omvangsfase"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_188"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_164"/>
+    <heeft_vereiste rdf:resource="#Schuld"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_185"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_1622"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_196"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_172"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_189"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_165"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_193"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_178"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_168"/>
+    <heeft_vereiste rdf:resource="#Fout"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_182"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_176"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_190"/>
+    <heeft_vereiste rdf:resource="#Functioneel_verband"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_197"/>
+    <heeft_vereiste rdf:resource="#Causaliteit_vestigingsfase"/>
+    <heeft_vereiste rdf:resource="#Toerekening_krachtens_verkeersopvatting"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_186"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_173"/>
+    <heeft_vereiste rdf:resource="#Vertegenwoordigingscriterium"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_169"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_183"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_179"/>
+    <heeft_relatie_met rdf:resource="#Artikel_6_170"/>
+  </Aansprakelijkheid_voor_personen>
+  <Zaak rdf:ID="Onroerende_zaken">
+    <rdf:type rdf:resource="#Invulling_beoordelingscriterium"/>
+  </Zaak>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->
