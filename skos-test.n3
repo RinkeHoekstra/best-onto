@@ -1,0 +1,37 @@
+# Saved by TopBraid on Fri Apr 24 16:42:19 CEST 2009
+# baseURI: http://www.best-project.org/owl/skos-test.owl
+# imports: http://www.best-project.nl/owl/best.owl
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix :        <http://www.best-project.org/owl/skos-test.owl#> .
+
+<http://www.best-project.org/owl/skos-test.owl>
+      a       owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/best.owl> , <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Broader
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty best:described_by ;
+                owl:someValuesFrom
+                        [ a       owl:Class ;
+                          owl:intersectionOf (<http://www.w3.org/2004/02/skos/core#Concept> [ a       owl:Restriction ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader> ;
+                                      owl:someValuesFrom
+                                              [ a       owl:Class ;
+                                                owl:intersectionOf (<http://www.w3.org/2004/02/skos/core#Concept> [ a       owl:Restriction ;
+                                                            owl:onProperty best:describes ;
+                                                            owl:someValuesFrom owl:Thing
+                                                          ])
+                                              ]
+                                    ])
+                        ]
+              ] .
