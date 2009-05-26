@@ -1,0 +1,5179 @@
+# Saved by TopBraid on Fri Mar 20 15:29:53 CET 2009
+# baseURI: http://www.best-project.nl/owl/leken-vocabulair.owl
+# imports: http://www.best-project.nl/owl/onrechtmatige-daad.owl
+
+@prefix owl2xml:  <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix od:      <http://www.best-project.nl/owl/onrechtmatige-daad.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos:	 <http://www.w3.org/2004/02/skos/core#> .
+@prefix best:	 <http://www.best-project.nl/owl/best.owl#> .
+@prefix ljn:	 <http://www.rechtspraak.nl/ljn#> .
+@prefix lv:	 <http://www.best-project.nl/owl/leken-vocabulair.owl#> .
+@prefix :        <http://www.best-project.nl/owl/leken-vocabulair.owl#> .
+
+<http://www.best-project.nl/owl/leken-vocabulair.owl>
+      a       owl:Ontology ;
+	 owl:imports	 <http://www.w3.org/2004/02/skos/core> ;
+      owl:imports <http://www.best-project.nl/owl/onrechtmatige-daad.owl> .
+
+
+	lv:fingerprint	 a	 owl:ObjectProperty .
+	lv:value	 a	 owl:DatatypeProperty .
+
+	best:describedBy	 a	 owl:ObjectProperty .
+
+	best:describes	 a	 owl:ObjectProperty ;
+			 owl:inverseOf	 best:describedBy .
+
+	best:Case	 a	 owl:Class .
+	best:Concept	 a	 owl:Class .
+
+:aanbieder
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "aanbieder" .
+
+:aangegaan
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "aangegaan" ;
+      :synonym "aangaan" .
+
+:aangelegd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "aangelegd" .
+
+:aangenomen
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "aangenomen" .
+
+:aangetast
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "aangetast" .
+
+:aanhangwagen
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "aanhangwagen" .
+
+:aannemer
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "aannemer" .
+
+:aannemers
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "aannemers" ;
+      :synonym "aannemingsbedrijf" .
+
+:aanneming
+      a       skos:Concept ;
+      skos:broader :opdrachtsituatie ;
+      :prefLabel "aanneming" .
+
+:aanreken
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "aanreken" .
+
+:aanrijding
+      a       skos:Concept ;
+      skos:broader :verkeerssituatie ;
+      :prefLabel "aanrijding" .
+
+:aansprakelijkheid_voor_dieren
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor dieren" .
+
+:aansprakelijkheid_voor_electronisch_rechtsverkeer
+      a       skos:Concept ;
+      skos:broader :kwalitatieve_aansprakelijkheid ;
+      skos:broader
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :algemene_handeling
+              ] ;
+      :prefLabel "aansprakelijkheid voor electronisch rechtsverkeer" .
+
+:aansprakelijkheid_voor_gebrekkige_producten
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor gebrekkige producten" .
+
+:aansprakelijkheid_voor_kinderen
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :hinderhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :verkeershandeling
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor kinderen" .
+
+:aansprakelijkheid_voor_mijnbouwwerken
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor mijnbouwwerken" .
+
+:aansprakelijkheid_voor_misleidende_reclame
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_reclame ;
+      :prefLabel "aansprakelijkheid voor misleidende reclame" .
+
+:aansprakelijkheid_voor_niet-ondergeschikten
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :verkeershandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :wanprestatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor niet-ondergeschikten" .
+
+:aansprakelijkheid_voor_ondergeschikten
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :beslag_gelegd
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :verkeershandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :wanprestatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor ondergeschikten" .
+
+:aansprakelijkheid_voor_opstallen
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor opstallen" .
+
+:aansprakelijkheid_voor_personen
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen_en_zaken ;
+      :prefLabel "aansprakelijkheid voor personen" .
+
+:aansprakelijkheid_voor_personen_en_zaken
+      a       skos:Concept ;
+      skos:broader :kwalitatieve_aansprakelijkheid ;
+      :prefLabel "aansprakelijkheid voor personen en zaken" .
+
+:aansprakelijkheid_voor_producten
+      a       skos:Concept ;
+      skos:broader :kwalitatieve_aansprakelijkheid ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :wanprestatie
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor producten" .
+
+:aansprakelijkheid_voor_reclame
+      a       skos:Concept ;
+      skos:broader :kwalitatieve_aansprakelijkheid ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor reclame" .
+
+:aansprakelijkheid_voor_stoffen
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor stoffen" .
+
+:aansprakelijkheid_voor_stortplaatsen
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_zaken ;
+      :prefLabel "aansprakelijkheid voor stortplaatsen" .
+
+:aansprakelijkheid_voor_vergelijkende_reclame
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_reclame ;
+      :prefLabel "aansprakelijkheid voor vergelijkende reclame" .
+
+:aansprakelijkheid_voor_vertegenwoordigers
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] ;
+      :prefLabel "aansprakelijkheid voor vertegenwoordigers" .
+
+:aansprakelijkheid_voor_zaken
+      a       skos:Concept ;
+      skos:broader :aansprakelijkheid_voor_personen_en_zaken ;
+      :prefLabel "aansprakelijkheid voor zaken" .
+
+:actor
+      a       skos:Concept ;
+      :prefLabel "actor" .
+
+:advertentie
+      a       skos:Concept ;
+      skos:broader :reclame ;
+      :prefLabel "advertentie" .
+
+:advocaat
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "advocaat" .
+
+:aflever
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "aflever" ;
+      :synonym "afgeleverd" .
+
+:afneem
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "afneem" .
+
+:algemeen_object
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "algmeen object" .
+
+:algemeen_persoon
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :doen
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :nalaten
+                          ])
+              ] ;
+      :prefLabel "algemeen persoon" .
+
+:algemene_handeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       skos:Concept ;
+                            owl:intersectionOf ([ a       owl:Restriction ;
+                                        owl:onProperty :heeft_actor ;
+                                        owl:someValuesFrom :actor
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty :heeft_object ;
+                                        owl:someValuesFrom :object
+                                      ])
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :gebeurtenis
+                          ])
+              ] ;
+      :prefLabel "algemene handeling" ;
+      owl:equivalentClass od:goed_houden_voor_een_ander , od:luchtvaartuigen , od:goed_houden_voor_zichzelf , od:eigendomsvoorbehoud .
+
+:ander
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "ander" .
+
+:apparaat
+      a       skos:Concept ;
+      skos:broader :algemeen_object ;
+      :prefLabel "apparaat" .
+
+:appartement
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "appartement" .
+
+:arbeider
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "arbeider" .
+
+:arts
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "arts" .
+
+:atletiek
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "atletiek" .
+
+:aula
+      a       skos:Concept ;
+      skos:broader :schoolomgeving ;
+      :prefLabel "aula" .
+
+:auteursrecht
+      a       skos:Concept ;
+      skos:broader :inbreuksituatie ;
+      :prefLabel "auteursrecht" .
+
+:auto
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "auto" .
+
+:autobedrijf
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "autobedrijf" .
+
+:autobestuurder
+      a       skos:Concept ;
+      skos:broader :verkeersdeelnemer ;
+      :prefLabel "autobestuurder" .
+
+:autoweg
+      a       skos:Concept ;
+      skos:broader :weg ;
+      :prefLabel "autoweg" .
+
+:balkon
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "balkon" .
+
+:bank
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "bank" .
+
+:bar  a       skos:Concept ;
+      skos:broader :horeca ;
+      :prefLabel "bar" .
+
+:barman
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "barman" .
+
+:bebouwde_kom
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "bebouwde kom" .
+
+:bedreig
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "bedreig" .
+
+:bedrijf
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "bedrijf" .
+
+:bedrijfsfout
+      a       skos:Concept ;
+      skos:broader :bedrijfsobject ;
+      :prefLabel "bedrijfsfout" .
+
+:bedrijfsobject
+      a       skos:Concept ;
+      skos:broader :werkobject ;
+      :prefLabel "bedrijfsobject" .
+
+:bedrijfspersoon
+      a       skos:Concept ;
+      skos:broader :werkpersoon ;
+      :prefLabel "bedrijfspersoon" .
+
+:bedrijfsrestaurant
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "bedrijfsrestaurant" .
+
+:bedrijfssituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "bedrijfssituatie" .
+
+:begeleider
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "begeleider" .
+
+:beheer
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "beheer" .
+
+:belemmer
+      a       skos:Concept ;
+      skos:broader :hinderhandeling ;
+      :prefLabel "belemmer" .
+
+:benadeel
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "benadeel" .
+
+:benadeelde
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "benadeelde" .
+
+:benadeling
+      a       skos:Concept ;
+      skos:broader :benadelingsituatie ;
+      :prefLabel "benadeling" .
+
+:benadelingsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "benadelingsituatie" .
+
+:berging
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "berging" .
+
+:berm
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "berm" .
+
+:beroep
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "beroep" .
+
+:beroepsobject
+      a       skos:Concept ;
+      skos:broader :werkobject ;
+      :prefLabel "beroepsobject" .
+
+:beroepspersoon
+      a       skos:Concept ;
+      skos:broader :werkpersoon ;
+      :prefLabel "beroepspersoon" .
+
+:beroepsssituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "beroepssituatie" .
+
+:beroespfout
+      a       skos:Concept ;
+      skos:broader :beroepsobject ;
+      :prefLabel "beroepsfout" .
+
+:beschadig
+      a       skos:Concept ;
+      skos:broader :aangetast ;
+      :prefLabel "beschadig" .
+
+:beschik
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "beschik" .
+
+:beslag_gelegd
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :benadelingsituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :wanprestatiesituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :algemeen_object
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :inboedel
+                          ])
+              ] ;
+      :prefLabel "beslag gelegd" .
+
+:beslaglegging
+      a       skos:Concept ;
+      skos:broader :beslag_gelegd ;
+      :prefLabel "beslaglegging" .
+
+:besloot
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "besloot" ;
+      :synonym "beslis" , "besluit" .
+
+:bestuur
+      a       skos:Concept ;
+      skos:broader :verkeershandeling ;
+      :prefLabel "bestuur" .
+
+:bestuurder
+      a       skos:Concept ;
+      skos:broader :verkeersdeelnemer ;
+      :prefLabel "bestuurder" .
+
+:bestuurshandeling
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "bestuurshandeling" ;
+      :synonym "bestuur" .
+
+:beveiliging
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "beveiliging" .
+
+:beveiligings
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "beveiligings" .
+
+:bezit
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "bezit" .
+
+:bleek
+      a       skos:Concept ;
+      skos:broader :vloeibaar ;
+      :prefLabel "bleek" .
+
+:boerderij
+      a       skos:Concept ;
+      skos:broader :werkomgeving , :woonomgeving ;
+      :prefLabel "boerderij" .
+
+:boks
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "boks" .
+
+:boot
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "boot" .
+
+:bos  a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "bos" .
+
+:bots
+      a       skos:Concept ;
+      skos:broader :verkeershandeling ;
+      :prefLabel "bots" .
+
+:botsing
+      a       skos:Concept ;
+      skos:broader :verkeerssituatie ;
+      :prefLabel "botsing" .
+
+:bouw
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "bouw" .
+
+:bouwkundige
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "bouwkundige" .
+
+:bouwvakker
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "bouwvakker" .
+
+:brandweer
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "brandweer" .
+
+:broer
+      a       skos:Concept ;
+      skos:broader :familie ;
+      :prefLabel "broer" .
+
+:brommer
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "brommer" .
+
+:buren
+      a       skos:Concept ;
+      skos:broader :omwonenden ;
+      :prefLabel "buren" ;
+      :synonym "buurtjes" .
+
+:bus  a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "bus" .
+
+:buurman
+      a       skos:Concept ;
+      skos:broader :buren ;
+      :prefLabel "buurman" ;
+      :synonym "buum" .
+
+:buurthuis
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "buurthuis" .
+
+:buurvrouw
+      a       skos:Concept ;
+      skos:broader :buren ;
+      :prefLabel "buurvrouw" ;
+      :synonym "buuv" .
+
+:cafe
+      a       skos:Concept ;
+      skos:broader :horeca ;
+      :prefLabel "cafe" .
+
+:cafehouder
+      a       skos:Concept ;
+      skos:broader :barman ;
+      :prefLabel "cafehouder" .
+
+:chauffeur
+      a       skos:Concept ;
+      skos:broader :verkeersdeelnemer ;
+      :prefLabel "chauffeur" .
+
+:chirurg
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "chirurg" .
+
+:chloor
+      a       skos:Concept ;
+      skos:broader :vloeibaar , :gas ;
+      :prefLabel "chloor" .
+
+:club
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving ;
+      :prefLabel "club" .
+
+:clubhuis
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "clubhuis" .
+
+:commercial
+      a       skos:Concept ;
+      skos:broader :reclame ;
+      :prefLabel "commercial" .
+
+:concurreer
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "concurreer" .
+
+:conferentieoord
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "conferentieoord" .
+
+:crediteur
+      a       skos:Concept ;
+      skos:broader :benadelingsituatie ;
+      :prefLabel "crediteur" .
+
+:dag  a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "dag" .
+
+:dakgoot
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "dakgoot" .
+
+:dakpan
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "dakpan" .
+
+:dealer
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "dealer" .
+
+:destijds
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "destijds" .
+
+:deurwaarder
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "deurwaarder" .
+
+:dienstverbandobject
+      a       skos:Concept ;
+      skos:broader :werkobject ;
+      :prefLabel "dienstverbandobject" .
+
+:dienstverbandpersoon
+      a       skos:Concept ;
+      skos:broader :werkpersoon ;
+      :prefLabel "dienstverbandpersoon" .
+
+:dienstverbandsituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "dienstverbandsituatie" .
+
+:dieren
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "dieren" ;
+      :synonym "beesten" .
+
+:dierobject
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "dierobject" .
+
+:dieromgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :synonym "dieromgeving" .
+
+:diersituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :dieromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :natuuromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "diersituatie" .
+
+:dijk
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "dijk" .
+
+:directeur
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "directeur" ;
+      :synonym "directrice" .
+
+:dochter
+      a       skos:Concept ;
+      skos:broader :kind ;
+      :prefLabel "dochter" .
+
+:doen
+      a       skos:Concept ;
+      skos:broader :handeling ;
+      :prefLabel "doen" .
+
+:dokter
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "dokter" .
+
+:duur
+      a       skos:Concept ;
+      skos:broader :tijdstip ;
+      :prefLabel "duur" .
+
+:duw  a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "duw" .
+
+:eend
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "eend" .
+
+:eerder
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "eerder" .
+
+:effectenhandel
+      a       skos:Concept ;
+      skos:broader :zorgplichtsituatie ;
+      :prefLabel "effectenhandel" .
+
+:effectenlease
+      a       skos:Concept ;
+      skos:broader :zorgplichtsituatie ;
+      :prefLabel "effectenlease" .
+
+:eigenaar
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "eigenaar" .
+
+:eigendom
+      a       skos:Concept ;
+      skos:broader :inbreuksituatie , :bezit ;
+      :prefLabel "eigendom" .
+
+:eindeloos
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "eindeloos" .
+
+:eiser
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "eiser" .
+
+:electricien
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "electricien" .
+
+:electriciteit
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "electriciteit" .
+
+:energie
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "energie" .
+
+:erf  a       skos:Concept ;
+      skos:broader :natuuromgeving , :werkomgeving , :woonomgeving ;
+      :prefLabel "erf" .
+
+:evenement
+      a       skos:Concept ;
+      skos:broader :sportsituatie ;
+      :prefLabel "evenement" .
+
+:familie
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :verkeershandeling
+                          ])
+              ] ;
+      :prefLabel "familie" .
+
+:familielid
+      a       skos:Concept ;
+      skos:broader :familie ;
+      :prefLabel "familielid" .
+
+:feestganger
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving_persoon ;
+      :prefLabel "feestganger" .
+
+:fiets
+      a       skos:Concept ;
+      skos:broader :verkeershandeling , :sporthandeling , :verkeersobject ;
+      :prefLabel "fiets" .
+
+:fietser
+      a       skos:Concept ;
+      skos:broader :verkeersdeelnemer ;
+      :prefLabel "fietser" .
+
+:fitness
+      a       skos:Concept ;
+      skos:broader :sportschool ;
+      :prefLabel "fitness" .
+
+:fitnesshal
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "fitnesshal" .
+
+:flat
+      a       skos:Concept ;
+      skos:broader :woonomgeving .
+
+:ga   a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "ga" .
+
+:gans
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "gans" .
+
+:garage
+      a       skos:Concept ;
+      skos:broader :werkomgeving , :bedrijfspersoon , :woonomgeving ;
+      :prefLabel "garage" .
+
+:garantie
+      a       skos:Concept ;
+      skos:broader :product ;
+      :prefLabel "garantie" .
+
+:gas  a       skos:Concept ;
+      skos:broader :stoffen ;
+      :prefLabel "gas" .
+
+:gebeten
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "gebeten" ;
+      :synonym "bijt" , "beet" .
+
+:gebeur
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "gebeur" .
+
+:gebeurtenis
+      a       skos:Concept ;
+      :prefLabel "gebeurtenis" .
+
+:gebouw
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "gebouw" .
+
+:gebruik
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "gebruik" .
+
+:gedurende
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "gedurende" .
+
+:geef
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "geef" .
+
+:geinstalleerd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "geinstalleerd" ;
+      :synonym "installeer" , "installeren" .
+
+:gekrabt
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "gekrabt" .
+
+:geleden
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "geleden" .
+
+:geluid
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "geluid" .
+
+:gemaak
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "gemaak" .
+
+:gemaakt
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :synonym "gemaakt" .
+
+:geproduceerd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "geproduceerd" ;
+      :synonym "produceer" .
+
+:gepubliceerd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "gepubliceerd" ;
+      :synonym "publiceer" .
+
+:getrapt
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "getrapt" ;
+      :synonym "trappen" .
+
+:gevaarshandeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :gebeurtenis
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :gevaarsituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :spelsituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :sportsituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :verkeerssituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :werkhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :algemeen_object
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :opstalobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :productobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :verkeersobject
+                          ])
+              ] ;
+      :prefLabel "gevaarshandeling" .
+
+:gevaarsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :natuuromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :schoolomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :sociale_omgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :verkeersomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :woonomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "gevaarsituatie" .
+
+:gevlucht
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "gevlucht" .
+
+:gevolg
+      a       skos:Concept ;
+      :prefLabel "gevolg" .
+
+:golf
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "golf" .
+
+:gooi
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "gooi" .
+
+:gras
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "gras" .
+
+:grootouder
+      a       skos:Concept ;
+      skos:broader :familie ;
+      :prefLabel "grootouder" .
+
+:gym  a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "gym" .
+
+:gymleraar
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "gymleraar" ;
+      :synonym "gymlerares" .
+
+:gymzaal
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "gymzaal" .
+
+:haan
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "haan" .
+
+:haar
+      a       skos:Concept ;
+      skos:broader :eigendom ;
+      :prefLabel "haar" .
+
+:handbal
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "handbal" .
+
+:handeling
+      a       skos:Concept ;
+      :prefLabel "handeling" .
+
+:handels
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "handels" .
+
+:heb  a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "heb" .
+
+:heide
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "heide" .
+
+:hek  a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "hek" .
+
+:help
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "help" .
+
+:hij  a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "hij" .
+
+:hinderhandeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :hindersituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :algemeen_object
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :dierobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :opstalobject
+                          ])
+              ] ;
+      :prefLabel "hinderhandeling" .
+
+:hindersituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :dieromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :verkeersomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :woonomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "hindersituatie" .
+
+:hockey
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "hockey" .
+
+:hond
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "hond" .
+
+:horeca
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "horeca" .
+
+:hotel
+      a       skos:Concept ;
+      skos:broader :horeca ;
+      :prefLabel "hotel" ;
+      :synonym "pension" , "herberg" .
+
+:houd
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "houd" .
+
+:huis
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "huis" .
+
+:huishoudster
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "huishoudster" .
+
+:huurder
+      a       skos:Concept ;
+      skos:broader :omwonenden ;
+      :prefLabel "huurder" .
+
+:iemand
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "iemand" .
+
+:ik   a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "ik" .
+
+:in   a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "in" .
+
+:inacht_neem
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "inacht neem" .
+
+:inboedel
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "inboedel" .
+
+:inbreukhandeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      skos:broader
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_gebeurtenis ;
+                owl:someValuesFrom :inbreuksituatie
+              ] ;
+      :prefLabel "inbreukhandeling" ;
+      owl:equivalentClass od:recht_op_vrijheid_van_meningsuiting , od:intensiteit_van_de_inbreuk , od:aard_en_de_werkwijze_van_de_media .
+
+:inbreuksituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      :prefLabel "inbreuksituatie" .
+
+:inlener
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "inlener" .
+
+:installateur
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "installateur" .
+
+:installatie
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "installatie" .
+
+:instructeur
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "instructeur" ;
+      :synonym "instructrice" .
+
+:is   a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "is" .
+
+:jaar
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "jaar" .
+
+:jij  a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "jij" .
+
+:jongen
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "jongen" .
+
+:jongere
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "jongere" .
+
+:jullie
+      a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "jullie" .
+
+:kPN  a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "KPN" .
+
+:kaart
+      a       skos:Concept ;
+      skos:broader :algemeen_object ;
+      :prefLabel "kaart" .
+
+:kan  a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "kan" .
+
+:kanaal
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "kanaal" .
+
+:kantine
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving , :werkomgeving , :schoolomgeving ;
+      :prefLabel "kantine" .
+
+:kantoor
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "kantoor" .
+
+:kapot
+      a       skos:Concept ;
+      skos:broader :aangetast ;
+      :prefLabel "kapot" .
+
+:kat  a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "kat" .
+
+:kennis
+      a       skos:Concept ;
+      skos:broader :vrienden ;
+      :prefLabel "kennis" .
+
+:kind
+      a       skos:Concept ;
+      skos:broader :familie , :algemeen_persoon ;
+      :prefLabel "kind" .
+
+:kip  a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "kip" .
+
+:klimmen
+      a       skos:Concept ;
+      skos:broader :spelsituatie ;
+      :prefLabel "klimmen" .
+
+:kliniek
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "kliniek" .
+
+:klus
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "klus" .
+
+:kom  a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "kom" .
+
+:kopieer
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "kopieer" .
+
+:korfbal
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "korfbal" .
+
+:kort
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "kort" .
+
+:kortstondig
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "kortstondig" .
+
+:kroeg
+      a       skos:Concept ;
+      skos:broader :horeca ;
+      :prefLabel "kroeg" .
+
+:kunstenaar
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "kunstenaar" .
+
+:kwalitatieve_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "kwalitatieve aansprakelijkheid" .
+
+:kwijt_geraakt
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "kwijt geraakt" ;
+      :synonym "kwijtgeraakt" .
+
+:lang
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "lang" .
+
+:lastigval
+      a       skos:Concept ;
+      skos:broader :hinderhandeling ;
+      :prefLabel "lastigval" .
+
+:lawaai
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "lawaai" .
+
+:leef
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "leef" .
+
+:leiding
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "leiding" .
+
+:leidinggevende
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "leidinggevende" .
+
+:leraar
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "leraar" ;
+      :synonym "lerares" .
+
+:licht
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "licht" .
+
+:liep
+      a       skos:Concept ;
+      skos:broader :verkeershandeling ;
+      :prefLabel "liep" ;
+      :synonym "loop" .
+
+:lift
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "lift" .
+
+:lokaal
+      a       skos:Concept ;
+      skos:broader :schoolomgeving ;
+      :prefLabel "lokaal" .
+
+:loodgieter
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "loodgieter" .
+
+:loodgieters
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "loodgieters" .
+
+:loop
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "loop" .
+
+:maak
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "maak" .
+
+:maand
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "maand" .
+
+:mag  a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "mag" .
+
+:makelaar
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "makelaar" .
+
+:makelaars
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "makelaars" .
+
+:man  a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "man" .
+
+:manager
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "manager" .
+
+:manege
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "manege" .
+
+:meer
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "meer" .
+
+:meisje
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "meisje" .
+
+:meneer
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "meneer" .
+
+:meningsuiting
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "meningsuiting" .
+
+:metro
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "metro" .
+
+:metselaar
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "metselaar" .
+
+:meubel
+      a       skos:Concept ;
+      skos:broader :inboedel ;
+      :prefLabel "meubel" .
+
+:mevrouw
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "mevrouw" .
+
+:middel
+      a       skos:Concept ;
+      :prefLabel "middel" .
+
+:mijn
+      a       skos:Concept ;
+      skos:broader :bezit ;
+      :prefLabel "mijn" .
+
+:milieusituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :natuuromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "milieusituatie" .
+
+:minderjarige
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "minderjarige" .
+
+:moeder
+      a       skos:Concept ;
+      skos:broader :ouder ;
+      :prefLabel "moeder" .
+
+:moment
+      a       skos:Concept ;
+      skos:broader :tijdstip ;
+      :prefLabel "moment" .
+
+:montage
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "montage" .
+
+:monteur
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "monteur" .
+
+:motor
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "motor" .
+
+:nakom
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "nakom" ;
+      :synonym "nagekomen" .
+
+:nalaten
+      a       skos:Concept ;
+      skos:broader :handeling ;
+      :prefLabel "nalaten" .
+
+:namaak
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "namaak" .
+
+:natuuromgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "natuuromgeving" .
+
+:neem
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "neem" .
+
+:net  a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "net" .
+
+:niet-nagekomen
+      a       skos:Concept ;
+      skos:broader :wanprestatiesituatie ;
+      :prefLabel "niet-nagekomen" ;
+      :synonym "niet-nakomen" .
+
+:niet_nakom
+      a       skos:Concept ;
+      skos:broader :wanprestatie ;
+      :prefLabel "niet nakom" ;
+      :synonym "niet nagekomen" .
+
+:niet_overeenkomstig
+      a       skos:Concept ;
+      skos:broader :wanprestatie ;
+      :prefLabel "niet overeenkomstig" .
+
+:notaris
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "notaris" .
+
+:nuon
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "Nuon" .
+
+:object
+      a       skos:Concept ;
+      :prefLabel "object" .
+
+:oma  a       skos:Concept ;
+      skos:broader :grootouder ;
+      :prefLabel "oma" .
+
+:omval
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "omval" .
+
+:omwonenden
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving_persoon ;
+      :prefLabel "omwonenden" .
+
+:onderopdracht
+      a       skos:Concept ;
+      skos:broader :opdrachtsituatie ;
+      :prefLabel "onderopdracht" .
+
+:ongeluk
+      a       skos:Concept ;
+      skos:broader :verkeerssituatie ;
+      :prefLabel "ongeluk" .
+
+:ongeval
+      a       skos:Concept ;
+      skos:broader :verkeerssituatie ;
+      :prefLabel "ongeval" .
+
+:ons  a       skos:Concept ;
+      skos:broader :bezit ;
+      :prefLabel "ons" .
+
+:ontneem
+      a       skos:Concept ;
+      skos:broader :hinderhandeling ;
+      :altLabel "ontneemt" ;
+      :prefLabel "ontneem" .
+
+:ontvlambaar
+      a       skos:Concept ;
+      skos:broader :stoffen ;
+      :prefLabel "ontvlambaar" ;
+      :synonym "brandbaar" .
+
+:op_hol_geslagen
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "op hol geslagen" .
+
+:opa  a       skos:Concept ;
+      skos:broader :grootouder ;
+      :prefLabel "opa" .
+
+:opdracht
+      a       skos:Concept ;
+      skos:broader :opdrachtsituatie , :werkhandeling ;
+      :prefLabel "opdracht" .
+
+:opdrachtsituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "opdrachtsituatie" .
+
+:opeenvolgend
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "opeenvolgend" .
+
+:opgedragen
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "opgedragen" ;
+      :synonym "opdraag" .
+
+:opgevolgd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "opgevolgd" ;
+      :synonym "opvolg" .
+
+:ophaal
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "ophaal" ;
+      :synonym "opgehaald" .
+
+:opleidings
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "opleidingsbedrijf" ;
+      :synonym "opleidingscentrum" .
+
+:opstalobject
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "opstalobject" .
+
+:opstalsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :woonomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "opstalsituatie" .
+
+:optiehandel
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "optiehandel" .
+
+:opvang
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "opval" .
+
+:organisator
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "organisator" .
+
+:ouder
+      a       skos:Concept ;
+      skos:broader :familie , :algemeen_persoon ;
+      :prefLabel "ouder" .
+
+:overeenkom
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "overeenkom" .
+
+:overeenkomst
+      a       skos:Concept ;
+      skos:broader :zorgplicht ;
+      :prefLabel "overeenkomst" .
+
+:overgelaten
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "overgelaten" ;
+      :synonym "overlaat" , "overlaten" .
+
+:overlast
+      a       skos:Concept ;
+      skos:broader :hindersituatie ;
+      :prefLabel "overlast" .
+
+:paard
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "paard" .
+
+:pand
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "pand" .
+
+:park
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "park" .
+
+:pedagoog
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "pedagoog" .
+
+:personeel
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "personeel" .
+
+:persoonsvorm
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :doen
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :nalaten
+                          ])
+              ] ;
+      :prefLabel "persoonsvorm" .
+
+:plaats
+      a       skos:Concept ;
+      :prefLabel "plaats" .
+
+:plantsoen
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "plantsoen" .
+
+:plas
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "plas" .
+
+:poep
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "poep" .
+
+:politie
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "politie" .
+
+:pretpark
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving ;
+      :prefLabel "pretpark" .
+
+:privacy
+      a       skos:Concept ;
+      skos:broader :inbreuksituatie ;
+      :prefLabel "privacy" .
+
+:privesfeer
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "privesfeer" .
+
+:probeer
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "probeer" ;
+      :synonym "tracht" .
+
+:product
+      a       skos:Concept ;
+      skos:broader :algemeen_object , :productobject , :productsituatie ;
+      :prefLabel "product" .
+
+:productobject
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "productobject" .
+
+:productsituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "productsituatie" .
+
+:programmeur
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "programmeur" .
+
+:provider
+      a       skos:Concept ;
+      rdfs:comment ""^^xsd:string ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "provider" .
+
+:psychiater
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "psychiater" .
+
+:psycholoog
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "psycholoog" .
+
+:publiceer
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "publiceer" .
+
+:raak
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "raak" .
+
+:reclame
+      a       skos:Concept ;
+      skos:broader :reclamesituatie , :productobject ;
+      :prefLabel "reclame" .
+
+:reclamesituatie
+      a       skos:Concept ;
+      skos:broader :werksituatie ;
+      :prefLabel "reclamesituatie" .
+
+:regenpijp
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "regenpijp" .
+
+:rem  a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "rem" .
+
+:ren  a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "ren" .
+
+:restaurant
+      a       skos:Concept ;
+      skos:broader :horeca ;
+      :prefLabel "restaurant" .
+
+:restauratie
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "restauratie" .
+
+:rijd
+      a       skos:Concept ;
+      skos:broader :verkeershandeling ;
+      :prefLabel "rijd" .
+
+:riool
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "riool" .
+
+:rivier
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "rivier" .
+
+:rotzooi
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "rotzooi" .
+
+:schaats
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "schaats" .
+
+:schend
+      a       skos:Concept ;
+      skos:broader :inbreukhandeling ;
+      :prefLabel "schend" .
+
+:schieten
+      a       skos:Concept ;
+      skos:broader :spelsituatie ;
+      :prefLabel "schieten" .
+
+:schilder
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "schilder" .
+
+:schommel
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "schommel" .
+
+:schoolomgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "schoolomgeving" .
+
+:schoolplein
+      a       skos:Concept ;
+      skos:broader :schoolomgeving ;
+      :prefLabel "schoolplein" .
+
+:schoonmaker
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "schoonmaker" ;
+      :synonym "schoonmaakster" .
+
+:schuldeiser
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "schuldeiser" .
+
+:schuldenaar
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "schuldenaar" .
+
+:schutting
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "schutting" .
+
+:schuur
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "schuur" .
+
+:secretaresse
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "secretaresse" .
+
+:sinds
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "sinds" .
+
+:skeeler
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "skeeler" .
+
+:slachtoffer
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "slachtoffer" .
+
+:sluis
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "sluis" .
+
+:snelweg
+      a       skos:Concept ;
+      skos:broader :weg ;
+      :prefLabel "snelweg" .
+
+:sociale_omgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "sociale omgeving" .
+
+:sociale_omgeving_persoon
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :hinderhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :verkeershandeling
+                          ])
+              ] ;
+      :prefLabel "sociale omgeving persoon" .
+
+:speelgoed
+      a       skos:Concept ;
+      skos:broader :algemeen_object ;
+      :prefLabel "speelgoed" .
+
+:speeltuin
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving ;
+      :prefLabel "speeltuin" .
+
+:spelen
+      a       skos:Concept ;
+      skos:broader :spelsituatie ;
+      :prefLabel "spelen" .
+
+:spelsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :natuuromgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :schoolomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :sociale_omgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :woonomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "spelsituatie" .
+
+:spiritus
+      a       skos:Concept ;
+      skos:broader :vloeibaar , :ontvlambaar ;
+      :prefLabel "spiritus" .
+
+:sporthal
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "sporthal" .
+
+:sporthandeling
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "sporthandeling" .
+
+:sportomgeving
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving ;
+      :prefLabel "sportomgeving" .
+
+:sportschool
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "sportschool" .
+
+:sportsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :sociale_omgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "sportsituatie" .
+
+:sportveld
+      a       skos:Concept ;
+      skos:broader :sportomgeving ;
+      :prefLabel "sportveld" .
+
+:spot
+      a       skos:Concept ;
+      skos:broader :reclame ;
+      :prefLabel "spot" .
+
+:sprong
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "sprong" ;
+      :synonym "spring" .
+
+:stagiair
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "stagiair" .
+
+:staking
+      a       skos:Concept ;
+      skos:broader :stakingssituatie ;
+      :prefLabel "staking" .
+
+:stakingssituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "stakingsituatie" .
+
+:stal
+      a       skos:Concept ;
+      skos:broader :dieromgeving ;
+      :prefLabel "stal" .
+
+:stoep
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "stoep" .
+
+:stof
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "stof" .
+
+:stoffen
+      a       skos:Concept ;
+      skos:broader :algemeen_object ;
+      :prefLabel "stoffen" .
+
+:stoten
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "stoten" .
+
+:straat
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "straat" .
+
+:tPG  a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "TPG" .
+
+:taak
+      a       skos:Concept ;
+      skos:broader :opdrachtsituatie ;
+      :prefLabel "taak" .
+
+:tegengegaan
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "tegengegaan" ;
+      :synonym "tegengaan" .
+
+:teken
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "teken" .
+
+:telefonist
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "telefonist" ;
+      :synonym "telefoniste" .
+
+:tennis
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "tennis" .
+
+:therapeut
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "therapeut" .
+
+:tijdens
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "tijdens" .
+
+:tijdstip
+      a       skos:Concept ;
+      :prefLabel "tijdstip" .
+
+:toen
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "toen" .
+
+:toereken
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "toereken" ;
+      :synonym "toegerekend" .
+
+:toernooi
+      a       skos:Concept ;
+      skos:broader :sportsituatie ;
+      :prefLabel "toernooi" .
+
+:tractor
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "tractor" .
+
+:trainer
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "trainer" .
+
+:tram
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "tram" .
+
+:trap
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "trap" .
+
+:tref
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "tref" ;
+      :synonym "getroffen" .
+
+:trillingen
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "trilling" .
+
+:troep
+      a       skos:Concept ;
+      skos:broader :overlast ;
+      :prefLabel "troep" .
+
+:tunnel
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "tunnel" .
+
+:turn
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "turn" .
+
+:uPC  a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "UPC" .
+
+:uitgevoerd
+      a       skos:Concept ;
+      skos:broader :werkhandeling ;
+      :prefLabel "uitgevoerd" ;
+      :synonym "uitvoer" .
+
+:uitlener
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "uitlener" .
+
+:uitlokking
+      a       skos:Concept ;
+      skos:broader :wanprestatiesituatie ;
+      :prefLabel "utlokking" ;
+      :synonym "uitlokken" , "uitgelokt" .
+
+:uitsmijter
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "uitsmijter" .
+
+:uitzendbureau
+      a       skos:Concept ;
+      skos:broader :bedrijfspersoon ;
+      :prefLabel "uitzendbureau" ;
+      :synonym "uitzendburo" .
+
+:uitzendkracht
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "uitzendkracht" .
+
+:vader
+      a       skos:Concept ;
+      skos:broader :ouder ;
+      :prefLabel "vader" .
+
+:vakantiewoning
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving ;
+      :prefLabel "vakantiewoning" ;
+      :synonym "vakantiehuis" , "vakantiehuisje" .
+
+:val  a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "val" .
+
+:vang
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "vang" .
+
+:varken
+      a       skos:Concept ;
+      skos:broader :dierobject ;
+      :prefLabel "varken" .
+
+:vergelijking
+      a       skos:Concept ;
+      skos:broader :reclame ;
+      :prefLabel "vergelijking" .
+
+:verhuur
+      a       skos:Concept ;
+      skos:broader :inbreuksituatie ;
+      :prefLabel "verhuur" .
+
+:verkeersbord
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "verkeersbord" .
+
+:verkeersdeelnemer
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :verkeershandeling
+                          ])
+              ] ;
+      :prefLabel "verkeersdeelnemer" .
+
+:verkeershandeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :verkeerssituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :verkeersobject
+                          ])
+              ] ;
+      :prefLabel "verkeershandeling" .
+
+:verkeersobject
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "verkeersobject" .
+
+:verkeersomgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "verkeersomgeving" .
+
+:verkeersregel
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "verkeersregel" .
+
+:verkeerssituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :verkeersomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "verkeersituatie" .
+
+:verkoper
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "verkoper" ;
+      :synonym "verkoopster" .
+
+:verniel
+      a       skos:Concept ;
+      skos:broader :aangetast ;
+      :prefLabel "verniel" .
+
+:vernietig
+      a       skos:Concept ;
+      skos:broader :aangetast ;
+      :prefLabel "vernietig" .
+
+:verontreiniging
+      a       skos:Concept ;
+      skos:broader :milieusituatie ;
+      :prefLabel "verontreiniging" .
+
+:veroorzaak
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "veroorzaak" .
+
+:verpacht
+      a       skos:Concept ;
+      skos:broader :inbreuksituatie ;
+      :prefLabel "verpacht" .
+
+:verpleger
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "verpleger" ;
+      :synonym "verpleegster" .
+
+:verstoppertje
+      a       skos:Concept ;
+      skos:broader :spelsituatie ;
+      :prefLabel "verstoppertje" .
+
+:vertegenwoordiger
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "vertegenwoordiger" .
+
+:verwacht
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "verwacht" .
+
+:verwijder
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "verwijder" .
+
+:vloeibaar
+      a       skos:Concept ;
+      skos:broader :stoffen ;
+      :prefLabel "vloeibaar" .
+
+:vluchtheuvel
+      a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "vluchtheuvel" .
+
+:voetbal
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "voetbal" .
+
+:voetganger
+      a       skos:Concept ;
+      skos:broader :verkeersdeelnemer ;
+      :prefLabel "voetganger" .
+
+:voogd
+      a       skos:Concept ;
+      skos:broader :familie , :algemeen_persoon ;
+      :prefLabel "voogd" .
+
+:voorkom
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "voorkom" .
+
+:voortdurend
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "voortdurend" .
+
+:voorzie
+      a       skos:Concept ;
+      skos:broader :algemene_handeling ;
+      :prefLabel "voorzie" .
+
+:vordering
+      a       skos:Concept ;
+      skos:broader :benadelingsituatie ;
+      :prefLabel "vordering" .
+
+:vrachtauto
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "vrachtauto" .
+
+:vrachtwagen
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "vrachtwagen" .
+
+:vriend
+      a       skos:Concept ;
+      skos:broader :vrienden ;
+      :prefLabel "vriend" .
+
+:vrienden
+      a       skos:Concept ;
+      skos:broader :sociale_omgeving_persoon ;
+      :prefLabel "vrienden" .
+
+:vriendin
+      a       skos:Concept ;
+      skos:broader :vrienden ;
+      :prefLabel "vriendin" .
+
+:vroeger
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "vroeger" .
+
+:vrouw
+      a       skos:Concept ;
+      skos:broader :algemeen_persoon ;
+      :prefLabel "vrouw" .
+
+:vuilniswagen
+      a       skos:Concept ;
+      skos:broader :verkeersobject ;
+      :prefLabel "vuilniswagen" .
+
+:vuurtje_stoken
+      a       skos:Concept ;
+      skos:broader :spelsituatie ;
+      :prefLabel "vuurtje stoken" .
+
+:waarschuw
+      a       skos:Concept ;
+      skos:broader :nalaten ;
+      :prefLabel "waarschuw" ;
+      :synonym "gewaarschuwd" .
+
+:wanprestatie
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :wanprestatiesituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :opstalobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :productobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :verkeersobject
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :werkobject
+                          ])
+              ] ;
+      :prefLabel "wanprestatie" .
+
+:wanprestatiesituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :woonomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "wanprestatiesituatie" .
+
+:water
+      a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "water" .
+
+:webdesigner
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "webdesigner" .
+
+:wedstrijd
+      a       skos:Concept ;
+      skos:broader :sportsituatie ;
+      :prefLabel "wedstrijd" .
+
+:week
+      a       skos:Concept ;
+      skos:broader :moment ;
+      :prefLabel "week" .
+
+:weg  a       skos:Concept ;
+      skos:broader :verkeersomgeving ;
+      :prefLabel "weg" .
+
+:wegdek
+      a       skos:Concept ;
+      skos:broader :opstalobject ;
+      :prefLabel "wegdek" .
+
+:weggelopen
+      a       skos:Concept ;
+      skos:broader :diersituatie ;
+      :prefLabel "weggelopen" .
+
+:weide
+      a       skos:Concept ;
+      skos:broader :dieromgeving ;
+      :prefLabel "weide" ;
+      :synonym "wei" .
+
+:werkgever
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "werkgever" .
+
+:werkhandeling
+      a       skos:Concept ;
+      skos:broader :doen ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_gebeurtenis ;
+                            owl:someValuesFrom :werksituatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :inboedel
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_object ;
+                            owl:someValuesFrom :werkobject
+                          ])
+              ] ;
+      :prefLabel "werkhandeling" ;
+      owl:equivalentClass od:kansvergroting , od:werkzaamheden_met_een_incidenteel_karakter , od:gezagsverhouding , od:hulppersonen , od:afwijking_van_de_normaalbladen , od:praktische_indicatoren , od:tijdstip_van_de_fout , od:krachtens_volmacht , od:zeggenschap , od:redelijk_bekwaam_vakgenoot , od:betalingsvoorwaarden , od:beschermingsbehoefte , od:producent_van_een_grondstof , od:opgedragen_taak .
+
+:werknemer
+      a       skos:Concept ;
+      skos:broader :dienstverbandpersoon ;
+      :prefLabel "werknemer" .
+
+:werkobject
+      a       skos:Concept ;
+      skos:broader :object ;
+      :prefLabel "werkobject" .
+
+:werkomgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "werkomgeving" .
+
+:werkpersoon
+      a       skos:Concept ;
+      skos:broader :actor ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :beslag_gelegd
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :doen
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :verkeershandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :wanprestatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_actor_van ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] ;
+      :prefLabel "werkpersoon" .
+
+:werksituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ])
+              ] ;
+      :prefLabel "werksituatie" .
+
+:werp
+      a       skos:Concept ;
+      skos:broader :gevaarshandeling ;
+      :prefLabel "werp" ;
+      :synonym "wierp" .
+
+:wij  a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "wij" .
+
+:wijkt_af
+      a       skos:Concept ;
+      skos:broader :wanprestatie ;
+      :prefLabel "wijkt af" .
+
+:woning
+      a       skos:Concept ;
+      skos:broader :woonomgeving ;
+      :prefLabel "woning" .
+
+:woonomgeving
+      a       skos:Concept ;
+      skos:broader :plaats ;
+      :prefLabel "woonomgeving" .
+
+:zaal
+      a       skos:Concept ;
+      skos:broader :schoolomgeving ;
+      :prefLabel "zaal" .
+
+:ze   a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "ze" .
+
+:zee  a       skos:Concept ;
+      skos:broader :natuuromgeving ;
+      :prefLabel "zee" .
+
+:zeil
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "zeil" .
+
+:ziekenhuis
+      a       skos:Concept ;
+      skos:broader :werkomgeving ;
+      :prefLabel "ziekenhuis" .
+
+:zij  a       skos:Concept ;
+      skos:broader :persoonsvorm ;
+      :prefLabel "zij" .
+
+:zijn
+      a       skos:Concept ;
+      skos:broader :eigendom ;
+      :prefLabel "zijn" .
+
+:zo_lang
+      a       skos:Concept ;
+      skos:broader :duur ;
+      :prefLabel "zo lang" .
+
+:zoon
+      a       skos:Concept ;
+      skos:broader :kind ;
+      :prefLabel "zoon" .
+
+:zorger
+      a       skos:Concept ;
+      skos:broader :beroepspersoon ;
+      :prefLabel "zorger" ;
+      :synonym "verzorger" , "verzorgster" .
+
+:zorgplicht
+      a       skos:Concept ;
+      skos:broader :doen ;
+      :prefLabel "zorgplicht" .
+
+:zorgplichtsituatie
+      a       skos:Concept ;
+      skos:broader :gebeurtenis ;
+      a
+              [ a       owl:Class ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_plaats ;
+                            owl:someValuesFrom :werkomgeving
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_tijdstip ;
+                            owl:someValuesFrom :tijdstip
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_gebeurtenis_van ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_gebeurtenis_van ;
+                            owl:someValuesFrom :wanprestatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_gebeurtenis_van ;
+                            owl:someValuesFrom :werkhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :is_gevolg_van ;
+                            owl:someValuesFrom :gevolg
+                          ])
+              ] ;
+      :prefLabel "zorgplichtsituatie" .
+
+:zus  a       skos:Concept ;
+      skos:broader :familie ;
+      :prefLabel "zus" .
+
+:zuster
+      a       skos:Concept ;
+      skos:broader :zorger ;
+      :prefLabel "zuster" ;
+      :synonym "broeder" .
+
+:zwem
+      a       skos:Concept ;
+      skos:broader :sporthandeling ;
+      :prefLabel "zwem" .
+
+:altLabel
+      a       owl:AnnotationProperty .
+
+:heeft_actor
+      a       owl:ObjectProperty ;
+      rdfs:domain :handeling ;
+      rdfs:range :actor .
+
+:heeft_gebeurtenis
+      a       owl:ObjectProperty ;
+      rdfs:domain :handeling ;
+      rdfs:range :gebeurtenis .
+
+:heeft_gevolg
+      a       owl:ObjectProperty ;
+      rdfs:domain :gebeurtenis ;
+      rdfs:range :gevolg .
+
+:heeft_handeling
+      a       owl:ObjectProperty ;
+      rdfs:domain od:aansprakeljkheid ;
+      rdfs:range :handeling ;
+      owl:inverseOf :is_handeling_van .
+
+:heeft_object
+      a       owl:ObjectProperty ;
+      rdfs:domain :handeling ;
+      rdfs:range :object .
+
+:heeft_plaats
+      a       owl:ObjectProperty ;
+      rdfs:domain :gebeurtenis ;
+      rdfs:range :plaats .
+
+:heeft_tijdstip
+      a       owl:ObjectProperty ;
+      rdfs:domain :gebeurtenis ;
+      rdfs:range :tijdstip .
+
+:is_actor_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :actor ;
+      rdfs:range :handeling ;
+      owl:inverseOf :heeft_actor .
+
+:is_gebeurtenis_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :gebeurtenis ;
+      rdfs:range :handeling ;
+      owl:inverseOf :heeft_gebeurtenis .
+
+:is_gevolg_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :gevolg ;
+      rdfs:range :gebeurtenis ;
+      owl:inverseOf :heeft_gevolg .
+
+:is_handeling_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :handeling ;
+      rdfs:range od:aansprakeljkheid .
+
+:is_object_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :object ;
+      rdfs:range :handeling ;
+      owl:inverseOf :heeft_object .
+
+:is_plaats_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :plaats ;
+      rdfs:range :gebeurtenis ;
+      owl:inverseOf :heeft_plaats .
+
+:is_tijdstip_van
+      a       owl:ObjectProperty ;
+      rdfs:domain :tijdstip ;
+      rdfs:range :gebeurtenis ;
+      owl:inverseOf :heeft_tijdstip .
+
+:prefLabel
+      a       owl:AnnotationProperty .
+
+:synonym
+      a       owl:AnnotationProperty .
+
+od:aan_ouders_verwijtbaar_handelen
+      a       skos:Concept ;
+      :prefLabel "aan ouders verwijtbaar handelen" .
+
+od:aanbieder
+      a       skos:Concept ;
+      :altLabel "dienstverlener" ;
+      :prefLabel "aanbieder" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :inbreukhandeling :nalaten :werkhandeling :zorgplicht)
+              ] .
+
+od:aanduiding_of_het_doel_van_de_aanbieding
+      a       skos:Concept ;
+      :prefLabel "aanduiding of het doel van de aanbieding" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling :zorgplicht)
+              ] .
+
+od:aansprakelijkheid_voor_boorgaten
+      a       skos:Concept ;
+      :altLabel "aansprakelijkheid voor mijnbouwwerken" ;
+      :prefLabel "aansprakelijkheid voor boorgaten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] .
+
+od:aansprakelijkheid_voor_gebrekkige_zaken
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :hinderhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] .
+
+od:aansprakelijkheid_voor_gevaarlijke_stoffen
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] .
+
+od:aansprakelijkheid_voor_kinderen
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :hinderhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ])
+              ] .
+
+od:aansprakelijkheid_voor_niet-ondergeschikten
+      a       skos:Concept ;
+      :synonym "aansprakelijkheid voor niet ondergeschikten" ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :werkhandeling
+              ] .
+
+od:aansprakelijkheid_voor_ondergeschikten
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :werkhandeling
+              ] .
+
+od:aansprakelijkheid_voor_personen
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :verkeershandeling
+              ] .
+
+od:aansprakelijkheid_voor_stortplaatsen
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :werkhandeling
+              ] .
+
+od:aansprakelijkheid_voor_vertegenwoordigers
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :wanprestatie
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :werkhandeling
+                          ])
+              ] .
+
+od:aansprakelijkheid_voor_zaken
+      a       skos:Concept ;
+      :prefLabel "aansprakelijkheid voor zaken" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ])
+              ] .
+
+od:aansprakeljkheid
+      a       skos:Concept .
+
+od:aantasting_kwaliteit_van_leven
+      a       skos:Concept ;
+      :prefLabel "aantasting kwaliteit van leven" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:hinderhandeling :inbreukhandeling :nalaten)
+              ] .
+
+od:aantasting_van_belang
+      a       skos:Concept ;
+      :altLabel "bedreiging van belang" ;
+      :prefLabel "aantasting van belang" .
+
+od:aantasting_van_de_eer
+      a       skos:Concept ;
+      :prefLabel "aantasting van de eer" .
+
+od:aantasting_van_de_eer_en_goede_naam
+      a       skos:Concept ;
+      :prefLabel "aantasting van de eer en goede naam" .
+
+od:aantasting_van_de_goede_naam
+      a       skos:Concept ;
+      :prefLabel "aantasting van de goede naam" .
+
+od:aanvankelijk_niet_gebrekkige_producten
+      a       skos:Concept ;
+      :altLabel "tijdstip waarp hij het product in het verkeer heeft gebracht" , "het gebrek dat de schade heeft veroorzaakt bestond niet op het tijdstip dat het product in het verkeer is gebracht" , "" ;
+      :prefLabel "aanvankelijk niet gebrekkige producten" .
+
+od:aanwijzing_conform_art_34_lid_3_wms
+      a       skos:Concept ;
+      :prefLabel "aanwijzing conform art. 34 lid 3 wms" ;
+      :synonym "aanwijzing conform art.34 lid 3 wms" .
+
+od:aanwijzingsbevoegdheid
+      a       skos:Concept ;
+      :prefLabel "aanwijzingsbevoegdheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:aard_en_de_werkwijze_van_de_media
+      a       skos:Concept ;
+      :prefLabel "aard en werkwijze van de media" .
+
+od:aard_van_de_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "aard van de aansprakelijkheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:aard_van_de_aanwijzing
+      a       skos:Concept ;
+      :prefLabel "aard van de aanwijzing" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :verkeershandeling :werkhandeling)
+              ] .
+
+od:aard_van_de_fout
+      a       skos:Concept ;
+      :prefLabel "aard van de fout" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :verkeershandeling :werkhandeling)
+              ] .
+
+od:aard_van_de_gedraging
+      a       skos:Concept ;
+      :prefLabel "aard van de gedraging" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:aard_van_de_gepublliceerde_verdenking
+      a       skos:Concept ;
+      :prefLabel "aard van de gepubliceerde verdenking" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:aard_van_de_geschonden_norm
+      a       skos:Concept ;
+      :prefLabel "aard van de geschonden norm" .
+
+od:aard_van_de_schade
+      a       skos:Concept ;
+      :prefLabel "aard van de schade" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:aard_van_de_vergunning
+      a       skos:Concept ;
+      :altLabel "belang van de regeling waarop de vergunning rust" ;
+      :prefLabel "aard van de vergunning" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:hinderhandeling :inbreukhandeling)
+              ] .
+
+od:absoluut_recht
+      a       skos:Concept ;
+      :prefLabel "absoluut recht" .
+
+od:afwezigheid_van_zeggenschap
+      a       skos:Concept ;
+      :prefLabel "afwezigheid van zeggenschap" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:afwijking_in_de_gronddekking
+      a       skos:Concept ;
+      :prefLabel "afwijking in de gronddekking" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:afwijking_van_de_normaalbladen
+      a       skos:Concept ;
+      :prefLabel "afwijking van de normaalbladen" .
+
+od:algemeen_verbindend_voorschrift
+      a       skos:Concept ;
+      :prefLabel "algemeen verbindend voorschrift" .
+
+od:art_6_175_lid_1
+      a       skos:Concept ;
+      :prefLabel "art.6:175 lid 1" ;
+      :synonym "art. 6:175 lid 1" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:art_6_175_lid_6
+      a       skos:Concept ;
+      :prefLabel "art.6:175 lid 6" ;
+      :synonym "art. 6:175 lid 6" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:artikel_6_162
+      a       skos:Concept ;
+      :prefLabel "artikel 6:162" .
+
+od:bedrijf
+      a       skos:Concept ;
+      :prefLabel "bedrijf" .
+
+od:bekendheidseis
+      a       skos:Concept ;
+      :prefLabel "bekendheidseis" .
+
+od:bekendwording_20_jaar_na_sluiting
+      a       skos:Concept ;
+      :prefLabel "bekendwording 20 jaar na sluiting" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:beoordeling_rangorde_grondrechten
+      a       skos:Concept ;
+      :altLabel "beoordeling van de onderlinge rangorde van de ingeroepen grondrechten" , "beoordeling van gevallen waarin botsende grondrechten" , "dubbele afweging van grondrechten" ;
+      :prefLabel "beoordeling rangorde grondrechten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:hinderhandeling :inbreukhandeling)
+              ] .
+
+od:beperking_van_het_nadeel_door_perspubilcatie
+      a       skos:Concept ;
+      :altLabel "beperking van het door de perspublicatie te veroorzaken nadeel dat ook zonder het beteffende stuk in de publiciteit zou zijn gekomen" ;
+      :prefLabel "beperking van het nadeel door perspublicatie" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling :zorgplicht)
+              ] .
+
+od:beperkt_recht
+      a       skos:Concept ;
+      :prefLabel "beperkt recht" .
+
+od:beroepsfout
+      a       skos:Concept ;
+      :prefLabel "beroepsfout" .
+
+od:beschermingsbehoefte
+      a       skos:Concept ;
+      :prefLabel "bescherminsbehoefte" .
+
+od:beschikbare_alternatieven
+      a       skos:Concept ;
+      :prefLabel "beschikbare alternatieven" ;
+      :synonym "beschikbaarheid van alternatieven" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:bestaan_van_andere_gegevens
+      a       skos:Concept ;
+      :prefLabel "bestaan van andere gegevens" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:bestanddeel_van_het_product
+      a       skos:Concept ;
+      :prefLabel "bestanddeel van het product" .
+
+od:bestuurdersaansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "bestuurdersaansprakelijkheid" .
+
+od:betalingsvoorwaarden
+      a       skos:Concept ;
+      :prefLabel "betalingsvoorwaarden" .
+
+od:bevoegd_gegeven_ambtelijk_bevel
+      a       skos:Concept ;
+      :prefLabel "bevoegd gegeven ambtelijk bevel" .
+
+od:bewijslast
+      a       skos:Concept ;
+      :prefLabel "bewijslast" .
+
+od:bezitter
+      a       skos:Concept ;
+      :prefLabel "bezitter" .
+
+od:bezitter_van_een_dier
+      a       skos:Concept ;
+      :prefLabel "bezitter van een dier" .
+
+od:bezitterscriterium
+      a       skos:Concept ;
+      rdfs:comment """Bezitter is degene die een zaak voor zichzelf houdt. Naast bezitters zijn 
+    er medebezitters, deze kunnen onder voorwaarden ook aansprakelijk zijn."""^^xsd:string ;
+      :prefLabel "bezitter" .
+
+od:bezwaarlijkheid_veiligheidsmaatregelen
+      a       skos:Concept ;
+      :altLabel "de mate waarin" ;
+      :prefLabel "bezwaarlijkheid veiligheidsmaatregelen het nemen van veiligheidsmaatregelen bezwaarlijk is" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:bijzonder_gevaar
+      a       skos:Concept ;
+      :prefLabel "bijzonder gevaar" ;
+      :synonym "bijzonder gevaar voor personen en zaken" .
+
+od:blootstelling_aan_verdachtmaking
+      a       skos:Concept ;
+      :altLabel "blootstelling van burgers aan lichtvaardige verdachtmaking door publicaties in de pers" ;
+      :prefLabel "blootstelling aan verdachtmaking" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:bodembeweging
+      a       skos:Concept ;
+      :altLabel "bodemtrilling" , "bodemstijging" , "bodemdaling" ;
+      :prefLabel "bodembeweging" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:bodembewegingscriterium
+      a       skos:Concept ;
+      :prefLabel "bodembeweging" .
+
+od:causaliteit_vestigingsfase
+      a       skos:Concept ;
+      :altLabel "omkeringsregel" , "toerekeningsvraag" ;
+      :prefLabel "causaliteit vestigingsfase" .
+
+od:correctie_langemeijer
+      a       skos:Concept ;
+      :altLabel "strekt niet tot bescherming" , "norm die niet strekt tot bescherming tegen schade" ;
+      :prefLabel "correctie langemeijer" .
+
+od:csqn_criteria_toerekeningsverband
+      a       skos:Concept ;
+      :prefLabel "csqn crietria toerekeningsverband" .
+
+od:delfstoffen
+      a       skos:Concept ;
+      :altLabel "olie" , "aardgas" ;
+      :prefLabel "delfstoffen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:dier
+      a       skos:Concept ;
+      :prefLabel "dier" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:dier_als_instrument
+      a       skos:Concept ;
+      :prefLabel "dier als instrument" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:doel_te_bereiken_via_andere_weg
+      a       skos:Concept ;
+      :altLabel "mate van waarschijnlijkheid dat het nagestreefde doel via een andere weg kan worden bereikt" ;
+      :prefLabel "doel te bereiken via andere weg" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:doel_van_de_contractspartijen
+      a       skos:Concept ;
+      :prefLabel "doel van de contractspartijen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :wanprestatie :werkhandeling)
+              ] .
+
+od:doen_in_strijd_met_recht
+      a       skos:Concept ;
+      :prefLabel "doen in strijd met recht" .
+
+od:doorbaak_van_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "doorbraak van aansprakelijkheid" .
+
+od:dwaling_omtrent_de_feiten
+      a       skos:Concept ;
+      :prefLabel "dwaling omtrent de feiten" .
+
+od:dwingende_overheidsvoorschriften
+      a       skos:Concept ;
+      :prefLabel "dwingende overheidsvoorschriften" .
+
+od:eG_recht
+      a       skos:Concept ;
+      :prefLabel "EG recht" .
+
+od:eigen_energie_van_het_dier
+      a       skos:Concept ;
+      :prefLabel "eigen energie van het dier" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:eigen_schuld_van_de_benadeelde
+      a       skos:Concept ;
+      :prefLabel "eigen schuld van de benadeelde" .
+
+od:eigenaar_van_een_dier
+      a       skos:Concept ;
+      :prefLabel "eigenaar van een dier" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:eigendomsrecht
+      a       skos:Concept ;
+      :prefLabel "eigendomsrecht" .
+
+od:eigendomsvoorbehoud
+      a       skos:Concept ;
+      :prefLabel "eigendomsvoorbehoud" .
+
+od:eigenschappen_van_het_product
+      a       skos:Concept ;
+      :altLabel "samenstelling van het product" , "hoedanigheid" , "aard van het product" , "hoeveelheid" ;
+      :prefLabel "eigenschappen van het product" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:eisen_die_men_daaraan_mag_stellen
+      a       skos:Concept ;
+      :prefLabel "eisen die men daaraan mag stellen" .
+
+od:ernst_en_duur
+      a       skos:Concept ;
+      :altLabel "ernst en duur van de hinder" ;
+      :prefLabel "ernst en duur" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:ernst_van_de_gevolgen
+      a       skos:Concept ;
+      :prefLabel "ernst van de gevolgen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:exploitant_mijnbouwwerk
+      a       skos:Concept ;
+      :prefLabel "exploitant mijnbouwwerk" ;
+      :synonym "expliotant van een mijnbouwwerk" .
+
+od:exploitant_stortplaats
+      a       skos:Concept ;
+      :prefLabel "exploitant stortplaats" ;
+      :synonym "exploitant van een stortplaats" .
+
+od:exploitant_stortplaats_zonder_vergunning
+      a       skos:Concept ;
+      :prefLabel "exploitant stortplaats zonder vergunning" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:exploitant_stortplaatscriterium
+      a       skos:Concept ;
+      :prefLabel "exploitant stortplaats" .
+
+od:fabrikant_van_een_eindproduct
+      a       skos:Concept ;
+      :prefLabel "fabrikant van een eindproduct" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:fabrikant_van_een_onderdeel
+      a       skos:Concept ;
+      :prefLabel "fabrikant van een onderdeel" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:fase
+      a       skos:Concept ;
+      :prefLabel "fase" .
+
+od:formele_wet
+      a       skos:Concept ;
+      :prefLabel "formele wet" .
+
+od:fout
+      a       skos:Concept ;
+      :altLabel "fout-vereiste" ;
+      :prefLabel "fout" .
+
+od:functioneel_verband
+      a       skos:Concept ;
+      :prefLabel "functioneel verband" .
+
+od:functioneel_verbandcriterium
+      a       skos:Concept ;
+      :prefLabel "functioneel verband" .
+
+od:fysieke_toestand
+      a       skos:Concept ;
+      :prefLabel "fysieke toestand" .
+
+od:garantie
+      a       skos:Concept ;
+      :prefLabel "garantie" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:gebrek
+      a       skos:Concept ;
+      :prefLabel "gebrek" .
+
+od:gebrekkig_bestanddeel
+      a       skos:Concept ;
+      :prefLabel "gebrekkig bestanddeel" .
+
+od:gebrekkig_product
+      a       skos:Concept ;
+      :prefLabel "gebrekkig product" .
+
+od:gebrekkig_productcriterium
+      a       skos:Concept ;
+      :prefLabel "gebrekkig product" .
+
+od:gebrekscriterium
+      a       skos:Concept ;
+      :prefLabel "gebrek" .
+
+od:gebruik_gevaarlijke_stof_voor_eigen_bestwil
+      a       skos:Concept ;
+      :prefLabel "gebruik gevaarlijke stof voor eigen bestwil" ;
+      :synonym "gebruik van een gevaarlijke stof voor eigen bestwil" .
+
+od:gebruiksmogelijkheden
+      a       skos:Concept ;
+      :prefLabel "gebruiksmogelijkheden" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:gedraging_van_een_dier
+      a       skos:Concept ;
+      :prefLabel "gedraging van een dier" .
+
+od:geen_economisch_doel
+      a       skos:Concept ;
+      rdfs:comment ""^^xsd:string ;
+      :prefLabel "geen economisch doel" .
+
+od:geestelijk_gezond
+      a       skos:Concept ;
+      :prefLabel "geestelijk gezond" .
+
+od:geestelijke_tekortkoming
+      a       skos:Concept ;
+      :prefLabel "geestelijke tekortkoming" .
+
+od:gevaarlijke_toestand
+      a       skos:Concept ;
+      :prefLabel "gevaarlijke toestand" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten)
+              ] .
+
+od:gevaarzetting
+      a       skos:Concept ;
+      :prefLabel "gevaarzetting" .
+
+od:gewone_doorbraak_van_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "gewone doorbraak van aansprakelijkheid" .
+
+od:gezag_van_de_bron
+      a       skos:Concept ;
+      :prefLabel "gezag van de bron" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:gezagsverhouding
+      a       skos:Concept ;
+      :prefLabel "gezagsverhouding" .
+
+od:goed_houden_voor_een_ander
+      a       skos:Concept ;
+      :prefLabel "goed houden voor een ander" .
+
+od:goed_houden_voor_zichzelf
+      a       skos:Concept ;
+      :prefLabel "goed houden voor zichzelf" .
+
+od:groep
+      a       skos:Concept ;
+      :prefLabel "groep" .
+
+od:groepsdeelnemer
+      a       skos:Concept ;
+      :prefLabel "groepsdeelnemer" .
+
+od:grondrecht
+      a       skos:Concept ;
+      :prefLabel "grondrecht" .
+
+od:handelen_in_strijd_met_een_wettelijke_plicht
+      a       skos:Concept ;
+      :altLabel "wettelijke plicht" ;
+      :prefLabel "handelen in strijd met een wettelijke plicht" ;
+      :synonym "doen of nalaten in strijd met een wettelijke plicht" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
+      a       skos:Concept ;
+      :altLabel "zorgvuldigheidsnorm" , "maatschappelijke zorgvuldigheid" , "doen of nalaten in strijd met hetgeen in het maatschappelijk verkeer betaamt" ;
+      :prefLabel "handelen in strijd met hetgeen in het maatschappelijk verkeer betaamt" ;
+      :synonym "maatschappelijke betamelijkheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:hinder
+      a       skos:Concept ;
+      :prefLabel "hinder" .
+
+od:hoedanigheid_van_de_gegevensverstrekker
+      a       skos:Concept ;
+      :prefLabel "hoedanigheid van de gegevensverstrekker" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:houder_van_een_dier
+      a       skos:Concept ;
+      :prefLabel "houder van een dier" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :hinderhandeling :nalaten)
+              ] .
+
+od:hulpbetoon
+      a       skos:Concept ;
+      :prefLabel "hulpbetoon" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:hulpmiddel
+      a       skos:Concept ;
+      :prefLabel "hulpmiddel" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:hulppersonen
+      a       skos:Concept ;
+      :prefLabel "hulppersonen" .
+
+od:ieder_die_zich_als_producent_presenteert
+      a       skos:Concept ;
+      :prefLabel "ieder die zich als producent presenteert" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:illegaal_storten
+      a       skos:Concept ;
+      :prefLabel "illegaal storten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:immateriele_schade
+      a       skos:Concept ;
+      :prefLabel "immateriële schade" ;
+      :synonym "immateriele schade" .
+
+od:inbreuk_op_een_recht
+      a       skos:Concept ;
+      :altLabel "subjectief recht" , "inbreukmakend" , "inbreuk op een subjectief recht" , "subjectieve rechten" , "inbreuk maken" , "aantasting van subjectieve rechten" ;
+      :prefLabel "inbreuk op een recht" .
+
+od:inbreukcriterium
+      a       skos:Concept ;
+      :prefLabel "inbreuk" .
+
+od:inkleding_van_de_verdenkingen
+      a       skos:Concept ;
+      :prefLabel "inkleding van de verdenkingen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:instructies_van_de_hoofdfabrikant
+      a       skos:Concept ;
+      :prefLabel "instructies van de hoofdfabrikant" .
+
+od:intensiteit_van_de_inbreuk
+      a       skos:Concept ;
+      :altLabel "intensiteit van de inbreuk op de grondrechten" ;
+      :prefLabel "intensiteit van de inbreuk" .
+
+od:kans_dat_anderen_niet_goed_opletten
+      a       skos:Concept ;
+      :prefLabel "kans dat anderen niet goed opletten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten :verkeershandeling)
+              ] .
+
+od:kans_dat_daardoor_ongevallen_ontstaan
+      a       skos:Concept ;
+      :prefLabel "kans dat daardoor ongevallen ontstaan" ;
+      :synonym "kans op ongeval" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten :verkeershandeling)
+              ] .
+
+od:kanscriterium
+      a       skos:Concept ;
+      :prefLabel "kans" .
+
+od:kansvergroting
+      a       skos:Concept ;
+      :prefLabel "kansvergroting" .
+
+od:kelderluikcriteria
+      a       skos:Concept ;
+      :altLabel "kelderluik-arrest" , "kelderluik-factor" ;
+      :prefLabel "kelderluikcriteria" ;
+      :synonym "kelderluikcriterium" .
+
+od:kenbaarheid
+      a       skos:Concept ;
+      :altLabel "mate van waarschijnlijkheid waarmee niet-inachtneming van de vereisten oplettendheid en voorzichtigheid kan worden verwacht" ;
+      :prefLabel "kenbaarheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:kennis_van_belang
+      a       skos:Concept ;
+      :altLabel "indien hij dit belang kende of behoorde te kennen" ;
+      :prefLabel "kennis van belang" .
+
+od:kind
+      a       skos:Concept ;
+      :prefLabel "kind" .
+
+od:kind_16_jaar_en_ouder
+      a       skos:Concept ;
+      :altLabel "zeventien jaren" , "zeventien jaar" , "zestien jaar" , "18 jaren" , "achttien jaar" , "16 jaar" , "17 jaar" , "18 jaar" , "zestien jaren" , "16 jaren" , "achttien jaren" , "17 jaren" ;
+      :prefLabel "kind 16 jaar en ouder" .
+
+od:kind_jonger_dan_14_jaar
+      a       skos:Concept ;
+      :prefLabel "kind jonger dan 14 jaar" .
+
+od:kind_tussen_de_14_en_16_jaar
+      a       skos:Concept ;
+      :altLabel "14 jaren" , "14 jaar" , "veertien jaren" , "veertien jaar" , "15 jaren" , "vijftien jaar" , "15 jaar" , "vijftien jaren" ;
+      :prefLabel "kind tussen de 14 en 16 jaar" .
+
+od:krachtens_amvb
+      a       skos:Concept ;
+      :prefLabel "krachtens amvb" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:krachtens_volmacht
+      a       skos:Concept ;
+      :prefLabel "krachtens volmacht" .
+
+od:krachtens_wet
+      a       skos:Concept ;
+      :prefLabel "krachtens wet" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:kwalitatieve_aansprakelijkheid
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :algemene_handeling
+              ] .
+
+od:legaal_storten
+      a       skos:Concept ;
+      :prefLabel "legaal storten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:leidingschade
+      a       skos:Concept ;
+      :prefLabel "leidingschade" .
+
+od:leveringsvoowaarden
+      a       skos:Concept ;
+      :prefLabel "leveringsvoorwaarden" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:wanprestatie :werkhandeling)
+              ] .
+
+od:lichamelijk_gezond
+      a       skos:Concept ;
+      :prefLabel "lichamelijke toestand" .
+
+od:lichamelijke_tekortkoming
+      a       skos:Concept ;
+      :prefLabel "lichamelijke tekortkoming" .
+
+od:luchtvaartuigen
+      a       skos:Concept ;
+      :prefLabel "luchtvaartuigen" .
+
+od:maatschappelijke_betamelijkheid
+      a       skos:Concept ;
+      :altLabel "onzorgvuldig" , "zorgvuldigheidsnorm" , "maatschappelijke zorgvuldigheid" , "onzorgvuldigheid" ;
+      :prefLabel "maatschappelijke betamelijkheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:mate_van_waarschijnlijkheid_schade
+      a       skos:Concept ;
+      :altLabel "mate van waarschijnlijkheid dat de schade wordt veroorzaakt" ;
+      :prefLabel "mate van waarschijnlijkheid schade" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:medebezitter
+      a       skos:Concept ;
+      :prefLabel "medebezitter" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten)
+              ] .
+
+od:mededeling_in_de_uitoefening_van_beroep_of_bedrijf
+      a       skos:Concept ;
+      :prefLabel "mededeling in de uitoefening van beroep of bedrijf" ;
+      :synonym "mededeling gedaan in de uitoefening van beroep of bedrijf" .
+
+od:medeschuld
+      a       skos:Concept ;
+      :prefLabel "medeschuld" .
+
+od:mentale_toestand
+      a       skos:Concept ;
+      :prefLabel "mentale toestand" .
+
+od:milieu
+      a       skos:Concept ;
+      :prefLabel "milieu" .
+
+od:misleidend_karakter
+      a       skos:Concept ;
+      :prefLabel "misleidend karakter" .
+
+od:misleidend_karaktercriterium
+      a       skos:Concept ;
+      :prefLabel "misleidend karakter" .
+
+od:misleidende_en_vergelijkende_reclame
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :algemene_handeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ])
+              ] .
+
+od:molest
+      a       skos:Concept ;
+      :prefLabel "molest" .
+
+od:nalaten_in_strijd_met_recht
+      a       skos:Concept ;
+      :prefLabel "nalaten in strijd met recht" .
+
+od:natuurgeweld
+      a       skos:Concept ;
+      :prefLabel "natuurgeweld" .
+
+od:niet-ondergeschikte
+      a       skos:Concept ;
+      :prefLabel "niet-ondergeschikte" .
+
+od:niet-ondergeschiktheidscriterium
+      a       skos:Concept ;
+      :prefLabel "niet-ondergeschiktheid" .
+
+od:niet_aan_ouders_verwijtbaar_handelen
+      a       skos:Concept ;
+      :prefLabel "niet aan ouders verwijtbaar handelen" .
+
+od:niet_commerciele_producten
+      a       skos:Concept ;
+      :altLabel "het product noch voor verkoop of voor enige andere vorm van verspreiding met een economisch doel van de producent is vervaardigd" , "vervaardigd of verspreid in het kader van de uitoefening van beroep of bedrijf" ;
+      :prefLabel "verspreiding met een economisch doel" , "niet commerciële producten" ;
+      :synonym "niet-commerciële producten" .
+
+od:niet_in_de_uitoefening_van_beroep_of_bedrijf
+      a       skos:Concept ;
+      :prefLabel "niet in de uitoefening van beroep of bedrijf" .
+
+od:niet_in_het_verkeer_gebrachte_producten
+      a       skos:Concept ;
+      :prefLabel "niet in het verkeer gebrachte producten" ;
+      :synonym "product niet in het verkeer gebracht" .
+
+od:niet_nakoming_overeenkomst
+      a       skos:Concept ;
+      :prefLabel "niet nakoming overeenkomst" .
+
+od:niet_voldoen_aan_vereisten
+      a       skos:Concept ;
+      :prefLabel "niet voldoen aan vereisten" ;
+      :synonym "niet voldoen aan de vereisten die men daaraan in de gegeven omstandigheden mag stellen" .
+
+od:niet_werkzaam_voor_beroep_of_bedrijf
+      a       skos:Concept ;
+      :prefLabel "niet werkzaam voor beroep of bedrijf" .
+
+od:noodweer
+      a       skos:Concept ;
+      :prefLabel "noodweer" .
+
+od:noodweer_exces
+      a       skos:Concept ;
+      :prefLabel "noodweer exces" ;
+      :synonym "noodweer-exces" .
+
+od:norm_ter_bescherming_schade
+      a       skos:Concept ;
+      :altLabel "schutznorm" ;
+      :prefLabel "norm ter bescherming schade" ;
+      :synonym "norm die strekt ter bescherming van de schade" , "norm die strekt tot bescherming van de schade" .
+
+od:objectief_recht
+      a       skos:Concept ;
+      :prefLabel "objectief recht" .
+
+od:omgekeerde_doorbraak_van_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "omgekeerde doorbraak van aansprakelijkheid" .
+
+od:omkeringsregelcriterium
+      a       skos:Concept ;
+      :prefLabel "omkeringsregel" .
+
+od:omstandigheden_van_het_geval
+      a       skos:Concept ;
+      :prefLabel "omstandigheden van het geval" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:omvang_schadecriterium
+      a       skos:Concept ;
+      :prefLabel "omvang schade" .
+
+od:omvang_van_de_voorraad
+      a       skos:Concept ;
+      :prefLabel "omvang van de voorraad" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:omvangsfase
+      a       skos:Concept ;
+      :prefLabel "omvangsfase" .
+
+od:onbeheersbare_ondergrondse_natuurlijke_krachten
+      a       skos:Concept ;
+      :prefLabel "onbeheersbare ondergrondse natuurlijke krachten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:onbehoorlijk_aanhaken_producten_of_diensten
+      a       skos:Concept ;
+      :prefLabel "onbehoorlijk aanhaken producten of diensten" ;
+      :synonym "onbehoorlijk aanhaken bij producten of diensten van de concurrent" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:onbevoegd_gegeven_ambtelijk_bevel
+      a       skos:Concept ;
+      :prefLabel "onbevoegd gegeven ambtelijk bevel" .
+
+od:onbevoegd_uitoefenen_bevoegdheden
+      a       skos:Concept ;
+      :altLabel "een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is" ;
+      :prefLabel "onbevoegd uitoefenen bevoegdheden" .
+
+od:ondergeschikt_in_dienst_natuurlijk_persooncriterium
+      a       skos:Concept ;
+      :prefLabel "ondergeschikt in dienst natuurlijk persoon" .
+
+od:ondergeschikte
+      a       skos:Concept ;
+      :altLabel "werknemer" ;
+      :prefLabel "ondergeschikte" .
+
+od:ondergeschikte_in_dienst_natuurlijk_persoon
+      a       skos:Concept ;
+      :prefLabel "ondergeschikte in dienst natuurlijk persoon" ;
+      :synonym "ondergeschikte in dienst van een natuurlijk persoon" .
+
+od:ondergeschiktheidscriterium
+      a       skos:Concept ;
+      :prefLabel "ondergeschiktheid" .
+
+od:onduidelijkheid_van_de_verstrekte_gegevens
+      a       skos:Concept ;
+      :prefLabel "onduidelijkheid van de verstrekte gegevens" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:oneerlijke_concurrentie
+      a       skos:Concept ;
+      :altLabel "doorspelen van informatie" ;
+      :prefLabel "oneerlijke concurrentie" .
+
+od:onevenredig_getroffen
+      a       skos:Concept ;
+      :prefLabel "onevenredig getroffen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:ongelukkige_samenloop_van_omstandigheden
+      a       skos:Concept ;
+      :prefLabel "ongelukkige samenloop van omstandigheden" .
+
+od:ongeoorloofde_reclame
+      a       skos:Concept ;
+      :prefLabel "ongeoorloofde reclame" .
+
+od:ongeschreven_rechtvaardigingsgrond
+      a       skos:Concept ;
+      :prefLabel "ongeschreven rechtvaardigingsgrond" .
+
+od:ongeschreven_vereiste_kwalitatieve_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "ongeschreven vereiste kwalitatieve aansprakelijkheid" .
+
+od:ongeschreven_vereiste_persoonlijke_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "ongeschreven vereiste persoonlijke aansprakelijkheid" .
+
+od:onjuistheid_van_de_gegevens
+      a       skos:Concept ;
+      :prefLabel "onjuistheid van de gegevens" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:onmiddelijk_gevaar
+      a       skos:Concept ;
+      :altLabel "onevenredig gevaar" , "aannemelijk gevaar" ;
+      :prefLabel "onmiddelijk gevaar" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten :verkeershandeling)
+              ] .
+
+od:onnodig_grievend
+      a       skos:Concept ;
+      :prefLabel "onnodig grievend" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:onrechtmatigheid
+      a       skos:Concept ;
+      :prefLabel "onrechtmatigheid" .
+
+od:onrechtmatigheidscriteria
+      a       skos:Concept ;
+      :prefLabel "onrechtmatigheid" .
+
+od:onroerende_zaken
+      a       skos:Concept ;
+      :prefLabel "onroerende zaken" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:beslag_gelegd :werkhandeling)
+              ] .
+
+od:ontwerp_van_het_product
+      a       skos:Concept ;
+      :prefLabel "ontwerp van het product" .
+
+od:ontwikkelingsrisico
+      a       skos:Concept ;
+      :prefLabel "ontwikkelingsrisico" .
+
+od:onvoldoende_rekening_houden_met_andermans_belangen
+      a       skos:Concept ;
+      :prefLabel "onvoldoende rekening houden met andermans belangen" .
+
+od:onvolledige_informatie
+      a       skos:Concept ;
+      :prefLabel "onvolledige informatie" .
+
+od:opdracht
+      a       skos:Concept ;
+      :prefLabel "opdracht" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:werkhandeling :zorgplicht)
+              ] .
+
+od:openbaarmaking_van_de_mededeling
+      a       skos:Concept ;
+      :prefLabel "openbaarmaking van de mededeling" .
+
+od:opgedragen_taak
+      a       skos:Concept ;
+      :altLabel "handelen ter invulling van een opgedragen taak" ;
+      :prefLabel "opgedragen taak" .
+
+od:opstal
+      a       skos:Concept ;
+      :prefLabel "opstal" .
+
+od:overheid
+      a       skos:Concept ;
+      :prefLabel "overheid" .
+
+od:overheidstoestemming
+      a       skos:Concept ;
+      :prefLabel "overheidstoestemming" .
+
+od:overmacht
+      a       skos:Concept ;
+      :prefLabel "overmacht" .
+
+od:overtreding_gebruiksvoorschriften_bij_de_sluiting
+      a       skos:Concept ;
+      :prefLabel "overtreding gebruiksvoorschriften bij de sluiting" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten)
+              ] .
+
+od:persoon
+      a       skos:Concept ;
+      :prefLabel "persoon" .
+
+od:persoon_van_de_gelaedeerde
+      a       skos:Concept ;
+      :prefLabel "persoon van de gelaedeerde" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:persoon_van_de_laedens
+      a       skos:Concept ;
+      :prefLabel "persoon van de laedens" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:persoonlijke_aansprakelijkheid
+      a       skos:Concept ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty :heeft_handeling ;
+                owl:someValuesFrom :handeling
+              ] .
+
+od:persoonlijkheidsrecht
+      a       skos:Concept ;
+      :prefLabel "persoonlijkheidsrecht" .
+
+od:plaats_van_de_daad
+      a       skos:Concept ;
+      :prefLabel "plaats van de daad" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:pleger_onrechtmatige_daad
+      a       skos:Concept ;
+      :prefLabel "pleger onrechtmatige daad" .
+
+od:praktische_indicatoren
+      a       skos:Concept ;
+      :prefLabel "praktische indicatoren" .
+
+od:presentatie_van_het_product
+      a       skos:Concept ;
+      :prefLabel "presentatie van het product" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:prijs_van_het_product
+      a       skos:Concept ;
+      :prefLabel "prijs van het product" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:producent
+      a       skos:Concept ;
+      :prefLabel "producent" .
+
+od:producent_van_een_grondstof
+      a       skos:Concept ;
+      :prefLabel "producent van een grondstof" .
+
+od:producentcriterium
+      a       skos:Concept ;
+      :prefLabel "producent" .
+
+od:product_dat_niet_de_veiligheid_biedt
+      a       skos:Concept ;
+      :prefLabel "product dat niet de veiligheid biedt" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:productenaansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "productenaansprakelijkheid" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:unionOf ([ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :gevaarshandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :inbreukhandeling
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :nalaten
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty :heeft_handeling ;
+                            owl:someValuesFrom :wanprestatie
+                          ])
+              ] .
+
+od:recht
+      a       skos:Concept ;
+      :prefLabel "recht" .
+
+od:recht_op_een_goede_naam
+      a       skos:Concept ;
+      :prefLabel "recht op een goede naam" .
+
+od:recht_op_leven
+      a       skos:Concept ;
+      :prefLabel "recht op leven" .
+
+od:recht_op_lichamelijke_integriteit
+      a       skos:Concept ;
+      :prefLabel "recht op lichamelijke integriteit" .
+
+od:recht_op_privacy
+      a       skos:Concept ;
+      :prefLabel "recht op privacy" .
+
+od:recht_op_voortbrengselen_van_de_geest
+      a       skos:Concept ;
+      :prefLabel "recht op voortbrengselen van de geest" .
+
+od:recht_op_vrijheid
+      a       skos:Concept ;
+      :prefLabel "recht op vrijheid" .
+
+od:recht_op_vrijheid_van_meningsuiting
+      a       skos:Concept ;
+      :prefLabel "recht op vrijheid van meningsuiting" .
+
+od:rechten_van_huurder
+      a       skos:Concept ;
+      :prefLabel "rechten van huurder" .
+
+od:rechten_van_pachter
+      a       skos:Concept ;
+      :prefLabel "rechten van pachter" .
+
+od:rechtsdwaling
+      a       skos:Concept ;
+      :prefLabel "rechtsdwaling" .
+
+od:rechtspersoon
+      a       skos:Concept ;
+      :prefLabel "rechtspersoon" .
+
+od:rechtvaardigingsgrond
+      a       skos:Concept ;
+      :prefLabel "rechtvaardigingsgrond" .
+
+od:rechtvaardigingsgrond_krachtens_wet
+      a       skos:Concept ;
+      :prefLabel "rechtvaardigingsgrond krachtens wet" .
+
+od:rectificatie
+      a       skos:Concept ;
+      :prefLabel "rectificatie" .
+
+od:redelijk_bekwaam_vakgenoot
+      a       skos:Concept ;
+      :prefLabel "redelijk bekwaam vakgenoot" .
+
+od:redelijkerwijs_te_verwachten_gebruik
+      a       skos:Concept ;
+      :prefLabel "redelijkerwijs te verwachten gebruik" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:relativiteit
+      a       skos:Concept ;
+      :altLabel "geschonden norm strekt tot bescherming tegen de schade" , "geschonden norm niet strekt tot bescherming tegen de schade" , "schutznorm" ;
+      :prefLabel "relativiteit" ;
+      :synonym "relativiteitsvereisten" .
+
+od:roerende_zaak
+      a       skos:Concept ;
+      :prefLabel "roerende zaak" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:beslag_gelegd :nalaten)
+              ] .
+
+od:roerende_zaakcriterium
+      a       skos:Concept ;
+      :prefLabel "roerende zaak" .
+
+od:roerende_zaken
+      a       skos:Concept ;
+      :prefLabel "roerende zaken" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:schade
+      a       skos:Concept ;
+      :prefLabel "schade" .
+
+od:schadevergoeding
+      a       skos:Concept ;
+      :prefLabel "schadevergoeding" .
+
+od:schadeveroorzakende_gebeurtenis
+      a       skos:Concept ;
+      :prefLabel "schadeveroorzakende gebeurtenis" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:schepen
+      a       skos:Concept ;
+      :prefLabel "schepen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:algemene_handeling :beslag_gelegd)
+              ] .
+
+od:schuld
+      a       skos:Concept ;
+      :altLabel "toerekening" , "toerekenbaarheid" , "verwijtbaarheid" ;
+      :prefLabel "schuld" .
+
+od:schuld_van_de_benadeelde
+      a       skos:Concept ;
+      :altLabel "schuld van de persoon voor wie de benadeelde aansprakelijk is" ;
+      :prefLabel "schuld van de benadeelde" .
+
+od:schulduitsluitingsgrond
+      a       skos:Concept ;
+      :prefLabel "schulduitsluitingsgrond" .
+
+od:sport_en_spel
+      a       skos:Concept ;
+      :prefLabel "sport en spel" .
+
+od:staking
+      a       skos:Concept ;
+      :prefLabel "staking" .
+
+od:stand_van_techniek_en_ontwikkelingsrisico
+      a       skos:Concept ;
+      :prefLabel "stand van techniek en ontwikkelingsrisico" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:steun_van_verdenking_in_feitenmateriaal
+      a       skos:Concept ;
+      :altLabel "mate waarin verdenkingen steun vinden in bestaand feitenmateriaal" ;
+      :prefLabel "steun van verdenking in feitenmateriaal" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:stof
+      a       skos:Concept ;
+      :prefLabel "stof" .
+
+od:stofcriterium
+      a       skos:Concept ;
+      :prefLabel "stof" .
+
+od:stoffelijke_objecten
+      a       skos:Concept ;
+      :altLabel "voor de menselijke beheersing vatbare stoffelijke objecten" ;
+      :prefLabel "stoffelijke objecten" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:algemene_handeling :beslag_gelegd)
+              ] .
+
+od:subjectief_recht
+      a       skos:Concept ;
+      :prefLabel "subjectief recht" .
+
+od:tekortkoming
+      a       skos:Concept ;
+      :prefLabel "tekortkoming" .
+
+od:tenzij_hinder
+      a       skos:Concept ;
+      :prefLabel "tenzij hinder" .
+
+od:tijdstip_van_de_fout
+      a       skos:Concept ;
+      :prefLabel "tijdstip van de fout" .
+
+od:tijdstip_waarop_het_product_in_het_verkeer_is_gebracht
+      a       skos:Concept ;
+      :prefLabel "tijdstip waarop het product in het verkeer is gebracht" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:toelaatbaarheid_van_het_gedrag_van_toezichthouders
+      a       skos:Concept ;
+      :prefLabel "toelaatbaarheid van het gedrag van het gezag van toezichthouders" .
+
+od:toerekening_krachtens_verkeersopvatting
+      a       skos:Concept ;
+      :altLabel "toerekening" , "toerekenbaarheid" , "verwijtbaarheid" , "in het verkeer geldende opvattingen voor zijn rekening" ;
+      :prefLabel "toerekening krachtens verkeersopvatting" ;
+      :synonym "toerekening krachtens verkeersopvattingen" , "voor rekenening krachtens verkeersopvatting" .
+
+od:toerekening_krachtens_wet
+      a       skos:Concept ;
+      :altLabel "toerekening" , "toerekenbaarheid" , "oorzaak die krachtens wet voor zijn rekening komt" , "verwijtbaarheid" ;
+      :prefLabel "toerekening krachtens wet" ;
+      :synonym "toerekening krachtens de wet" .
+
+od:toerekening_omvangsfase
+      a       skos:Concept ;
+      :altLabel "toerekening van de schade" ;
+      :prefLabel "toerekening omvangsfase" .
+
+od:toerekening_vestigingsfase
+      a       skos:Concept ;
+      :altLabel "verwijtbaarheid" , "schuld" ;
+      :prefLabel "toerekening vestigingsfase" ;
+      :synonym "toerekening" , "toerekenbaarheid" , "toerekenen" , "toegerekend" .
+
+od:toestand
+      a       skos:Concept ;
+      :prefLabel "toestand" .
+
+od:toestemming_van_de_benadeelde
+      a       skos:Concept ;
+      :prefLabel "toestemming van de benadeelde" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:tolerantiegrenzen
+      a       skos:Concept ;
+      :prefLabel "tolerantiegrenzen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:uitstroming_van_delfstoffen
+      a       skos:Concept ;
+      :altLabel "uistroming van elfstoffen en bodembeweging" , "bodembeweging" ;
+      :prefLabel "uitstroming van delfstoffen" .
+
+od:uitstroom_delfstoffencriterium
+      a       skos:Concept ;
+      :prefLabel "uitstroom delftstofen" .
+
+od:uitvoerbaareid_overeenkomst
+      a       skos:Concept ;
+      :prefLabel "uitvoerbaarheid overeenkomst" ;
+      :synonym "uitvoerbaarheid van de overeenkomst nadat een contractspartij zijn verplichting jegens een derde is nagekomen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :wanprestatie)
+              ] .
+
+od:uitzondering_6_175_tot_6_177
+      a       skos:Concept ;
+      :prefLabel "uitzondering 6:175 tot 6:177" .
+
+od:uitzondering_afdeling_6_3_3
+      a       skos:Concept ;
+      :prefLabel "uitzondering afdeling 6.3.3" .
+
+od:uitzondering_bezit_6_173_174_179
+      a       skos:Concept ;
+      :prefLabel "uitzondering bezit 6:173, 6:174, 6:179" ;
+      :synonym "uitzondering bezit 6:179" , "uitzondering bezit 6:173" , "uitzondering bezit 6:174" .
+
+od:uitzondering_ontbreken_aansprakelijkheid_6_162
+      a       skos:Concept ;
+      :prefLabel "uitzondering ontbreken aansprakelijkheid 6:162" .
+
+od:uitzondering_producten_6_185
+      a       skos:Concept ;
+      :prefLabel "uitzondering producten 6:185" .
+
+od:uitzondering_stortplaats_6_175
+      a       skos:Concept ;
+      :prefLabel "uitzondering stortplaats 6:175" .
+
+od:uitzondering_zaak_6_173
+      a       skos:Concept ;
+      :prefLabel "uitzondering zaak 6:173" .
+
+od:uitzondering_zaakschade_beneden_de_500_euro
+      a       skos:Concept ;
+      :prefLabel "uitzondering zaakschade beneden de 500 euro" .
+
+od:vandalisme
+      a       skos:Concept ;
+      :prefLabel "vandalisme" .
+
+od:veiligheidsvoorschriften
+      a       skos:Concept ;
+      :prefLabel "veiligheidsvoorschriften" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:gevaarshandeling :nalaten)
+              ] .
+
+od:vereiste
+      a       skos:Concept ;
+      :prefLabel "vereiste" .
+
+od:vergunning
+      a       skos:Concept ;
+      :prefLabel "vergunning" .
+
+od:vergunninghouder
+      a       skos:Concept ;
+      :altLabel "vergunninghouder" , "vergunninghouder als bedoel in artikel 6 of 25 van de mijnbouwwet" , "vergunning als bedoeld in art.8.1 van de wet milieubeheer" , "vergunninghouder van een stortplaats" , "vergunning voor het exploiteren van een stortplaats" , "een ieder die een mijnbouwwerk aanlegt of doet aanleggen zonder dat hij houder is van een vergunning" ;
+      :prefLabel "vergunninghouder" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:hinderhandeling :inbreukhandeling :nalaten)
+              ] .
+
+od:vergunningvoorwaarde
+      a       skos:Concept ;
+      :prefLabel "vergunning voorwaarde" .
+
+od:verhindering_in_de_uitoefening_van_bevoegdheden
+      a       skos:Concept ;
+      :prefLabel "verhindering in de uitoefening van bevoegdheden" ;
+      :synonym "een ander belemmert of verhindert de rechthebbende in de uitoefening van zijn bevoegdheden" .
+
+od:verkeer_en_veiligheidsnorm
+      a       skos:Concept ;
+      :prefLabel "verkeer en veiligheidsnorm" .
+
+od:verkeerde_informatie
+      a       skos:Concept ;
+      rdfs:comment "deze situatie kan zich bijvoorbeeld voordoen indien verkeerde informatie wordt verstrekt terwijl deze informatie essentieel is voor de verzoeker van die informatie."^^xsd:string ;
+      :prefLabel "verkeerde informatie" .
+
+od:verkeersongeval
+      a       skos:Concept ;
+      :prefLabel "verkeersongeval" .
+
+od:verkeersopvatting
+      a       skos:Concept ;
+      :prefLabel "verkeersopvatting" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:verklaring_of_beoordeling
+      a       skos:Concept ;
+      :altLabel "toegekende getuigschriften" , "toegekende onderscheidingen" , "bevindingen" ;
+      :prefLabel "verklaring of beoordeling" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:verklaringen_over_en_weer
+      a       skos:Concept ;
+      :prefLabel "verklaringen over en weer" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :wanprestatie :werkhandeling :zorgplicht)
+              ] .
+
+od:vermogensrecht
+      a       skos:Concept ;
+      :prefLabel "vermogensrecht" .
+
+od:verontreiniging
+      a       skos:Concept ;
+      :altLabel "verontreiniging van water" , "verontreiniging van lucht" , "verontreiniging van bodem" ;
+      :prefLabel "verontreiniging" .
+
+od:verontschuldigbare_dwaling
+      a       skos:Concept ;
+      :prefLabel "verontschuldigbare dwaling" .
+
+od:veroudering_van_gegevens
+      a       skos:Concept ;
+      :prefLabel "veroudering van gegevens" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:nalaten :werkhandeling)
+              ] .
+
+od:vertegenwoordiging
+      a       skos:Concept ;
+      :prefLabel "vertegenwoordiging" .
+
+od:vertegenwoordigingscriterium
+      a       skos:Concept ;
+      :prefLabel "vertegenwoordiging" .
+
+od:verwezenlijking_van_het_gevaar
+      a       skos:Concept ;
+      :prefLabel "verwezenlijking van het gevaar" .
+
+od:verzekerbaarheid_van_de_schade
+      a       skos:Concept ;
+      :prefLabel "verzekerbaarheid van de schade" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:vestigingsfase
+      a       skos:Concept ;
+      :prefLabel "vestigingsfase" .
+
+od:volwassene
+      a       skos:Concept ;
+      :prefLabel "volwassene" .
+
+od:voortbestaan_niet_bekende_misstanden
+      a       skos:Concept ;
+      :prefLabel "voortbestaan niet bekende misstanden" ;
+      :synonym "voortbestaan van bij het publiek niet bekende misstanden" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :nalaten :werkhandeling)
+              ] .
+
+od:voorzienbaarheid_van_de_schade
+      a       skos:Concept ;
+      rdfs:comment """Bij het bepalen of er een verplichting tot schadevergoeding ontstaat en de 
+    mogelijk omvang van een dergelijke verplichting spelen de volgende 
+    factoren een rol: de aard van de aansprakelijkheid, de aard van de schade, 
+    de aard van de overtreden norm, de voorzienbaarheid van de schade, de 
+    persoon van de laedens en die van de gelaedeerde, de mogelijkheid om de 
+    schade te verzekeren.wijze waarop de schade intreed hoeft niet precies 
+    voorzienbaar te zijn geweest."""^^xsd:string ;
+      :prefLabel "voorzienbaarheid van de schade" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:voorzorgsmaatregelen
+      a       skos:Concept ;
+      :prefLabel "voorzorgsmaatregelen" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:doen :nalaten)
+              ] .
+
+od:vruchtgebruik
+      a       skos:Concept ;
+      :prefLabel "vruchtgebruik" .
+
+od:werkzaamheden_met_een_incidenteel_karakter
+      a       skos:Concept ;
+      :prefLabel "werkzaamheden met een incidenteel karakter" .
+
+od:wetsbepaling
+      a       skos:Concept ;
+      :prefLabel "wetsbepaling" .
+
+od:wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame
+      a       skos:Concept ;
+      :prefLabel "wettelijk vereiste aansprakelijkheid voor vergelijkende reclame" .
+
+od:wettelijk_vereiste_aansprakelijkheid_voor_zaken
+      a       skos:Concept ;
+      :prefLabel "wettelijk vereiste aansprakelijkheid voor zaken" .
+
+od:wettelijk_vereiste_kwalitatieve_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "wettelijk vereiste kwalitatieve aansprakelijkheid" .
+
+od:wettelijk_vereiste_persoonlijke_aansprakelijkheid
+      a       skos:Concept ;
+      :prefLabel "wettelijk vereiste persoonlijke aansprakelijkheid" .
+
+od:wettelijk_voorschrift
+      a       skos:Concept ;
+      :altLabel "wettelijke bevoegdheid" ;
+      :prefLabel "wettelijk voorschrift" .
+
+od:wettelijke_plicht
+      a       skos:Concept ;
+      :prefLabel "wettelijke plicht" .
+
+od:wettelijke_uitzondering
+      a       skos:Concept ;
+      :prefLabel "wettelijke uitzondering" .
+
+od:wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame
+      a       skos:Concept ;
+      :prefLabel "wettelijke vereiste aansprakelijkheid voor misleidende reclame" .
+
+od:wettelijke_vereiste_aansprakelijkheid_voor_personen
+      a       skos:Concept ;
+      :prefLabel "wettelijke vereiste aansprakelijkheid voor personen" .
+
+od:wettelijke_vereiste_aansprakelijkheid_voor_producten
+      a       skos:Concept ;
+      :prefLabel "wettelijke vereiste aansprakelijkheid voor producten" .
+
+od:wijze_of_tijdstip_van_vervaardigen_van_het_product
+      a       skos:Concept ;
+      :altLabel "tijdstip van vervaardigen van het product" , "wijze van vervaardigen van het product" ;
+      :prefLabel "wijze of tijdstip van vervaardigen van het product" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:zaak
+      a       skos:Concept ;
+      :prefLabel "zaak" .
+
+od:zeggenschap
+      a       skos:Concept ;
+      :prefLabel "zeggenschap" .
+
+od:zeggenschapscriterium
+      a       skos:Concept ;
+      :prefLabel "zeggenschap" .
+
+od:zoeken_van_de_publiciteit
+      a       skos:Concept ;
+      :altLabel "mate waarin de benadeelde zelf de publiciteit heeft gezocht" ;
+      :prefLabel "zoeken van de publiciteit" ;
+      owl:equivalentClass
+              [ a       skos:Concept ;
+                owl:intersectionOf (:inbreukhandeling :werkhandeling)
+              ] .
+
+od:zorgvuldigheidsnorm
+      a       skos:Concept ;
+      :prefLabel "zorgvuldigheidsnorm" .
+
+od:zuivere_vermogensschade
+      a       skos:Concept ;
+      :prefLabel "zuivere vermogensschade" .

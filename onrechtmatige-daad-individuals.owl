@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY onrechtmatige-daad "http://www.best-project.nl/owl/onrechtmatige-daad.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.best-project.nl/owl/onrechtmatige-daad-individuals.owl#"
+     xml:base="http://www.best-project.nl/owl/onrechtmatige-daad-individuals.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:onrechtmatige-daad="http://www.best-project.nl/owl/onrechtmatige-daad.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="http://www.best-project.nl/owl/onrechtmatige-daad.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_kinderen -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_kinderen"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_ondergeschikten -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_ondergeschikten"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_opstallen -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_opstallen"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_personen -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_personen"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_zaken -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_zaken"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakeljkheid -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Aansprakeljkheid"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beoordelingscriterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Beoordelingscriterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Causaal_verband -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Causaal_verband"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Criterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Criterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Csqn_verband_omvangsfase -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Csqn_verband_omvangsfase"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Csqn_verband_vestigingsfase -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Csqn_verband_vestigingsfase"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Fout_begaan_in_de_prive-sfeer -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Fout_begaan_in_de_prive-sfeer"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Functioneel_verbandcriterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Functioneel_verbandcriterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Hypothetische_causaliteit -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Hypothetische_causaliteit"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Invulling_beoordelingscriterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Invulling_beoordelingscriterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Kelderluikcriteria -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Kelderluikcriteria"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Kwalitatieve_aansprakelijkheid -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Kwalitatieve_aansprakelijkheid"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Misleidende_en_vergelijkende_reclame -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Misleidende_en_vergelijkende_reclame"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Onderbreking_van_de_causaliteit -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Onderbreking_van_de_causaliteit"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ondergeschikt_in_dienst_natuurlijk_persooncriterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Ondergeschikt_in_dienst_natuurlijk_persooncriterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ondergeschiktheidscriterium -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Ondergeschiktheidscriterium"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Persoonlijke_aansprakelijkheid -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Persoonlijke_aansprakelijkheid"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Toerekening_naar_redelijkheid -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Toerekening_naar_redelijkheid"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Toerekeningsverband -->
+
+    <owl:Class rdf:about="&onrechtmatige-daad;Toerekeningsverband"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aanbiederr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aanbiederr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aanduiding_of_het_doel_van_de_aanbiedingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aanduiding_of_het_doel_van_de_aanbiedingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_bij_electronisch_rechtsverkeerr -->
+
+    <onrechtmatige-daad:Kwalitatieve_aansprakelijkheid rdf:about="&onrechtmatige-daad;Aansprakelijkheid_bij_electronisch_rechtsverkeerr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_boorgatenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_boorgatenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_dierenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_dierenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_gebrekkige_zakenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_gebrekkige_zakenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_gevaarlijke_stoffenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_gevaarlijke_stoffenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_kinderenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_kinderen rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_kinderenn">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Aansprakelijkheid_voor_personen"/>
+    </onrechtmatige-daad:Aansprakelijkheid_voor_kinderen>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_niet-ondergeschiktenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_personen rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_niet-ondergeschiktenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_opstallenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_opstallenn">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Aansprakelijkheid_voor_opstallen"/>
+    </onrechtmatige-daad:Aansprakelijkheid_voor_zaken>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_stortplaatsenn -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_zaken rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_stortplaatsenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aansprakelijkheid_voor_vertegenwoordigerss -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_personen rdf:about="&onrechtmatige-daad;Aansprakelijkheid_voor_vertegenwoordigerss"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aantasting_kwaliteit_van_levenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aantasting_kwaliteit_van_levenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aanwijzing_conform_art_34_lid_3_wmss -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aanwijzing_conform_art_34_lid_3_wmss"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aanwijzingsbevoegdheidd -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aanwijzingsbevoegdheidd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_en_de_werkwijze_van_de_mediaa -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_en_de_werkwijze_van_de_mediaa"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_aansprakelijkheidd -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_aansprakelijkheidd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_aanwijzingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_aanwijzingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_foutt -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_foutt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_gedragingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_gedragingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_gepubliceerde_verdenkingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_gepubliceerde_verdenkingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_geschonden_normm -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_geschonden_normm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_schadee -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_schadee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Aard_van_de_vergunningg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Aard_van_de_vergunningg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Adequatietheoriee -->
+
+    <onrechtmatige-daad:Toerekeningsverband rdf:about="&onrechtmatige-daad;Adequatietheoriee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Afwezigheid_van_zeggenschapp -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Afwezigheid_van_zeggenschapp"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Afwijking_in_de_gronddekkingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Afwijking_in_de_gronddekkingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Afwijking_van_de_normaalbladenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Afwijking_van_de_normaalbladenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Alternatieve_causaliteitt -->
+
+    <onrechtmatige-daad:Csqn_verband_omvangsfase rdf:about="&onrechtmatige-daad;Alternatieve_causaliteitt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Art_6_175_lid_1_ -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Art_6_175_lid_1_"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Art_6_175_lid_6_ -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Art_6_175_lid_6_"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bekendwording_20_jaar_na_sluitingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Bekendwording_20_jaar_na_sluitingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beoordeling_rangorde_grondrechtenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Beoordeling_rangorde_grondrechtenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beoordelingscriterium_51 -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Beoordelingscriterium_51"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beperking_van_het_nadeel_door_perspublicatie -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Beperking_van_het_nadeel_door_perspublicatie"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beschermingsbehoeftee -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Beschermingsbehoeftee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Beschikbare_alternatievenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Beschikbare_alternatievenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bestaan_van_andere_gegevenss -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Bestaan_van_andere_gegevenss"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Betalingsvoorwaardenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Betalingsvoorwaardenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bezitter_van_een_diercriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Bezitter_van_een_diercriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bezitterscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Bezitterscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bezwaarlijkheid_veiligheidsmaatregelenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Bezwaarlijkheid_veiligheidsmaatregelenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Blootstelling_aan_verdachtmakingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Blootstelling_aan_verdachtmakingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bodembewegingg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Bodembewegingg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Bodembewegingscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Bodembewegingscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Csqn_criteria_toerekeningsverbandd -->
+
+    <onrechtmatige-daad:Criterium rdf:about="&onrechtmatige-daad;Csqn_criteria_toerekeningsverbandd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Csqn_verband_vestigingsfasee -->
+
+    <onrechtmatige-daad:Csqn_verband_vestigingsfase rdf:about="&onrechtmatige-daad;Csqn_verband_vestigingsfasee">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Causaal_verband"/>
+    </onrechtmatige-daad:Csqn_verband_vestigingsfase>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Delfstoffenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Delfstoffenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Dier_als_instrumentt -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Dier_als_instrumentt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Dierr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Dierr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Doel_te_bereiken_via_andere_wegg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Doel_te_bereiken_via_andere_wegg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Doel_van_de_contractspartijenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Doel_van_de_contractspartijenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eigen_energie_van_het_dierr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Eigen_energie_van_het_dierr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eigenaar_van_een_dierr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Eigenaar_van_een_dierr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eigenaar_van_het_dierr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Eigenaar_van_het_dierr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eigendomsvoorbehoudd -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Eigendomsvoorbehoudd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eigenschappen_van_het_productt -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Eigenschappen_van_het_productt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Eisen_die_men_daaraan_mag_stellenn -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Eisen_die_men_daaraan_mag_stellenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ernst_en_duurr -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Ernst_en_duurr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ernst_van_de_gevolgenn -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Ernst_van_de_gevolgenn"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Exploitant_stortplaats_zonder_vergunningg -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Exploitant_stortplaats_zonder_vergunningg"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Exploitant_stortplaatscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Exploitant_stortplaatscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Fabrikant_van_een_eindproductt -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Fabrikant_van_een_eindproductt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Fabrikant_van_een_onderdeell -->
+
+    <onrechtmatige-daad:Invulling_beoordelingscriterium rdf:about="&onrechtmatige-daad;Fabrikant_van_een_onderdeell"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Fout_begaan_in_de_prive-sfeerr -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_ondergeschikten rdf:about="&onrechtmatige-daad;Fout_begaan_in_de_prive-sfeerr">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Fout_begaan_in_de_prive-sfeer"/>
+    </onrechtmatige-daad:Aansprakelijkheid_voor_ondergeschikten>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Fout_begaan_in_de_zakelijke_sfeerr -->
+
+    <onrechtmatige-daad:Aansprakelijkheid_voor_ondergeschikten rdf:about="&onrechtmatige-daad;Fout_begaan_in_de_zakelijke_sfeerr"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Functioneel_verbandcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Functioneel_verbandcriteriumm">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Functioneel_verbandcriterium"/>
+    </onrechtmatige-daad:Beoordelingscriterium>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Gebrekkig_productcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Gebrekkig_productcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Gebrekscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Gebrekscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Gelijktijdig_werkende_oorzaakk -->
+
+    <onrechtmatige-daad:Csqn_verband_omvangsfase rdf:about="&onrechtmatige-daad;Gelijktijdig_werkende_oorzaakk"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Inbreukcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Inbreukcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Kanscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Kanscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Kelderluikcriteriaa -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Kelderluikcriteriaa">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Kelderluikcriteria"/>
+    </onrechtmatige-daad:Beoordelingscriterium>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Misleidend_karaktercriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Misleidend_karaktercriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Misleidende_reclamee -->
+
+    <onrechtmatige-daad:Misleidende_en_vergelijkende_reclame rdf:about="&onrechtmatige-daad;Misleidende_reclamee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Momentschadee -->
+
+    <onrechtmatige-daad:Hypothetische_causaliteit rdf:about="&onrechtmatige-daad;Momentschadee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Niet-ondergeschiktheidscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Niet-ondergeschiktheidscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Omkeringsregelcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Omkeringsregelcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Omvang_schadecriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Omvang_schadecriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Onderbreking_van_de_causaliteitt -->
+
+    <onrechtmatige-daad:Toerekeningsverband rdf:about="&onrechtmatige-daad;Onderbreking_van_de_causaliteitt">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Onderbreking_van_de_causaliteit"/>
+    </onrechtmatige-daad:Toerekeningsverband>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ondergeschikheidscriterium -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Ondergeschikheidscriterium">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Ondergeschiktheidscriterium"/>
+    </onrechtmatige-daad:Beoordelingscriterium>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Ondergeschikt_in_dienst_natuurlijk_persooncriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Ondergeschikt_in_dienst_natuurlijk_persooncriteriumm">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Ondergeschikt_in_dienst_natuurlijk_persooncriterium"/>
+    </onrechtmatige-daad:Beoordelingscriterium>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Onrechtmatie_daadd -->
+
+    <onrechtmatige-daad:Persoonlijke_aansprakelijkheid rdf:about="&onrechtmatige-daad;Onrechtmatie_daadd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Onrechtmatigheidscriteriaa -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Onrechtmatigheidscriteriaa"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Producentcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Producentcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Productenaansprakelijkheidd -->
+
+    <onrechtmatige-daad:Kwalitatieve_aansprakelijkheid rdf:about="&onrechtmatige-daad;Productenaansprakelijkheidd"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Roerende_zaakcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Roerende_zaakcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Statistische_causaliteitt -->
+
+    <onrechtmatige-daad:Toerekeningsverband rdf:about="&onrechtmatige-daad;Statistische_causaliteitt"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Stofcriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Stofcriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Toerekening_naar_redelijkheidd -->
+
+    <onrechtmatige-daad:Toerekening_naar_redelijkheid rdf:about="&onrechtmatige-daad;Toerekening_naar_redelijkheidd">
+        <rdf:type rdf:resource="&onrechtmatige-daad;Toerekeningsverband"/>
+    </onrechtmatige-daad:Toerekening_naar_redelijkheid>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Uitstroom_delfstoffencriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Uitstroom_delfstoffencriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Vergelijkende_reclamee -->
+
+    <onrechtmatige-daad:Misleidende_en_vergelijkende_reclame rdf:about="&onrechtmatige-daad;Vergelijkende_reclamee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Vertegenwoordigingscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Vertegenwoordigingscriteriumm"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Wanprestatiee -->
+
+    <onrechtmatige-daad:Aansprakeljkheid rdf:about="&onrechtmatige-daad;Wanprestatiee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Zaakschadee -->
+
+    <onrechtmatige-daad:Hypothetische_causaliteit rdf:about="&onrechtmatige-daad;Zaakschadee"/>
+    
+
+
+    <!-- http://www.best-project.nl/owl/onrechtmatige-daad.owl#Zeggenschapscriteriumm -->
+
+    <onrechtmatige-daad:Beoordelingscriterium rdf:about="&onrechtmatige-daad;Zeggenschapscriteriumm"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.974) http://owlapi.sourceforge.net -->
+
