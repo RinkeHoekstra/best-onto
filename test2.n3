@@ -1,0 +1,51 @@
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	 <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:	 <http://www.w3.org/2002/07/owl#> .
+@prefix lv:	 <http://www.best-project.nl/owl/leken-vocabulair.owl#> .
+@prefix :	 <http://www.best-project.nl/owl/test.owl#> .
+
+lv:bezitter_van_een_dier
+	 a	 owl:Thing;
+	 rdfs:label	 "kennelijk prijsgeven"@nl,
+			 "nalaat deze te vangen"@nl,
+			 "vrijheid verkrijgen"@nl,
+			 "verwilderd"@nl,
+			 "uit zijn macht zijn gekomen"@nl,
+			 "uit zijn macht"@nl,
+			 "bezitter van de dieren"@nl,
+			 "bezitter van het dier"@nl,
+			 "eigenaar van tamme dieren"@nl,
+			 "bezitsverlies"@nl,
+			 "bezitter van een dier"@nl,
+			 "bezit van het dier"@nl,
+			 "in zijn macht"@nl,
+			 "het bezit van het dier verkrijgt"@nl,
+			 "eigenaar van een dier"@nl,
+			 "dier"@nl,
+			 "bezitter"@nl,
+			 "verlies van dieren"@nl,
+			 "vangen"@nl,
+			 "bezit"@nl,
+			 "eigendom"@nl;
+	 lv:fingerprint	 ([ lv:weight "100"^^xsd:integer; lv:value "kennelijk prijsgeven"@nl ]
+			[ lv:weight "33"^^xsd:integer; lv:value "nalaat deze te vangen"@nl ]
+			[ lv:weight "33"^^xsd:integer; lv:value "vrijheid verkrijgen"@nl ]
+			[ lv:weight "33"^^xsd:integer; lv:value "verwilderd"@nl ]
+			[ lv:weight "33"^^xsd:integer; lv:value "uit zijn macht zijn gekomen"@nl ]
+			[ lv:weight "29"^^xsd:integer; lv:value "uit zijn macht"@nl ]
+			[ lv:weight "27"^^xsd:integer; lv:value "bezitter van de dieren"@nl ]
+			[ lv:weight "27"^^xsd:integer; lv:value "bezitter van het dier"@nl ]
+			[ lv:weight "27"^^xsd:integer; lv:value "eigenaar van tamme dieren"@nl ]
+			[ lv:weight "25"^^xsd:integer; lv:value "bezitsverlies"@nl ]
+			[ lv:weight "22"^^xsd:integer; lv:value "bezitter van een dier"@nl ]
+			[ lv:weight "22"^^xsd:integer; lv:value "bezit van het dier"@nl ]
+			[ lv:weight "17"^^xsd:integer; lv:value "in zijn macht"@nl ]
+			[ lv:weight "17"^^xsd:integer; lv:value "het bezit van het dier verkrijgt"@nl ]
+			[ lv:weight "14"^^xsd:integer; lv:value "eigenaar van een dier"@nl ]
+			[ lv:weight "13"^^xsd:integer; lv:value "dier"@nl ]
+			[ lv:weight "12"^^xsd:integer; lv:value "bezitter"@nl ]
+			[ lv:weight "10"^^xsd:integer; lv:value "verlies van dieren"@nl ]
+			[ lv:weight "8"^^xsd:integer; lv:value "vangen"@nl ]
+			[ lv:weight "6"^^xsd:integer; lv:value "bezit"@nl ]
+			[ lv:weight "5"^^xsd:integer; lv:value "eigendom"@nl ]).

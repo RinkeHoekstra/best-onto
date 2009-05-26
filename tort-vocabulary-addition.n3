@@ -1,0 +1,1607 @@
+
+tv:plaats_van_de_daad	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:zuivere_vermogensschade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zorgvuldigheidsnorm .
+
+
+tv:artikel_6_174	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:vergunninghouder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:vruchtgebruik	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beperkt_recht .
+
+
+tv:csqn_verband_vestigingsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:causaal_verband .
+
+
+tv:verklaringen_over_en_weer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ernst_en_duur	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onrechtmatige_daad	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijke_aansprakelijkheid .
+
+
+tv:beoordeling_rangorde_grondrechten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:producent_van_een_grondstof	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:overtreding_gebruiksvoorschriften_bij_de_sluiting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aantasting_van_belang	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:ongeschreven_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:noodweer_exces	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:schulduitsluitingsgrond .
+
+
+tv:artikel_6_177	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:bijzonder_gevaar	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:onnodig_grievend	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aard_van_de_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:causaal_verband	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:artikel_6_162 .
+
+
+tv:zeggenschap	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onrechtmatigheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:opgedragen_taak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:stoffelijke_objecten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:persoonlijkheidsrecht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:subjectief_recht .
+
+
+tv:aanduiding_of_het_doel_van_de_aanbieding	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:mate_van_waarschijnlijkheid_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vereiste .
+
+
+tv:uitstroom_delfstoffencriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:artikel_6_163	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:functioneel_verbandcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:subjectief_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:omvang_van_de_voorraad	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:vergunning	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:misleidende_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:misleidende_en_vergelijkende_reclame .
+
+
+tv:redelijk_bekwaam_vakgenoot	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:uitzondering_bezit_6_173_174_179	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:rechtspersoon	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:instructies_van_de_hoofdfabrikant	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:gebrekkig_bestanddeel .
+
+
+tv:aanwijzing_conform_art_34_lid_3_wms	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aanwijzingsbevoegdheid .
+
+
+tv:zeggenschapscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:recht_op_leven	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijkheidsrecht .
+
+
+tv:eigen_schuld_van_de_benadeelde	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:schuld_van_de_benadeelde .
+
+
+tv:wanprestatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:verhindering_in_de_uitoefening_van_bevoegdheden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:ongeschreven_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:hulpmiddel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aantasting_van_de_goede_naam	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aantasting_van_de_eer_en_goede_naam .
+
+
+tv:uitzondering_afdeling_6_3_3	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:bezitter	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:ieder_die_zich_als_producent_presenteert	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:rectificatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:omvangsfase .
+
+
+tv:onrechtmatigheidscriteria	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:leidingschade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verkeer_en_veiligheidsnorm .
+
+
+tv:voortbestaan_niet_bekende_misstanden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:beschermingsbehoefte	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:fout_begaan_in_de_prive-sfeer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_ondergeschikten .
+
+
+tv:artikel_6_179	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:kind_tussen_de_14_en_16_jaar	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kind .
+
+
+tv:artikel_6_188	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:bezwaarlijkheid_veiligheidsmaatregelen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_172	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:schadevergoeding	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:omvangsfase .
+
+
+tv:prijs_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:causaliteit_vestigingsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:medebezitter	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:persoonlijke_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakeljkheid .
+
+
+tv:onbeheersbare_ondergrondse_natuurlijke_krachten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:overheidstoestemming	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:opstal	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:artikel_6_196	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:schepen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:niet_in_het_verkeer_gebrachte_producten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:hulppersonen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:objectief_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:recht .
+
+
+tv:bestaan_van_andere_gegevens	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_194	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:verkeerde_informatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:onvoldoende_rekening_houden_met_andermans_belangen .
+
+
+tv:kennis_van_belang	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:ongeschreven_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:artikel_6_168	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:doorbaak_van_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:verwezenlijking_van_het_gevaar	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:immateriele_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zorgvuldigheidsnorm .
+
+
+tv:bezitter_van_een_dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:correctie_langemeijer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:algemeen_verbindend_voorschrift	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_plicht .
+
+
+tv:kenbaarheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:zoeken_van_de_publiciteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:invulling_beoordelingscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:criterium .
+
+
+tv:artikel_6_166	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:gebrek	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:fabrikant_van_een_onderdeel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:afwijking_in_de_gronddekking	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:rechten_van_pachter	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beperkt_recht .
+
+
+tv:onbehoorlijk_aanhaken_producten_of_diensten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:recht_op_vrijheid_van_meningsuiting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:intensiteit_van_de_inbreuk	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:illegaal_storten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:zorgvuldigheidsnorm	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:krachtens_amvb	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aard_van_de_vergunning	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:wettelijke_plicht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:artikel_6_185	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:niet-ondergeschiktheidscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:ondergeschikt_in_dienst_natuurlijk_persooncriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+schuld	not schulduitsluitingsgrond
+
+tv:milieu	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:artikel_6_183	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:garantie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:leveringsvoowaarden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onderbreking_van_de_causaliteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:tolerantiegrenzen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_bij_electronisch_rechtsverkeer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kwalitatieve_aansprakelijkheid .
+
+
+tv:aard_van_de_geschonden_norm	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aard_van_de_gepublliceerde_verdenking .
+
+
+tv:doel_van_de_contractspartijen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_voor_kinderen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen .
+
+
+tv:aansprakelijkheid_voor_stortplaatsen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:kans_dat_anderen_niet_goed_opletten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:uitzondering_zaak_6_173	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:schadeveroorzakende_gebeurtenis	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:kind_16_jaar_en_ouder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kind .
+
+
+tv:medeschuld	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:schuld_van_de_benadeelde .
+
+
+tv:artikel_6_193	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:geestelijke_tekortkoming	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:mentale_toestand .
+
+
+tv:verzekerbaarheid_van_de_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:toerekeningsverband	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:causaal_verband .
+
+
+tv:productenaansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:aansprakelijkheid_voor_opstallen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vereiste .
+
+
+tv:niet_voldoen_aan_vereisten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:artikel_6_191	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:omvang_schadecriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:onmiddelijk_gevaar	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:persoon_van_de_gelaedeerde	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:eigenschappen_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:verkeersongeval	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:roerende_zaak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:inkleding_van_de_verdenkingen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onduidelijkheid_van_de_verstrekte_gegevens	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:vermogensrecht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:subjectief_recht .
+
+
+tv:hulpbetoon	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:eigendomsrecht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:absoluut_recht .
+
+
+tv:aansprakelijkheid_voor_personen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen_en_zaken .
+
+
+tv:recht_op_vrijheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijkheidsrecht .
+
+
+tv:artikel_6_176	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:relativiteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:opdracht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:kind	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:omstandigheden_van_het_geval	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:goed_houden_voor_zichzelf	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:gewone_doorbraak_van_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:doorbaak_van_aansprakelijkheid .
+
+
+tv:ondergeschikte_in_dienst_natuurlijk_persoon	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:aantasting_van_de_eer_en_goede_naam	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:immateriele_schade .
+
+
+tv:aansprakelijkheid_voor_niet-ondergeschikten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen .
+
+
+tv:artikel_6_171	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:gedraging_van_een_dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:roerende_zaak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:verontreiniging	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:gebruiksmogelijkheden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_180	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:lichamelijk_gezond	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:fysieke_toestand .
+
+
+tv:onbevoegd_gegeven_ambtelijk_bevel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:schulduitsluitingsgrond .
+
+
+tv:beschikbare_alternatieven	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_voor_dieren	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:uitvoerbaareid_overeenkomst	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:kansvergroting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:bestanddeel_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:hypothetische_causaliteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:toestemming_van_de_benadeelde	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:uitzondering_zaakschade_beneden_de_500_euro	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:onroerende_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_voor_gevaarlijke_stoffen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:artikel_6_165	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:veroudering_van_gegevens	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:inbreuk_op_een_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid .
+
+
+tv:stof	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:producent	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_producten .
+
+
+tv:praktische_indicatoren	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:pleger_onrechtmatige_daad	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:gebrekkig_bestanddeel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid .
+
+
+tv:ontwikkelingsrisico	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:openbaarmaking_van_de_mededeling	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame .
+
+
+tv:aanwijzingsbevoegdheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:art_6_175_lid_1	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:lichamelijke_tekortkoming	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:fysieke_toestand .
+
+
+tv:bekendheidseis	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:misleidend_karakter	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame .
+
+
+tv:onvolledige_informatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:onvoldoende_rekening_houden_met_andermans_belangen .
+
+
+tv:doen_in_strijd_met_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:onrechtmatigheid .
+
+
+tv:persoon_van_de_laedens	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:gebrekkig_productcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:alternatieve_causaliteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:csqn_verband_omvangsfase .
+
+
+tv:ondergeschikte	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:artikel_6_189	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:groepsdeelnemer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:kwalitatieve_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakeljkheid .
+
+
+tv:niet_commerciele_producten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:artikel_6_178	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:schuld_van_de_benadeelde	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:niet-ondergeschikte	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:stofcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:presentatie_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_187	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:formele_wet	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_plicht .
+
+
+tv:voorzorgsmaatregelen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:bestuurdersaansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:krachtens_wet	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:staking	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:recht_op_privacy	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijkheidsrecht .
+
+
+tv:onvoldoende_rekening_houden_met_andermans_belangen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:omvangsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:fase .
+
+
+tv:uitzondering_producten_6_185	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:vandalisme	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:omgekeerde_doorbraak_van_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:doorbaak_van_aansprakelijkheid .
+
+
+tv:luchtvaartuigen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:beoordelingscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:criterium .
+
+
+tv:aantasting_kwaliteit_van_leven	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:dwaling_omtrent_de_feiten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verontschuldigbare_dwaling .
+
+
+tv:artikel_6_182	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:krachtens_volmacht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:opstal	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:eigenaar_van_een_dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:niet_werkzaam_voor_beroep_of_bedrijf	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:roerende_zaak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_voor_gebrekkige_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:wanprestatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakeljkheid .
+
+
+tv:grondrecht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:recht .
+
+
+tv:ongeschreven_vereiste_kwalitatieve_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vereiste .
+
+
+tv:bezitter_van_een_diercriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:fabrikant_van_een_eindproduct	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:uitzondering_ontbreken_aansprakelijkheid_6_162	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:overmacht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond_krachtens_wet .
+
+
+tv:aard_van_de_gedraging	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aansprakelijkheid_voor_vertegenwoordigers	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen .
+
+
+tv:artikel_6_167	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:exploitant_stortplaatscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:gezagsverhouding	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:product_dat_niet_de_veiligheid_biedt	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:momentschade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:hypothetische_causaliteit .
+
+
+tv:onbevoegd_uitoefenen_bevoegdheden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:ongeschreven_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:overheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:veiligheidsvoorschriften	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:recht_op_lichamelijke_integriteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijkheidsrecht .
+
+
+tv:tekortkoming	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:toelaatbaarheid_van_het_gedrag_van_toezichthouders	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:immateriele_schade .
+
+
+tv:kind_jonger_dan_14_jaar	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kind .
+
+
+tv:kans_dat_daardoor_ongevallen_ontstaan	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:misleidend_karaktercriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:niet_nakoming_overeenkomst	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:aansprakelijkheid_voor_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen_en_zaken .
+
+
+tv:gelijktijdig_werkende_oorzaak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:csqn_verband_omvangsfase .
+
+
+tv:artikel_6_175	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:voorzienbaarheid_van_de_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:tijdstip_waarop_het_product_in_het_verkeer_is_gebracht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:tenzij_hinder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:aansprakeljkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:artikel_6_162 .
+
+
+tv:doel_te_bereiken_via_andere_weg	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:toerekening_omvangsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vereiste .
+
+
+tv:handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:bezitterscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:stof	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:recht_op_een_goede_naam	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoonlijkheidsrecht .
+
+
+tv:roerende_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:wettelijke_vereiste_aansprakelijkheid_voor_personen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid .
+
+
+tv:wettelijk_voorschrift	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond_krachtens_wet .
+
+
+tv:gevaarlijke_toestand	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_192	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:maatschappelijke_betamelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:fysieke_toestand	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toestand .
+
+
+tv:aard_en_de_werkwijze_van_de_media	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ongelukkige_samenloop_van_omstandigheden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verkeer_en_veiligheidsnorm .
+
+
+tv:roerende_zaakcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:steun_van_verdenking_in_feitenmateriaal	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:toerekening_krachtens_verkeersopvatting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekening_vestigingsfase .
+
+
+tv:toerekening_naar_redelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:bedrijf	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:artikel_6_190	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:pleger_onrechtmatige_daad	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:aansprakelijkheid_voor_ondergeschikten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_personen .
+
+
+tv:artikel_6_164	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:dwingende_overheidsvoorschriften	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:geestelijk_gezond	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:mentale_toestand .
+
+
+tv:betalingsvoorwaarden	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ongeschreven_rechtvaardigingsgrond	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond .
+
+
+tv:artikel_6_162	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:eg_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_plicht .
+
+
+tv:aard_van_de_gepublliceerde_verdenking	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:bevoegd_gegeven_ambtelijk_bevel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond_krachtens_wet .
+
+
+tv:eigendomsvoorbehoud	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:verklaring_of_beoordeling	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:vergelijkende_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:misleidende_en_vergelijkende_reclame .
+
+
+tv:bewijslast	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:omvangsfase .
+
+
+tv:legaal_storten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:wettelijke_vereiste_aansprakelijkheid_voor_producten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid .
+
+
+tv:misleidende_en_vergelijkende_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kwalitatieve_aansprakelijkheid .
+
+
+tv:stoffelijke_objecten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:artikel_6_181	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:ernst_van_de_gevolgen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:mentale_toestand	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toestand .
+
+
+tv:houder_van_een_dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_186	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:artikel_6_170	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:subjectief_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:recht .
+
+
+tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_kwalitatieve_aansprakelijkheid .
+
+
+tv:werkzaamheden_met_een_incidenteel_karakter	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:eisen_die_men_daaraan_mag_stellen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:gevaarzetting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verkeer_en_veiligheidsnorm .
+
+
+tv:noodweer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond_krachtens_wet .
+
+
+tv:afwijking_van_de_normaalbladen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:schuld	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekening_vestigingsfase .
+
+
+tv:gebrekscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:beroepsfout	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:handelen_in_strijd_met_een_wettelijke_plicht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:functioneel_verband	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:zaak	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:artikel_6_162 .
+
+
+tv:artikel_6_173	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:kelderluikcriteria	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:geen_economisch_doel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:niet_commerciele_producten .
+
+
+tv:tijdstip_van_de_fout	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aanvankelijk_niet_gebrekkige_producten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_producten_6_185 .
+
+
+tv:hoedanigheid_van_de_gegevensverstrekker	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:inbreukcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:exploitant_stortplaats	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:aan_ouders_verwijtbaar_handelen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:aansprakelijkheid_voor_personen_en_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:kwalitatieve_aansprakelijkheid .
+
+
+tv:exploitant_mijnbouwwerk	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:vertegenwoordigingscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:absoluut_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vermogensrecht .
+
+
+tv:fout	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:csqn_verband_omvangsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:artikel_6_197	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:volwassene	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:persoon .
+
+
+tv:goed_houden_voor_een_ander	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ondergeschiktheidscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:vertegenwoordiging	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
+
+
+tv:uitstroming_van_delfstoffen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken .
+
+
+tv:dier_als_instrument	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_195	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:exploitant_stortplaats_zonder_vergunning	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:recht_op_voortbrengselen_van_de_geest	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:absoluut_recht .
+
+
+tv:aard_van_de_aanwijzing	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:fout_begaan_in_de_zakelijke_sfeer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_ondergeschikten .
+
+
+tv:aantasting_van_de_eer	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aantasting_van_de_eer_en_goede_naam .
+
+
+tv:stand_van_techniek_en_ontwikkelingsrisico	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:gebrekkig_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_producten .
+
+
+tv:redelijkerwijs_te_verwachten_gebruik	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onroerende_zaken	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zaak .
+
+
+tv:toerekening_krachtens_wet	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekening_vestigingsfase .
+
+
+tv:kanscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:ondergeschiktheidscriterium .
+
+
+tv:statistische_causaliteit	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:csqn_criteria_toerekeningsverband	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:criterium .
+
+
+tv:gezag_van_de_bron	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:natuurgeweld	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:bodembewegingscriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:eigen_energie_van_het_dier	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:aard_van_de_fout	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:omkeringsregelcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:verkeer_en_veiligheidsnorm	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zorgvuldigheidsnorm .
+
+
+tv:sport_en_spel	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verkeer_en_veiligheidsnorm .
+
+
+tv:producentcriterium	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beoordelingscriterium .
+
+
+tv:onjuistheid_van_de_gegevens	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:niet_in_de_uitoefening_van_beroep_of_bedrijf	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:niet_commerciele_producten .
+
+
+tv:mededeling_in_de_uitoefening_van_beroep_of_bedrijf	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame .
+
+
+tv:beperking_van_het_nadeel_door_perspubilcatie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:zaakschade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:hypothetische_causaliteit .
+
+
+tv:rechtsdwaling	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:verontschuldigbare_dwaling .
+
+
+tv:delfstoffen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:blootstelling_aan_verdachtmaking	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:onevenredig_getroffen	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ongeoorloofde_reclame	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame .
+
+
+tv:oneerlijke_concurrentie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:verontschuldigbare_dwaling	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:schulduitsluitingsgrond .
+
+
+tv:vergunningvoorwaarde	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_plicht .
+
+
+tv:artikel_6_184	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:art_6_175_lid_6	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:toerekening_vestigingsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijk_vereiste_persoonlijke_aansprakelijkheid .
+
+
+tv:vestigingsfase	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:fase .
+
+
+tv:bekendwording_20_jaar_na_sluiting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:gebruik_gevaarlijke_stof_voor_eigen_bestwil	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:wijze_of_tijdstip_van_vervaardigen_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:uitzondering_6_175_tot_6_177	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+
+tv:ontwerp_van_het_product	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:gebrekkig_bestanddeel .
+
+
+tv:rechten_van_huurder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:beperkt_recht .
+
+
+tv:afwezigheid_van_zeggenschap	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:verkeersopvatting	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:ongeschreven_vereiste_persoonlijke_aansprakelijkheid	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vereiste .
+
+
+tv:nalaten_in_strijd_met_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:onrechtmatigheid .
+
+
+tv:norm_ter_bescherming_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zorgvuldigheidsnorm .
+
+
+tv:aard_van_de_schade	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:beperkt_recht	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:vermogensrecht .
+
+
+tv:aanbieder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:artikel_6_169	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wetsbepaling .
+
+
+tv:aansprakelijkheid_voor_boorgaten	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:aansprakelijkheid_voor_zaken .
+
+
+tv:molest	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:uitzondering_6_175_tot_6_177 .
+
+
+tv:hinder	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:zuivere_vermogensschade .
+
+
+tv:adequatietheorie	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:toerekeningsverband .
+
+
+tv:bodembeweging	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:invulling_beoordelingscriterium .
+
+
+tv:rechtvaardigingsgrond_krachtens_wet	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:rechtvaardigingsgrond .
+
+
+tv:uitzondering_stortplaats_6_175	 a	 skos:Concept,best:Concept;
+	 skos:broader	 tv:wettelijke_uitzondering .
+
+tv:niet_aan_ouders_verwijtbaar_handelen	a skos:Concept, best:Concept ;
+	skos:broader	tv:wettelijke_vereiste_aansprakelijkheid_voor_personen .
