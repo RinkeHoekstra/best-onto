@@ -1,0 +1,1811 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:lv="http://www.best-project.nl/owl/laymen-vocabulary.owl#"
+    xmlns:tv="http://www.best-project.nl/owl/tort-vocabulary.owl#"
+    xmlns:wn="http://xmlns.com/wordnet/1.6/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:best="http://www.best-project.nl/owl/best.owl#"
+    xmlns:rnlrdf="http://www.rechtspraak.nl/rdf#"
+    xmlns:pim-contact="http://www.w3.org/2000/10/swap/pim/contact#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:ljn="http://www.rechtspraak.nl/ljn.asp?ljn="
+    xmlns="http://www.best-project.org/owl/mapping.owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://www.best-project.org/owl/mapping.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl"/>
+    <owl:imports rdf:resource="http://www.best-project.nl/owl/verdicts.owl"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/20050603.rdf"/>
+    <owl:imports rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl"/>
+    <dc:description>Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam</dc:description>
+  </owl:Ontology>
+  <owl:Class rdf:ID="FP162E">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit">
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA7914">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP175A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP162B>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF6263"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB0034">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP162C"/>
+                    </rdf:type>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP1702A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP1701A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP1702A>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP162B"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP173A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP185A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AH9070">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA6233">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP1691A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP1691D"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162B"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP162A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP162D>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE7351"/>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT8810"/>
+                </best:describes>
+                <best:describes>
+                  <FP1691A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA5320"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU4042">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA8108"/>
+                </best:describes>
+                <best:describes>
+                  <FP1691A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB1426">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP1692A"/>
+                    </rdf:type>
+                  </FP1691A>
+                </best:describes>
+                <best:describes>
+                  <FP162C rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS2026"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253">
+                    <rdf:type rdf:resource="#FP162E"/>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP162C rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR5213"/>
+                </best:describes>
+                <best:describes>
+                  <FP162C rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB0377"/>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA7520">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162B"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP162D>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE5823">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP1691A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE2690">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1691D"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP1692C"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1692A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP1691A>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE6069">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP162B>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AP0151">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP172A"/>
+                    </rdf:type>
+                  </FP162B>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO3453">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162A"/>
+                    </rdf:type>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP162C rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689"/>
+                </best:describes>
+                <best:describes>
+                  <FP162E rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR3290">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP162E>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162A"/>
+                    </rdf:type>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP1692A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU8393"/>
+                </best:describes>
+                <best:describes>
+                  <FP162A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF8270"/>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AI0294">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP175A"/>
+                    </rdf:type>
+                  </FP162B>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AL1651">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162B"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP162C"/>
+                    </rdf:type>
+                  </FP162D>
+                </best:describes>
+                <best:describes>
+                  <FP162B rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA8498">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP162B>
+                </best:describes>
+                <best:describes>
+                  <FP162A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO7190"/>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA6233"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0034"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AS2026"/>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT7537">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP177A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="#FP162E"/>
+                  </FP162D>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253"/>
+                <best:describes>
+                  <FP1691A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AP1662">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1691D"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP172A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1692A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1692C"/>
+                    </rdf:type>
+                  </FP1691A>
+                </best:describes>
+                <best:describes>
+                  <FP1691D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AI0790">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP1692C"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP1691D>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU5877"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0377"/>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP175A"/>
+                    </rdf:type>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP173A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="#FP162E"/>
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP185A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689"/>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT8823"/>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD3985"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AI0341">
+                    <rdf:type rdf:resource="#FP162E"/>
+                  </FP176A>
+                </best:describes>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT8665"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AH9070"/>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AH8822">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP162D>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE2690"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713"/>
+                <best:describes>
+                  <FP162D rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO0997">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP173A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP162D>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE5823"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4042"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AL1651"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR5213"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3290"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3290"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT7537"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF6263"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0341"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:162 BW, variant E </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Dier_TV2LV">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#dier"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_dier">
+                <best:describes>
+                  <FP179A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE2268">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP179A>
+                </best:describes>
+                <best:describes>
+                  <FP179A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB1335"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD4954">
+                    <rdf:type>
+                      <owl:Class rdf:ID="FP179A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+                <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#dierobject"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                    <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#dierobject"/>
+                  </owl:Restriction>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+                <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#diersituatie"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                    <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#diersituatie"/>
+                  </owl:Restriction>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.best-project.nl/owl/best.owl#Case">
+        <owl:equivalentClass>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.best-project.nl/owl/best.owl#Concept"/>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+          </owl:Restriction>
+        </owl:equivalentClass>
+      </rdf:Description>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#FP1691A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#kind_jonger_dan_14">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE2690"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP1662"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB1426"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0790"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#ouderlijk_gezag">
+                <best:describes>
+                  <FP1692A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF7654">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP1692A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP1662"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#schade_aan_derden_toegebracht">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA6233"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA5320"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#schade">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA6233"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE6069"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0377"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3290"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE2690"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0034"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA7520"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AS2026"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4042"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AL1651"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AH9070"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE5823"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR5213"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:169 lid 1 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP162C">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:162 BW, variant C </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP1701A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#fout_van_een_ondergeschikte">
+                <best:describes>
+                  <FP1702A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF2943"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU8009"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4437"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4822"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713"/>
+                <best:describes>
+                  <FP1702A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE8549">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP1702A>
+                </best:describes>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD7395">
+                    <rdf:type rdf:resource="#FP1701A"/>
+                  </FP171A>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO6262"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AK3432"/>
+                </best:describes>
+                <best:describes>
+                  <FP1701A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE3451"/>
+                </best:describes>
+                <best:describes>
+                  <FP1701A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF9686">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP1701A>
+                </best:describes>
+                <best:describes>
+                  <FP1702A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA5526"/>
+                </best:describes>
+                <best:describes>
+                  <FP1702A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR8103"/>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#kans_op_de_fout_vergroot">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE3451"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD7395"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF9686"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#zeggenschap_over_de_gedragingen">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7713"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA5526"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE3451"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD7395"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR8103"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF9686"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE8549"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF2943"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:170 lid 1 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP179A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_dier"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#gedraging_van_het_dier_in_zijn_macht_hebben"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#schuld">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB1335"/>
+                <best:describes>
+                  <FP179A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF6629"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO3453"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO7190"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF8270"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:179 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP185A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#gebrekkig_product">
+                <best:describes>
+                  <FP185A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF7905">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP185A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes>
+                  <FP185A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB1338">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP185A>
+                </best:describes>
+                <best:describes>
+                  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA8435">
+                    <rdf:type rdf:resource="#FP185A"/>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP175A>
+                </best:describes>
+                <best:describes>
+                  <FP185A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD8518">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP185A>
+                </best:describes>
+                <best:describes>
+                  <FP185A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE7005"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB0643">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP173A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="#FP185A"/>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#opstal">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF7905"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB1338"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA8435"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE7005"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD8518"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0643"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#producent"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:185 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP177A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#exploitant_van_een_mijnbouwwerk">
+                <best:describes>
+                  <FP177A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU4684"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT7537"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#mijnbouwwerk">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4684"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT7537"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:177 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP172A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#vertegenwoordiger">
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD7661">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP172A>
+                </best:describes>
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT9011"/>
+                </best:describes>
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA4734">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP172A>
+                </best:describes>
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF8350">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP172A>
+                </best:describes>
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT7617"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP0151"/>
+                <best:describes>
+                  <FP172A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU6821"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP1662"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:172 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP173A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_roerende_zaak">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO0997"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0643"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD4954"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#gevaar_voor_personen_of_zaken">
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AP9636"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU2940"/>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AI0830"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0643"/>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS3250">
+                    <rdf:type rdf:resource="#FP173A"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO0997"/>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU7774"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AH8737">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO8132">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT3442"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD9930">
+                    <rdf:type>
+                      <owl:Class rdf:about="#FP175A"/>
+                    </rdf:type>
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF4658">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA7686"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO2169">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4042"/>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO1237"/>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF6264">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO6260">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF7419"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253"/>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE7148">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE7345"/>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD8595">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF2055">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF3455">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO1558">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP173A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3313"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD4954"/>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS4143"/>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE2202"/>
+                </best:describes>
+                <best:describes>
+                  <FP174A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB2149">
+                    <rdf:type rdf:resource="#FP173A"/>
+                  </FP174A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU4279">
+                    <rdf:type rdf:resource="#FP173A"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP173A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3688"/>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:173 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP1702A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#fout_van_een_ondergeschikte"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#zeggenschap_over_de_gedragingen"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:170 lid 2 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP171A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#bij_die_werkzaamheden_begane_fout">
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AM3305">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP171A>
+                </best:describes>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU5661"/>
+                </best:describes>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO5309">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP171A>
+                </best:describes>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD5318"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD7395"/>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR5342">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP171A>
+                </best:describes>
+                <best:describes>
+                  <FP171A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD5317"/>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#niet-ondergeschikte">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AM3305"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU5661"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO5309"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD5318"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR5342"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD7395"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD5317"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:171 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP162D">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_een_wettelijke_plicht">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0294"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT8665"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AL1651"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO0997"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT7537"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD3985"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA7914"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE7351"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE6069"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AH8822"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU5877"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA8498"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT8810"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA8108"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP0151"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT8823"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#BW_Case"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="nl">Artikel 6:162 BW, variant D </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#BW_Case">
+    <rdfs:subClassOf rdf:resource="http://www.best-project.nl/owl/best.owl#Case"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Schade">
+    <rdfs:subClassOf rdf:resource="http://www.best-project.nl/owl/best.owl#Case"/>
+  </owl:Class>
+  <owl:Class rdf:ID="FP194">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#in_uitoefening_van_beroep_of_bedrijf">
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#misleidende_mededeling">
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO0367">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU6828"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA6791">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3080">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU8231"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AL6908">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AK4749"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA4038">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR8054"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS5763"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS8909"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU6405"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR5041"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU4832"/>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3847"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE4944">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA8110">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA9426">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AH9297">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE6426">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT9841">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3907">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB1078">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE9843">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT4972"/>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD9917">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type rdf:resource="#FP194"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AM0361">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AP8458"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA4774">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT6522"/>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR5580">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO6211">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                    <rdf:type rdf:resource="#FP194"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <rnlrdf:Uitspraak rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO8198">
+                    <rdf:type rdf:resource="#FP194"/>
+                  </rnlrdf:Uitspraak>
+                </best:describes>
+                <best:describes>
+                  <FP194 rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS4624"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#openbaar_maken_mededeling">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4038"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT9841"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:194 BW </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP162A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schuld"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:162 BW, variant A</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Dier_LV2TV">
+    <skos:note>This case connects laymen descriptions of cases about animals to the equivalent legal description of verdicts that concern such.</skos:note>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+                <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#dierobject"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                    <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#dierobject"/>
+                  </owl:Restriction>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+                <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#diersituatie"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                    <owl:hasValue rdf:resource="http://www.best-project.nl/owl/laymen-vocabulary.owl#diersituatie"/>
+                  </owl:Restriction>
+                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#dier"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_dier"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.best-project.nl/owl/best.owl#Case"/>
+  </owl:Class>
+  <owl:Class rdf:about="#FP1692A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#kind_tussen_de_14_en_16">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE2690"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF7654"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU8393"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP1662"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0790"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB1426"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#ouderlijk_gezag"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:169 lid 2 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP175A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_uitoefening_van_beroep_of_bedrijf"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#stoffen_met_een_bijzonder_gevaar_van_ernstige_aard"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#verwezelijking_van_een_gevaar">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD8595"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE7148"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AS3250"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF7419"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0830"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB2149"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF3455"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:175 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP162B">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_een_wettelijke_plicht"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:162 BW, variant B</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP176A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#exploitant_stortplaats">
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB1202">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP176A>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR0186"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA5860"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AM7964"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF7885"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU0325"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA5651"/>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD7384"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0341"/>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF0102">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP176A>
+                </best:describes>
+                <best:describes>
+                  <FP176A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AI0349">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP176A>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#stortplaats">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF0102"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB1202"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0341"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA5651"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU0325"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF7885"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD7384"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA5860"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AM7964"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR0186"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AI0349"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:176 BW, variant A </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP194A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#vergelijkende_reclame">
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AN9389">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO7861">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO7690">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO6211"/>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF4845">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE5632">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD9917"/>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE1504">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS8832"/>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO8911">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4279"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU3080"/>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU3316"/>
+                </best:describes>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT9841"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU3907"/>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU6415"/>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AB0221">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT9082"/>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF4843">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AO2626">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF4512">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+                <best:describes>
+                  <FP194A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD8666">
+                    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+                  </FP194A>
+                </best:describes>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:194 BW, variant A</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP1692C">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#kind_tussen_de_14_en_16"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#ouderlijk_gezag"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:169 lid 2 BW, variant C </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#FP1691D">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#causaliteit"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#fout_van_een_ondergeschikte"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#kind_jonger_dan_14"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#ouderlijk_gezag"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade_aan_derden_toegebracht"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#schade"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:169 lid 1 BW, variant D </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="FP174A">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_opstal">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF6264"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue>
+              <rdf:Description rdf:about="http://www.best-project.nl/owl/tort-vocabulary.owl#eisen_in_de_gegeven_omstandigheden">
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE2202"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AE7345"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO1558"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AR3253"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA4000"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO8132"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU3313"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AS3250"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF2055"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO1237"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF1817"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU3688"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU2940"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AF4658"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4042"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AH8737"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AT3442"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB2149"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU7774"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AD9930"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO2169"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AA7686"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AB0643"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AU4279"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AS4143"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AO6260"/>
+                <best:describes rdf:resource="http://www.rechtspraak.nl/ljn.asp?ljn=AP9636"/>
+              </rdf:Description>
+            </owl:hasValue>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#gevaar_voor_personen_of_zaken"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#opstal"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://www.best-project.nl/owl/best.owl#described_by"/>
+            <owl:hasValue rdf:resource="http://www.best-project.nl/owl/tort-vocabulary.owl#verwezelijking_van_een_gevaar"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#BW_Case"/>
+    <rdfs:label xml:lang="nl">Artikel 6:174 BW, variant A </rdfs:label>
+  </owl:Class>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF2005"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA7654">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <skos:Concept rdf:about="http://www.best-project.nl/owl/laymen-vocabulary.owl#schade"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AT7525"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR6458"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA8729"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA9840">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF3412"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE6445">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AF2831">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AD9112"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AP0196">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AA9898"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AE7269">
+    <rdf:type rdf:resource="http://www.rechtspraak.nl/rdf#Uitspraak"/>
+  </FP175A>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AR6459"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AU5626"/>
+  <FP175A rdf:about="http://www.rechtspraak.nl/ljn.asp?ljn=AS8908"/>
+</rdf:RDF>
+
+<!-- Created with TopBraid Composer -->
