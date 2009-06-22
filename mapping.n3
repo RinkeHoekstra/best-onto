@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue May 26 11:40:23 CEST 2009
+# Saved by TopBraid on Mon Jun 22 12:48:51 CEST 2009
 # baseURI: http://www.best-project.org/owl/mapping.owl
 # imports: http://xmlns.com/foaf/0.1/20050603.rdf
 # imports: http://www.best-project.nl/owl/tort-vocabulary.owl
@@ -135,25 +135,6 @@ tv:zeggenschap_over_de_gedragingen
       owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://xmlns.com/foaf/0.1/20050603.rdf> , <http://www.best-project.nl/owl/verdicts.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
-:Aard_van_de_Vergunning
-      a       owl:Class ;
-      rdfs:subClassOf best:Mapping ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue tv:aard_van_de_vergunning ;
-                owl:onProperty best:described_by
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Class ;
-                owl:intersectionOf ([ a       owl:Restriction ;
-                            owl:hasValue lv:hinderhandeling ;
-                            owl:onProperty best:described_by
-                          ] [ a       owl:Restriction ;
-                            owl:hasValue lv:inbreukhandeling ;
-                            owl:onProperty best:described_by
-                          ])
-              ] .
-
 :BW_Case
       a       owl:Class ;
       rdfs:subClassOf best:Case .
@@ -162,14 +143,9 @@ tv:zeggenschap_over_de_gedragingen
       a       owl:Class ;
       rdfs:subClassOf best:Mapping ;
       rdfs:subClassOf
-              [ a       owl:Class ;
-                owl:intersectionOf ([ a       owl:Restriction ;
-                            owl:hasValue tv:dier ;
-                            owl:onProperty best:described_by
-                          ] [ a       owl:Restriction ;
-                            owl:hasValue tv:bezitter_van_een_dier ;
-                            owl:onProperty best:described_by
-                          ])
+              [ a       owl:Restriction ;
+                owl:hasValue tv:dier ;
+                owl:onProperty best:described_by
               ] ;
       owl:equivalentClass
               [ a       owl:Class ;
@@ -614,25 +590,6 @@ tv:zeggenschap_over_de_gedragingen
               [ a       owl:Class ;
                 owl:intersectionOf ([ a       owl:Restriction ;
                             owl:hasValue tv:vergelijkende_reclame ;
-                            owl:onProperty best:described_by
-                          ])
-              ] .
-
-:Roerende_Zaken
-      a       owl:Class ;
-      rdfs:subClassOf best:Mapping ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue tv:roerende_zaken ;
-                owl:onProperty best:described_by
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Class ;
-                owl:intersectionOf ([ a       owl:Restriction ;
-                            owl:hasValue lv:nalaten ;
-                            owl:onProperty best:described_by
-                          ] [ a       owl:Restriction ;
-                            owl:hasValue lv:werkhandeling ;
                             owl:onProperty best:described_by
                           ])
               ] .
