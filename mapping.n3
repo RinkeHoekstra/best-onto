@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jun 22 12:48:51 CEST 2009
+# Saved by TopBraid on Mon Jun 22 15:03:37 CEST 2009
 # baseURI: http://www.best-project.org/owl/mapping.owl
 # imports: http://xmlns.com/foaf/0.1/20050603.rdf
 # imports: http://www.best-project.nl/owl/tort-vocabulary.owl
@@ -138,44 +138,6 @@ tv:zeggenschap_over_de_gedragingen
 :BW_Case
       a       owl:Class ;
       rdfs:subClassOf best:Case .
-
-:Dier_LV2TV
-      a       owl:Class ;
-      rdfs:subClassOf best:Mapping ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue tv:dier ;
-                owl:onProperty best:described_by
-              ] ;
-      owl:equivalentClass
-              [ a       owl:Class ;
-                owl:unionOf ([ a       owl:Class ;
-                            owl:unionOf ([ a       owl:Restriction ;
-                                        owl:hasValue lv:dierobject ;
-                                        owl:onProperty best:described_by
-                                      ] [ a       owl:Restriction ;
-                                        owl:onProperty best:described_by ;
-                                        owl:someValuesFrom
-                                                [ a       owl:Restriction ;
-                                                  owl:hasValue lv:dierobject ;
-                                                  owl:onProperty skos:broader
-                                                ]
-                                      ])
-                          ] [ a       owl:Class ;
-                            owl:unionOf ([ a       owl:Restriction ;
-                                        owl:hasValue lv:diersituatie ;
-                                        owl:onProperty best:described_by
-                                      ] [ a       owl:Restriction ;
-                                        owl:onProperty best:described_by ;
-                                        owl:someValuesFrom
-                                                [ a       owl:Restriction ;
-                                                  owl:hasValue lv:diersituatie ;
-                                                  owl:onProperty skos:broader
-                                                ]
-                                      ])
-                          ])
-              ] ;
-      skos:note "This case connects laymen descriptions of cases about animals to the equivalent legal description of verdicts that concern such." .
 
 :FP162A
       a       owl:Class ;
