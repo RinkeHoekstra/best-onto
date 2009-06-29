@@ -1,11 +1,11 @@
 # Saved by TopBraid on Tue Mar 31 13:56:23 CEST 2009
-# baseURI: http://www.best-project.org/owl/comments-and-labels.owl
+# baseURI: http://www.best-project.nl/owl/comments-and-labels.owl
 
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix :        <http://www.best-project.org/owl/comments-and-labels.owl#> .
+@prefix :        <http://www.best-project.nl/owl/comments-and-labels.owl#> .
 
 <http://www.best-project.nl/owl/laymen-vocabulary.owl#aanbieder>
       <http://www.w3.org/2004/02/skos/core#prefLabel>
@@ -4353,6 +4353,6 @@ Bij de afweging of er sprake is van aantasting van de goede naam zijn de omstand
 
 
 
-<http://www.best-project.org/owl/comments-and-labels.owl>
+<http://www.best-project.nl/owl/comments-and-labels.owl>
       a       owl:Ontology ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .

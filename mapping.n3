@@ -1,5 +1,5 @@
 # Saved by TopBraid on Mon Jun 22 15:03:37 CEST 2009
-# baseURI: http://www.best-project.org/owl/mapping.owl
+# baseURI: http://www.best-project.nl/owl/mapping.owl
 # imports: http://xmlns.com/foaf/0.1/20050603.rdf
 # imports: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/verdicts.owl
@@ -18,7 +18,7 @@
 @prefix best:    <http://www.best-project.nl/owl/best.owl#> .
 @prefix lv:      <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix :        <http://www.best-project.org/owl/mapping.owl#> .
+@prefix :        <http://www.best-project.nl/owl/mapping.owl#> .
 
 best:Case
       owl:equivalentClass
@@ -129,7 +129,7 @@ tv:verwezelijking_van_een_gevaar
 tv:zeggenschap_over_de_gedragingen
       best:describes ljn:AA5526 , ljn:AU7713 , ljn:AR8103 , ljn:AE3451 , ljn:AD7395 , ljn:AF9686 , ljn:AF2943 , ljn:AE8549 .
 
-<http://www.best-project.org/owl/mapping.owl>
+<http://www.best-project.nl/owl/mapping.owl>
       a       owl:Ontology ;
       dc:description "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
       owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://xmlns.com/foaf/0.1/20050603.rdf> , <http://www.best-project.nl/owl/verdicts.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> ;
