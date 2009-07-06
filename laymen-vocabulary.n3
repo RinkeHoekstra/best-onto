@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Apr 23 14:11:26 CEST 2009
+# Saved by TopBraid on Mon Jul 06 16:41:04 CEST 2009
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -96,13 +96,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aanrijding"@nl .
 
-
-
-:actor
-      a       skos:Concept , best:Concept ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "actor"@nl .
-
 :advertentie
       a       skos:Concept , best:Concept ;
       rdfs:label "advertentie"@nl ;
@@ -142,7 +135,7 @@
 :algemeen_persoon
       a       skos:Concept , best:Concept ;
       rdfs:label "algemeen_persoon"@nl ;
-      skos:broader :actor ;
+      skos:broader :persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "algemeen persoon"@nl .
 
@@ -309,7 +302,7 @@
 :bedrijfsrestaurant
       a       skos:Concept , best:Concept ;
       rdfs:label "bedrijfsrestaurant"@nl ;
-      skos:broader :werkomgeving ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bedrijfsrestaurant"@nl .
 
@@ -507,7 +500,7 @@
 :boerderij
       a       skos:Concept , best:Concept ;
       rdfs:label "boerderij"@nl ;
-      skos:broader :woonomgeving , :werkomgeving ;
+      skos:broader :woonomgeving , :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "boerderij"@nl .
 
@@ -587,25 +580,25 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "brommer"@nl .
 
-:buren
-      a       skos:Concept , best:Concept ;
-      rdfs:label "buren"@nl ;
-      skos:altLabel "buurtjes"@nl ;
-      skos:broader :omwonenden ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "buren"@nl .
-
 :bus  a       skos:Concept , best:Concept ;
       rdfs:label "bus"@nl ;
       skos:broader :verkeersobject ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bus"@nl .
 
+:buur
+      a       skos:Concept , best:Concept ;
+      rdfs:label "buren"@nl ;
+      skos:altLabel "buurtjes"@nl ;
+      skos:broader :omwonende ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "buren"@nl .
+
 :buurman
       a       skos:Concept , best:Concept ;
       rdfs:label "buurman"@nl ;
       skos:altLabel "buum"@nl ;
-      skos:broader :buren ;
+      skos:broader :buur ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "buurman"@nl .
 
@@ -620,7 +613,7 @@
       a       skos:Concept , best:Concept ;
       rdfs:label "buurvrouw"@nl ;
       skos:altLabel "buuv"@nl ;
-      skos:broader :buren ;
+      skos:broader :buur ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "buurvrouw"@nl .
 
@@ -934,7 +927,7 @@
 :familie
       a       skos:Concept , best:Concept ;
       rdfs:label "familie"@nl ;
-      skos:broader :actor ;
+      skos:broader :algemeen_persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "familie"@nl .
 
@@ -1002,7 +995,7 @@
 :garage
       a       skos:Concept , best:Concept ;
       rdfs:label "garage"@nl ;
-      skos:broader :woonomgeving , :bedrijfspersoon , :werkomgeving ;
+      skos:broader :woonomgeving , :bedrijfspersoon , :bedrijf , :werkomgeving ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "garage"@nl .
 
@@ -1278,12 +1271,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "help"@nl .
 
-:hij  a       skos:Concept , best:Concept ;
-      rdfs:label "hij"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "hij"@nl .
-
 :hinderhandeling
       a       skos:Concept , best:Concept ;
       rdfs:label "hinderhandeling"@nl ;
@@ -1351,7 +1338,7 @@
 :huurder
       a       skos:Concept , best:Concept ;
       rdfs:label "huurder"@nl ;
-      skos:broader :omwonenden ;
+      skos:broader :omwonende ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huurder"@nl .
 
@@ -1361,12 +1348,6 @@
       skos:broader :algemeen_persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "iemand"@nl .
-
-:ik   a       skos:Concept , best:Concept ;
-      rdfs:label "ik"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "ik"@nl .
 
 :in   a       skos:Concept , best:Concept ;
       rdfs:label "in"@nl ;
@@ -1444,12 +1425,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "jaar"@nl .
 
-:jij  a       skos:Concept , best:Concept ;
-      rdfs:label "jij"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "jij"@nl .
-
 :jongen
       a       skos:Concept , best:Concept ;
       rdfs:label "jongen"@nl ;
@@ -1463,13 +1438,6 @@
       skos:broader :algemeen_persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "jongere"@nl .
-
-:jullie
-      a       skos:Concept , best:Concept ;
-      rdfs:label "jullie"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "jullie"@nl .
 
 :kPN  skos:prefLabel "KPN"@nl .
 
@@ -1503,7 +1471,7 @@
 :kantoor
       a       skos:Concept , best:Concept ;
       rdfs:label "kantoor"@nl ;
-      skos:broader :werkomgeving ;
+      skos:broader :bedrijf , :werkomgeving ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kantoor"@nl .
 
@@ -1613,8 +1581,6 @@
       skos:broader :beroepspersoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kunstenaar"@nl .
-
-
 
 :kwijt_geraakt
       a       skos:Concept , best:Concept ;
@@ -1993,7 +1959,7 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "omval"@nl .
 
-:omwonenden
+:omwonende
       a       skos:Concept , best:Concept ;
       rdfs:label "omwonenden"@nl ;
       skos:broader :sociale_omgeving_persoon ;
@@ -2215,12 +2181,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "personeel"@nl .
 
-:persoonsvorm
+:persoon
       a       skos:Concept , best:Concept ;
-      rdfs:label "persoonsvorm"@nl ;
-      skos:broader :actor ;
+      skos:altLabel "actor"@nl ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "persoonsvorm"@nl .
+      skos:prefLabel "persoon {@nl}"^^xsd:string .
 
 :plaats
       a       skos:Concept , best:Concept ;
@@ -2560,7 +2525,7 @@
 :sociale_omgeving_persoon
       a       skos:Concept , best:Concept ;
       rdfs:label "sociale_omgeving_persoon"@nl ;
-      skos:broader :actor ;
+      skos:broader :persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sociale omgeving persoon"@nl .
 
@@ -2979,7 +2944,7 @@
 :verkeersdeelnemer
       a       skos:Concept , best:Concept ;
       rdfs:label "verkeersdeelnemer"@nl ;
-      skos:broader :actor ;
+      skos:broader :persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkeersdeelnemer"@nl .
 
@@ -3339,7 +3304,7 @@
 :werkpersoon
       a       skos:Concept , best:Concept ;
       rdfs:label "werkpersoon"@nl ;
-      skos:broader :actor ;
+      skos:broader :persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werkpersoon"@nl .
 
@@ -3357,12 +3322,6 @@
       skos:broader :gevaarshandeling ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werp"@nl .
-
-:wij  a       skos:Concept , best:Concept ;
-      rdfs:label "wij"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "wij"@nl .
 
 :wijkt_af
       a       skos:Concept , best:Concept ;
@@ -3392,12 +3351,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zaal"@nl .
 
-:ze   a       skos:Concept , best:Concept ;
-      rdfs:label "ze"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "ze"@nl .
-
 :zee  a       skos:Concept , best:Concept ;
       rdfs:label "zee"@nl ;
       skos:broader :natuuromgeving ;
@@ -3417,12 +3370,6 @@
       skos:broader :werkomgeving ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ziekenhuis"@nl .
-
-:zij  a       skos:Concept , best:Concept ;
-      rdfs:label "zij"@nl ;
-      skos:broader :persoonsvorm ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zij"@nl .
 
 :zijn
       a       skos:Concept , best:Concept ;
