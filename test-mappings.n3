@@ -1,0 +1,40 @@
+# Saved by TopBraid on Thu Nov 12 13:05:26 CET 2009
+# baseURI: http://www.best-project.nl/owl/test-mappings.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/bestmap.owl
+# imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
+
+@prefix :        <http://www.best-project.nl/owl/test-mappings.owl#> .
+@prefix bm:      <http://www.best-project.nl/owl/bestmap.owl#> .
+@prefix lv:      <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.best-project.nl/owl/test-mappings.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> , <http://www.best-project.nl/owl/bestmap.owl> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:TestMap1
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:dier ;
+                owl:onProperty bm:about
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Restriction ;
+                owl:hasValue lv:diersituatie ;
+                owl:onProperty bm:about
+              ] .
+
+
+lv:diersituatie skos:broadMatch tv:dier .
+
+
+:tq bm:about lv:diersituatie .
