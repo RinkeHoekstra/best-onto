@@ -7,7 +7,7 @@
 
 @prefix :        <http://www.best-project.nl/owl/mapping.owl#> .
 @prefix best:    <http://www.best-project.nl/owl/best.owl#> .
-@prefix bestmap:  <http://www.best-project/owl/bestmap.owl#> .
+@prefix bestmap:  <http://www.best-project.nl/owl/bestmap.owl#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix ljn:     <http://www.rechtspraak.nl/ljn.asp?ljn=> .
 @prefix lv:      <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
