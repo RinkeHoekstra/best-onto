@@ -1,8 +1,6 @@
-# Saved by TopBraid on Thu Nov 12 13:05:26 CET 2009
+# Saved by TopBraid on Mon Nov 16 11:57:14 CET 2009
 # baseURI: http://www.best-project.nl/owl/test-mappings.owl
-# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/bestmap.owl
-# imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
 
 @prefix :        <http://www.best-project.nl/owl/test-mappings.owl#> .
 @prefix bm:      <http://www.best-project.nl/owl/bestmap.owl#> .
@@ -10,13 +8,16 @@
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+lv:diersituatie
+      skos:broadMatch tv:dier .
 
 <http://www.best-project.nl/owl/test-mappings.owl>
       rdf:type owl:Ontology ;
-      owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> , <http://www.best-project.nl/owl/bestmap.owl> ;
+      owl:imports <http://www.best-project.nl/owl/bestmap.owl> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 :TestMap1
@@ -33,8 +34,4 @@
                 owl:onProperty bm:about
               ] .
 
-
-lv:diersituatie skos:broadMatch tv:dier .
-
-
-:tq bm:about lv:diersituatie .
+:tq   bm:about lv:diersituatie .

@@ -1,9 +1,6 @@
-# Saved by TopBraid on Wed Aug 26 16:00:50 CEST 2009
+# Saved by TopBraid on Mon Nov 16 11:57:01 CET 2009
 # baseURI: http://www.best-project.nl/owl/mapping.owl
 # imports: http://xmlns.com/foaf/0.1/20050603.rdf
-# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
-# imports: http://www.best-project.nl/owl/verdicts.owl
-# imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
 
 @prefix :        <http://www.best-project.nl/owl/mapping.owl#> .
 @prefix best:    <http://www.best-project.nl/owl/best.owl#> .
@@ -37,7 +34,7 @@ lv:schade
 <http://www.best-project.nl/owl/mapping.owl>
       rdf:type owl:Ontology ;
       dc:description "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
-      owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://xmlns.com/foaf/0.1/20050603.rdf> , <http://www.best-project.nl/owl/verdicts.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> ;
+      owl:imports <http://xmlns.com/foaf/0.1/20050603.rdf> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 :BW_Case
@@ -468,97 +465,97 @@ tv:bezitter_van_een_opstal
       best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF6264> .
 
 tv:bezitter_van_een_roerende_zaak
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD4954> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD4954> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> .
 
 tv:bij_die_werkzaamheden_begane_fout
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AM3305> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5317> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5318> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO5309> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5661> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5342> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD5317> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5318> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO5309> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5342> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM3305> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5661> .
 
 tv:causaliteit
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5320> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF8270> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8108> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO3453> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU8393> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0294> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7914> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8498> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8810> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6263> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7190> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7351> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7520> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU8393> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF8270> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7351> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7914> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0294> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6263> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8498> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7520> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8108> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO3453> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8810> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5320> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7190> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> .
 
 tv:eisen_in_de_gegeven_omstandigheden
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2169> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8132> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9930> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU2940> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4658> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8737> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7345> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6260> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT3442> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3313> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4143> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1558> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3688> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1237> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP9636> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2055> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA7686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2055> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6260> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8737> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3688> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7345> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8132> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3313> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9930> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1237> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU2940> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1558> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4658> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4143> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP9636> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT3442> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2169> .
 
 tv:exploitant_stortplaats
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD7384> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7885> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU0325> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM7964> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR0186> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF0102> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5860> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0349> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5860> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0349> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF0102> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM7964> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7885> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR0186> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7384> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU0325> .
 
 tv:exploitant_van_een_mijnbouwwerk
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU4684> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4684> .
 
 tv:fout_van_een_ondergeschikte
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU8009> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8103> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6262> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2943> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5526> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4437> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AK3432> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE8549> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AO6262> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5526> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU8009> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4437> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8103> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AK3432> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2943> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE8549> .
 
 tv:gebrekkig_product
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF7905> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8435> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7005> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8518> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1338> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AB1338> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7905> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8518> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7005> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8435> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> .
 
 tv:gevaar_voor_personen_of_zaken
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2169> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8132> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9930> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU2940> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4658> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8737> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7345> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6260> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7419> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT3442> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8595> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3313> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4143> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1558> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6264> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3688> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1237> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7148> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0830> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF3455> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP9636> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2055> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD4954> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD8595> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2055> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6260> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8737> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3688> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7345> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD4954> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8132> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3313> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9930> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1237> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU2940> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6264> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7148> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7419> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0830> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO1558> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4658> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4143> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF3455> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP9636> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT3442> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2169> .
 
 tv:in_strijd_met_een_wettelijke_plicht
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AI0294> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8108> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8665> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7914> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8498> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8810> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5877> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD3985> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7351> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD3985> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7351> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8810> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7914> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0294> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8665> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8498> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5877> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8108> .
 
 tv:in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8665> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5877> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD3985> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD3985> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0997> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT8665> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH8822> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5877> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> .
 
 tv:in_uitoefening_van_beroep_of_bedrijf
       best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883> .
 
 tv:inbreuk_op_een_recht
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF6263> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6263> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> .
 
 tv:kans_op_de_fout_vergroot
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> .
 
 tv:kind_jonger_dan_14
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> .
 
 tv:kind_tussen_de_14_en_16
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU8393> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7654> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU8393> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7654> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426> .
 
 tv:mijnbouwwerk
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU4684> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AT7537> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4684> .
 
 tv:misleidende_mededeling
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AL6908> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8054> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4038> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9917> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE4944> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6791> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4832> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS5763> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS8909> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1078> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6405> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3847> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9297> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4624> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5580> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3080> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE9843> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3907> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA9426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT4972> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP8458> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8198> , <http://www.rechtspraak.nl/ljn.asp?ljn=AK4749> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8110> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM0361> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5041> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT6522> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0367> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU8231> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6211> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6828> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AM0361> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1078> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6791> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3080> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT6522> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE9843> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4038> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE4944> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8110> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL6908> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4832> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9297> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4774> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5580> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6211> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT4972> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6828> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA9426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5041> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO0367> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9917> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS5763> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3907> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8198> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS8909> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP8458> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6426> , <http://www.rechtspraak.nl/ljn.asp?ljn=AK4749> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU8231> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3847> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS4624> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8054> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6405> .
 
 tv:niet-ondergeschikte
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AM3305> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5317> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5318> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO5309> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5661> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5342> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD5317> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD5318> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO5309> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5342> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM3305> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU5661> .
 
 tv:openbaar_maken_mededeling
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA4038> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4038> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ1883> .
 
 tv:opstal
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF7905> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8435> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7005> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8518> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1338> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AB1338> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7905> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8518> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7005> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA8435> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> .
 
 tv:ouderlijk_gezag
       best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7654> .
 
 tv:schade
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7520> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290> , <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4042> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0377> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5823> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=ZC3689> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253> , <http://www.rechtspraak.nl/ljn.asp?ljn=AH9070> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS2026> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0034> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA7520> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR5213> .
 
 tv:schade_aan_derden_toegebracht
       best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5320> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233> .
 
 tv:schuld
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AF8270> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6629> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7190> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO3453> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1335> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AO3453> , <http://www.rechtspraak.nl/ljn.asp?ljn=AQ5315> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7190> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF8270> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1335> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF6629> .
 
 tv:stortplaats
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD7384> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7885> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU0325> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR0186> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM7964> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5860> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF0102> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0349> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5860> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0349> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB1202> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF0102> , <http://www.rechtspraak.nl/ljn.asp?ljn=AM7964> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7885> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA5651> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR0186> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7384> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU0325> .
 
 tv:vergelijkende_reclame
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4845> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS8832> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7861> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9917> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4512> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE1504> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4843> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5632> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8911> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9082> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3316> , <http://www.rechtspraak.nl/ljn.asp?ljn=AN9389> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8666> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0221> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2626> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3080> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6415> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6211> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3907> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AO7861> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB0221> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO2626> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4843> , <http://www.rechtspraak.nl/ljn.asp?ljn=AN9389> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3080> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE5632> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD9917> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3316> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU3907> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4512> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO8911> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD8666> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE1504> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9841> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS8832> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO7690> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6415> , <http://www.rechtspraak.nl/ljn.asp?ljn=AO6211> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU4279> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF4845> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9082> .
 
 tv:vertegenwoordiger
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6821> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF8350> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7617> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4734> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7661> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9011> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA4734> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7661> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP0151> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU6821> , <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT9011> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF8350> , <http://www.rechtspraak.nl/ljn.asp?ljn=AT7617> .
 
 tv:verwezelijking_van_een_gevaar
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD8595> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7148> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7419> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0830> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF3455> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AD8595> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF7419> , <http://www.rechtspraak.nl/ljn.asp?ljn=AI0830> , <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF3455> , <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE7148> , <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000> .
 
 tv:zeggenschap_over_de_gedragingen
-      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5526> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8103> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2943> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE8549> .
+      best:describes <http://www.rechtspraak.nl/ljn.asp?ljn=AA5526> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE8549> , <http://www.rechtspraak.nl/ljn.asp?ljn=AR8103> , <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395> , <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451> , <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF2943> , <http://www.rechtspraak.nl/ljn.asp?ljn=AF9686> .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA4000>
-      rdf:type rnlrdf:Uitspraak , :FP175A , :FP185A , :FP173A , :FP174A , :FP162E .
+      rdf:type rnlrdf:Uitspraak , :FP175A , :FP162E , :FP174A , :FP173A , :FP185A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA4038>
       rdf:type rnlrdf:Uitspraak , :FP194 .
@@ -582,13 +579,13 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP176A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA6233>
-      rdf:type :FP162B , :FP162D , :FP1691D , :FP162C , :FP1691A , :FP162A .
+      rdf:type :FP162B , :FP1691A , :FP162A , :FP162C , :FP162D , :FP1691D .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA6791>
       rdf:type rnlrdf:Uitspraak , :FP194 .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA7520>
-      rdf:type rnlrdf:Uitspraak , :FP162B , :FP162D , :FP162C , :FP162A .
+      rdf:type rnlrdf:Uitspraak , :FP162B , :FP162A , :FP162C , :FP162D .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA7654>
       rdf:type rnlrdf:Uitspraak , :FP175A .
@@ -597,7 +594,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP173A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA7914>
-      rdf:type rnlrdf:Uitspraak , :FP175A , :FP162B .
+      rdf:type rnlrdf:Uitspraak , :FP162B , :FP175A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AA8108>
       rdf:type :FP162B .
@@ -633,7 +630,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP162C .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AB0643>
-      rdf:type rnlrdf:Uitspraak , :FP185A , :FP173A , :FP174A .
+      rdf:type rnlrdf:Uitspraak , :FP174A , :FP173A , :FP185A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AB1078>
       rdf:type rnlrdf:Uitspraak , :FP194 .
@@ -648,10 +645,10 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP185A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AB1426>
-      rdf:type :FP1692A , :FP1691A .
+      rdf:type :FP1691A , :FP1692A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AB2149>
-      rdf:type :FP173A , :FP174A .
+      rdf:type :FP174A , :FP173A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AD3985>
       rdf:type :FP162D .
@@ -669,7 +666,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP176A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AD7395>
-      rdf:type :FP1701A , :FP171A .
+      rdf:type :FP171A , :FP1701A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AD7661>
       rdf:type rnlrdf:Uitspraak , :FP172A .
@@ -702,7 +699,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP179A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AE2690>
-      rdf:type :FP1692A , rnlrdf:Uitspraak , :FP1692C , :FP1691D , :FP162C , :FP1691A .
+      rdf:type rnlrdf:Uitspraak , :FP1691A , :FP162C , :FP1691D , :FP1692C , :FP1692A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AE3451>
       rdf:type :FP1701A .
@@ -717,7 +714,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP162C .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AE6069>
-      rdf:type rnlrdf:Uitspraak , :FP162B , :FP162C , :FP162A .
+      rdf:type rnlrdf:Uitspraak , :FP162B , :FP162A , :FP162C .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AE6426>
       rdf:type rnlrdf:Uitspraak , :FP194 .
@@ -750,7 +747,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP176A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AF1817>
-      rdf:type rnlrdf:Uitspraak , :FP162B , :FP185A , :FP173A , :FP174A .
+      rdf:type rnlrdf:Uitspraak , :FP162B , :FP174A , :FP173A , :FP185A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AF2005>
       rdf:type :FP175A .
@@ -795,7 +792,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP174A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AF7654>
-      rdf:type :FP1692A , rnlrdf:Uitspraak .
+      rdf:type rnlrdf:Uitspraak , :FP1692A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AF7885>
       rdf:type :FP176A .
@@ -825,7 +822,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP194 .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AI0294>
-      rdf:type :FP175A , :FP162B .
+      rdf:type :FP162B , :FP175A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AI0341>
       rdf:type :FP176A , :FP162E .
@@ -834,7 +831,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP176A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AI0790>
-      rdf:type rnlrdf:Uitspraak , :FP1692C , :FP1691D .
+      rdf:type rnlrdf:Uitspraak , :FP1691D , :FP1692C .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AI0830>
       rdf:type :FP174A .
@@ -846,7 +843,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP194 .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AL1651>
-      rdf:type :FP162B , :FP162D , :FP162C .
+      rdf:type :FP162B , :FP162C , :FP162D .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AL6908>
       rdf:type rnlrdf:Uitspraak , :FP194 .
@@ -921,7 +918,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type rnlrdf:Uitspraak , :FP175A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AP1662>
-      rdf:type :FP1692A , :FP1692C , :FP1691D , :FP1691A , :FP172A .
+      rdf:type :FP1691A , :FP172A , :FP1691D , :FP1692C , :FP1692A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AP8458>
       rdf:type :FP194 .
@@ -939,7 +936,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP176A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AR3253>
-      rdf:type rnlrdf:Uitspraak , :FP162C , :FP173A , :FP162E .
+      rdf:type rnlrdf:Uitspraak , :FP162C , :FP162E , :FP173A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AR3290>
       rdf:type :FP162C , :FP162E .
@@ -972,7 +969,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP162C .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AS3250>
-      rdf:type :FP173A , :FP174A .
+      rdf:type :FP174A , :FP173A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AS4143>
       rdf:type :FP173A .
@@ -1086,7 +1083,7 @@ tv:zeggenschap_over_de_gedragingen
       rdf:type :FP194 .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AU7713>
-      rdf:type :FP1701A , :FP1702A , :FP162C .
+      rdf:type :FP1701A , :FP162C , :FP1702A .
 
 <http://www.rechtspraak.nl/ljn.asp?ljn=AU7774>
       rdf:type :FP173A .
