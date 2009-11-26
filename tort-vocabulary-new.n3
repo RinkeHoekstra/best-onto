@@ -1,0 +1,83 @@
+# Saved by TopBraid on Thu Nov 26 09:43:09 CET 2009
+# baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.best-project.nl/owl/tort-ontology.owl
+
+@prefix :        <http://www.best-project.nl/owl/tort-vocabulary-new.owl#> .
+@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix tort-ontology:  <http://www.best-project.nl/owl/tort-ontology.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/tort-ontology.owl> , <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:aansprakelijkheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:topConceptOf :tort-scheme .
+
+:bevoegd_gegeven_ambtelijk_bevel
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
+
+:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht
+      rdf:type best:Concept ;
+      skos:broader :grond_voor_onrechtmatigheid .
+
+:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt
+      rdf:type best:Concept ;
+      skos:broader :grond_voor_onrechtmatigheid .
+
+:grond_voor_onrechtmatigheid
+      rdf:type best:Concept ;
+      skos:topConceptOf :tort-scheme .
+
+:inbreuk_op_een_recht
+      rdf:type best:Concept ;
+      skos:broader :grond_voor_onrechtmatigheid .
+
+:noodweer
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
+
+:ongeschreven_rechtvaardigingsgrond
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
+
+:onrechtmatige_gedraging
+      rdf:type best:Concept .
+
+:overmacht_als_noodtoestand
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
+
+:rechtvaardigingsgrond
+      rdf:type best:Concept .
+
+:risicoaansprakelijkheid
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:schuldaansprakelijkheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:tort-scheme
+      rdf:type best:Concept , skos:Concept .
+
+:uitvoering_van_een_wettelijk_voorschrift
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
+
+:zaakaansprakelijkheid
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:zaakwaarneming
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
