@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Nov 17 15:28:27 CET 2009
+# Saved by TopBraid on Wed Nov 25 15:21:27 CET 2009
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -19,7 +19,7 @@
 
 :aanbieder
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aanbieder"@nl .
 
@@ -29,12 +29,6 @@
       skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aangaan"@nl .
-
-:aangenomen
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werken ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "aangenomen"@nl .
 
 :aanhangwagen
       rdf:type best:Concept , skos:Concept ;
@@ -48,18 +42,24 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aanleggen"@nl .
 
+:aannemen
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :werken ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "aannemen"@nl .
+
 :aannemer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aannemer"@nl .
 
-:aannemers
+:aannemersbedrijf
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "aannemingsbedrijf"@nl ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bouwbedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "aannemers"@nl .
+      skos:prefLabel "aannemersbedrijf"@nl .
 
 :aanneming
       rdf:type best:Concept , skos:Concept ;
@@ -101,7 +101,7 @@
 
 :advocaat
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "advocaat"@nl .
 
@@ -124,12 +124,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "afwijken"@nl .
 
-:algemeen_object
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :object ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "algmeen object"@nl .
-
 :algemeen_persoon
       rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon ;
@@ -142,33 +136,27 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "algemene handeling"@nl .
 
-:ander
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "ander"@nl .
-
 :apparaat
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_object ;
+      skos:broader :product ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "apparaat"@nl .
 
 :appartement
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "appartement"@nl .
 
 :arbeider
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
+      skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "arbeider"@nl .
 
 :arts
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "arts"@nl .
 
@@ -180,7 +168,7 @@
 
 :aula
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schoolomgeving ;
+      skos:broader :op_school ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "aula"@nl .
 
@@ -198,7 +186,7 @@
 
 :autobedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "autobedrijf"@nl .
 
@@ -208,6 +196,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "autobestuurder"@nl .
 
+:autogarage
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "autogarage"@nl .
+
 :autoweg
       rdf:type best:Concept , skos:Concept ;
       skos:broader :weg ;
@@ -216,30 +210,30 @@
 
 :balkon
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "balkon"@nl .
 
 :bank
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :financieel_bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bank"@nl .
 
 :bar  rdf:type best:Concept , skos:Concept ;
-      skos:broader :horeca ;
+      skos:broader :horecabedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bar"@nl .
 
 :barman
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "barman"@nl .
 
 :bebouwde_kom
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bebouwde kom"@nl .
 
@@ -251,37 +245,32 @@
 
 :bedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
+      skos:altLabel "werkgever"@nl ;
+      skos:broader :werkpersoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bedrijf"@nl .
 
-:bedrijfsfout
+:bedrijfskantine
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfsobject ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "bedrijfsfout"@nl .
+      skos:prefLabel "bedrijfskantine"@nl .
 
-:bedrijfsobject
+:bedrijfspand
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkobject ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "bedrijfsobject"@nl .
-
-:bedrijfspersoon
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkpersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "bedrijfspersoon"@nl .
+      skos:prefLabel "bedrijfspand"@nl .
 
 :bedrijfsrestaurant
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijf ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bedrijfsrestaurant"@nl .
 
 :begeleider
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "begeleider"@nl .
 
@@ -297,12 +286,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "belemmeren"@nl .
 
-:benadeelde
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "benadeelde"@nl .
-
 :benadelen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :algemene_actie ;
@@ -311,39 +294,22 @@
 
 :berging
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "berging"@nl .
 
 :berm
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "berm"@nl .
 
-:beroep
+:beroepsbeoefenaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beroep"@nl .
-
-:beroepsfout
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepsobject ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beroepsfout"@nl .
-
-:beroepsobject
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkobject ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beroepsobject"@nl .
-
-:beroepspersoon
-      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "iemand die handelt vanuit zijn beroep of functie"@nl ;
       skos:broader :werkpersoon ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beroepspersoon"@nl .
+      skos:prefLabel "beroepsbeoefenaar"@nl .
 
 :beschadigen
       rdf:type best:Concept , skos:Concept ;
@@ -390,17 +356,17 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bestuurshandeling"@nl .
 
-:beveiliging
+:beveiligingsbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beveiliging"@nl .
+      skos:prefLabel "beveiligingsbedrijf"@nl .
 
-:beveiligings
+:beveiligingsmedewerker
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "beveiligings"@nl .
+      skos:prefLabel "beveiligingsmedewerker"@nl .
 
 :bezitten
       rdf:type best:Concept , skos:Concept ;
@@ -408,12 +374,37 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bezitten"@nl .
 
+:bij_dieren
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "dieromgeving"@nl ;
+      skos:broader :plaats ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bij dieren"@nl .
+
+:bij_huis
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :plaats ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bij huis"@nl .
+
+:bij_water
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :buiten ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bij water"@nl .
+
 :bijten
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "beet"@nl , "bijt" ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bijten"@nl .
+
+:bijzondere_omstandigheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bijzondere omstandigheid"@nl ;
+      skos:topConceptOf :laymen-scheme .
 
 :bleek
       rdf:type best:Concept , skos:Concept ;
@@ -423,7 +414,7 @@
 
 :boerderij
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijf , :woonomgeving ;
+      skos:broader :op_het_werk , :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "boerderij"@nl .
 
@@ -440,7 +431,7 @@
       skos:prefLabel "boot"@nl .
 
 :bos  rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :in_het_groen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bos"@nl .
 
@@ -456,6 +447,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "botsing"@nl .
 
+:bouwbedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bouwbedrijf"@nl .
+
 :bouwen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :werken ;
@@ -464,33 +461,33 @@
 
 :bouwkundige
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bouwkundige"@nl .
 
 :bouwvakker
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bouwvakker"@nl .
 
-:brandweer
+:brandweerman
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "brandweer"@nl .
-
-:broer
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :familie ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "broer"@nl .
+      skos:prefLabel "brandweerman"@nl .
 
 :brommer
       rdf:type best:Concept , skos:Concept ;
       skos:broader :voertuig ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "brommer"@nl .
+
+:buiten
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :plaats ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "buiten"@nl .
 
 :bus  rdf:type best:Concept , skos:Concept ;
       skos:broader :voertuig ;
@@ -513,7 +510,7 @@
 
 :buurthuis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :recreatieplek ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "buurthuis"@nl .
 
@@ -526,15 +523,9 @@
 
 :cafe
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :horeca ;
+      skos:broader :horecabedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "cafe"@nl .
-
-:cafehouder
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :barman ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "cafehouder"@nl .
 
 :chauffeur
       rdf:type best:Concept , skos:Concept ;
@@ -544,13 +535,13 @@
 
 :chemische_stof
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_object ;
+      skos:broader :object ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "chemische stof"@nl .
 
 :chirurg
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "chirurg"@nl .
 
@@ -560,15 +551,9 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "chloor"@nl .
 
-:club
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :sociale_omgeving ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "club"@nl .
-
 :clubhuis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "clubhuis"@nl .
 
@@ -584,11 +569,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "concurreren"@nl .
 
-:conferentieoord
+:conferentiecentrum
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "conferentieoord"@nl .
+      skos:prefLabel "conferentiecentrum"@nl .
 
 :crediteur
       rdf:type best:Concept , skos:Concept ;
@@ -603,19 +588,19 @@
 
 :dakgoot
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dakgoot"@nl .
 
 :dakpan
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dakpan"@nl .
 
 :dealer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dealer"@nl .
 
@@ -627,21 +612,9 @@
 
 :deurwaarder
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "deurwaarder"@nl .
-
-:dienstverbandobject
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkobject ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "dienstverbandobject"@nl .
-
-:dienstverbandpersoon
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkpersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "dienstverbandpersoon"@nl .
 
 :dier
       rdf:type best:Concept , skos:Concept ;
@@ -650,35 +623,22 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dier"@nl .
 
-:dieromgeving
-      rdf:type best:Concept , skos:Concept ;
-      rdfs:label "dieromgeving"@nl ;
-      skos:altLabel "dieromgeving"@nl ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme .
-
 :dijk
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dijk"@nl .
 
 :directeur
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "directrice"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "directeur"@nl .
 
-:dochter
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :kind ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "dochter"@nl .
-
 :dokter
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dokter"@nl .
 
@@ -690,7 +650,7 @@
 
 :duwen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "duwen"@nl .
 
@@ -724,62 +684,44 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "eigenaar"@nl .
 
-:eigendom
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :bezitten , :inbreuksituatie ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "eigendom"@nl .
-
 :eindeloos
       rdf:type best:Concept , skos:Concept ;
       skos:broader :duur ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "eindeloos"@nl .
 
-:eiser
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "eiser"@nl .
-
 :electricien
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "electricien"@nl .
 
-:electriciteit
+:electriciteitsbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :energiebedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "electriciteit"@nl .
+      skos:prefLabel "electriciteitsbedrijf"@nl .
 
-:energie
+:energiebedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "energie"@nl .
+      skos:prefLabel "energiebedrijf"@nl .
 
 :erf  rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving , :natuuromgeving , :woonomgeving ;
+      skos:broader :buiten , :op_het_werk , :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "erf"@nl .
 
 :evenement
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sport_omgeving ;
+      skos:broader :sportsituatie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "evenement"@nl .
 
-:familie
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "familie"@nl .
-
 :familielid
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :familie ;
+      skos:broader :algemeen_persoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "familielid"@nl .
 
@@ -792,6 +734,7 @@
 :fiets
       rdf:type best:Concept , skos:Concept ;
       skos:broader :voertuig ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "fiets"@nl .
 
 :fietsen
@@ -806,23 +749,29 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "fietser"@nl .
 
-:fitness
+:financieel_bedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "financieel bedrijf"@nl .
+
+:fitnesscentrum
       rdf:type best:Concept , skos:Concept ;
       skos:broader :sportschool ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "fitness"@nl .
+      skos:prefLabel "fitnesscentrum"@nl .
 
 :fitnesshal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "fitnesshal"@nl .
 
 :flat
       rdf:type best:Concept , skos:Concept ;
-      rdfs:label "flat"@nl ;
-      skos:broader :woonomgeving ;
-      skos:inScheme :laymen-scheme .
+      skos:broader :bij_huis ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "flat"@nl .
 
 :gaan
       rdf:type best:Concept , skos:Concept ;
@@ -838,7 +787,7 @@
 
 :garage
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijf , :werkomgeving , :woonomgeving , :bedrijfspersoon ;
+      skos:broader :op_het_werk , :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "garage"@nl .
 
@@ -859,15 +808,9 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gebeuren"@nl .
 
-:gebeurtenis
-      rdf:type best:Concept , skos:Concept ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "gebeurtenis"@nl ;
-      skos:topConceptOf :laymen-scheme .
-
 :gebouw
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gebouw"@nl .
 
@@ -890,38 +833,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "geluidsoverlast"@nl .
 
-:gemaak
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werken ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "gemaak"@nl .
-
-:gemaakt
-      rdf:type best:Concept , skos:Concept ;
-      rdfs:label "gemaakt"@nl ;
-      skos:altLabel "gemaakt"@nl ;
-      skos:broader :werken ;
-      skos:inScheme :laymen-scheme .
-
-:geproduceerd
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "produceer"@nl ;
-      skos:broader :werken ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "geproduceerd"@nl .
-
-:gepubliceerd
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "publiceer"@nl ;
-      skos:broader :werken ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "gepubliceerd"@nl .
-
-:gevaarlijke_actie
+:gevaarlijk_handelen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :actie ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "gevaarlijke actie"@nl .
+      skos:prefLabel "gevaarlijk handelen"@nl .
 
 :geven
       rdf:type best:Concept , skos:Concept ;
@@ -941,21 +857,15 @@
 :gooien
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "werpen"@nl ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gooien"@nl .
 
 :gras
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :in_het_groen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gras"@nl .
-
-:grootouder
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :familie ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "grootouder"@nl .
 
 :gym  rdf:type best:Concept , skos:Concept ;
       skos:broader :sporten ;
@@ -965,13 +875,13 @@
 :gymleraar
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "gymlerares"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gymleraar"@nl .
 
 :gymzaal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gymzaal"@nl .
 
@@ -981,23 +891,17 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "haan"@nl .
 
-:haar_vnw
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :eigendom ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "haar (voornaamwoord)"@nl .
-
 :handbal
       rdf:type best:Concept , skos:Concept ;
       skos:broader :sporten ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "handbal"@nl .
 
-:handels
+:handelsbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "handels"@nl .
+      skos:prefLabel "handelsbedrijf"@nl .
 
 :hebben
       rdf:type best:Concept , skos:Concept ;
@@ -1007,12 +911,12 @@
 
 :heide
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :in_het_groen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "heide"@nl .
 
 :hek  rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "hek"@nl .
 
@@ -1035,16 +939,16 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "hond"@nl .
 
-:horeca
+:horecabedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "horeca"@nl .
+      skos:prefLabel "horecabedrijf"@nl .
 
 :hotel
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "pension"@nl , "herberg" ;
-      skos:broader :horeca ;
+      skos:broader :horecabedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "hotel"@nl .
 
@@ -1056,18 +960,19 @@
 
 :huis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huis"@nl .
 
 :huisdier
-      rdf:type best:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :dier ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "huisdier"@nl .
 
 :huishoudster
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huishoudster"@nl .
 
@@ -1083,10 +988,19 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "iemand"@nl .
 
-:in   rdf:type best:Concept , skos:Concept ;
-      skos:broader :moment ;
+:in_het_groen
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "groenomgeving"@nl ;
+      skos:broader :buiten ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "in"@nl .
+      skos:prefLabel "in het groen"@nl .
+
+:in_het_verkeer
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "verkeersomgeving"@nl ;
+      skos:broader :buiten ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "in het verkeer"@nl .
 
 :inachtnemen
       rdf:type best:Concept , skos:Concept ;
@@ -1120,27 +1034,27 @@
 
 :inbreuksituatie
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gebeurtenis ;
+      skos:broader :bijzondere_omstandigheid ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "inbreuksituatie"@nl .
 
 :inlener
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "inlener"@nl .
 
 :installateur
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "installateur"@nl .
 
-:installatie
+:installatiebedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bouwbedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "installatie"@nl .
+      skos:prefLabel "installatiebedrijf"@nl .
 
 :installeren
       rdf:type best:Concept , skos:Concept ;
@@ -1152,9 +1066,16 @@
 :instructeur
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "instructrice"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "instructeur"@nl .
+
+:internetprovider
+      rdf:type best:Concept , skos:Concept ;
+      rdfs:comment ""^^xsd:string ;
+      skos:broader :telecombedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "internetprovider"@nl .
 
 :jaar
       rdf:type best:Concept , skos:Concept ;
@@ -1162,15 +1083,9 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "jaar"@nl .
 
-:jongen
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "jongen"@nl .
-
 :jongere
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
+      skos:broader :minderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "jongere"@nl .
 
@@ -1178,25 +1093,25 @@
 
 :kaart
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_object ;
+      skos:broader :product ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kaart"@nl .
 
 :kanaal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :bij_water ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kanaal"@nl .
 
 :kantine
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schoolomgeving , :sociale_omgeving , :werkomgeving ;
+      skos:broader :op_school ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kantine"@nl .
 
 :kantoor
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijf , :werkomgeving ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kantoor"@nl .
 
@@ -1219,7 +1134,7 @@
 
 :kind
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon , :familie ;
+      skos:broader :familielid , :minderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kind"@nl .
 
@@ -1236,15 +1151,15 @@
 
 :kliniek
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kliniek"@nl .
 
-:klus
+:klusbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bouwbedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "klus"@nl .
+      skos:prefLabel "klusbedrijf"@nl .
 
 :komen
       rdf:type best:Concept , skos:Concept ;
@@ -1270,20 +1185,15 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kort"@nl .
 
-:kpn  rdf:type best:Concept , skos:Concept ;
-      rdfs:label "kpn"@nl ;
-      skos:broader :bedrijfspersoon ;
-      skos:inScheme :laymen-scheme .
-
 :krabben
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "krabben"@nl .
 
 :kroeg
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :horeca ;
+      skos:broader :horecabedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kroeg"@nl .
 
@@ -1295,7 +1205,7 @@
 
 :kunstenaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kunstenaar"@nl .
 
@@ -1329,22 +1239,28 @@
 
 :leiding
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "leiding"@nl .
 
 :leidinggevende
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
+      skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "leidinggevende"@nl .
 
 :leraar
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "lerares"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "leraar"@nl .
+
+:lichamelijk_letsel
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :schade ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "lichamelijk letsel"@nl .
 
 :licht_overlast
       rdf:type best:Concept , skos:Concept ;
@@ -1354,7 +1270,7 @@
 
 :lift
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "lift"@nl .
 
@@ -1366,21 +1282,21 @@
 
 :lokaal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schoolomgeving ;
+      skos:broader :op_school ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "lokaal"@nl .
 
 :loodgieter
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "loodgieter"@nl .
 
-:loodgieters
+:loodgietersbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bouwbedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "loodgieters"@nl .
+      skos:prefLabel "loodgietersbedrijf"@nl .
 
 :lopen
       rdf:type best:Concept , skos:Concept ;
@@ -1396,56 +1312,46 @@
 
 :makelaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "makelaar"@nl .
+      skos:prefLabel "makelaar"@nl ;
+      skos:related :makelaarskantoor .
 
-:makelaars
+:makelaarskantoor
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "makelaars"@nl .
+      skos:prefLabel "makelaarskantoor"@nl .
 
 :maken
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemene_actie ;
+      skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "maken"@nl .
 
-:man  rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "man"@nl .
-
 :manager
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
+      skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "manager"@nl .
 
 :manege
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "manege"@nl .
 
 :meer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :bij_water ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "meer"@nl .
 
-:meisje
+:meerderjarige
       rdf:type best:Concept , skos:Concept ;
       skos:broader :algemeen_persoon ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "meisje"@nl .
-
-:meneer
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "meneer"@nl .
+      skos:prefLabel "meerderjarige"@nl .
 
 :metro
       rdf:type best:Concept , skos:Concept ;
@@ -1455,9 +1361,10 @@
 
 :metselaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "metselaar"@nl .
+      skos:prefLabel "metselaar"@nl ;
+      skos:related :bouwbedrijf .
 
 :meubel
       rdf:type best:Concept , skos:Concept ;
@@ -1465,20 +1372,8 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "meubel"@nl .
 
-:mevrouw
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "mevrouw"@nl .
-
 :middel
       skos:prefLabel "middel"@nl .
-
-:mijn
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :bezitten ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "mijn"@nl .
 
 :milieuschade
       rdf:type best:Concept , skos:Concept ;
@@ -1492,12 +1387,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "minderjarige"@nl .
 
-:moeder
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :ouder ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "moeder"@nl .
-
 :mogen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :algemene_actie ;
@@ -1510,15 +1399,15 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "moment"@nl .
 
-:montage
+:montagebedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bouwbedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "montage"@nl .
+      skos:prefLabel "montagebedrijf"@nl .
 
 :monteur
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "monteur"@nl .
 
@@ -1540,22 +1429,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "namaken"@nl .
 
-:natuuromgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "natuuromgeving"@nl .
-
 :nemen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :algemene_actie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "nemen"@nl .
-
-:net  rdf:type best:Concept , skos:Concept ;
-      skos:broader :moment ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "net"@nl .
 
 :niet_helpen
       rdf:type best:Concept , skos:Concept ;
@@ -1586,7 +1464,7 @@
 :niet_volgens_afspraak_handelen
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "niet overeenkomstig handelen"@nl ;
-      skos:broader :wanpresteren ;
+      skos:broader :nalaten , :wanpresteren ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "niet volgens afspraak handelen"@nl .
 
@@ -1605,15 +1483,9 @@
 
 :notaris
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "notaris"@nl .
-
-:nuon
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "Nuon"@nl .
 
 :object
       rdf:type best:Concept , skos:Concept ;
@@ -1621,14 +1493,9 @@
       skos:prefLabel "object"@nl ;
       skos:topConceptOf :laymen-scheme .
 
-:oma  rdf:type best:Concept , skos:Concept ;
-      skos:broader :grootouder ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "oma"@nl .
-
 :omvallen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "omvallen"@nl .
 
@@ -1651,11 +1518,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ongeval"@nl .
 
-:ons  rdf:type best:Concept , skos:Concept ;
-      skos:broader :bezitten ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "ons"@nl .
-
 :ontnemen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :hinderen ;
@@ -1669,16 +1531,25 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ontvlambare stof"@nl .
 
+:op_het_werk
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "werkomgeving"@nl ;
+      skos:broader :plaats ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "op het werk"@nl .
+
 :op_hol_slaan
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "op hol slaan"@nl .
 
-:opa  rdf:type best:Concept , skos:Concept ;
-      skos:broader :grootouder ;
+:op_school
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "schoolomgeving"@nl ;
+      skos:broader :plaats ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "opa"@nl .
+      skos:prefLabel "op school"@nl .
 
 :opdracht
       rdf:type best:Concept , skos:Concept ;
@@ -1688,7 +1559,7 @@
 
 :opdracht_geven
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opdracht , :werken ;
+      skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "opdracht geven"@nl .
 
@@ -1705,35 +1576,35 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "opeenvolgend"@nl .
 
-:ophaal
+:ophalen
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "opgehaald"@nl ;
       skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "ophaal"@nl .
+      skos:prefLabel "ophalen"@nl .
 
-:opleidings
+:opleidingscentrum
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "opleidingscentrum"@nl ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "opleidingsbedrijf"@nl .
+      skos:prefLabel "opleidingscentrum"@nl .
 
-:opstalobject
+:opstal
       rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "opstal object"@nl ;
       skos:broader :object ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "opstalobject"@nl .
+      skos:prefLabel "opstal"@nl .
 
-:optiehandel
+:optiehandelsbedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :financieel_bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "optiehandel"@nl .
+      skos:prefLabel "optiehandelsbedrijf"@nl .
 
 :opvangen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "opvangen"@nl .
 
@@ -1746,13 +1617,13 @@
 
 :organisator
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "organisator"@nl .
 
 :ouder
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon , :familie ;
+      skos:broader :familielid , :algemeen_persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ouder"@nl .
 
@@ -1764,7 +1635,7 @@
 
 :overeenkomst
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorgplicht ;
+      skos:broader :object ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "overeenkomst"@nl .
 
@@ -1787,29 +1658,17 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "paard"@nl .
 
-:pand
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "pand"@nl .
-
 :park
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :in_het_groen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "park"@nl .
 
 :pedagoog
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "pedagoog"@nl .
-
-:personeel
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "personeel"@nl .
 
 :persoon
       rdf:type best:Concept , skos:Concept ;
@@ -1826,13 +1685,13 @@
 
 :plantsoen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :in_het_groen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "plantsoen"@nl .
 
 :plas
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :bij_water ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "plas"@nl .
 
@@ -1842,15 +1701,21 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "poep"@nl .
 
-:politie
+:politieagent
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "politie"@nl .
+      skos:prefLabel "politieagent"@nl .
+
+:postbedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "postbedrijf"@nl .
 
 :pretpark
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sociale_omgeving ;
+      skos:broader :recreatieplek ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "pretpark"@nl .
 
@@ -1867,46 +1732,40 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "proberen"@nl .
 
-:product
+:produceren
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :productobject ;
+      skos:altLabel "geproduceerd"@nl ;
+      skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "product"@nl .
+      skos:prefLabel "produceren"@nl .
 
-:productobject
+:product
       rdf:type best:Concept , skos:Concept ;
       skos:broader :object ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "productobject"@nl .
+      skos:prefLabel "product"@nl .
 
 :programmeur
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "programmeur"@nl .
 
-:provider
-      rdf:type best:Concept , skos:Concept ;
-      rdfs:comment ""^^xsd:string ;
-      skos:broader :bedrijfspersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "provider"@nl .
-
 :psychiater
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "psychiater"@nl .
 
 :psycholoog
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "psycholoog"@nl .
 
 :publiceren
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aantasten ;
+      skos:broader :aantasten , :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "publiceren"@nl .
 
@@ -1918,13 +1777,19 @@
 
 :reclame
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :productobject ;
+      skos:broader :product ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "reclame"@nl .
 
+:recreatieplek
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :plaats ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "recreatieplek"@nl .
+
 :regenpijp
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "regenpijp"@nl .
 
@@ -1935,21 +1800,15 @@
 
 :rennen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "rennen"@nl .
 
 :restaurant
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :horeca ;
+      skos:broader :horecabedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "restaurant"@nl .
-
-:restauratie
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "restauratie"@nl .
 
 :rijden
       rdf:type best:Concept , skos:Concept ;
@@ -1959,13 +1818,13 @@
 
 :riool
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "riool"@nl .
 
 :rivier
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :bij_water ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "rivier"@nl .
 
@@ -1983,6 +1842,8 @@
 
 :schade
       rdf:type best:Concept , skos:Concept ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "schade"@nl ;
       skos:topConceptOf :laymen-scheme .
 
 :schenden
@@ -1999,38 +1860,33 @@
 
 :schilder
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schilder"@nl .
 
 :schommelen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schommelen"@nl .
 
-:schoolomgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "schoolomgeving"@nl .
-
 :schoolplein
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schoolomgeving ;
+      skos:broader :op_school , :buiten ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schoolplein"@nl .
 
 :schoonmaker
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "schoonmaakster"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "schoonmaker"@nl .
+      skos:prefLabel "schoonmaker"@nl ;
+      skos:related :ziekenhuis .
 
 :schoppen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schoppen"@nl .
 
@@ -2048,19 +1904,19 @@
 
 :schutting
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schutting"@nl .
 
 :schuur
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schuur"@nl .
 
 :secretaresse
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "secretaresse"@nl .
 
@@ -2084,7 +1940,7 @@
 
 :sluis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sluis"@nl .
 
@@ -2094,12 +1950,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "snelweg"@nl .
 
-:sociale_omgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "sociale omgeving"@nl .
-
 :sociale_omgeving_persoon
       rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon ;
@@ -2108,13 +1958,13 @@
 
 :speelgoed
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_object ;
+      skos:broader :product ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "speelgoed"@nl .
 
 :speeltuin
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sociale_omgeving ;
+      skos:broader :buiten , :recreatieplek ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "speeltuin"@nl .
 
@@ -2130,39 +1980,45 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "spiritus"@nl .
 
-:sport_omgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "sport omgeving"@nl .
-
 :sporten
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sporten"@nl .
 
+:sportfaciliteit
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :recreatieplek ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "sportfaciliteit"@nl .
+
 :sporthal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sporthal"@nl .
 
-:sportomgeving
+:sportkantine
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sociale_omgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "sportomgeving"@nl .
+      skos:prefLabel "sportkantine"@nl .
 
 :sportschool
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sportschool"@nl .
 
+:sportsituatie
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "sportsituatie"@nl .
+
 :sportveld
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportomgeving ;
+      skos:broader :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sportveld"@nl .
 
@@ -2174,31 +2030,31 @@
 
 :springen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "springen"@nl .
 
 :stagiair
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
+      skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stagiair"@nl .
 
 :staken
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :actie ;
+      skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "staken"@nl .
 
 :stal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dieromgeving ;
+      skos:broader :bij_dieren ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stal"@nl .
 
 :stoep
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stoep"@nl .
 
@@ -2210,13 +2066,13 @@
 
 :stoten
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stoten"@nl .
 
 :straat
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :weg ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "straat"@nl .
 
@@ -2228,16 +2084,16 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "taak"@nl .
 
-:teken
+:telecombedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersobject ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "teken"@nl .
+      skos:prefLabel "telecombedrijf"@nl .
 
 :telefonist
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "telefoniste"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "telefonist"@nl .
 
@@ -2249,7 +2105,7 @@
 
 :therapeut
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "therapeut"@nl .
 
@@ -2280,14 +2136,9 @@
 
 :toernooi
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sport_omgeving ;
+      skos:broader :sportsituatie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "toernooi"@nl .
-
-:tpg  rdf:type best:Concept , skos:Concept ;
-      rdfs:label "tpg"@nl ;
-      skos:broader :bedrijfspersoon ;
-      skos:inScheme :laymen-scheme .
 
 :tractor
       rdf:type best:Concept , skos:Concept ;
@@ -2297,7 +2148,7 @@
 
 :trainer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "trainer"@nl .
 
@@ -2310,13 +2161,14 @@
 :trappen
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "getrapt"@nl ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "trappen"@nl .
 
 :trein
-      rdf:type best:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :voertuig ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "trein"@nl .
 
 :trillingen
@@ -2333,7 +2185,7 @@
 
 :tunnel
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "tunnel"@nl .
 
@@ -2347,7 +2199,7 @@
 
 :uitlener
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "uitlener"@nl .
 
@@ -2360,7 +2212,7 @@
 
 :uitsmijter
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "uitsmijter"@nl .
 
@@ -2374,43 +2226,32 @@
 :uitzendbureau
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "uitzendburo"@nl ;
-      skos:broader :bedrijfspersoon ;
+      skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "uitzendbureau"@nl .
 
 :uitzendkracht
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "uitzendkracht"@nl .
-
-:upc  rdf:type best:Concept , skos:Concept ;
-      rdfs:label "upc"@nl ;
-      skos:broader :bedrijfspersoon ;
-      skos:inScheme :laymen-scheme .
-
-:vader
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :ouder ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "vader"@nl .
 
 :vakantiewoning
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "vakantiehuisje"@nl , "vakantiehuis" ;
-      skos:broader :sociale_omgeving ;
+      skos:broader :recreatieplek ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vakantiewoning"@nl .
 
 :vallen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vallen"@nl .
 
 :vangen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_actie ;
+      skos:broader :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vangen"@nl .
 
@@ -2420,8 +2261,9 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "varken"@nl .
 
-:vee  rdf:type best:Concept ;
+:vee  rdf:type best:Concept , skos:Concept ;
       skos:broader :dier ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "vee"@nl .
 
 :vergelijking
@@ -2438,7 +2280,7 @@
 
 :verkeersbord
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :teken , :verkeersobject ;
+      skos:broader :verkeersteken , :verkeersobject ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkeersbord"@nl .
 
@@ -2460,12 +2302,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkeersobject"@nl .
 
-:verkeersomgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "verkeersomgeving"@nl .
-
 :verkeersregel
       rdf:type best:Concept , skos:Concept ;
       skos:broader :verkeersobject ;
@@ -2478,10 +2314,16 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkeersschade"@nl .
 
+:verkeersteken
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verkeersobject ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "verkeersteken"@nl .
+
 :verkoper
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "verkoopster"@nl ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkoper"@nl .
 
@@ -2518,7 +2360,7 @@
 :verpleger
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "verpleegster"@nl ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verpleger"@nl .
 
@@ -2530,7 +2372,7 @@
 
 :vertegenwoordiger
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vertegenwoordiger"@nl .
 
@@ -2539,6 +2381,12 @@
       skos:broader :algemene_actie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verwachten"@nl .
+
+:verzekeraar
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :financieel_bedrijf ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "verzekeraar"@nl .
 
 :vloeibare_stof
       rdf:type best:Concept , skos:Concept ;
@@ -2554,13 +2402,15 @@
 
 :vluchtheuvel
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vluchtheuvel"@nl .
 
 :voertuig
-      rdf:type best:Concept ;
-      skos:broader :verkeersobject .
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verkeersobject ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "voertuig"@nl .
 
 :voetbal
       rdf:type best:Concept , skos:Concept ;
@@ -2575,14 +2425,15 @@
       skos:prefLabel "voetganger"@nl .
 
 :vogel
-      rdf:type best:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "gevogelte"@nl ;
       skos:broader :dier ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "vogel"@nl .
 
 :voogd
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon , :familie ;
+      skos:broader :familielid , :algemeen_persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "voogd"@nl .
 
@@ -2634,12 +2485,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vroeger"@nl .
 
-:vrouw
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :algemeen_persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "vrouw"@nl .
-
 :vuilniswagen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :vrachtwagen ;
@@ -2659,21 +2504,15 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "wanpresteren"@nl .
 
-:water
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "water"@nl .
-
 :webdesigner
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :beroepspersoon ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "webdesigner"@nl .
 
 :wedstrijd
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sport_omgeving ;
+      skos:broader :sportsituatie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "wedstrijd"@nl .
 
@@ -2684,13 +2523,13 @@
       skos:prefLabel "week"@nl .
 
 :weg  rdf:type best:Concept , skos:Concept ;
-      skos:broader :verkeersomgeving ;
+      skos:broader :in_het_verkeer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "weg"@nl .
 
 :wegdek
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstalobject ;
+      skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "wegdek"@nl .
 
@@ -2703,7 +2542,7 @@
 :weide
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "wei"@nl ;
-      skos:broader :dieromgeving ;
+      skos:broader :bij_dieren ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "weide"@nl .
 
@@ -2713,29 +2552,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werken"@nl .
 
-:werkgever
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "werkgever"@nl .
-
 :werknemer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :dienstverbandpersoon ;
+      owl:sameAs :beroepsbeoefenaar ;
+      skos:broader :werkpersoon ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werknemer"@nl .
-
-:werkobject
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :object ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "werkobject"@nl .
-
-:werkomgeving
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "werkomgeving"@nl .
 
 :werkpersoon
       rdf:type best:Concept , skos:Concept ;
@@ -2745,24 +2567,24 @@
 
 :woning
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :woonomgeving ;
+      skos:broader :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "woning"@nl .
 
-:woonomgeving
+:woonerf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :plaats ;
+      skos:broader :weg ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "woonomgeving"@nl .
+      skos:prefLabel "woonerf"@nl .
 
 :zaal
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schoolomgeving ;
+      skos:broader :op_school ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zaal"@nl .
 
 :zee  rdf:type best:Concept , skos:Concept ;
-      skos:broader :natuuromgeving ;
+      skos:broader :bij_water ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zee"@nl .
 
@@ -2772,9 +2594,15 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zeilen"@nl .
 
+:zelfstandige
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :werkpersoon ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "zelfstandige"@nl .
+
 :ziekenhuis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :werkomgeving ;
+      skos:broader :op_het_werk ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ziekenhuis"@nl .
 
@@ -2784,51 +2612,29 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zijn"@nl .
 
-:zijn_vnw
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :eigendom ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zijn (voornaamwoord)"@nl .
-
 :zo_lang
       rdf:type best:Concept , skos:Concept ;
       skos:broader :duur ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zo lang"@nl .
 
-:zoon
+:zorgmedewerker
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :kind ;
+      skos:altLabel "verzorger"@nl , "verzorgster"@nl ;
+      skos:broader :beroepsbeoefenaar ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zoon"@nl .
-
-:zorger
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "verzorger" , "verzorgster"@nl ;
-      skos:broader :beroepspersoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zorger"@nl .
-
-:zorgplicht
-      rdf:type best:Concept , skos:Concept ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zorgplicht"@nl .
+      skos:prefLabel "zorgmedewerker"@nl .
 
 :zorgplichtsituatie
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gebeurtenis ;
+      skos:broader :bijzondere_omstandigheid ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zorgplichtsituatie"@nl .
-
-:zus  rdf:type best:Concept , skos:Concept ;
-      skos:broader :familie ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "zus"@nl .
 
 :zuster
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "broeder"@nl ;
-      skos:broader :zorger ;
+      skos:broader :zorgmedewerker ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zuster"@nl .
 
