@@ -1,364 +1,171 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.best-project.nl/owl/bestmap.owl#"
-     xml:base="http://www.best-project.nl/owl/bestmap.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:bestmap="http://www.best-project.nl/owl/bestmap.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="">
-        <rdfs:label xml:lang="en"
-            >BestMap Ontology</rdfs:label>
-        <dc:rights xml:lang="en"
-            >Copyright (c) 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam.
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bestmap="http://www.best-project.nl/owl/bestmap.owl#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.best-project.nl/owl/bestmap.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <rdfs:seeAlso xml:lang="en">http://www.best-project.nl</rdfs:seeAlso>
+    <owl:versionInfo xml:lang="en">This is version v0.1a</owl:versionInfo>
+    <dc:creator xml:lang="en">Rinke Hoekstra (hoekstra@few.vu.nl)</dc:creator>
+    <dc:rights xml:lang="en">Copyright (c) 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam.
 
 This ontology is made available under the Creative Commons Attribution 3.0 Netherlands Licence, see http://creativecommons.org/licenses/by/3.0/nl/</dc:rights>
-        <dc:creator xml:lang="en"
-            >Rinke Hoekstra (hoekstra@few.vu.nl)</dc:creator>
-        <owl:versionInfo xml:lang="en"
-            >This is version v0.1a</owl:versionInfo>
-        <rdfs:seeAlso xml:lang="en"
-            >http://www.best-project.nl</rdfs:seeAlso>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#about -->
-
-    <owl:ObjectProperty rdf:about="#about">
-        <rdfs:domain rdf:resource="#Resource"/>
-        <owl:inverseOf rdf:resource="#describes"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#b_about -->
-
-    <owl:ObjectProperty rdf:about="#b_about">
-        <rdfs:subPropertyOf rdf:resource="#bt_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#bm_about -->
-
-    <owl:ObjectProperty rdf:about="#bm_about">
-        <rdfs:subPropertyOf rdf:resource="#b_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#bt_about -->
-
-    <owl:ObjectProperty rdf:about="#bt_about">
-        <rdfs:subPropertyOf rdf:resource="#about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#cm_about -->
-
-    <owl:ObjectProperty rdf:about="#cm_about">
-        <rdfs:subPropertyOf rdf:resource="#about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#cm_describes -->
-
-    <owl:ObjectProperty rdf:about="#cm_describes">
-        <rdfs:subPropertyOf rdf:resource="#describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#d_about -->
-
-    <owl:ObjectProperty rdf:about="#d_about">
-        <rdfs:subPropertyOf rdf:resource="#about"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#d_describes -->
-
-    <owl:ObjectProperty rdf:about="#d_describes">
-        <rdfs:subPropertyOf rdf:resource="#describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#describes -->
-
-    <owl:ObjectProperty rdf:about="#describes">
-        <rdfs:range rdf:resource="#Resource"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#em_about -->
-
-    <owl:ObjectProperty rdf:about="#em_about">
-        <rdfs:subPropertyOf rdf:resource="#cm_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#em_describes -->
-
-    <owl:ObjectProperty rdf:about="#em_describes">
-        <rdfs:subPropertyOf rdf:resource="#cm_describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#n_about -->
-
-    <owl:ObjectProperty rdf:about="#n_about">
-        <rdfs:subPropertyOf rdf:resource="#nt_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#n_describes -->
-
-    <owl:ObjectProperty rdf:about="#n_describes">
-        <rdfs:subPropertyOf rdf:resource="#nt_describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#nm_about -->
-
-    <owl:ObjectProperty rdf:about="#nm_about">
-        <rdfs:subPropertyOf rdf:resource="#n_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#nm_describes -->
-
-    <owl:ObjectProperty rdf:about="#nm_describes">
-        <rdfs:subPropertyOf rdf:resource="#n_describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#nt_about -->
-
-    <owl:ObjectProperty rdf:about="#nt_about">
-        <rdfs:subPropertyOf rdf:resource="#about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#nt_describes -->
-
-    <owl:ObjectProperty rdf:about="#nt_describes">
-        <rdfs:subPropertyOf rdf:resource="#describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#r_about -->
-
-    <owl:ObjectProperty rdf:about="#r_about">
-        <rdfs:subPropertyOf rdf:resource="#about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#r_describes -->
-
-    <owl:ObjectProperty rdf:about="#r_describes">
-        <rdfs:subPropertyOf rdf:resource="#describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#rm_about -->
-
-    <owl:ObjectProperty rdf:about="#rm_about">
-        <rdfs:subPropertyOf rdf:resource="#r_about"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="#d_about"/>
-            <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#rm_describes -->
-
-    <owl:ObjectProperty rdf:about="#rm_describes">
-        <rdfs:subPropertyOf rdf:resource="#r_describes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#broader -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#related -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#Mapping -->
-
-    <owl:Class rdf:about="#Mapping"/>
-    
-
-
-    <!-- http://www.best-project.nl/owl/bestmap.owl#Resource -->
-
-    <owl:Class rdf:about="#Resource">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#about"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:comment xml:lang="en"
-            >A resource according to the BestMap ontology is any entity annotated using an &#39;about&#39; relation with a skos:Concept</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
-
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">BestMap Ontology</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Resource">
+    <rdfs:comment xml:lang="en">A resource according to the BestMap ontology is any entity annotated using an 'about' relation with a skos:Concept</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="about"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Mapping"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+  <owl:ObjectProperty rdf:ID="d_about">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#about"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+  <owl:ObjectProperty rdf:ID="n_describes">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="nt_describes"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="cm_describes">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="describes"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#nt_describes">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#describes"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="em_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="cm_about"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+  <owl:ObjectProperty rdf:ID="b_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="bt_about"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nm_describes">
+    <rdfs:subPropertyOf rdf:resource="#n_describes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="em_describes">
+    <rdfs:subPropertyOf rdf:resource="#cm_describes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#cm_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#about"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="bm_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#b_about"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nt_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#about"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+  <owl:ObjectProperty rdf:about="#describes">
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="#Resource"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="rm_describes">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="r_describes"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="d_describes">
+    <rdfs:subPropertyOf rdf:resource="#describes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
+  <owl:ObjectProperty rdf:ID="n_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#nt_about"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="nm_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#n_about"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#about">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:inverseOf rdf:resource="#describes"/>
+    <rdfs:domain rdf:resource="#Resource"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#r_describes">
+    <rdfs:subPropertyOf rdf:resource="#describes"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="r_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#about"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="rm_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#r_about"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#bt_about">
+    <owl:propertyChainAxiom rdf:parseType="Collection">
+      <owl:ObjectProperty rdf:about="#d_about"/>
+      <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+    </owl:propertyChainAxiom>
+    <rdfs:subPropertyOf rdf:resource="#about"/>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
 </rdf:RDF>
 
-
-
-<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
-
+<!-- Created with TopBraid Composer -->
