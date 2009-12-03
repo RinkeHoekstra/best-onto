@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Dec 03 10:44:49 CET 2009
+# Saved by TopBraid on Thu Dec 03 10:46:26 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.w3.org/2004/02/skos/core
@@ -12417,23 +12417,69 @@
       skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van natuurgeweld (tenzij schade is ontstaan als gevolg van ondergrondse natuurkrachten door de exploitatie van een mijnbouwwerk)"^^xsd:string ;
       skos:prefLabel "natuurgeweld"@nl .
 
-:niet-ondergeschikte
+:niet-ondergeschiktheidscriterium
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "niet-ondergeschiktheidscriterium"@nl ;
+      skos:broader :beoordelingscriterium ;
+      skos:inScheme :tort-scheme ;
+      skos:note "Een niet-ondergeschikte is een zelfstandige opdrachtnemer, bijvoorbeeld een (onder)aannemer of (onder)vervoerder. Er wordt in dit kader ook wel gesproken van een zelfstandig hulppersoon. NIet-ondergeschiktheid zal in het algemeen worden beoordeeld aan de hand van de mate waarin de opdrachtgever zeggenschap heeft over de werkzaamheden, aan de beschermingsbehoeften en afhankelijkheid van de persoon die de werkzaamheden uitoefent, de mate waarin de opdrachtgever bevoegd is tot het geven van aanwijzingen, de mate van concretisering van de aanwijzingen die met betrekking tot de werkzaamheden zijn gegeven, de doelstelling die partijen hebben beoogd bij het sluiten van de (arbeids)overeenkomst, een aantal praktische indicatoren en of er kan worden gesproken van 'hulppersonen'."^^xsd:string ;
+      skos:prefLabel "niet-ondergeschiktheid"@nl .
+
+:niet_aan_ouders_verwijtbaar_handelen
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :wettelijke_vereiste_aansprakelijkheid_voor_personen ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "niet aan ouders verwijtbaar handelen"@nl .
+
+:niet_commerciele_producten
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "niet_commerciele_producten"@nl , "het product noch voor de verkoop of voor enige andere vorm van verspreiding met een economisch doel van de producent is vervaardigd"@nl , "vervaardigd of verspreid in het kader van de uitoefening van beroep of bedrijf"@nl , "verspreiding met een economisch doel"@nl , "niet-commerciële producten"@nl ;
+      skos:broader :uitzondering_producten_6_185 ;
+      skos:inScheme :tort-scheme ;
+      skos:note "Er ontstaat geen aansprakelijkheid voor gebrekkige producten indien het economisch doel ontbreekt. Dat wil zeggen dat de verspreiding van de producten niet is gebeurt in het kader van een economisch doel en dat de producten niet zijn vervaardigd of verspreid in de uitoefening van beroep of bedrijf"^^xsd:string ;
+      skos:prefLabel "niet commerciële producten"@nl .
+
+:niet_in_de_uitoefening_van_beroep_of_bedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "niet_in_de_uitoefening_van_beroep_of_bedrijf"@nl ;
+      skos:broader :niet_commerciele_producten ;
+      skos:inScheme :tort-scheme ;
+      skos:note "De benadeelde moet de schade, het gebrek en het oorzakelijk verband tussen het gebrek en de schade in beginsel bewijzen."^^xsd:string ;
+      skos:prefLabel "niet in de uitoefening van beroep of bedrijf"@nl .
+
+:niet_in_het_verkeer_gebrachte_producten
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "product niet in het verkeer gebracht"@nl , "niet_in_het_verkeer_gebrachte_producten"@nl ;
+      skos:broader :uitzondering_producten_6_185 ;
+      skos:inScheme :tort-scheme ;
+      skos:note "Er bestaat geen aansprakelijkheid voor schade als gevolg van gebrekkige producten die niet in het verkeer zijn gebracht door degene die voor de vergoeding van de schade wordt aangesproken."^^xsd:string ;
+      skos:prefLabel "niet in het verkeer gebrachte producten"@nl .
+
+:niet_nakoming_overeenkomst
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "niet_nakoming_overeenkomst"@nl ;
+      skos:broader :zuivere_vermogensschade ;
+      skos:inScheme :tort-scheme ;
+      skos:note "Niet-nakoming van de overeenkomst kan leiden tot aansprakelijkheid tegenover derden. In principe geldt dat de overeenkomst alleen tussen partijen van kracht is. Als werkzaamheden door een contractspartij pas uitvoerbaar zijn nadat de wederpartij zijn contractsverplichting tegenover een derde is nagekomen, kan niet-nakoming van de overeenkomst aansprakelijkheid met zich meebrengen."^^xsd:string ;
+      skos:prefLabel "niet nakoming overeenkomst"@nl .
+
+:niet_ondergeschikte
       rdf:type best:Concept , skos:Concept ;
       to:fingerprint
               [ to:value "eenheid"@nl ;
                 to:weight 13
               ] ;
       to:fingerprint
-              [ to:value "opdracht tot het verrichten van deze taak"@nl ;
-                to:weight 20
+              [ to:value "niet-ondergeschikte"@nl ;
+                to:weight 25
               ] ;
       to:fingerprint
               [ to:value "betrokken activiteiten"@nl ;
                 to:weight 28
               ] ;
       to:fingerprint
-              [ to:value "niet-ondergeschikte"@nl ;
-                to:weight 25
+              [ to:value "opdracht tot het verrichten van deze taak"@nl ;
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "draagplicht"@nl ;
@@ -12464,12 +12510,12 @@
                 to:weight 33
               ] ;
       to:fingerprint
-              [ to:value "werkgever"@nl ;
-                to:weight 13
-              ] ;
-      to:fingerprint
               [ to:value "opdrachtnemer"@nl ;
                 to:weight 25
+              ] ;
+      to:fingerprint
+              [ to:value "werkgever"@nl ;
+                to:weight 13
               ] ;
       to:fingerprint
               [ to:value "verrichten van werkzaamheden"@nl ;
@@ -12516,12 +12562,12 @@
                 to:weight 41
               ] ;
       to:fingerprint
-              [ to:value "benadeelde"@nl ;
-                to:weight 7
-              ] ;
-      to:fingerprint
               [ to:value "kans op de fout"@nl ;
                 to:weight 13
+              ] ;
+      to:fingerprint
+              [ to:value "benadeelde"@nl ;
+                to:weight 7
               ] ;
       to:fingerprint
               [ to:value "niet ondergeschikten"@nl ;
@@ -12539,56 +12585,10 @@
               [ to:value "eenheid van de onderneming"@nl ;
                 to:weight 18
               ] ;
-      skos:altLabel "ondernemingen zonder winstoogmerk"@nl , "bedrijfsactiviteit"@nl , "onderaanneming"@nl , "eenheid"@nl , "benadeelde"@nl , "werlnemer"@nl , "verrichten van werkzaamheden"@nl , "kans op de fout"@nl , "eenheid van de onderneming"@nl , "risicoaansprakelijkheid"@nl , "niet-ondergeschikte"@nl , "ter uitoefening"@nl , "opdrachtnemer"@nl , "werkgever"@nl , "eenheid van de onderneming tegenover de benadeelde"@nl , "inschakelt"@nl , "fout"@nl , "aansprakelijke opdrachtgever"@nl , "werkzaamheden ter uitoefening van het bedrijf"@nl , "niet-ondergeschikten"@nl , "draagplicht"@nl , "bij die werkzaamheden begane fout"@nl , "niet ondergeschikten"@nl , "ondernemingen"@nl , "ondergeschikten"@nl , "onderlinge verhouding"@nl , "betrokken activiteiten"@nl , "opdracht tot het verrichten van deze taak"@nl , "aanneming"@nl , "bedrijfsrisico"@nl ;
+      skos:altLabel "ondernemingen zonder winstoogmerk"@nl , "bedrijfsactiviteit"@nl , "onderaanneming"@nl , "eenheid"@nl , "benadeelde"@nl , "verrichten van werkzaamheden"@nl , "werlnemer"@nl , "kans op de fout"@nl , "eenheid van de onderneming"@nl , "risicoaansprakelijkheid"@nl , "niet-ondergeschikte"@nl , "opdrachtnemer"@nl , "ter uitoefening"@nl , "werkgever"@nl , "fout"@nl , "eenheid van de onderneming tegenover de benadeelde"@nl , "inschakelt"@nl , "aansprakelijke opdrachtgever"@nl , "werkzaamheden ter uitoefening van het bedrijf"@nl , "niet-ondergeschikten"@nl , "draagplicht"@nl , "bij die werkzaamheden begane fout"@nl , "niet ondergeschikten"@nl , "ondernemingen"@nl , "ondergeschikten"@nl , "onderlinge verhouding"@nl , "betrokken activiteiten"@nl , "opdracht tot het verrichten van deze taak"@nl , "aanneming"@nl , "bedrijfsrisico"@nl ;
       skos:broader :wettelijke_vereiste_aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
       skos:prefLabel "niet-ondergeschikte"@nl .
-
-:niet-ondergeschiktheidscriterium
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "niet-ondergeschiktheidscriterium"@nl ;
-      skos:broader :beoordelingscriterium ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Een niet-ondergeschikte is een zelfstandige opdrachtnemer, bijvoorbeeld een (onder)aannemer of (onder)vervoerder. Er wordt in dit kader ook wel gesproken van een zelfstandig hulppersoon. NIet-ondergeschiktheid zal in het algemeen worden beoordeeld aan de hand van de mate waarin de opdrachtgever zeggenschap heeft over de werkzaamheden, aan de beschermingsbehoeften en afhankelijkheid van de persoon die de werkzaamheden uitoefent, de mate waarin de opdrachtgever bevoegd is tot het geven van aanwijzingen, de mate van concretisering van de aanwijzingen die met betrekking tot de werkzaamheden zijn gegeven, de doelstelling die partijen hebben beoogd bij het sluiten van de (arbeids)overeenkomst, een aantal praktische indicatoren en of er kan worden gesproken van 'hulppersonen'."^^xsd:string ;
-      skos:prefLabel "niet-ondergeschiktheid"@nl .
-
-:niet_aan_ouders_verwijtbaar_handelen
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :wettelijke_vereiste_aansprakelijkheid_voor_personen ;
-      skos:inScheme :tort-scheme ;
-      skos:prefLabel "niet aan ouders verwijtbaar handelen"@nl .
-
-:niet_commerciele_producten
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "niet_commerciele_producten"@nl , "het product noch voor de verkoop of voor enige andere vorm van verspreiding met een economisch doel van de producent is vervaardigd"@nl , "vervaardigd of verspreid in het kader van de uitoefening van beroep of bedrijf"@nl , "verspreiding met een economisch doel"@nl , "niet-commerciële producten"@nl ;
-      skos:broader :uitzondering_producten_6_185 ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Er ontstaat geen aansprakelijkheid voor gebrekkige producten indien het economisch doel ontbreekt. Dat wil zeggen dat de verspreiding van de producten niet is gebeurt in het kader van een economisch doel en dat de producten niet zijn vervaardigd of verspreid in de uitoefening van beroep of bedrijf"^^xsd:string ;
-      skos:prefLabel "niet commerciële producten"@nl .
-
-:niet_in_de_uitoefening_van_beroep_of_bedrijf
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "niet_in_de_uitoefening_van_beroep_of_bedrijf"@nl ;
-      skos:broader :niet_commerciele_producten ;
-      skos:inScheme :tort-scheme ;
-      skos:note "De benadeelde moet de schade, het gebrek en het oorzakelijk verband tussen het gebrek en de schade in beginsel bewijzen."^^xsd:string ;
-      skos:prefLabel "niet in de uitoefening van beroep of bedrijf"@nl .
-
-:niet_in_het_verkeer_gebrachte_producten
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "product niet in het verkeer gebracht"@nl , "niet_in_het_verkeer_gebrachte_producten"@nl ;
-      skos:broader :uitzondering_producten_6_185 ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Er bestaat geen aansprakelijkheid voor schade als gevolg van gebrekkige producten die niet in het verkeer zijn gebracht door degene die voor de vergoeding van de schade wordt aangesproken."^^xsd:string ;
-      skos:prefLabel "niet in het verkeer gebrachte producten"@nl .
-
-:niet_nakoming_overeenkomst
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "niet_nakoming_overeenkomst"@nl ;
-      skos:broader :zuivere_vermogensschade ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Niet-nakoming van de overeenkomst kan leiden tot aansprakelijkheid tegenover derden. In principe geldt dat de overeenkomst alleen tussen partijen van kracht is. Als werkzaamheden door een contractspartij pas uitvoerbaar zijn nadat de wederpartij zijn contractsverplichting tegenover een derde is nagekomen, kan niet-nakoming van de overeenkomst aansprakelijkheid met zich meebrengen."^^xsd:string ;
-      skos:prefLabel "niet nakoming overeenkomst"@nl .
 
 :niet_voldoen_aan_vereisten
       rdf:type best:Concept , skos:Concept ;
