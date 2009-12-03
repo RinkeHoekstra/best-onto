@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Dec 03 10:46:26 CET 2009
+# Saved by TopBraid on Thu Dec 03 10:47:36 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.w3.org/2004/02/skos/core
@@ -12417,14 +12417,6 @@
       skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van natuurgeweld (tenzij schade is ontstaan als gevolg van ondergrondse natuurkrachten door de exploitatie van een mijnbouwwerk)"^^xsd:string ;
       skos:prefLabel "natuurgeweld"@nl .
 
-:niet-ondergeschiktheidscriterium
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "niet-ondergeschiktheidscriterium"@nl ;
-      skos:broader :beoordelingscriterium ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Een niet-ondergeschikte is een zelfstandige opdrachtnemer, bijvoorbeeld een (onder)aannemer of (onder)vervoerder. Er wordt in dit kader ook wel gesproken van een zelfstandig hulppersoon. NIet-ondergeschiktheid zal in het algemeen worden beoordeeld aan de hand van de mate waarin de opdrachtgever zeggenschap heeft over de werkzaamheden, aan de beschermingsbehoeften en afhankelijkheid van de persoon die de werkzaamheden uitoefent, de mate waarin de opdrachtgever bevoegd is tot het geven van aanwijzingen, de mate van concretisering van de aanwijzingen die met betrekking tot de werkzaamheden zijn gegeven, de doelstelling die partijen hebben beoogd bij het sluiten van de (arbeids)overeenkomst, een aantal praktische indicatoren en of er kan worden gesproken van 'hulppersonen'."^^xsd:string ;
-      skos:prefLabel "niet-ondergeschiktheid"@nl .
-
 :niet_aan_ouders_verwijtbaar_handelen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :wettelijke_vereiste_aansprakelijkheid_voor_personen ;
@@ -12589,6 +12581,14 @@
       skos:broader :wettelijke_vereiste_aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
       skos:prefLabel "niet-ondergeschikte"@nl .
+
+:niet_ondergeschiktheidscriterium
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "niet-ondergeschiktheidscriterium"@nl ;
+      skos:broader :beoordelingscriterium ;
+      skos:inScheme :tort-scheme ;
+      skos:note "Een niet-ondergeschikte is een zelfstandige opdrachtnemer, bijvoorbeeld een (onder)aannemer of (onder)vervoerder. Er wordt in dit kader ook wel gesproken van een zelfstandig hulppersoon. NIet-ondergeschiktheid zal in het algemeen worden beoordeeld aan de hand van de mate waarin de opdrachtgever zeggenschap heeft over de werkzaamheden, aan de beschermingsbehoeften en afhankelijkheid van de persoon die de werkzaamheden uitoefent, de mate waarin de opdrachtgever bevoegd is tot het geven van aanwijzingen, de mate van concretisering van de aanwijzingen die met betrekking tot de werkzaamheden zijn gegeven, de doelstelling die partijen hebben beoogd bij het sluiten van de (arbeids)overeenkomst, een aantal praktische indicatoren en of er kan worden gesproken van 'hulppersonen'."^^xsd:string ;
+      skos:prefLabel "niet-ondergeschiktheid"@nl .
 
 :niet_voldoen_aan_vereisten
       rdf:type best:Concept , skos:Concept ;
