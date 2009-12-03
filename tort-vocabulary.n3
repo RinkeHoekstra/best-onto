@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Dec 03 10:14:44 CET 2009
+# Saved by TopBraid on Thu Dec 03 10:44:49 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.w3.org/2004/02/skos/core
@@ -7800,9 +7800,9 @@
       skos:inScheme :tort-scheme ;
       skos:prefLabel "fout"@nl .
 
-:fout_begaan_in_de_prive-sfeer
+:fout_begaan_in_de_prive_sfeer
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "fout begaan in de privé-sfeer"@nl , "fout_begaan_in_de_prive-sfeer"@nl ;
+      skos:altLabel "fout begaan in de privé-sfeer"@nl ;
       skos:broader :aansprakelijkheid_voor_ondergeschikten ;
       skos:inScheme :tort-scheme ;
       skos:prefLabel "fout begaan in de prive-sfeer"@nl .
