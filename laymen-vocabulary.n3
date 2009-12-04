@@ -1,4 +1,4 @@
-# Saved by TopBraid on Wed Nov 25 15:21:27 CET 2009
+# Saved by TopBraid on Fri Dec 04 14:44:07 CET 2009
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -1018,7 +1018,7 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aantasten ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "inbreuk_op_leven"@nl .
+      skos:prefLabel "inbreuk op leven"@nl .
 
 :inbreuk_op_meningsuiting
       rdf:type best:Concept , skos:Concept ;

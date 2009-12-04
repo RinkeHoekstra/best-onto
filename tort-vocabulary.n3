@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Dec 03 10:47:36 CET 2009
+# Saved by TopBraid on Thu Dec 03 15:34:11 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.w3.org/2004/02/skos/core
@@ -122,8 +122,10 @@
               [ to:value "aansprakelijke"@nl ;
                 to:weight 33
               ] ;
-      skos:altLabel "aansprakelijk"@nl , "wanprestatie"@nl , "aansprakelijke"@nl , "aansprakelijk stellen"@nl , "aansprakelijkstelling"@nl , "persoonlijk aansprakelijk"@nl , "risico-aansprakelijk"@nl , "aansprakelijkheid"@nl ;
+      skos:altLabel "aansprakelijk"@nl , "wanprestatie"@nl , "aansprakeljkheid"@nl , "aansprakelijke"@nl , "aansprakelijk stellen"@nl , "aansprakelijkstelling"@nl , "persoonlijk aansprakelijk"@nl , "risico-aansprakelijk"@nl , "aansprakelijkheid"@nl ;
+      skos:broader :artikel_6_162 ;
       skos:inScheme :tort-scheme ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade die is ontstaan door zijn eigen handelen. Daarnaast is het mogelijk dat een persoon aansprakelijk is voor schade ontstaan door zaken of personen waarvoor hij verantwoordelijk is, voor schade als gevolg van misleidende en vergelijkende reclame, producten of elektronisch rechtsverkeer. Tot slot kan er ook aansprakelijheid ontstaan op grond van wanprestatie. Aansprakelijkheid kan een verplichting tot betaling van schadevergoeding met zich meebrengen."^^xsd:string ;
       skos:prefLabel "aansprakelijkheid"@nl .
 
 :aansprakelijkheid_bij_electronisch_rechtsverkeer
@@ -302,14 +304,6 @@
       skos:inScheme :tort-scheme ;
       skos:note "Een persoon kan aansprakelijk zijn voor schade ontstaan door zaken waarvan men eigenaar, bezitter of houder is. Dit brengt met zich mee dat een persoon aansprakelijk kan zijn voor dieren, gebrekkige opstallen, gebrekkige roerende zaken, gevaarlijke stoffen, gebrekkige producten en voor schade ontstaan als gevolg van motorrijtuigen. Leeftijd staat niet aan aansprakelijkheid in de weg, ook kinderen jonger dan 14 jaar kunnen aansprakelijk zijn voor zaken, met uitzondering van dieren en gebrekkige roerende zaken."^^xsd:string ;
       skos:prefLabel "aansprakelijkheid voor zaken"@nl .
-
-:aansprakeljkheid
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "aansprakeljkheid"@nl ;
-      skos:broader :artikel_6_162 ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Een persoon kan aansprakelijk zijn voor schade die is ontstaan door zijn eigen handelen. Daarnaast is het mogelijk dat een persoon aansprakelijk is voor schade ontstaan door zaken of personen waarvoor hij verantwoordelijk is, voor schade als gevolg van misleidende en vergelijkende reclame, producten of elektronisch rechtsverkeer. Tot slot kan er ook aansprakelijheid ontstaan op grond van wanprestatie. Aansprakelijkheid kan een verplichting tot betaling van schadevergoeding met zich meebrengen."^^xsd:string ;
-      skos:prefLabel "aansprakelijkheid"@nl .
 
 :aantasting_kwaliteit_van_leven
       rdf:type best:Concept , skos:Concept ;
@@ -11531,7 +11525,7 @@
                 to:weight 100
               ] ;
       skos:altLabel "aansprakelijkheid voor misleidende en vergelijkende reclame"@nl , "aansprakelijkheid voor personen"@nl , "risicoaansprakelijkheid"@nl , "kwalitatieve aansprakelijkheid"@nl , "kwalitatieve_aansprakelijkheid"@nl , "aansprakelijkheid bij elektronisch handelsverkeer"@nl , "risico-aansprakelijkheid"@nl , "risico-aansprakelijkheid" ;
-      skos:broader :aansprakeljkheid ;
+      skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:note "Een persoon kan aansprakelijk worden gesteld omdat hij verantwoordelijk is voor personen of zaken, elektronisch rechtsverkeer, misleidende en vergelijkende reclame of voor producten. Dit wordt ook wel risico-aansprakelijkheid genoemd. Naast deze vorm van aansprakelijkheid kan iemand ook aanprakelijk zijn voor schade als gevolg van zijn eigen handelen. Ook een minderjarige jonger dan 14 jaar kan risico-aansprakelijk zijn, met uitzondering van aansprakelijkheid voor dieren en gebrekkige roerende zaken."^^xsd:string ;
       skos:prefLabel "kwalitatieve aansprakelijkheid"@nl .
@@ -14582,7 +14576,7 @@
                 to:weight 23
               ] ;
       skos:altLabel "persoonlijke aansprakelijkheid"@nl , "persoonlijk aansprakelijk"@nl , "onrechtmatige daad"@nl , "persoonlijke_aansprakelijkheid"@nl ;
-      skos:broader :aansprakeljkheid ;
+      skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:note "Een persoon kan aansprakelijk zijn voor schade ontstaan als gevolg van zijn eigen handelen. Dit wil zeggen dat een persoon aansprakelijk kan zijn voor zijn eigen onrechtmatige handelen. Er is sprake van onrechtmatig handelen indien voldaan is aan de voorwaarden van onrechtmatigheid, relativiteit, toerekening, causaliteit en schade."^^xsd:string ;
       skos:prefLabel "persoonlijke aansprakelijkheid"@nl .
@@ -19213,7 +19207,7 @@
                 to:weight 37
               ] ;
       skos:altLabel "tekortkoming in de nakoming van een contractuele verplichting"@nl , "wanprestatie"@nl , "tekortkoming in de nakoming van een contract"@nl , "tekortkoming in de nakoming van een overeenkomst"@nl , "tekortkoming in de nakoming van een verbintenis"@nl ;
-      skos:broader :zuivere_vermogensschade , :aansprakeljkheid ;
+      skos:broader :zuivere_vermogensschade , :aansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:note "Een partij kan profiteren van wanprestatie van een ander, dat wil zeggen van een tekortkoming in de nakoming van een verbintenis. Als de van deze tekortkoming profiterende partij zich bewust is van het nadeel dat de andere partij daardoor lijdt en daarmee bijvoorbeeld oneerlijke concurrentie mogelijk maakt kan hij aansprakelijk zijn."^^xsd:string ;
       skos:prefLabel "wanprestatie"@nl .

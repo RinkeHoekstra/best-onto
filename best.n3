@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Nov 12 15:23:05 CET 2009
+# Saved by TopBraid on Fri Dec 04 15:55:36 CET 2009
 # baseURI: http://www.best-project.nl/owl/best.owl
 # imports: http://www.best-project.nl/owl/bestmap.owl
 
@@ -25,5 +25,52 @@
       rdf:type owl:Class ;
       rdfs:subClassOf owl:Thing .
 
+:action
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:actor
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:location
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:object
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:recipient
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:result
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:schulduitsluiting
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:situation
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:time
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:veroorzaker
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:zorgvuldigheidsnorm
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
 bestmap:Mapping
       rdfs:subClassOf :Case .
+
+bestmap:describes
+      owl:inverseOf bestmap:about .
