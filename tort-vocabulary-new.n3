@@ -1,7 +1,7 @@
-# Saved by TopBraid on Thu Nov 26 09:43:09 CET 2009
+# Saved by TopBraid on Tue Dec 08 10:44:32 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
-# imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
+# imports: http://www.w3.org/2004/02/skos/core
 
 @prefix :        <http://www.best-project.nl/owl/tort-vocabulary-new.owl#> .
 @prefix best:    <http://www.best-project.nl/owl/best.owl#> .
@@ -21,6 +21,14 @@
       rdf:type best:Concept , skos:Concept ;
       skos:topConceptOf :tort-scheme .
 
+:aansprakelijkheid_buiten_schuld
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:aansprakelijkheid_voor_eigen_gedrag
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
 :bevoegd_gegeven_ambtelijk_bevel
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
@@ -35,11 +43,21 @@
 
 :grond_voor_onrechtmatigheid
       rdf:type best:Concept ;
+      skos:altLabel "criterium"@nl ;
+      skos:prefLabel "grond voor onrechtmatigheid"@nl ;
       skos:topConceptOf :tort-scheme .
 
 :inbreuk_op_een_recht
       rdf:type best:Concept ;
       skos:broader :grond_voor_onrechtmatigheid .
+
+:medische_aansprakelijkheid
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:milieu_aansprakelijkheid
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
 
 :noodweer
       rdf:type best:Concept ;
@@ -48,6 +66,11 @@
 :ongeschreven_rechtvaardigingsgrond
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
+
+:onrechtmatige_daad
+      rdf:type best:Concept ;
+      skos:altLabel "plichtverzakend gedrag"@nl ;
+      skos:prefLabel "onrechtmatige daad"@nl .
 
 :onrechtmatige_gedraging
       rdf:type best:Concept .
@@ -68,11 +91,18 @@
       skos:broader :aansprakelijkheid .
 
 :tort-scheme
-      rdf:type best:Concept , skos:Concept .
+      rdf:type skos:ConceptScheme .
 
 :uitvoering_van_een_wettelijk_voorschrift
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
+
+:verkeersaansprakelijkheid
+      rdf:type best:Concept ;
+      skos:broader :aansprakelijkheid .
+
+:vordering_op_grond_van_onrechtvaardige_verrijking
+      rdf:type best:Concept .
 
 :zaakaansprakelijkheid
       rdf:type best:Concept ;
