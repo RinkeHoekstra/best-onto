@@ -1,22 +1,26 @@
-# Saved by TopBraid on Wed Apr 15 15:41:13 CEST 2009
+# Saved by TopBraid on Fri Dec 11 11:12:14 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.best-project.nl/owl/best.owl
 
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix :        <http://www.best-project.nl/owl/tort-ontology.owl#> .
+@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.best-project.nl/owl/tort-ontology.owl>
-      a       owl:Ontology ;
+      rdf:type owl:Ontology ;
       rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
       owl:imports <http://www.best-project.nl/owl/best.owl> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 :fingerprint
-      a       owl:ObjectProperty .
+      rdf:type owl:ObjectProperty .
 
 :value
-      a       owl:DatatypeProperty .
+      rdf:type owl:DatatypeProperty .
+
+:weight
+      rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:integer .
