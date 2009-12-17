@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Dec 08 10:44:32 CET 2009
+# Saved by TopBraid on Mon Dec 14 15:00:45 CET 2009
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 # imports: http://www.w3.org/2004/02/skos/core
@@ -29,9 +29,21 @@
       rdf:type best:Concept ;
       skos:broader :aansprakelijkheid .
 
+:beperking_kring_personen
+      rdf:type best:Concept ;
+      skos:broader :vermindering_op_basis_relativiteitsbeginsel .
+
+:beperking_soort_schade
+      rdf:type best:Concept ;
+      skos:broader :vermindering_op_basis_relativiteitsbeginsel .
+
 :bevoegd_gegeven_ambtelijk_bevel
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
+
+:directe_inbreuk
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_recht .
 
 :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht
       rdf:type best:Concept ;
@@ -39,17 +51,79 @@
 
 :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt
       rdf:type best:Concept ;
+      skos:altLabel "doen of nalaten in strijd met zorgvuldigheidsnormen"@nl ;
       skos:broader :grond_voor_onrechtmatigheid .
+
+:gevaarzettende_situatie
+      rdf:type best:Concept ;
+      skos:broader :situatie ;
+      skos:related :kelderluik_criterium .
+
+:grond_vermindering_schadevergoedingsplicht
+      rdf:type best:Concept .
 
 :grond_voor_onrechtmatigheid
       rdf:type best:Concept ;
-      skos:altLabel "criterium"@nl ;
+      skos:altLabel "onrechtmatigheidscriterium"@nl ;
       skos:prefLabel "grond voor onrechtmatigheid"@nl ;
       skos:topConceptOf :tort-scheme .
+
+:inbreuk_auteursrecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_absoluut_vermogensrecht .
+
+:inbreuk_eigendomsrecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_absoluut_vermogensrecht .
+
+:inbreuk_huisrecht
+      rdf:type best:Concept ;
+      skos:altLabel "huisvredebreuk"@nl ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:inbreuk_lichamelijke_integriteit
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:inbreuk_merkenrecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_absoluut_vermogensrecht .
+
+:inbreuk_octrooirecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_absoluut_vermogensrecht .
+
+:inbreuk_op_een_absoluut_vermogensrecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_recht .
+
+:inbreuk_op_een_persoonlijkheidsrecht
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_recht .
 
 :inbreuk_op_een_recht
       rdf:type best:Concept ;
       skos:broader :grond_voor_onrechtmatigheid .
+
+:inbreuk_privacy
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:inbreuk_recht_op_bijstand
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:inbreuk_recht_op_leefbaar_milieu
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:inbreuk_recht_op_onderwijs
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_persoonlijkheidsrecht .
+
+:kelderluik_criterium
+      rdf:type best:Concept ;
+      skos:broader :zorgvuldigheidsnorm .
 
 :medische_aansprakelijkheid
       rdf:type best:Concept ;
@@ -63,6 +137,10 @@
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
 
+:omgekeerde_bewijslast_op_grond_van_wetsovertreding
+      rdf:type best:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
 :ongeschreven_rechtvaardigingsgrond
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
@@ -75,12 +153,25 @@
 :onrechtmatige_gedraging
       rdf:type best:Concept .
 
+:opzettelijke_inbreuk
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_recht .
+
 :overmacht_als_noodtoestand
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
 
+:rechtstreekse_inbreuk
+      rdf:type best:Concept ;
+      skos:broader :inbreuk_op_een_recht .
+
 :rechtvaardigingsgrond
-      rdf:type best:Concept .
+      rdf:type best:Concept ;
+      skos:note "Gelaedeerde is de persoon die nadeel heeft ondervonden door een (onrechtmatige) daad"^^xsd:string .
+
+:risico_aanvaarding
+      rdf:type best:Concept ;
+      skos:broader :grond_vermindering_schadevergoedingsplicht .
 
 :risicoaansprakelijkheid
       rdf:type best:Concept ;
@@ -89,6 +180,18 @@
 :schuldaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid .
+
+:situatie
+      rdf:type best:Concept ;
+      skos:topConceptOf :tort-scheme .
+
+:sportsituatie
+      rdf:type best:Concept ;
+      skos:broader :situatie .
+
+:toestemming_van_gelaedeerde
+      rdf:type best:Concept ;
+      skos:broader :rechtvaardigingsgrond .
 
 :tort-scheme
       rdf:type skos:ConceptScheme .
@@ -101,8 +204,26 @@
       rdf:type best:Concept ;
       skos:broader :aansprakelijkheid .
 
+:vermindering_op_basis_relativiteitsbeginsel
+      rdf:type best:Concept ;
+      skos:broader :grond_vermindering_schadevergoedingsplicht ;
+      skos:note "Ondanks de overtreding van aen wettelijke norm, kan in het concrete geval toch geen aansprakelijk worden aangenomen omdat de overtreden norm niet geacht wordt de belangen te beschermen die in het geval geschonden zijn."@nl .
+
+:vervallen_vaststellen_rekenschap_belangen_van_benadeelde
+      rdf:type best:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
+      skos:note "Indien handelen in strijd is met een wettelijke plicht, is er geen noodzaak vast te stellen of de gedaagde op de hoogte was van de belangen van benadeelde"@nl .
+
 :vordering_op_grond_van_onrechtvaardige_verrijking
       rdf:type best:Concept .
+
+:wetsovertreding_als_factor_bij_beoordeling_van_betamelijkheid
+      rdf:type best:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
+:wetsovertreding_door_eiser
+      rdf:type best:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
 
 :zaakaansprakelijkheid
       rdf:type best:Concept ;
@@ -111,3 +232,11 @@
 :zaakwaarneming
       rdf:type best:Concept ;
       skos:broader :rechtvaardigingsgrond .
+
+:zijdelingse_betekenis_wettelijke_voorschriften
+      rdf:type best:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt .
+
+:zorgvuldigheidsnorm
+      rdf:type best:Concept ;
+      skos:topConceptOf :tort-scheme .
