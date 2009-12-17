@@ -1,4 +1,4 @@
-# Saved by TopBraid on Fri Dec 04 15:55:36 CET 2009
+# Saved by TopBraid on Thu Dec 17 15:23:08 CET 2009
 # baseURI: http://www.best-project.nl/owl/best.owl
 # imports: http://www.best-project.nl/owl/bestmap.owl
 
@@ -33,11 +33,27 @@
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
+:criterium
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:dader
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
 :location
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
 :object
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:recht
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:rechtvaardigingsgrond
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
@@ -61,7 +77,23 @@
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
+:toestand
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:uitzondering
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:vereiste
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
 :veroorzaker
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
+
+:wetsbepaling
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
