@@ -1,4 +1,4 @@
-# Saved by TopBraid on Fri Dec 04 14:44:07 CET 2009
+# Saved by TopBraid on Thu Dec 17 09:49:45 CET 2009
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -1337,7 +1337,7 @@
 
 :manege
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :sportfaciliteit ;
+      skos:broader :bedrijf , :sportfaciliteit ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "manege"@nl .
 
