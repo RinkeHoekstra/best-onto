@@ -1,4 +1,4 @@
-# Saved by TopBraid on Fri Jan 08 14:19:49 CET 2010
+# Saved by TopBraid on Thu Jan 14 11:43:07 CET 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -9,6 +9,7 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.best-project.nl/owl/tort-vocabulary-new.owl>
@@ -17,12 +18,12 @@
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
 :aansprakelijke_persoon
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme ;
       skos:topConceptOf :tort-scheme .
 
 :aansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme ;
       skos:topConceptOf :tort-scheme .
 
@@ -31,7 +32,7 @@
       skos:broader :aansprakelijkheid_in_bedrijfsverband .
 
 :aansprakelijkheid_buiten_schuld
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
@@ -41,10 +42,10 @@
       skos:related :gebruik_bij_uitoefening_in_bedrijfsverband .
 
 :aansprakelijkheid_van_werkgever
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
-      skos:related :ontbreken_functioneel_verband , :ontbreken_zeggenschap_gedraging_werknemer , :milder_regime_natuurlijk_persoon_als_werkgever , :uitsluiting_bij_opzet_of_roekeloosheid .
+      skos:related :ontbreken_functioneel_verband , :ontbreken_zeggenschap_gedraging_werknemer , :uitsluiting_bij_opzet_of_roekeloosheid , :milder_regime_natuurlijk_persoon_als_werkgever .
 
 :aansprakelijkheid_voor_boorgaten
       rdf:type best:Concept , skos:Concept ;
@@ -58,50 +59,50 @@
       skos:related :criteria_aansprakelijkheid_voor_dieren , :tenzij_formule .
 
 :aansprakelijkheid_voor_eigen_gedrag
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :aansprakelijkheid_voor_kinderen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
       skos:note "een al een 'doen' te beschouwen gedraging, welke an het kind zou kunnen worden toegerekend, als zijn leeftijd daaraan niet in de weg zou staan"^^xsd:string .
 
 :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schuldaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :ontbreken_mogelijkheid_beletten_gedraging_kind .
 
 :aansprakelijkheid_voor_niet_ondergeschikten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
       skos:related :onderlinge_draagplicht .
 
 :aansprakelijkheid_voor_opstallen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :criteria_aansprakelijkheid_voor_opstallen , :tenzij_formule .
 
 :aansprakelijkheid_voor_personen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :cumulatieve_aansprakelijkheid .
 
 :aansprakelijkheid_voor_producten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_zaken ;
       skos:inScheme :tort-scheme .
 
 :aansprakelijkheid_voor_stoffen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
-      skos:related :criteria_aansprakelijkheid_voor_stoffen , :bevrijdende_omstandigheden_risicoaansprakelijkheid , :tenzij_formule .
+      skos:related :tenzij_formule , :criteria_aansprakelijkheid_voor_stoffen , :bevrijdende_omstandigheden_risicoaansprakelijkheid .
 
 :aansprakelijkheid_voor_stortplaatsen
       rdf:type best:Concept , skos:Concept ;
@@ -110,88 +111,88 @@
       skos:related :criteria_aansprakelijkheid_voor_stortplaatsen , :bevrijdende_omstandigheden_risicoaansprakelijkheid .
 
 :aansprakelijkheid_voor_vertegenwoordigers
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_personen ;
       skos:inScheme :tort-scheme ;
       skos:related :onderlinge_draagplicht .
 
 :aansprakelijkheid_voor_zaken
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :criteria_aansprakelijkheid_voor_zaken , :tenzij_formule .
 
 :aantasting_eer_en_goede_naam
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme .
 
 :aantrekken_belangen_van_schadelijder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :factoren_onrechtmatigheid_hinder ;
       skos:inScheme :tort-scheme .
 
 :aanwezigheid_vergunning
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :factoren_onrechtmatigheid_hinder ;
       skos:inScheme :tort-scheme .
 
 :aard_en_omvang_gevreesde_schade
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :kelderluik_criterium ;
       skos:inScheme :tort-scheme .
 
 :aard_van_de_gedraging
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :kelderluik_criterium ;
       skos:inScheme :tort-scheme .
 
 :algemeen_belang
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :factoren_onrechtmatigheid_hinder ;
       skos:inScheme :tort-scheme .
 
 :bekendheid_gevaar_stof
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stoffen ;
       skos:inScheme :tort-scheme ;
       skos:note "Zie bijv. de criteria van art. 34 lid 3 Wet milieugevaarlijke stoffen, of een lijst van gevaarlijke stoffen opgesteld bij algemene maatregel van bestuur."^^xsd:string .
 
 :bekendheid_gevaren_in_geval_gebrekkigheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_zaken ;
       skos:inScheme :tort-scheme .
 
 :beperking_kring_personen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_op_basis_relativiteitsbeginsel ;
       skos:inScheme :tort-scheme ;
       skos:note "Het gedrag moet jegens een ander onrechtmatig zijn. "^^xsd:string .
 
 :beperking_soort_schade
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_op_basis_relativiteitsbeginsel ;
       skos:inScheme :tort-scheme ;
       skos:note "De schade zoals benadeelde die heeft geleden moet ook onder het beschermingsbereik van de norm vallen."^^xsd:string .
 
 :beroepsaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid , :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme ;
       skos:related :zorgplicht_beroepsbeoefenaar .
 
 :bevoegd_gegeven_ambtelijk_bevel
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
 :bevrijdende_omstandigheden_risicoaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :bewaarder_gevaarlijke_stof
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon_aansprakelijk_voor_stof ;
       skos:inScheme :tort-scheme .
 
@@ -206,7 +207,7 @@
       skos:inScheme :tort-scheme .
 
 :bezitter_roerende_zaak
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_producten , :aansprakelijkheid_voor_zaken .
@@ -217,37 +218,37 @@
       skos:related :aansprakelijkheid_voor_dieren .
 
 :bezwaarlijkheid_voorzorgmaatregelen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :kelderluik_criterium ;
       skos:inScheme :tort-scheme .
 
 :bijzonder_gevaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_zaken ;
       skos:inScheme :tort-scheme .
 
 :bijzonder_gevaar_van_ernstige_aard
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stoffen ;
       skos:inScheme :tort-scheme .
 
 :bijzondere_samenloop_van_omstandigheden
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarzetting ;
       skos:inScheme :tort-scheme .
 
 :bijzondere_zorgplicht_terreinbeheerders
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
 :concrete_kennis_van_gevaarlijke_situatie
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :voorwaarden_aansprakelijkheid_zuiver_nalaten ;
       skos:inScheme :tort-scheme .
 
 :criteria_aansprakelijkheid_voor_boorgaten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
@@ -261,50 +262,50 @@
       skos:inScheme :tort-scheme .
 
 :criteria_aansprakelijkheid_voor_stoffen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :criteria_aansprakelijkheid_voor_stortplaatsen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :criteria_aansprakelijkheid_voor_zaken
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :cumulatieve_aansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :directe_inbreuk
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "rechtstreekse inbreuk"^^xsd:string ;
       skos:broader :inbreuk_op_een_recht ;
       skos:inScheme :tort-scheme .
 
 :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_voor_onrechtmatigheid ;
       skos:inScheme :tort-scheme .
 
 :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "doen of nalaten in strijd met zorgvuldigheidsnormen"@nl ;
       skos:broader :grond_voor_onrechtmatigheid ;
       skos:inScheme :tort-scheme .
 
 :dreiging_ernstig_geestelijk_of_lichamelijk_letsel
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :voorwaarden_aansprakelijkheid_zuiver_nalaten ;
       skos:inScheme :tort-scheme ;
       skos:related :waarschijnlijkheid_dat_schade_zich_zal_voordoen .
 
 :enkel_overtreden_spelregels_niet_onrechtmatig
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vuistregel_letseltoebrengend_gedrag_sportsituatie ;
       skos:inScheme :tort-scheme .
 
@@ -321,7 +322,7 @@
       skos:related :aansprakelijkheid_voor_stortplaatsen .
 
 :factoren_onrechtmatigheid_hinder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
@@ -331,7 +332,7 @@
       skos:inScheme :tort-scheme .
 
 :gebrekkige_zaak
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_zaken ;
       skos:inScheme :tort-scheme .
 
@@ -340,27 +341,27 @@
       skos:broader :criteria_aansprakelijkheid_voor_zaken , :criteria_aansprakelijkheid_voor_opstallen , :criteria_aansprakelijkheid_voor_dieren .
 
 :gebruiker_gevaarlijke_stof
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon_aansprakelijk_voor_stof ;
       skos:inScheme :tort-scheme .
 
 :gedraging_minder_snel_onrechtmatig_in_sportsituatie
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vuistregel_letseltoebrengend_gedrag_sportsituatie ;
       skos:inScheme :tort-scheme .
 
 :geestelijke_tekortkoming
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
 :gevaarlijke_stof
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stoffen ;
       skos:inScheme :tort-scheme .
 
 :gevaarzetting
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme ;
       skos:related :kelderluik_criterium .
@@ -374,29 +375,29 @@
       skos:broader :exploitant_stortplaats .
 
 :groepsaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schuldaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :grond_toerekening_aan_dader
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :grond_vermindering_schadevergoedingsplicht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :onrechtmatigheid_daad ;
       skos:inScheme :tort-scheme .
 
 :grond_voor_onrechtmatigheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "onrechtmatigheidscriterium"@nl ;
       skos:broader :onrechtmatigheid_daad ;
       skos:inScheme :tort-scheme ;
       skos:prefLabel "grond voor onrechtmatigheid"@nl .
 
 :hinder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme ;
       skos:note "Of hinder onrechtmatig is hangt af van de aard, enrst en duur van de hinder, en de daardoor toegebrachte schade in verband met de verdere omstandigheden van het geval, waarbij onder meer moet worden rekening gehouden met het gewicht van de belangen die door de hinder toebrengende activiteit worden gediend, en de mogelijkheid, mede gelet op de daaraan verbonden kosten en de bereidheid om maatregelen ter voorkoming van schade te nemen."^^xsd:string ;
@@ -407,89 +408,89 @@
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid .
 
 :inbreuk_auteursrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_absoluut_vermogensrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_eigendomsrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_absoluut_vermogensrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_huisrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "huisvredebreuk"@nl ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_lichamelijke_integriteit
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_merkenrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_absoluut_vermogensrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_octrooirecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_absoluut_vermogensrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_op_een_absoluut_vermogensrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_recht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_op_een_persoonlijkheidsrecht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_recht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_op_een_recht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_voor_onrechtmatigheid ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_privacy
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_recht_op_bijstand
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_recht_op_leefbaar_milieu
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :inbreuk_recht_op_onderwijs
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
       skos:inScheme :tort-scheme .
 
 :kelderluik_criterium
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
 :kind_jonger_dan_14_jaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
 :kind_van_veertien_of_vijftien_jaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar .
 
 :leidingbeheerder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon_aansprakelijk_voor_opstal , :persoon_aansprakelijk_voor_stof ;
       skos:inScheme :tort-scheme .
 
@@ -502,42 +503,42 @@
       skos:broader :bezitter_van_een_dier .
 
 :medische_aansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :milder_regime_natuurlijk_persoon_als_werkgever
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :milieu_aansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :mogelijkheid_en_noodzaak_iets_te_doen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :voorwaarden_aansprakelijkheid_zuiver_nalaten ;
       skos:inScheme :tort-scheme .
 
 :nadere_eisen_risicoaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :noodweer
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
 :noodweerexces
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
 :omgekeerde_bewijslast_op_grond_van_wetsovertreding
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
       skos:inScheme :tort-scheme .
 
@@ -547,75 +548,75 @@
       skos:note "De schade veroorzakende gedraging komt voort uit eigen engergie van het dier"@nl .
 
 :onbevoegd_gegeven_ambtelijk_bevel
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
 :onderlinge_draagplicht
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :oneerlijke_concurrentie
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme .
 
 :ongeschreven_rechtvaardigingsgrond
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
 :onrechtmatigheid_daad
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme ;
       skos:topConceptOf :tort-scheme .
 
 :ontbreken_functioneel_verband
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :ontbreken_mogelijkheid_beletten_gedraging_kind
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :ontbreken_van_de_vertegenwoordiger_toekomende_bevoegdheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :ontbreken_zeggenschap_gedraging_werknemer
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :opdrachtgever
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_niet_ondergeschikten .
 
 :openbare_weg
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :terrein ;
       skos:inScheme :tort-scheme ;
       skos:related :verantwoordelijkheid_overheid_als_wegbeheerder .
 
 :opzettelijke_inbreuk
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :inbreuk_op_een_recht ;
       skos:inScheme :tort-scheme .
 
 :ouder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar , :aansprakelijkheid_voor_kinderen .
 
 :overmacht_als_noodtoestand
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
@@ -632,51 +633,51 @@
       skos:related :criteria_aansprakelijkheid_voor_stoffen .
 
 :persoonlijke_verwijtbaarheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:altLabel "schuld in subjectieve zin"@nl ;
       skos:broader :schuldaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :plaatselijke_omstandigheden
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :factoren_onrechtmatigheid_hinder ;
       skos:inScheme :tort-scheme .
 
 :producent_roerende_zaak
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_producten .
 
 :rechtspersoon_die_de_stof_in_uitoefening_van_zijn_taak_gebruikt
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :gebruiker_gevaarlijke_stof ;
       skos:inScheme :tort-scheme .
 
 :rechtvaardigingsgrond
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :onrechtmatigheid_daad ;
       skos:inScheme :tort-scheme ;
       skos:note "Gelaedeerde is de persoon die nadeel heeft ondervonden door een (onrechtmatige) daad"^^xsd:string .
 
 :reele_verhouding_moeite_kosten_en_gevaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :voorwaarden_aansprakelijkheid_zuiver_nalaten ;
       skos:inScheme :tort-scheme .
 
 :risico_aanvaarding
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_vermindering_schadevergoedingsplicht ;
       skos:inScheme :tort-scheme .
 
 :risicoaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_op_basis_van_specifieke_wettelijke_bepaling , :aansprakelijkheid_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :nadere_eisen_risicoaansprakelijkheid .
 
 :schade_aan_zaken_of_personen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_zaken , :criteria_aansprakelijkheid_voor_opstallen , :criteria_aansprakelijkheid_voor_stoffen ;
       skos:inScheme :tort-scheme .
 
@@ -685,18 +686,18 @@
       skos:broader :criteria_aansprakelijkheid_voor_dieren .
 
 :schade_gevolg_handeling_met_gevaarlijke_stof_in_het_belang_van_benadeelde
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_stoffen .
 
 :schade_gevolg_natuurgebeuren_van_uitzonderlijke_onvermijdelijke_en_onweerstaanbare_aard
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :schade_uitsluitend_gevolg_voldoening_bevel_of_dwingend_overheidsvoorschrift
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
@@ -705,72 +706,72 @@
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid .
 
 :schade_veroorzaakt_door_gewapend_conflict_of_burgeroorlog
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :schuldaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_op_basis_van_schuld , :aansprakelijkheid_voor_eigen_gedrag ;
       skos:inScheme :tort-scheme ;
       skos:related :schulduitsluitingsgrond .
 
 :schulduitsluitingsgrond
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :sportsituatie
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarzetting ;
       skos:inScheme :tort-scheme ;
       skos:related :vuistregel_letseltoebrengend_gedrag_sportsituatie .
 
 :staking
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme .
 
 :strengere_eisen_verantwoordelijkheid_sportvereniging
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vuistregel_letseltoebrengend_gedrag_sportsituatie ;
       skos:inScheme :tort-scheme .
 
 :tenzij_formule
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :verweermiddel_aansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:note "Geldt alleen voor dieren, opstallen, stoffen of zaken"^^xsd:string ;
       skos:related :rechtvaardigingsgrond .
 
 :terrein
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarzetting ;
       skos:inScheme :tort-scheme ;
       skos:related :bijzondere_zorgplicht_terreinbeheerders .
 
 :toerekening_aan_dader
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme ;
       skos:topConceptOf :tort-scheme .
 
 :toerekening_op_basis_van_in_het_verkeer_geldende_opvattingen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :toerekening_op_basis_van_schuld
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :toerekening_op_basis_van_specifieke_wettelijke_bepaling
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_toerekening_aan_dader ;
       skos:inScheme :tort-scheme .
 
 :toestemming_van_gelaedeerde
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
@@ -778,17 +779,17 @@
       rdf:type owl:Thing , skos:ConceptScheme .
 
 :tot_onderhoud_verplicht_overheidslichaam
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :persoon_aansprakelijk_voor_opstal ;
       skos:inScheme :tort-scheme .
 
 :uitsluiting_bij_opzet_of_roekeloosheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :vermindering_risicoaansprakelijkheid_personen ;
       skos:inScheme :tort-scheme .
 
 :uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_boorgaten ;
       skos:inScheme :tort-scheme .
 
@@ -798,147 +799,147 @@
       skos:related :gebruik_bij_uitoefening_in_bedrijfsverband , :aansprakelijkheid_in_bedrijfsverband .
 
 :uitvoering_van_een_wettelijk_voorschrift
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
 :verantwoordelijkheid_overheid_als_waterwegbeheerder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bijzondere_zorgplicht_terreinbeheerders ;
       skos:inScheme :tort-scheme .
 
 :verantwoordelijkheid_overheid_als_wegbeheerder
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :bijzondere_zorgplicht_terreinbeheerders ;
       skos:inScheme :tort-scheme .
 
 :verjaringstermijn_twintig_jaar_na_sluiting
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stortplaatsen ;
       skos:inScheme :tort-scheme .
 
 :verjaringstermijn_vijf_jaar_na_sluiting
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_boorgaten ;
       skos:inScheme :tort-scheme .
 
 :verkeersaansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :toerekening_op_basis_van_in_het_verkeer_geldende_opvattingen , :aansprakelijkheid , :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme .
 
 :vermindering_op_basis_relativiteitsbeginsel
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_vermindering_schadevergoedingsplicht ;
       skos:inScheme :tort-scheme ;
       skos:note "Ondanks de overtreding van aen wettelijke norm, kan in het concrete geval toch geen aansprakelijk worden aangenomen omdat de overtreden norm niet geacht wordt de belangen te beschermen die in het geval geschonden zijn."@nl .
 
 :vermindering_risicoaansprakelijkheid_personen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :verontreiniging_lucht_water_of_bodem_door_gestortte_stoffen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stortplaatsen ;
       skos:inScheme :tort-scheme .
 
 :verontschuldigbare_dwaling
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
 :vertegenwoordigde
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_vertegenwoordigers .
 
 :vervallen_vaststellen_rekenschap_belangen_van_benadeelde
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
       skos:inScheme :tort-scheme ;
       skos:note "Indien handelen in strijd is met een wettelijke plicht, is er geen noodzaak vast te stellen of de gedaagde op de hoogte was van de belangen van benadeelde"@nl .
 
 :verweermiddel_aansprakelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
 
 :voorwaarden_aansprakelijkheid_zuiver_nalaten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
 :vordering_op_grond_van_onrechtvaardige_verrijking
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme .
 
 :vuistregel_letseltoebrengend_gedrag_sportsituatie
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
 :waarschijnlijkheid_dat_schade_zich_zal_voordoen
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :kelderluik_criterium ;
       skos:inScheme :tort-scheme .
 
 :waterweg
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :terrein ;
       skos:inScheme :tort-scheme ;
       skos:related :verantwoordelijkheid_overheid_als_waterwegbeheerder .
 
 :werkgever
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_van_werkgever .
 
 :werknemer
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_van_werkgever .
 
 :wetsovertreding_als_factor_bij_beoordeling_van_betamelijkheid
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
       skos:inScheme :tort-scheme .
 
 :wetsovertreding_door_eiser
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
       skos:inScheme :tort-scheme .
 
 :wie_zat_er_het_eerst
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :factoren_onrechtmatigheid_hinder ;
       skos:inScheme :tort-scheme .
 
 :zaakwaarneming
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
 :zijdelingse_betekenis_wettelijke_voorschriften
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
       skos:inScheme :tort-scheme .
 
 :zorgplicht_beroepsbeoefenaar
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
 
 :zorgvuldigheidsnorm
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :onrechtmatigheid_daad ;
       skos:inScheme :tort-scheme .
 
 :zuiver_nalaten
-      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarzetting ;
       skos:inScheme :tort-scheme ;
       skos:related :voorwaarden_aansprakelijkheid_zuiver_nalaten .
