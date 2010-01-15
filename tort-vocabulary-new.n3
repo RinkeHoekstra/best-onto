@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jan 14 11:43:07 CET 2010
+# Saved by TopBraid on Fri Jan 15 14:04:15 CET 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -39,6 +39,7 @@
 :aansprakelijkheid_in_bedrijfsverband
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid_voor_opstallen , :aansprakelijkheid_voor_zaken , :aansprakelijkheid_voor_dieren ;
+      skos:inScheme :tort-scheme ;
       skos:related :gebruik_bij_uitoefening_in_bedrijfsverband .
 
 :aansprakelijkheid_van_werkgever
@@ -55,7 +56,9 @@
 
 :aansprakelijkheid_voor_dieren
       rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "dieraansprakelijkheid"^^xsd:string ;
       skos:broader :risicoaansprakelijkheid ;
+      skos:inScheme :tort-scheme ;
       skos:related :criteria_aansprakelijkheid_voor_dieren , :tenzij_formule .
 
 :aansprakelijkheid_voor_eigen_gedrag
@@ -215,6 +218,7 @@
 :bezitter_van_een_dier
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
+      skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_dieren .
 
 :bezwaarlijkheid_voorzorgmaatregelen
@@ -569,7 +573,9 @@
 
 :onrechtmatigheid_daad
       rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "toerekening aan daad"@nl ;
       skos:inScheme :tort-scheme ;
+      skos:prefLabel "onrechtmatigheid daad"@nl ;
       skos:topConceptOf :tort-scheme .
 
 :ontbreken_functioneel_verband
@@ -796,6 +802,7 @@
 :uitvoerder_bedrijf
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
+      skos:inScheme :tort-scheme ;
       skos:related :gebruik_bij_uitoefening_in_bedrijfsverband , :aansprakelijkheid_in_bedrijfsverband .
 
 :uitvoering_van_een_wettelijk_voorschrift
