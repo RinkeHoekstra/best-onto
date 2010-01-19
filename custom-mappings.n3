@@ -1,0 +1,198 @@
+# Saved by TopBraid on Tue Dec 01 11:33:38 CET 2009
+# baseURI: http://www.best-project.nl/owl/custom-mappings.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
+# imports: http://www.best-project.nl/owl/best.owl
+
+@prefix :        <http://www.best-project.nl/owl/custom-mappings.owl#> .
+@prefix best:    <http://www.best-project.nl/owl/best.owl#> .
+@prefix laymen-vocabulary:  <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
+@prefix mapping:  <http://www.best-project.org/owl/mapping.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tort-vocabulary:  <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.best-project.nl/owl/custom-mappings.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/best.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:test
+      rdf:type best:Mapping ;
+      best:described_by laymen-vocabulary:val , laymen-vocabulary:manege , laymen-vocabulary:op_hol_geslagen , laymen-vocabulary:paard .
+
+<http://www.best-project.nl/owl/mapping.owl#Map-20090622-190027>
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.best-project.nl/owl/bestmap.owl#Mapping> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:dier ;
+                            owl:onProperty best:described_by
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:dierobject ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:dierobject ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:diersituatie ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:diersituatie ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ])
+              ] .
+
+<http://www.best-project.nl/owl/mapping.owl#Map-20090622-190157>
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.best-project.nl/owl/bestmap.owl#Mapping> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:eigenaar_van_een_dier ;
+                            owl:onProperty best:described_by
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:manege ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:manege ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ])
+              ] .
+
+<http://www.best-project.nl/owl/mapping.owl#Map-20090622-190217>
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.best-project.nl/owl/bestmap.owl#Mapping> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:bezitter_van_een_diercriterium ;
+                            owl:onProperty best:described_by
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:manege ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:manege ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ])
+              ] .
+
+<http://www.best-project.nl/owl/mapping.owl#Map-20090622-190637>
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.best-project.nl/owl/bestmap.owl#Mapping> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:gedraging_van_een_dier ;
+                            owl:onProperty best:described_by
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:diersituatie ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:diersituatie ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue laymen-vocabulary:gevaarshandeling ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:onProperty best:described_by ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue laymen-vocabulary:gevaarshandeling ;
+                                      owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                    ]
+                          ])
+              ] .
+
+<http://www.best-project.nl/owl/mapping.owl#Map-20090623-100943>
+      rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.best-project.nl/owl/bestmap.owl#Mapping> ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:fout ;
+                            owl:onProperty best:described_by
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tort-vocabulary:ieder_die_zich_als_producent_presenteert ;
+                            owl:onProperty best:described_by
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue laymen-vocabulary:golf ;
+                                        owl:onProperty best:described_by
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty best:described_by ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue laymen-vocabulary:golf ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue laymen-vocabulary:gooi ;
+                                        owl:onProperty best:described_by
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty best:described_by ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue laymen-vocabulary:gooi ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue laymen-vocabulary:gras ;
+                                        owl:onProperty best:described_by
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty best:described_by ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue laymen-vocabulary:gras ;
+                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#broader>
+                                                ]
+                                      ])
+                          ])
+              ] .

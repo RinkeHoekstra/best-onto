@@ -1,4 +1,4 @@
-# Saved by TopBraid on Fri Jan 15 14:04:15 CET 2010
+# Saved by TopBraid on Mon Jan 18 16:03:26 CET 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -29,7 +29,8 @@
 
 :aansprakelijkheid_bij_ter_beschikkingstelling_aan_ander_bedrijf
       rdf:type best:Concept ;
-      skos:broader :aansprakelijkheid_in_bedrijfsverband .
+      skos:broader :aansprakelijkheid_in_bedrijfsverband ;
+      skos:inScheme :tort-scheme .
 
 :aansprakelijkheid_buiten_schuld
       rdf:type best:Concept , skos:Concept ;
@@ -56,7 +57,7 @@
 
 :aansprakelijkheid_voor_dieren
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "dieraansprakelijkheid"^^xsd:string ;
+      skos:altLabel "dieraansprakelijkheid"@nl ;
       skos:broader :risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme ;
       skos:related :criteria_aansprakelijkheid_voor_dieren , :tenzij_formule .
@@ -258,7 +259,8 @@
 
 :criteria_aansprakelijkheid_voor_dieren
       rdf:type owl:Thing ;
-      skos:broader :nadere_eisen_risicoaansprakelijkheid .
+      skos:broader :nadere_eisen_risicoaansprakelijkheid ;
+      skos:inScheme :tort-scheme .
 
 :criteria_aansprakelijkheid_voor_opstallen
       rdf:type best:Concept , skos:Concept ;
@@ -287,7 +289,7 @@
 
 :directe_inbreuk
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "rechtstreekse inbreuk"^^xsd:string ;
+      skos:altLabel "rechtstreekse inbreuk"@nl ;
       skos:broader :inbreuk_op_een_recht ;
       skos:inScheme :tort-scheme .
 
@@ -342,7 +344,8 @@
 
 :gebruik_bij_uitoefening_in_bedrijfsverband
       rdf:type owl:Thing ;
-      skos:broader :criteria_aansprakelijkheid_voor_zaken , :criteria_aansprakelijkheid_voor_opstallen , :criteria_aansprakelijkheid_voor_dieren .
+      skos:broader :criteria_aansprakelijkheid_voor_zaken , :criteria_aansprakelijkheid_voor_opstallen , :criteria_aansprakelijkheid_voor_dieren ;
+      skos:inScheme :tort-scheme .
 
 :gebruiker_gevaarlijke_stof
       rdf:type best:Concept , skos:Concept ;
@@ -372,11 +375,13 @@
 
 :gezamenlijke_exploitanten_boorgat
       rdf:type best:Concept ;
-      skos:broader :exploitant_boorgat .
+      skos:broader :exploitant_boorgat ;
+      skos:inScheme :tort-scheme .
 
 :gezamenlijke_exploitanten_stortplaats
       rdf:type best:Concept ;
-      skos:broader :exploitant_stortplaats .
+      skos:broader :exploitant_stortplaats ;
+      skos:inScheme :tort-scheme .
 
 :groepsaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
@@ -408,8 +413,9 @@
       skos:related :factoren_onrechtmatigheid_hinder .
 
 :hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansprakelijkheid_zou_ontbreken
-      rdf:type owl:Thing ;
-      skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid .
+      rdf:type owl:Thing , best:Concept , skos:Concept ;
+      skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
+      skos:inScheme :tort-scheme .
 
 :inbreuk_auteursrecht
       rdf:type best:Concept , skos:Concept ;
@@ -500,11 +506,13 @@
 
 :medebezitter_roerende_zaak
       rdf:type owl:Thing ;
-      skos:broader :bezitter_roerende_zaak .
+      skos:broader :bezitter_roerende_zaak ;
+      skos:inScheme :tort-scheme .
 
 :medebezitter_van_een_dier
       rdf:type owl:Thing ;
-      skos:broader :bezitter_van_een_dier .
+      skos:broader :bezitter_van_een_dier ;
+      skos:inScheme :tort-scheme .
 
 :medische_aansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
@@ -549,6 +557,7 @@
 :onberekenbaarheid_gedraging_van_het_dier
       rdf:type owl:Thing ;
       skos:broader :criteria_aansprakelijkheid_voor_dieren ;
+      skos:inScheme :tort-scheme ;
       skos:note "De schade veroorzakende gedraging komt voort uit eigen engergie van het dier"@nl .
 
 :onbevoegd_gegeven_ambtelijk_bevel
@@ -689,7 +698,8 @@
 
 :schade_aangericht_door_door_mens_gehouden_dier
       rdf:type owl:Thing ;
-      skos:broader :criteria_aansprakelijkheid_voor_dieren .
+      skos:broader :criteria_aansprakelijkheid_voor_dieren ;
+      skos:inScheme :tort-scheme .
 
 :schade_gevolg_handeling_met_gevaarlijke_stof_in_het_belang_van_benadeelde
       rdf:type best:Concept , skos:Concept ;
@@ -709,7 +719,8 @@
 
 :schade_uitsluitend_veroorzaakt_door_handelen_of_nalaten_van_derde_met_opzet_tot_schade
       rdf:type owl:Thing ;
-      skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid .
+      skos:broader :bevrijdende_omstandigheden_risicoaansprakelijkheid ;
+      skos:inScheme :tort-scheme .
 
 :schade_veroorzaakt_door_gewapend_conflict_of_burgeroorlog
       rdf:type best:Concept , skos:Concept ;
