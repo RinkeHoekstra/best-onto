@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jan 18 16:03:26 CET 2010
+# Saved by TopBraid on Thu Jan 21 15:28:31 CET 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -20,6 +20,7 @@
 :aansprakelijke_persoon
       rdf:type best:Concept , skos:Concept ;
       skos:inScheme :tort-scheme ;
+      skos:note "Gelaedeerde is de persoon die nadeel heeft ondervonden door een (onrechtmatige) daad"^^xsd:string ;
       skos:topConceptOf :tort-scheme .
 
 :aansprakelijkheid
@@ -672,8 +673,7 @@
 :rechtvaardigingsgrond
       rdf:type best:Concept , skos:Concept ;
       skos:broader :onrechtmatigheid_daad ;
-      skos:inScheme :tort-scheme ;
-      skos:note "Gelaedeerde is de persoon die nadeel heeft ondervonden door een (onrechtmatige) daad"^^xsd:string .
+      skos:inScheme :tort-scheme .
 
 :reele_verhouding_moeite_kosten_en_gevaar
       rdf:type best:Concept , skos:Concept ;
