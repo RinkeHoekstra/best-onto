@@ -1,0 +1,3247 @@
+# Saved by TopBraid on Fri Jan 15 15:12:19 CET 2010
+# baseURI: http://www.best-project.nl/owl/merged-tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary-new.owl
+
+@prefix :        <http://www.best-project.nl/owl/merged-tort-vocabulary.owl#> .
+@prefix mtv:     <http://www.best-project.nl/owl/merged-tort-vocabulary.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix to:      <http://www.best-project.nl/owl/tort-ontology.owl#> .
+@prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
+@prefix tvn:     <http://www.best-project.nl/owl/tort-vocabulary-new.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.best-project.nl/owl/merged-tort-vocabulary.owl>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/tort-vocabulary-new.owl> , <http://www.best-project.nl/owl/tort-vocabulary.owl> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+mtv:same
+      rdf:type owl:SymmetricProperty .
+
+tvn:aansprakelijke_persoon
+      mtv:same tv:persoon , tv:pleger_onrechtmatige_daad ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "meerderjarige"@nl , "bezitter van een opstal"@nl , "pleger van een onrechtmatige gedraging"@nl , "ondergeschikte in dienst van een natuurlijk persoon"@nl , "producent van een grondstof"@nl , "kind"@nl , "groepsdeelnemer"@nl , "zelfstandig hulppersoon"@nl , "vertegenwoordiging"@nl , "pleger van een onrechtmatige daad"@nl , "zelfstandige"@nl , "persoon van de gelaedeerde"@nl , "aanbieder"@nl , "niet-ondergeschikte"@nl , "vervoerder van een gevaarlijke stof"@nl , "opdrachtnemer"@nl , "ondergeschiktheid"@nl , "fabrikant van een product"@nl , "ouder"@nl , "producent"@nl , "exploitant van een mijnbouwwerk"@nl , "volwassene"@nl , "gelaedeerde"@nl , "bezitter van een gebrekkige zaak"@nl , "pleger_onrechtmatige_daad"@nl , "exploitant van een stortplaats"@nl , "bewaarder van een gevaarlijke stof"@nl , "laedens"@nl , "die een misleidende mededeling publiceert"@nl , "slachtoffer"@nl , "groepslid"@nl , "persoon_van_de_laedens"@nl , "bezitter van een dier"@nl , "degene die gevaarlijke stoffen onder zich houdt"@nl , "handelt in de uitoefening van beroep of bedrijf"@nl , "benadeelde"@nl , "persoon_van_de_gelaedeerde"@nl , "leidingbeheerder"@nl , "handelen in opdracht"@nl , "medebezitter"@nl , "groep"@nl , "aansprakelijke"@nl , "voogd"@nl , "fabrikant van een onderdeel"@nl , "veroorzaker"@nl , "persoon van de laedens"@nl , "die een misleidende mededeling doet publiceren"@nl , "bezitter"@nl , "persoon"@nl , "persoon met een gebrek"@nl , "schuldig aan de schadeveroorzakende gebeurtenis"@nl , "gebruik heeft gemaakt van vergelijkende reclame"@nl , "minderjarige"@nl , "pleger onrechtmatige daad"@nl ;
+      skos:note "Degene die de schade heeft geleden, het slachtoffer of de benadeelde"^^xsd:string , "Ald pleger van een onrechtmatige daad kan worden aangemerkt een groep, persoon, rechtspersoon, overheidsorgaan, bestuurder."^^xsd:string , "De schadeveroorzaker"^^xsd:string .
+
+tvn:aansprakelijkheid
+      mtv:same tv:aansprakelijkheid ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijk"@nl , "aansprakelijkheid voor dieren"@nl , "wanprestatie"@nl , "aansprakelijk stellen"@nl , "aansprakelijke"@nl , "aansprakelijkheid voor zaken"@nl , "aansprakelijkheid buiten schuld"@nl , "risico-aansprakelijk"@nl , "aansprakelijkheid op grond van de wet"@nl , "aansprakelijkheid voor menselijke handelingen"@nl , "aansprakeljkheid"@nl , "aansprakelijkstelling"@nl , "aansprakelijkheid op grond van een overeenkomst"@nl , "aard van de aansprakelijkheid"@nl , "persoonlijk aansprakelijk"@nl , "aard_van_de_aansprakelijkheid"@nl , "contract"@nl , "wettelijke aansprakelijkheid"@nl , "aansprakelijkheid die voortvloeit uit de wet"@nl , "aansprakelijkheid"@nl ;
+      skos:note """De aard van de aansprakelijkheid heeft betrekking op de vraag of de aansprakelijkheid verwijtbaar is of dat er sprake is van aansprakelijkheid buiten schuld. Ook kan het onderscheid tussen aansprakelijkheid die volgt uit de wet of uit een overeenkomst van belang zijn. Tot slot kan de rechter onderscheid maken tussen aansprakelijkheid voor menselijke handelingen of voor zaken (en dieren). 
+	De rechter zal mede kunnen kijken naar de aard van de norm die overtreden is. Als de norm het doel heeft het soort schade waarvan sprake is tegen te gaan, zal de rechter sneller aannemen dat uit de aard van de aansprakelijkheid een verplichting tot vergoeding van de schade voortvloeit.
+	De verplichting tot vergoeding van de schade is afhankelijk van de aard van de aansprakelijkheid, aard van de schade, de voorzienbaarheid van de schade, de aard van de gedraging, de aanwezigheid van een causaal verband tussen de handeling en de schade. Ook de persoon van de veroorzaker en degene die schadevergoeding heeft geleden, alsmede de verzekerbaarheid kan een rol spelen bij het bepalen van de schadevergoedingsplicht."""^^xsd:string , "Een persoon kan aansprakelijk zijn voor schade die is ontstaan door zijn eigen handelen. Daarnaast is het mogelijk dat een persoon aansprakelijk is voor schade ontstaan door zaken of personen waarvoor hij verantwoordelijk is, voor schade als gevolg van misleidende en vergelijkende reclame, producten of elektronisch rechtsverkeer. Tot slot kan er ook aansprakelijheid ontstaan op grond van wanprestatie. Aansprakelijkheid kan een verplichting tot betaling van schadevergoeding met zich meebrengen."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_boorgaten
+      mtv:same tv:aansprakelijkheid_voor_boorgaten ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid voor boorgaten"@nl , "aansprakelijkheid voor mijnbouwwerken"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor het onstaan van schade als gevolg van zaken waarvoor hij verantwoordelijk is. Een exploitant van een mijnbouwwerk kan hierdoor  aansprakelijk worden gesteld voor schade ontstaan door boorgaten. Het betreft dan met name schade die is ontstaan als gevolg van de uitstroming van delfstoffen, aardgas en aardolie of bij mijnexploitatie. Ook schade als gevolg van bodembeweging kan voor vergoeding in aanmerking komen."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_eigen_gedrag
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aantasting van een belang"@nl , "kennis van een belang"@nl , "in strijd met een wettelijke plicht"@nl , "inbreuk op een recht"@nl , "toerekenen"@nl , "maatschappelijke betamelijkheid"@nl , "causaliteit"@nl , "causaal verband"@nl , "schade"@nl , "ongeschreven vereiste voor persoonlijke aansprakelijkheid"@nl , "kennis van belang"@nl , "verhindering in de uitoefening van bevoegdheden"@nl , "wettelijk vereiste voor persoonlijke aansprakelijkheid"@nl , "relativiteit"@nl , "ongeschreven vereisten voor persoonlijke aansprakelijkheid"@nl , "onbevoegd uitoefenen van bevoegdheden"@nl , "oorzakelijk verband"@nl , "maatschappelijke zorgvuldigheid"@nl , "onrechtmatigheid"@nl , "aantasting van belang"@nl .
+
+tvn:aansprakelijkheid_voor_kinderen
+      mtv:same tv:aansprakelijkheid_voor_kinderen ;
+      to:fingerprint _:b1 , _:b2 , _:b3 ;
+      skos:altLabel "aansprakelijkheid_voor_kinderen"@nl , "aansprakelijkheid van de ouders of voogd"@nl , "aansprakelijkheid voor kinderen"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor personen tot wie hij in een bijzondere betrekking staat. Ouders of voogden kunnen onder meer aansprakelijkheid worden gesteld voor schade als gevolg van het handelen van kinderen (overigens kunnen ook anderen aansprakelijk worden gesteld voor kinderen). Ouders of voogden zijn aansprakelijk voor kinderen jonger dan 14 jaar. Voor kinderen van 14 of 15 jaar geldt dat zij aansprakelijk zijn indien zij onvoldoende toezicht hebben gehouden. Daarbij is van belang of het uitoefenen van het toezicht aansloot bij de kennis die ouders of voogden hadden over karakter van het kind. Indien een kind 16 jaar of ouder is kan een ouder aansprakelijk zijn voor het gedrag van zijn kind als hij tekort is geschoten in de uitoefening van zijn toezicht. Degene die schade heeft geleden dient dan te bewijzen dat de schade is ontstaan als gevolg van het tekortschieten van het toezicht door de ouders. Naarmate het kind ouder is, neemt de veronderstelde toezicht af."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar
+      mtv:same tv:aansprakelijkheid_voor_kinderen ;
+      to:fingerprint _:b1 , _:b2 , _:b3 ;
+      skos:altLabel "aansprakelijkheid_voor_kinderen"@nl , "aansprakelijkheid van de ouders of voogd"@nl , "aansprakelijkheid voor kinderen"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor personen tot wie hij in een bijzondere betrekking staat. Ouders of voogden kunnen onder meer aansprakelijkheid worden gesteld voor schade als gevolg van het handelen van kinderen (overigens kunnen ook anderen aansprakelijk worden gesteld voor kinderen). Ouders of voogden zijn aansprakelijk voor kinderen jonger dan 14 jaar. Voor kinderen van 14 of 15 jaar geldt dat zij aansprakelijk zijn indien zij onvoldoende toezicht hebben gehouden. Daarbij is van belang of het uitoefenen van het toezicht aansloot bij de kennis die ouders of voogden hadden over karakter van het kind. Indien een kind 16 jaar of ouder is kan een ouder aansprakelijk zijn voor het gedrag van zijn kind als hij tekort is geschoten in de uitoefening van zijn toezicht. Degene die schade heeft geleden dient dan te bewijzen dat de schade is ontstaan als gevolg van het tekortschieten van het toezicht door de ouders. Naarmate het kind ouder is, neemt de veronderstelde toezicht af."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_niet_ondergeschikten
+      mtv:same tv:aansprakelijkheid_voor_niet_ondergeschikten ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "ondernemingen zonder winstoogmerk"@nl , "bedrijfsactiviteit"@nl , "onderaanneming"@nl , "eenheid"@nl , "niet-ondergeschiktheidscriterium"@nl , "benadeelde"@nl , "verrichten van werkzaamheden"@nl , "werlnemer"@nl , "kans op de fout"@nl , "eenheid van de onderneming"@nl , "niet-ondergeschikte"@nl , "risicoaansprakelijkheid"@nl , "opdrachtnemer"@nl , "ter uitoefening"@nl , "werkgever"@nl , "eenheid van de onderneming tegenover de benadeelde"@nl , "inschakelt"@nl , "fout"@nl , "aansprakelijke opdrachtgever"@nl , "niet-ondergeschiktheid"@nl , "werkzaamheden ter uitoefening van het bedrijf"@nl , "niet-ondergeschikten"@nl , "draagplicht"@nl , "aansprakelijkheid voor niet-ondergeschikten"@nl , "bij die werkzaamheden begane fout"@nl , "niet ondergeschikten"@nl , "ondernemingen"@nl , "ondergeschikten"@nl , "onderlinge verhouding"@nl , "betrokken activiteiten"@nl , "opdracht tot het verrichten van deze taak"@nl , "aanneming"@nl , "bedrijfsrisico"@nl ;
+      skos:note "Een niet-ondergeschikte is een zelfstandige opdrachtnemer, bijvoorbeeld een (onder)aannemer of (onder)vervoerder. Er wordt in dit kader ook wel gesproken van een zelfstandig hulppersoon. NIet-ondergeschiktheid zal in het algemeen worden beoordeeld aan de hand van de mate waarin de opdrachtgever zeggenschap heeft over de werkzaamheden, aan de beschermingsbehoeften en afhankelijkheid van de persoon die de werkzaamheden uitoefent, de mate waarin de opdrachtgever bevoegd is tot het geven van aanwijzingen, de mate van concretisering van de aanwijzingen die met betrekking tot de werkzaamheden zijn gegeven, de doelstelling die partijen hebben beoogd bij het sluiten van de (arbeids)overeenkomst, een aantal praktische indicatoren en of er kan worden gesproken van 'hulppersonen'."^^xsd:string , "Een persoon kan aansprakelijk zijn voor niet-ondergeschikte personen. Dit kunnen opdrachtnemers en vertegenwoordigers zijn. De opdrachtnemer of vertegenwoordiger dient een fout te hebben begaan die verband hield met de aan hem opgedragen werkzaamheden of taak. Een niet-ondergeschikte is een zelfstandige opdrachtnemer die werkzaamheden in het kader van een bedrijf zijn verricht. Dit kunnen ook bedrijven zijn zonder winstoogmerk of overheidsbedrijven."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_opstallen
+      mtv:same tv:aansprakelijkheid_voor_opstallen ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid voor opstallen"@nl , "aansprakelijkheid voor opstal"@nl , "aansprakelijkheid voor een opstal"@nl , "aansprakelijkheid_voor_opstallen"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade ontstaan als gevolg van zaken waarvoor hij verantwoordelijk is. Voor schade veroorzaakt door opstallen kan een verplichting tot schadevergoeding rusten op de bezitter van de opstal. De bezitter is degene die in de openbare registers is ingeschreven als bezitter van die opstal. Een opstal is hetgeen wat boven en/of in de grond gebwoud en daarmee duurzaam verbonden is (bijvoorbeeld een gebouw, onderdelen van een gebouw zoals een dakpan, lift, riool). Muren, schuttingen, sluiswerken, grafmonumenten, dijken, telefoonpalen en verharde wegen zijn ook opstallen. Voor het onstaan van een verplichting tot betaling van schadevergoeding is het van belang dat de schade is ontstaan door een gebrek, dat wil zeggen dat de opstal niet voldoet aan de eisen die men daar normaal gesproken aan mag stellen. Van belang is de verwachting die bestaat bij de gebruikers van het opstal."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_personen
+      mtv:same tv:aansprakelijkheid_voor_producten ;
+      to:fingerprint _:b4 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "wettelijke vereiste aansprakelijkheid voor personen"@nl , "aansprakelijkheid_voor_personen"@nl , "aansprakelijkheid voor personen"@nl , "aansprakelijkheid voor producten"@nl , "wettelijke_vereiste_aansprakelijkheid_voor_personen"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade als gevolg van zijn eigen handelen of voor schade ontstaan door personen of zaken waarvoor hij verantwoordelijk is. Aansprakelijkheid voor personen omvat de aansprakelijkheid voor kinderen, werknemer, zelfstandige hulppersonen en vertegenwoordigers."^^xsd:string , "Een persoon kan aansprakelijk zijn voor schade als gevolg van het handelen van andere personen tot wie hij in een bijzondere betrekking staat. Dat wil zeggen dat hij aansprakelijk kan zijn voor schade die het gevolg is van een gedraging van kinderen, ondergeschikten, niet-ondergeschikten die bedrijfsmatig opgedragen werkzaamheden uitvoeren en vertegenwoordigers die op grond van een wettelijke bepaling of volmacht handelen."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_producten
+      mtv:same tv:aansprakelijkheid_voor_gebrekkige_producten ;
+      to:fingerprint _:b4 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "wettelijke vereiste aansprakelijkheid voor producten"@nl , "aansprakelijkheid voor gebrekkige producten"@nl , "wettelijke_vereiste_aansprakelijkheid_voor_producten"@nl , "aansprakelijkheid voor producten"@nl .
+
+tvn:aansprakelijkheid_voor_stoffen
+      mtv:same tv:aansprakelijkheid_voor_stoffen ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid_voor_gevaarlijke_stoffen"@nl , "aansprakelijkheid voor gevaarlijke stoffen"@nl , "aansprakelijkheid voor stoffen"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade die ontstaat als gevolg van zaken waarvoor hij verantwoordelijk is. Er kan onder meer een verplichting tot betaling van schadevergoeding ontstaan voor gevaarlijke stoffen. Dit zijn stoffen die door hun eigenschappen een bijzonder gevaar voor personen of zaken opleveren. In het Uitoveringsbesluit aansprakelijkheid voor gevaarlijke stoffen en milieuverontreiniging van 1 februari 1995 zijn stoffen aangewezen welke als gevaarlijk worden aangemerkt."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_stortplaatsen
+      to:fingerprint _:b5 , _:b6 ;
+      skos:altLabel "aansprakelijkheid_voor_stortplaatsen"@nl , "aansprakelijkheid voor stortplaatsen"@nl ;
+      skos:note "Een persoon is aansprakelijk voor de schade ontstaan door zaken waarvoor hij verantwoordelijk is. Een verplichting tot vergoeding van de schade kan onder meer ontstaan voor stortplaatsen. De exploitant van een stortplaats kan, ook na sluiting van de stortplaats, aansprakelijk worden gesteld voor verontreiniging van lucht, water of bodem. De exploitant kan tot 20 jaar na sluiting van de stortplaats worden aangesproken."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_vertegenwoordigers
+      mtv:same tv:aansprakelijkheid_voor_vertegenwoordigers ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid_voor_vertegenwoordigers"@nl , "aansprakelijkheid voor vertegenwoordigers"@nl , "vertegenwoordigingscriterium"@nl , "vertegenwoordiging"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor personen tot wie hij in een bijzondere betrekking staat. Dit is onder meer het geval bij vertegenwoordigeres. Het kan hierbij gaan aan vertegenwoordiging op grond van een volmacht of op grond van een wettelijke bepaling (voogd, curator, faillissementscurator, executeur-testamentair)."^^xsd:string , "Aansprakelijkheid voor vertegenwoordigers ontstaat voor schade ontstaan door een fout van de vertegenwoordiger. De fout moet zijn begaan in de uitoefening van de vertegenwoordigersbevoegdheden. Een persoon kan als vertegenwoordiger worden aangemerkt op grond van de wet (bijvoorbeeld een curator bij faillissement of curatele, een executeur-testamentair of een voogd). Tevens is het mogelijk dat een persoon als vertegenwoordiger handelt krachtens volmacht. Dit zal veelal het geval zijn bij bijvoorbeeld advocaten, makelaars, assurantietussenpersonen en architecten."^^xsd:string .
+
+tvn:aansprakelijkheid_voor_zaken
+      mtv:same tv:aansprakelijkheid_voor_zaken ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid voor gebrekkige zaken"@nl , "aansprakelijkheid voor zaken"@nl , "aansprakelijkheid_voor_zaken"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade ontstaan door zaken waarvan men eigenaar, bezitter of houder is. Dit brengt met zich mee dat een persoon aansprakelijk kan zijn voor dieren, gebrekkige opstallen, gebrekkige roerende zaken, gevaarlijke stoffen, gebrekkige producten en voor schade ontstaan als gevolg van motorrijtuigen. Leeftijd staat niet aan aansprakelijkheid in de weg, ook kinderen jonger dan 14 jaar kunnen aansprakelijk zijn voor zaken, met uitzondering van dieren en gebrekkige roerende zaken."^^xsd:string , "Een persoon kan aansprakelijk zijn voor schade ontstaan door zaken. Dit betekent dat een bezitters en medebezitters van een roerende zaak aansprakelijk kan zijn voor schade ontstaan door een gebrekkige roerende zaak. Er kan alleen een schadevergoedingsplicht ontstaan als de roerende zaak gebrekkig is. Dat wil zeggen dat de roerende zaa niet voldoet aan de eisen die men daaraan in de gegeven omstandigheden zou mogen stellen. Het is daarbij van belang wat men redelijkerwijs mag verwachten van de roerende zaak. Het is van belang dat de kring waartoe de bezitter hoort, het gebrek kende (dus de bezitter hoeft niet perse zelf bekend te zijn met het gebrek indien de kring van personen waartoe hij behoorde dit gebrek wel kende). Het gebrek van de roerende zaak dient een (potentieel) gevaar voor personen of zaken op te leveren, een gevaar dat specifiek is voor het gebrek. Het gevaar dient verwezenlijkt te zijn alvorens de plicht tot betaling van schadevergoeding kan ontstaan."^^xsd:string .
+
+tvn:aantasting_eer_en_goede_naam
+      mtv:same tv:aantasting_van_de_eer_en_goede_naam ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aantasting van de eer"@nl , "recht op een goede naam"@nl , "recht_op_een_goede_naam"@nl , "aantasting_van_de_eer_en_goede_naam"@nl , "aantasting van de eer en goede naam"@nl , "aantasting_van_de_eer"@nl , "aantasting van de goede naam"@nl , "aantasting_van_de_goede_naam"@nl ;
+      skos:note "Onder aantasting van de eer wordt verstaan de aantasting van de waarde die men in zijn eigen ogen heeft, aantasting van het gevoel van eigenwaarde.  Aantasting van de goede naam heeft betrekking op de waarde die men in andermans ogen heeft, de reputatie."^^xsd:string .
+
+tvn:aanwezigheid_vergunning
+      mtv:same tv:vergunning ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bouw"@nl , "vergunningsvoorschriften"@nl , "belang dat nagestreefd wordt"@nl , "omstandigheden van het geval"@nl , "vergunning als bedoeld in art.8.1 van de wet milieubeheer" , "vergunning voor het exploiteren van een stortplaats" , "vergunning voor het exploiteren van een stortplaats"@nl , "belang van de regeling waarop de vergunning rust"@nl , "belang van de regeling waarop de verunning rust"@nl , "aan de vergunning verbonden voorwaarden"@nl , "een ieder die een mijnbouwwerk aanlegt of doet aanleggen zonder dat hij houder is van een vergunning"@nl , "aanleg"@nl , "aard van de vergunning"@nl , "vergunninghouder als bedoel in artikel 6 of 25 van de mijnbouwwet" , "Vergunning als bedoeld in art.8.1 van de wet milieubeheer"@nl , "vergunning"@nl , "vergunningvoorschrift"@nl , "storten"@nl , "voorschriften verbonden aan de vergunning"@nl , "vergunninghouder"@nl , "vergunninghouder" , "vergunningvoorwaarden"@nl , "vergunninghouder als bedoeld in artikel 6 of 25 van de mijnbouwwet"@nl , "bouwwerk"@nl , "houder van een vergunning"@nl , "aard_van_de_vergunning"@nl , "houder"@nl , "vergunningvoorwaarde"@nl , "vergunninghouder van een stortplaats" , "vergunninghouder van een stortplaats"@nl , "exploitatie"@nl ;
+      skos:note "Vergunning houder, is de houder van een vergunning. Bijvoorbeeld de houder van een vergunning ten behoeve van de exploitatie van een stortplaats of mijnbouwwerk of ten behoeve van de aanleg van een bepaald bouwwerk."^^xsd:string , """Als schade wordt toegebracht aan derden ondanks dat een persoon handelde overeenkomstig de vergunningsvoorwaarden, hangt de onrechtmatigheid af van de aard van de vergunning en het belang dat wordt nagestreefd met de regeling waarop de vergunning berust, de omstandigheden van het geval in aanmerking genomen.  In beginsel mag de vergunninghouder er vanuit gaan dat hij gerechtigd is gebruik te maken van de vergunning en dat deze overeenkomstig de wet is verleend en de belangen door de vergunningverlenende instantie volledig en op juiste wijze zijn afgewogen. 
+	Als er wordt gehandeld zonder vergunning is dit niet altijd aan te merken als onrechtmatig. Dit kan het geval zijn als bij het handelen voldaan is aan de vereisten voor het verkrijgen van een vergunning.  Eveneens is het mogelijk dat er geen aansprakelijkheid kan worden gevestigd omdat de schade of hinder wegens zwaarwegende belangen moet worden gedoogd."""^^xsd:string , "Onrechtmatig handelen kan eveneens voortvloeien uit overtreding van de vergunningsvoorwaarden.   Indien schade wordt toegebracht aan derden ondanks handelen overeenkomstig de verstrekte vergunning, hangt de onrechtmatigheid af van de aard van de vergunning en het belang dat wordt nagestreefd met de regeling waarop de vergunning berust,  de omstandigheden van het geval in aanmerking genomen."^^xsd:string .
+
+tvn:aard_en_omvang_gevreesde_schade
+      mtv:same tv:aard_van_de_schade ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "omvang_schadecriterium"@nl , "aard van de schade"@nl , "zaakschade"@nl , "verlies"@nl , "zuivere vermogensschade"@nl , "gederfde winst"@nl , "omvang schade"@nl , "letselschade"@nl , "treffen van voorzorgsmaatregelen"@nl , "vaststellen van schade"@nl , "overlijdensschade"@nl , "vermogensschade"@nl ;
+      skos:note "Overlijdens- en letselschade zal eerder voor vergoeding in aanmerking komen dan zaakschade (bijv. schade als gevolg van verlies, vernietiging of beschadiging van zaken). Een schadevergoedingsplicht zal eerder ontstaan voor zaakschade dan voor vermogensschade (schade als gevolg van het treffen van voorzorgsmaatregelen ter voorkoming van de schade, het vaststellen van schade en de kosten die gemaakt zijn voor voldoening van de schade) en deze zal eveneens eerder worden aangenomen voor geleden verlies dan voor gederfde winst."^^xsd:string , "Voor aansprakelijkheid voor schade is onder meer vereist dat er sprake is van schade. Het bestaan van enige schade is reeds voldoende om aansprakelijkheid mogelijk te maken."^^xsd:string .
+
+tvn:aard_van_de_gedraging
+      mtv:same tv:aard_van_de_gedraging ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "gedraging_van_een_dier"@nl , "gedraging van een dier"@nl , "gedrag"@nl , "aard van de gedraging"@nl , "gedraging"@nl , "aard van het gedrag"@nl , "schadevergoeding"@nl , "aard_van_de_gedraging"@nl ;
+      skos:note "Bij de beoordeling van aansprakelijkheid kan de aard van het gedrag een rol spelen. Zo is het bij aansprakelijkheid voor bijvoorbeeld (niet-)ondergeschikten van belang dat indien zij een fout maken waardoor schade ontstaat, deze is begaan door een gedraging die volgde uit de aan hem of haar opgedragen taak of werkzaamheden."^^xsd:string , """De bezitter van een dier is aansprakelijk voor schade door het dier aangericht.  Dat wil zeggen dat de schade moet zijn toegebracht door de gedraging van het dier. De schadeveroorzakende gedraging moet zijn gelegen in de 'eigen onberekenbare energie van het dier'.  Dit brengt met zich mee dat de bezitter van een dier niet aansprakelijk is voor schade ontstaan als het lichaam van het dier object is van 'van buiten komende krachten', zonder dat de eigen energie van het dier als levend wezen enige rol heeft gespeeld. Zo zal aansprakelijkheid van een bezitter van een dier niet snel worden aangenomen als er sprake is van besmettingsschade als gevolg van een ziek dier terwijl de bezitter van het dier niet van de besmetting op de hoogte was of behoorde te zijn.
+	Als het dier als instrument wordt gebruikt, dat wil zeggen dat het handelt ter uitvoering van degene die het dier berijd of begeleid, veroorzaakt het niet zelfstandig de schade. De bezitter kan dan aansprakelijk zijn voor schade als gevolg van zijn eigen handelen. Overigens kan een dier dat begeleid of bereden wordt ook zelfstandig schade aanrichten, dan is de bezitter van het dier aansprakelijk voor schade als gevolg van de gedraging van het dier omdat hij in zijn hoedanigheid van bezitter verantwoordelijk is voor de door het dier aangerichte schade. 
+	Indirect veroorzaakte schade als gevolg van een gedraging van het dier kan ook voor rekening van de bezitter van het der komen."""^^xsd:string .
+
+tvn:bekendheid_gevaren_in_geval_gebrekkigheid
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "gebrekkig bestanddeel"@nl , "gebrekkig_bestanddeel"@nl ;
+      skos:note "Grondstof of onderdeel van het product dat gebrekkig is. Dit gebrek is geen gevolg van het ontwerp van het product of de instructies van de hoofdfabrikant."^^xsd:string .
+
+tvn:bevoegd_gegeven_ambtelijk_bevel
+      mtv:same tv:bevoegd_gegeven_ambtelijk_bevel ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bevoegd_gegeven_ambtelijk_bevel"@nl , "bevoegd gegeven ambtelijk bevel"@nl ;
+      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Een bevoegd gegeven ambtelijk bevel is een rechtvaardigingsgrond. Een voorbeeld van een bevoegd gegeven ambtelijk bevel is het bevel van een verkeersagent door rood te rijden."^^xsd:string .
+
+tvn:bezitter_opstal
+      mtv:same tv:bezitter_van_een_opstal ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bezitter"@nl , "eigenaar van de opstal"@nl , "bezitter van opstal"@nl , "eigenaar van de opstal of van de grond"@nl , "eigenaar van de grond"@nl , "opstal"@nl , "ingeschreven"@nl , "recht van opstal"@nl , "openbare registers"@nl .
+
+tvn:bezitter_roerende_zaak
+      mtv:same tv:bezitter_van_een_roerende_zaak ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "roerende zaak"@nl , "aansprakelijk"@nl , "zaken die niet roerend zijn"@nl , "bezitter van een roerende zaak"@nl , "bezitter van de zaken"@nl , "zaken"@nl , "bezitter van zaken"@nl , "bezitter van een gebrekkige zaak"@nl , "voor menselijke beheersing vatbare stoffelijke objecten"@nl , "bezitter van een zaak"@nl , "bezitter"@nl , "onrechtmatig"@nl , "risicoaansprakelijkheid"@nl , "bezitter van de zaak"@nl , "aansprakelijkheid"@nl , "gebrekkige zaak"@nl .
+
+tvn:bezitter_van_een_dier
+      mtv:same tv:bezitter_van_een_dier ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "kennelijk prijsgeven"@nl , "bezitsverlies"@nl , "bezit van het dier"@nl , "bezit"@nl , "het bezit van het dier verkrijgt"@nl , "eigenaar van een dier"@nl , "eigenaar van tamme dieren"@nl , "bezitter van een dier"@nl , "bezitter_van_een_dier"@nl , "uit zijn macht zijn gekomen"@nl , "verlies van dieren"@nl , "bezitter van het dier"@nl , "in zijn macht"@nl , "bezitter"@nl , "dier"@nl , "vangen"@nl , "eigendom"@nl , "nalaat deze te vangen"@nl , "uit zijn macht"@nl , "vrijheid verkrijgen"@nl , "bezitter van de dieren"@nl , "verwilderd"@nl ;
+      skos:note """Iemand kan als bezitter worden aangemerkt als hij het dier voor zichzelf houdt. Dit betekent dat hij eigenaar is of het dier onderhoudt. Ook medebezitters kunnen aansprakelijk zijn voor schade als gevolg van gedragingen van het dier. In geval van kinderen jonger dan 14 jaar kunnen de ouders aansprakelijk worden gesteld. Bij kinderen van 14 of 15 jaar geldt dit alleen als hen kan worden verweten dat ze tekort zijn geschoten in het uitoefenen van toezicht, het karakter van het kind in aanmerking genomen. Voor kinderen van 16 jaar of ouder geldt in beginsel dat zij zelf aansprakelijk zijn tenzij de ouders verwijtbaar tekort zijn geschoten in het toezicht. Als er sprake is van bedrijfsmatige exploitatie van dieren kan de bedrijfsmatige exploitant aansprakelijk worden gehouden.
+	De persoon die verantwoordelijk is voor de schade dient bezitter te zijn van een dier. Dit kan zowel een tam als wild dier zijn. Bacterieen en virussen worden niet als dieren aangemerkt. Indien het dier als instrument wordt gebruikt, dat wil zeggen dat het handelde in een opgedragen bevel, dan is degene die het dier zo heeft benadert/ behandelt zelf aansprakelijk. Indirecte schade valt ook onder dieraansprakelijkheid."""^^xsd:string .
+
+tvn:bezwaarlijkheid_voorzorgmaatregelen
+      mtv:same tv:bezwaarlijkheid_veiligheidsmaatregelen ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bezwaarlijkheid veiligheidsmaatregelen"@nl , "de mate waarin het nemen van veiligheidsmaatregelen bezwaarlijk is"@nl , "beperking"@nl , "alternatieve voorzorgsmaatregelen"@nl , "weinig kostbaar"@nl , "gevaar"@nl , "voorkoming"@nl , "bezwaarlijkheid van het nemen van veiligheidsmaatregelen"@nl , "veiligheid"@nl , "effectiviteit van de waarschuwing"@nl , "voorzorgsmaatregelen"@nl , "gevaarlijk"@nl , "bezwaarlijkheid_veiligheidsmaatregelen"@nl , "bezwaarlijkheid"@nl , "gevaarzetting"@nl , "bezwaarlijk"@nl , "eenvoudig"@nl , "waarschuwing"@nl , "afzien van de gevaarscheppende activiteit"@nl , "bezwaarlijkheid van de te nemen veiligheidsmaatregelen"@nl , "de mate waarin"@nl ;
+      skos:note """Hierbij zal de gebruikelijkheid van bepaalde voorzorgsmaatregelen in acht worden genomen. Naarmate de voorzorgsmaatregelen financieel of anderszins bezwaarlijker zijn, zal het treffen van die maatregelen minder snel vereist zijn. Overigens is het niet zo dat voorzorgsmaatregelen die weinig kostbaar zijn en eenvoudig kunnen worden getroffen ook altijd moeten worden getroffen.  Een waarschuwing kan worden beschouwd als een afdoende maatregel met het oog op een bepaald gevaar indien te verwachten is dat deze waarschuwing zal leiden tot een handelen of nalaten waarmee het gevaar wordt vermeden.  De effectiviteit van de waarschuwing is bepalend voor de toereikendheid ervan. 
+	Indien het feitelijk onmogelijk is bepaalde voorzorgsmaatregelen te nemen, zal de mogelijkheid van het treffen van alternatieve voorzorgsmaatregelen dan wel het afzien van de gevaarscheppende activiteit in de beoordeling worden betrokken.
+	."""^^xsd:string , """Of er afdoende veiligheids- en voorzorgsmaatregelen zijn genomen teneinde het gevaar te voorkomen hangt af van de bezwaarlijkheid van de te nemen maatregelen. Hierbij zal de gebruikelijkheid van bepaalde voorzorgsmaatregelen in acht worden genomen. Naarmate de voorzorgsmaatregelen financieel of anderszins bezwaarlijker zijn, zal het treffen van die maatregelen minder snel vereist zijn. Overigens is het niet zo dat voorzorgsmaatregelen die weinig kostbaar zijn en eenvoudig kunnen worden getroffen ook altijd moeten worden getroffen.  Een waarschuwing kan worden beschouwd als een afdoende maatregel met het oog op een bepaald gevaar indien te verwachten is dat deze waarschuwing zal leiden tot een handelen of nalaten waarmee het gevaar wordt vermeden.  De effectiviteit van de waarschuwing is bepalend voor de toereikendheid ervan. 
+	Indien het feitelijk onmogelijk is bepaalde voorzorgsmaatregelen te nemen, zal de mogelijkheid van het treffen van alternatieve voorzorgsmaatregelen dan wel het afzien van de gevaarscheppende activiteit in de beoordeling worden betrokken."""^^xsd:string .
+
+tvn:bijzonder_gevaar
+      mtv:same tv:bijzonder_gevaar ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bijzonder_gevaar"@nl , "bijzonder gevaar"@nl , "staking"@nl , "onmiddelijk gevaar"@nl , "concreet gevaar"@nl , "bijzonder gevaar voor personen en zaken"@nl , "aannemelijk gevaar"@nl , "werkgever"@nl , "onevenredig gevaar"@nl , "onevenredig gevaar" , "onmiddellijk gevaar"@nl , "onmiddelijk_gevaar"@nl ;
+      skos:note "Een bijzonder gevaar, is een gevaar dat niet algemeen van aard is. De inherente eigenschappen van de zaak moeten een bijzonder gevaar kunnen opleveren."^^xsd:string , "Een onmiddellijk gevaar is een gevaar dat zich onmiddellijk voordoet. Zo is een staking bijvoorbeeld ongeoorloofd als zich een onmiddellijk en concreet gevaar voordoet voor een specifieke, aanzienlijke schade, waarvan aard en vermoedelijke omvang, tegenover een eventuele betwisting, van de zijde van de werkgevers aannemelijk dient te worden gemaakt."^^xsd:string .
+
+tvn:bijzonder_gevaar_van_ernstige_aard
+      mtv:same tv:stoffen_met_een_bijzonder_gevaar_van_ernstige_aard ;
+      to:fingerprint _:b7 , _:b8 , _:b9 , _:b10 , _:b11 , _:b12 , _:b13 , _:b14 , _:b15 , _:b16 , _:b17 , _:b18 , _:b19 , _:b20 , _:b21 , _:b22 , _:b23 , _:b24 , _:b25 , _:b26 , _:b27 , _:b28 , _:b29 , _:b30 , _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b36 ;
+      skos:altLabel "vaste stoffen"@nl , "de categorie licht ontvlambaar"@nl , "criteria en methoden"@nl , "gevaren die aan de stof zijn verbonden"@nl , "oxyderend"@nl , "chemische elementen en hun verbindingen"@nl , "de categorie kankerverwekkend"@nl , "de categorie schadelijk"@nl , "de categorie zeer giftig"@nl , "Besluit aanwijzing gevaarlijke afvalstoffen"@nl , "richtlijn 67/548/EEG"@nl , "de categorie oxyderend"@nl , "de categorie bijtend"@nl , "de categorie zeer licht ontvlambaar"@nl , "prepareren"@nl , "zodanige eigenschappen"@nl , "de categorie ontvlambaar"@nl , "indeling, verpakking en het kenmerken van gevaarlijke stoffen"@nl , "niet voor menselijke beheersing vatbaar"@nl , "de categorie ontplofbaar"@nl , "zeer vergiftig"@nl , "gevaar van ernstige aard voor personen of zaken"@nl , "de categorie mutageen"@nl , "de categorie vergiftig"@nl , "stoffen met een bijzonder gevaar van ernstige aard"@nl , "de categorie voor de voortplanting vergiftig"@nl , "verpakking en de sluiting"@nl , "de categorie irriterend"@nl , "zeer licht ontvlambaar"@nl , "de categorie sensibiliserend"@nl .
+
+tvn:bijzondere_samenloop_van_omstandigheden
+      mtv:same tv:ongelukkige_samenloop_van_omstandigheden ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "ongelukkige samenloop van omstandigheden"@nl , "ongelukkige_samenloop_van_omstandigheden"@nl ;
+      skos:note "Het gaat hier om schade die ontstaat in veelal alledaagse situaties waarbij de dader persoonlijk niet al te veel valt te verwijten.  De enkele mogelijkheid dat een ongeval ontstaat creëert geen aansprakelijkheid. Voor gevaarscheppend gedrag kan een persoon alleen aansprakelijk zijn als de mate van waarschijnlijkheid dat een ongeval zich voordoet als gevolg van dat gedrag zo groot is dat de schadeveroorzaker zich van dat gedrag had moeten onthouden. Hier ligt een zeker element van voorzienbaarheid in besloten, dat wil zeggen dat het ontstaan van het ongeval met zekere waarschijnlijkheid voorzienbaar moet zijn geweest. Indien de mate van waarschijnlijkheid van het ongeval als gevolg van het gedrag dermate gering is, kan er sprake zijn van een ongelukkige samenloop van omstandigheden."^^xsd:string .
+
+tvn:criteria_aansprakelijkheid_voor_stortplaatsen
+      mtv:same tv:aansprakelijkheid_voor_stortplaatsen ;
+      to:fingerprint _:b5 , _:b6 ;
+      skos:altLabel "aansprakelijkheid_voor_stortplaatsen"@nl , "aansprakelijkheid voor stortplaatsen"@nl ;
+      skos:note "Een persoon is aansprakelijk voor de schade ontstaan door zaken waarvoor hij verantwoordelijk is. Een verplichting tot vergoeding van de schade kan onder meer ontstaan voor stortplaatsen. De exploitant van een stortplaats kan, ook na sluiting van de stortplaats, aansprakelijk worden gesteld voor verontreiniging van lucht, water of bodem. De exploitant kan tot 20 jaar na sluiting van de stortplaats worden aangesproken."^^xsd:string .
+
+tvn:criteria_aansprakelijkheid_voor_zaken
+      mtv:same tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "wettelijk_vereiste_aansprakelijkheid_voor_zaken"@nl , "wettelijk vereiste aansprakelijkheid voor zaken"@nl .
+
+tvn:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht
+      mtv:same tv:handelen_in_strijd_met_een_wettelijke_plicht , tv:in_strijd_met_een_wettelijke_plicht ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "wettelijke norm"@nl , "doen of nalaten"@nl , "bescherming van een ongeschonden belang"@nl , "onrechtmatig gedrag"@nl , "in strijd met een wettelijke plicht"@nl , "wet"@nl , "onbehoorlijk gedrag"@nl , "schadeveroorzakende behandeling"@nl , "handelen_in_strijd_met_een_wettelijke_plicht"@nl , "besluit"@nl , "handelen in strijd met een wettelijke plicht"@nl , "plicht"@nl , "woningwet"@nl , "normovertreding"@nl , "algemene maatregel van bestuur"@nl , "relativiteit"@nl , "algemeen verbindend zijnde voorschriften"@nl , "algemene plaatselijke verordening"@nl , "geschreven rechtsregels"@nl , "aansprakelijkheid"@nl , "nalaten in strijd met recht"@nl , "bescherming"@nl , "vergunningsvoorwaarden"@nl , "specifieke voorschrift"@nl , "wet in formele zin"@nl , "strijd met een wettelijke plicht"@nl , "hinderwet"@nl , "wettelijke plicht"@nl , "doen of nalaten in strijd met een wettelijke plicht"@nl , "ter bescherming"@nl , "bestemmingsplan"@nl , "gedragsnormen"@nl , "ministeriële regeling"@nl , "schade"@nl , "veiligheidsvoorschrift"@nl , "strekt tot bescherming"@nl , "onrechtmatig handelen"@nl , "nalaten"@nl , "bescherming van belangen"@nl , "plicht die voortvloeit uit de wet"@nl , "doen in strijd met recht"@nl , "maatschappelijk onbehoorlijk gedrag"@nl , "bouwverordening"@nl , "doen_in_strijd_met_recht"@nl , "norm"@nl , "overtreden"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Een doen in strijd met het recht kan bijvoorbeeld bestaan uit een handelen in strijd met de maatschappelijk aanvaarde zorgvuldigheid die men in acht moet nemen, een aantasting van een belang of een handelen in strijd met de wet."^^xsd:string , "Een nalaten in strijd met het recht kan bijvoorbeeld bestaan in het nalaten van het treffen van voorzorgsmaatregelen ten behoeve van de veiligheid of het voort laten bestaan van een gevaarlijke toestand."^^xsd:string , "Handelen in strijd met een wettelijke plicht is onrechtmatig. Hiervoor kan een verplichting tot schadevergoeding ontstaan indien ook aan de andere aansprakelijkheidsvereisten is voldaan. Of er is gehandeld in strijd met een wettelijke plicht wordt bepaald aan de hand van de aantasting van een ander zijn belang, de bekendheid met dit belang en of de norm die geschonden is diende ter bescherming tegen of voorkoming van de schade."^^xsd:string .
+
+tvn:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt
+      mtv:same tv:in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt , tv:handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "betaamt"@nl , "wanprestatie"@nl , "zorgvuldigheidsplicht"@nl , "verwezenlijking van gevaar"@nl , "maatschappelijke betamelijkheid"@nl , "omvang bijzondere zorgplicht"@nl , "spel"@nl , "ongelukkige samenloop van omstandigheden"@nl , "verkeer"@nl , "sport en spel"@nl , "onvoldoende poging"@nl , "ernstige fout"@nl , "minimum aansprakelijkheid"@nl , "handelen in strijd met hetgeen in het maatschappelijk verkeer betaamt"@nl , "onrechtmatig jegens derden"@nl , "margeverplichting"@nl , "verkeersongeval"@nl , "kwalitatief aansprakelijk"@nl , "sport - en spel"@nl , "standaard mededeling"@nl , "interne richtlijn"@nl , "niet-naleving"@nl , "risico aansprakelijk"@nl , "maatschappelijk verkeer"@nl , "overheidsaansprakelijkheid"@nl , "Dicky-trading regel"@nl , "milieu"@nl , "risico-schade"@nl , "onnodig gevaar"@nl , "willekeur-toets"@nl , "staking"@nl , "dekkingstekort"@nl , "niet-nakoming van een overeenkomst"@nl , "hetgeen in het maatschapelijk verkeer betaamt"@nl , "in strijd met hetgeen in het maatschappelijk verkeer betaamt"@nl , "externe voorschriften"@nl , "algemeen geldende opvattingen"@nl , "veiligheid"@nl , "handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt"@nl , "te ver verwijder verband"@nl , "verkeersonvertreding"@nl , "in strijd met de zorgplicht"@nl , "behoren te weten"@nl , "beroepsfout"@nl , "maatschappelijke zorgvuldigheid" , "maatschappelijke zorgvuldigheid"@nl , "onrechtmatige schadetoebrenging"@nl , "onrechtmatige daad jegens derden"@nl , "bestuurdersaansprakelijkheid"@nl , "gebrek aan inzicht"@nl , "gevaarssituatie"@nl , "buiten de lijn der normale verwachtingen"@nl , "bestuursfout"@nl , "beschermen tegen gevaar"@nl , "opmerkzaam maken"@nl , "hinder"@nl , "zorgvuldigheidsnorm" , "zorgvuldigheidsnorm"@nl , "heersende opvatting"@nl , "doen of nalaten in strijd met hetgeen in het maatschappelijk verkeer betaamt"@nl , "sport"@nl , "leiding"@nl ;
+      skos:note "Aansprakelijkheid kan ontstaan op grond van een handelen in strijd met hetgeen in het maatschappelijk verkeer betaamt. Dit betekent dat iemand aansprakelijk kan zijn voor schade die ontstaat als gevolg van het niet in acht nemen van de normale maatschappelijke zorgvuldigheid. Hieronder vallen onder meer normen met betrekking tot verkeers- en veiligheidssituaties. Situaties waarin sprake kan zijn van maatschappelijke onzorgvuldigheid (en dus mogelijk aansprakelijkheid) zijn onder meer: sport en spel situaties, leidingschades, ongelukkige samenloop van omstandigheden. Ook kunnen normen ter bescherming van vermogensschade een handelen in strijd met de maatschappelijke zorgvuldigheid opleveren. Het gaat dan om omstandigheden waarin bijvoorbeeld onvoldoende rekening is gehouden met andermans belangen. Het doorspelen van informatie die de concurrentiepositie verzwakt valt hier ook onder.  Ook hinder, milieudelicten, wanprestatie, niet-nakoming van de overeenkomst, beroepsfouten, stakingen, verkeersongevallen en bestuurdersaansprakelijkheid vallen hier ook onder. Ook de aantasting van de eer en goede naam en de toelaatbaarheid van het gedrag zijn situaties waarin sprake kan zijn van maatschappelijke onzorgvuldigheid. Of er in dergelijke situaties ook sprake is van maatschappelijk onzorgvuldig handelen hangt af van een aantal factoren: kans dat anderen niet goed opletten, de kans op het ontstaan van ongevallen, de ernst van de gevolgen die kunnen ontstaan, de mate waarin het nemen van veiligheidsmaatregelen bezwaarlijk is."^^xsd:string .
+
+tvn:exploitant_boorgat
+      mtv:same tv:exploitant_mijnbouwwerk ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "opsporen of het winnen van aardwarmte"@nl , "exploitant mijnbouwwerk"@nl , "mijnbouwwet"@nl , "mijnbouwwerk"@nl , "exploitant van een mijnbouwwerk"@nl , "in gebruik heeft"@nl , "exploitant"@nl , "opsporen of winnen van aardwarmte"@nl , "aanleg"@nl , "houder van een vergunning"@nl , "opsporen of winnen van delfstoffen"@nl , "mijnbouwwerken"@nl , "opsporen of het winnen van delfstoffen"@nl , "doet aanleggen"@nl ;
+      skos:note "Voor schade ontstaan als gevolg van de uitstroom van delfstoffen kan de exploitant van een mijnbouwwerk aansprakelijk worden gesteld. Degene die op grond van de Mijnbouwwet een vergunning houdt en een mijnbouwwerk aanlegt of in gebruik heeft kan worden aangemerkt als exploitant van een mijnbouwwerk. Een persoon die niet over de in de Mijnbouwwet genoemde vergunning beschikt voor de aanleg of het in gebruik hebben van een mijnbouwwerk kan toch als exploitant van een mijnbouwwerk worden aangemerkt. Dit zal niet het geval zijn als hij in opdracht handelde van een vergunninghouder of als ondergeschikte kan worden aangemerkt."^^xsd:string .
+
+tvn:exploitant_stortplaats
+      mtv:same tv:exploitant_stortplaats ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijk"@nl , "rust de aansprakelijkheid op"@nl , "stof"@nl , "exploitant"@nl , "werking daarvan te veranderen"@nl , "na sluiting"@nl , "tijdstip waarop de schade bekend wordt"@nl , "op de stortplaats"@nl , "niet in het bezit van een vergunning"@nl , "wettelijk toegelaten"@nl , "stortplaats voor afvalstoffen"@nl , "vergunning"@nl , "op te richten"@nl , "aansprakelijkheid"@nl , "richtlijn 75/442/EG"@nl , "deponeren"@nl , "opeenvolgende exploitant van een stortplaats"@nl , "Bijlage I genoemde categorieën"@nl , "gestort of doen storten"@nl , "door de exploitant daarvan"@nl , "in werking te hebben"@nl , "doel"@nl , "afgeven"@nl , "exploitant van een stortplaats zonder vergunning"@nl , "op of in de bodem te brengen"@nl , "exploitatie van een stortplaats"@nl , "exploitant van een stortplaats"@nl , "een ander exploitant van de stortplaats wordt"@nl , "storten van afvalstoffen"@nl , "deponeren of afgeven"@nl , "opvolgende exploitant van een stortplaats"@nl , "exploitatie"@nl , "exploitant_stortplaats"@nl , "het storten van"@nl , "wet milieubeheer"@nl , "milieu"@nl , "afval"@nl , "geldende overheidsvoorschriften"@nl , "verontreiniging"@nl , "gesloten stortplaats"@nl , "voornemens is zich te ontdoen of zich moet ontdoen"@nl , "exploitant van stortplaatsen"@nl , "die tijdens dit bekend worden exploitant was"@nl , "van die stoffen ontdoen"@nl , "ontdoen"@nl , "Bijlage I bij richtlijn 75/442/EG"@nl , "voor of na sluiting"@nl , "zaak of een stof"@nl , "exploitant stortplaats"@nl , "waarvan de houder zicht ontdoet"@nl , "laatste exploitant"@nl , "storten"@nl , "bestemd voor het storten"@nl , "milieubeheer"@nl , "zodanige vergunning"@nl , "afvalstof"@nl , "milieuverontreiniging"@nl , "lucht"@nl , "voor die sluiting gestorte stoffen"@nl , "afvalkaderrichtlijn"@nl , "richtlijn betreffende afvalstoffen"@nl , "te veranderen"@nl , "exploitant stortplaatscriterium"@nl , "bodem"@nl , "terrein"@nl , "alle stoffen, preparaten of andere producten"@nl , "exploitant_stortplaats_zonder_vergunning"@nl , "al of niet verpakte stoffen"@nl , "stortplaats"@nl , "exploitant stortplaats zonder vergunning"@nl ;
+      skos:note "De exploitant van een stortplaats kan aansprakelijk zijn voor schade die voortvloeit uit het exploiteren van die stortplaats. Onder een exploitant van een stortplaats wordt verstaan degene die een vergunning heeft voor het exploiteren van een stortplaats (art. 8.1 Wet milieubeheer). Als exploitant wordt ook aangemerkt degene die de stortplaats exploiteert zonder dat hij beschikt over een vergunning op grond van de Wet milieubeheer."^^xsd:string , "De exploitant van een stortplaats kan aansprakelijk zijn voor schade die voortvloeit uit het exploiteren van die stortplaats. Onder een exploitant van een stortplaats wordt zowel verstaan degene die een vergunning heeft voor het exploiteren van een stortplaats (art. 8.1 Wet milieubeheer), alsook degene die de stortplaats exploiteert zonder dat hij beschikt over een vergunning op grond van de Wet milieubeheer."^^xsd:string .
+
+tvn:factoren_onrechtmatigheid_hinder
+      mtv:same tv:hinder ;
+      to:fingerprint _:b37 ;
+      skos:altLabel "hinder"@nl ;
+      skos:note """Er kan aansprakelijkheid bestaan voor veroorzaakte hinder. Hierbij kan men denken aan het teweegbrengen van geluid, trillingen, stank, rook en gassen, het onthouden van lucht, licht of het ontnemen van steun. Om te bepalen of er sprake is van een hindersituatie zal de rechter voor zijn oordeel de aard, ernst en duur van de hinder en de daardoor toegebrachte schade in verband met de overige omstandigheden in aanmerking nemen. Onder de aard van de hinder wordt onder meer verstaan hinder veroorzaakt door geluid, stank, stof dan wel door belemmering van het uitzicht. 
+	De ernst van de hinder is een minimumvoorwaarde voor onrechtmatigheid en vereist dat de hinder voldoende ernstig is. De ernst moet bemeten worden naar de plaatselijke omstandigheden. 
+	Het duurcriterium brengt met zich mee dat hinder die relatief (eventueel met tussenpozen) lang duurt, eerder als onrechtmatig zal worden aangemerkt dan korter durdende hinder.De invloed van de overige omstandigheden van het geval heeft met name betrekking op het gewicht van de belangen die door de hinder toebrengende activiteit zijn gediend en de bezwaarlijkheid van het nemen van maatregelen."""^^xsd:string .
+
+tvn:gebrekkige_opstal
+      mtv:same tv:opstal ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "produkt is gebrekkig"@nl , "gebrekkig produkt"@nl , "gebrek in het produkt"@nl , "het bestaan van het gebrek te kennen"@nl , "produktaansprakelijkheid"@nl , "bekendheid met het gebrek van het product"@nl , "veiligheid die men van het product mag verwachten"@nl , "dit gebrek later is ontstaan"@nl , "schade veroorzaakt door een gebrek in het produkt"@nl , "gebrek aan het produkt"@nl , "produktaansprakelijk"@nl , "gebrek in zijn produkt"@nl , "gebrek is te wijten aan een ontwerp van het produkt"@nl , "een beter produkt in het verkeer is gebracht"@nl , "veiligheid die men daarvan mag verwachten"@nl , "schade veroorzaakt door een gebrek in het product"@nl , "tijdstip waarop het produkt in het verkeer werd gebracht"@nl , "redelijkerwijs te verwachten gebruik"@nl , "produkt in het verkeer werd gebracht"@nl , "product in het verkeer werd gebracht"@nl , "bekendheid met het gebrek van het produkt"@nl , "tijdstip waarop het product in het verkeer is gebracht"@nl , "veiligheid die men van het produkt mag verwachten"@nl , "opstal"@nl , "als gebrekkig beschouwd"@nl , "tijdstip waarop het produkt in het verkeer is gebracht"@nl , "gebrek dat schade heeft veroorzaakt"@nl , "gebrek in zijn product"@nl , "gebrek is te wijten aan een ontwerp van het product"@nl , "gebrek als gevolg van dwingende overheidsvoorschriften"@nl , "gebrekkige zaak"@nl ;
+      skos:note "Voor de aansprakelijkheid van opstallen zullen de volgende zaken als opstal worden aangemerkt: gebouwen of werken, die duurzaam met de grond zijn verenigd. Ook onderdelen van gebouwen kunnen als opstal worden aangemerkt indien zij onlosmakelijk met het gebouw of werk zijn verenigd (bijvoorbeeld dakpannen, liften, regenpijpen, schuttingen, riolen, dakgoten, sluizen, telefoonpalen, mijngangen en mogelijk ook dijken). Ondergrondse leidingen worden in de regel ook beschouwd als opstal."^^xsd:string .
+
+tvn:gebrekkige_zaak
+      mtv:same tv:zaak ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "opstallen"@nl , "roerende zaak"@nl , "zaak"@nl , "stoffelijke objecten"@nl , "onroerende zaken"@nl , "gebrek"@nl , "opstal"@nl , "stof"@nl , "zaken"@nl , "roerende_zaak"@nl ;
+      skos:note ""^^xsd:string , "Roerende zaken zijn alle zaken met uitzondering van alle onroerende zaken en dieren, schepen en luchtvaartuigen. Onroerende zaken zijn de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen en gebouwen en werken die duurzaam met grond verenigd zijn. De vereniging met de grond kan rechtstreeks dan wel door middel van vereniging met andere gebouwen of werken zijn."^^xsd:string , "De zaak dient te voldoen aan de eisen die men daaraan onder de gegeven omstandigheden mocht stellen. De rechter gaat bij de beoordeling van 'het bestaan van een gebrek' uit van hetgeen de gebruiker redelijkerwijs mocht verwachten, afhankelijk van de omstandigheden."^^xsd:string .
+
+tvn:geestelijke_tekortkoming
+      mtv:same tv:geestelijke_tekortkoming ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "geestelijke tekortkoming"@nl , "geestelijke_tekortkoming"@nl ;
+      skos:note "Er is sprake van een geestelijke tekortkoming indien iemand in het dagelijks leven niet goed kan functioneren omdat hij langdurig geestelijk lijdt dan wel anderszins hinder ondervindt van mentale gebreken of tekortkomingen."^^xsd:string .
+
+tvn:gevaarlijke_stof
+      mtv:same tv:stof ;
+      to:fingerprint _:b7 , _:b8 , _:b9 , _:b10 , _:b12 , _:b11 , _:b13 , _:b14 , _:b15 , _:b16 , _:b17 , _:b18 , _:b19 , _:b20 , _:b21 , _:b22 , _:b23 , _:b24 , _:b25 , _:b26 , _:b27 , _:b28 , _:b29 , _:b30 , _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b36 ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "vaste stoffen"@nl , "de categorie licht ontvlambaar"@nl , "criteria en methoden"@nl , "gevaren die aan de stof zijn verbonden"@nl , "oxyderend"@nl , "stof"@nl , "chemische elementen en hun verbindingen"@nl , "de categorie kankerverwekkend"@nl , "de categorie schadelijk"@nl , "de categorie zeer giftig"@nl , "Besluit aanwijzing gevaarlijke afvalstoffen"@nl , "richtlijn 67/548/EEG"@nl , "de categorie bijtend"@nl , "de categorie oxyderend"@nl , "de categorie zeer licht ontvlambaar"@nl , "prepareren"@nl , "zodanige eigenschappen"@nl , "de categorie ontvlambaar"@nl , "niet voor menselijke beheersing vatbaar"@nl , "indeling, verpakking en het kenmerken van gevaarlijke stoffen"@nl , "de categorie ontplofbaar"@nl , "zeer vergiftig"@nl , "gevaar van ernstige aard voor personen of zaken"@nl , "de categorie vergiftig"@nl , "de categorie mutageen"@nl , "stoffen met een bijzonder gevaar van ernstige aard"@nl , "de categorie voor de voortplanting vergiftig"@nl , "de categorie irriterend"@nl , "verpakking en de sluiting"@nl , "zeer licht ontvlambaar"@nl , "de categorie sensibiliserend"@nl ;
+      skos:note "Als stof kan worden beschouwd: vaste stoffen, vloeistoffen, gassen en levende micro-organismen zoals een bacterie of virus-kweek."^^xsd:string .
+
+tvn:gevaarzetting
+      mtv:same tv:gevaarzetting ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "beperking"@nl , "in stand houden"@nl , "gevaar"@nl , "voorkoming"@nl , "veiligheid"@nl , "nalaten"@nl , "gevaarlijke_toestand"@nl , "gevaarlijk"@nl , "voortbestaan"@nl , "voorschrift"@nl , "gevaarzetting"@nl , "gevaarlijke toestand"@nl , "waarschuwing"@nl ;
+      skos:note "Er is sprake van een schending van een verkeers- en veiligheidsnorm indien een situatie in het leven is geroepen waarop de ander niet bedacht hoeft te zijn. Een dergelijke situatie wordt ook wel aangeduid als gevaarzetting. Er is echter niet alleen sprake van gevaarzetting indien een bepaald gevaar in het leven is geroepen, maar ook als voorzorgsmaatregelen met betrekking tot dat gevaar achterwege worden gelaten. Het kan hierbij om een gevaar voor personen alsmede om een gevaar voor zaken."^^xsd:string , "Aansprakelijkheid voor een nalaten kan berusten op het veroorzaken of in stand houden van een gevaarlijke toestand. Doorgaans zal worden gekeken of er adequate waarschuwingsmaatregelen zijn getroffen."^^xsd:string .
+
+tvn:grond_toerekening_aan_dader
+      mtv:same tv:causaliteit_vestigingsfase , tv:toerekening_vestigingsfase ;
+      to:fingerprint _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b46 , _:b47 , _:b48 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "omkeringsregel"@nl , "omkeringsregel" , "toerekenbaarheid"@nl , "toerekenbaarheid" , "causaliteit vestigingsfase"@nl , "toerekening vestigingsfase"@nl , "schuld"@nl , "toerekenen" , "toerekenen"@nl , "verwijtbaarheid"@nl , "verwijtbaarheid" , "toerekeningsvraag"@nl , "causaliteit_vestigingsfase"@nl , "toegerekend"@nl , "toerekening"@nl , "toerekening" ;
+      skos:note "Een voorwaarde voor aansprakelijkheid is dat de schadeveroorzakende gedraging kan worden toegerekend aan degene die men aansprakelijk wilt stellen voor het ontstaan van de schade. Hiervoor wordt gekeken naar de persoonlijke verwijtbaarheid of schuld van degene die men aansprakelijk wenst te stellen, of de schade naar maatschappij opvattingen voor rekening dienen te komen van een bepaalde persoon en of het vergoeden van de schade op grond van de wet voor rekening van een bepaalde persoon moet komen."^^xsd:string , "Iemand kan pas aansprakelijk worden gesteld voor schade als gevolg van zijn handelen als er onder meer een oorzakelijk verband is tussen de schadeveroorzakende gebeurtenis en de schade."^^xsd:string .
+
+tvn:grond_voor_onrechtmatigheid
+      mtv:same tv:onrechtmatigheidscriteria ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "onrechtmatigheidscriterium"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Voor het bestaan van aansprakelijkheid dient aan een aantal criteria te zijn voldaan. Een van deze criteria is dat de gedraging waardoor de schade is veroorzaakt een onrechtmatig karakter dient te hebben. Er is sprake van onrechtmatigheid indien er sprake is van een handeling in strijd met de wet, van een inbreuk op een recht of als er wordt gehandeld in strijd met de maatschappelijke zorgvuldigheid."^^xsd:string .
+
+tvn:hinder
+      mtv:same tv:hinder ;
+      to:fingerprint _:b37 ;
+      skos:altLabel "hinder"@nl ;
+      skos:note """Er kan aansprakelijkheid bestaan voor veroorzaakte hinder. Hierbij kan men denken aan het teweegbrengen van geluid, trillingen, stank, rook en gassen, het onthouden van lucht, licht of het ontnemen van steun. Om te bepalen of er sprake is van een hindersituatie zal de rechter voor zijn oordeel de aard, ernst en duur van de hinder en de daardoor toegebrachte schade in verband met de overige omstandigheden in aanmerking nemen. Onder de aard van de hinder wordt onder meer verstaan hinder veroorzaakt door geluid, stank, stof dan wel door belemmering van het uitzicht. 
+	De ernst van de hinder is een minimumvoorwaarde voor onrechtmatigheid en vereist dat de hinder voldoende ernstig is. De ernst moet bemeten worden naar de plaatselijke omstandigheden. 
+	Het duurcriterium brengt met zich mee dat hinder die relatief (eventueel met tussenpozen) lang duurt, eerder als onrechtmatig zal worden aangemerkt dan korter durdende hinder.De invloed van de overige omstandigheden van het geval heeft met name betrekking op het gewicht van de belangen die door de hinder toebrengende activiteit zijn gediend en de bezwaarlijkheid van het nemen van maatregelen."""^^xsd:string .
+
+tvn:inbreuk_auteursrecht
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b51 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "subjectieve rechten" , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "behoorlijk gedrag"@nl , "subjectief recht"@nl , "subjectief recht" , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht" , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken"@nl , "inbreuk maken" ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_eigendomsrecht
+      mtv:same tv:eigendomsrecht ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "eigendomsrecht"@nl .
+
+tvn:inbreuk_huisrecht
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b74 , _:b73 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "aard en plaats"@nl , "ernst"@nl , "aantasting"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "behoorlijk gedrag"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "subjectief recht" , "subjectief recht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "inbreuk op een subjectief recht" , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "inbreuk maken" , "inbreuk maken"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_lichamelijke_integriteit
+      mtv:same tv:recht_op_lichamelijke_integriteit ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "recht op lichamelijke integriteit"@nl , "recht_op_lichamelijke_integriteit"@nl .
+
+tvn:inbreuk_merkenrecht
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b58 , _:b57 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b74 , _:b73 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "behoorlijk gedrag"@nl , "subjectief recht"@nl , "subjectief recht" , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "inbreuk op een subjectief recht" , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken" , "inbreuk maken"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_octrooirecht
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b58 , _:b57 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b74 , _:b73 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend" , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "grondrecht"@nl , "behoorlijk gedrag"@nl , "subjectief recht"@nl , "subjectief recht" , "beperkt zakelijk recht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "inbreuk op een subjectief recht" , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken"@nl , "inbreuk maken" ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_op_een_absoluut_vermogensrecht
+      mtv:same tv:vermogensrecht ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "vermogensrecht"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn als er sprake is van een onrechtmatig handelen. Handelen is onrechtmatig als er gehandeld is in strijd met de wet, in strijd met hetgeen in de maatschappij als zorgvuldig wordt beschouwd of als er een inbreuk is gemaakt op een recht. Indien iemand een inbreuk heeft gemaakt op  het recht van een ander, moet dit een inbreuk zijn op een subjectief recht. Een subjectief recht is een persoonlijkheidsrecht of een vermogensrecht. Een inbreuk op een vermogensrecht kan een inbreuk zijn op een absoluut recht (zoals het recht van eigendom of het recht op voortbrengselen van de geest (intellectueel eigendom/auteursrecht) of inbreuk op een beperkt recht (zoals een inbreuk op rechten van huurder of pachter of vruchtgebruik)."^^xsd:string .
+
+tvn:inbreuk_op_een_persoonlijkheidsrecht
+      mtv:same tv:persoonlijkheidsrecht ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "persoonlijkheidsrecht"@nl ;
+      skos:note "Voorbeelden van persoonlijkheidsrechten zijn bijvoorbeeld een recht op goede naam, leven, lichamelijke integriteit, privacy of vrijheid. Op deze rechten kan een inbreuk worden gemaakt waardoor een verplichting tot betaling van schadevergoeding kan ontstaan."^^xsd:string .
+
+tvn:inbreuk_op_een_recht
+      mtv:same tv:subjectief_recht , tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b58 , _:b57 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b78 , _:b77 , _:b79 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "intensiteit_van_de_inbreuk"@nl , "inbreuk op een recht"@nl , "recht op lichamelijke integriteit"@nl , "belangen van partijen"@nl , "belangenafweging"@nl , "inbreukcriterium"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "intensiteit van de inbreuk"@nl , "subjectief_recht"@nl , "recht op een goede naam"@nl , "recht van vruchtgebruik"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "rechtspraak"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "intensiteit van de inbreuk op de grondrechten"@nl , "verwijt treffen"@nl , "recht_op_leven"@nl , "culpose inbreuk"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "behoorlijk gedrag"@nl , "beperkt zakelijk recht"@nl , "ondervonden schade"@nl , "recht op privacy"@nl , "inbreuk op een subjectief recht"@nl , "inbreuk op een subjectief recht" , "objectief_recht"@nl , "onrechtmatigheid"@nl , "auteursrecht"@nl , "beperkt recht"@nl , "wet"@nl , "recht op vrijheid"@nl , "persoonlijkheidsrecht"@nl , "recht van huurder"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "inbreuk"@nl , "aard en plaats"@nl , "objectief recht"@nl , "aantasting"@nl , "jurisprudentie"@nl , "absoluut recht"@nl , "botsende belangen"@nl , "vermogensrecht"@nl , "huisrecht"@nl , "recht van pachter"@nl , "absolute vermogensrechten"@nl , "recht op voortbrengselen van de geest"@nl , "recht op leven"@nl , "inbreukmakende gedraging"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "lichamelijke identiteit"@nl , "subjectief recht"@nl , "subjectief recht" , "grondrecht"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "wetgeving"@nl , "recht_op_vrijheid"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "norm"@nl , "storing in zijn recht"@nl , "inbreuk maken"@nl , "inbreuk maken" ;
+      skos:note "Een persoon kan aansprakelijk zijn voor een onrechtmatige gedraging van hemzelf of van personen waarvoor hij verantwoordelijk is. Voor het ontstaan van aansprakelijkheid is onder meer vereist dat er sprake is van 'onrechtmatigheid'. Onrechtmatigheid heeft betrekking op een gedraging of handeling in strijd met de wet, met de maatschappelijke zorgvuldigheid of als er een inbreuk is gemaakt op een recht. De rechten waarop een inbreuk kan worden gemaakt zijn bijvoorbeeld, het recht op leven, privacy, eigendom, auteursrecht, rechten van de huurder of pachter, het recht op een goede naam pf het recht op vruchtgebruik. Er kan inbreuk op deze rechten worden gemaakt indien er in strijd wordt gehandeld met de exclusieve bevoegdheid van degene die een bepaald recht heeft of indien deze rechthebbende wordt belemmerd in zijn genot, beschikking of het gebruik van zijn rechten. Hiervan is sprake als ernst en duur van de hinder, omstandigheden van het geval, voorzorgsmaatregelen om de hinder te beperken of te voorkomen en maatschappelijke zorgvuldigheid."^^xsd:string , "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string , """Bij de beoordeling of een gedraging kan leiden tot aansprakelijkheid moet worden gekeken of er sprake is van een handelen in strijd met de wet, in strijd met de maatschappij opvattingen of dat er een inbreuk is gemaakt op een recht. In geval er sprake is van een inbreuk op een recht kunnen belangen van partijen botsen. Indien er sprake is van botsende rechten zal zowel een algemene beoordeling van de onderlinge rangorde van de ingeroepen grondrechten als
+	de intensiteit van de inbreuk op de grondrechten  in overweging worden genomen."""^^xsd:string , "Een persoon kan aansprakelijk zijn als er sprake is van een onrechtmatig handelen. Handelen is onrechtmatig als er gehandeld is in strijd met de wet, in strijd met hetgeen in de maatschappij als zorgvuldig wordt beschouwd of als er een inbreuk is gemaakt op een recht. Indien iemand een inbreuk heeft gemaakt op  het recht van een ander, moet dit een inbreuk zijn op een subjectief recht. Een subjectief recht is een persoonlijkheidsrecht (zoals het recht op een goede naam, op leven, op lichamelijk integriteit, op privacy of op vrijheid) of op een vermogensrecht ( bijvoorbeeld het recht op eigendom, voortbrengselen van de geest (intellectueel eigendom/auteursrecht) of op rechten van huurder, pachter of rechten van vruchtgebruik."^^xsd:string .
+
+tvn:inbreuk_privacy
+      mtv:same tv:recht_op_privacy ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "recht op privacy"@nl , "recht_op_privacy"@nl .
+
+tvn:inbreuk_recht_op_bijstand
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b51 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "aard en plaats"@nl , "ernst"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "subjectieve rechten" , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "subjectief recht"@nl , "behoorlijk gedrag"@nl , "subjectief recht" , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht" , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "inbreuk maken"@nl , "inbreuk maken" , "onrechtmatigheid"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_recht_op_leefbaar_milieu
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b58 , _:b57 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend" , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "subjectief recht"@nl , "subjectief recht" , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "behoorlijk gedrag"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht" , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "inbreuk maken"@nl , "inbreuk maken" , "onrechtmatigheid"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:inbreuk_recht_op_onderwijs
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "inbreukmakend" , "persoonlijkheidsrecht"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "aard en plaats"@nl , "ernst"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "subjectieve rechten" , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "grondrecht"@nl , "subjectief recht"@nl , "beperkt zakelijk recht"@nl , "behoorlijk gedrag"@nl , "subjectief recht" , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht" , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken" , "inbreuk maken"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:kelderluik_criterium
+      mtv:same tv:kelderluikcriteria ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "kelderluik-arrest" , "kelderluik-arrest"@nl , "kelderluikcriterium"@nl , "criterium, criteria, beoordelingscriterium, beoordelingscriteria, conditio sine qua non-criteria, csqn-criteria, toerekeningscriteria, invulling beoordelingscriterium, beoordeling aan de hand van,"@nl , "kelderluikcriteria"@nl , "kelderluik-factor"@nl , "criterium"@nl ;
+      skos:note "Voor aansprakelijkheid is onder meer vereist dat er sprake is van onrechtmatigheid. De onrechtmatigheid kan gelegen zijn in een handelen in strijd met een wettelijke bepaling, een inbreuk op een recht of een handelen in strijd met de maatschappelijke zorgvuldigheid. Het creeren en in stand houden van een gevaarlijke situatie wordt gezien als een handelen in strijd met de maatschappelijke zorgvuldigheid. De rechter zal voor de beoordeling van het (laten voort)bestaan van een gevaarlijke situatie de omstandigheden van de situatie bij zijn beoordeling in overweging nemen. Hierbij zal hij onder meer kjken naar de kans dat anderen niet goed opletten, de kans dat daardoor ongevallen ontstaan, de ernst van de gevolgen die kunnen ontstaan en de mate waarin het nemen van veiligheidsmaatregelen bezwaarlijk is."^^xsd:string , "De rechter hanteert een aantal beoordelingscriteria om te bepalen of er sprake is van een bepaalde vorm van aansprakelijkheid. Deze criteria kunnen in de rechtspraak bovendien nog verder worden uitgewerkt."^^xsd:string .
+
+tvn:kind_jonger_dan_14_jaar
+      mtv:same tv:kind_jonger_dan_14 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "15 jaar oud"@nl , "kind ouder dan 16"@nl , "kind jonger dan 14"@nl , "14 jaren"@nl , "leeftijd daaraan niet in de weg zou staan"@nl , "jonger dan"@nl , "leeftijd van veertien jaar heeft bereikt"@nl , "14 jaar"@nl , "kind_jonger_dan_14_jaar"@nl , "leeftijd"@nl , "kind"@nl , "kinderen jonger dan veertien jaar"@nl , "leeftijd van veertien jaren nog niet heeft bereikt"@nl , "kinderen"@nl , "14 jaar oud"@nl , "kind van 14 of 15 jaar oud"@nl , "minderjarige"@nl , "leeftijd van veertien jaar nog niet heeft bereikt"@nl , "16 jaar oud"@nl , "veertien jaren"@nl , "kind jonger dan 14 jaar"@nl , "kind in de leeftijd van"@nl , "veertien jaar"@nl , "kind met de leeftijd van"@nl ;
+      skos:note "Een kind dat nog niet de leeftijd van 14 jaar heeft bereikt."^^xsd:string , "Een kind is een persoon die als minderjarig kan worden aangemerkt, dat wil zeggen dat het de leeftijd van 18 jaar nog niet heeft bereikt."^^xsd:string .
+
+tvn:kind_van_veertien_of_vijftien_jaar
+      mtv:same tv:kind_van_14_of_15_jaar ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "14 jaren" , "14 jaren"@nl , "14 jaar" , "14 jaar"@nl , "vijftien jaren"@nl , "vijftien jaar" , "vijftien jaar"@nl , "15 jaren"@nl , "15 jaren" , "15 jaar"@nl , "15 jaar" , "kind van 14 of 15 jaar"@nl , "veertien jaren"@nl , "veertien jaren" , "veertien jaar"@nl , "veertien jaar" ;
+      skos:note "Een kind van 14 of 15 jaar oud."^^xsd:string .
+
+tvn:leidingbeheerder
+      mtv:same tv:leidingschade ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "leidingschade"@nl ;
+      skos:note "Binnen de gevaarzettingsituaties vormt de aansprakelijkheid voor leidingschade een aparte categorie. Onder leidingschade wordt verstaan schade aan ondergrondse kabels, leidingen en buizen ontstaan bij de uitvoering van werkzaamheden. Bij de aansprakelijkheid voor leidingschades vormt de aansprakelijkheid van de aannemer het uitgangspunt. Of er aansprakelijkheid ontstaat voor leidingschade als gevolg van het handelen van een aannemer hangt af van de beantwoording van de vraag of de aannemer bedacht diende te zijn op de mogelijke aanwezigheid van leidingen in de grond. Om te bepalen of de aannemer bedacht diende te zijn op de aanwezigheid van leidingen in de grond is afhankelijk van de volgende factoren: de feitelijke omstandigheden, zoals de aard het terrein waar de werkzaamheden worden uitgevoerd, de waarschijnlijkheid dat eventuele leidingen gemarkeerd zijn, de diepte waarop de leidingen zullen liggen, de bekende vroegere bestemmingen van het terrein, de houding van de leidingbeheerder en de aard van de werkzaamheden"^^xsd:string .
+
+tvn:milder_regime_natuurlijk_persoon_als_werkgever
+      mtv:same tv:ondergeschikte_in_dienst_natuurlijk_persoon ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "ondergeschikte_in_dienst_natuurlijk_persoon"@nl , "ondergeschikte in dienst natuurlijk persoon"@nl , "ondergeschikte in dienst van een natuurlijk persoon"@nl .
+
+tvn:milieu_aansprakelijkheid
+      mtv:same tv:milieu ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "milieu"@nl ;
+      skos:note """In geval van mileudelicten kan er kan sprake zijn van schending van een in de milieuwetgeving neergelegde zorgplicht dan wel van een ongeschreven zorgvuldigheidsnorm. 
+	Op het terrein van milieu wordt schending van een ongeschreven zorgvuldigheidsnorm bepaald aan de hand van de vraag of de dader anders heeft gehandeld dan hij had moeten doen teneinde geen schade toe te brengen aan een bepaald belang van een ander dat hij had behoren te ontzien. Daarbij is het eveneens van belang dat hij het belang kende of behoorde te kennen.  Bij beantwoording van de vraag naar de zorgvuldigheid die hij in acht had behoren te nemen spelen de aard, ernst en duur van de hinder een rol."""^^xsd:string .
+
+tvn:noodweer
+      mtv:same tv:noodweer ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "noodweer"@nl ;
+      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Noodweerl is een rechtvaardigingsgrond. Dit betekent dat onder de gegeven omstandigheden het gebruik van een middel om zichzelf te verdedigen te rechtvaardigen is. Dit middel dient wel geboden te zijn geweest in de situatie die zich voor heeft gedaan. Een voorbeeld van noodweer is bijvoorbeeld het rondzwaaien met een ijzeren staf als iemand dreigt te worden aangevallen door een persoon met pistool."^^xsd:string .
+
+tvn:noodweerexces
+      mtv:same tv:noodweer_exces ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "schulduitsluitingsgrond"@nl , "noodweer exces"@nl , "noodweer_exces"@nl , "noodweerexces"@nl , "noodweer-exces"@nl ;
+      skos:note "Er is sprake van noodweer-exces als de grenzen van noodzakelijke verdediging zijn overschreden. Dit kan zich voordoen als gevolg van een hevige gemoedstoestand, die buiten de schuld van de dader is ontstaan. Indien er sprake is van noodweer-exces, kan de aansprakelijkheid voor schade als gevolg van een gedraging komen te ontvallen."^^xsd:string .
+
+tvn:onbevoegd_gegeven_ambtelijk_bevel
+      mtv:same tv:onbevoegd_gegeven_ambtelijk_bevel ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "schulduitsluitingsgrond"@nl , "onbevoegd gegeven ambtelijk bevel"@nl , "onbevoegd_gegeven_ambtelijk_bevel"@nl ;
+      skos:note "Er kan sprake zijn van een onbevoegd gegeven ambtelijk bevel. De aansprakelijkheid kan komen te ontvallen indien iemand er op af mocht gaan dat dit bevel bevoegd gegeven was."^^xsd:string .
+
+tvn:oneerlijke_concurrentie
+      mtv:same tv:oneerlijke_concurrentie ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "oneerlijke concurrentie"@nl , "doorspelen van informatie"@nl ;
+      skos:note "Er is sprake van oneerlijke concurrentie indien bijvoorbeeld tegen bepaalde concurrenten te agressief wordt opgetreden, op onbehoorlijke wijze wordt aangehaakt bij diens producten of diensten door nabootsing of door misleidende en/of vergelijkende reclame of door zich niet te houden aan geldende voorschriften. Daarnaast kan er bijvoorbeeld sprake zijn van oneerlijke concurrentie indien bedrijfsgegevens worden doorgespeeld ten behoeve van de concurrentie."^^xsd:string .
+
+tvn:ongeschreven_rechtvaardigingsgrond
+      mtv:same tv:ongeschreven_rechtvaardigingsgrond ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "rechtvaardigingsgrond"@nl , "ongeschreven rechtvaardigingsgrond"@nl , "uitdelen van een klap in een bedreigende situatie"@nl , "omstandigheid die het schadeveroorzakende handelen rechtvaardigt"@nl , "ongeschreven_rechtvaardigingsgrond"@nl ;
+      skos:note "Indien de rechter van oordeel is dat er een rechtvaardigingsgrond aanwezig is kan de aansprakelijkheid komen te ontvallen. Een rechtvaardigingsgrond neemt het onrechtmatige karakter van het handelen weg waardoor de veroorzaker niet langer aansprakelijk is. Zijn handelen is onder de gegeven omstandigheden begrijpelijk. In de wet zijn een aantal rechtvaardigingsgronden genoemd (bevoegd gegeven ambtelijk bevel, noodweer, overmacht en handelen op grond van een wettelijk voorschrift), de rechter kan echter ook bepalen dat een andere omstandigheid het schadeveroorzakende handelen rechtvaardigt. Een voorbeeld hiervan is bijvoorbeeld het uitdelen van een klap in een bedreigende situatie, of toestemming die is gegeven door degene die de schade heeft geleden."^^xsd:string .
+
+tvn:onrechtmatigheid_daad
+      mtv:same tv:onrechtmatigheid ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "onrechtmatige_daad"@nl , "onrechtmatige daad"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade ontstaan als gevolg van zijn eigen handelen. Dit wil zeggen dat een persoon aansprakelijk kan zijn voor zijn eigen onrechtmatige handelen. Hiervan is sprake indien is voldaan is aan een aantal voorwaarden. Allereerst moet de handeling onrechtmatig zijn, dat wil zeggen dat er gehandeld is in strijd met een wettelijke plicht (bijv. verbod misleidende reclame), de maatschappelijke zorgvuldigheid (bijv. het creeren van een gevaarlijke situatie) of dat er een inbreuk is gemaakt op een recht (bijv. een eigendomsrecht). De norm die geschonden is door degene die onrechtmatig handelde moet strekken tot bescherming van de belangen van degene die de schade heeft geleden. Het onrechtmatige gedrag moet bovendien aan de veroorzaker van de handeling kunnen worden toegerekend. Ook dient de gedraging in een oorzakelijk verband te staan met de ontstane schade. Tot slot dient er sprake te zijn van schade die voor vergoeding in aanmerking komt."^^xsd:string , "Een persoon kan aansprakelijk zijn voor schade als gevolg van zijn eigen handelen of het handelen van personen of zaken waarvoor hij verantwoordelijk is. Dit handelen betreft een doen of nalaten in strijd met het recht. Dat betekent dat er sprake kan zijn van een doen of nalaten in strijd m0et een wettelijke plicht, een recht of een maatschappelijk aanvaarde (zorgvuldigheids)norm."^^xsd:string .
+
+tvn:ontbreken_functioneel_verband
+      mtv:same tv:functioneel_verbandcriterium ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "functioneel verband criterium"@nl , "functioneel_verband"@nl , "functioneel verband"@nl ;
+      skos:note """Indien een persoon  aangesproken wordt voor schade veroorzaakt door niet-ondergeschikten moet er sprake zijn van een fout van de niet-ondergeschikte (een zelfstandige hulppersoon). Deze fout dient bij uitbestede werkzaamheden te zijn begaan, dat wil zeggen bij werkzaamheden in de uitoefening van het bedrijf van de opdrachtgever. 
+	In het geval van werkgeversaansprakelijkheid, is de werkgever aansprakelijk voor schade veroorzaakt door een fout van de werknemer. Er moet een verband bestaan tussen de fout van de werknemer en de opgedragen werkzaamheden. Dit betekent dat de aan de werknemer opgedragen werkzaamheden de kans, volgens (statistische) ervaringsregels  moet hebben vergroot. Daarnaast moet de werkgever zeggenschap hebben gehad over de gedragingen waarin de fout is gelegen. De werkgever kan ook aansprakelijk zijn voor fouten buiten diensttijd begaan. Tevens is het mogelijk dat aansprakelijk ontbreekt voor fouten die onder werktijd zijn begaan als deze niet in verband stonden tot de door de werkgever opgedragen werkzaamheden.
+	Voor de aansprakelijkheid van niet-ondergeschikten geldt dat d fout moet zijn gebeurt tijdens de werkzaamheden. Dit brengt met zich mee dat de rechter niet snel aansprakelijkheid van een opdrachtgever zal aannemen voor fouten die niet zijn begaan tijdens de uitvoering van de wekrzaamheden.
+	Voor aansprakelijkheid voor vertegenwoordigers geldt dat de fout moet zijn begaan in de uitoefening van de vertegenwoordigersbevoegdheden"""^^xsd:string .
+
+tvn:ontbreken_zeggenschap_gedraging_werknemer
+      mtv:same tv:zeggenschap_over_de_gedragingen ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "werkzaamheden ter uitoefening van diens bedrijf"@nl , "fout van niet-ondergeschikte"@nl , "degene in wiens dienst de ondergeschikte zijn taak"@nl , "opgedragen taak"@nl , "opdracht geven"@nl , "degene in wiens dienst de ondergeschikte zijn taak vervult"@nl , "in wiens dienst"@nl , "opdracht"@nl , "mate waarin de fout"@nl , "kans op de fout"@nl , "degene in wiens dienst de ondergeschikte zijn taak verricht"@nl , "opdracht tot het verrichten van de taak"@nl , "zeggenschap over de gedragingen"@nl , "werkgever"@nl , "ter vervulling van de hem opgedragen taa..."@nl , "beroepsuitoefening"@nl , "tuinlieden"@nl , "zeggenschap over de gedraging"@nl , "fout van ondergeschikte"@nl , "fouten van een ondergeschikte"@nl , "fouten van niet ondergeschikten"@nl , "bij die werkzaamheden begane fout"@nl , "ter vervulling van de opdracht"@nl , "ondergeschikten"@nl , "fouten van die onderschikten"@nl , "taak"@nl , "degene in wiens dienst de ondergeschikte"@nl , "uitgeleende werknemer"@nl , "zeggenschap over de gedraging waarin de fout was gelegen"@nl , "beroep of bedrijf"@nl , "zeggenschap"@nl .
+
+tvn:opdrachtgever
+      mtv:same tv:opdracht ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bij de uitvoering van"@nl , "taak"@nl , "opdracht"@nl , "opdrachtgever"@nl , "omstandigheden"@nl , "in de uitvoering van"@nl , "opgedragen taak"@nl , "werkzaamheden"@nl , "opdrachtnemer"@nl , "in opdracht van"@nl ;
+      skos:note "Een persoon handelt in de uitvoering van een opgedragen taak of werkzaamheden. Hij kan, afhankelijk van de omstandigheden van het geval als zelfstandige handelen bij de uitvoering van een opdracht, of als ondergeschikte, in bijvoorbeeld loondienst."^^xsd:string .
+
+tvn:opzettelijke_inbreuk
+      mtv:same tv:inbreuk_op_een_recht ;
+      to:fingerprint _:b49 , _:b50 , _:b51 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b58 , _:b57 , _:b59 , _:b60 , _:b61 , _:b62 , _:b63 , _:b64 , _:b65 , _:b66 , _:b67 , _:b68 , _:b69 , _:b70 , _:b71 , _:b72 , _:b74 , _:b73 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 ;
+      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend" , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "inbreuk_op_een_recht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten" , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "behoorlijk gedrag"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "subjectief recht" , "subjectief recht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "inbreuk op een subjectief recht" , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "inbreuk maken" , "inbreuk maken"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string .
+
+tvn:ouder
+      mtv:same tv:ouderlijk_gezag ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "door ouders gezamenlijk uitgeoefend"@nl , "minderjarigen onder gezag"@nl , "ouderlijk gezag"@nl , "voogdij"@nl , "gezag"@nl , "ouders"@nl , "vader"@nl , "gezamenlijk ouderlijk gezag"@nl .
+
+tvn:overmacht_als_noodtoestand
+      mtv:same tv:overmacht ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "overmacht"@nl ;
+      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Overmacht is een rechtvaardigingsgrond."^^xsd:string .
+
+tvn:plaatselijke_omstandigheden
+      mtv:same tv:omstandigheden_van_het_geval ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "schade"@nl , "omstandigheden"@nl , "omstandigheden van het geval"@nl , "omstandigheid"@nl , "geval"@nl , "schadevergoeding"@nl , "onrechtmatigheid"@nl , "omstandigheden_van_het_geval"@nl ;
+      skos:note "De omstandigheden van het geval spelen een rol bij de bepaling van de onrechtmatigheid. Ook zijn de omstandigheden van het geval bepalend voor de het uiteindelijke oordeel over vermindering dan wel opheffing van de schadevergoedingsplicht."^^xsd:string .
+
+tvn:producent_roerende_zaak
+      mtv:same tv:producent ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijk"@nl , "fabrikant"@nl , "producent"@nl , "fabrikant van een onderdeel"@nl , "op het product aan te brengen"@nl , "producent van een grondstof"@nl , "op het produkt aan te brengen"@nl , "halffabrikaat"@nl , "grondstof"@nl , "fabrikant van een eindproduct"@nl , "bestanddeel"@nl , "eindprodukt"@nl , "fabrikant van een eindprodukt"@nl , "zijn naam"@nl , "die zich als producent presenteert"@nl , "bestanddelen"@nl , "als producent beschouwd"@nl , "zijn merk"@nl , "leverancier ervan als producent beschouwd"@nl , "fabrikant van onderdelen"@nl , "leverancier als producent beschouwd"@nl , "aansprakelijkheid"@nl , "onderscheidingsteken"@nl .
+
+tvn:rechtspersoon_die_de_stof_in_uitoefening_van_zijn_taak_gebruikt
+      mtv:same tv:rechtspersoon ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "besloten vennootschap"@nl , "rechtspersoon"@nl , "nv"@nl , "stichting"@nl , "vereniging"@nl ;
+      skos:note "Besloten vennootschappen (bv), de naamloze vennootschappen (nv), stichtingen en verenigingen hebben rechtsperoonlijkheid. Geen rechtspersoon zijn een eenmanszaak, man-vrouw firma, een vennootschap onder firma, commanditaire vennootschap en een maatschap. Indien een bedrijf geen rechtspersoonlijkheid heeft reikt zijn persoonlijke aansprakelijkheid verder."^^xsd:string .
+
+tvn:rechtvaardigingsgrond
+      mtv:same tv:rechtvaardigingsgrond ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "noodweer"@nl , "wettelijk voorschrift"@nl , "aansprakelijkheidsuitsluitingsgrond"@nl , "rechtvaardigingsgrond"@nl , "ongeschreven rechtvaardigingsgrond"@nl , "overmacht"@nl , "bevoegd gegeven ambtelijk bevel"@nl , "aansprakelijkheidsuitsluitingsgronden"@nl , "wettelijke rechtvaardigingsgrond"@nl , "rechtvaardigingsgrond krachtens wet"@nl ;
+      skos:note "Indien er een rechtvaardigingsgrond aanwezig is kan de aansprakelijkheid komen te ontvallen. Dit kan het geval zijn als een persoon heeft gehandeld op basis van een bevoegd gegeven ambtelijk bevel, noodweer, overmacht , zaakwaarneming of een een wettelijk voorschrift en er als gevolg van zijn handelen schade is ontstaan."^^xsd:string , "De aansprakelijkheid kan vervallen als er een rechtvaardigingsgrond aanwezig is. Een rechtvaardigingsgrond rechtvaardigt in feite het handelen van een persoon in een bepaalde situatie, ondanks dat er schade is ontstaan als gevolg van zijn handelen."^^xsd:string .
+
+tvn:risicoaansprakelijkheid
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid voor misleidende en vergelijkende reclame"@nl , "aansprakelijkheid voor personen"@nl , "risicoaansprakelijkheid"@nl , "kwalitatieve aansprakelijkheid"@nl , "kwalitatieve_aansprakelijkheid"@nl , "aansprakelijkheid bij elektronisch handelsverkeer"@nl , "risico-aansprakelijkheid"@nl , "risico-aansprakelijkheid" ;
+      skos:note "Een persoon kan aansprakelijk worden gesteld omdat hij verantwoordelijk is voor personen of zaken, elektronisch rechtsverkeer, misleidende en vergelijkende reclame of voor producten. Dit wordt ook wel risico-aansprakelijkheid genoemd. Naast deze vorm van aansprakelijkheid kan iemand ook aanprakelijk zijn voor schade als gevolg van zijn eigen handelen. Ook een minderjarige jonger dan 14 jaar kan risico-aansprakelijk zijn, met uitzondering van aansprakelijkheid voor dieren en gebrekkige roerende zaken."^^xsd:string .
+
+tvn:schade_aan_zaken_of_personen
+      mtv:same tv:schade ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "derden"@nl , "vergoeding"@nl , "aansprakelijk"@nl , "Schade tot gevolg"@nl , "schade en verlies veroorzaakt door zulke maatregelen"@nl , "kosten ter vookoming of beperking van de schade"@nl , "schade aan derden"@nl , "onrechtmatige daad"@nl , "veroorzaken"@nl , "verlies veroorzaakt door zulke maatregelen"@nl , "schade aan een derde toegebracht"@nl , "aan derden toegebrachte schade"@nl , "schade aan derden toegebracht"@nl , "schade zou hebben geleden"@nl , "voor de schade die onstaat"@nl , "voor de schade veroorzaakt door"@nl , "schade als gevolg van de fout"@nl , "schadelijke gevolgen"@nl , "schade jegens een derde"@nl , "aan een derde toegebrachte schade"@nl , "schade veroorzaakt door zulke maatregelen"@nl , "schade leed"@nl , "Schade als gevolg van"@nl , "schaden en verliezen"@nl , "schadevergoeding"@nl , "de schade die de ander dientengevolge lijdt"@nl , "schade"@nl , "onrechtmatig"@nl , "schade toegebracht"@nl , "schadeloosstelling"@nl , "schade lijden"@nl , "schade aan een derde"@nl , "onrechtmatigheid"@nl ;
+      skos:note "Aansprakelijkheid kan alleen ontstaan als er sprake is van enige schade. De schade kan vermogensschade (geleden verlies of gederfde winst) of ander nadeel zijn (hierbij kan men denken aan immateriele schade zoals een aantasting van de goede naam, smartengeld). Door het slachtoffer gemaakte kosten en het verlies van een kans (op bepaalde ontplooiing of ontwikkeling bijvoorbeeld) kunnen ook voor vergoeding in aanmerking komen."^^xsd:string .
+
+tvn:schade_gevolg_natuurgebeuren_van_uitzonderlijke_onvermijdelijke_en_onweerstaanbare_aard
+      mtv:same tv:onbeheersbare_natuurlijke_krachten ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bodemdaling"@nl , "ondergrondse natuurkrachten"@nl , "aardgas"@nl , "aardolie"@nl , "onbeheersbaar"@nl , "exploitant"@nl , "bodemstijging"@nl , "delfstoffen"@nl , "mijnbouwwer"@nl , "schadeveroorzakende gebeurtenis"@nl , "natuurlijke krachten"@nl , "schade"@nl , "delfstof"@nl , "onbeheersbare natuurlijke krachten"@nl , "boorgat"@nl , "exploitatie"@nl , "bodemtrilling"@nl , "ondergrondse"@nl , "uitstroming"@nl , "bodemverschuiving"@nl .
+
+tvn:schuldaansprakelijkheid
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "persoonlijke aansprakelijkheid"@nl , "persoonlijk aansprakelijk"@nl , "onrechtmatige daad"@nl , "persoonlijke_aansprakelijkheid"@nl ;
+      skos:note "Een persoon kan aansprakelijk zijn voor schade ontstaan als gevolg van zijn eigen handelen. Dit wil zeggen dat een persoon aansprakelijk kan zijn voor zijn eigen onrechtmatige handelen. Er is sprake van onrechtmatig handelen indien voldaan is aan de voorwaarden van onrechtmatigheid, relativiteit, toerekening, causaliteit en schade."^^xsd:string .
+
+tvn:schulduitsluitingsgrond
+      mtv:same tv:schulduitsluitingsgrond ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "schulduitsluitingsgrond"@nl , "onbevoegd gegeven ambtelijk bevel"@nl , "noodweerexces"@nl , "verontschuldigbare dwaling"@nl ;
+      skos:note "Op grond van een schulduitsluitingsgrond kan de aansprakelijkheid komen te ontvallen. Noodweer-exces, een onbevoegd gegeven ambtelijk bevel en verontschuldigbare dwaling zijn schulduitsluitingsgronden."^^xsd:string .
+
+tvn:sportsituatie
+      mtv:same tv:sport_en_spel ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "sport en spel"@nl , "sport_en_spel"@nl ;
+      skos:note """De meeste sport en spel situaties worden gekenmerkt door een zekere mate van onoplettendheid en onvoorzichtig gedrag. Om deze reden geldt voor sport en spel situaties een hogere drempel voor aansprakelijkheid. Aansprakelijkheid ontstaan pas bij grove overtreding van de sport en spel regels omdat een zeker risico en een zekere overtreding van de regels nu eenmaal inherent is aan sport en spel situaties. De door sport of spel bestaande verhouding tussen deelnemers hoeft niet direct te veranderen op het moment dat het spel officieel ten einde is. Een korte tijd daarna kunnen de verwachtingen die partijen over en weer van elkaar hebben nog steeds door het spel zijn beïnvloedt.
+	In welke gevallen er sprake is van een sport en spel situatie, is niet in het algemeen te zeggen. De omstandigheden van het geval zijn bepalend, waarbij met name acht wordt geslagen op de onderlinge verhouding tussen partijen.  Daarnaast is de aard van de activiteit, het tijdsbestek waarin deze plaats heeft en de hoedanigheid van betrokken partijen van belang. Aangenomen wordt dat intrinsiek gevaarlijke activiteiten die niet of nauwelijks maatschappelijk zijn geaccepteerd en die ook niet door middel van stilzwijgende of uitdrukkelijke afspraken zijn gereguleerd, doorgaans geen sport- en spelsituatie kunnen opleveren. Hierbij kan men bijvoorbeeld denken aan het ‘spelen’ met explosieven of wapens."""^^xsd:string .
+
+tvn:staking
+      mtv:same tv:staking ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "staking"@nl ;
+      skos:note """Staking is in beginsel rechtmatig, dat wil zeggen dat er geen aansprakelijkheid onstaat, ook niet als de werkgever als gevolg van de staking schade leidt. De staking is echter ongeoorloofd als een of meer bedrijven onevenredig veel zwaarder worden getroffen dan hiervoor aangegeven.  Dan kan wel aansprakelijkheid ontstaan.
+	Bovendien dient het te gaan om’een onmiddellijk en concreet gevaar, voor een specifieke, aanzienlijke schade, waarvan aard en vermoedelijke omvang, tegenover een eventuele betwisting, van de zijde van de werkgevers aannemelijk dient te worden gemaakt."""^^xsd:string .
+
+tvn:tenzij_formule
+      mtv:same tv:tenzij_hinder ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "tenzij hinder"@nl , "tenzij_hinder"@nl ;
+      skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van hinder, verontreiniging of andere gevolgen waarvoor aansprakelijkheid voor eigen handelen, dat wil zeggen op grond van een onrechtmatige daad, zou hebben ontbroken."^^xsd:string .
+
+tvn:toerekening_aan_dader
+      mtv:same tv:toerekening_vestigingsfase ;
+      to:fingerprint _:b38 , _:b80 , _:b81 , _:b39 , _:b41 , _:b42 , _:b82 , _:b83 , _:b84 , _:b40 , _:b85 , _:b43 , _:b44 , _:b45 , _:b86 , _:b87 , _:b46 , _:b47 , _:b88 , _:b48 , _:b89 ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "statistische causaliteit"@nl , "omkeringsregel" , "toerekeningsverband"@nl , "toerekenbaarheid"@nl , "toerekenbaarheid" , "schuld"@nl , "toerekening vestigingsfase"@nl , "adequatietheorie"@nl , "toerekenen"@nl , "toerekenen" , "toerekening naar redelijkheid"@nl , "onderbreking van de causaliteit"@nl , "oorzaak die krachtens wet voor zijn rekening komt"@nl , "oorzaak die krachtens wet voor zijn rekening komt" , "toerekening krachtens de wet"@nl , "toerekening krachtens wet"@nl , "verwijtbaarheid"@nl , "verwijtbaarheid" , "hypothetische causaliteit"@nl , "toerekeningsvraag"@nl , "toerekening"@nl , "toerekening" , "toegerekend"@nl , "toerekening_krachtens_wet"@nl ;
+      skos:note "Voor aansprakelijkheid moet de daad of gedraging aan de partij die wordt aangesproken tot het vergoeden van de schade kunnen worden toegerkend. Dit kan op grond van schuld of maatschappijopvattingen gebeuren, maar het kan ook zijn dat de rechter op grond van de wet constateert dat de gedraging aan de aangesproken partij moet worden toegerekend. De wet bepaald dat alleen gedragingen waarbij sprake is van een 'doen' (en dus niet van een 'nalaten') kunnen worden toegerekend. Een fysieke of geestelijke tekortkoming staat niet aan toerekening van de gedraging aan de aangesproken persoon in de weg.Aan kinderen jonger dan 14 jaar kan zowel een doen en nalaten als oorzaak van de schade niet worden toegerekend."^^xsd:string , "Voor aansprakelijkheid moet er een oorzakelijk verband tussen de handelingen van de veroorzaker van de schade en de schade. Het is echter niet onder alle omstandigheden wenselijk dat alle schade waarvoor dit oorzakelijk verband bestaat vergoed moet worden door de schadeveroorzaker. Om te bepalen welke schade voor vergoeding in aanmerking komt kijkt de rechter of er een juridische oorzaak is om de schade toe te rekenen aan een bepaalde gebeurtenis. Bij het bepalen van de schadevergoedingsplicht neemt de rechter de aard van de scahde, de aard van de gedraging en het oorzakelijk verband tussen de schade en de gebeurtenis in overweging. Om te bepalen of er sprake is van een oorzakelijk verband kan de rechter zich baseren op de adequatietheorie, hij kan rekening houden met het bestaan van gelijktijdig werkende oorzaken of alternatieve oorzaken. Ook kan hij de aanwezigheid van een oorzakelijk verband toetsen door uit te gaan van hypothetische causaliteit. Ook kan de rechter voor zijn beoordeling kijken of het oorzakelijk verband wordt onderbroken, of hij kan gebruik maken van statische gegevens die informatie geven over de waarschijnlijkheid van een oorzakelijk verband. Tot slot kan de rechter besluiten dat de schade naar redelijkheid dient te worden toegerekend aan de veroorzakende gebeurtenis."^^xsd:string , "Een voorwaarde voor aansprakelijkheid is dat de schadeveroorzakende gedraging kan worden toegerekend aan degene die men aansprakelijk wilt stellen voor het ontstaan van de schade. Hiervoor wordt gekeken naar de persoonlijke verwijtbaarheid of schuld van degene die men aansprakelijk wenst te stellen, of de schade naar maatschappij opvattingen voor rekening dienen te komen van een bepaalde persoon en of het vergoeden van de schade op grond van de wet voor rekening van een bepaalde persoon moet komen."^^xsd:string .
+
+tvn:toerekening_op_basis_van_in_het_verkeer_geldende_opvattingen
+      mtv:same tv:toerekening_krachtens_verkeersopvatting , tv:verkeersopvatting ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "betaamt"@nl , "zorgvuldig"@nl , "toerekening krachtens verkeersopvattingen" , "toerekening krachtens verkeersopvattingen"@nl , "toerekenbaarheid"@nl , "toerekenbaarheid" , "verkeersopvatting"@nl , "in het verkeer geldende opvatting"@nl , "opvatting"@nl , "voor rekenening krachtens verkeersopvatting"@nl , "in het verkeer geldende opvattingen voor zijn rekening"@nl , "voor rekening krachtens verkeersopvatting"@nl , "verwijtbaarheid" , "verwijtbaarheid"@nl , "toerekening_krachtens_verkeersopvatting"@nl , "maatschappelijk verkeer"@nl , "toerekening"@nl , "toerekening" , "toerekening krachtens verkeersopvatting"@nl ;
+      skos:note "Een daad of gedraging kan aan een persoon worden toegerekend als dit volgens maatschappij opvatting wenselijk is. Het kan wenselijk zijn om de schade te laten dragen door een collectief publiek in plaats van door individuele burgers. De aanwezigheid van verzekeringen kunnen ook meewegen bij de beoordeling of de gedraging aan de dader moet worden toegerekend."^^xsd:string , "De in de maatschappij bestaande algemene opvattingen, ten aanzien van de in acht te nemen voorzorgsmaatregelen, veiligheidsvoorschriften of zorgvuldigheid bijvoorbeeld."^^xsd:string .
+
+tvn:toerekening_op_basis_van_schuld
+      mtv:same tv:schuld , tv:csqn_criteria_toerekeningsverband ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "is toe te rekenen aan"@nl , "toerekeningsverband"@nl , "verwijt"@nl , "toerekenbaarheid" , "toerekenbaarheid"@nl , "omvang van de schade"@nl , "schuld"@nl , "csqn_criteria_toerekeningsverband"@nl , "csqn criteria toerekeningsverband"@nl , "toe te rekenen"@nl , "csqn-vereiste"@nl , "csqn-verband"@nl , "krachtens de wet"@nl , "verwijtbaarheid"@nl , "csqn crietria toerekeningsverband"@nl , "toerekening van de schade"@nl , "toerekening"@nl , "toerekening" , "schuld of een andere oorzaak"@nl , "de in het verkeer geldende opvattingen"@nl , "conditio sine qua non-verband"@nl , "te wijten is aan"@nl , "conditio sine qua non-vereiste"@nl ;
+      skos:note "Er is sprake van schuld als iemand de gedraging persoonlijk kan worden verweten."^^xsd:string .
+
+tvn:toerekening_op_basis_van_specifieke_wettelijke_bepaling
+      mtv:same tv:toerekening_krachtens_wet ;
+      to:fingerprint _:b84 , _:b80 , _:b81 , _:b85 , _:b86 , _:b82 , _:b87 , _:b88 , _:b89 , _:b83 ;
+      skos:altLabel "oorzaak die krachtens wet voor zijn rekening komt"@nl , "oorzaak die krachtens wet voor zijn rekening komt" , "toerekening krachtens de wet"@nl , "toerekening krachtens wet"@nl , "verwijtbaarheid"@nl , "toerekenbaarheid"@nl , "toerekenbaarheid" , "toerekening" , "toerekening"@nl , "toerekening_krachtens_wet"@nl ;
+      skos:note "Voor aansprakelijkheid moet de daad of gedraging aan de partij die wordt aangesproken tot het vergoeden van de schade kunnen worden toegerkend. Dit kan op grond van schuld of maatschappijopvattingen gebeuren, maar het kan ook zijn dat de rechter op grond van de wet constateert dat de gedraging aan de aangesproken partij moet worden toegerekend. De wet bepaald dat alleen gedragingen waarbij sprake is van een 'doen' (en dus niet van een 'nalaten') kunnen worden toegerekend. Een fysieke of geestelijke tekortkoming staat niet aan toerekening van de gedraging aan de aangesproken persoon in de weg.Aan kinderen jonger dan 14 jaar kan zowel een doen en nalaten als oorzaak van de schade niet worden toegerekend."^^xsd:string .
+
+tvn:toestemming_van_gelaedeerde
+      mtv:same tv:toestemming_van_de_benadeelde ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "toestemming van de benadeelde"@nl , "gelaedeerde"@nl , "slachtoffer"@nl , "uitsluiting"@nl , "benadeelde"@nl , "aansprakelijk"@nl , "instemming"@nl , "omstandigheden"@nl , "toestemming"@nl , "omstandigheid"@nl , "toestemming_van_de_benadeelde"@nl , "aansprakelijkheid"@nl ;
+      skos:note "Onder bepaalde omstandigheden kan de aansprakelijkheid komen te ontvallen. DIt kan onder meer het geval zijn als de benadeelde, dat wil zeggen degene die de schade heeft geleden, toestemming gaf voor de gebeurtenis of handeling die als oorzaak van de schade kan worden aangemerkt."^^xsd:string .
+
+tvn:uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten
+      mtv:same tv:onbeheersbare_ondergrondse_natuurlijke_krachten , tv:ontstaansvoorwaarde_schade_mijnbouwwerk ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "onstaansvoorwaarde schade mijnbouwwerk"@nl , "beweging van de bodem als gevolg van de aanleg of exploitatie van dat werk"@nl , "mijnbouwwerk"@nl , "niet beheersen ondergrondse natuurkrachten"@nl , "exploitant"@nl , "bodemstijging"@nl , "delfstoffen"@nl , "mijnbouwwer"@nl , "schadeveroorzakende gebeurtenis"@nl , "natuurlijke krachten"@nl , "beweging van de bodem"@nl , "delfstof"@nl , "boorgat"@nl , "onbeheersbare natuurlijke krachten"@nl , "bodemtrilling"@nl , "ondergrondse"@nl , "uitstroming van delfstoffen"@nl , "als gevolg van de aanleg of bij exploitatie zijn ontketend"@nl , "bodemdaling"@nl , "ondergrondse natuurkrachten"@nl , "door de aanleg of bij de exploitatie van het werk ontketend"@nl , "aardgas"@nl , "aardolie"@nl , "onbeheersbaar"@nl , "schade"@nl , "onbeheersbare ondergrondse natuurlijke krachten"@nl , "onbeheersbare_ondergrondse_natuurlijke_krachten"@nl , "door de aanleg of bij de exploitatie van het werk zijn ontketend"@nl , "exploitatie"@nl , "uitstroming"@nl , "bodemverschuiving"@nl ;
+      skos:note "De exploitant van een mijnbouwwerk kan aansprakelijkheid worden gesteld voor schade als gevolg van uitstroom van delfstoffen en schade als gevolg van bodemverschuiving. Bepalend voor de aansprakelijkheid bij uitstroom van delfstoffen is de schadeveroorzakende gebeurtenis, dat wil zeggen de ondergrondse natuurkrachten. De uitstroom zelf is niet van belang bij het bepalen van de aansprakelijke persoon. In geval van bodembeweging is het juist de gebeurtenis die heeft geleid tot de schade van belang voor het bepalen van de aansprakelijkheid. Daarbij speelt een rol of en wanneer de exploitant bekend is geworden met de schadeveroorzakende gebeurtenis."^^xsd:string .
+
+tvn:uitvoering_van_een_wettelijk_voorschrift
+      mtv:same tv:wettelijk_voorschrift ;
+      to:fingerprint _:b90 , _:b91 , _:b92 ;
+      skos:altLabel "wettelijk voorschrift"@nl , "wettelijk_voorschrift"@nl , "wettelijke bevoegdheid"@nl ;
+      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Schadeveroorzakend handelen kan gerechtvaardigt zijn indien schade is ontstaan door het handelen op grond van een wettelijke verplichting."^^xsd:string .
+
+tvn:verantwoordelijkheid_overheid_als_waterwegbeheerder
+      mtv:same tv:overheid ;
+      to:fingerprint _:b93 , _:b94 , _:b95 , _:b96 , _:b97 , _:b98 , _:b99 , _:b100 , _:b101 , _:b102 , _:b103 , _:b104 ;
+      skos:altLabel "provincie"@nl , "gemeente"@nl , "overheidsbestuurder"@nl , "waterschap"@nl , "provinciale staten"@nl , "college van burgemeester en wethouders"@nl , "gemeente bestuur"@nl , "overheid"@nl , "centrale overheid"@nl , "overheidscollege"@nl , "bestuursorgaan"@nl , "decentrale overheid"@nl ;
+      skos:note "De overheid kan ook aansprakelijk zijn voor een onrechtmatige daad. De overheid is op grond van het civiel recht aansprakelijk voor een onrechtmatige daad als er geen publiekrechtelijke regeling om de aansprakelijkheid te beoordelen openstaat. Als hetzelfde resultaat (aansprakelijkheidstelling) kan worden verkregen op grond van een publiekrechtelijke regeling dan moet deze weg gevolgd worden. In laatste instantie staat de weg naar de civiele rechter open."^^xsd:string .
+
+tvn:verantwoordelijkheid_overheid_als_wegbeheerder
+      mtv:same tv:overheid ;
+      to:fingerprint _:b93 , _:b94 , _:b95 , _:b96 , _:b97 , _:b98 , _:b99 , _:b100 , _:b101 , _:b104 , _:b102 , _:b103 ;
+      skos:altLabel "provincie"@nl , "overheidsbestuurder"@nl , "gemeente"@nl , "waterschap"@nl , "provinciale staten"@nl , "college van burgemeester en wethouders"@nl , "gemeente bestuur"@nl , "overheid"@nl , "centrale overheid"@nl , "bestuursorgaan"@nl , "overheidscollege"@nl , "decentrale overheid"@nl ;
+      skos:note "De overheid kan ook aansprakelijk zijn voor een onrechtmatige daad. De overheid is op grond van het civiel recht aansprakelijk voor een onrechtmatige daad als er geen publiekrechtelijke regeling om de aansprakelijkheid te beoordelen openstaat. Als hetzelfde resultaat (aansprakelijkheidstelling) kan worden verkregen op grond van een publiekrechtelijke regeling dan moet deze weg gevolgd worden. In laatste instantie staat de weg naar de civiele rechter open."^^xsd:string .
+
+tvn:verjaringstermijn_twintig_jaar_na_sluiting
+      mtv:same tv:bekendwording_20_jaar_na_sluiting ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "bekendwording 20 jaar na sluiting"@nl , "na sluiting"@nl , "20 jaar"@nl , "exploitant van een stortplaats"@nl , "verontreiniging"@nl , "bekend worden"@nl , "bekend is geworden"@nl , "bekendwording 20 jaar naar sluiting"@nl , "stof"@nl , "stortplaats"@nl ;
+      skos:note "Er bestaat geen aansprakelijkheid bij bekendwording van de schade na meer dan 20 jaar na sluiting van de stortplaats."^^xsd:string .
+
+tvn:vermindering_op_basis_relativiteitsbeginsel
+      mtv:same tv:relativiteit , tv:correctie_langemeijer ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "strekt niet tot bescherming"@nl , "strekt niet tot bescherming" , "norm die niet strekt tot bescherming tegen de schade"@nl , "relativiteit"@nl , "correctie langemeijer"@nl , "schutznorm"@nl , "geschonden norm strekt tot bescherming tegen de schade"@nl , "correctie_langemeijer"@nl , "norm die niet strekt tot bescherming tegen schade"@nl , "relativiteitsvereisten"@nl , "geschonden norm niet strekt tot bescherming tegen de schade"@nl ;
+      skos:note "Indien de geschonden geschreven norm niet tot doel heeft de belangen van de benadeelde te beschermen, is het van belang of de veroorzaker onder de omstandigheden bedacht had moeten zijn op de belangen van de benadeelde, of er een ongeschreven norm ter bescherming tegen de veroorzaakte schade is. Dit wordt ook wel de correctie Langemeijer aangeduid."^^xsd:string , "Er kan pas aansprakelijkheid ontstaan als de norm die door deschadeveroorzaker is geschonden tot doel had de gedupeerde te beschermen tegen de schade zoals die in de gegeven omstandigheden is geleden."^^xsd:string .
+
+tvn:verontschuldigbare_dwaling
+      mtv:same tv:verontschuldigbare_dwaling ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "schulduitsluitingsgrond"@nl , "rechtsdwaling"@nl , "verontschuldigbare dwaling"@nl , "dwaling omtrent de feiten"@nl ;
+      skos:note "Verontschuldigbare dwaling betekent dat iemand kan dwalen ten aanzien van de feiten, bijvoorbeeld omtrent de bevoegdheid van iemand, of ten aanzien van het recht, omdat men bijvoorbeeld een bepaalde norm of wettelijke verplichting niet kende. Op grond van verontschuldigbare dwaling kan de aansprakelijkheid voor schade als gevolg van een bepaalde gedraging ontvallen."^^xsd:string .
+
+tvn:vertegenwoordigde
+      mtv:same tv:vertegenwoordiger ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijk"@nl , "gedragingen van de vertegenwoordiger"@nl , "bevoegdheid"@nl , "bestuurder"@nl , "vertegenwoordigde"@nl , "onrechtmatige daad"@nl , "vertegenwoordiging"@nl , "opdracht"@nl , "toekomende bevoegdheden"@nl , "organen"@nl , "als zijn daden te gelden"@nl , "contractueel vertegenwoordiger"@nl , "vertegenwoordiger"@nl , "overeenkomst"@nl , "bewindvoerder"@nl , "gedrag van een vertegenwoordiger"@nl , "contract"@nl , "werkgever"@nl , "aansprakelijkheid"@nl , "fout"@nl , "gedragingen"@nl , "voogd"@nl , "contractuele vertegenwoordiger"@nl , "vertegenwoordigen"@nl , "onrechtmatig handelen"@nl , "onrechtmatig"@nl , "curator"@nl , "fout jegens een derde"@nl .
+
+tvn:verweermiddel_aansprakelijkheid
+      mtv:same tv:ontbreken_van_aansprakelijkheid ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "aansprakelijkheid ontbreekt"@nl , "ontbreekt de aansprakelijkheid"@nl , "uitgezonderd, uitzondering"@nl , "ontbreekt aansprakelijkheid"@nl , "ontbreken van aansprakelijkheid"@nl .
+
+tvn:waarschijnlijkheid_dat_schade_zich_zal_voordoen
+      mtv:same tv:mate_van_waarschijnlijkheid_schade ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "ongevallen"@nl , "mate van waarschijnlijkheid dat de schade wordt veroorzaakt"@nl , "betaamt"@nl , "zorgvuldig"@nl , "omstandigheden"@nl , "mate van waarschijnlijkheid dat daaruit schade zou ontstaan"@nl , "waarschijnlijk"@nl , "waarschijnlijkheid"@nl , "schade zal ontstaan"@nl , "gevaar"@nl , "voorzorg"@nl , "veiligheid"@nl , "gevaarschepping"@nl , "voorzorgsmaatregelen"@nl , "betamelijkheid"@nl , "mate van waarschijnlijkheid dat"@nl , "gevaarlijk"@nl , "waarschuwingsplicht"@nl , "ontstaat"@nl , "waarschuwing"@nl , "gevaarscheppend"@nl , "ontstaan"@nl , "veiligheidsmaatregelen"@nl , "mate van waarschijnlijkheid dat schade ontstaat"@nl , "mate van waarschijnlijkheid dat schade wordt veroorzaakt"@nl , "gedrag"@nl , "ongeval"@nl , "zorgvuldigheid"@nl , "betamelijk"@nl , "schade"@nl , "onrechtmatig"@nl , "risico"@nl , "mate_van_waarschijnlijkheid_schade"@nl , "onrechtmatigheid"@nl , "mate van waarschijnlijkheid schade"@nl ;
+      skos:note "De Hoge Raad heeft  een aantal factoren ontwikkeld om in het algemeen te beoordelen of er sprake is van een aansprakelijkheid als gevolg van schending van een zorgvuldigheidsnorm. Het betreft de volgende niet-limitatieve factoren: de kans dat anderen niet goed opletten, de kans dat daardoor ongevallen ontstaan, de ernst van de gevolgen die kunnen ontstaan, de mate waarin het nemen van veiligheidsmaatregelen bezwaarlijk is. De omstandigheden van het geval geven de uiteindelijke doorslag. Overigens is het niet zo dat het enkel creëren van een risico al onrechtmatigheid oplevert. Gevaarscheppend gedrag is slechts onrechtmatig indien de mate van waarschijnlijkheid van een ongeval als gevolg van dat gedrag zo groot is, dat de dader zich daarvan naar maatstaven van zorgvuldigheid had behoren te onthouden."^^xsd:string .
+
+tvn:zijdelingse_betekenis_wettelijke_voorschriften
+      mtv:same tv:wettelijk_voorschrift ;
+      to:fingerprint _:b90 , _:b91 , _:b92 ;
+      skos:altLabel "wettelijk voorschrift"@nl , "wettelijk_voorschrift"@nl , "wettelijke bevoegdheid"@nl ;
+      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Schadeveroorzakend handelen kan gerechtvaardigt zijn indien schade is ontstaan door het handelen op grond van een wettelijke verplichting."^^xsd:string .
+
+tvn:zorgvuldigheidsnorm
+      mtv:same tv:zorgvuldigheidsnorm ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      to:fingerprint
+              [] ;
+      skos:altLabel "verkeer- en veiligheidsnormen"@nl , "spelsituatie"@nl , "leidingschade"@nl , "verkeer en veiligheidsnorm"@nl , "normen ter bescherming tegen zuivere vermogensschade"@nl , "maatschappelijke betamelijkheid"@nl , "sport - en spel"@nl , "verkeer_en_veiligheidsnorm"@nl , "norm ter bescherming tegen immateriele schade"@nl , "ongelukkige samenloop van omstandigheden"@nl , "sportsituatie"@nl , "sport en spel"@nl , "verkeers- en veiligheidsnormen"@nl , "zorgvuldigheidsnorm"@nl , "gevaarzetting"@nl , "maatschappelijke zorgvuldigheid"@nl , "norm ter bescherming tegen schade"@nl , "betamelijkheidsnorm"@nl ;
+      skos:note "Er is sprake van een schending van een verkeers- en veiligheidsnorm indien een situatie in het leven is geroepen waarop de ander niet bedacht hoeft te zijn. Een dergelijke situatie wordt ook wel aangeduid als gevaarzetting. Ook in geval van leidingschade, een ongelukkige samenloop van omstandigheden of een sport en spel situatie kan sprake zijn van schending van een verkeers- en veiligheidsnorm."^^xsd:string , "In de maatschappij zijn normen aan te wijzen welke betrekking hebben op het maatschappelijk zorgvuldig handelen. Dit kunnen normen zijn die beschermen tegen schade of verkeers- en veiligheidsnormen."^^xsd:string .
+
+tv:aansprakelijkheid
+      mtv:same tvn:aansprakelijkheid .
+
+tv:aansprakelijkheid_voor_boorgaten
+      mtv:same tvn:aansprakelijkheid_voor_boorgaten .
+
+tv:aansprakelijkheid_voor_gebrekkige_producten
+      mtv:same tvn:aansprakelijkheid_voor_producten .
+
+tv:aansprakelijkheid_voor_gebrekkige_zaken
+      mtv:same tvn:aansprakelijkheid_voor_zaken .
+
+tv:aansprakelijkheid_voor_gevaarlijke_stoffen
+      mtv:same tvn:aansprakelijkheid_voor_stoffen .
+
+tv:aansprakelijkheid_voor_kinderen
+      mtv:same tvn:aansprakelijkheid_voor_kinderen .
+
+tv:aansprakelijkheid_voor_mijnbouwwerken
+      mtv:same tvn:aansprakelijkheid_voor_boorgaten .
+
+tv:aansprakelijkheid_voor_niet_ondergeschikten
+      mtv:same tvn:aansprakelijkheid_voor_niet_ondergeschikten .
+
+tv:aansprakelijkheid_voor_opstallen
+      mtv:same tvn:aansprakelijkheid_voor_opstallen .
+
+tv:aansprakelijkheid_voor_personen
+      mtv:same tvn:aansprakelijkheid_voor_personen .
+
+tv:aansprakelijkheid_voor_producten
+      mtv:same tvn:aansprakelijkheid_voor_producten .
+
+tv:aansprakelijkheid_voor_stoffen
+      mtv:same tvn:aansprakelijkheid_voor_stoffen .
+
+tv:aansprakelijkheid_voor_stortplaatsen
+      mtv:same tvn:aansprakelijkheid_voor_stortplaatsen .
+
+tv:aansprakelijkheid_voor_vertegenwoordigers
+      mtv:same tvn:aansprakelijkheid_voor_vertegenwoordigers .
+
+tv:aansprakelijkheid_voor_zaken
+      mtv:same tvn:aansprakelijkheid_voor_zaken .
+
+tv:aantasting_van_de_eer
+      mtv:same tvn:aantasting_eer_en_goede_naam .
+
+tv:aantasting_van_de_eer_en_goede_naam
+      mtv:same tvn:aantasting_eer_en_goede_naam .
+
+tv:aantasting_van_de_goede_naam
+      mtv:same tvn:aantasting_eer_en_goede_naam .
+
+tv:aard_van_de_aansprakelijkheid
+      mtv:same tvn:aansprakelijkheid .
+
+tv:aard_van_de_gedraging
+      mtv:same tvn:aard_van_de_gedraging .
+
+tv:aard_van_de_schade
+      mtv:same tvn:aard_en_omvang_gevreesde_schade .
+
+tv:aard_van_de_vergunning
+      mtv:same tvn:aanwezigheid_vergunning .
+
+tv:bekendwording_20_jaar_na_sluiting
+      mtv:same tvn:verjaringstermijn_twintig_jaar_na_sluiting .
+
+tv:bevoegd_gegeven_ambtelijk_bevel
+      mtv:same tvn:bevoegd_gegeven_ambtelijk_bevel .
+
+tv:bezitter_van_een_opstal
+      mtv:same tvn:bezitter_opstal .
+
+tv:bezitter_van_een_roerende_zaak
+      mtv:same tvn:bezitter_roerende_zaak .
+
+tv:bezwaarlijkheid_veiligheidsmaatregelen
+      mtv:same tvn:bezwaarlijkheid_voorzorgmaatregelen .
+
+tv:bijzonder_gevaar
+      mtv:same tvn:bijzonder_gevaar .
+
+tv:criterium
+      mtv:same tvn:kelderluik_criterium .
+
+tv:doen_in_strijd_met_recht
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
+tv:eigendomsrecht
+      mtv:same tvn:inbreuk_eigendomsrecht .
+
+tv:exploitant_mijnbouwwerk
+      mtv:same tvn:exploitant_boorgat .
+
+tv:exploitant_stortplaats
+      mtv:same tvn:exploitant_stortplaats .
+
+tv:exploitant_stortplaats_zonder_vergunning
+      mtv:same tvn:exploitant_stortplaats .
+
+tv:exploitant_stortplaatscriterium
+      mtv:same tvn:exploitant_stortplaats .
+
+tv:exploitant_van_een_mijnbouwwerk
+      mtv:same tvn:exploitant_boorgat .
+
+tv:exploitant_van_een_stortplaats_zonder_vergunning
+      mtv:same tvn:exploitant_stortplaats .
+
+tv:functioneel_verband
+      mtv:same tvn:ontbreken_functioneel_verband .
+
+tv:functioneel_verbandcriterium
+      mtv:same tvn:ontbreken_functioneel_verband .
+
+tv:gebrek
+      mtv:same tvn:gebrekkige_zaak .
+
+tv:gebrekkig_bestanddeel
+      mtv:same tvn:bekendheid_gevaren_in_geval_gebrekkigheid .
+
+tv:gedraging_van_een_dier
+      mtv:same tvn:aard_van_de_gedraging .
+
+tv:geestelijke_tekortkoming
+      mtv:same tvn:geestelijke_tekortkoming .
+
+tv:gevaarlijke_toestand
+      mtv:same tvn:gevaarzetting .
+
+tv:gevaarzetting
+      mtv:same tvn:gevaarzetting .
+
+tv:handelen_in_strijd_met_een_wettelijke_plicht
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
+tv:handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt .
+
+tv:hinder
+      mtv:same tvn:hinder .
+
+tv:in_strijd_met_een_wettelijke_plicht
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
+tv:in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt .
+
+tv:inbreuk_op_een_recht
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:inbreukcriterium
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:intensiteit_van_de_inbreuk
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:kelderluikcriteria
+      mtv:same tvn:kelderluik_criterium .
+
+tv:kind
+      mtv:same tvn:kind_jonger_dan_14_jaar .
+
+tv:kind_jonger_dan_14
+      mtv:same tvn:kind_jonger_dan_14_jaar .
+
+tv:kind_jonger_dan_14_jaar
+      mtv:same tvn:kind_jonger_dan_14_jaar .
+
+tv:kind_van_14_of_15_jaar
+      mtv:same tvn:kind_van_veertien_of_vijftien_jaar .
+
+tv:kwalitatieve_aansprakelijkheid
+      mtv:same tvn:risicoaansprakelijkheid .
+
+tv:leidingschade
+      mtv:same tvn:leidingbeheerder .
+
+tv:mate_van_waarschijnlijkheid_dat_daaruit_schade_zou_ontstaan
+      mtv:same tvn:waarschijnlijkheid_dat_schade_zich_zal_voordoen .
+
+tv:mate_van_waarschijnlijkheid_schade
+      mtv:same tvn:waarschijnlijkheid_dat_schade_zich_zal_voordoen .
+
+tv:milieu
+      mtv:same tvn:milieu_aansprakelijkheid .
+
+tv:nalaten_in_strijd_met_recht
+      mtv:same tvn:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht .
+
+tv:niet_ondergeschikte
+      mtv:same tvn:aansprakelijkheid_voor_niet_ondergeschikten .
+
+tv:niet_ondergeschiktheidscriterium
+      mtv:same tvn:aansprakelijkheid_voor_niet_ondergeschikten .
+
+tv:noodweer
+      mtv:same tvn:noodweer .
+
+tv:noodweer_exces
+      mtv:same tvn:noodweerexces .
+
+tv:noodweerexces
+      mtv:same tvn:noodweerexces .
+
+tv:objectief_recht
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:omstandigheden_van_het_geval
+      mtv:same tvn:plaatselijke_omstandigheden .
+
+tv:omvang_schadecriterium
+      mtv:same tvn:aard_en_omvang_gevreesde_schade .
+
+tv:onbeheersbare_ondergrondse_natuurlijke_krachten
+      mtv:same tvn:uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten .
+
+tv:onbevoegd_gegeven_ambtelijk_bevel
+      mtv:same tvn:onbevoegd_gegeven_ambtelijk_bevel .
+
+tv:ondergeschikte_in_dienst_natuurlijk_persoon
+      mtv:same tvn:milder_regime_natuurlijk_persoon_als_werkgever .
+
+tv:oneerlijke_concurrentie
+      mtv:same tvn:oneerlijke_concurrentie .
+
+tv:ongelukkige_samenloop_van_omstandigheden
+      mtv:same tvn:bijzondere_samenloop_van_omstandigheden .
+
+tv:ongeschreven_rechtvaardigingsgrond
+      mtv:same tvn:ongeschreven_rechtvaardigingsgrond .
+
+tv:ongeschreven_vereiste_voor_persoonlijke_aansprakelijkheid
+      mtv:same tvn:aansprakelijkheid_voor_eigen_gedrag .
+
+tv:onmiddelijk_gevaar
+      mtv:same tvn:bijzonder_gevaar .
+
+tv:onmiddellijk_gevaar
+      mtv:same tvn:bijzonder_gevaar .
+
+tv:onrechtmatige_daad
+      mtv:same tvn:onrechtmatigheid_daad .
+
+tv:onrechtmatigheid
+      mtv:same tvn:onrechtmatigheid_daad .
+
+tv:onrechtmatigheidscriteria
+      mtv:same tvn:grond_voor_onrechtmatigheid .
+
+tv:opdracht
+      mtv:same tvn:opdrachtgever .
+
+tv:opstal
+      mtv:same tvn:gebrekkige_opstal .
+
+tv:ouderlijk_gezag
+      mtv:same tvn:ouder .
+
+tv:overheid
+      mtv:same tvn:verantwoordelijkheid_overheid_als_wegbeheerder .
+
+tv:overmacht
+      mtv:same tvn:overmacht_als_noodtoestand .
+
+tv:persoon
+      mtv:same tvn:aansprakelijke_persoon .
+
+tv:persoon_van_de_gelaedeerde
+      mtv:same tvn:aansprakelijke_persoon .
+
+tv:persoon_van_de_laedens
+      mtv:same tvn:aansprakelijke_persoon .
+
+tv:persoonlijke_aansprakelijkheid
+      mtv:same tvn:schuldaansprakelijkheid .
+
+tv:persoonlijkheidsrecht
+      mtv:same tv:bekendwording_20_jaar_na_sluiting , tvn:inbreuk_op_een_persoonlijkheidsrecht .
+
+tv:producent
+      mtv:same tvn:producent_roerende_zaak .
+
+tv:recht_op_een_goede_naam
+      mtv:same tvn:aantasting_eer_en_goede_naam .
+
+tv:recht_op_leven
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:recht_op_lichamelijke_integriteit
+      mtv:same tvn:inbreuk_lichamelijke_integriteit .
+
+tv:recht_op_privacy
+      mtv:same tvn:inbreuk_privacy .
+
+tv:recht_op_vrijheid
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:rechtvaardigingsgrond
+      mtv:same tvn:rechtvaardigingsgrond .
+
+tv:rechtvaardigingsgrond_krachtens_wet
+      mtv:same tvn:rechtvaardigingsgrond .
+
+tv:roerende_zaak
+      mtv:same tvn:gebrekkige_zaak .
+
+tv:schade
+      mtv:same tvn:schade_aan_zaken_of_personen .
+
+tv:schade_aan_derden_toegebracht
+      mtv:same tvn:schade_aan_zaken_of_personen .
+
+tv:schuld
+      mtv:same tvn:toerekening_op_basis_van_schuld .
+
+tv:schulduitsluitingsgrond
+      mtv:same tvn:schulduitsluitingsgrond .
+
+tv:staking
+      mtv:same tvn:staking .
+
+tv:stof
+      mtv:same tvn:gevaarlijke_stof .
+
+tv:stoffen_met_een_bijzonder_gevaar_van_ernstige_aard
+      mtv:same tvn:gevaarlijke_stof .
+
+tv:stortplaats
+      mtv:same tvn:exploitant_stortplaats .
+
+tv:subjectief_recht
+      mtv:same tvn:inbreuk_op_een_recht .
+
+tv:tenzij_hinder
+      mtv:same tvn:tenzij_formule .
+
+tv:toerekening_krachtens_wet
+      mtv:same tvn:toerekening_aan_dader .
+
+tv:toerekening_vestigingsfase
+      mtv:same tvn:toerekening_aan_dader .
+
+tv:toerekeningsverband
+      mtv:same tvn:toerekening_aan_dader .
+
+tv:toestemming_van_de_benadeelde
+      mtv:same tvn:toestemming_van_gelaedeerde .
+
+tv:vergunning
+      mtv:same tvn:aanwezigheid_vergunning .
+
+tv:vergunninghouder
+      mtv:same tvn:aanwezigheid_vergunning .
+
+tv:verkeer-_en_veiligheidsnormen
+      mtv:same tvn:zorgvuldigheidsnorm .
+
+tv:verkeer_en_veiligheidsnorm
+      mtv:same tvn:zorgvuldigheidsnorm .
+
+tv:vermogensrecht
+      mtv:same tvn:inbreuk_op_een_absoluut_vermogensrecht .
+
+tv:verontschuldigbare_dwaling
+      mtv:same tvn:verontschuldigbare_dwaling .
+
+tv:vertegenwoordiger
+      mtv:same tvn:vertegenwoordigde .
+
+tv:vertegenwoordiging
+      mtv:same tvn:vertegenwoordigde .
+
+tv:vertegenwoordigingscriterium
+      mtv:same tvn:aansprakelijkheid_voor_vertegenwoordigers .
+
+tv:voorzorgsmaatregelen
+      mtv:same tvn:bezwaarlijkheid_voorzorgmaatregelen .
+
+tv:wettelijk_vereiste_aansprakelijkheid_voor_zaken
+      mtv:same tvn:criteria_aansprakelijkheid_voor_zaken .
+
+tv:wettelijk_vereiste_voor_persoonlijke_aansprakelijkheid
+      mtv:same tvn:aansprakelijkheid_voor_eigen_gedrag .
+
+tv:wettelijk_voorschrift
+      mtv:same tvn:uitvoering_van_een_wettelijk_voorschrift .
+
+tv:wettelijke_vereiste_aansprakelijkheid_voor_personen
+      mtv:same tvn:aansprakelijkheid_voor_personen .
+
+tv:wettelijke_vereiste_aansprakelijkheid_voor_producten
+      mtv:same tvn:aansprakelijkheid_voor_producten .
+
+tv:zaak
+      mtv:same tvn:gebrekkige_zaak .

@@ -1,0 +1,354 @@
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schulduitsluitingsgrond>	 skos:prefLabel	"schulduitsluitingsgrond"@nl ;
+		 to:fingerprint [ to:value "schulduitsluitingsgrond"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schuldaansprakelijkheid>	 skos:prefLabel	"schuldaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "schuldaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_veroorzaakt_door_gewapend_conflict_of_burgeroorlog>	 skos:prefLabel	"schade veroorzaakt door gewapend conflict of burgeroorlog"@nl ;
+		 to:fingerprint [ to:value "schade veroorzaakt door gewapend conflict of burgeroorlog"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#zuiver_nalaten>	 skos:prefLabel	"zuiver nalaten"@nl ;
+		 to:fingerprint [ to:value "zuiver nalaten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#zorgvuldigheidsnorm>	 skos:prefLabel	"zorgvuldigheidsnorm"@nl ;
+		 to:fingerprint [ to:value "zorgvuldigheidsnorm"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#zorgplicht_beroepsbeoefenaar>	 skos:prefLabel	"zorgplicht beroepsbeoefenaar"@nl ;
+		 to:fingerprint [ to:value "zorgplicht beroepsbeoefenaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#zijdelingse_betekenis_wettelijke_voorschriften>	 skos:prefLabel	"zijdelingse betekenis wettelijke voorschriften"@nl ;
+		 to:fingerprint [ to:value "zijdelingse betekenis wettelijke voorschriften"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_uitsluitend_gevolg_voldoening_bevel_of_dwingend_overheidsvoorschrift>	 skos:prefLabel	"schade uitsluitend gevolg voldoening bevel of dwingend overheidsvoorschrift"@nl ;
+		 to:fingerprint [ to:value "schade uitsluitend gevolg voldoening bevel of dwingend overheidsvoorschrift"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#zaakwaarneming>	 skos:prefLabel	"zaakwaarneming"@nl ;
+		 to:fingerprint [ to:value "zaakwaarneming"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_gevolg_natuurgebeuren_van_uitzonderlijke_onvermijdelijke_en_onweerstaanbare_aard>	 skos:prefLabel	"schade gevolg natuurgebeuren van uitzonderlijke onvermijdelijke en onweerstaanbare aard"@nl ;
+		 to:fingerprint [ to:value "schade gevolg natuurgebeuren van uitzonderlijke onvermijdelijke en onweerstaanbare aard"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#wie_zat_er_het_eerst>	 skos:prefLabel	"wie zat er het eerst"@nl ;
+		 to:fingerprint [ to:value "wie zat er het eerst"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_gevolg_handeling_met_gevaarlijke_stof_in_het_belang_van_benadeelde>	 skos:prefLabel	"schade gevolg handeling met gevaarlijke stof in het belang van benadeelde"@nl ;
+		 to:fingerprint [ to:value "schade gevolg handeling met gevaarlijke stof in het belang van benadeelde"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#wetsovertreding_door_eiser>	 skos:prefLabel	"wetsovertreding door eiser"@nl ;
+		 to:fingerprint [ to:value "wetsovertreding door eiser"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#wetsovertreding_als_factor_bij_beoordeling_van_betamelijkheid>	 skos:prefLabel	"wetsovertreding als factor bij beoordeling van betamelijkheid"@nl ;
+		 to:fingerprint [ to:value "wetsovertreding als factor bij beoordeling van betamelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_aan_zaken_of_personen>	 skos:prefLabel	"schade aan zaken of personen"@nl ;
+		 to:fingerprint [ to:value "schade aan zaken of personen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#werknemer>	 skos:prefLabel	"werknemer"@nl ;
+		 to:fingerprint [ to:value "werknemer"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#risicoaansprakelijkheid>	 skos:prefLabel	"risicoaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "risicoaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#werkgever>	 skos:prefLabel	"werkgever"@nl ;
+		 to:fingerprint [ to:value "werkgever"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#risico_aanvaarding>	 skos:prefLabel	"risico aanvaarding"@nl ;
+		 to:fingerprint [ to:value "risico aanvaarding"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#waterweg>	 skos:prefLabel	"waterweg"@nl ;
+		 to:fingerprint [ to:value "waterweg"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#reele_verhouding_moeite_kosten_en_gevaar>	 skos:prefLabel	"reele verhouding moeite kosten en gevaar"@nl ;
+		 to:fingerprint [ to:value "reele verhouding moeite kosten en gevaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#waarschijnlijkheid_dat_schade_zich_zal_voordoen>	 skos:prefLabel	"waarschijnlijkheid dat schade zich zal voordoen"@nl ;
+		 to:fingerprint [ to:value "waarschijnlijkheid dat schade zich zal voordoen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#rechtvaardigingsgrond>	 skos:prefLabel	"rechtvaardigingsgrond"@nl ;
+		 to:fingerprint [ to:value "rechtvaardigingsgrond"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vuistregel_letseltoebrengend_gedrag_sportsituatie>	 skos:prefLabel	"vuistregel letseltoebrengend gedrag sportsituatie"@nl ;
+		 to:fingerprint [ to:value "vuistregel letseltoebrengend gedrag sportsituatie"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#rechtspersoon_die_de_stof_in_uitoefening_van_zijn_taak_gebruikt>	 skos:prefLabel	"rechtspersoon die de stof in uitoefening van zijn taak gebruikt"@nl ;
+		 to:fingerprint [ to:value "rechtspersoon die de stof in uitoefening van zijn taak gebruikt"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vordering_op_grond_van_onrechtvaardige_verrijking>	 skos:prefLabel	"vordering op grond van onrechtvaardige verrijking"@nl ;
+		 to:fingerprint [ to:value "vordering op grond van onrechtvaardige verrijking"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#voorwaarden_aansprakelijkheid_zuiver_nalaten>	 skos:prefLabel	"voorwaarden aansprakelijkheid zuiver nalaten"@nl ;
+		 to:fingerprint [ to:value "voorwaarden aansprakelijkheid zuiver nalaten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#producent_roerende_zaak>	 skos:prefLabel	"producent roerende zaak"@nl ;
+		 to:fingerprint [ to:value "producent roerende zaak"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verweermiddel_aansprakelijkheid>	 skos:prefLabel	"verweermiddel aansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "verweermiddel aansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#plaatselijke_omstandigheden>	 skos:prefLabel	"plaatselijke omstandigheden"@nl ;
+		 to:fingerprint [ to:value "plaatselijke omstandigheden"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#persoonlijke_verwijtbaarheid>	 skos:prefLabel	"persoonlijke verwijtbaarheid"@nl ;
+		 to:fingerprint [ to:value "persoonlijke verwijtbaarheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vervallen_vaststellen_rekenschap_belangen_van_benadeelde>	 skos:prefLabel	"vervallen vaststellen rekenschap belangen van benadeelde"@nl ;
+		 to:fingerprint [ to:value "vervallen vaststellen rekenschap belangen van benadeelde"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#persoon_aansprakelijk_voor_stof>	 skos:prefLabel	"persoon aansprakelijk voor stof"@nl ;
+		 to:fingerprint [ to:value "persoon aansprakelijk voor stof"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vertegenwoordigde>	 skos:prefLabel	"vertegenwoordigde"@nl ;
+		 to:fingerprint [ to:value "vertegenwoordigde"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verontschuldigbare_dwaling>	 skos:prefLabel	"verontschuldigbare dwaling"@nl ;
+		 to:fingerprint [ to:value "verontschuldigbare dwaling"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#persoon_aansprakelijk_voor_opstal>	 skos:prefLabel	"persoon aansprakelijk voor opstal"@nl ;
+		 to:fingerprint [ to:value "persoon aansprakelijk voor opstal"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#overmacht_als_noodtoestand>	 skos:prefLabel	"overmacht als noodtoestand"@nl ;
+		 to:fingerprint [ to:value "overmacht als noodtoestand"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verontreiniging_lucht_water_of_bodem_door_gestortte_stoffen>	 skos:prefLabel	"verontreiniging lucht water of bodem door gestortte stoffen"@nl ;
+		 to:fingerprint [ to:value "verontreiniging lucht water of bodem door gestortte stoffen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vermindering_risicoaansprakelijkheid_personen>	 skos:prefLabel	"vermindering risicoaansprakelijkheid personen"@nl ;
+		 to:fingerprint [ to:value "vermindering risicoaansprakelijkheid personen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ouder>	 skos:prefLabel	"ouder"@nl ;
+		 to:fingerprint [ to:value "ouder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#vermindering_op_basis_relativiteitsbeginsel>	 skos:prefLabel	"vermindering op basis relativiteitsbeginsel"@nl ;
+		 to:fingerprint [ to:value "vermindering op basis relativiteitsbeginsel"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#opzettelijke_inbreuk>	 skos:prefLabel	"opzettelijke inbreuk"@nl ;
+		 to:fingerprint [ to:value "opzettelijke inbreuk"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verkeersaansprakelijkheid>	 skos:prefLabel	"verkeersaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "verkeersaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#openbare_weg>	 skos:prefLabel	"openbare weg"@nl ;
+		 to:fingerprint [ to:value "openbare weg"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verjaringstermijn_vijf_jaar_na_sluiting>	 skos:prefLabel	"verjaringstermijn vijf jaar na sluiting"@nl ;
+		 to:fingerprint [ to:value "verjaringstermijn vijf jaar na sluiting"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#opdrachtgever>	 skos:prefLabel	"opdrachtgever"@nl ;
+		 to:fingerprint [ to:value "opdrachtgever"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verjaringstermijn_twintig_jaar_na_sluiting>	 skos:prefLabel	"verjaringstermijn twintig jaar na sluiting"@nl ;
+		 to:fingerprint [ to:value "verjaringstermijn twintig jaar na sluiting"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ontbreken_zeggenschap_gedraging_werknemer>	 skos:prefLabel	"ontbreken zeggenschap gedraging werknemer"@nl ;
+		 to:fingerprint [ to:value "ontbreken zeggenschap gedraging werknemer"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ontbreken_van_de_vertegenwoordiger_toekomende_bevoegdheid>	 skos:prefLabel	"ontbreken van de vertegenwoordiger toekomende bevoegdheid"@nl ;
+		 to:fingerprint [ to:value "ontbreken van de vertegenwoordiger toekomende bevoegdheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ontbreken_mogelijkheid_beletten_gedraging_kind>	 skos:prefLabel	"ontbreken mogelijkheid beletten gedraging kind"@nl ;
+		 to:fingerprint [ to:value "ontbreken mogelijkheid beletten gedraging kind"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verantwoordelijkheid_overheid_als_wegbeheerder>	 skos:prefLabel	"verantwoordelijkheid overheid als wegbeheerder"@nl ;
+		 to:fingerprint [ to:value "verantwoordelijkheid overheid als wegbeheerder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ontbreken_functioneel_verband>	 skos:prefLabel	"ontbreken functioneel verband"@nl ;
+		 to:fingerprint [ to:value "ontbreken functioneel verband"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#verantwoordelijkheid_overheid_als_waterwegbeheerder>	 skos:prefLabel	"verantwoordelijkheid overheid als waterwegbeheerder"@nl ;
+		 to:fingerprint [ to:value "verantwoordelijkheid overheid als waterwegbeheerder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#onrechtmatigheid_daad>	 skos:prefLabel	"onrechtmatigheid daad"@nl ;
+		 to:fingerprint [ to:value "onrechtmatigheid daad"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#uitvoering_van_een_wettelijk_voorschrift>	 skos:prefLabel	"uitvoering van een wettelijk voorschrift"@nl ;
+		 to:fingerprint [ to:value "uitvoering van een wettelijk voorschrift"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#ongeschreven_rechtvaardigingsgrond>	 skos:prefLabel	"ongeschreven rechtvaardigingsgrond"@nl ;
+		 to:fingerprint [ to:value "ongeschreven rechtvaardigingsgrond"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#oneerlijke_concurrentie>	 skos:prefLabel	"oneerlijke concurrentie"@nl ;
+		 to:fingerprint [ to:value "oneerlijke concurrentie"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#uitvoerder_bedrijf>	 skos:prefLabel	"uitvoerder bedrijf"@nl ;
+		 to:fingerprint [ to:value "uitvoerder bedrijf"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#onderlinge_draagplicht>	 skos:prefLabel	"onderlinge draagplicht"@nl ;
+		 to:fingerprint [ to:value "onderlinge draagplicht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten>	 skos:prefLabel	"uitstroming gevolg van niet beheersen van ondergrondse krachten"@nl ;
+		 to:fingerprint [ to:value "uitstroming gevolg van niet beheersen van ondergrondse krachten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#uitsluiting_bij_opzet_of_roekeloosheid>	 skos:prefLabel	"uitsluiting bij opzet of roekeloosheid"@nl ;
+		 to:fingerprint [ to:value "uitsluiting bij opzet of roekeloosheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#onbevoegd_gegeven_ambtelijk_bevel>	 skos:prefLabel	"onbevoegd gegeven ambtelijk bevel"@nl ;
+		 to:fingerprint [ to:value "onbevoegd gegeven ambtelijk bevel"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#tot_onderhoud_verplicht_overheidslichaam>	 skos:prefLabel	"tot onderhoud verplicht overheidslichaam"@nl ;
+		 to:fingerprint [ to:value "tot onderhoud verplicht overheidslichaam"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#toestemming_van_gelaedeerde>	 skos:prefLabel	"toestemming van gelaedeerde"@nl ;
+		 to:fingerprint [ to:value "toestemming van gelaedeerde"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#omgekeerde_bewijslast_op_grond_van_wetsovertreding>	 skos:prefLabel	"omgekeerde bewijslast op grond van wetsovertreding"@nl ;
+		 to:fingerprint [ to:value "omgekeerde bewijslast op grond van wetsovertreding"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_op_basis_van_specifieke_wettelijke_bepaling>	 skos:prefLabel	"toerekening op basis van specifieke wettelijke bepaling"@nl ;
+		 to:fingerprint [ to:value "toerekening op basis van specifieke wettelijke bepaling"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#noodweerexces>	 skos:prefLabel	"noodweerexces"@nl ;
+		 to:fingerprint [ to:value "noodweerexces"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_op_basis_van_schuld>	 skos:prefLabel	"toerekening op basis van schuld"@nl ;
+		 to:fingerprint [ to:value "toerekening op basis van schuld"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#noodweer>	 skos:prefLabel	"noodweer"@nl ;
+		 to:fingerprint [ to:value "noodweer"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_op_basis_van_in_het_verkeer_geldende_opvattingen>	 skos:prefLabel	"toerekening op basis van in het verkeer geldende opvattingen"@nl ;
+		 to:fingerprint [ to:value "toerekening op basis van in het verkeer geldende opvattingen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#nadere_eisen_risicoaansprakelijkheid>	 skos:prefLabel	"nadere eisen risicoaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "nadere eisen risicoaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_aan_dader>	 skos:prefLabel	"toerekening aan dader"@nl ;
+		 to:fingerprint [ to:value "toerekening aan dader"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#mogelijkheid_en_noodzaak_iets_te_doen>	 skos:prefLabel	"mogelijkheid en noodzaak iets te doen"@nl ;
+		 to:fingerprint [ to:value "mogelijkheid en noodzaak iets te doen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#terrein>	 skos:prefLabel	"terrein"@nl ;
+		 to:fingerprint [ to:value "terrein"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#milieu_aansprakelijkheid>	 skos:prefLabel	"milieu aansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "milieu aansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#milder_regime_natuurlijk_persoon_als_werkgever>	 skos:prefLabel	"milder regime natuurlijk persoon als werkgever"@nl ;
+		 to:fingerprint [ to:value "milder regime natuurlijk persoon als werkgever"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#tenzij_formule>	 skos:prefLabel	"tenzij formule"@nl ;
+		 to:fingerprint [ to:value "tenzij formule"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#medische_aansprakelijkheid>	 skos:prefLabel	"medische aansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "medische aansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#strengere_eisen_verantwoordelijkheid_sportvereniging>	 skos:prefLabel	"strengere eisen verantwoordelijkheid sportvereniging"@nl ;
+		 to:fingerprint [ to:value "strengere eisen verantwoordelijkheid sportvereniging"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#staking>	 skos:prefLabel	"staking"@nl ;
+		 to:fingerprint [ to:value "staking"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#sportsituatie>	 skos:prefLabel	"sportsituatie"@nl ;
+		 to:fingerprint [ to:value "sportsituatie"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#leidingbeheerder>	 skos:prefLabel	"leidingbeheerder"@nl ;
+		 to:fingerprint [ to:value "leidingbeheerder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#kind_van_veertien_of_vijftien_jaar>	 skos:prefLabel	"kind van veertien of vijftien jaar"@nl ;
+		 to:fingerprint [ to:value "kind van veertien of vijftien jaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#kind_jonger_dan_14_jaar>	 skos:prefLabel	"kind jonger dan 14 jaar"@nl ;
+		 to:fingerprint [ to:value "kind jonger dan 14 jaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#kelderluik_criterium>	 skos:prefLabel	"kelderluik criterium"@nl ;
+		 to:fingerprint [ to:value "kelderluik criterium"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_recht_op_onderwijs>	 skos:prefLabel	"inbreuk recht op onderwijs"@nl ;
+		 to:fingerprint [ to:value "inbreuk recht op onderwijs"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bijzondere_samenloop_van_omstandigheden>	 skos:prefLabel	"bijzondere samenloop van omstandigheden"@nl ;
+		 to:fingerprint [ to:value "bijzondere samenloop van omstandigheden"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_recht_op_leefbaar_milieu>	 skos:prefLabel	"inbreuk recht op leefbaar milieu"@nl ;
+		 to:fingerprint [ to:value "inbreuk recht op leefbaar milieu"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bijzonder_gevaar_van_ernstige_aard>	 skos:prefLabel	"bijzonder gevaar van ernstige aard"@nl ;
+		 to:fingerprint [ to:value "bijzonder gevaar van ernstige aard"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_recht_op_bijstand>	 skos:prefLabel	"inbreuk recht op bijstand"@nl ;
+		 to:fingerprint [ to:value "inbreuk recht op bijstand"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bijzonder_gevaar>	 skos:prefLabel	"bijzonder gevaar"@nl ;
+		 to:fingerprint [ to:value "bijzonder gevaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_privacy>	 skos:prefLabel	"inbreuk privacy"@nl ;
+		 to:fingerprint [ to:value "inbreuk privacy"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bezwaarlijkheid_voorzorgmaatregelen>	 skos:prefLabel	"bezwaarlijkheid voorzorgmaatregelen"@nl ;
+		 to:fingerprint [ to:value "bezwaarlijkheid voorzorgmaatregelen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_op_een_recht>	 skos:prefLabel	"inbreuk op een recht"@nl ;
+		 to:fingerprint [ to:value "inbreuk op een recht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bezitter_van_een_dier>	 skos:prefLabel	"bezitter van een dier"@nl ;
+		 to:fingerprint [ to:value "bezitter van een dier"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_op_een_persoonlijkheidsrecht>	 skos:prefLabel	"inbreuk op een persoonlijkheidsrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk op een persoonlijkheidsrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_op_een_absoluut_vermogensrecht>	 skos:prefLabel	"inbreuk op een absoluut vermogensrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk op een absoluut vermogensrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bezitter_roerende_zaak>	 skos:prefLabel	"bezitter roerende zaak"@nl ;
+		 to:fingerprint [ to:value "bezitter roerende zaak"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_octrooirecht>	 skos:prefLabel	"inbreuk octrooirecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk octrooirecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bezitter_opstal>	 skos:prefLabel	"bezitter opstal"@nl ;
+		 to:fingerprint [ to:value "bezitter opstal"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_merkenrecht>	 skos:prefLabel	"inbreuk merkenrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk merkenrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bezitter_erfpachtsrecht>	 skos:prefLabel	"bezitter erfpachtsrecht"@nl ;
+		 to:fingerprint [ to:value "bezitter erfpachtsrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_lichamelijke_integriteit>	 skos:prefLabel	"inbreuk lichamelijke integriteit"@nl ;
+		 to:fingerprint [ to:value "inbreuk lichamelijke integriteit"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bewaarder_gevaarlijke_stof>	 skos:prefLabel	"bewaarder gevaarlijke stof"@nl ;
+		 to:fingerprint [ to:value "bewaarder gevaarlijke stof"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bevrijdende_omstandigheden_risicoaansprakelijkheid>	 skos:prefLabel	"bevrijdende omstandigheden risicoaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "bevrijdende omstandigheden risicoaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_huisrecht>	 skos:prefLabel	"inbreuk huisrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk huisrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bevoegd_gegeven_ambtelijk_bevel>	 skos:prefLabel	"bevoegd gegeven ambtelijk bevel"@nl ;
+		 to:fingerprint [ to:value "bevoegd gegeven ambtelijk bevel"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_eigendomsrecht>	 skos:prefLabel	"inbreuk eigendomsrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk eigendomsrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_auteursrecht>	 skos:prefLabel	"inbreuk auteursrecht"@nl ;
+		 to:fingerprint [ to:value "inbreuk auteursrecht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#beroepsaansprakelijkheid>	 skos:prefLabel	"beroepsaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "beroepsaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansprakelijkheid_zou_ontbreken>	 skos:prefLabel	"hinder verontreiniging of andere gevolgen op basis waarvan persoonlijke aansprakelijkheid zou ontbreken"@nl ;
+		 to:fingerprint [ to:value "hinder verontreiniging of andere gevolgen op basis waarvan persoonlijke aansprakelijkheid zou ontbreken"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#beperking_soort_schade>	 skos:prefLabel	"beperking soort schade"@nl ;
+		 to:fingerprint [ to:value "beperking soort schade"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#hinder>	 skos:prefLabel	"hinder"@nl ;
+		 to:fingerprint [ to:value "hinder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#beperking_kring_personen>	 skos:prefLabel	"beperking kring personen"@nl ;
+		 to:fingerprint [ to:value "beperking kring personen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#grond_voor_onrechtmatigheid>	 skos:prefLabel	"grond voor onrechtmatigheid"@nl ;
+		 to:fingerprint [ to:value "grond voor onrechtmatigheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bekendheid_gevaren_in_geval_gebrekkigheid>	 skos:prefLabel	"bekendheid gevaren in geval gebrekkigheid"@nl ;
+		 to:fingerprint [ to:value "bekendheid gevaren in geval gebrekkigheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#grond_vermindering_schadevergoedingsplicht>	 skos:prefLabel	"grond vermindering schadevergoedingsplicht"@nl ;
+		 to:fingerprint [ to:value "grond vermindering schadevergoedingsplicht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bekendheid_gevaar_stof>	 skos:prefLabel	"bekendheid gevaar stof"@nl ;
+		 to:fingerprint [ to:value "bekendheid gevaar stof"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#grond_toerekening_aan_dader>	 skos:prefLabel	"grond toerekening aan dader"@nl ;
+		 to:fingerprint [ to:value "grond toerekening aan dader"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#algemeen_belang>	 skos:prefLabel	"algemeen belang"@nl ;
+		 to:fingerprint [ to:value "algemeen belang"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#groepsaansprakelijkheid>	 skos:prefLabel	"groepsaansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "groepsaansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aard_van_de_gedraging>	 skos:prefLabel	"aard van de gedraging"@nl ;
+		 to:fingerprint [ to:value "aard van de gedraging"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aard_en_omvang_gevreesde_schade>	 skos:prefLabel	"aard en omvang gevreesde schade"@nl ;
+		 to:fingerprint [ to:value "aard en omvang gevreesde schade"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aanwezigheid_vergunning>	 skos:prefLabel	"aanwezigheid vergunning"@nl ;
+		 to:fingerprint [ to:value "aanwezigheid vergunning"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gevaarzetting>	 skos:prefLabel	"gevaarzetting"@nl ;
+		 to:fingerprint [ to:value "gevaarzetting"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aantrekken_belangen_van_schadelijder>	 skos:prefLabel	"aantrekken belangen van schadelijder"@nl ;
+		 to:fingerprint [ to:value "aantrekken belangen van schadelijder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gevaarlijke_stof>	 skos:prefLabel	"gevaarlijke stof"@nl ;
+		 to:fingerprint [ to:value "gevaarlijke stof"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aantasting_eer_en_goede_naam>	 skos:prefLabel	"aantasting eer en goede naam"@nl ;
+		 to:fingerprint [ to:value "aantasting eer en goede naam"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#geestelijke_tekortkoming>	 skos:prefLabel	"geestelijke tekortkoming"@nl ;
+		 to:fingerprint [ to:value "geestelijke tekortkoming"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gedraging_minder_snel_onrechtmatig_in_sportsituatie>	 skos:prefLabel	"gedraging minder snel onrechtmatig in sportsituatie"@nl ;
+		 to:fingerprint [ to:value "gedraging minder snel onrechtmatig in sportsituatie"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_zaken>	 skos:prefLabel	"aansprakelijkheid voor zaken"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor zaken"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gebruiker_gevaarlijke_stof>	 skos:prefLabel	"gebruiker gevaarlijke stof"@nl ;
+		 to:fingerprint [ to:value "gebruiker gevaarlijke stof"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_vertegenwoordigers>	 skos:prefLabel	"aansprakelijkheid voor vertegenwoordigers"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor vertegenwoordigers"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_stortplaatsen>	 skos:prefLabel	"aansprakelijkheid voor stortplaatsen"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor stortplaatsen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gebrekkige_zaak>	 skos:prefLabel	"gebrekkige zaak"@nl ;
+		 to:fingerprint [ to:value "gebrekkige zaak"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gebrekkige_opstal>	 skos:prefLabel	"gebrekkige opstal"@nl ;
+		 to:fingerprint [ to:value "gebrekkige opstal"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_stoffen>	 skos:prefLabel	"aansprakelijkheid voor stoffen"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor stoffen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#factoren_onrechtmatigheid_hinder>	 skos:prefLabel	"factoren onrechtmatigheid hinder"@nl ;
+		 to:fingerprint [ to:value "factoren onrechtmatigheid hinder"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_producten>	 skos:prefLabel	"aansprakelijkheid voor producten"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor producten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#exploitant_stortplaats>	 skos:prefLabel	"exploitant stortplaats"@nl ;
+		 to:fingerprint [ to:value "exploitant stortplaats"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_personen>	 skos:prefLabel	"aansprakelijkheid voor personen"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor personen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#exploitant_boorgat>	 skos:prefLabel	"exploitant boorgat"@nl ;
+		 to:fingerprint [ to:value "exploitant boorgat"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_opstallen>	 skos:prefLabel	"aansprakelijkheid voor opstallen"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor opstallen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#enkel_overtreden_spelregels_niet_onrechtmatig>	 skos:prefLabel	"enkel overtreden spelregels niet onrechtmatig"@nl ;
+		 to:fingerprint [ to:value "enkel overtreden spelregels niet onrechtmatig"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_niet_ondergeschikten>	 skos:prefLabel	"aansprakelijkheid voor niet ondergeschikten"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor niet ondergeschikten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#dreiging_ernstig_geestelijk_of_lichamelijk_letsel>	 skos:prefLabel	"dreiging ernstig geestelijk of lichamelijk letsel"@nl ;
+		 to:fingerprint [ to:value "dreiging ernstig geestelijk of lichamelijk letsel"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar>	 skos:prefLabel	"aansprakelijkheid voor kinderen van veertien en vijftien jaar"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor kinderen van veertien en vijftien jaar"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt>	 skos:prefLabel	"doen of nalaten in strijd met hetgeen volgens ongeschreven recht in het maatschappelijk verkeer betaamt"@nl ;
+		 to:fingerprint [ to:value "doen of nalaten in strijd met hetgeen volgens ongeschreven recht in het maatschappelijk verkeer betaamt"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_kinderen>	 skos:prefLabel	"aansprakelijkheid voor kinderen"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor kinderen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#doen_of_nalaten_in_strijd_met_een_wettelijke_plicht>	 skos:prefLabel	"doen of nalaten in strijd met een wettelijke plicht"@nl ;
+		 to:fingerprint [ to:value "doen of nalaten in strijd met een wettelijke plicht"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_eigen_gedrag>	 skos:prefLabel	"aansprakelijkheid voor eigen gedrag"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor eigen gedrag"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#directe_inbreuk>	 skos:prefLabel	"directe inbreuk"@nl ;
+		 to:fingerprint [ to:value "directe inbreuk"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#cumulatieve_aansprakelijkheid>	 skos:prefLabel	"cumulatieve aansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "cumulatieve aansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_dieren>	 skos:prefLabel	"aansprakelijkheid voor dieren"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor dieren"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_zaken>	 skos:prefLabel	"criteria aansprakelijkheid voor zaken"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor zaken"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_voor_boorgaten>	 skos:prefLabel	"aansprakelijkheid voor boorgaten"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid voor boorgaten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_stortplaatsen>	 skos:prefLabel	"criteria aansprakelijkheid voor stortplaatsen"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor stortplaatsen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_stoffen>	 skos:prefLabel	"criteria aansprakelijkheid voor stoffen"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor stoffen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_van_werkgever>	 skos:prefLabel	"aansprakelijkheid van werkgever"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid van werkgever"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_opstallen>	 skos:prefLabel	"criteria aansprakelijkheid voor opstallen"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor opstallen"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_in_bedrijfsverband>	 skos:prefLabel	"aansprakelijkheid in bedrijfsverband"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid in bedrijfsverband"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_boorgaten>	 skos:prefLabel	"criteria aansprakelijkheid voor boorgaten"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor boorgaten"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_buiten_schuld>	 skos:prefLabel	"aansprakelijkheid buiten schuld"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid buiten schuld"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#concrete_kennis_van_gevaarlijke_situatie>	 skos:prefLabel	"concrete kennis van gevaarlijke situatie"@nl ;
+		 to:fingerprint [ to:value "concrete kennis van gevaarlijke situatie"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#bijzondere_zorgplicht_terreinbeheerders>	 skos:prefLabel	"bijzondere zorgplicht terreinbeheerders"@nl ;
+		 to:fingerprint [ to:value "bijzondere zorgplicht terreinbeheerders"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid>	 skos:prefLabel	"aansprakelijkheid"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijke_persoon>	 skos:prefLabel	"aansprakelijke persoon"@nl ;
+		 to:fingerprint [ to:value "aansprakelijke persoon"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_uitsluitend_veroorzaakt_door_handelen_of_nalaten_van_derde_met_opzet_tot_schade>	 skos:prefLabel	"schade uitsluitend veroorzaakt door handelen of nalaten van derde met opzet tot schade"@nl ;
+		 to:fingerprint [ to:value "schade uitsluitend veroorzaakt door handelen of nalaten van derde met opzet tot schade"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#schade_aangericht_door_door_mens_gehouden_dier>	 skos:prefLabel	"schade aangericht door door mens gehouden dier"@nl ;
+		 to:fingerprint [ to:value "schade aangericht door door mens gehouden dier"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#onberekenbaarheid_gedraging_van_het_dier>	 skos:prefLabel	"onberekenbaarheid gedraging van het dier"@nl ;
+		 to:fingerprint [ to:value "onberekenbaarheid gedraging van het dier"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#medebezitter_van_een_dier>	 skos:prefLabel	"medebezitter van een dier"@nl ;
+		 to:fingerprint [ to:value "medebezitter van een dier"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#medebezitter_roerende_zaak>	 skos:prefLabel	"medebezitter roerende zaak"@nl ;
+		 to:fingerprint [ to:value "medebezitter roerende zaak"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gezamenlijke_exploitanten_stortplaats>	 skos:prefLabel	"gezamenlijke exploitanten stortplaats"@nl ;
+		 to:fingerprint [ to:value "gezamenlijke exploitanten stortplaats"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gezamenlijke_exploitanten_boorgat>	 skos:prefLabel	"gezamenlijke exploitanten boorgat"@nl ;
+		 to:fingerprint [ to:value "gezamenlijke exploitanten boorgat"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#gebruik_bij_uitoefening_in_bedrijfsverband>	 skos:prefLabel	"gebruik bij uitoefening in bedrijfsverband"@nl ;
+		 to:fingerprint [ to:value "gebruik bij uitoefening in bedrijfsverband"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#criteria_aansprakelijkheid_voor_dieren>	 skos:prefLabel	"criteria aansprakelijkheid voor dieren"@nl ;
+		 to:fingerprint [ to:value "criteria aansprakelijkheid voor dieren"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .
+<http://www.best-project.nl/owl/tort-vocabulary-new.owl#aansprakelijkheid_bij_ter_beschikkingstelling_aan_ander_bedrijf>	 skos:prefLabel	"aansprakelijkheid bij ter beschikkingstelling aan ander bedrijf"@nl ;
+		 to:fingerprint [ to:value "aansprakelijkheid bij ter beschikkingstelling aan ander bedrijf"@nl; to:weight 100; skos:note "Fingerprint automatically generated from skos:prefLabel"@en ] .

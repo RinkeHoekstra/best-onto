@@ -1,0 +1,439 @@
+# baseURI: http://www.best-project.nl/owl/merged-tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary.owl
+# imports: http://www.best-project.nl/owl/tort-vocabulary-new.owl
+
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix lv:   <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
+@prefix tv:   <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
+@prefix best: <http://www.best-project.nl/owl/best.owl#> .
+@prefix bm: <http://www.best-project.nl/owl/bestmap.owl#> .
+@prefix mapping: <http://www.best-project.nl/owl/mapping.owl#> .
+@prefix mtv:	<http://www.best-project.nl/owl/merged-tort-vocabulary.owl#> .
+@prefix query: <http://www.best-project.nl/owl/query#> .
+
+
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#zorgvuldigheidsnorm> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#zorgvuldigheidsnorm> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#zijdelingse_betekenis_wettelijke_voorschriften> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#wettelijk_voorschrift> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#waarschijnlijkheid_dat_schade_zich_zal_voordoen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#mate_van_waarschijnlijkheid_schade> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#verweermiddel_aansprakelijkheid> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#ontbreken_van_aansprakelijkheid> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#vertegenwoordigde> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#vertegenwoordiger> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#verontschuldigbare_dwaling> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#verontschuldigbare_dwaling> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#verjaringstermijn_twintig_jaar_na_sluiting> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bekendwording_20_jaar_na_sluiting> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#verantwoordelijkheid_overheid_als_wegbeheerder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#overheid> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#verantwoordelijkheid_overheid_als_waterwegbeheerder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#overheid> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#uitvoering_van_een_wettelijk_voorschrift> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#wettelijk_voorschrift> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#onbeheersbare_ondergrondse_natuurlijke_krachten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#toestemming_van_gelaedeerde> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#toestemming_van_de_benadeelde> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#toerekening_op_basis_van_schuld> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#schuld> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#toerekening_aan_dader> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#toerekening_vestigingsfase> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#staking> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#staking> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#schulduitsluitingsgrond> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#schulduitsluitingsgrond> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#schade_gevolg_natuurgebeuren_van_uitzonderlijke_onvermijdelijke_en_onweerstaanbare_aard> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#onbeheersbare_natuurlijke_krachten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#schade_aan_zaken_of_personen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#schade> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#rechtvaardigingsgrond> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#rechtvaardigingsgrond> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#producent_roerende_zaak> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#producent> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#plaatselijke_omstandigheden> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#omstandigheden_van_het_geval> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#overmacht_als_noodtoestand> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#overmacht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#ouder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#ouderlijk_gezag> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#opzettelijke_inbreuk> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#opdrachtgever> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#opdracht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#ontbreken_zeggenschap_gedraging_werknemer> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#zeggenschap_over_de_gedragingen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#ontbreken_functioneel_verband> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#functioneel_verbandcriterium> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#onrechtmatigheid_daad> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#onrechtmatigheid> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#ongeschreven_rechtvaardigingsgrond> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#ongeschreven_rechtvaardigingsgrond> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#oneerlijke_concurrentie> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#oneerlijke_concurrentie> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#onbevoegd_gegeven_ambtelijk_bevel> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#onbevoegd_gegeven_ambtelijk_bevel> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#noodweerexces> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#noodweer_exces> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#noodweer> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#noodweer> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#milieu_aansprakelijkheid> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#milieu> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#milder_regime_natuurlijk_persoon_als_werkgever> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#ondergeschikte_in_dienst_natuurlijk_persoon> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#leidingbeheerder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#leidingschade> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#kind_van_veertien_of_vijftien_jaar> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#kind_van_14_of_15_jaar> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#kind_jonger_dan_14_jaar> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#kind_jonger_dan_14> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#kelderluik_criterium> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#kelderluikcriteria> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_recht_op_onderwijs> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_recht_op_leefbaar_milieu> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_recht_op_bijstand> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_privacy> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#recht_op_privacy> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_op_een_recht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_op_een_persoonlijkheidsrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#persoonlijkheidsrecht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_op_een_absoluut_vermogensrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#vermogensrecht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_octrooirecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_merkenrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_lichamelijke_integriteit> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#recht_op_lichamelijke_integriteit> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_huisrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_eigendomsrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#eigendomsrecht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#inbreuk_auteursrecht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#inbreuk_op_een_recht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#hinder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#hinder> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#grond_voor_onrechtmatigheid> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#onrechtmatigheidscriteria> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#gevaarzetting> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#gevaarzetting> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#gevaarlijke_stof> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#stof> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#geestelijke_tekortkoming> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#geestelijke_tekortkoming> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#gebrekkige_zaak> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#zaak> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#gebrekkige_opstal> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#opstal> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#factoren_onrechtmatigheid_hinder> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#hinder> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#exploitant_stortplaats> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#exploitant_stortplaats> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#exploitant_boorgat> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#exploitant_mijnbouwwerk> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#doen_of_nalaten_in_strijd_met_een_wettelijke_plicht> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#in_strijd_met_een_wettelijke_plicht> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#criteria_aansprakelijkheid_voor_zaken> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#wettelijk_vereiste_aansprakelijkheid_voor_zaken> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#criteria_aansprakelijkheid_voor_stortplaatsen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_stortplaatsen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bijzondere_samenloop_van_omstandigheden> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#ongelukkige_samenloop_van_omstandigheden> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bijzonder_gevaar_van_ernstige_aard> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#stoffen_met_een_bijzonder_gevaar_van_ernstige_aard> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bijzonder_gevaar> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bijzonder_gevaar> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bezwaarlijkheid_voorzorgmaatregelen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bezwaarlijkheid_veiligheidsmaatregelen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bezitter_roerende_zaak> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_roerende_zaak> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bezitter_opstal> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bezitter_van_een_opstal> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#bevoegd_gegeven_ambtelijk_bevel> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#bevoegd_gegeven_ambtelijk_bevel> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aard_van_de_gedraging> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aard_van_de_gedraging> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aard_en_omvang_gevreesde_schade> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aard_van_de_schade> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aanwezigheid_vergunning> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#vergunning> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aantasting_eer_en_goede_naam> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aantasting_van_de_eer_en_goede_naam> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_zaken> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_zaken> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_vertegenwoordigers> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_vertegenwoordigers> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_stoffen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_stoffen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_producten> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_gebrekkige_producten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_personen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_producten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_opstallen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_opstallen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_niet_ondergeschikten> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_niet_ondergeschikten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_kinderen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_kinderen> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_kinderen> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_boorgaten> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#aansprakelijkheid_voor_boorgaten> . 
+<http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijke_persoon> mtv:same <http://www.best-project.nl/owl/tort-vocabulary.owl#persoon> . 
+<!-- 331 unmatched concepts: 
+http://www_best-project_nl/owl/tort-vocabulary_owl#zuivere_vermogensschade
+http://www_best-project_nl/owl/tort-vocabulary_owl#zorgvuldigheidsnorm
+http://www_best-project_nl/owl/tort-vocabulary_owl#zeggenschap_over_de_gedragingen
+http://www_best-project_nl/owl/tort-vocabulary_owl#zaak
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijke_vereiste_aansprakelijkheid_voor_producten
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijke_vereiste_aansprakelijkheid_voor_personen
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_voor_kwalitatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijke_vereiste_aansprakelijkheid_voor_misleidende_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijke_uitzondering
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijke_plicht
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_voorschrift
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_voor_persoonlijke_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_persoonlijke_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_aansprakelijkheid_voor_vergelijkende_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_kwalitatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#wettelijk_vereiste_aansprakelijkheid_voor_zaken
+http://www_best-project_nl/owl/tort-vocabulary_owl#wanprestatie
+http://www_best-project_nl/owl/tort-vocabulary_owl#voorzorgsmaatregelen
+http://www_best-project_nl/owl/tort-vocabulary_owl#voorzienbaarheid_van_de_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#verzekerbaarheid_van_de_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#verwezenlijking_van_het_gevaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#verwezelijking_van_een_gevaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#veroudering_van_gegevens
+http://www_best-project_nl/owl/tort-vocabulary_owl#vertegenwoordigingscriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#vertegenwoordiging
+http://www_best-project_nl/owl/tort-vocabulary_owl#veroudering_van_de_gegevens
+http://www_best-project_nl/owl/tort-vocabulary_owl#vertegenwoordiger
+http://www_best-project_nl/owl/tort-vocabulary_owl#verontschuldigbare_dwaling
+http://www_best-project_nl/owl/tort-vocabulary_owl#vermogensrecht
+http://www_best-project_nl/owl/tort-vocabulary_owl#verklaring_of_beoordeling
+http://www_best-project_nl/owl/tort-vocabulary_owl#verhindering_in_de_uitoefening_van_bevoegdheden
+http://www_best-project_nl/owl/tort-vocabulary_owl#verkeersongeval
+http://www_best-project_nl/owl/tort-vocabulary_owl#vergunninghouder
+http://www_best-project_nl/owl/tort-vocabulary_owl#verkeerde_informatie
+http://www_best-project_nl/owl/tort-vocabulary_owl#verkeer_en_veiligheidsnorm
+http://www_best-project_nl/owl/tort-vocabulary_owl#verkeer-_en_veiligheidsnormen
+http://www_best-project_nl/owl/tort-vocabulary_owl#vergunning
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_zaakschade_beneden_de_500_euro
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_op_grond_van_de_wet
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_op_grond_van_afdeling_6_3_3
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_ontbreken_aansprakelijkheid_6_162
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_franchise_van_500_euro
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitzondering_afdeling_6_3_3
+http://www_best-project_nl/owl/tort-vocabulary_owl#tolerantiegrenzen
+http://www_best-project_nl/owl/tort-vocabulary_owl#toestemming_van_de_benadeelde
+http://www_best-project_nl/owl/tort-vocabulary_owl#uitvoerbaareid_overeenkomst
+http://www_best-project_nl/owl/tort-vocabulary_owl#toestand
+http://www_best-project_nl/owl/tort-vocabulary_owl#toerekeningsverband
+http://www_best-project_nl/owl/tort-vocabulary_owl#toerekening_vestigingsfase
+http://www_best-project_nl/owl/tort-vocabulary_owl#toerekening_omvangsfase
+http://www_best-project_nl/owl/tort-vocabulary_owl#toerekening_naar_redelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#toelaatbaarheid_van_het_gedrag_van_toezichthouders
+http://www_best-project_nl/owl/tort-vocabulary_owl#toerekening_krachtens_wet
+http://www_best-project_nl/owl/tort-vocabulary_owl#tenzij_hinder
+http://www_best-project_nl/owl/tort-vocabulary_owl#tekortkoming
+http://www_best-project_nl/owl/tort-vocabulary_owl#subjectief_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#stortplaats
+http://www_best-project_nl/owl/tort-vocabulary_owl#stoffen_met_een_bijzonder_gevaar_van_ernstige_aard
+http://www_best-project_nl/owl/tort-vocabulary_owl#stofcriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#stof
+http://www_best-project_nl/owl/tort-vocabulary_owl#steun_van_verdenking_in_de_feiten
+http://www_best-project_nl/owl/tort-vocabulary_owl#staking
+http://www_best-project_nl/owl/tort-vocabulary_owl#schulduitsluitingsgrond
+http://www_best-project_nl/owl/tort-vocabulary_owl#schuld_van_de_benadeelde
+http://www_best-project_nl/owl/tort-vocabulary_owl#schuld
+http://www_best-project_nl/owl/tort-vocabulary_owl#schade_aan_derden_toegebracht
+http://www_best-project_nl/owl/tort-vocabulary_owl#roerende_zaak
+http://www_best-project_nl/owl/tort-vocabulary_owl#schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#roerende_zaakcriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#rechtvaardigingsgrond
+http://www_best-project_nl/owl/tort-vocabulary_owl#rechtvaardigingsgrond_krachtens_wet
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht_op_een_goede_naam
+http://www_best-project_nl/owl/tort-vocabulary_owl#rechten_van_pachter
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#rechten_van_huurder
+http://www_best-project_nl/owl/tort-vocabulary_owl#productenaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#product_dat_niet_de_veiligheid_biedt_die_men_ervan_mag_verwachten
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht_op_vrijheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht_op_privacy
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht_op_lichamelijke_integriteit
+http://www_best-project_nl/owl/tort-vocabulary_owl#recht_op_leven
+http://www_best-project_nl/owl/tort-vocabulary_owl#product_dat_niet_de_veiligheid_biedt
+http://www_best-project_nl/owl/tort-vocabulary_owl#producent
+http://www_best-project_nl/owl/tort-vocabulary_owl#pleger_onrechtmatige_daad
+http://www_best-project_nl/owl/tort-vocabulary_owl#presentatie_van_het_product
+http://www_best-project_nl/owl/tort-vocabulary_owl#plaats_van_de_daad
+http://www_best-project_nl/owl/tort-vocabulary_owl#persoonlijkheidsrecht
+http://www_best-project_nl/owl/tort-vocabulary_owl#persoonlijke_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#persoon_van_de_laedens
+http://www_best-project_nl/owl/tort-vocabulary_owl#overtreding_gebruiksvoorschriften_bij_de_sluiting
+http://www_best-project_nl/owl/tort-vocabulary_owl#overmacht
+http://www_best-project_nl/owl/tort-vocabulary_owl#persoon_van_de_gelaedeerde
+http://www_best-project_nl/owl/tort-vocabulary_owl#overheidstoestemming
+http://www_best-project_nl/owl/tort-vocabulary_owl#overheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#persoon
+http://www_best-project_nl/owl/tort-vocabulary_owl#overtreding_van_de_gebruiksvoorschriften_bij_sluiting
+http://www_best-project_nl/owl/tort-vocabulary_owl#ouderlijk_gezag
+http://www_best-project_nl/owl/tort-vocabulary_owl#opstal
+http://www_best-project_nl/owl/tort-vocabulary_owl#openbaarmaking_van_de_mededeling
+http://www_best-project_nl/owl/tort-vocabulary_owl#opgedragen_taak
+http://www_best-project_nl/owl/tort-vocabulary_owl#opdracht
+http://www_best-project_nl/owl/tort-vocabulary_owl#ontbreken_van_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#onroerende_zaak
+http://www_best-project_nl/owl/tort-vocabulary_owl#onrechtmatigheidscriteria
+http://www_best-project_nl/owl/tort-vocabulary_owl#onrechtmatigheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#onrechtmatige_daad
+http://www_best-project_nl/owl/tort-vocabulary_owl#onmiddelijk_gevaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#onjuistheid_van_de_gegevens
+http://www_best-project_nl/owl/tort-vocabulary_owl#onmiddellijk_gevaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongeschreven_vereiste_voor_persoonlijke_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongeschreven_vereiste_voor_kwalitatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongeschreven_vereiste_persoonlijke_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongeschreven_vereiste_kwalitatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#onbeheersbare_ondergrondse_natuurlijke_krachten
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongeschreven_rechtvaardigingsgrond
+http://www_best-project_nl/owl/tort-vocabulary_owl#ongelukkige_samenloop_van_omstandigheden
+http://www_best-project_nl/owl/tort-vocabulary_owl#oneerlijke_concurrentie
+http://www_best-project_nl/owl/tort-vocabulary_owl#onduidelijkheid_van_de_verstrekte_gegevens
+http://www_best-project_nl/owl/tort-vocabulary_owl#ondergeschiktheidscriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#ondergeschikte_in_dienst_natuurlijk_persoon
+http://www_best-project_nl/owl/tort-vocabulary_owl#ondergeschikte
+http://www_best-project_nl/owl/tort-vocabulary_owl#ondergeschikt_in_dienst_natuurlijk_persooncriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#onbevoegd_uitoefenen_bevoegdheden
+http://www_best-project_nl/owl/tort-vocabulary_owl#onbevoegd_gegeven_ambtelijk_bevel
+http://www_best-project_nl/owl/tort-vocabulary_owl#omvang_schadecriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#omstandigheden_van_het_geval
+http://www_best-project_nl/owl/tort-vocabulary_owl#omgekeerde_doorbraak_van_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#objectief_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#norm_ter_bescherming_tegen_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#norm_ter_bescherming_tegen_immateriele_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#norm_ter_bescherming_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#noodweerexces
+http://www_best-project_nl/owl/tort-vocabulary_owl#noodweer_exces
+http://www_best-project_nl/owl/tort-vocabulary_owl#noodweer
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_werkzaam_voor_beroep_of_bedrijf
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_voldoen_aan_vereisten
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_ondergeschiktheidscriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_ondergeschikte
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_in_het_verkeer_gebrachte_producten
+http://www_best-project_nl/owl/tort-vocabulary_owl#niet_aan_ouders_verwijtbaar_handelen
+http://www_best-project_nl/owl/tort-vocabulary_owl#nalaten_in_strijd_met_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#misleidende_mededeling
+http://www_best-project_nl/owl/tort-vocabulary_owl#misleidende_en_vergelijkende_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#milieu
+http://www_best-project_nl/owl/tort-vocabulary_owl#mentale_toestand
+http://www_best-project_nl/owl/tort-vocabulary_owl#medeschuld
+http://www_best-project_nl/owl/tort-vocabulary_owl#mededeling_in_de_uitoefening_van_beroep_of_bedrijf
+http://www_best-project_nl/owl/tort-vocabulary_owl#medebezitter
+http://www_best-project_nl/owl/tort-vocabulary_owl#mate_van_waarschijnlijkheid_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#mate_van_waarschijnlijkheid_dat_daaruit_schade_zou_ontstaan
+http://www_best-project_nl/owl/tort-vocabulary_owl#maatschappelijke_betamelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#lichamelijke_tekortkoming
+http://www_best-project_nl/owl/tort-vocabulary_owl#lichamelijk_gezond
+http://www_best-project_nl/owl/tort-vocabulary_owl#leidingschade
+http://www_best-project_nl/owl/tort-vocabulary_owl#legaal_storten
+http://www_best-project_nl/owl/tort-vocabulary_owl#kwalitatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#kind_van_14_of_15_jaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#kind_jonger_dan_14_jaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#kind_jonger_dan_14
+http://www_best-project_nl/owl/tort-vocabulary_owl#kind_16_jaar_en_ouder
+http://www_best-project_nl/owl/tort-vocabulary_owl#kind
+http://www_best-project_nl/owl/tort-vocabulary_owl#kennis_van_belang
+http://www_best-project_nl/owl/tort-vocabulary_owl#kenbaarheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#kelderluikcriteria
+http://www_best-project_nl/owl/tort-vocabulary_owl#kansvergroting
+http://www_best-project_nl/owl/tort-vocabulary_owl#kans_dat_daardoor_ongevallen_ontstaan
+http://www_best-project_nl/owl/tort-vocabulary_owl#intensiteit_van_de_inbreuk
+http://www_best-project_nl/owl/tort-vocabulary_owl#inkleding_van_de_verdenkingen
+http://www_best-project_nl/owl/tort-vocabulary_owl#inbreukcriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#inbreuk_op_een_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
+http://www_best-project_nl/owl/tort-vocabulary_owl#in_strijd_met_een_wettelijke_plicht
+http://www_best-project_nl/owl/tort-vocabulary_owl#illegaal_storten
+http://www_best-project_nl/owl/tort-vocabulary_owl#gebrekkig_bestanddeel
+http://www_best-project_nl/owl/tort-vocabulary_owl#gebrek
+http://www_best-project_nl/owl/tort-vocabulary_owl#houder_van_een_dier
+http://www_best-project_nl/owl/tort-vocabulary_owl#hinder
+http://www_best-project_nl/owl/tort-vocabulary_owl#handelen_in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
+http://www_best-project_nl/owl/tort-vocabulary_owl#handelen_in_strijd_met_een_wettelijke_plicht
+http://www_best-project_nl/owl/tort-vocabulary_owl#grondrecht
+http://www_best-project_nl/owl/tort-vocabulary_owl#groepsdeelnemer
+http://www_best-project_nl/owl/tort-vocabulary_owl#goeden_houden_voor_zichzelf
+http://www_best-project_nl/owl/tort-vocabulary_owl#goed_houden_voor_zichzelf
+http://www_best-project_nl/owl/tort-vocabulary_owl#goed_houden_voor_een_ander
+http://www_best-project_nl/owl/tort-vocabulary_owl#functioneel_verbandcriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#functioneel_verband
+http://www_best-project_nl/owl/tort-vocabulary_owl#gewone_doorbraak_van_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#gevaarzetting
+http://www_best-project_nl/owl/tort-vocabulary_owl#gevaarlijke_toestand
+http://www_best-project_nl/owl/tort-vocabulary_owl#gevaar_voor_personen_of_zaken
+http://www_best-project_nl/owl/tort-vocabulary_owl#gelijktijdig_werkende_oorzaak
+http://www_best-project_nl/owl/tort-vocabulary_owl#geestelijke_tekortkoming
+http://www_best-project_nl/owl/tort-vocabulary_owl#geen_economisch_doel
+http://www_best-project_nl/owl/tort-vocabulary_owl#gedraging_van_een_dier
+http://www_best-project_nl/owl/tort-vocabulary_owl#gebruik_gevaarlijke_stof_voor_eigen_bestwil
+http://www_best-project_nl/owl/tort-vocabulary_owl#gebrekscriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#gebrekkig_productcriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_van_een_stortplaats_zonder_vergunning
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_van_een_mijnbouwwerk
+http://www_best-project_nl/owl/tort-vocabulary_owl#fout_begaan_in_de_zakelijke_sfeer
+http://www_best-project_nl/owl/tort-vocabulary_owl#formele_wet
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_stortplaatscriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_stortplaats_zonder_vergunning
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_stortplaats
+http://www_best-project_nl/owl/tort-vocabulary_owl#exploitant_mijnbouwwerk
+http://www_best-project_nl/owl/tort-vocabulary_owl#ernst_van_de_gevolgen
+http://www_best-project_nl/owl/tort-vocabulary_owl#ernst_en_duur
+http://www_best-project_nl/owl/tort-vocabulary_owl#doorbraak_van_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#doen_in_strijd_met_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#eigendomsvoorbehoud
+http://www_best-project_nl/owl/tort-vocabulary_owl#eigendomsrecht
+http://www_best-project_nl/owl/tort-vocabulary_owl#dier
+http://www_best-project_nl/owl/tort-vocabulary_owl#eigen_schuld_van_de_benadeelde
+http://www_best-project_nl/owl/tort-vocabulary_owl#eigen_energie_van_het_dier
+http://www_best-project_nl/owl/tort-vocabulary_owl#eg_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#eg-recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#criterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#csqn_criteria_toerekeningsverband
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezitter_van_een_opstal
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezitter_van_een_diercriterium
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezitter_van_een_dier
+http://www_best-project_nl/owl/tort-vocabulary_owl#bodembeweging
+http://www_best-project_nl/owl/tort-vocabulary_owl#bijzonder_gevaar
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezwaarlijkheid_veiligheidsmaatregelen
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezitter_van_een_roerende_zaak
+http://www_best-project_nl/owl/tort-vocabulary_owl#bezitter
+http://www_best-project_nl/owl/tort-vocabulary_owl#bevoegd_gegeven_ambtelijk_bevel
+http://www_best-project_nl/owl/tort-vocabulary_owl#bestuurdersaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#beperkt_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#beperking_van_het_nadeel_door_perspublicatie
+http://www_best-project_nl/owl/tort-vocabulary_owl#bekendwording_20_jaar_na_sluiting
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_vertegenwoordigers
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_vergelijkende_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_stortplaatsen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_stoffen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#afwijking_in_de_gronddekking
+http://www_best-project_nl/owl/tort-vocabulary_owl#absoluut_recht
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_vergunning
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_schade
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_gepubliceerde_verdenking
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_gedraging
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_fout
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_aanwijzing
+http://www_best-project_nl/owl/tort-vocabulary_owl#aard_van_de_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#aanvankelijk_niet_gebrekkige_producten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aantasting_van_de_goede_naam
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_producten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aantasting_van_de_eer_en_goede_naam
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_personen_en_zaken
+http://www_best-project_nl/owl/tort-vocabulary_owl#aantasting_van_de_eer
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_personen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aantasting_van_belang
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_opstallen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_ondergeschikten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_zaken
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_niet_ondergeschikten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_misleidende_reclame
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_mijnbouwwerken
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_kinderen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_gevaarlijke_stoffen
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_gebrekkige_zaken
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_gebrekkige_producten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_electronisch_rechtsverkeer
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_dieren
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_voor_boorgaten
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid_bij_electronisch_rechtsverkeer
+http://www_best-project_nl/owl/tort-vocabulary_owl#aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary_owl#aanduiding_van_het_doel_van_de_aanbieding
+http://www_best-project_nl/owl/tort-vocabulary_owl#aan_ouders_verwijtbaar_handelen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#zorgplicht_beroepsbeoefenaar
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#zaakwaarneming
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#wie_zat_er_het_eerst
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#wetsovertreding_door_eiser
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#wetsovertreding_als_factor_bij_beoordeling_van_betamelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#werknemer
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#werkgever
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#vordering_op_grond_van_onrechtvaardige_verrijking
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#voorwaarden_aansprakelijkheid_zuiver_nalaten
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#vervallen_vaststellen_rekenschap_belangen_van_benadeelde
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#vermindering_risicoaansprakelijkheid_personen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#verkeersaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#verjaringstermijn_vijf_jaar_na_sluiting
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#toerekening_op_basis_van_specifieke_wettelijke_bepaling
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#toerekening_op_basis_van_in_het_verkeer_geldende_opvattingen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#terrein
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#tenzij_formule
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#strengere_eisen_verantwoordelijkheid_sportvereniging
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#sportsituatie
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#schuldaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#schade_uitsluitend_gevolg_voldoening_bevel_of_dwingend_overheidsvoorschrift
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#schade_gevolg_handeling_met_gevaarlijke_stof_in_het_belang_van_benadeelde
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#risicoaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#risico_aanvaarding
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#reele_verhouding_moeite_kosten_en_gevaar
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#persoonlijke_verwijtbaarheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#persoon_aansprakelijk_voor_stof
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#persoon_aansprakelijk_voor_opstal
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#openbare_weg
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#ontbreken_mogelijkheid_beletten_gedraging_kind
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#onderlinge_draagplicht
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#nadere_eisen_risicoaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#mogelijkheid_en_noodzaak_iets_te_doen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#medische_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#grond_vermindering_schadevergoedingsplicht
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#grond_toerekening_aan_dader
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#groepsaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#gedraging_minder_snel_onrechtmatig_in_sportsituatie
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#gebruiker_gevaarlijke_stof
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#enkel_overtreden_spelregels_niet_onrechtmatig
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#dreiging_ernstig_geestelijk_of_lichamelijk_letsel
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#cumulatieve_aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#bezitter_erfpachtsrecht
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#bewaarder_gevaarlijke_stof
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#bevrijdende_omstandigheden_risicoaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#beroepsaansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#beperking_soort_schade
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#beperking_kring_personen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#bekendheid_gevaren_in_geval_gebrekkigheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#bekendheid_gevaar_stof
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#algemeen_belang
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aantrekken_belangen_van_schadelijder
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_stortplaatsen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_voor_eigen_gedrag
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_van_werkgever
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#criteria_aansprakelijkheid_voor_stoffen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#criteria_aansprakelijkheid_voor_opstallen
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid_buiten_schuld
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#criteria_aansprakelijkheid_voor_boorgaten
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#aansprakelijkheid
+http://www_best-project_nl/owl/tort-vocabulary-new_owl#concrete_kennis_van_gevaarlijke_situatie
+-->
