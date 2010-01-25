@@ -1,249 +1,121 @@
-# Saved by TopBraid on Wed Apr 15 15:40:41 CEST 2009
+# Saved by TopBraid on Mon Jan 25 15:44:27 CET 2010
 # baseURI: http://www.best-project.nl/owl/best.owl
-# imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.best-project.nl/owl/bestmap.owl
 
-@prefix : <http://www.best-project.nl/owl/best.owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
-@prefix bestmap: <http://www.best-project.nl/owl/bestmap.owl#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :        <http://www.best-project.nl/owl/best.owl#> .
+@prefix bestmap:  <http://www.best-project.nl/owl/bestmap.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix owl2xml:  <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+<http://www.best-project.nl/owl/best.owl>
+      rdf:type owl:Ontology ;
+      rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
+      owl:imports <http://www.best-project.nl/owl/bestmap.owl> , <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
-<http://www.best-project.nl/owl/best.owl> rdf:type owl:Ontology ;
-                                          
-                                          owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
-                                          
-                                          rdfs:comment "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
-                                          
-                                          owl:imports <http://www.best-project.nl/owl/bestmap.owl> ,
-                                                      <http://www.w3.org/2004/02/skos/core> .
+:Case
+      rdf:type owl:Class .
 
+:Concept
+      rdf:type owl:Class .
 
-#################################################################
-#
-#    Object Properties
-#
-#################################################################
+:Query
+      rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
 
-
-###  http://www.best-project.nl/owl/best.owl#action
-
-:action rdf:type owl:ObjectProperty ;
-        
-        rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#actor
-
-:actor rdf:type owl:ObjectProperty ;
-       
-       rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#criterium
-
-:criterium rdf:type owl:ObjectProperty ;
-           
-           rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#dader
-
-:dader rdf:type owl:ObjectProperty ;
-       
-       rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#location
-
-:location rdf:type owl:ObjectProperty ;
-          
-          rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#object
-
-:object rdf:type owl:ObjectProperty ;
-        
-        rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#recht
-
-:recht rdf:type owl:ObjectProperty ;
-       
-       rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#rechtvaardigingsgrond
-
-:rechtvaardigingsgrond rdf:type owl:ObjectProperty ;
-                       
-                       rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#recipient
-
-:recipient rdf:type owl:ObjectProperty ;
-           
-           rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#result
-
-:result rdf:type owl:ObjectProperty ;
-        
-        rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#schulduitsluiting
-
-:schulduitsluiting rdf:type owl:ObjectProperty ;
-                   
-                   rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#situation
-
-:situation rdf:type owl:ObjectProperty ;
-           
-           rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#time
-
-:time rdf:type owl:ObjectProperty ;
-      
+:aansprakelijke_persoon
+      rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
+:action
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:actor
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-###  http://www.best-project.nl/owl/best.owl#toestand
+:bevrijdende_omstandigheid
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-:toestand rdf:type owl:ObjectProperty ;
-          
-          rdfs:subPropertyOf bestmap:d_about .
+:dader
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:grond_toerekening_aan_dader
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:location
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-###  http://www.best-project.nl/owl/best.owl#uitzondering
+:nadere_eisen_risicoaansprakelijkheid
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-:uitzondering rdf:type owl:ObjectProperty ;
-              
-              rdfs:subPropertyOf bestmap:d_about .
+:object
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:onrechtmatigheidsgrond
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:rechtvaardigingsgrond
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-###  http://www.best-project.nl/owl/best.owl#vereiste
+:recipient
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-:vereiste rdf:type owl:ObjectProperty ;
-          
-          rdfs:subPropertyOf bestmap:d_about .
+:result
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:schulduitsluiting
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:situation
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-###  http://www.best-project.nl/owl/best.owl#veroorzaker
+:time
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-:veroorzaker rdf:type owl:ObjectProperty ;
-             
-             rdfs:subPropertyOf bestmap:d_about .
+:vermindering_schadevergoeding
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:veroorzaker
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
+:zorgvuldigheidsnorm
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf bestmap:d_about .
 
-###  http://www.best-project.nl/owl/best.owl#wetsbepaling
+bestmap:Mapping
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Case .
 
-:wetsbepaling rdf:type owl:ObjectProperty ;
-              
-              rdfs:subPropertyOf bestmap:d_about .
+bestmap:about
+      rdf:type owl:ObjectProperty .
 
+bestmap:d_about
+      rdf:type owl:ObjectProperty .
 
+bestmap:describes
+      rdf:type owl:ObjectProperty ;
+      owl:inverseOf bestmap:about .
 
-###  http://www.best-project.nl/owl/best.owl#zorgvuldigheidsnorm
-
-:zorgvuldigheidsnorm rdf:type owl:ObjectProperty ;
-                     
-                     rdfs:subPropertyOf bestmap:d_about .
-
-
-
-###  http://www.best-project.nl/owl/bestmap.owl#about
-
-bestmap:about rdf:type owl:ObjectProperty .
-
-
-
-###  http://www.best-project.nl/owl/bestmap.owl#d_about
-
-bestmap:d_about rdf:type owl:ObjectProperty .
-
-
-
-###  http://www.best-project.nl/owl/bestmap.owl#describes
-
-bestmap:describes rdf:type owl:ObjectProperty ;
-                  
-                  owl:inverseOf bestmap:about .
-
-
-
-
-
-#################################################################
-#
-#    Classes
-#
-#################################################################
-
-
-###  http://www.best-project.nl/owl/best.owl#Case
-
-:Case rdf:type owl:Class .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#Concept
-
-:Concept rdf:type owl:Class .
-
-
-
-###  http://www.best-project.nl/owl/best.owl#Query
-
-:Query rdf:type owl:Class ;
-       
-       rdfs:subClassOf owl:Thing .
-
-
-
-###  http://www.best-project.nl/owl/bestmap.owl#Mapping
-
-bestmap:Mapping rdf:type owl:Class ;
-                
-                rdfs:subClassOf :Case .
-
-
-
-###  http://www.w3.org/2002/07/owl#Thing
-
-owl:Thing rdf:type owl:Class .
-
-
-
-
-###  Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net
-
+owl:Thing
+      rdf:type owl:Class .
