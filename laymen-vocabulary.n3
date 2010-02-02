@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Dec 17 09:49:45 CET 2009
+# Saved by TopBraid on Tue Feb 02 15:04:36 CET 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -124,9 +124,15 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "afwijken"@nl .
 
+:agent
+      rdf:type best:Concept , skos:Concept ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "agent"@nl ;
+      skos:topConceptOf :laymen-scheme .
+
 :algemeen_persoon
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :agent ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "algemeen persoon"@nl .
 
@@ -575,12 +581,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "conferentiecentrum"@nl .
 
-:crediteur
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "crediteur"@nl .
-
 :dag  rdf:type best:Concept , skos:Concept ;
       skos:broader :moment ;
       skos:inScheme :laymen-scheme ;
@@ -619,7 +619,7 @@
 :dier
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "beest"@nl ;
-      skos:broader :object ;
+      skos:broader :object , :agent ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "dier"@nl .
 
@@ -1670,13 +1670,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "pedagoog"@nl .
 
-:persoon
-      rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "actor"@nl ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "persoon {@nl}"^^xsd:string ;
-      skos:topConceptOf :laymen-scheme .
-
 :plaats
       rdf:type best:Concept , skos:Concept ;
       skos:inScheme :laymen-scheme ;
@@ -1952,9 +1945,9 @@
 
 :sociale_omgeving_persoon
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :agent ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "sociale omgeving persoon"@nl .
+      skos:prefLabel "persoon in sociale omgeving"@nl .
 
 :speelgoed
       rdf:type best:Concept , skos:Concept ;
@@ -2286,7 +2279,7 @@
 
 :verkeersdeelnemer
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :agent ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verkeersdeelnemer"@nl .
 
@@ -2561,7 +2554,7 @@
 
 :werkpersoon
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :agent ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werkpersoon"@nl .
 

@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jan 25 15:44:27 CET 2010
+# Saved by TopBraid on Tue Jan 26 13:42:38 CET 2010
 # baseURI: http://www.best-project.nl/owl/best.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/bestmap.owl
@@ -40,10 +40,6 @@
       rdfs:subPropertyOf bestmap:d_about .
 
 :bevrijdende_omstandigheid
-      rdf:type owl:ObjectProperty ;
-      rdfs:subPropertyOf bestmap:d_about .
-
-:dader
       rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf bestmap:d_about .
 
