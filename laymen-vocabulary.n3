@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue May 18 13:51:21 CEST 2010
+# Saved by TopBraid on Tue May 18 14:10:40 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -1652,10 +1652,10 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "overlaten"@nl .
 
-:overtreding
+:overtreden
       rdf:type best:Concept ;
       skos:broader :actie ;
-      skos:prefLabel "overtreding"@nl .
+      skos:prefLabel "overtreden"@nl .
 
 :paard
       rdf:type best:Concept , skos:Concept ;
@@ -2302,8 +2302,8 @@
 
 :verkeersovertreding
       rdf:type best:Concept ;
-      skos:broader :overtreding , :verkeershandeling ;
-      skos:prefLabel "verkeersovertreding"@nl .
+      skos:broader :overtreden , :verkeershandeling ;
+      skos:prefLabel "overtreden verkeersregels"@nl .
 
 :verkeersregel
       rdf:type best:Concept , skos:Concept ;
