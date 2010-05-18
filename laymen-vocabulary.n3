@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue May 18 14:10:40 CEST 2010
+# Saved by TopBraid on Tue May 18 14:19:12 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -690,6 +690,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "eindeloos"@nl .
 
+:eiser
+      rdf:type best:Concept ;
+      skos:broader :algemeen_persoon ;
+      skos:prefLabel "eiser"@nl .
+
 :electricien
       rdf:type best:Concept , skos:Concept ;
       skos:broader :beroepsbeoefenaar ;
@@ -819,6 +824,11 @@
       skos:broader :algemene_actie ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gebruiken"@nl .
+
+:gedaagde
+      rdf:type best:Concept ;
+      skos:broader :algemeen_persoon ;
+      skos:prefLabel "gedaagde"@nl .
 
 :geen_maatregelen_treffen
       rdf:type best:Concept , skos:Concept ;
