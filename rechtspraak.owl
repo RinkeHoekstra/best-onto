@@ -52,10 +52,13 @@
   </owl:Class>
   <owl:ObjectProperty rdf:ID="zittingsplaats">
     <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:ID="noemt_plaats"/>
+      <owl:ObjectProperty rdf:ID="locatie"/>
     </rdfs:subPropertyOf>
     <rdfs:label>Zittingsplaats</rdfs:label>
     <rdfs:range rdf:resource="#Zittingsplaats"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#locatie">
+    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/location"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="rechtsgebied_rechtspraak">
     <rdfs:label>Rechtsgebied</rdfs:label>
@@ -64,9 +67,6 @@
   <owl:ObjectProperty rdf:ID="procedure_soort">
     <rdfs:label>Procedure Soort</rdfs:label>
     <rdfs:range rdf:resource="#Procedure"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#noemt_plaats">
-    <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/location"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="sector_toon">
     <rdfs:label>Sector</rdfs:label>
