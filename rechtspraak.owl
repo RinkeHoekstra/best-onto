@@ -12,116 +12,116 @@
     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xml:base="http://www.rechtspraak.nl/rdf">
   <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
-    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/20050603.rdf"/>
-    <dc:description>Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam</dc:description>
-    <owl:imports rdf:resource="http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl"/>
-    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    <owl:imports rdf:resource="http://www.metalex.eu/schema"/>
+    <owl:imports rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Created with TopBraid Composer</owl:versionInfo>
-    <owl:imports rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos"/>
+    <owl:imports rdf:resource="http://www.metalex.eu/schema"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <owl:imports rdf:resource="http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl"/>
+    <dc:description>Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam</dc:description>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/20050603.rdf"/>
+    <owl:imports rdf:resource="http://dbpedia.org/ontology/"/>
   </owl:Ontology>
   <owl:Class rdf:ID="Uitspraak">
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Work"/>
     <rdfs:label>Uitspraak</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Work"/>
   </owl:Class>
   <owl:Class rdf:ID="Rechtsgebied">
-    <rdfs:label xml:lang="nl">Rechtsgebied</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="nl">Rechtsgebied</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="Status">
-    <rdfs:label xml:lang="nl">Status</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="nl">Status</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="Instantie">
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
     <rdfs:label>Instantie</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Organisation"/>
   </owl:Class>
   <owl:Class rdf:ID="Procedure">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label>Procedure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:ID="Zittingsplaats">
-    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Settlement"/>
     <rdfs:label>Zittingsplaats</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Settlement"/>
   </owl:Class>
   <owl:Class rdf:ID="Sector">
-    <rdfs:label xml:lang="nl">Sector</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="nl">Sector</rdfs:label>
   </owl:Class>
   <owl:ObjectProperty rdf:ID="zittingsplaats">
-    <rdfs:range rdf:resource="#Zittingsplaats"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:ID="noemt_plaats"/>
+    </rdfs:subPropertyOf>
     <rdfs:label>Zittingsplaats</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="locatie">
-    <rdfs:label>Locatie</rdfs:label>
+    <rdfs:range rdf:resource="#Zittingsplaats"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="rechtsgebied_rechtspraak">
-    <rdfs:range rdf:resource="#Rechtsgebied"/>
     <rdfs:label>Rechtsgebied</rdfs:label>
+    <rdfs:range rdf:resource="#Rechtsgebied"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="procedure_soort">
-    <rdfs:range rdf:resource="#Procedure"/>
     <rdfs:label>Procedure Soort</rdfs:label>
+    <rdfs:range rdf:resource="#Procedure"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="noemt_plaats">
+  <owl:ObjectProperty rdf:about="#noemt_plaats">
     <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/location"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="sector_toon">
-    <rdfs:range rdf:resource="#Sector"/>
     <rdfs:label>Sector</rdfs:label>
+    <rdfs:range rdf:resource="#Sector"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="instantie">
-    <rdfs:range rdf:resource="#Instantie"/>
     <rdfs:label>Instantie</rdfs:label>
+    <rdfs:range rdf:resource="#Instantie"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:ID="status">
-    <rdfs:range rdf:resource="#Status"/>
     <rdfs:label>Status</rdfs:label>
+    <rdfs:range rdf:resource="#Status"/>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:ID="indicatie">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>Indicatie</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="kop">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>Kop</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="zaaknummers">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>Zaaknummers</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="ljn">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>LJN</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="datum_gepubliceerd">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <rdfs:label>Publicatiedatum</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="datum_uitspraak">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     <rdfs:label>Datum uitspraak</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </owl:DatatypeProperty>
   <Instantie rdf:ID="Rechtbank_Zwolle">
+    <rdfs:label xml:lang="nl">Rechtbank Zwolle</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Zwolle">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Zwolle"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Zwolle</rdfs:label>
   </Instantie>
   <Status rdf:ID="ingetrokken">
     <rdfs:label xml:lang="nl">ingetrokken</rdfs:label>
   </Status>
   <Instantie rdf:ID="Rechtbank_Groningen">
+    <rdfs:label xml:lang="nl">Rechtbank Groningen</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Groningen">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Groningen"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Groningen</rdfs:label>
   </Instantie>
   <Sector rdf:ID="Voorzieningenrechter">
     <rdfs:label xml:lang="nl">Voorzieningenrechter</rdfs:label>
@@ -133,44 +133,44 @@
     <rdfs:label xml:lang="nl">Hoger beroep kort geding</rdfs:label>
   </Procedure>
   <Instantie rdf:ID="Rechtbank_Almelo">
+    <rdfs:label xml:lang="nl">Rechtbank Almelo</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Almelo">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Almelo"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Almelo</rdfs:label>
   </Instantie>
   <Rechtsgebied rdf:ID="Belasting">
     <rdfs:label xml:lang="nl">Belasting</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="College_van_Beroep_voor_het_bedrijfsleven">
+    <rdfs:label xml:lang="nl">College van Beroep voor het bedrijfsleven</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Den_Haag">
-        <rdfs:label xml:lang="nl">'s-Gravenhage</rdfs:label>
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Den_Haag"/>
+        <rdfs:label xml:lang="nl">'s-Gravenhage</rdfs:label>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">College van Beroep voor het bedrijfsleven</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Maastricht">
+    <rdfs:label xml:lang="nl">Rechtbank Maastricht</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Maastricht">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Maastricht"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Maastricht</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Alkmaar">
+    <rdfs:label xml:lang="nl">Rechtbank Alkmaar</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Alkmaar">
-        <geo:long>4.744656085968018</geo:long>
-        <geo:lat>52.640081742212885</geo:lat>
+        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Alkmaar"/>
         <tbcgeo:zoom rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >16</tbcgeo:zoom>
-        <owl:sameAs rdf:resource="http://dbpedia.org/resource/Alkmaar"/>
+        <geo:lat>52.640081742212885</geo:lat>
+        <geo:long>4.744656085968018</geo:long>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Alkmaar</rdfs:label>
   </Instantie>
   <Rechtsgebied rdf:ID="Faillissement">
     <rdfs:label xml:lang="nl">Faillisement</rdfs:label>
@@ -191,20 +191,20 @@
     <rdfs:label xml:lang="nl">Voorlopige voorziening</rdfs:label>
   </Procedure>
   <Instantie rdf:ID="Gerechtshof_Leeuwarden">
+    <rdfs:label xml:lang="nl">Gerechtshof Leeuwarden</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Leeuwarden">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Leeuwarden"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Gerechtshof Leeuwarden</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Assen">
+    <rdfs:label xml:lang="nl">Rechtbank Assen</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Assen">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Assen"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Assen</rdfs:label>
   </Instantie>
   <Status rdf:ID="gepubliceerd">
     <rdfs:label xml:lang="nl">gepubliceerd</rdfs:label>
@@ -213,12 +213,12 @@
     <rdfs:label xml:lang="nl">Sociale zekerheid</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Rechtbank_Dordrecht">
+    <rdfs:label xml:lang="nl">Rechtbank Dordrecht</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Dordrecht">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dordrecht"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Dordrecht</rdfs:label>
   </Instantie>
   <Rechtsgebied rdf:ID="Handelszaak">
     <rdfs:label xml:lang="nl">Handelszaak</rdfs:label>
@@ -233,27 +233,27 @@
     <rdfs:label xml:lang="nl">Straf</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Hoge_Raad">
-    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
-    <rdfs:label xml:lang="nl">Hoge Raad</rdfs:label>
     <owl:sameAs rdf:resource="http://dbpedia.org/resource/Hoge_Raad_der_Nederlanden"/>
+    <rdfs:label xml:lang="nl">Hoge Raad</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
   </Instantie>
   <Rechtsgebied rdf:ID="Bouwen">
     <rdfs:label xml:lang="nl">Bouwen</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Rechtbank_Amsterdam">
+    <rdfs:label xml:lang="nl">Rechtbank Amsterdam</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Amsterdam">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Amsterdam"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Amsterdam</rdfs:label>
   </Instantie>
   <Sector rdf:ID="Notariskamer">
     <rdfs:label xml:lang="nl">Notariskamer</rdfs:label>
   </Sector>
   <Instantie rdf:ID="Gerechtshof_Den_Haag">
-    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
     <rdfs:label xml:lang="nl">Gerechtshof 's-Gravenhage</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
   </Instantie>
   <Rechtsgebied rdf:ID="Bijstandszaken">
     <rdfs:label xml:lang="nl">Bijstandszaken</rdfs:label>
@@ -265,57 +265,57 @@
     <rdfs:label xml:lang="nl">Vreemdelingen</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Rechtbank_Den_Bosch">
+    <rdfs:label xml:lang="nl">Rechtbank 's-Hertogenbosch</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Den_Bosch">
-        <rdfs:label xml:lang="nl">'s-Hertogenbosch</rdfs:label>
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Den_Bosch"/>
+        <rdfs:label xml:lang="nl">'s-Hertogenbosch</rdfs:label>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank 's-Hertogenbosch</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Utrecht">
+    <rdfs:label xml:lang="nl">Rechtbank Utrecht</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Utrecht">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Utrecht"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Utrecht</rdfs:label>
   </Instantie>
   <Sector rdf:ID="Douanekamer">
     <rdfs:label xml:lang="nl">Douanekamer</rdfs:label>
   </Sector>
   <Instantie rdf:ID="Rechtbank_Zutphen">
+    <rdfs:label xml:lang="nl">Rechtbank Zutphen</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Zutphen">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Zutphen"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Zutphen</rdfs:label>
   </Instantie>
   <Procedure rdf:ID="Raadkamer">
     <rdfs:label xml:lang="nl">Raadkamer</rdfs:label>
   </Procedure>
   <Instantie rdf:ID="Rechtbank_Roermond">
+    <rdfs:label xml:lang="nl">Rechtbank Roermond</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Roermond">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Roermond"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Roermond</rdfs:label>
   </Instantie>
   <Rechtsgebied rdf:ID="Ambtenarenrecht">
     <rdfs:label xml:lang="nl">Ambtenarenrecht</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Gerechtshof_Den_Bosch">
-    <dbpedia:locationCity rdf:resource="#Den_Bosch"/>
     <rdfs:label xml:lang="nl">Gerechtshof 's-Hertogenbosch</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Den_Bosch"/>
   </Instantie>
   <Procedure rdf:ID="Eerste_aanleg_-_meervoudig">
     <rdfs:label xml:lang="nl">Eerste aanleg - meervoudig</rdfs:label>
   </Procedure>
   <Instantie rdf:ID="Rechtbank_Den_Haag">
-    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
     <rdfs:label xml:lang="nl">Rechtbank 's-Gravenhage</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
   </Instantie>
   <Procedure rdf:ID="Hoger_beroep">
     <rdfs:label xml:lang="nl">Hoger beroep</rdfs:label>
@@ -327,40 +327,40 @@
     <rdfs:label xml:lang="nl">Voorzitter</rdfs:label>
   </Sector>
   <Instantie rdf:ID="Rechtbank_Middelburg">
+    <rdfs:label xml:lang="nl">Rechtbank Middelburg</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Middelburg">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Middelburg"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Middelburg</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Rotterdam">
+    <rdfs:label xml:lang="nl">Rechtbank Rotterdam</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Rotterdam">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Rotterdam"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Rotterdam</rdfs:label>
   </Instantie>
   <Rechtsgebied rdf:ID="Personen-en_familierecht">
     <rdfs:label xml:lang="nl">Personen- en familierecht</rdfs:label>
   </Rechtsgebied>
   <Instantie rdf:ID="Raad_van_State">
-    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
-    <rdfs:label xml:lang="nl">Raad van State</rdfs:label>
     <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Council_of_State"/>
+    <rdfs:label xml:lang="nl">Raad van State</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Den_Haag"/>
   </Instantie>
   <Instantie rdf:ID="Gerechtshof_Amsterdam">
-    <dbpedia:locationCity rdf:resource="#Amsterdam"/>
     <rdfs:label xml:lang="nl">Gerechtshof Amsterdam</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Amsterdam"/>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Leeuwarden">
-    <dbpedia:locationCity rdf:resource="#Leeuwarden"/>
     <rdfs:label xml:lang="nl">Rechtbank Leeuwarden</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Leeuwarden"/>
   </Instantie>
   <Instantie rdf:ID="Centrale_Raad_van_Beroep">
-    <dbpedia:locationCity rdf:resource="#Utrecht"/>
     <rdfs:label xml:lang="nl">Centrale Raad van Beroep</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Utrecht"/>
   </Instantie>
   <Procedure rdf:ID="Cassatie">
     <rdfs:label xml:lang="nl">Cassatie</rdfs:label>
@@ -372,12 +372,12 @@
     <rdfs:label xml:lang="nl">President</rdfs:label>
   </Sector>
   <Instantie rdf:ID="Rechtbank_Haarlem">
+    <rdfs:label xml:lang="nl">Rechtbank Haarlem</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Haarlem">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Haarlem"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Haarlem</rdfs:label>
   </Instantie>
   <Sector rdf:ID="Ondernemingskamer">
     <rdfs:label xml:lang="nl">Ondernemingskamer</rdfs:label>
@@ -386,24 +386,24 @@
     <rdfs:label xml:lang="nl">Voorlopige voorziening bodemzaak</rdfs:label>
   </Procedure>
   <Instantie rdf:ID="Rechtbank_Arnhem">
+    <rdfs:label xml:lang="nl">Rechtbank Arnhem</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Arnhem">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Arnhem"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Arnhem</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Rechtbank_Breda">
+    <rdfs:label xml:lang="nl">Rechtbank Breda</rdfs:label>
     <dbpedia:locationCity>
       <Zittingsplaats rdf:ID="Breda">
         <owl:sameAs rdf:resource="http://dbpedia.org/resource/Breda"/>
       </Zittingsplaats>
     </dbpedia:locationCity>
-    <rdfs:label xml:lang="nl">Rechtbank Breda</rdfs:label>
   </Instantie>
   <Instantie rdf:ID="Gerechtshof_Arnhem">
-    <dbpedia:locationCity rdf:resource="#Arnhem"/>
     <rdfs:label xml:lang="nl">Gerechtshof Arnhem</rdfs:label>
+    <dbpedia:locationCity rdf:resource="#Arnhem"/>
   </Instantie>
 </rdf:RDF>
 
