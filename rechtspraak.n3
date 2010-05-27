@@ -18,7 +18,7 @@
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbcgeo:  <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-
+@prefix geonames:	<http://www.geonames.org/ontology#> .
 
 
 metalex:src
