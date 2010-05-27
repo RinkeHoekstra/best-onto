@@ -1,4 +1,5 @@
 
+@prefix dbpedia: <http://dbpedia.org/ontology/>.
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix geonames: <http://www.geonames.org/ontology#>.
 @prefix ljn: <http://www.ljn.nl/>.
@@ -14259,2769 +14260,3322 @@
  ljn:ZJ0123 a rnl:Uitspraak;
      rnl:locatie <http://sws.geonames.org/2758326/>. 
 
- <http://sws.geonames.org/2743590/> a geonames:Feature;
+ <http://sws.geonames.org/2743590/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Westereen";
      geo:lat "53.2573064024264";
      geo:long "6.03630065917969". 
 
- <http://sws.geonames.org/2746024/> a geonames:Feature;
+ <http://sws.geonames.org/2746024/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tzum";
      geo:lat "53.158402881508";
      geo:long "5.56354522705078". 
 
- <http://sws.geonames.org/2747339/> a geonames:Feature;
+ <http://sws.geonames.org/2747339/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Siegerswoude";
      geo:lat "53.0997447967555";
      geo:long "6.24469757080078". 
 
- <http://sws.geonames.org/2749669/> a geonames:Feature;
+ <http://sws.geonames.org/2749669/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aldeboarn";
      geo:lat "53.05";
      geo:long "5.9". 
 
- <http://sws.geonames.org/2749696/> a geonames:Feature;
+ <http://sws.geonames.org/2749696/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Offenbeek";
      geo:lat "51.2833333";
      geo:long "6.1". 
 
- <http://sws.geonames.org/2749812/> a geonames:Feature;
+ <http://sws.geonames.org/2749812/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Noordwijk-Binnen";
      geo:lat "52.235833";
      geo:long "4.447222". 
 
- <http://sws.geonames.org/2750194/> a geonames:Feature;
+ <http://sws.geonames.org/2750194/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nieuw-Helvoet";
      geo:lat "51.8384292568401";
      geo:long "4.12897109985352". 
 
- <http://sws.geonames.org/2750609/> a geonames:Feature;
+ <http://sws.geonames.org/2750609/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Moorveld";
      geo:lat "50.9198094295233";
      geo:long "5.76353073120117". 
 
- <http://sws.geonames.org/2756584/> a geonames:Feature;
+ <http://sws.geonames.org/2756584/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Driemond";
      geo:lat "52.305833";
      geo:long "5.016667". 
 
- <http://sws.geonames.org/2756642/> a geonames:Feature;
+ <http://sws.geonames.org/2756642/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Drachtstercompagnie";
      geo:lat "53.1346197015723";
      geo:long "6.14152908325195". 
 
- <http://sws.geonames.org/2759147/> a geonames:Feature;
+ <http://sws.geonames.org/2759147/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Berg en Dal";
      geo:lat "51.821667";
      geo:long "5.916667". 
 
- <http://sws.geonames.org/2744360/> a geonames:Feature;
+ <http://sws.geonames.org/2744360/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kiel-Windeweer";
      geo:lat "53.1125";
      geo:long "6.779167". 
 
- <http://sws.geonames.org/2746431/> a geonames:Feature;
+ <http://sws.geonames.org/2746431/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Termaar";
      geo:lat "50.868333";
      geo:long "5.888889". 
 
- <http://sws.geonames.org/2746457/> a geonames:Feature;
+ <http://sws.geonames.org/2746457/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ter Heijde";
      geo:lat "52.03";
      geo:long "4.168056". 
 
- <http://sws.geonames.org/2747262/> a geonames:Feature;
+ <http://sws.geonames.org/2747262/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint Jansklooster";
      geo:lat "52.6775";
      geo:long "6.005556". 
 
- <http://sws.geonames.org/2747886/> a geonames:Feature;
+ <http://sws.geonames.org/2747886/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rottevalle";
      geo:lat "53.145225950014";
      geo:long "6.10410690307617". 
 
- <http://sws.geonames.org/2748403/> a geonames:Feature;
+ <http://sws.geonames.org/2748403/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Puth";
      geo:lat "50.954167";
      geo:long "5.873611". 
 
- <http://sws.geonames.org/2749446/> a geonames:Feature;
+ <http://sws.geonames.org/2749446/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oosterhuizen";
      geo:lat "52.1570056506082";
      geo:long "6.00608825683594". 
 
- <http://sws.geonames.org/2749513/> a geonames:Feature;
+ <http://sws.geonames.org/2749513/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oostelbeers";
      geo:lat "51.4717069341858";
      geo:long "5.26897430419922". 
 
- <http://sws.geonames.org/2750089/> a geonames:Feature;
+ <http://sws.geonames.org/2750089/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nijemirdum";
      geo:lat "52.856382439511";
      geo:long "5.56843757629395". 
 
- <http://sws.geonames.org/2750805/> a geonames:Feature;
+ <http://sws.geonames.org/2750805/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mildam";
      geo:lat "52.9355518527098";
      geo:long "6.00153923034668". 
 
- <http://sws.geonames.org/2753293/> a geonames:Feature;
+ <http://sws.geonames.org/2753293/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Jabeek";
      geo:lat "50.980833";
      geo:long "5.941667". 
 
- <http://sws.geonames.org/2753835/> a geonames:Feature;
+ <http://sws.geonames.org/2753835/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hommert";
      geo:lat "50.935833";
      geo:long "5.915278". 
 
- <http://sws.geonames.org/2758309/> a geonames:Feature;
+ <http://sws.geonames.org/2758309/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Britsum";
      geo:lat "53.25";
      geo:long "5.7833333". 
 
- <http://sws.geonames.org/2758748/> a geonames:Feature;
+ <http://sws.geonames.org/2758748/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boelenslaan";
      geo:lat "53.161696482562";
      geo:long "6.14479064941406". 
 
- <http://sws.geonames.org/2758754/> a geonames:Feature;
+ <http://sws.geonames.org/2758754/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boekend";
      geo:lat "51.378333";
      geo:long "6.116667". 
 
- <http://sws.geonames.org/2758895/> a geonames:Feature;
+ <http://sws.geonames.org/2758895/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Burdaard";
      geo:lat "53.2942081331415";
      geo:long "5.87897300720215". 
 
- <http://sws.geonames.org/2743795/> a geonames:Feature;
+ <http://sws.geonames.org/2743795/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zuiddorpe";
      geo:lat "51.235";
      geo:long "3.904167". 
 
- <http://sws.geonames.org/2743877/> a geonames:Feature;
+ <http://sws.geonames.org/2743877/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zijtaart";
      geo:lat "51.5925";
      geo:long "5.541667". 
 
- <http://sws.geonames.org/2744130/> a geonames:Feature;
+ <http://sws.geonames.org/2744130/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Yde";
      geo:lat "53.115833";
      geo:long "6.593056". 
 
- <http://sws.geonames.org/2744859/> a geonames:Feature;
+ <http://sws.geonames.org/2744859/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wellerlooi";
      geo:lat "51.534167";
      geo:long "6.136111". 
 
- <http://sws.geonames.org/2746304/> a geonames:Feature;
+ <http://sws.geonames.org/2746304/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tijnje";
      geo:lat "53.0305811251505";
      geo:long "5.9919261932373". 
 
- <http://sws.geonames.org/2746424/> a geonames:Feature;
+ <http://sws.geonames.org/2746424/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ternaard";
      geo:lat "53.3833333";
      geo:long "5.9666667". 
 
- <http://sws.geonames.org/2746545/> a geonames:Feature;
+ <http://sws.geonames.org/2746545/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sweikhuizen";
      geo:lat "50.954167";
      geo:long "5.847222". 
 
- <http://sws.geonames.org/2747671/> a geonames:Feature;
+ <http://sws.geonames.org/2747671/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Scharnegoutum";
      geo:lat "53.060508945177";
      geo:long "5.67821502685547". 
 
- <http://sws.geonames.org/2747938/> a geonames:Feature;
+ <http://sws.geonames.org/2747938/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Reduzum";
      geo:lat "53.1177524345264";
      geo:long "5.78764915466309". 
 
- <http://sws.geonames.org/2749007/> a geonames:Feature;
+ <http://sws.geonames.org/2749007/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oudeschoot";
      geo:lat "52.9334308186873";
      geo:long "5.95579147338867". 
 
- <http://sws.geonames.org/2749284/> a geonames:Feature;
+ <http://sws.geonames.org/2749284/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oppenhuizen";
      geo:lat "53.0119431443694";
      geo:long "5.6949520111084". 
 
- <http://sws.geonames.org/2749430/> a geonames:Feature;
+ <http://sws.geonames.org/2749430/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eastermar";
      geo:lat "53.1746625802669";
      geo:long "6.05998992919922". 
 
- <http://sws.geonames.org/2751212/> a geonames:Feature;
+ <http://sws.geonames.org/2751212/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mantgum";
      geo:lat "53.1286460984408";
      geo:long "5.71924209594727". 
 
- <http://sws.geonames.org/2752151/> a geonames:Feature;
+ <http://sws.geonames.org/2752151/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kunrade";
      geo:lat "50.8776941228361";
      geo:long "5.93107223510742". 
 
- <http://sws.geonames.org/2753369/> a geonames:Feature;
+ <http://sws.geonames.org/2753369/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ysbrechtum";
      geo:lat "53.0412130407565";
      geo:long "5.63203811645508". 
 
- <http://sws.geonames.org/2756567/> a geonames:Feature;
+ <http://sws.geonames.org/2756567/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Drogeham";
      geo:lat "53.2021254132472";
      geo:long "6.11183166503906". 
 
- <http://sws.geonames.org/2756774/> a geonames:Feature;
+ <http://sws.geonames.org/2756774/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Doenrade";
      geo:lat "50.9675";
      geo:long "5.906944". 
 
- <http://sws.geonames.org/2759652/> a geonames:Feature;
+ <http://sws.geonames.org/2759652/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Arum";
      geo:lat "53.1295215922133";
      geo:long "5.47642707824707". 
 
- <http://sws.geonames.org/2745048/> a geonames:Feature;
+ <http://sws.geonames.org/2745048/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wanneperveen";
      geo:lat "52.705";
      geo:long "6.122222". 
 
- <http://sws.geonames.org/2746014/> a geonames:Feature;
+ <http://sws.geonames.org/2746014/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ubachsberg";
      geo:lat "50.853333";
      geo:long "5.948611". 
 
- <http://sws.geonames.org/2746761/> a geonames:Feature;
+ <http://sws.geonames.org/2746761/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Steenwijkerwold";
      geo:lat "52.804167";
      geo:long "6.063889". 
 
- <http://sws.geonames.org/2749653/> a geonames:Feature;
+ <http://sws.geonames.org/2749653/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oldemarkt";
      geo:lat "52.820833";
      geo:long "5.975". 
 
- <http://sws.geonames.org/2750098/> a geonames:Feature;
+ <http://sws.geonames.org/2750098/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nijega";
      geo:lat "53.1333333";
      geo:long "6.0166667". 
 
- <http://sws.geonames.org/2750117/> a geonames:Feature;
+ <http://sws.geonames.org/2750117/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nieuw-Vossemeer";
      geo:lat "51.59";
      geo:long "4.218056". 
 
- <http://sws.geonames.org/2753034/> a geonames:Feature;
+ <http://sws.geonames.org/2753034/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Katlijk";
      geo:lat "52.9459485887608";
      geo:long "6.01261138916016". 
 
- <http://sws.geonames.org/2753545/> a geonames:Feature;
+ <http://sws.geonames.org/2753545/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Houtigehage";
      geo:lat "53.15";
      geo:long "6.1333333". 
 
- <http://sws.geonames.org/2755729/> a geonames:Feature;
+ <http://sws.geonames.org/2755729/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Garyp";
      geo:lat "53.1666667";
      geo:long "5.9666667". 
 
- <http://sws.geonames.org/2755920/> a geonames:Feature;
+ <http://sws.geonames.org/2755920/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ferwerd";
      geo:lat "53.3378434320088";
      geo:long "5.8253288269043". 
 
- <http://sws.geonames.org/2759746/> a geonames:Feature;
+ <http://sws.geonames.org/2759746/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Anloo";
      geo:lat "53.044167";
      geo:long "6.701389". 
 
- <http://sws.geonames.org/2759961/> a geonames:Feature;
+ <http://sws.geonames.org/2759961/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aduard";
      geo:lat "53.256667";
      geo:long "6.459722". 
 
- <http://sws.geonames.org/2744741/> a geonames:Feature;
+ <http://sws.geonames.org/2744741/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Westerhaar-Vriezenveensewijk";
      geo:lat "52.455833";
      geo:long "6.623611". 
 
- <http://sws.geonames.org/2746023/> a geonames:Feature;
+ <http://sws.geonames.org/2746023/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tzummarum";
      geo:lat "53.2373282060929";
      geo:long "5.54612159729004". 
 
- <http://sws.geonames.org/2749304/> a geonames:Feature;
+ <http://sws.geonames.org/2749304/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Opeinde";
      geo:lat "53.1341047684943";
      geo:long "6.05655670166016". 
 
- <http://sws.geonames.org/2758742/> a geonames:Feature;
+ <http://sws.geonames.org/2758742/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boerdonk";
      geo:lat "51.559167";
      geo:long "5.625". 
 
- <http://sws.geonames.org/2758922/> a geonames:Feature;
+ <http://sws.geonames.org/2758922/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bingelrade";
      geo:lat "50.9761020880698";
      geo:long "5.92703819274902". 
 
- <http://sws.geonames.org/2744998/> a geonames:Feature;
+ <http://sws.geonames.org/2744998/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Warten";
      geo:lat "53.15";
      geo:long "5.9". 
 
- <http://sws.geonames.org/2746051/> a geonames:Feature;
+ <http://sws.geonames.org/2746051/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Twijzelerheide";
      geo:lat "53.2401534530105";
      geo:long "6.04591369628906". 
 
- <http://sws.geonames.org/2746752/> a geonames:Feature;
+ <http://sws.geonames.org/2746752/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Steggerda";
      geo:lat "52.8573412072619";
      geo:long "6.07548236846924". 
 
- <http://sws.geonames.org/2747669/> a geonames:Feature;
+ <http://sws.geonames.org/2747669/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Scharsterbrug";
      geo:lat "52.9441383914637";
      geo:long "5.77889442443848". 
 
- <http://sws.geonames.org/2748328/> a geonames:Feature;
+ <http://sws.geonames.org/2748328/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ransdaal";
      geo:lat "50.865";
      geo:long "5.891667". 
 
- <http://sws.geonames.org/2749660/> a geonames:Feature;
+ <http://sws.geonames.org/2749660/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oldehove";
      geo:lat "53.303333";
      geo:long "6.395833". 
 
- <http://sws.geonames.org/2750310/> a geonames:Feature;
+ <http://sws.geonames.org/2750310/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nieuwehorne";
      geo:lat "52.95";
      geo:long "6.05". 
 
- <http://sws.geonames.org/2751449/> a geonames:Feature;
+ <http://sws.geonames.org/2751449/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Loosbroek";
      geo:lat "51.678333";
      geo:long "5.506944". 
 
- <http://sws.geonames.org/2752444/> a geonames:Feature;
+ <http://sws.geonames.org/2752444/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kootstertille";
      geo:lat "53.2126121899416";
      geo:long "6.09209060668945". 
 
- <http://sws.geonames.org/2756438/> a geonames:Feature;
+ <http://sws.geonames.org/2756438/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Echtenerbrug";
      geo:lat "52.8714093356511";
      geo:long "5.82146644592285". 
 
- <http://sws.geonames.org/2758633/> a geonames:Feature;
+ <http://sws.geonames.org/2758633/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boornbergum";
      geo:lat "53.0828380655209";
      geo:long "6.04578495025635". 
 
- <http://sws.geonames.org/2759429/> a geonames:Feature;
+ <http://sws.geonames.org/2759429/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Barchem";
      geo:lat "52.124167";
      geo:long "6.443056". 
 
- <http://sws.geonames.org/2759611/> a geonames:Feature;
+ <http://sws.geonames.org/2759611/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Augustinusga";
      geo:lat "53.2178546159313";
      geo:long "6.16169929504395". 
 
- <http://sws.geonames.org/2759796/> a geonames:Feature;
+ <http://sws.geonames.org/2759796/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Amstenrade";
      geo:lat "50.939167";
      geo:long "5.923611". 
 
- <http://sws.geonames.org/6695503/> a geonames:Feature;
+ <http://sws.geonames.org/6695503/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Meerhoven";
      geo:lat "51.4426667319733";
      geo:long "5.41102409362793". 
 
- <http://sws.geonames.org/2746311/> a geonames:Feature;
+ <http://sws.geonames.org/2746311/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tytsjerk";
      geo:lat "53.2134345736978";
      geo:long "5.90961456298828". 
 
- <http://sws.geonames.org/2746407/> a geonames:Feature;
+ <http://sws.geonames.org/2746407/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Terschuur";
      geo:lat "52.165";
      geo:long "5.516667". 
 
- <http://sws.geonames.org/2747371/> a geonames:Feature;
+ <http://sws.geonames.org/2747371/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "'s Gravenmoer";
      geo:lat "51.6559448680102";
      geo:long "4.94075775146484". 
 
- <http://sws.geonames.org/2749120/> a geonames:Feature;
+ <http://sws.geonames.org/2749120/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oudehaske";
      geo:lat "52.957092563259";
      geo:long "5.87094783782959". 
 
- <http://sws.geonames.org/2751599/> a geonames:Feature;
+ <http://sws.geonames.org/2751599/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Limbricht";
      geo:lat "51.011667";
      geo:long "5.8375". 
 
- <http://sws.geonames.org/2752547/> a geonames:Feature;
+ <http://sws.geonames.org/2752547/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Koewacht";
      geo:lat "51.228333";
      geo:long "3.973611". 
 
- <http://sws.geonames.org/2753307/> a geonames:Feature;
+ <http://sws.geonames.org/2753307/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Jirnsum";
      geo:lat "53.0775275690521";
      geo:long "5.79254150390625". 
 
- <http://sws.geonames.org/2744608/> a geonames:Feature;
+ <http://sws.geonames.org/2744608/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "West-Terschelling";
      geo:lat "53.359106511312";
      geo:long "5.21481513977051". 
 
- <http://sws.geonames.org/2746557/> a geonames:Feature;
+ <http://sws.geonames.org/2746557/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Surhuizum";
      geo:lat "53.2047473480209";
      geo:long "6.1798095703125". 
 
- <http://sws.geonames.org/2749061/> a geonames:Feature;
+ <http://sws.geonames.org/2749061/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oudemirdum";
      geo:lat "52.8501888078034";
      geo:long "5.53543567657471". 
 
- <http://sws.geonames.org/2749617/> a geonames:Feature;
+ <http://sws.geonames.org/2749617/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ommel";
      geo:lat "51.424167";
      geo:long "5.748611". 
 
- <http://sws.geonames.org/2749992/> a geonames:Feature;
+ <http://sws.geonames.org/2749992/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Noardburgum";
      geo:lat "53.2213492101859";
      geo:long "6.00522994995117". 
 
- <http://sws.geonames.org/2751193/> a geonames:Feature;
+ <http://sws.geonames.org/2751193/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mariaheide";
      geo:lat "51.633333";
      geo:long "5.580556". 
 
- <http://sws.geonames.org/2754835/> a geonames:Feature;
+ <http://sws.geonames.org/2754835/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harfsen";
      geo:lat "52.2075";
      geo:long "6.297222". 
 
- <http://sws.geonames.org/2754930/> a geonames:Feature;
+ <http://sws.geonames.org/2754930/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hallum";
      geo:lat "53.306570013663";
      geo:long "5.78378677368164". 
 
- <http://sws.geonames.org/2759878/> a geonames:Feature;
+ <http://sws.geonames.org/2759878/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Almkerk";
      geo:lat "51.770833";
      geo:long "4.959722". 
 
- <http://sws.geonames.org/6692371/> a geonames:Feature;
+ <http://sws.geonames.org/6692371/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Jubbega";
      geo:lat "53.0039640410654";
      geo:long "6.12183094024658". 
 
- <http://sws.geonames.org/2744191/> a geonames:Feature;
+ <http://sws.geonames.org/2744191/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wommels";
      geo:lat "53.108144146935";
      geo:long "5.58860778808594". 
 
- <http://sws.geonames.org/2745944/> a geonames:Feature;
+ <http://sws.geonames.org/2745944/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ulrum";
      geo:lat "53.359167";
      geo:long "6.333333". 
 
- <http://sws.geonames.org/2746052/> a geonames:Feature;
+ <http://sws.geonames.org/2746052/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Twijzel";
      geo:lat "53.2315230227016";
      geo:long "6.08951568603516". 
 
- <http://sws.geonames.org/2748099/> a geonames:Feature;
+ <http://sws.geonames.org/2748099/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ryptsjerk";
      geo:lat "53.222376977765";
      geo:long "5.91716766357422". 
 
- <http://sws.geonames.org/2748968/> a geonames:Feature;
+ <http://sws.geonames.org/2748968/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oude Wetering";
      geo:lat "52.214167";
      geo:long "4.644444". 
 
- <http://sws.geonames.org/2749136/> a geonames:Feature;
+ <http://sws.geonames.org/2749136/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oudega";
      geo:lat "53.1250409361508";
      geo:long "5.99887847900391". 
 
- <http://sws.geonames.org/2749703/> a geonames:Feature;
+ <http://sws.geonames.org/2749703/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oerle";
      geo:lat "51.4225470353926";
      geo:long "5.37162780761719". 
 
- <http://sws.geonames.org/2749708/> a geonames:Feature;
+ <http://sws.geonames.org/2749708/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oentsjerk";
      geo:lat "53.25";
      geo:long "5.9". 
 
- <http://sws.geonames.org/2749735/> a geonames:Feature;
+ <http://sws.geonames.org/2749735/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Odiliapeel";
      geo:lat "51.643333";
      geo:long "5.705556". 
 
- <http://sws.geonames.org/2749875/> a geonames:Feature;
+ <http://sws.geonames.org/2749875/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Noordhorn";
      geo:lat "53.261667";
      geo:long "6.395833". 
 
- <http://sws.geonames.org/2750938/> a geonames:Feature;
+ <http://sws.geonames.org/2750938/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Merkelbeek";
      geo:lat "50.9538851769063";
      geo:long "5.9406852722168". 
 
- <http://sws.geonames.org/2755662/> a geonames:Feature;
+ <http://sws.geonames.org/2755662/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Geesbrug";
      geo:lat "52.726667";
      geo:long "6.633333". 
 
- <http://sws.geonames.org/2759057/> a geonames:Feature;
+ <http://sws.geonames.org/2759057/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Berlikum";
      geo:lat "53.2436975899626";
      geo:long "5.6510066986084". 
 
- <http://sws.geonames.org/2743493/> a geonames:Feature;
+ <http://sws.geonames.org/2743493/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zwijndrecht";
      geo:lat "51.8175";
      geo:long "4.633333". 
 
- <http://sws.geonames.org/2743561/> a geonames:Feature;
+ <http://sws.geonames.org/2743561/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zwartebroek";
      geo:lat "52.179167";
      geo:long "5.504167". 
 
- <http://sws.geonames.org/2743608/> a geonames:Feature;
+ <http://sws.geonames.org/2743608/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zutphen";
      geo:lat "52.138333";
      geo:long "6.201389". 
 
- <http://sws.geonames.org/2743619/> a geonames:Feature;
+ <http://sws.geonames.org/2743619/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zundert";
      geo:lat "51.471667";
      geo:long "4.655556". 
 
- <http://sws.geonames.org/2743680/> a geonames:Feature;
+ <http://sws.geonames.org/2743680/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zuidlaren";
      geo:lat "53.094167";
      geo:long "6.681944". 
 
- <http://sws.geonames.org/2743694/> a geonames:Feature;
+ <http://sws.geonames.org/2743694/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zuidhorn";
      geo:lat "53.246667";
      geo:long "6.402778". 
 
- <http://sws.geonames.org/2743856/> a geonames:Feature;
+ <http://sws.geonames.org/2743856/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zoetermeer";
      geo:lat "52.0575";
      geo:long "4.493056". 
 
- <http://sws.geonames.org/2743949/> a geonames:Feature;
+ <http://sws.geonames.org/2743949/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zevenaar";
      geo:lat "51.93";
      geo:long "6.070833". 
 
- <http://sws.geonames.org/2743963/> a geonames:Feature;
+ <http://sws.geonames.org/2743963/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zelhem";
      geo:lat "52.006667";
      geo:long "6.348611". 
 
- <http://sws.geonames.org/2743977/> a geonames:Feature;
+ <http://sws.geonames.org/2743977/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zeist";
      geo:lat "52.09";
      geo:long "5.233333". 
 
- <http://sws.geonames.org/2743997/> a geonames:Feature;
+ <http://sws.geonames.org/2743997/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zeewolde";
      geo:lat "52.33";
      geo:long "5.541667". 
 
- <http://sws.geonames.org/2744014/> a geonames:Feature;
+ <http://sws.geonames.org/2744014/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zeeland";
      geo:lat "51.6975";
      geo:long "5.676389". 
 
- <http://sws.geonames.org/2744042/> a geonames:Feature;
+ <http://sws.geonames.org/2744042/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zandvoort";
      geo:lat "52.3725",
          "52.3748655966709";
      geo:long "4.529167",
          "4.53409194946289". 
 
- <http://sws.geonames.org/2744102/> a geonames:Feature;
+ <http://sws.geonames.org/2744102/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zaltbommel";
      geo:lat "51.81";
      geo:long "5.244444". 
 
- <http://sws.geonames.org/2744118/> a geonames:Feature;
+ <http://sws.geonames.org/2744118/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zaandam";
      geo:lat "52.44";
      geo:long "4.825". 
 
- <http://sws.geonames.org/2744122/> a geonames:Feature;
+ <http://sws.geonames.org/2744122/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Zaamslag";
      geo:lat "51.3125";
      geo:long "3.9125". 
 
- <http://sws.geonames.org/2744153/> a geonames:Feature;
+ <http://sws.geonames.org/2744153/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Woudsend";
      geo:lat "52.9435694566696";
      geo:long "5.62843322753906". 
 
- <http://sws.geonames.org/2744156/> a geonames:Feature;
+ <http://sws.geonames.org/2744156/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Woudrichem";
      geo:lat "51.815";
      geo:long "5.001389". 
 
- <http://sws.geonames.org/2744163/> a geonames:Feature;
+ <http://sws.geonames.org/2744163/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Woudenberg";
      geo:lat "52.080833";
      geo:long "5.416667". 
 
- <http://sws.geonames.org/2744179/> a geonames:Feature;
+ <http://sws.geonames.org/2744179/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Workum";
      geo:lat "52.9833333";
      geo:long "5.45". 
 
- <http://sws.geonames.org/2744194/> a geonames:Feature;
+ <http://sws.geonames.org/2744194/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wolvega";
      geo:lat "52.8833333";
      geo:long "6.0". 
 
- <http://sws.geonames.org/2744248/> a geonames:Feature;
+ <http://sws.geonames.org/2744248/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Woerden";
      geo:lat "52.085";
      geo:long "4.883333". 
 
- <http://sws.geonames.org/2744257/> a geonames:Feature;
+ <http://sws.geonames.org/2744257/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Woensdrecht";
      geo:lat "51.43";
      geo:long "4.302778". 
 
- <http://sws.geonames.org/2744324/> a geonames:Feature;
+ <http://sws.geonames.org/2744324/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wisch";
      geo:lat "51.9264841280506";
      geo:long "6.41704559326172". 
 
- <http://sws.geonames.org/2744327/> a geonames:Feature;
+ <http://sws.geonames.org/2744327/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wirdum";
      geo:lat "53.1489323707226";
      geo:long "5.80387115478516". 
 
- <http://sws.geonames.org/2744332/> a geonames:Feature;
+ <http://sws.geonames.org/2744332/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Winterswijk";
      geo:lat "51.9725";
      geo:long "6.719444". 
 
- <http://sws.geonames.org/2744337/> a geonames:Feature;
+ <http://sws.geonames.org/2744337/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Winsum";
      geo:lat "53.33";
      geo:long "6.520833". 
 
- <http://sws.geonames.org/2744338/> a geonames:Feature;
+ <http://sws.geonames.org/2744338/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Winsum";
      geo:lat "53.15";
      geo:long "5.6333333". 
 
- <http://sws.geonames.org/2744344/> a geonames:Feature;
+ <http://sws.geonames.org/2744344/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Winschoten";
      geo:lat "53.144167";
      geo:long "7.034722". 
 
- <http://sws.geonames.org/2744373/> a geonames:Feature;
+ <http://sws.geonames.org/2744373/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wilp";
      geo:lat "52.218333";
      geo:long "6.15". 
 
- <http://sws.geonames.org/2744489/> a geonames:Feature;
+ <http://sws.geonames.org/2744489/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wijhe";
      geo:lat "52.386667";
      geo:long "6.134722". 
 
- <http://sws.geonames.org/2744514/> a geonames:Feature;
+ <http://sws.geonames.org/2744514/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wijchen";
      geo:lat "51.809167";
      geo:long "5.725". 
 
- <http://sws.geonames.org/2744549/> a geonames:Feature;
+ <http://sws.geonames.org/2744549/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wierden";
      geo:lat "52.359167";
      geo:long "6.593056". 
 
- <http://sws.geonames.org/2744675/> a geonames:Feature;
+ <http://sws.geonames.org/2744675/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Westervoort";
      geo:lat "51.955833";
      geo:long "5.972222". 
 
- <http://sws.geonames.org/2744780/> a geonames:Feature;
+ <http://sws.geonames.org/2744780/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Westendorp";
      geo:lat "51.95";
      geo:long "6.4125". 
 
- <http://sws.geonames.org/2744800/> a geonames:Feature;
+ <http://sws.geonames.org/2744800/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Westdorpe";
      geo:lat "51.2325";
      geo:long "3.826389". 
 
- <http://sws.geonames.org/2744827/> a geonames:Feature;
+ <http://sws.geonames.org/2744827/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Werkendam";
      geo:lat "51.81";
      geo:long "4.894444". 
 
- <http://sws.geonames.org/2744869/> a geonames:Feature;
+ <http://sws.geonames.org/2744869/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Welberg";
      geo:lat "51.576667";
      geo:long "4.330556". 
 
- <http://sws.geonames.org/2744871/> a geonames:Feature;
+ <http://sws.geonames.org/2744871/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wekerom";
      geo:lat "52.1125";
      geo:long "5.713889". 
 
- <http://sws.geonames.org/2744904/> a geonames:Feature;
+ <http://sws.geonames.org/2744904/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Weesp";
      geo:lat "52.3075";
      geo:long "5.041667". 
 
- <http://sws.geonames.org/2744911/> a geonames:Feature;
+ <http://sws.geonames.org/2744911/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Weert";
      geo:lat "51.251667";
      geo:long "5.706944". 
 
- <http://sws.geonames.org/2744991/> a geonames:Feature;
+ <http://sws.geonames.org/2744991/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wassenaar";
      geo:lat "52.145833";
      geo:long "4.402778". 
 
- <http://sws.geonames.org/2744994/> a geonames:Feature;
+ <http://sws.geonames.org/2744994/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Waspik";
      geo:lat "51.686667";
      geo:long "4.944444". 
 
- <http://sws.geonames.org/2745018/> a geonames:Feature;
+ <http://sws.geonames.org/2745018/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wergea";
      geo:lat "53.1514546130019";
      geo:long "5.84403991699219". 
 
- <http://sws.geonames.org/2745088/> a geonames:Feature;
+ <http://sws.geonames.org/2745088/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Wageningen";
      geo:lat "51.97";
      geo:long "5.666667". 
 
- <http://sws.geonames.org/2745123/> a geonames:Feature;
+ <http://sws.geonames.org/2745123/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Waalwijk";
      geo:lat "51.6825";
      geo:long "5.070833". 
 
- <http://sws.geonames.org/2745127/> a geonames:Feature;
+ <http://sws.geonames.org/2745127/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Waalre";
      geo:lat "51.386667";
      geo:long "5.444444". 
 
- <http://sws.geonames.org/2745154/> a geonames:Feature;
+ <http://sws.geonames.org/2745154/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vught";
      geo:lat "51.653333";
      geo:long "5.2875". 
 
- <http://sws.geonames.org/2745169/> a geonames:Feature;
+ <http://sws.geonames.org/2745169/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vroomshoop";
      geo:lat "52.460833";
      geo:long "6.565278". 
 
- <http://sws.geonames.org/2745182/> a geonames:Feature;
+ <http://sws.geonames.org/2745182/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vriezenveen";
      geo:lat "52.408333";
      geo:long "6.622222". 
 
- <http://sws.geonames.org/2745189/> a geonames:Feature;
+ <http://sws.geonames.org/2745189/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vries";
      geo:lat "53.074167";
      geo:long "6.577778". 
 
- <http://sws.geonames.org/2745271/> a geonames:Feature;
+ <http://sws.geonames.org/2745271/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Voorthuizen";
      geo:lat "52.186667";
      geo:long "5.605556". 
 
- <http://sws.geonames.org/2745297/> a geonames:Feature;
+ <http://sws.geonames.org/2745297/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Voorst";
      geo:lat "52.17";
      geo:long "6.141667". 
 
- <http://sws.geonames.org/2745301/> a geonames:Feature;
+ <http://sws.geonames.org/2745301/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Voorschoten";
      geo:lat "52.1275";
      geo:long "4.448611". 
 
- <http://sws.geonames.org/2745311/> a geonames:Feature;
+ <http://sws.geonames.org/2745311/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Voorhout";
      geo:lat "52.221667";
      geo:long "4.484722". 
 
- <http://sws.geonames.org/2745333/> a geonames:Feature;
+ <http://sws.geonames.org/2745333/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vollenhove";
      geo:lat "52.680833";
      geo:long "5.954167". 
 
- <http://sws.geonames.org/2745338/> a geonames:Feature;
+ <http://sws.geonames.org/2745338/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Volkel";
      geo:lat "51.6425";
      geo:long "5.654167". 
 
- <http://sws.geonames.org/2745340/> a geonames:Feature;
+ <http://sws.geonames.org/2745340/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Volendam";
      geo:lat "52.495";
      geo:long "5.070833". 
 
- <http://sws.geonames.org/2745369/> a geonames:Feature;
+ <http://sws.geonames.org/2745369/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Voerendaal";
      geo:lat "50.883271987385";
      geo:long "5.92978477478027". 
 
- <http://sws.geonames.org/2745382/> a geonames:Feature;
+ <http://sws.geonames.org/2745382/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vlodrop";
      geo:lat "51.133333";
      geo:long "6.076389". 
 
- <http://sws.geonames.org/2745388/> a geonames:Feature;
+ <http://sws.geonames.org/2745388/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vlist";
      geo:lat "51.98";
      geo:long "4.819444". 
 
- <http://sws.geonames.org/2745392/> a geonames:Feature;
+ <http://sws.geonames.org/2745392/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vlissingen";
      geo:lat "51.4425";
      geo:long "3.573611". 
 
- <http://sws.geonames.org/2745461/> a geonames:Feature;
+ <http://sws.geonames.org/2745461/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vlagtwedde";
      geo:lat "53.0275";
      geo:long "7.108333". 
 
- <http://sws.geonames.org/2745467/> a geonames:Feature;
+ <http://sws.geonames.org/2745467/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vlaardingen";
      geo:lat "51.9125";
      geo:long "4.341667". 
 
- <http://sws.geonames.org/2745580/> a geonames:Feature;
+ <http://sws.geonames.org/2745580/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vianen";
      geo:lat "51.9925";
      geo:long "5.091667". 
 
- <http://sws.geonames.org/2745634/> a geonames:Feature;
+ <http://sws.geonames.org/2745634/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Venray";
      geo:lat "51.525";
      geo:long "5.975". 
 
- <http://sws.geonames.org/2745641/> a geonames:Feature;
+ <http://sws.geonames.org/2745641/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Venlo";
      geo:lat "51.37";
      geo:long "6.168056". 
 
- <http://sws.geonames.org/2745673/> a geonames:Feature;
+ <http://sws.geonames.org/2745673/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Velsen-Zuid";
      geo:lat "52.46";
      geo:long "4.65". 
 
- <http://sws.geonames.org/2745726/> a geonames:Feature;
+ <http://sws.geonames.org/2745726/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Veghel";
      geo:lat "51.616667";
      geo:long "5.548611". 
 
- <http://sws.geonames.org/2745739/> a geonames:Feature;
+ <http://sws.geonames.org/2745739/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Veere";
      geo:lat "51.548333";
      geo:long "3.666667". 
 
- <http://sws.geonames.org/2745774/> a geonames:Feature;
+ <http://sws.geonames.org/2745774/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Veenendaal";
      geo:lat "52.0286272466419";
      geo:long "5.55891036987305". 
 
- <http://sws.geonames.org/2745783/> a geonames:Feature;
+ <http://sws.geonames.org/2745783/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Veendam";
      geo:lat "53.106667";
      geo:long "6.879167". 
 
- <http://sws.geonames.org/2745800/> a geonames:Feature;
+ <http://sws.geonames.org/2745800/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Varsseveld";
      geo:lat "51.943333";
      geo:long "6.458333". 
 
- <http://sws.geonames.org/2745860/> a geonames:Feature;
+ <http://sws.geonames.org/2745860/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Valkenswaard";
      geo:lat "51.350833";
      geo:long "5.459722". 
 
- <http://sws.geonames.org/2745874/> a geonames:Feature;
+ <http://sws.geonames.org/2745874/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Valkenburg";
      geo:lat "50.864167";
      geo:long "5.830556". 
 
- <http://sws.geonames.org/2745906/> a geonames:Feature;
+ <http://sws.geonames.org/2745906/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Vaals";
      geo:lat "50.770833";
      geo:long "6.018056". 
 
- <http://sws.geonames.org/2745926/> a geonames:Feature;
+ <http://sws.geonames.org/2745926/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Urmond";
      geo:lat "50.990833";
      geo:long "5.772222". 
 
- <http://sws.geonames.org/2745932/> a geonames:Feature;
+ <http://sws.geonames.org/2745932/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Urk";
      geo:lat "52.6625";
      geo:long "5.601389". 
 
- <http://sws.geonames.org/2745973/> a geonames:Feature;
+ <http://sws.geonames.org/2745973/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Uithoorn";
      geo:lat "52.2375";
      geo:long "4.826389". 
 
- <http://sws.geonames.org/2745978/> a geonames:Feature;
+ <http://sws.geonames.org/2745978/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Uitgeest";
      geo:lat "52.529167";
      geo:long "4.709722". 
 
- <http://sws.geonames.org/2746005/> a geonames:Feature;
+ <http://sws.geonames.org/2746005/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Uden";
      geo:lat "51.660833";
      geo:long "5.619444". 
 
- <http://sws.geonames.org/2746009/> a geonames:Feature;
+ <http://sws.geonames.org/2746009/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Uddel";
      geo:lat "52.259167";
      geo:long "5.780556". 
 
- <http://sws.geonames.org/2746038/> a geonames:Feature;
+ <http://sws.geonames.org/2746038/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tynaarlo";
      geo:lat "53.0775";
      geo:long "6.616667". 
 
- <http://sws.geonames.org/2746120/> a geonames:Feature;
+ <http://sws.geonames.org/2746120/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tuk";
      geo:lat "52.796667";
      geo:long "6.094444". 
 
- <http://sws.geonames.org/2746133/> a geonames:Feature;
+ <http://sws.geonames.org/2746133/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tubbergen";
      geo:lat "52.4075";
      geo:long "6.784722". 
 
- <http://sws.geonames.org/2746301/> a geonames:Feature;
+ <http://sws.geonames.org/2746301/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tilburg";
      geo:lat "51.555514883268";
      geo:long "5.09130477905273". 
 
- <http://sws.geonames.org/2746331/> a geonames:Feature;
+ <http://sws.geonames.org/2746331/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tiel";
      geo:lat "51.886667";
      geo:long "5.429167". 
 
- <http://sws.geonames.org/2746351/> a geonames:Feature;
+ <http://sws.geonames.org/2746351/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Tholen";
      geo:lat "51.531667";
      geo:long "4.220833". 
 
- <http://sws.geonames.org/2746420/> a geonames:Feature;
+ <http://sws.geonames.org/2746420/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Terneuzen";
      geo:lat "51.335833";
      geo:long "3.827778". 
 
- <http://sws.geonames.org/2746558/> a geonames:Feature;
+ <http://sws.geonames.org/2746558/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Surhuisterveen";
      geo:lat "53.1833333";
      geo:long "6.1666667". 
 
- <http://sws.geonames.org/2746565/> a geonames:Feature;
+ <http://sws.geonames.org/2746565/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sumar";
      geo:lat "53.1833333";
      geo:long "6.0". 
 
- <http://sws.geonames.org/2746596/> a geonames:Feature;
+ <http://sws.geonames.org/2746596/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Stroe";
      geo:lat "52.185833";
      geo:long "5.691667". 
 
- <http://sws.geonames.org/2746609/> a geonames:Feature;
+ <http://sws.geonames.org/2746609/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Strijen";
      geo:lat "51.7452066845678";
      geo:long "4.55082893371582". 
 
- <http://sws.geonames.org/2746705/> a geonames:Feature;
+ <http://sws.geonames.org/2746705/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Stiens";
      geo:lat "53.2666667";
      geo:long "5.7666667". 
 
- <http://sws.geonames.org/2746748/> a geonames:Feature;
+ <http://sws.geonames.org/2746748/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Stein";
      geo:lat "50.969167";
      geo:long "5.766667". 
 
- <http://sws.geonames.org/2746766/> a geonames:Feature;
+ <http://sws.geonames.org/2746766/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Steenwijk";
      geo:lat "52.7875";
      geo:long "6.120833". 
 
- <http://sws.geonames.org/2746804/> a geonames:Feature;
+ <http://sws.geonames.org/2746804/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Steenbergen";
      geo:lat "51.584167";
      geo:long "4.319444". 
 
- <http://sws.geonames.org/2746816/> a geonames:Feature;
+ <http://sws.geonames.org/2746816/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Stavoren";
      geo:lat "52.8852527901702";
      geo:long "5.3588604927063". 
 
- <http://sws.geonames.org/2746839/> a geonames:Feature;
+ <http://sws.geonames.org/2746839/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Staphorst";
      geo:lat "52.645";
      geo:long "6.211111". 
 
- <http://sws.geonames.org/2746932/> a geonames:Feature;
+ <http://sws.geonames.org/2746932/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Spijkenisse";
      geo:lat "51.845";
      geo:long "4.329167". 
 
- <http://sws.geonames.org/2746981/> a geonames:Feature;
+ <http://sws.geonames.org/2746981/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Spakenburg";
      geo:lat "52.25";
      geo:long "5.3666667". 
 
- <http://sws.geonames.org/2747010/> a geonames:Feature;
+ <http://sws.geonames.org/2747010/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Son";
      geo:lat "51.5113599934911";
      geo:long "5.49282073974609". 
 
- <http://sws.geonames.org/2747021/> a geonames:Feature;
+ <http://sws.geonames.org/2747021/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Someren";
      geo:lat "51.385";
      geo:long "5.711111". 
 
- <http://sws.geonames.org/2747034/> a geonames:Feature;
+ <http://sws.geonames.org/2747034/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Soest";
      geo:lat "52.173333";
      geo:long "5.291667". 
 
- <http://sws.geonames.org/2747063/> a geonames:Feature;
+ <http://sws.geonames.org/2747063/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sneek";
      geo:lat "53.0333333";
      geo:long "5.6666667". 
 
- <http://sws.geonames.org/2747109/> a geonames:Feature;
+ <http://sws.geonames.org/2747109/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sluiskil";
      geo:lat "51.278333";
      geo:long "3.836111". 
 
- <http://sws.geonames.org/2747143/> a geonames:Feature;
+ <http://sws.geonames.org/2747143/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Slochteren";
      geo:lat "53.216667";
      geo:long "6.801389". 
 
- <http://sws.geonames.org/2747169/> a geonames:Feature;
+ <http://sws.geonames.org/2747169/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sliedrecht";
      geo:lat "51.820833";
      geo:long "4.776389". 
 
- <http://sws.geonames.org/2747203/> a geonames:Feature;
+ <http://sws.geonames.org/2747203/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sittard";
      geo:lat "50.998333";
      geo:long "5.869444". 
 
- <http://sws.geonames.org/2747227/> a geonames:Feature;
+ <http://sws.geonames.org/2747227/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint-Oedenrode";
      geo:lat "51.5675";
      geo:long "5.459722". 
 
- <http://sws.geonames.org/2747231/> a geonames:Feature;
+ <http://sws.geonames.org/2747231/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint Nicolaasga";
      geo:lat "52.9229275821024";
      geo:long "5.74241638183594". 
 
- <http://sws.geonames.org/2747234/> a geonames:Feature;
+ <http://sws.geonames.org/2747234/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint-Michielsgestel";
      geo:lat "51.641667";
      geo:long "5.352778". 
 
- <http://sws.geonames.org/2747290/> a geonames:Feature;
+ <http://sws.geonames.org/2747290/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint Anthonis";
      geo:lat "51.626667";
      geo:long "5.881944". 
 
- <http://sws.geonames.org/2747297/> a geonames:Feature;
+ <http://sws.geonames.org/2747297/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sint Annaparochie";
      geo:lat "53.2761974990735";
      geo:long "5.65727233886719". 
 
- <http://sws.geonames.org/2747312/> a geonames:Feature;
+ <http://sws.geonames.org/2747312/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Simpelveld";
      geo:lat "50.834167";
      geo:long "5.981944". 
 
- <http://sws.geonames.org/2747364/> a geonames:Feature;
+ <http://sws.geonames.org/2747364/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "s-Gravenzande";
      geo:lat "52.001667";
      geo:long "4.165278". 
 
- <http://sws.geonames.org/2747380/> a geonames:Feature;
+ <http://sws.geonames.org/2747380/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sexbierum";
      geo:lat "53.2166667";
      geo:long "5.4833333". 
 
- <http://sws.geonames.org/2747506/> a geonames:Feature;
+ <http://sws.geonames.org/2747506/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schoonhoven";
      geo:lat "51.9475";
      geo:long "4.848611". 
 
- <http://sws.geonames.org/2747515/> a geonames:Feature;
+ <http://sws.geonames.org/2747515/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schoonebeek";
      geo:lat "52.6625";
      geo:long "6.884722". 
 
- <http://sws.geonames.org/2747550/> a geonames:Feature;
+ <http://sws.geonames.org/2747550/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schinveld";
      geo:lat "50.969167";
      geo:long "5.979167". 
 
- <http://sws.geonames.org/2747553/> a geonames:Feature;
+ <http://sws.geonames.org/2747553/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schinnen";
      geo:lat "50.943333";
      geo:long "5.888889". 
 
- <http://sws.geonames.org/2747584/> a geonames:Feature;
+ <http://sws.geonames.org/2747584/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schijndel";
      geo:lat "51.6225";
      geo:long "5.431944". 
 
- <http://sws.geonames.org/2747591/> a geonames:Feature;
+ <http://sws.geonames.org/2747591/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schiermonnikoog";
      geo:lat "53.4833333";
      geo:long "6.1666667". 
 
- <http://sws.geonames.org/2747596/> a geonames:Feature;
+ <http://sws.geonames.org/2747596/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schiedam";
      geo:lat "51.919167";
      geo:long "4.388889". 
 
- <http://sws.geonames.org/2747704/> a geonames:Feature;
+ <http://sws.geonames.org/2747704/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schalkhaar";
      geo:lat "52.268333";
      geo:long "6.194444". 
 
- <http://sws.geonames.org/2747713/> a geonames:Feature;
+ <http://sws.geonames.org/2747713/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schaijk";
      geo:lat "51.745833";
      geo:long "5.631944". 
 
- <http://sws.geonames.org/2747720/> a geonames:Feature;
+ <http://sws.geonames.org/2747720/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Schagen";
      geo:lat "52.7875";
      geo:long "4.798611". 
 
- <http://sws.geonames.org/2747751/> a geonames:Feature;
+ <http://sws.geonames.org/2747751/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sassenheim";
      geo:lat "52.225";
      geo:long "4.522222". 
 
- <http://sws.geonames.org/2747758/> a geonames:Feature;
+ <http://sws.geonames.org/2747758/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Sappemeer";
      geo:lat "53.164167";
      geo:long "6.790278". 
 
- <http://sws.geonames.org/2747835/> a geonames:Feature;
+ <http://sws.geonames.org/2747835/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ruinen";
      geo:lat "52.7625";
      geo:long "6.354167". 
 
- <http://sws.geonames.org/2747858/> a geonames:Feature;
+ <http://sws.geonames.org/2747858/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rucphen";
      geo:lat "51.531667";
      geo:long "4.558333". 
 
- <http://sws.geonames.org/2747891/> a geonames:Feature;
+ <http://sws.geonames.org/2747891/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rotterdam";
      geo:lat "51.9225";
      geo:long "4.479167". 
 
- <http://sws.geonames.org/2747930/> a geonames:Feature;
+ <http://sws.geonames.org/2747930/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Roosendaal";
      geo:lat "51.530833";
      geo:long "4.465278". 
 
- <http://sws.geonames.org/2748000/> a geonames:Feature;
+ <http://sws.geonames.org/2748000/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Roermond";
      geo:lat "51.194167";
      geo:long "5.9875". 
 
- <http://sws.geonames.org/2748076/> a geonames:Feature;
+ <http://sws.geonames.org/2748076/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rijswijk";
      geo:lat "52.0363366738444";
      geo:long "4.32500839233398". 
 
- <http://sws.geonames.org/2748104/> a geonames:Feature;
+ <http://sws.geonames.org/2748104/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rijnsburg";
      geo:lat "52.19";
      geo:long "4.441667". 
 
- <http://sws.geonames.org/2748172/> a geonames:Feature;
+ <http://sws.geonames.org/2748172/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ridderkerk";
      geo:lat "51.8725";
      geo:long "4.602778". 
 
- <http://sws.geonames.org/2748178/> a geonames:Feature;
+ <http://sws.geonames.org/2748178/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rhoon";
      geo:lat "51.8575";
      geo:long "4.422222". 
 
- <http://sws.geonames.org/2748185/> a geonames:Feature;
+ <http://sws.geonames.org/2748185/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rhenen";
      geo:lat "51.959167";
      geo:long "5.568056". 
 
- <http://sws.geonames.org/2748201/> a geonames:Feature;
+ <http://sws.geonames.org/2748201/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Rheden";
      geo:lat "52.005";
      geo:long "6.029167". 
 
- <http://sws.geonames.org/2748208/> a geonames:Feature;
+ <http://sws.geonames.org/2748208/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Reuver";
      geo:lat "51.284167";
      geo:long "6.077778". 
 
- <http://sws.geonames.org/2748236/> a geonames:Feature;
+ <http://sws.geonames.org/2748236/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Renkum";
      geo:lat "51.976667";
      geo:long "5.733333". 
 
- <http://sws.geonames.org/2748280/> a geonames:Feature;
+ <http://sws.geonames.org/2748280/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Reeuwijk";
      geo:lat "52.046667";
      geo:long "4.725". 
 
- <http://sws.geonames.org/2748286/> a geonames:Feature;
+ <http://sws.geonames.org/2748286/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Reek";
      geo:lat "51.745833";
      geo:long "5.681944". 
 
- <http://sws.geonames.org/2748371/> a geonames:Feature;
+ <http://sws.geonames.org/2748371/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Raalte";
      geo:lat "52.385833";
      geo:long "6.275". 
 
- <http://sws.geonames.org/2748392/> a geonames:Feature;
+ <http://sws.geonames.org/2748392/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Putten";
      geo:lat "52.259167";
      geo:long "5.606944". 
 
- <http://sws.geonames.org/2748413/> a geonames:Feature;
+ <http://sws.geonames.org/2748413/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Purmerend";
      geo:lat "52.505";
      geo:long "4.959722". 
 
- <http://sws.geonames.org/2748481/> a geonames:Feature;
+ <http://sws.geonames.org/2748481/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Posterholt";
      geo:lat "51.123333";
      geo:long "6.034722". 
 
- <http://sws.geonames.org/2748533/> a geonames:Feature;
+ <http://sws.geonames.org/2748533/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Poeldijk";
      geo:lat "52.024167";
      geo:long "4.219444". 
 
- <http://sws.geonames.org/2748591/> a geonames:Feature;
+ <http://sws.geonames.org/2748591/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Pijnacker";
      geo:lat "52.0195432022308";
      geo:long "4.42946434020996". 
 
- <http://sws.geonames.org/2748729/> a geonames:Feature;
+ <http://sws.geonames.org/2748729/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Papendrecht";
      geo:lat "51.831667";
      geo:long "4.6875". 
 
- <http://sws.geonames.org/2748864/> a geonames:Feature;
+ <http://sws.geonames.org/2748864/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Overberg";
      geo:lat "52.04";
      geo:long "5.494444". 
 
- <http://sws.geonames.org/2748979/> a geonames:Feature;
+ <http://sws.geonames.org/2748979/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oudewater";
      geo:lat "52.025";
      geo:long "4.868056". 
 
- <http://sws.geonames.org/2749034/> a geonames:Feature;
+ <http://sws.geonames.org/2749034/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oude Pekela";
      geo:lat "53.104167";
      geo:long "7.009722". 
 
- <http://sws.geonames.org/2749182/> a geonames:Feature;
+ <http://sws.geonames.org/2749182/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oud-Beijerland";
      geo:lat "51.824167";
      geo:long "4.4125". 
 
- <http://sws.geonames.org/2749203/> a geonames:Feature;
+ <http://sws.geonames.org/2749203/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Otterlo";
      geo:lat "52.1";
      geo:long "5.772222". 
 
- <http://sws.geonames.org/2749234/> a geonames:Feature;
+ <http://sws.geonames.org/2749234/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oss";
      geo:lat "51.765";
      geo:long "5.518056". 
 
- <http://sws.geonames.org/2749251/> a geonames:Feature;
+ <http://sws.geonames.org/2749251/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oranjewoud";
      geo:lat "52.9457934319604";
      geo:long "5.95038414001465". 
 
- <http://sws.geonames.org/2749286/> a geonames:Feature;
+ <http://sws.geonames.org/2749286/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Opmeer";
      geo:lat "52.706667";
      geo:long "4.944444". 
 
- <http://sws.geonames.org/2749392/> a geonames:Feature;
+ <http://sws.geonames.org/2749392/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oosterwolde";
      geo:lat "52.465833";
      geo:long "5.891667". 
 
- <http://sws.geonames.org/2749450/> a geonames:Feature;
+ <http://sws.geonames.org/2749450/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oosterhout";
      geo:lat "51.645";
      geo:long "4.859722". 
 
- <http://sws.geonames.org/2749626/> a geonames:Feature;
+ <http://sws.geonames.org/2749626/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Olst";
      geo:lat "52.3375";
      geo:long "6.109722". 
 
- <http://sws.geonames.org/2749644/> a geonames:Feature;
+ <http://sws.geonames.org/2749644/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oldenzaal";
      geo:lat "52.313333";
      geo:long "6.929167". 
 
- <http://sws.geonames.org/2749668/> a geonames:Feature;
+ <http://sws.geonames.org/2749668/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oldebroek";
      geo:lat "52.445";
      geo:long "5.901389". 
 
- <http://sws.geonames.org/2749680/> a geonames:Feature;
+ <http://sws.geonames.org/2749680/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oisterwijk";
      geo:lat "51.579167";
      geo:long "5.188889". 
 
- <http://sws.geonames.org/2749683/> a geonames:Feature;
+ <http://sws.geonames.org/2749683/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oirschot";
      geo:lat "51.505";
      geo:long "5.313889". 
 
- <http://sws.geonames.org/2749685/> a geonames:Feature;
+ <http://sws.geonames.org/2749685/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oirsbeek";
      geo:lat "50.950833";
      geo:long "5.908333". 
 
- <http://sws.geonames.org/2749712/> a geonames:Feature;
+ <http://sws.geonames.org/2749712/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oene";
      geo:lat "52.344167";
      geo:long "6.048611". 
 
- <http://sws.geonames.org/2749723/> a geonames:Feature;
+ <http://sws.geonames.org/2749723/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Oegstgeest";
      geo:lat "52.18";
      geo:long "4.469444". 
 
- <http://sws.geonames.org/2749753/> a geonames:Feature;
+ <http://sws.geonames.org/2749753/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nuth";
      geo:lat "50.9175";
      geo:long "5.886111". 
 
- <http://sws.geonames.org/2749756/> a geonames:Feature;
+ <http://sws.geonames.org/2749756/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nunspeet";
      geo:lat "52.379167";
      geo:long "5.786111". 
 
- <http://sws.geonames.org/2749780/> a geonames:Feature;
+ <http://sws.geonames.org/2749780/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nuenen";
      geo:lat "51.47";
      geo:long "5.552778". 
 
- <http://sws.geonames.org/2749811/> a geonames:Feature;
+ <http://sws.geonames.org/2749811/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Noordwijkerhout";
      geo:lat "52.261667";
      geo:long "4.493056". 
 
- <http://sws.geonames.org/2750053/> a geonames:Feature;
+ <http://sws.geonames.org/2750053/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nijmegen";
      geo:lat "51.8425";
      geo:long "5.852778". 
 
- <http://sws.geonames.org/2750065/> a geonames:Feature;
+ <http://sws.geonames.org/2750065/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nijkerk";
      geo:lat "52.22";
      geo:long "5.486111". 
 
- <http://sws.geonames.org/2750187/> a geonames:Feature;
+ <http://sws.geonames.org/2750187/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nieuwkoop";
      geo:lat "52.150833";
      geo:long "4.776389". 
 
- <http://sws.geonames.org/2750325/> a geonames:Feature;
+ <http://sws.geonames.org/2750325/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nieuwegein";
      geo:lat "52.029167";
      geo:long "5.080556". 
 
- <http://sws.geonames.org/2750417/> a geonames:Feature;
+ <http://sws.geonames.org/2750417/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nes";
      geo:lat "53.4450241069986";
      geo:long "5.77400207519531". 
 
- <http://sws.geonames.org/2750420/> a geonames:Feature;
+ <http://sws.geonames.org/2750420/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nes";
      geo:lat "53.05";
      geo:long "5.85". 
 
- <http://sws.geonames.org/2750444/> a geonames:Feature;
+ <http://sws.geonames.org/2750444/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Neerijnen";
      geo:lat "51.831667";
      geo:long "5.281944". 
 
- <http://sws.geonames.org/2750460/> a geonames:Feature;
+ <http://sws.geonames.org/2750460/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Neede";
      geo:lat "52.134167";
      geo:long "6.613889". 
 
- <http://sws.geonames.org/2750467/> a geonames:Feature;
+ <http://sws.geonames.org/2750467/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nederweert";
      geo:lat "51.285833";
      geo:long "5.748611". 
 
- <http://sws.geonames.org/2750480/> a geonames:Feature;
+ <http://sws.geonames.org/2750480/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Nederhemert";
      geo:lat "51.765183995693";
      geo:long "5.1681661605835". 
 
- <http://sws.geonames.org/2750521/> a geonames:Feature;
+ <http://sws.geonames.org/2750521/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Naarden";
      geo:lat "52.295833";
      geo:long "5.1625". 
 
- <http://sws.geonames.org/2750523/> a geonames:Feature;
+ <http://sws.geonames.org/2750523/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Naaldwijk";
      geo:lat "51.994167";
      geo:long "4.209722". 
 
- <http://sws.geonames.org/2750624/> a geonames:Feature;
+ <http://sws.geonames.org/2750624/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Montfort";
      geo:lat "51.125833";
      geo:long "5.948611". 
 
- <http://sws.geonames.org/2750626/> a geonames:Feature;
+ <http://sws.geonames.org/2750626/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Montfoort";
      geo:lat "52.045833";
      geo:long "4.952778". 
 
- <http://sws.geonames.org/2750630/> a geonames:Feature;
+ <http://sws.geonames.org/2750630/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Monster";
      geo:lat "52.025833";
      geo:long "4.175". 
 
- <http://sws.geonames.org/2750790/> a geonames:Feature;
+ <http://sws.geonames.org/2750790/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Minnertsga";
      geo:lat "53.2510417509826";
      geo:long "5.59513092041016". 
 
- <http://sws.geonames.org/2750810/> a geonames:Feature;
+ <http://sws.geonames.org/2750810/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mijnsheerenland";
      geo:lat "51.796667";
      geo:long "4.4875". 
 
- <http://sws.geonames.org/2750815/> a geonames:Feature;
+ <http://sws.geonames.org/2750815/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mijdrecht";
      geo:lat "52.206667";
      geo:long "4.8625". 
 
- <http://sws.geonames.org/2750821/> a geonames:Feature;
+ <http://sws.geonames.org/2750821/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Mierlo";
      geo:lat "51.44";
      geo:long "5.619444". 
 
- <http://sws.geonames.org/2750884/> a geonames:Feature;
+ <http://sws.geonames.org/2750884/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Middelharnis";
      geo:lat "51.7575";
      geo:long "4.165278". 
 
- <http://sws.geonames.org/2750903/> a geonames:Feature;
+ <http://sws.geonames.org/2750903/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Middelbeers";
      geo:lat "51.466667";
      geo:long "5.25". 
 
- <http://sws.geonames.org/2750947/> a geonames:Feature;
+ <http://sws.geonames.org/2750947/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Meppel";
      geo:lat "52.695833";
      geo:long "6.194444". 
 
- <http://sws.geonames.org/2750965/> a geonames:Feature;
+ <http://sws.geonames.org/2750965/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Menaldum";
      geo:lat "53.2166667";
      geo:long "5.6666667". 
 
- <http://sws.geonames.org/2750978/> a geonames:Feature;
+ <http://sws.geonames.org/2750978/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Melick";
      geo:lat "51.159167";
      geo:long "6.016667". 
 
- <http://sws.geonames.org/2751037/> a geonames:Feature;
+ <http://sws.geonames.org/2751037/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Meerssen";
      geo:lat "50.8875";
      geo:long "5.75". 
 
- <http://sws.geonames.org/2751040/> a geonames:Feature;
+ <http://sws.geonames.org/2751040/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Meers";
      geo:lat "50.961667";
      geo:long "5.741667". 
 
- <http://sws.geonames.org/2751122/> a geonames:Feature;
+ <http://sws.geonames.org/2751122/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Marssum";
      geo:lat "53.2166667";
      geo:long "5.7333333". 
 
- <http://sws.geonames.org/2751129/> a geonames:Feature;
+ <http://sws.geonames.org/2751129/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Marrum";
      geo:lat "53.3227735309182";
      geo:long "5.80198287963867". 
 
- <http://sws.geonames.org/2751199/> a geonames:Feature;
+ <http://sws.geonames.org/2751199/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Margraten";
      geo:lat "50.820833";
      geo:long "5.820833". 
 
- <http://sws.geonames.org/2751285/> a geonames:Feature;
+ <http://sws.geonames.org/2751285/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maassluis";
      geo:lat "51.923333";
      geo:long "4.25". 
 
- <http://sws.geonames.org/2751296/> a geonames:Feature;
+ <http://sws.geonames.org/2751296/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maasdijk";
      geo:lat "51.959167";
      geo:long "4.213889". 
 
- <http://sws.geonames.org/2751301/> a geonames:Feature;
+ <http://sws.geonames.org/2751301/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maasbree";
      geo:lat "51.3575";
      geo:long "6.048611". 
 
- <http://sws.geonames.org/2751303/> a geonames:Feature;
+ <http://sws.geonames.org/2751303/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maasbracht";
      geo:lat "51.1392939704456";
      geo:long "5.88626861572266". 
 
- <http://sws.geonames.org/2751316/> a geonames:Feature;
+ <http://sws.geonames.org/2751316/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maarssen";
      geo:lat "52.139167";
      geo:long "5.041667". 
 
- <http://sws.geonames.org/2751318/> a geonames:Feature;
+ <http://sws.geonames.org/2751318/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maarsbergen";
      geo:lat "52.058333";
      geo:long "5.405556". 
 
- <http://sws.geonames.org/2751320/> a geonames:Feature;
+ <http://sws.geonames.org/2751320/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Maarn";
      geo:lat "52.064167";
      geo:long "5.370833". 
 
- <http://sws.geonames.org/2751385/> a geonames:Feature;
+ <http://sws.geonames.org/2751385/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lunteren";
      geo:lat "52.085";
      geo:long "5.622222". 
 
- <http://sws.geonames.org/2751424/> a geonames:Feature;
+ <http://sws.geonames.org/2751424/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Losser";
      geo:lat "52.260833";
      geo:long "7.004167". 
 
- <http://sws.geonames.org/2751436/> a geonames:Feature;
+ <http://sws.geonames.org/2751436/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lopik";
      geo:lat "51.9725";
      geo:long "4.948611". 
 
- <http://sws.geonames.org/2751524/> a geonames:Feature;
+ <http://sws.geonames.org/2751524/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Loenen";
      geo:lat "52.1175";
      geo:long "6.019444". 
 
- <http://sws.geonames.org/2751537/> a geonames:Feature;
+ <http://sws.geonames.org/2751537/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lochem";
      geo:lat "52.159167";
      geo:long "6.411111". 
 
- <http://sws.geonames.org/2751547/> a geonames:Feature;
+ <http://sws.geonames.org/2751547/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lisse";
      geo:lat "52.26";
      geo:long "4.556944". 
 
- <http://sws.geonames.org/2751621/> a geonames:Feature;
+ <http://sws.geonames.org/2751621/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Liesveld";
      geo:lat "51.9325";
      geo:long "4.831944". 
 
- <http://sws.geonames.org/2751636/> a geonames:Feature;
+ <http://sws.geonames.org/2751636/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lieren";
      geo:lat "52.1625";
      geo:long "5.988889". 
 
- <http://sws.geonames.org/2751641/> a geonames:Feature;
+ <http://sws.geonames.org/2751641/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lienden";
      geo:lat "51.948333";
      geo:long "5.518056". 
 
- <http://sws.geonames.org/2751651/> a geonames:Feature;
+ <http://sws.geonames.org/2751651/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lichtenvoorde";
      geo:lat "51.986667";
      geo:long "6.566667". 
 
- <http://sws.geonames.org/2751687/> a geonames:Feature;
+ <http://sws.geonames.org/2751687/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leusden";
      geo:lat "52.1325";
      geo:long "5.431944". 
 
- <http://sws.geonames.org/2751709/> a geonames:Feature;
+ <http://sws.geonames.org/2751709/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lepelstraat";
      geo:lat "51.548333";
      geo:long "4.276389". 
 
- <http://sws.geonames.org/2751729/> a geonames:Feature;
+ <http://sws.geonames.org/2751729/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Lemmer";
      geo:lat "52.85";
      geo:long "5.7166667". 
 
- <http://sws.geonames.org/2751750/> a geonames:Feature;
+ <http://sws.geonames.org/2751750/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leimuiden";
      geo:lat "52.224167";
      geo:long "4.669444". 
 
- <http://sws.geonames.org/2751771/> a geonames:Feature;
+ <http://sws.geonames.org/2751771/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leiderdorp";
      geo:lat "52.158333";
      geo:long "4.529167". 
 
- <http://sws.geonames.org/2751773/> a geonames:Feature;
+ <http://sws.geonames.org/2751773/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leiden";
      geo:lat "52.158333";
      geo:long "4.493056". 
 
- <http://sws.geonames.org/2751789/> a geonames:Feature;
+ <http://sws.geonames.org/2751789/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leeuwen";
      geo:lat "51.2103247894814";
      geo:long "5.99862098693848". 
 
- <http://sws.geonames.org/2751801/> a geonames:Feature;
+ <http://sws.geonames.org/2751801/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leersum";
      geo:lat "52.011667";
      geo:long "5.427778". 
 
- <http://sws.geonames.org/2751834/> a geonames:Feature;
+ <http://sws.geonames.org/2751834/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Leek";
      geo:lat "53.1625";
      geo:long "6.376389". 
 
- <http://sws.geonames.org/2751874/> a geonames:Feature;
+ <http://sws.geonames.org/2751874/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Laren";
      geo:lat "52.256667";
      geo:long "5.227778". 
 
- <http://sws.geonames.org/2751875/> a geonames:Feature;
+ <http://sws.geonames.org/2751875/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Laren";
      geo:lat "52.194167";
      geo:long "6.365278". 
 
- <http://sws.geonames.org/2751980/> a geonames:Feature;
+ <http://sws.geonames.org/2751980/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Landsmeer";
      geo:lat "52.430833";
      geo:long "4.915278". 
 
- <http://sws.geonames.org/2752130/> a geonames:Feature;
+ <http://sws.geonames.org/2752130/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kwintsheul";
      geo:lat "52.013333";
      geo:long "4.255556". 
 
- <http://sws.geonames.org/2752192/> a geonames:Feature;
+ <http://sws.geonames.org/2752192/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kruisland";
      geo:lat "51.569167";
      geo:long "4.409722". 
 
- <http://sws.geonames.org/2752367/> a geonames:Feature;
+ <http://sws.geonames.org/2752367/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Koudum";
      geo:lat "52.9166667";
      geo:long "5.45". 
 
- <http://sws.geonames.org/2752441/> a geonames:Feature;
+ <http://sws.geonames.org/2752441/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kootwijkerbroek";
      geo:lat "52.150833";
      geo:long "5.669444". 
 
- <http://sws.geonames.org/2752492/> a geonames:Feature;
+ <http://sws.geonames.org/2752492/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Koningsbosch";
      geo:lat "51.051667";
      geo:long "5.958333". 
 
- <http://sws.geonames.org/2752520/> a geonames:Feature;
+ <http://sws.geonames.org/2752520/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kollumerzwaag";
      geo:lat "53.2622353192529";
      geo:long "6.075439453125". 
 
- <http://sws.geonames.org/2752524/> a geonames:Feature;
+ <http://sws.geonames.org/2752524/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kollum";
      geo:lat "53.2833333";
      geo:long "6.15". 
 
- <http://sws.geonames.org/2752600/> a geonames:Feature;
+ <http://sws.geonames.org/2752600/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Klundert";
      geo:lat "51.665";
      geo:long "4.534722". 
 
- <http://sws.geonames.org/2752646/> a geonames:Feature;
+ <http://sws.geonames.org/2752646/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Klimmen";
      geo:lat "50.875833";
      geo:long "5.880556". 
 
- <http://sws.geonames.org/2752798/> a geonames:Feature;
+ <http://sws.geonames.org/2752798/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Klazienaveen";
      geo:lat "52.724167";
      geo:long "6.990278". 
 
- <http://sws.geonames.org/2752923/> a geonames:Feature;
+ <http://sws.geonames.org/2752923/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kerkrade";
      geo:lat "50.865833";
      geo:long "6.0625". 
 
- <http://sws.geonames.org/2753013/> a geonames:Feature;
+ <http://sws.geonames.org/2753013/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Katwijk";
      geo:lat "51.75";
      geo:long "5.870833". 
 
- <http://sws.geonames.org/2753106/> a geonames:Feature;
+ <http://sws.geonames.org/2753106/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Kampen";
      geo:lat "52.555";
      geo:long "5.911111". 
 
- <http://sws.geonames.org/2753197/> a geonames:Feature;
+ <http://sws.geonames.org/2753197/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Joure";
      geo:lat "52.9657006748771";
      geo:long "5.80301284790039". 
 
- <http://sws.geonames.org/2753355/> a geonames:Feature;
+ <http://sws.geonames.org/2753355/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "IJsselstein";
      geo:lat "52.02";
      geo:long "5.043056". 
 
- <http://sws.geonames.org/2753379/> a geonames:Feature;
+ <http://sws.geonames.org/2753379/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "IJlst";
      geo:lat "53.0096192859401";
      geo:long "5.62568664550781". 
 
- <http://sws.geonames.org/2753587/> a geonames:Feature;
+ <http://sws.geonames.org/2753587/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Horst";
      geo:lat "52.308333";
      geo:long "5.581944". 
 
- <http://sws.geonames.org/2753638/> a geonames:Feature;
+ <http://sws.geonames.org/2753638/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoorn";
      geo:lat "52.6425";
      geo:long "5.059722". 
 
- <http://sws.geonames.org/2753686/> a geonames:Feature;
+ <http://sws.geonames.org/2753686/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoogland";
      geo:lat "52.1825";
      geo:long "5.373611". 
 
- <http://sws.geonames.org/2753706/> a geonames:Feature;
+ <http://sws.geonames.org/2753706/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoogezand";
      geo:lat "53.161667";
      geo:long "6.761111". 
 
- <http://sws.geonames.org/2753719/> a geonames:Feature;
+ <http://sws.geonames.org/2753719/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoogeveen";
      geo:lat "52.7225";
      geo:long "6.476389". 
 
- <http://sws.geonames.org/2753801/> a geonames:Feature;
+ <http://sws.geonames.org/2753801/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoofddorp";
      geo:lat "52.3025";
      geo:long "4.688889". 
 
- <http://sws.geonames.org/2753806/> a geonames:Feature;
+ <http://sws.geonames.org/2753806/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Honselersdijk";
      geo:lat "52.0066533692357";
      geo:long "4.22441482543945". 
 
- <http://sws.geonames.org/2753852/> a geonames:Feature;
+ <http://sws.geonames.org/2753852/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Holwerd";
      geo:lat "53.3681465104225";
      geo:long "5.90073108673096". 
 
- <http://sws.geonames.org/2753887/> a geonames:Feature;
+ <http://sws.geonames.org/2753887/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hollum";
      geo:lat "53.4394005097685";
      geo:long "5.63804626464844". 
 
- <http://sws.geonames.org/2754004/> a geonames:Feature;
+ <http://sws.geonames.org/2754004/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hoenderloo";
      geo:lat "52.1175";
      geo:long "5.879167". 
 
- <http://sws.geonames.org/2754064/> a geonames:Feature;
+ <http://sws.geonames.org/2754064/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hilversum";
      geo:lat "52.223333";
      geo:long "5.176389". 
 
- <http://sws.geonames.org/2754066/> a geonames:Feature;
+ <http://sws.geonames.org/2754066/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hilvarenbeek";
      geo:lat "51.485833";
      geo:long "5.1375". 
 
- <http://sws.geonames.org/2754111/> a geonames:Feature;
+ <http://sws.geonames.org/2754111/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heythuysen";
      geo:lat "51.25";
      geo:long "5.898611". 
 
- <http://sws.geonames.org/2754352/> a geonames:Feature;
+ <http://sws.geonames.org/2754352/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Herkenbosch";
      geo:lat "51.153333";
      geo:long "6.063889". 
 
- <http://sws.geonames.org/2754454/> a geonames:Feature;
+ <http://sws.geonames.org/2754454/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hellevoetsluis";
      geo:lat "51.83333";
      geo:long "4.13333". 
 
- <http://sws.geonames.org/2754502/> a geonames:Feature;
+ <http://sws.geonames.org/2754502/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heino";
      geo:lat "52.4333333";
      geo:long "6.2333333". 
 
- <http://sws.geonames.org/2754507/> a geonames:Feature;
+ <http://sws.geonames.org/2754507/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heinenoord";
      geo:lat "51.8260177857319";
      geo:long "4.47658538818359". 
 
- <http://sws.geonames.org/2754618/> a geonames:Feature;
+ <http://sws.geonames.org/2754618/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heeze";
      geo:lat "51.3833333";
      geo:long "5.5666667". 
 
- <http://sws.geonames.org/2754635/> a geonames:Feature;
+ <http://sws.geonames.org/2754635/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heesch";
      geo:lat "51.7336200471311";
      geo:long "5.52672386169434". 
 
- <http://sws.geonames.org/2754652/> a geonames:Feature;
+ <http://sws.geonames.org/2754652/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerlen";
      geo:lat "50.883651041327";
      geo:long "5.98154067993164". 
 
- <http://sws.geonames.org/2754656/> a geonames:Feature;
+ <http://sws.geonames.org/2754656/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerjansdam";
      geo:lat "51.835833";
      geo:long "4.563889". 
 
- <http://sws.geonames.org/2754659/> a geonames:Feature;
+ <http://sws.geonames.org/2754659/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerhugowaard";
      geo:lat "52.6666667";
      geo:long "4.85". 
 
- <http://sws.geonames.org/2754662/> a geonames:Feature;
+ <http://sws.geonames.org/2754662/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerewaarden";
      geo:lat "51.8176885137212";
      geo:long "5.39299964904785". 
 
- <http://sws.geonames.org/2754669/> a geonames:Feature;
+ <http://sws.geonames.org/2754669/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerenveen";
      geo:lat "52.9592899918889";
      geo:long "5.91854095458984". 
 
- <http://sws.geonames.org/2754681/> a geonames:Feature;
+ <http://sws.geonames.org/2754681/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heerde";
      geo:lat "52.3872300307912";
      geo:long "6.04016304016113". 
 
- <http://sws.geonames.org/2754692/> a geonames:Feature;
+ <http://sws.geonames.org/2754692/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heemstede";
      geo:lat "52.345833";
      geo:long "4.620833". 
 
- <http://sws.geonames.org/2754697/> a geonames:Feature;
+ <http://sws.geonames.org/2754697/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heemskerk";
      geo:lat "52.5166667";
      geo:long "4.6666667". 
 
- <http://sws.geonames.org/2754712/> a geonames:Feature;
+ <http://sws.geonames.org/2754712/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Heeg";
      geo:lat "52.9685955104609";
      geo:long "5.61075210571289". 
 
- <http://sws.geonames.org/2754719/> a geonames:Feature;
+ <http://sws.geonames.org/2754719/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hedel";
      geo:lat "51.7480231703979";
      geo:long "5.2613353729248". 
 
- <http://sws.geonames.org/2754752/> a geonames:Feature;
+ <http://sws.geonames.org/2754752/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Havelte";
      geo:lat "52.7694093967358";
      geo:long "6.24014854431152". 
 
- <http://sws.geonames.org/2754768/> a geonames:Feature;
+ <http://sws.geonames.org/2754768/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hattem";
      geo:lat "52.475";
      geo:long "6.063889". 
 
- <http://sws.geonames.org/2754779/> a geonames:Feature;
+ <http://sws.geonames.org/2754779/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hasselt";
      geo:lat "52.5926728612372";
      geo:long "6.09526634216309". 
 
- <http://sws.geonames.org/2754804/> a geonames:Feature;
+ <http://sws.geonames.org/2754804/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harskamp";
      geo:lat "52.13";
      geo:long "5.752778". 
 
- <http://sws.geonames.org/2754817/> a geonames:Feature;
+ <http://sws.geonames.org/2754817/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harlingen";
      geo:lat "53.1747654701346";
      geo:long "5.42243957519531". 
 
- <http://sws.geonames.org/2754821/> a geonames:Feature;
+ <http://sws.geonames.org/2754821/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harkema";
      geo:lat "53.1833333";
      geo:long "6.1333333". 
 
- <http://sws.geonames.org/2754837/> a geonames:Feature;
+ <http://sws.geonames.org/2754837/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harenkarspel";
      geo:lat "52.734160868909";
      geo:long "4.77682113647461". 
 
- <http://sws.geonames.org/2754841/> a geonames:Feature;
+ <http://sws.geonames.org/2754841/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Haren";
      geo:lat "53.1666667";
      geo:long "6.6". 
 
- <http://sws.geonames.org/2754848/> a geonames:Feature;
+ <http://sws.geonames.org/2754848/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Harderwijk";
      geo:lat "52.341667";
      geo:long "5.620833". 
 
- <http://sws.geonames.org/2754861/> a geonames:Feature;
+ <http://sws.geonames.org/2754861/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hardenberg";
      geo:lat "52.575833";
      geo:long "6.619444". 
 
- <http://sws.geonames.org/2754864/> a geonames:Feature;
+ <http://sws.geonames.org/2754864/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Hurdegaryp";
      geo:lat "53.2133317765915";
      geo:long "5.94137191772461". 
 
- <http://sws.geonames.org/2754922/> a geonames:Feature;
+ <http://sws.geonames.org/2754922/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Halsteren";
      geo:lat "51.5283436046289";
      geo:long "4.26784515380859". 
 
- <http://sws.geonames.org/2754975/> a geonames:Feature;
+ <http://sws.geonames.org/2754975/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Haelen";
      geo:lat "51.235833";
      geo:long "5.956944". 
 
- <http://sws.geonames.org/2754978/> a geonames:Feature;
+ <http://sws.geonames.org/2754978/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Haastrecht";
      geo:lat "52.0007354810967";
      geo:long "4.77639198303223". 
 
- <http://sws.geonames.org/2755009/> a geonames:Feature;
+ <http://sws.geonames.org/2755009/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Haaren";
      geo:lat "51.6025";
      geo:long "5.222222". 
 
- <http://sws.geonames.org/2755030/> a geonames:Feature;
+ <http://sws.geonames.org/2755030/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Haaksbergen";
      geo:lat "52.156667";
      geo:long "6.738889". 
 
- <http://sws.geonames.org/2755052/> a geonames:Feature;
+ <http://sws.geonames.org/2755052/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Grou";
      geo:lat "53.1";
      geo:long "5.8333333". 
 
- <http://sws.geonames.org/2755204/> a geonames:Feature;
+ <http://sws.geonames.org/2755204/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Grootegast";
      geo:lat "53.2125";
      geo:long "6.273611". 
 
- <http://sws.geonames.org/2755272/> a geonames:Feature;
+ <http://sws.geonames.org/2755272/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Groesbeek";
      geo:lat "51.776667";
      geo:long "5.936111". 
 
- <http://sws.geonames.org/2755317/> a geonames:Feature;
+ <http://sws.geonames.org/2755317/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Grijpskerk";
      geo:lat "53.2625";
      geo:long "6.308333". 
 
- <http://sws.geonames.org/2755358/> a geonames:Feature;
+ <http://sws.geonames.org/2755358/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Grave";
      geo:lat "51.755833";
      geo:long "5.7375". 
 
- <http://sws.geonames.org/2755399/> a geonames:Feature;
+ <http://sws.geonames.org/2755399/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Goutum";
      geo:lat "53.1773376366325";
      geo:long "5.8036994934082". 
 
- <http://sws.geonames.org/2755420/> a geonames:Feature;
+ <http://sws.geonames.org/2755420/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gouda";
      geo:lat "52.016667";
      geo:long "4.708333". 
 
- <http://sws.geonames.org/2755428/> a geonames:Feature;
+ <http://sws.geonames.org/2755428/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gorssel";
      geo:lat "52.201667";
      geo:long "6.201389". 
 
- <http://sws.geonames.org/2755429/> a geonames:Feature;
+ <http://sws.geonames.org/2755429/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gorredijk";
      geo:lat "53.0";
      geo:long "6.0666667". 
 
- <http://sws.geonames.org/2755434/> a geonames:Feature;
+ <http://sws.geonames.org/2755434/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gorinchem";
      geo:lat "51.8325";
      geo:long "4.975". 
 
- <http://sws.geonames.org/2755464/> a geonames:Feature;
+ <http://sws.geonames.org/2755464/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Goirle";
      geo:lat "51.520833";
      geo:long "5.066667". 
 
- <http://sws.geonames.org/2755476/> a geonames:Feature;
+ <http://sws.geonames.org/2755476/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Goes";
      geo:lat "51.504167";
      geo:long "3.888889". 
 
- <http://sws.geonames.org/2755485/> a geonames:Feature;
+ <http://sws.geonames.org/2755485/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Goedereede";
      geo:lat "51.8175";
      geo:long "3.980556". 
 
- <http://sws.geonames.org/2755492/> a geonames:Feature;
+ <http://sws.geonames.org/2755492/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Glind";
      geo:lat "52.12";
      geo:long "5.506944". 
 
- <http://sws.geonames.org/2755517/> a geonames:Feature;
+ <http://sws.geonames.org/2755517/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Giethoorn";
      geo:lat "52.74";
      geo:long "6.079167". 
 
- <http://sws.geonames.org/2755542/> a geonames:Feature;
+ <http://sws.geonames.org/2755542/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gytsjerk";
      geo:lat "53.2429271503744";
      geo:long "5.89502334594727". 
 
- <http://sws.geonames.org/2755584/> a geonames:Feature;
+ <http://sws.geonames.org/2755584/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gennep";
      geo:lat "51.698333";
      geo:long "5.973611". 
 
- <http://sws.geonames.org/2755599/> a geonames:Feature;
+ <http://sws.geonames.org/2755599/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gendringen";
      geo:lat "51.873333";
      geo:long "6.376389". 
 
- <http://sws.geonames.org/2755619/> a geonames:Feature;
+ <http://sws.geonames.org/2755619/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Geldrop";
      geo:lat "51.421667";
      geo:long "5.559722". 
 
- <http://sws.geonames.org/2755633/> a geonames:Feature;
+ <http://sws.geonames.org/2755633/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Geldermalsen";
      geo:lat "51.880833";
      geo:long "5.288889". 
 
- <http://sws.geonames.org/2755645/> a geonames:Feature;
+ <http://sws.geonames.org/2755645/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Geffen";
      geo:lat "51.74";
      geo:long "5.463889". 
 
- <http://sws.geonames.org/2755664/> a geonames:Feature;
+ <http://sws.geonames.org/2755664/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Gees";
      geo:lat "52.747411634165";
      geo:long "6.68878555297852". 
 
- <http://sws.geonames.org/2755669/> a geonames:Feature;
+ <http://sws.geonames.org/2755669/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Geertruidenberg";
      geo:lat "51.701667";
      geo:long "4.856944". 
 
- <http://sws.geonames.org/2755732/> a geonames:Feature;
+ <http://sws.geonames.org/2755732/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Garderen";
      geo:lat "52.230833";
      geo:long "5.713889". 
 
- <http://sws.geonames.org/2755845/> a geonames:Feature;
+ <http://sws.geonames.org/2755845/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Franeker";
      geo:lat "53.1854646691428";
      geo:long "5.54122924804688". 
 
- <http://sws.geonames.org/2756035/> a geonames:Feature;
+ <http://sws.geonames.org/2756035/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Erp";
      geo:lat "51.6";
      geo:long "5.606944". 
 
- <http://sws.geonames.org/2756039/> a geonames:Feature;
+ <http://sws.geonames.org/2756039/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ermelo";
      geo:lat "52.298333";
      geo:long "5.622222". 
 
- <http://sws.geonames.org/2756050/> a geonames:Feature;
+ <http://sws.geonames.org/2756050/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Epse";
      geo:lat "52.225";
      geo:long "6.2". 
 
- <http://sws.geonames.org/2756059/> a geonames:Feature;
+ <http://sws.geonames.org/2756059/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Epe";
      geo:lat "52.3475";
      geo:long "5.983333". 
 
- <http://sws.geonames.org/2756071/> a geonames:Feature;
+ <http://sws.geonames.org/2756071/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Enschede";
      geo:lat "52.218333";
      geo:long "6.895833". 
 
- <http://sws.geonames.org/2756072/> a geonames:Feature;
+ <http://sws.geonames.org/2756072/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ens";
      geo:lat "52.636667";
      geo:long "5.827778". 
 
- <http://sws.geonames.org/2756077/> a geonames:Feature;
+ <http://sws.geonames.org/2756077/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Enkhuizen";
      geo:lat "52.703333";
      geo:long "5.291667". 
 
- <http://sws.geonames.org/2756133/> a geonames:Feature;
+ <http://sws.geonames.org/2756133/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Emmer-Compascuum";
      geo:lat "52.811667";
      geo:long "7.047222". 
 
- <http://sws.geonames.org/2756136/> a geonames:Feature;
+ <http://sws.geonames.org/2756136/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Emmen";
      geo:lat "52.779167";
      geo:long "6.906944". 
 
- <http://sws.geonames.org/2756139/> a geonames:Feature;
+ <http://sws.geonames.org/2756139/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Emmeloord";
      geo:lat "52.710833";
      geo:long "5.748611". 
 
- <http://sws.geonames.org/2756168/> a geonames:Feature;
+ <http://sws.geonames.org/2756168/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Elsloo";
      geo:lat "52.9427160404502";
      geo:long "6.23817443847656". 
 
- <http://sws.geonames.org/2756169/> a geonames:Feature;
+ <http://sws.geonames.org/2756169/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Elsloo";
      geo:lat "50.949167";
      geo:long "5.770833". 
 
- <http://sws.geonames.org/2756174/> a geonames:Feature;
+ <http://sws.geonames.org/2756174/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Elshof";
      geo:lat "52.393333";
      geo:long "6.2". 
 
- <http://sws.geonames.org/2756232/> a geonames:Feature;
+ <http://sws.geonames.org/2756232/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Elburg";
      geo:lat "52.4475";
      geo:long "5.843056". 
 
- <http://sws.geonames.org/2756253/> a geonames:Feature;
+ <http://sws.geonames.org/2756253/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eindhoven";
      geo:lat "51.440833";
      geo:long "5.477778". 
 
- <http://sws.geonames.org/2756283/> a geonames:Feature;
+ <http://sws.geonames.org/2756283/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eijsden";
      geo:lat "50.778333";
      geo:long "5.711111". 
 
- <http://sws.geonames.org/2756295/> a geonames:Feature;
+ <http://sws.geonames.org/2756295/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eibergen";
      geo:lat "52.1";
      geo:long "6.648611". 
 
- <http://sws.geonames.org/2756342/> a geonames:Feature;
+ <http://sws.geonames.org/2756342/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eersel";
      geo:lat "51.3575";
      geo:long "5.318056". 
 
- <http://sws.geonames.org/2756349/> a geonames:Feature;
+ <http://sws.geonames.org/2756349/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eerde";
      geo:lat "51.604167";
      geo:long "5.498611". 
 
- <http://sws.geonames.org/2756351/> a geonames:Feature;
+ <http://sws.geonames.org/2756351/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eerbeek";
      geo:lat "52.105";
      geo:long "6.058333". 
 
- <http://sws.geonames.org/2756418/> a geonames:Feature;
+ <http://sws.geonames.org/2756418/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Eefde";
      geo:lat "52.166667";
      geo:long "6.225". 
 
- <http://sws.geonames.org/2756426/> a geonames:Feature;
+ <http://sws.geonames.org/2756426/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ederveen";
      geo:lat "52.063333";
      geo:long "5.577778". 
 
- <http://sws.geonames.org/2756429/> a geonames:Feature;
+ <http://sws.geonames.org/2756429/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Ede";
      geo:lat "52.033333";
      geo:long "5.658333". 
 
- <http://sws.geonames.org/2756504/> a geonames:Feature;
+ <http://sws.geonames.org/2756504/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Duivendrecht";
      geo:lat "52.325833";
      geo:long "4.938889". 
 
- <http://sws.geonames.org/2756507/> a geonames:Feature;
+ <http://sws.geonames.org/2756507/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Duiven";
      geo:lat "51.946667";
      geo:long "6.013889". 
 
- <http://sws.geonames.org/2756539/> a geonames:Feature;
+ <http://sws.geonames.org/2756539/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Druten";
      geo:lat "51.888333";
      geo:long "5.605556". 
 
- <http://sws.geonames.org/2756559/> a geonames:Feature;
+ <http://sws.geonames.org/2756559/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dronten";
      geo:lat "52.525";
      geo:long "5.718056". 
 
- <http://sws.geonames.org/2756561/> a geonames:Feature;
+ <http://sws.geonames.org/2756561/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dronrijp";
      geo:lat "53.2";
      geo:long "5.65". 
 
- <http://sws.geonames.org/2756569/> a geonames:Feature;
+ <http://sws.geonames.org/2756569/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Drimmelen";
      geo:lat "51.706667";
      geo:long "4.804167". 
 
- <http://sws.geonames.org/2756619/> a geonames:Feature;
+ <http://sws.geonames.org/2756619/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Driebergen-Rijsenburg";
      geo:lat "52.053333";
      geo:long "5.280556". 
 
- <http://sws.geonames.org/2756644/> a geonames:Feature;
+ <http://sws.geonames.org/2756644/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Drachten";
      geo:lat "53.1";
      geo:long "6.1". 
 
- <http://sws.geonames.org/2756669/> a geonames:Feature;
+ <http://sws.geonames.org/2756669/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dordrecht";
      geo:lat "51.81";
      geo:long "4.673611". 
 
- <http://sws.geonames.org/2756686/> a geonames:Feature;
+ <http://sws.geonames.org/2756686/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Doorn";
      geo:lat "52.0334325936276";
      geo:long "5.34570693969727". 
 
- <http://sws.geonames.org/2756723/> a geonames:Feature;
+ <http://sws.geonames.org/2756723/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dongen";
      geo:lat "51.626667";
      geo:long "4.938889". 
 
- <http://sws.geonames.org/2756759/> a geonames:Feature;
+ <http://sws.geonames.org/2756759/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dokkum";
      geo:lat "53.3333333";
      geo:long "6.0". 
 
- <http://sws.geonames.org/2756767/> a geonames:Feature;
+ <http://sws.geonames.org/2756767/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Doetinchem";
      geo:lat "51.965";
      geo:long "6.288889". 
 
- <http://sws.geonames.org/2756772/> a geonames:Feature;
+ <http://sws.geonames.org/2756772/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Doesburg";
      geo:lat "52.0125";
      geo:long "6.138889". 
 
- <http://sws.geonames.org/2756787/> a geonames:Feature;
+ <http://sws.geonames.org/2756787/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dirksland";
      geo:lat "51.749167";
      geo:long "4.1". 
 
- <http://sws.geonames.org/2756800/> a geonames:Feature;
+ <http://sws.geonames.org/2756800/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dinteloord";
      geo:lat "51.635";
      geo:long "4.369444". 
 
- <http://sws.geonames.org/2756933/> a geonames:Feature;
+ <http://sws.geonames.org/2756933/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Wilgen";
      geo:lat "53.1";
      geo:long "6.0333333". 
 
- <http://sws.geonames.org/2756987/> a geonames:Feature;
+ <http://sws.geonames.org/2756987/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Deventer";
      geo:lat "52.255";
      geo:long "6.163889". 
 
- <http://sws.geonames.org/2757220/> a geonames:Feature;
+ <http://sws.geonames.org/2757220/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Den Helder";
      geo:lat "52.953333";
      geo:long "4.759722". 
 
- <http://sws.geonames.org/2757224/> a geonames:Feature;
+ <http://sws.geonames.org/2757224/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Den Ham";
      geo:lat "52.465833";
      geo:long "6.495833". 
 
- <http://sws.geonames.org/2757244/> a geonames:Feature;
+ <http://sws.geonames.org/2757244/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Den Burg";
      geo:lat "53.054167";
      geo:long "4.797222". 
 
- <http://sws.geonames.org/2757336/> a geonames:Feature;
+ <http://sws.geonames.org/2757336/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Lier";
      geo:lat "51.975";
      geo:long "4.248611". 
 
- <http://sws.geonames.org/2757340/> a geonames:Feature;
+ <http://sws.geonames.org/2757340/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Delfzijl";
      geo:lat "53.33";
      geo:long "6.918056". 
 
- <http://sws.geonames.org/2757345/> a geonames:Feature;
+ <http://sws.geonames.org/2757345/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Delft";
      geo:lat "52.006667";
      geo:long "4.355556". 
 
- <http://sws.geonames.org/2757433/> a geonames:Feature;
+ <http://sws.geonames.org/2757433/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Klomp";
      geo:lat "52.0465786506666";
      geo:long "5.57247161865234". 
 
- <http://sws.geonames.org/2757475/> a geonames:Feature;
+ <http://sws.geonames.org/2757475/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Deinum";
      geo:lat "53.2";
      geo:long "5.7166667". 
 
- <http://sws.geonames.org/2757493/> a geonames:Feature;
+ <http://sws.geonames.org/2757493/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Horst";
      geo:lat "51.774167";
      geo:long "5.968056". 
 
- <http://sws.geonames.org/2757574/> a geonames:Feature;
+ <http://sws.geonames.org/2757574/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Heen";
      geo:lat "51.6075";
      geo:long "4.270833". 
 
- <http://sws.geonames.org/2757783/> a geonames:Feature;
+ <http://sws.geonames.org/2757783/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Bilt";
      geo:lat "52.11";
      geo:long "5.180556". 
 
- <http://sws.geonames.org/2757850/> a geonames:Feature;
+ <http://sws.geonames.org/2757850/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Dalfsen";
      geo:lat "52.511667";
      geo:long "6.256944". 
 
- <http://sws.geonames.org/2757872/> a geonames:Feature;
+ <http://sws.geonames.org/2757872/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Culemborg";
      geo:lat "51.955";
      geo:long "5.227778". 
 
- <http://sws.geonames.org/2757874/> a geonames:Feature;
+ <http://sws.geonames.org/2757874/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Cuijk";
      geo:lat "51.730833";
      geo:long "5.879167". 
 
- <http://sws.geonames.org/2757890/> a geonames:Feature;
+ <http://sws.geonames.org/2757890/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Cranendonck";
      geo:lat "51.304167";
      geo:long "5.588889". 
 
- <http://sws.geonames.org/2757937/> a geonames:Feature;
+ <http://sws.geonames.org/2757937/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Coevorden";
      geo:lat "52.6625";
      geo:long "6.741667". 
 
- <http://sws.geonames.org/2757991/> a geonames:Feature;
+ <http://sws.geonames.org/2757991/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Castricum";
      geo:lat "52.548333";
      geo:long "4.669444". 
 
- <http://sws.geonames.org/2758064/> a geonames:Feature;
+ <http://sws.geonames.org/2758064/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bussum";
      geo:lat "52.273333";
      geo:long "5.161111". 
 
- <http://sws.geonames.org/2758104/> a geonames:Feature;
+ <http://sws.geonames.org/2758104/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bunschoten";
      geo:lat "52.2430430648404";
      geo:long "5.37883758544922". 
 
- <http://sws.geonames.org/2758106/> a geonames:Feature;
+ <http://sws.geonames.org/2758106/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bunnik";
      geo:lat "52.066667";
      geo:long "5.198611". 
 
- <http://sws.geonames.org/2758131/> a geonames:Feature;
+ <http://sws.geonames.org/2758131/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Buitenpost";
      geo:lat "53.2516579868882";
      geo:long "6.1448335647583". 
 
- <http://sws.geonames.org/2758174/> a geonames:Feature;
+ <http://sws.geonames.org/2758174/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Brunssum";
      geo:lat "50.946667";
      geo:long "5.970833". 
 
- <http://sws.geonames.org/2758177/> a geonames:Feature;
+ <http://sws.geonames.org/2758177/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Brummen";
      geo:lat "52.09";
      geo:long "6.155556". 
 
- <http://sws.geonames.org/2758186/> a geonames:Feature;
+ <http://sws.geonames.org/2758186/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bruinisse";
      geo:lat "51.661667";
      geo:long "4.094444". 
 
- <http://sws.geonames.org/2758326/> a geonames:Feature;
+ <http://sws.geonames.org/2758326/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Brielle";
      geo:lat "51.901667";
      geo:long "4.1625". 
 
- <http://sws.geonames.org/2758333/> a geonames:Feature;
+ <http://sws.geonames.org/2758333/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Breukelen";
      geo:lat "52.174167";
      geo:long "5.001389". 
 
- <http://sws.geonames.org/2758336/> a geonames:Feature;
+ <http://sws.geonames.org/2758336/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Breugel";
      geo:lat "51.5175";
      geo:long "5.511111". 
 
- <http://sws.geonames.org/2758391/> a geonames:Feature;
+ <http://sws.geonames.org/2758391/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bredeweg";
      geo:lat "51.7601904963994";
      geo:long "5.94188690185547". 
 
- <http://sws.geonames.org/2758401/> a geonames:Feature;
+ <http://sws.geonames.org/2758401/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Breda";
      geo:lat "51.5865631469705";
      geo:long "4.77596282958984". 
 
- <http://sws.geonames.org/2758460/> a geonames:Feature;
+ <http://sws.geonames.org/2758460/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boxtel";
      geo:lat "51.590833";
      geo:long "5.329167". 
 
- <http://sws.geonames.org/2758462/> a geonames:Feature;
+ <http://sws.geonames.org/2758462/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boxmeer";
      geo:lat "51.646667";
      geo:long "5.947222". 
 
- <http://sws.geonames.org/2758547/> a geonames:Feature;
+ <http://sws.geonames.org/2758547/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boskoop";
      geo:lat "52.075";
      geo:long "4.655556". 
 
- <http://sws.geonames.org/2758549/> a geonames:Feature;
+ <http://sws.geonames.org/2758549/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Boskamp";
      geo:lat "52.330833";
      geo:long "6.127778". 
 
- <http://sws.geonames.org/2758587/> a geonames:Feature;
+ <http://sws.geonames.org/2758587/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Borssele";
      geo:lat "51.423333";
      geo:long "3.734722". 
 
- <http://sws.geonames.org/2758598/> a geonames:Feature;
+ <http://sws.geonames.org/2758598/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Borne";
      geo:lat "52.3";
      geo:long "6.75". 
 
- <http://sws.geonames.org/2758602/> a geonames:Feature;
+ <http://sws.geonames.org/2758602/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Born";
      geo:lat "51.031667";
      geo:long "5.809722". 
 
- <http://sws.geonames.org/2758621/> a geonames:Feature;
+ <http://sws.geonames.org/2758621/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Borger";
      geo:lat "52.923333";
      geo:long "6.793056". 
 
- <http://sws.geonames.org/2758626/> a geonames:Feature;
+ <http://sws.geonames.org/2758626/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Borculo";
      geo:lat "52.115833";
      geo:long "6.522222". 
 
- <http://sws.geonames.org/2758682/> a geonames:Feature;
+ <http://sws.geonames.org/2758682/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bolsward";
      geo:lat "53.0666667";
      geo:long "5.5333333". 
 
- <http://sws.geonames.org/2758765/> a geonames:Feature;
+ <http://sws.geonames.org/2758765/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bodegraven";
      geo:lat "52.0825";
      geo:long "4.75". 
 
- <http://sws.geonames.org/2758777/> a geonames:Feature;
+ <http://sws.geonames.org/2758777/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Blokzijl";
      geo:lat "52.726667";
      geo:long "5.961111". 
 
- <http://sws.geonames.org/2758804/> a geonames:Feature;
+ <http://sws.geonames.org/2758804/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bloemendaal";
      geo:lat "52.4025";
      geo:long "4.622222". 
 
- <http://sws.geonames.org/2758838/> a geonames:Feature;
+ <http://sws.geonames.org/2758838/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bleiswijk";
      geo:lat "52.010833";
      geo:long "4.531944". 
 
- <http://sws.geonames.org/2758868/> a geonames:Feature;
+ <http://sws.geonames.org/2758868/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Blaricum";
      geo:lat "52.2725";
      geo:long "5.241667". 
 
- <http://sws.geonames.org/2758878/> a geonames:Feature;
+ <http://sws.geonames.org/2758878/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bladel";
      geo:lat "51.368333";
      geo:long "5.220833". 
 
- <http://sws.geonames.org/2758992/> a geonames:Feature;
+ <http://sws.geonames.org/2758992/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Biddinghuizen";
      geo:lat "52.455";
      geo:long "5.693056". 
 
- <http://sws.geonames.org/2758998/> a geonames:Feature;
+ <http://sws.geonames.org/2758998/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Beverwijk";
      geo:lat "52.483333";
      geo:long "4.656944". 
 
- <http://sws.geonames.org/2759016/> a geonames:Feature;
+ <http://sws.geonames.org/2759016/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Beuningen";
      geo:lat "51.860833";
      geo:long "5.766667". 
 
- <http://sws.geonames.org/2759040/> a geonames:Feature;
+ <http://sws.geonames.org/2759040/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Best";
      geo:lat "51.5075";
      geo:long "5.390278". 
 
- <http://sws.geonames.org/2759103/> a geonames:Feature;
+ <http://sws.geonames.org/2759103/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Burgum";
      geo:lat "53.1902475822735";
      geo:long "5.99055290222168". 
 
- <http://sws.geonames.org/2759113/> a geonames:Feature;
+ <http://sws.geonames.org/2759113/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bergschenhoek";
      geo:lat "51.99";
      geo:long "4.498611". 
 
- <http://sws.geonames.org/2759126/> a geonames:Feature;
+ <http://sws.geonames.org/2759126/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Berghem";
      geo:lat "51.7699113743192";
      geo:long "5.56826591491699". 
 
- <http://sws.geonames.org/2759129/> a geonames:Feature;
+ <http://sws.geonames.org/2759129/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bergharen";
      geo:lat "51.850833";
      geo:long "5.669444". 
 
- <http://sws.geonames.org/2759132/> a geonames:Feature;
+ <http://sws.geonames.org/2759132/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bergeijk";
      geo:lat "51.319167";
      geo:long "5.358333". 
 
- <http://sws.geonames.org/2759163/> a geonames:Feature;
+ <http://sws.geonames.org/2759163/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Berg";
      geo:lat "51.004167";
      geo:long "5.770833". 
 
- <http://sws.geonames.org/2759178/> a geonames:Feature;
+ <http://sws.geonames.org/2759178/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Benthuizen";
      geo:lat "52.0775";
      geo:long "4.544444". 
 
- <http://sws.geonames.org/2759197/> a geonames:Feature;
+ <http://sws.geonames.org/2759197/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bennekom";
      geo:lat "51.998333";
      geo:long "5.676389". 
 
- <http://sws.geonames.org/2759199/> a geonames:Feature;
+ <http://sws.geonames.org/2759199/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bennebroek";
      geo:lat "52.320833";
      geo:long "4.598611". 
 
- <http://sws.geonames.org/2759286/> a geonames:Feature;
+ <http://sws.geonames.org/2759286/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Beesel";
      geo:lat "51.268333";
      geo:long "6.038889". 
 
- <http://sws.geonames.org/2759342/> a geonames:Feature;
+ <http://sws.geonames.org/2759342/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Beekbergen";
      geo:lat "52.16";
      geo:long "5.963889". 
 
- <http://sws.geonames.org/2759350/> a geonames:Feature;
+ <http://sws.geonames.org/2759350/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Beek";
      geo:lat "50.940833";
      geo:long "5.797222". 
 
- <http://sws.geonames.org/2759356/> a geonames:Feature;
+ <http://sws.geonames.org/2759356/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Bedum";
      geo:lat "53.300833";
      geo:long "6.602778". 
 
- <http://sws.geonames.org/2759407/> a geonames:Feature;
+ <http://sws.geonames.org/2759407/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Barneveld";
      geo:lat "52.14";
      geo:long "5.584722". 
 
- <http://sws.geonames.org/2759426/> a geonames:Feature;
+ <http://sws.geonames.org/2759426/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Barendrecht";
      geo:lat "51.856667";
      geo:long "4.534722". 
 
- <http://sws.geonames.org/2759472/> a geonames:Feature;
+ <http://sws.geonames.org/2759472/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Balk";
      geo:lat "52.897564441131";
      geo:long "5.57963848114014". 
 
- <http://sws.geonames.org/2759544/> a geonames:Feature;
+ <http://sws.geonames.org/2759544/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Baarn";
      geo:lat "52.211667";
      geo:long "5.2875". 
 
- <http://sws.geonames.org/2759594/> a geonames:Feature;
+ <http://sws.geonames.org/2759594/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Axel";
      geo:lat "51.266667";
      geo:long "3.908333". 
 
- <http://sws.geonames.org/2759621/> a geonames:Feature;
+ <http://sws.geonames.org/2759621/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Asten";
      geo:lat "51.404167";
      geo:long "5.748611". 
 
- <http://sws.geonames.org/2759684/> a geonames:Feature;
+ <http://sws.geonames.org/2759684/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Arcen";
      geo:lat "51.476667";
      geo:long "6.180556". 
 
- <http://sws.geonames.org/2759687/> a geonames:Feature;
+ <http://sws.geonames.org/2759687/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Appingedam";
      geo:lat "53.321667";
      geo:long "6.858333". 
 
- <http://sws.geonames.org/2759706/> a geonames:Feature;
+ <http://sws.geonames.org/2759706/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Apeldoorn";
      geo:lat "52.21";
      geo:long "5.969444". 
 
- <http://sws.geonames.org/2759757/> a geonames:Feature;
+ <http://sws.geonames.org/2759757/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Anjum";
      geo:lat "53.3747524354464";
      geo:long "6.12698078155518". 
 
- <http://sws.geonames.org/2759798/> a geonames:Feature;
+ <http://sws.geonames.org/2759798/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Amstelveen";
      geo:lat "52.300833";
      geo:long "4.863889". 
 
- <http://sws.geonames.org/2759821/> a geonames:Feature;
+ <http://sws.geonames.org/2759821/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Amersfoort";
      geo:lat "52.155";
      geo:long "5.3875". 
 
- <http://sws.geonames.org/2759828/> a geonames:Feature;
+ <http://sws.geonames.org/2759828/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Amerongen";
      geo:lat "52.0025";
      geo:long "5.459722". 
 
- <http://sws.geonames.org/2759863/> a geonames:Feature;
+ <http://sws.geonames.org/2759863/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Alteveer";
      geo:lat "52.675";
      geo:long "6.486111". 
 
- <http://sws.geonames.org/2759879/> a geonames:Feature;
+ <http://sws.geonames.org/2759879/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Almere Stad";
      geo:lat "52.3702542434377";
      geo:long "5.2141284942627". 
 
- <http://sws.geonames.org/2759884/> a geonames:Feature;
+ <http://sws.geonames.org/2759884/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Almen";
      geo:lat "52.158333";
      geo:long "6.3". 
 
- <http://sws.geonames.org/2759887/> a geonames:Feature;
+ <http://sws.geonames.org/2759887/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Almelo";
      geo:lat "52.356667";
      geo:long "6.6625". 
 
- <http://sws.geonames.org/2759899/> a geonames:Feature;
+ <http://sws.geonames.org/2759899/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Alkmaar";
      geo:lat "52.631667";
      geo:long "4.748611". 
 
- <http://sws.geonames.org/2759915/> a geonames:Feature;
+ <http://sws.geonames.org/2759915/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Alblasserdam";
      geo:lat "51.865833";
      geo:long "4.661111". 
 
- <http://sws.geonames.org/2759922/> a geonames:Feature;
+ <http://sws.geonames.org/2759922/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Akkrum";
      geo:lat "53.05";
      geo:long "5.8333333". 
 
- <http://sws.geonames.org/2760123/> a geonames:Feature;
+ <http://sws.geonames.org/2760123/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aalten";
      geo:lat "51.925";
      geo:long "6.580556". 
 
- <http://sws.geonames.org/2760134/> a geonames:Feature;
+ <http://sws.geonames.org/2760134/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aalsmeer";
      geo:lat "52.259167";
      geo:long "4.759722". 
 
- <http://sws.geonames.org/2760144/> a geonames:Feature;
+ <http://sws.geonames.org/2760144/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aalburg";
      geo:lat "51.7548245252395";
      geo:long "5.13155937194824". 
 
- <http://sws.geonames.org/6251994/> a geonames:Feature;
+ <http://sws.geonames.org/6251994/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Klundert";
      geo:lat "51.6629730375043";
      geo:long "4.53460693359375". 
 
- <http://sws.geonames.org/6697854/> a geonames:Feature;
+ <http://sws.geonames.org/6697854/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "De Knipe";
      geo:lat "52.9682853587782";
      geo:long "5.97115516662598". 
 
- <http://sws.geonames.org/6698718/> a geonames:Feature;
+ <http://sws.geonames.org/6698718/> a dbpedia:Settlement,
+         geonames:Feature;
      geonames:name "Aarle-Rixtel";
      geo:lat "51.5097574390845";
      geo:long "5.63838958740234". 
