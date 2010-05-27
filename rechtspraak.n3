@@ -1,0 +1,513 @@
+# Saved by TopBraid on Thu May 27 09:41:32 CEST 2010
+# baseURI: http://www.rechtspraak.nl/rdf
+# imports: http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://dbpedia.org/ontology/
+# imports: http://www.w3.org/2003/01/geo/wgs84_pos
+# imports: http://www.metalex.eu/schema
+# imports: http://xmlns.com/foaf/0.1/20050603.rdf
+
+@prefix :        <http://www.rechtspraak.nl/rdf#> .
+@prefix dbpedia:  <http://dbpedia.org/ontology/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix metalex:  <http://www.metalex.eu/schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbcgeo:  <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+metalex:src
+      rdfs:label "Bronverwijzing" .
+
+<http://www.rechtspraak.nl/rdf>
+      rdf:type owl:Ontology ;
+      dc:description "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
+      owl:imports <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl> , <http://www.w3.org/2003/01/geo/wgs84_pos> , dc: , <http://xmlns.com/foaf/0.1/20050603.rdf> , dbpedia: , <http://www.metalex.eu/schema> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Alkmaar
+      rdf:type :Zittingsplaats ;
+      tbcgeo:zoom "16"^^xsd:int ;
+      owl:sameAs <http://dbpedia.org/resource/Alkmaar> ;
+      geo:lat "52.640081742212885" ;
+      geo:long "4.744656085968018" .
+
+:Almelo
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Almelo> .
+
+:Ambtenarenrecht
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Ambtenarenrecht"@nl .
+
+:Amsterdam
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Amsterdam> .
+
+:Arnhem
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Arnhem> .
+
+:Assen
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Assen> .
+
+:Belasting
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Belasting"@nl .
+
+:Bestuursrecht_overig
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Bestuursrecht overig"@nl .
+
+:Bijstandszaken
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Bijstandszaken"@nl .
+
+:Bouwen
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Bouwen"@nl .
+
+:Breda
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Breda> .
+
+:Cassatie
+      rdf:type :Procedure ;
+      rdfs:label "Cassatie"@nl .
+
+:Centrale_Raad_van_Beroep
+      rdf:type :Instantie ;
+      rdfs:label "Centrale Raad van Beroep"@nl ;
+      dbpedia:locationCity
+              :Utrecht .
+
+:Civiel_overig
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Civiel overig"@nl .
+
+:College_van_Beroep_voor_het_bedrijfsleven
+      rdf:type :Instantie ;
+      rdfs:label "College van Beroep voor het bedrijfsleven"@nl ;
+      dbpedia:locationCity
+              :Den_Haag .
+
+:Den_Bosch
+      rdf:type :Zittingsplaats ;
+      rdfs:label "'s-Hertogenbosch"@nl ;
+      owl:sameAs <http://dbpedia.org/resource/Den_Bosch> .
+
+:Den_Haag
+      rdf:type :Zittingsplaats ;
+      rdfs:label "'s-Gravenhage"@nl ;
+      owl:sameAs <http://dbpedia.org/resource/Den_Haag> .
+
+:Dordrecht
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Dordrecht> .
+
+:Douanekamer
+      rdf:type :Sector ;
+      rdfs:label "Douanekamer"@nl .
+
+:Eerste_aanleg_-_enkelvoudig
+      rdf:type :Procedure ;
+      rdfs:label "Eerste aanleg - enkelvoudig"@nl .
+
+:Eerste_aanleg_-_meervoudig
+      rdf:type :Procedure ;
+      rdfs:label "Eerste aanleg - meervoudig"@nl .
+
+:Faillissement
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Faillisement"@nl .
+
+:Gerechtshof_Amsterdam
+      rdf:type :Instantie ;
+      rdfs:label "Gerechtshof Amsterdam"@nl ;
+      dbpedia:locationCity
+              :Amsterdam .
+
+:Gerechtshof_Arnhem
+      rdf:type :Instantie ;
+      rdfs:label "Gerechtshof Arnhem"@nl ;
+      dbpedia:locationCity
+              :Arnhem .
+
+:Gerechtshof_Den_Bosch
+      rdf:type :Instantie ;
+      rdfs:label "Gerechtshof 's-Hertogenbosch"@nl ;
+      dbpedia:locationCity
+              :Den_Bosch .
+
+:Gerechtshof_Den_Haag
+      rdf:type :Instantie ;
+      rdfs:label "Gerechtshof 's-Gravenhage"@nl ;
+      dbpedia:locationCity
+              :Den_Haag .
+
+:Gerechtshof_Leeuwarden
+      rdf:type :Instantie ;
+      rdfs:label "Gerechtshof Leeuwarden"@nl ;
+      dbpedia:locationCity
+              :Leeuwarden .
+
+:Groningen
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Groningen> .
+
+:Haarlem
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Haarlem> .
+
+:Handelszaak
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Handelszaak"@nl .
+
+:Herziening
+      rdf:type :Procedure ;
+      rdfs:label "Herziening"@nl .
+
+:Hoge_Raad
+      rdf:type :Instantie ;
+      rdfs:label "Hoge Raad"@nl ;
+      dbpedia:locationCity
+              :Den_Haag ;
+      owl:sameAs <http://dbpedia.org/resource/Hoge_Raad_der_Nederlanden> .
+
+:Hoger_beroep
+      rdf:type :Procedure ;
+      rdfs:label "Hoger beroep"@nl .
+
+:Hoger_beroep_kort_geding
+      rdf:type :Procedure ;
+      rdfs:label "Hoger beroep kort geding"@nl .
+
+:Instantie
+      rdf:type owl:Class ;
+      rdfs:label "Instantie" ;
+      rdfs:subClassOf dbpedia:Organisation .
+
+:Kort_geding
+      rdf:type :Procedure ;
+      rdfs:label "Kort geding"@nl .
+
+:Leeuwarden
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Leeuwarden> .
+
+:Maastricht
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Maastricht> .
+
+:Middelburg
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Middelburg> .
+
+:Notariskamer
+      rdf:type :Sector ;
+      rdfs:label "Notariskamer"@nl .
+
+:Ondernemingskamer
+      rdf:type :Sector ;
+      rdfs:label "Ondernemingskamer"@nl .
+
+:Personen-en_familierecht
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Personen- en familierecht"@nl .
+
+:President
+      rdf:type :Sector ;
+      rdfs:label "President"@nl .
+
+:Procedure
+      rdf:type owl:Class ;
+      rdfs:label "Procedure" ;
+      rdfs:subClassOf owl:Thing .
+
+:Raad_van_State
+      rdf:type :Instantie ;
+      rdfs:label "Raad van State"@nl ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Council_of_State> ;
+      dbpedia:locationCity
+              :Den_Haag .
+
+:Raadkamer
+      rdf:type :Procedure ;
+      rdfs:label "Raadkamer"@nl .
+
+:Rechtbank_Alkmaar
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Alkmaar"@nl ;
+      dbpedia:locationCity
+              :Alkmaar .
+
+:Rechtbank_Almelo
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Almelo"@nl ;
+      dbpedia:locationCity
+              :Almelo .
+
+:Rechtbank_Amsterdam
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Amsterdam"@nl ;
+      dbpedia:locationCity
+              :Amsterdam .
+
+:Rechtbank_Arnhem
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Arnhem"@nl ;
+      dbpedia:locationCity
+              :Arnhem .
+
+:Rechtbank_Assen
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Assen"@nl ;
+      dbpedia:locationCity
+              :Assen .
+
+:Rechtbank_Breda
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Breda"@nl ;
+      dbpedia:locationCity
+              :Breda .
+
+:Rechtbank_Den_Bosch
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank 's-Hertogenbosch"@nl ;
+      dbpedia:locationCity
+              :Den_Bosch .
+
+:Rechtbank_Den_Haag
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank 's-Gravenhage"@nl ;
+      dbpedia:locationCity
+              :Den_Haag .
+
+:Rechtbank_Dordrecht
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Dordrecht"@nl ;
+      dbpedia:locationCity
+              :Dordrecht .
+
+:Rechtbank_Groningen
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Groningen"@nl ;
+      dbpedia:locationCity
+              :Groningen .
+
+:Rechtbank_Haarlem
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Haarlem"@nl ;
+      dbpedia:locationCity
+              :Haarlem .
+
+:Rechtbank_Leeuwarden
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Leeuwarden"@nl ;
+      dbpedia:locationCity
+              :Leeuwarden .
+
+:Rechtbank_Maastricht
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Maastricht"@nl ;
+      dbpedia:locationCity
+              :Maastricht .
+
+:Rechtbank_Middelburg
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Middelburg"@nl ;
+      dbpedia:locationCity
+              :Middelburg .
+
+:Rechtbank_Roermond
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Roermond"@nl ;
+      dbpedia:locationCity
+              :Roermond .
+
+:Rechtbank_Rotterdam
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Rotterdam"@nl ;
+      dbpedia:locationCity
+              :Rotterdam .
+
+:Rechtbank_Utrecht
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Utrecht"@nl ;
+      dbpedia:locationCity
+              :Utrecht .
+
+:Rechtbank_Zutphen
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Zutphen"@nl ;
+      dbpedia:locationCity
+              :Zutphen .
+
+:Rechtbank_Zwolle
+      rdf:type :Instantie ;
+      rdfs:label "Rechtbank Zwolle"@nl ;
+      dbpedia:locationCity
+              :Zwolle .
+
+:Rechtseenheidskamer
+      rdf:type :Sector ;
+      rdfs:label "Rechtseenheidskamer"@nl .
+
+:Rechtsgebied
+      rdf:type owl:Class ;
+      rdfs:label "Rechtsgebied"@nl ;
+      rdfs:subClassOf owl:Thing .
+
+:Roermond
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Roermond> .
+
+:Rotterdam
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Rotterdam> .
+
+:Sector
+      rdf:type owl:Class ;
+      rdfs:label "Sector"@nl ;
+      rdfs:subClassOf owl:Thing .
+
+:Sector_kanton
+      rdf:type :Sector ;
+      rdfs:label "Sector kanton"@nl .
+
+:Sociale_zekerheid
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Sociale zekerheid"@nl .
+
+:Status
+      rdf:type owl:Class ;
+      rdfs:label "Status"@nl ;
+      rdfs:subClassOf owl:Thing .
+
+:Straf
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Straf"@nl .
+
+:Uitspraak
+      rdf:type owl:Class ;
+      rdfs:label "Uitspraak" ;
+      rdfs:subClassOf dbpedia:Work .
+
+:Utrecht
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Utrecht> .
+
+:Verstek
+      rdf:type :Procedure ;
+      rdfs:label "Verstek"@nl .
+
+:Verzet
+      rdf:type :Procedure ;
+      rdfs:label "Verzet"@nl .
+
+:Voorlopige_voorziening
+      rdf:type :Procedure ;
+      rdfs:label "Voorlopige voorziening"@nl .
+
+:Voorlopige_voorziening_bodemzaak
+      rdf:type :Procedure ;
+      rdfs:label "Voorlopige voorziening bodemzaak"@nl .
+
+:Voorzieningenrechter
+      rdf:type :Sector ;
+      rdfs:label "Voorzieningenrechter"@nl .
+
+:Voorzitter
+      rdf:type :Sector ;
+      rdfs:label "Voorzitter"@nl .
+
+:Vreemdelingen
+      rdf:type :Rechtsgebied ;
+      rdfs:label "Vreemdelingen"@nl .
+
+:Zittingsplaats
+      rdf:type owl:Class ;
+      rdfs:label "Zittingsplaats" ;
+      rdfs:subClassOf dbpedia:Settlement .
+
+:Zutphen
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Zutphen> .
+
+:Zwolle
+      rdf:type :Zittingsplaats ;
+      owl:sameAs <http://dbpedia.org/resource/Zwolle> .
+
+:datum_gepubliceerd
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "Publicatiedatum" ;
+      rdfs:range xsd:date .
+
+:datum_uitspraak
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "Datum uitspraak" ;
+      rdfs:range xsd:date .
+
+:gepubliceerd
+      rdf:type :Status ;
+      rdfs:label "gepubliceerd"@nl .
+
+:indicatie
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "Indicatie" ;
+      rdfs:range xsd:string .
+
+:ingetrokken
+      rdf:type :Status ;
+      rdfs:label "ingetrokken"@nl .
+
+:instantie
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Instantie" ;
+      rdfs:range :Instantie .
+
+:kop  rdf:type owl:DatatypeProperty ;
+      rdfs:label "Kop" ;
+      rdfs:range xsd:string .
+
+:ljn  rdf:type owl:DatatypeProperty ;
+      rdfs:label "LJN" ;
+      rdfs:range xsd:string .
+
+:locatie
+      rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf dbpedia:location .
+
+:procedure_soort
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Procedure Soort" ;
+      rdfs:range :Procedure .
+
+:rechtsgebied_rechtspraak
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Rechtsgebied" ;
+      rdfs:range :Rechtsgebied .
+
+:sector_toon
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Sector" ;
+      rdfs:range :Sector .
+
+:status
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Status" ;
+      rdfs:range :Status .
+
+:zaaknummers
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "Zaaknummers" ;
+      rdfs:range xsd:string .
+
+:zittingsplaats
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "Zittingsplaats" ;
+      rdfs:range :Zittingsplaats ;
+      rdfs:subPropertyOf :locatie .
