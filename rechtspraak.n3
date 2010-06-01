@@ -158,6 +158,7 @@ metalex:src
 :Dordrecht
       rdf:type :Zittingsplaats ;
       owl:sameAs <http://dbpedia.org/resource/Dordrecht> ;
+      owl:sameAs <http://sws.geonames.org/2756669/>;
   geo:lat 51.81;
   geo:long 4.673661;
   geonames:name "Dordrecht" .
