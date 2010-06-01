@@ -7,7 +7,7 @@
 # imports: http://www.metalex.eu/schema
 # imports: http://xmlns.com/foaf/0.1/20050603.rdf
 
-@prefix :        <http://www.rechtspraak.nl/rdf#> .
+@prefix :        <http://linkeddata.few.vu.nl/rechtspraak/resource/> .
 @prefix dbpedia:  <http://dbpedia.org/ontology/> .
 @prefix dbpres:	<http://dbpedia.org/resource/> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
