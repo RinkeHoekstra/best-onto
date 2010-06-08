@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue May 18 14:19:12 CEST 2010
+# Saved by TopBraid on Tue Jun 08 10:35:11 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -718,6 +718,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "erf"@nl .
 
+:ernstig_lichamelijk_letsel
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :lichamelijk_letsel ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "ernstig letsel"@nl .
+
 :evenement
       rdf:type best:Concept , skos:Concept ;
       skos:broader :sportsituatie ;
@@ -759,6 +765,12 @@
       skos:broader :bedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "financieel bedrijf"@nl .
+
+:financiele_schade
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :schade ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "financiele schade"@nl .
 
 :fitnesscentrum
       rdf:type best:Concept , skos:Concept ;
@@ -856,6 +868,8 @@
       skos:prefLabel "geven"@nl .
 
 :gevolg
+      rdf:type best:Concept , skos:Concept ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "gevolg"@nl .
 
 :golf
@@ -1812,6 +1826,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "rennen"@nl .
 
+:reputatieschade
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :schade ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "reputatieschade"@nl .
+
 :restaurant
       rdf:type best:Concept , skos:Concept ;
       skos:broader :horecabedrijf ;
@@ -1850,9 +1870,16 @@
 
 :schade
       rdf:type best:Concept , skos:Concept ;
+      skos:broader :gevolg ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schade"@nl ;
       skos:topConceptOf :laymen-scheme .
+
+:schade_aan_eigendom
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :schade ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "schade aan eigendom"@nl .
 
 :schenden
       rdf:type best:Concept , skos:Concept ;
@@ -2302,7 +2329,7 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :actie ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "verkeershandeling"@nl .
+      skos:prefLabel "handeling in het verkeer"@nl .
 
 :verkeersobject
       rdf:type best:Concept , skos:Concept ;
