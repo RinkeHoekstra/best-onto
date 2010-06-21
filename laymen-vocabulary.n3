@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Jun 08 10:35:11 CEST 2010
+# Saved by TopBraid on Mon Jun 21 15:35:48 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -150,7 +150,7 @@
 
 :appartement
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :woning ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "appartement"@nl .
 
@@ -216,7 +216,7 @@
 
 :balkon
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :bij_huis , :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "balkon"@nl .
 
@@ -300,7 +300,7 @@
 
 :berging
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :bij_huis , :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "berging"@nl .
 
@@ -402,7 +402,7 @@
 :bijten
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "beet"@nl , "bijt" ;
-      skos:broader :gevaarlijk_handelen ;
+      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bijten"@nl .
 
@@ -420,7 +420,7 @@
 
 :boerderij
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :op_het_werk , :bij_huis ;
+      skos:broader :woning , :op_het_werk , :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "boerderij"@nl .
 
@@ -691,8 +691,9 @@
       skos:prefLabel "eindeloos"@nl .
 
 :eiser
-      rdf:type best:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :algemeen_persoon ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "eiser"@nl .
 
 :electricien
@@ -786,7 +787,7 @@
 
 :flat
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :woning , :bij_huis ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "flat"@nl .
 
@@ -804,7 +805,7 @@
 
 :garage
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :op_het_werk , :bij_huis ;
+      skos:broader :op_het_werk , :bij_huis , :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "garage"@nl .
 
@@ -838,8 +839,9 @@
       skos:prefLabel "gebruiken"@nl .
 
 :gedaagde
-      rdf:type best:Concept ;
+      rdf:type best:Concept , skos:Concept ;
       skos:broader :algemeen_persoon ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "gedaagde"@nl .
 
 :geen_maatregelen_treffen
@@ -984,7 +986,7 @@
 
 :huis
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :woning ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huis"@nl .
 
@@ -1005,6 +1007,11 @@
       skos:broader :omwonende ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huurder"@nl .
+
+:huurovereenkomst
+      rdf:type best:Concept ;
+      skos:broader :overeenkomst ;
+      skos:prefLabel "huurovereenkomst"@nl .
 
 :iemand
       rdf:type best:Concept , skos:Concept ;
@@ -1191,6 +1198,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "komen"@nl .
 
+:koopovereenkomst
+      rdf:type best:Concept ;
+      skos:broader :overeenkomst ;
+      skos:prefLabel "koopovereenkomst"@nl .
+
 :kopieren
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aantasten ;
@@ -1211,7 +1223,7 @@
 
 :krabben
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijk_handelen ;
+      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "krabben"@nl .
 
@@ -1548,6 +1560,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ontnemen"@nl .
 
+:ontruimen
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :actie ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "ontruimen"@nl .
+
 :ontvlambare_stof
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "brandbare stof"@nl ;
@@ -1639,6 +1657,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "opvolgen"@nl .
 
+:opzettelijk
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "de handeling was opzettelijk"@nl .
+
 :organisator
       rdf:type best:Concept , skos:Concept ;
       skos:broader :beroepsbeoefenaar ;
@@ -1676,10 +1700,17 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "overlaten"@nl .
 
-:overtreden
-      rdf:type best:Concept ;
-      skos:broader :actie ;
-      skos:prefLabel "overtreden"@nl .
+:overmacht
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verzachtende_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "overmacht"@nl .
+
+:overtreding
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "overtreding"@nl .
 
 :paard
       rdf:type best:Concept , skos:Concept ;
@@ -1921,7 +1952,7 @@
 
 :schoppen
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijk_handelen ;
+      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schoppen"@nl .
 
@@ -1945,7 +1976,7 @@
 
 :schuur
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :bij_huis , :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schuur"@nl .
 
@@ -2099,6 +2130,11 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stof"@nl .
 
+:stompen
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
+      skos:prefLabel "stompen"@nl .
+
 :stoten
       rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarlijk_handelen ;
@@ -2175,6 +2211,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "toernooi"@nl .
 
+:toestemming_vooraf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verzachtende_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "er was vooraf toestemming gegeven"@nl .
+
 :tractor
       rdf:type best:Concept , skos:Concept ;
       skos:broader :voertuig ;
@@ -2196,7 +2238,7 @@
 :trappen
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "getrapt"@nl ;
-      skos:broader :gevaarlijk_handelen ;
+      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "trappen"@nl .
 
@@ -2257,6 +2299,12 @@
       skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "uitvoeren"@nl .
+
+:uitvoering_van_bevel
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verzachtende_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "handeling was uitvoering van een bevel"@nl .
 
 :uitzendbureau
       rdf:type best:Concept , skos:Concept ;
@@ -2338,8 +2386,9 @@
       skos:prefLabel "verkeersobject"@nl .
 
 :verkeersovertreding
-      rdf:type best:Concept ;
-      skos:broader :overtreden , :verkeershandeling ;
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :overtreding , :verkeershandeling ;
+      skos:inScheme :laymen-scheme ;
       skos:prefLabel "overtreden verkeersregels"@nl .
 
 :verkeersregel
@@ -2422,6 +2471,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "verwachten"@nl .
 
+:verzachtende_omstandigheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "verzachtende omstandigheid"@nl .
+
 :verzekeraar
       rdf:type best:Concept , skos:Concept ;
       skos:broader :financieel_bedrijf ;
@@ -2470,6 +2525,12 @@
       skos:broader :dier ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vogel"@nl .
+
+:voldoen_aan_regelgeving
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verzachtende_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "handeling moest volgens regelgeving"@nl .
 
 :voogd
       rdf:type best:Concept , skos:Concept ;
@@ -2607,7 +2668,7 @@
 
 :woning
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :bij_huis ;
+      skos:broader :bij_huis , :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "woning"@nl .
 
@@ -2640,6 +2701,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zelfstandige"@nl .
 
+:zelfverdediging
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :verzachtende_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "handeling uit zelfverdediging"@nl .
+
 :ziekenhuis
       rdf:type best:Concept , skos:Concept ;
       skos:broader :op_het_werk ;
@@ -2657,6 +2724,12 @@
       skos:broader :duur ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zo lang"@nl .
+
+:zonder_vergunning
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :overtreding ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "handelen zonder (of in strijd met) vergunning"@nl .
 
 :zorgmedewerker
       rdf:type best:Concept , skos:Concept ;

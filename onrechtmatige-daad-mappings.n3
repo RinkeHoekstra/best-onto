@@ -1,0 +1,541 @@
+# Saved by TopBraid on Mon Jun 21 15:41:58 CEST 2010
+# baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
+# imports: http://www.best-project.nl/owl/bestmap.owl
+# imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
+# imports: http://www.best-project.nl/owl/merged-tort-vocabulary.owl
+
+@prefix :        <http://linkeddata.few.vu.nl/rechtspraak/mapping/> .
+@prefix b:       <http://www.best-project.nl/owl/best.owl#> .
+@prefix bm:      <http://www.best-project.nl/owl/bestmap.owl#> .
+@prefix lv:      <http://www.best-project.nl/owl/laymen-vocabulary.owl#> .
+@prefix m:       <http://www.best-project.nl/owl/mapping.owl#> .
+@prefix mtv:     <http://www.best-project.nl/owl/merged-tort-vocabulary.owl#> .
+@prefix oldtv:   <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix protons:  <http://proton.semanticweb.org/2005/04/protons#> .
+@prefix protont:  <http://proton.semanticweb.org/2005/04/protont#> .
+@prefix query:   <http://www.best-project.nl/owl/query#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix to:      <http://www.best-project.nl/owl/tort-ontology.owl#> .
+@prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary-new.owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+:     rdf:type owl:Ontology ;
+      owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/bestmap.owl> , <http://www.best-project.nl/owl/merged-tort-vocabulary.owl> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Inbreuk
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_op_een_recht ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:action ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:aantasten ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:aantasten ;
+                            owl:onProperty b:action
+                          ])
+              ] .
+
+:Map-bevoegd-bevel
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Situatie ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:bevoegd_gegeven_ambtelijk_bevel ;
+                owl:onProperty b:rechtvaardigingsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:situation ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:uitvoering_van_bevel ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:uitvoering_van_bevel ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
+
+:Map-inbreuk-auteursrecht
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:inbreuk_auteursrecht ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:toerekening_op_basis_van_schuld ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:kopieren ;
+                                        owl:onProperty b:action
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:kopieren ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:product ;
+                                        owl:onProperty b:object
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:product ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ])
+              ] ;
+      skos:changeNote "Mapping created on 20100604-151227"@en ;
+      skos:definition """This mapping specifies that any case that has a description that matches all of the following layman terms: 
+
+      best:action has value http://www.best-project.nl/owl/laymen-vocabulary.owl#kopieren (or narrower)
+      best:object has value http://www.best-project.nl/owl/laymen-vocabulary.owl#product (or narrower)
+
+      can be qualified as a case with the following legal description:
+
+      best:onrechtmatigheidsgrond has value http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_auteursrecht
+      best:grond_toerekening_aan_dader has value http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_op_basis_van_schuld
+      """@en ;
+      skos:prefLabel "Inbreuk op een auteursrecht"@nl ;
+      skos:scopeNote "Bij het kopieren van een product kan er sprake zijn van inbreuk op auteursrecht. Toerekening van de schade-veroorzakende daad is dan op basis van schuld: de dader is direct verantwoordelijk voor de handeling die tot de schade schade leidde."@nl .
+
+:Map-inbreuk-huisrecht
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_huisrecht ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:action ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:beslagleggen ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:beslagleggen ;
+                                                    owl:onProperty b:action
+                                                  ])
+                                      ] [ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:action ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:ontruimen ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:ontruimen ;
+                                                    owl:onProperty b:action
+                                                  ])
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:woning ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:woning ;
+                                        owl:onProperty b:object
+                                      ])
+                          ])
+              ] .
+
+:Map-inbreuk-leven
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_lichamelijke_integriteit ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:action ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:inbreuk_op_leven ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:inbreuk_op_leven ;
+                            owl:onProperty b:action
+                          ])
+              ] ;
+      skos:note "Een inbreuk op het leven (aantasting lichamelijke integriteit) is een onrechtmatige daad wegens schending van een persoonlijkheidsrecht"@nl ;
+      skos:prefLabel "Inbreuk op het leven, of lichamelijke integriteit"@nl .
+
+:Map-inbreuk-octrooirecht
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:inbreuk_octrooirecht ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:toerekening_op_basis_van_schuld ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:namaken ;
+                                        owl:onProperty b:action
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:namaken ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:product ;
+                                        owl:onProperty b:object
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:product ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:bedrijf ;
+                                        owl:onProperty b:recipient
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:recipient ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:bedrijf ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:bedrijf ;
+                                        owl:onProperty b:actor
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:bedrijf ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ])
+                          ])
+              ] ;
+      skos:changeNote "Mapping created on 20100604-150244"@en ;
+      skos:definition """This mapping specifies that any case that has a description that matches all of the following layman terms: 
+
+      best:action has value http://www.best-project.nl/owl/laymen-vocabulary.owl#namaken (or narrower)
+      best:object has value http://www.best-project.nl/owl/laymen-vocabulary.owl#product (or narrower)
+      best:recipient has value http://www.best-project.nl/owl/laymen-vocabulary.owl#bedrijf (or narrower)
+      best:actor has value http://www.best-project.nl/owl/laymen-vocabulary.owl#bedrijf (or narrower)
+
+      can be qualified as a case with the following legal description:
+
+      best:onrechtmatigheidsgrond has value http://www.best-project.nl/owl/tort-vocabulary-new.owl#inbreuk_octrooirecht
+      best:grond_toerekening_aan_dader has value http://www.best-project.nl/owl/tort-vocabulary-new.owl#toerekening_op_basis_van_schuld
+      """@en ;
+      skos:prefLabel "Inbreuk op een octrooirecht"@nl ;
+      skos:scopeNote "Bij het namaken van een product van een een bedrijf door een ander bedrijf kan er sprake zijn van inbreuk op octrooi- of merkenrecht. Toerekening van de schade-veroorzakende daad is dan op basis van schuld: de dader is direct verantwoordelijk voor de handeling die tot de schade schade leidde."@nl .
+
+:Map-inbreuk-privesfeer
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_privacy ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:action ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:inbreuk_privesfeer ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:inbreuk_privesfeer ;
+                            owl:onProperty b:action
+                          ])
+              ] ;
+      skos:note "Een inbreuk op de privesfeer (een inbreuk op de privacy) is een onrechtmatige daad wegens schending van een persoonlijkheidsrecht"^^xsd:string ;
+      skos:prefLabel "Inbreuk op de privesfeer"@nl .
+
+:Map-niet-nakomen-overeenkomst
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_overeenkomst ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:niet_nakomen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:niet_nakomen ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:overeenkomst ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:overeenkomst ;
+                                        owl:onProperty b:object
+                                      ])
+                          ])
+              ] .
+
+:Map-noodweer
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Situatie ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:noodweer ;
+                owl:onProperty b:rechtvaardigingsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:inbreuk_op_leven ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:inbreuk_op_leven ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:zelfverdediging ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:zelfverdediging ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] ;
+      skos:note "Indien bij het berokkenen van (lichamelijk) schade sprake is van zelfverdediging, kan dit gelden als een rechtvaardigingsgrond voor de schade veroorzakende handeling. "^^xsd:string ;
+      skos:prefLabel "Noodweer als rechtvaardigingsgrond"^^xsd:string .
+
+:Map-opzettelijke-inbreuk
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:opzettelijke_inbreuk ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Inbreuk [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:opzettelijk ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
+
+:Map-overmacht
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Situatie ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:overmacht_als_noodtoestand ;
+                owl:onProperty b:rechtvaardigingsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:situation ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:overmacht ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:overmacht ;
+                            owl:onProperty b:situation
+                          ])
+              ] ;
+      skos:note "Als sprake is van overmacht kan dit als rechtvaardigheidsgrond gelden voor de daad. Hierdoor wordt hij in het algemeen niet als onrechtmatig aangemerkt"^^xsd:string ;
+      skos:prefLabel "Overmacht als rechtvaardigingsgrond"^^xsd:string .
+
+:Map-overtreding
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Overtreding ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:doen_of_nalaten_in_strijd_met_een_wettelijke_plicht ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:omgekeerde_bewijslast_op_grond_van_wetsovertreding ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:vervallen_vaststellen_rekenschap_belangen_van_benadeelde ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:situation ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:overtreding ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:overtreding ;
+                            owl:onProperty b:situation
+                          ])
+              ] ;
+      skos:note "Bij het handelen in sterijd met een plicht is automatisch sprake van onrechtmatigheid. Voorbeelden: handelen zonder vergunning, het begaan van een verkeersovertreding, etc."@nl ;
+      skos:prefLabel "Overtreding van een wettelijk voorschrift"^^xsd:string .
+
+:Map-overtreding-beide-partijen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Overtreding ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:wetsovertreding_door_eiser ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue lv:overtreding ;
+                            owl:onProperty b:situation
+                          ] [ rdf:type owl:Restriction ;
+                            owl:minQualifiedCardinality
+                                    "2"^^xsd:nonNegativeInteger ;
+                            owl:onClass b:Concept ;
+                            owl:onProperty b:actor
+                          ])
+              ] ;
+      skos:note "Indien beide partijen een overtreding hebben begaan wordt de overtreding door de gedaagde minder zwaar gewogen"@nl ;
+      skos:prefLabel "Overtreding door beide partijen"^^xsd:string .
+
+:Map-toestemming
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Situatie ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:toestemming_van_gelaedeerde ;
+                owl:onProperty b:rechtvaardigingsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:situation ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:toestemming_vooraf ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:toestemming_vooraf ;
+                            owl:onProperty b:situation
+                          ])
+              ] ;
+      skos:note "Toestemming vooraf kan gelden als rechtvaardigingsgrond voor de daad. Hierdoor kan het zijn dat de handeling niet als onrechtmatig wordt aangemerkt"^^xsd:string ;
+      skos:prefLabel "Handeling vond plaats met toestemming eiser"^^xsd:string .
+
+:Map-uitvoering-voorschrift
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Situatie ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:uitvoering_van_een_wettelijk_voorschrift ;
+                owl:onProperty b:rechtvaardigingsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:situation ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:voldoen_aan_regelgeving ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:voldoen_aan_regelgeving ;
+                            owl:onProperty b:situation
+                          ])
+              ] ;
+      skos:note "Indien een handeling verricht wordt om te kunnen voldoen aan regelgeving, dan geldt dit als rechtvaardigingsgrond voor de handeling. De handeling wordt dan veelal niet aangemerkt als onrechtmatig."^^xsd:string ;
+      skos:prefLabel "Uitvoering voorschrift als rechtvaardigingsgrond"^^xsd:string .
+
+:Overtreding
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .
+
+:Situatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .

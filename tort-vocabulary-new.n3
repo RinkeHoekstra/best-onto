@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jan 21 15:28:31 CET 2010
+# Saved by TopBraid on Mon Jun 21 14:38:35 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -9,6 +9,7 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix to:      <http://www.best-project.nl/owl/tort-ontology.owl#> .
 @prefix tv:      <http://www.best-project.nl/owl/tort-vocabulary.owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
@@ -430,9 +431,9 @@
 
 :inbreuk_huisrecht
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "huisvredebreuk"@nl ;
       skos:broader :inbreuk_op_een_persoonlijkheidsrecht ;
-      skos:inScheme :tort-scheme .
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "inbreuk huisrecht"@nl .
 
 :inbreuk_lichamelijke_integriteit
       rdf:type best:Concept , skos:Concept ;
@@ -463,6 +464,18 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :grond_voor_onrechtmatigheid ;
       skos:inScheme :tort-scheme .
+
+:inbreuk_op_een_relatief_vermogensrecht
+      rdf:type best:Concept ;
+      skos:altLabel "inbreuk op een persoonlijk vermogensrecht"@nl , "persoonlijk vermogensrecht"@nl , "relatief vermogensrecht"@nl ;
+      skos:broader :inbreuk_op_een_recht ;
+      skos:prefLabel "inbreuk op een relatief vermogensrecht"@nl .
+
+:inbreuk_overeenkomst
+      rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "schenden overeenkomst"@nl ;
+      skos:broader :inbreuk_op_een_relatief_vermogensrecht ;
+      skos:prefLabel "inbreuk overeenkomst"@nl .
 
 :inbreuk_privacy
       rdf:type best:Concept , skos:Concept ;
@@ -911,6 +924,18 @@
 
 :werkgever
       rdf:type best:Concept , skos:Concept ;
+      to:fingerprint
+              [ to:value "werkgever"^^xsd:string ;
+                to:weight 100
+              ] ;
+      to:fingerprint
+              [ to:value "organisatie"^^xsd:string ;
+                to:weight 60
+              ] ;
+      to:fingerprint
+              [ to:value "bedrijf"^^xsd:string ;
+                to:weight 80
+              ] ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_van_werkgever .

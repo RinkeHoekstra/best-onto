@@ -1,5 +1,6 @@
-# Saved by TopBraid on Thu May 27 09:41:32 CEST 2010
-# baseURI: http://www.rechtspraak.nl/rdf
+# Saved by TopBraid on Sat Jun 12 09:28:58 CEST 2010
+# baseURI: http://linkeddata.few.vu.nl/rechtspraak/resource/
+# imports: http://www.geonames.org/ontology
 # imports: http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl
 # imports: http://purl.org/dc/elements/1.1/
 # imports: http://dbpedia.org/ontology/
@@ -9,83 +10,172 @@
 
 @prefix :        <http://linkeddata.few.vu.nl/rechtspraak/resource/> .
 @prefix dbpedia:  <http://dbpedia.org/ontology/> .
-@prefix dbpres:	<http://dbpedia.org/resource/> .
+@prefix dbpres:  <http://dbpedia.org/resource/> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geonames:  <http://www.geonames.org/ontology#> .
 @prefix metalex:  <http://www.metalex.eu/schema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix tbcgeo:  <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix geonames:	<http://www.geonames.org/ontology#> .
 
+<http://dbpedia.org/resource/%27s-Hertogenbosch>
+      rdf:type geonames:Feature ;
+      geonames:name "s-Hertogenbosch" ;
+      owl:sameAs <http://sws.geonames.org/2747351/> ;
+      geo:lat "51.699167" ;
+      geo:long "5.304167" .
 
-metalex:src
-      rdfs:label "Bronverwijzing" .
+dbpres:Alkmaar
+      rdf:type geonames:Feature ;
+      geonames:name "Alkmaar" ;
+      owl:sameAs <http://sws.geonames.org/2759899/> ;
+      geo:lat "52.631667" ;
+      geo:long "4.748611" .
 
-<http://www.rechtspraak.nl/rdf>
-      rdf:type owl:Ontology ;
+dbpres:Almelo
+      rdf:type geonames:Feature ;
+      geonames:name "Almelo" ;
+      owl:sameAs <http://sws.geonames.org/2759887/> ;
+      geo:lat "52.356667" ;
+      geo:long "6.6625" .
+
+dbpres:Amsterdam
+      rdf:type geonames:Feature ;
+      geonames:name "Amsterdam" ;
+      owl:sameAs <http://sws.geonames.org/2759794/> ;
+      geo:lat "52.3730839945403" ;
+      geo:long "4.89990234375" .
+
+dbpres:Arnhem
+      rdf:type geonames:Feature ;
+      geonames:name "Arnhem" ;
+      owl:sameAs <http://sws.geonames.org/2759661/> ;
+      geo:lat "51.98" ;
+      geo:long "5.911111" .
+
+dbpres:Assen
+      rdf:type geonames:Feature ;
+      geonames:name "Assen" ;
+      owl:sameAs <http://sws.geonames.org/2759633/> ;
+      geo:lat "52.996667" ;
+      geo:long "6.5625" .
+
+dbpres:Breda
+      rdf:type geonames:Feature ;
+      geonames:name "Breda" ;
+      owl:sameAs <http://sws.geonames.org/2758401/> ;
+      geo:lat "51.5865631469705" ;
+      geo:long "4.77596282958984" .
+
+<http://dbpedia.org/resource/Groningen_%28city%29>
+      rdf:type geonames:Feature ;
+      geonames:name "Groningen" ;
+      owl:sameAs <http://sws.geonames.org/2755251/> ;
+      geo:lat "53.219167" ;
+      geo:long "6.566667" .
+
+dbpres:Haarlem
+      rdf:type geonames:Feature ;
+      geonames:name "Haarlem" ;
+      owl:sameAs <http://sws.geonames.org/2755003/> ;
+      geo:lat "52.3808386793563" ;
+      geo:long "4.63683128356934" .
+
+dbpres:Leeuwarden
+      rdf:type geonames:Feature ;
+      geonames:name "Leeuwarden" ;
+      owl:sameAs <http://sws.geonames.org/2751792/> ;
+      geo:lat "53.2" ;
+      geo:long "5.7833333" .
+
+dbpres:Maastricht
+      rdf:type geonames:Feature ;
+      geonames:name "Maastricht" ;
+      owl:sameAs <http://sws.geonames.org/2751283/> ;
+      geo:lat "50.848333" ;
+      geo:long "5.688889" .
+
+dbpres:Middelburg
+      rdf:type geonames:Feature ;
+      geonames:name "Middelburg" ;
+      owl:sameAs <http://sws.geonames.org/2750896/> ;
+      geo:lat "51.5" ;
+      geo:long "3.613889" .
+
+dbpres:Roermond
+      rdf:type geonames:Feature ;
+      geonames:name "Roermond" ;
+      owl:sameAs <http://sws.geonames.org/2748000/> ;
+      geo:lat "51.194167" ;
+      geo:long "5.9875" .
+
+dbpres:Rotterdam
+      rdf:type geonames:Feature ;
+      geonames:name "Rotterdam" ;
+      owl:sameAs <http://sws.geonames.org/2747891/> ;
+      geo:lat "51.9225" ;
+      geo:long "4.479167" .
+
+dbpres:The_Hague
+      rdf:type geonames:Feature ;
+      geonames:name "Den Haag" ;
+      owl:sameAs <http://sws.geonames.org/2747373/> ;
+      geo:lat "52.076667" ;
+      geo:long "4.298611" .
+
+<http://dbpedia.org/resource/Utrecht_%28city%29>
+      rdf:type geonames:Feature ;
+      geonames:name "Utrecht" ;
+      owl:sameAs <http://sws.geonames.org/2745912/> ;
+      geo:lat "52.090833" ;
+      geo:long "5.122222" .
+
+dbpres:Zutphen
+      rdf:type geonames:Feature ;
+      geonames:name "Zutphen" ;
+      owl:sameAs <http://sws.geonames.org/2743608/> ;
+      geo:lat "52.138333" ;
+      geo:long "6.201389" .
+
+dbpres:Zwolle
+      rdf:type geonames:Feature ;
+      geonames:name "Zwolle" ;
+      owl:sameAs <http://sws.geonames.org/2743477/> ;
+      geo:lat "52.5125" ;
+      geo:long "6.094444" .
+
+:     rdf:type owl:Ontology ;
       dc:description "Copyright 2009, Rinke Hoekstra, Vrije Universiteit Amsterdam" ;
-      owl:imports <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl> , <http://www.w3.org/2003/01/geo/wgs84_pos> , dc: , <http://xmlns.com/foaf/0.1/20050603.rdf> , dbpedia: , <http://www.metalex.eu/schema> ;
+      owl:imports <http://www.topbraidcomposer.org/owl/2006/07/tbcgeo.owl> , <http://www.w3.org/2003/01/geo/wgs84_pos> , dc: , <http://www.geonames.org/ontology> , dbpedia: , <http://xmlns.com/foaf/0.1/20050603.rdf> , <http://www.metalex.eu/schema> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
-
-      dbpres:Alkmaar	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2759899/> ;
-      	geo:lat	"52.631667" ;
-      	geo:long	"4.748611" ;
-      	geonames:name	"Alkmaar" .
 
 :Alkmaar
       rdf:type :Zittingsplaats ;
       tbcgeo:zoom "16"^^xsd:int ;
-  owl:sameAs <http://dbpedia.org/resource/Alkmaar> .
-
-  dbpres:Almelo	rdf:type	geonames:Feature ;
-  	owl:sameAs	<http://sws.geonames.org/2759887/> ;
-  	geo:lat	"52.356667" ;
-  	geo:long	"6.6625" ;
-  	geonames:name	"Almelo" .
+      owl:sameAs dbpres:Alkmaar .
 
 :Almelo
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Almelo> .
+      owl:sameAs dbpres:Almelo .
 
 :Ambtenarenrecht
       rdf:type :Rechtsgebied ;
       rdfs:label "Ambtenarenrecht"@nl .
 
-      dbpres:Amsterdam	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2759794/>  ;
-      	geo:lat	"52.3730839945403" ;
-      	geo:long	
-      		"4.89990234375" ;
-      	geonames:name	
-      		"Amsterdam" .
-
 :Amsterdam
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Amsterdam> .
-
-      dbpres:Arnhem	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2759661/> ;
-      	geo:lat	"51.98" ;
-      	geo:long	"5.911111" ;
-      	geonames:name	"Arnhem" .
+      owl:sameAs dbpres:Amsterdam .
 
 :Arnhem
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Arnhem> .
-
-      dbpres:Assen	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2759633/> ;
-      	geo:lat	"52.996667" ;
-      	geo:long	"6.5625" ;
-      	geonames:name	"Assen" .
+      owl:sameAs dbpres:Arnhem .
 
 :Assen
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Assen> .
+      owl:sameAs dbpres:Assen .
 
 :Belasting
       rdf:type :Rechtsgebied ;
@@ -103,15 +193,9 @@ metalex:src
       rdf:type :Rechtsgebied ;
       rdfs:label "Bouwen"@nl .
 
-      dbpres:Breda	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2758401/> ;
-      	geo:lat	"51.5865631469705" ;
-      	geo:long	"4.77596282958984" ;
-      	geonames:name	"Breda" .
-
 :Breda
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Breda> .
+      owl:sameAs dbpres:Breda .
 
 :Cassatie
       rdf:type :Procedure ;
@@ -133,35 +217,22 @@ metalex:src
       dbpedia:locationCity
               :Den_Haag .
 
-              <http://dbpedia.org/resource/%27s-Hertogenbosch>	rdf:type	geonames:Feature ;
-              	owl:sameAs	<http://sws.geonames.org/2747351/> ;
-              	geo:lat	"51.699167" ;
-              	geo:long	"5.304167" ;
-              	geonames:name	"s-Hertogenbosch" .
-
 :Den_Bosch
       rdf:type :Zittingsplaats ;
       rdfs:label "'s-Hertogenbosch"@nl ;
       owl:sameAs <http://dbpedia.org/resource/%27s-Hertogenbosch> .
 
-      dbpres:The_Hague	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2747373/> ;
-      	geo:lat	"52.076667" ;
-      	geo:long	"4.298611" ;
-      	geonames:name	"Den Haag" .
-
 :Den_Haag
       rdf:type :Zittingsplaats ;
       rdfs:label "'s-Gravenhage"@nl ;
-      owl:sameAs <http://dbpedia.org/resource/The_Hague> .
+      owl:sameAs dbpres:The_Hague .
 
 :Dordrecht
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Dordrecht> ;
-      owl:sameAs <http://sws.geonames.org/2756669/>;
-  geo:lat 51.81;
-  geo:long 4.673661;
-  geonames:name "Dordrecht" .
+      geonames:name "Dordrecht" ;
+      owl:sameAs dbpres:Dordrecht , <http://sws.geonames.org/2756669/> ;
+      geo:lat 51.81 ;
+      geo:long 4.673661 .
 
 :Douanekamer
       rdf:type :Sector ;
@@ -213,57 +284,9 @@ metalex:src
       rdf:type :Zittingsplaats ;
       owl:sameAs <http://dbpedia.org/resource/Groningen_%28city%29> .
 
-      <http://dbpedia.org/resource/Groningen_%28city%29>	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2755251/> ;
-      	geo:lat	"53.219167" ;
-      	geo:long	"6.566667" ;
-      	geonames:name	"Groningen" .
-
-        <http://dbpedia.org/resource/Utrecht_%28city%29>	rdf:type	geonames:Feature ;
-        	owl:sameAs	<http://sws.geonames.org/2745912/> ;
-        	geo:lat	"52.090833" ;
-        	geo:long	"5.122222" ;
-        	geonames:name	"Utrecht" .
-
-        dbpres:Rotterdam	rdf:type	geonames:Feature ;
-        	owl:sameAs	<http://sws.geonames.org/2747891/> ;
-        	geo:lat	"51.9225" ;
-        	geo:long	"4.479167" ;
-        	geonames:name	"Rotterdam" .
-
-        dbpres:Haarlem	rdf:type	geonames:Feature ;
-        	owl:sameAs	<http://sws.geonames.org/2755003/> ;
-        	geo:lat	"52.3808386793563" ;
-        	geo:long	"4.63683128356934" ;
-        	geonames:name	"Haarlem" .
-        	
-            dbpres:Leeuwarden	rdf:type	geonames:Feature ;
-            	owl:sameAs	<http://sws.geonames.org/2751792/> ;
-            	geo:lat	"53.2" ;
-            	geo:long	"5.7833333" ;
-            	geonames:name	"Leeuwarden" .
-
-                dbpres:Maastricht	rdf:type	geonames:Feature ;
-                	owl:sameAs	<http://sws.geonames.org/2751283/> ;
-                	geo:lat	"50.848333" ;
-                	geo:long	"5.688889" ;
-                	geonames:name	"Maastricht" .
-
-                    dbpres:Middelburg	rdf:type	geonames:Feature ;
-                    	owl:sameAs	<http://sws.geonames.org/2750896/> ;
-                    	geo:lat	"51.5" ;
-                    	geo:long	"3.613889" ;
-                    	geonames:name	"Middelburg" .
-
-                        dbpres:Roermond	rdf:type	geonames:Feature ;
-                        	owl:sameAs	<http://sws.geonames.org/2748000/> ;
-                        	geo:lat	"51.194167" ;
-                        	geo:long	"5.9875" ;
-                        	geonames:name	"Roermond" .
-
 :Haarlem
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Haarlem> .
+      owl:sameAs dbpres:Haarlem .
 
 :Handelszaak
       rdf:type :Rechtsgebied ;
@@ -278,7 +301,7 @@ metalex:src
       rdfs:label "Hoge Raad"@nl ;
       dbpedia:locationCity
               :Den_Haag ;
-      owl:sameAs <http://dbpedia.org/resource/Hoge_Raad_der_Nederlanden> .
+      owl:sameAs dbpres:Hoge_Raad_der_Nederlanden .
 
 :Hoger_beroep
       rdf:type :Procedure ;
@@ -299,15 +322,15 @@ metalex:src
 
 :Leeuwarden
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Leeuwarden> .
+      owl:sameAs dbpres:Leeuwarden .
 
 :Maastricht
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Maastricht> .
+      owl:sameAs dbpres:Maastricht .
 
 :Middelburg
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Middelburg> .
+      owl:sameAs dbpres:Middelburg .
 
 :Notariskamer
       rdf:type :Sector ;
@@ -333,7 +356,7 @@ metalex:src
 :Raad_van_State
       rdf:type :Instantie ;
       rdfs:label "Raad van State"@nl ;
-      rdfs:seeAlso <http://dbpedia.org/resource/Council_of_State> ;
+      rdfs:seeAlso dbpres:Council_of_State ;
       dbpedia:locationCity
               :Den_Haag .
 
@@ -466,11 +489,11 @@ metalex:src
 
 :Roermond
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Roermond> .
+      owl:sameAs dbpres:Roermond .
 
 :Rotterdam
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Rotterdam> .
+      owl:sameAs dbpres:Rotterdam .
 
 :Sector
       rdf:type owl:Class ;
@@ -538,24 +561,11 @@ metalex:src
 
 :Zutphen
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Zutphen> .
-
-      dbpres:Zutphen	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2743608/> ;
-      	geo:lat	"52.138333" ;
-      	geo:long	"6.201389" ;
-      	geonames:name	"Zutphen" .
-
+      owl:sameAs dbpres:Zutphen .
 
 :Zwolle
       rdf:type :Zittingsplaats ;
-      owl:sameAs <http://dbpedia.org/resource/Zwolle> .
-
-      dbpres:Zwolle	rdf:type	geonames:Feature ;
-      	owl:sameAs	<http://sws.geonames.org/2743477/> ;
-      	geo:lat	"52.5125" ;
-      	geo:long	"6.094444" ;
-      	geonames:name	"Zwolle" .
+      owl:sameAs dbpres:Zwolle .
 
 :datum_gepubliceerd
       rdf:type owl:DatatypeProperty ;
@@ -627,3 +637,6 @@ metalex:src
       rdfs:label "Zittingsplaats" ;
       rdfs:range :Zittingsplaats ;
       rdfs:subPropertyOf :locatie .
+
+metalex:src
+      rdfs:label "Bronverwijzing" .
