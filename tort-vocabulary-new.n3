@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jun 21 14:38:35 CEST 2010
+# Saved by TopBraid on Tue Jun 22 16:59:25 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -644,6 +644,12 @@
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar , :aansprakelijkheid_voor_kinderen .
 
+:overheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :aansprakelijke_persoon ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "overheid"@nl .
+
 :overmacht_als_noodtoestand
       rdf:type best:Concept , skos:Concept ;
       skos:broader :rechtvaardigingsgrond ;
@@ -925,12 +931,12 @@
 :werkgever
       rdf:type best:Concept , skos:Concept ;
       to:fingerprint
-              [ to:value "werkgever"^^xsd:string ;
-                to:weight 100
-              ] ;
-      to:fingerprint
               [ to:value "organisatie"^^xsd:string ;
                 to:weight 60
+              ] ;
+      to:fingerprint
+              [ to:value "werkgever"^^xsd:string ;
+                to:weight 100
               ] ;
       to:fingerprint
               [ to:value "bedrijf"^^xsd:string ;

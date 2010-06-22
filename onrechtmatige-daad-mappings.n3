@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jun 21 15:41:58 CEST 2010
+# Saved by TopBraid on Tue Jun 22 16:55:57 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -26,6 +26,33 @@
       owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/bestmap.owl> , <http://www.best-project.nl/owl/merged-tort-vocabulary.owl> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
 
+:Gevaarzetting
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Overtreding_Betamelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:gevaarzetting ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aard_en_omvang_gevreesde_schade ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aard_van_de_gedraging ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:bezwaarlijkheid_voorzorgmaatregelen ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:kelderluik_criterium ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:waarschijnlijkheid_dat_schade_zich_zal_voordoen ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ])
+              ] ;
+      skos:note "Juridische aspecten van gevaarzetting"^^xsd:string .
+
 :Inbreuk
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping ;
@@ -49,6 +76,10 @@
                           ])
               ] .
 
+:Letseltoebrengend_Gedrag
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Overtreding_Betamelijkheid .
+
 :Map-bevoegd-bevel
       rdf:type owl:Class ;
       rdfs:subClassOf :Situatie ;
@@ -69,6 +100,416 @@
                           ] [ rdf:type owl:Restriction ;
                             owl:hasValue lv:uitvoering_van_bevel ;
                             owl:onProperty b:situation
+                          ])
+              ] ;
+      skos:note "Bij uitvoering van een bevoegd gegeven bevel kan dit als rechtvaardigingsgrond voor de handeling gelden"@nl ;
+      skos:prefLabel "Uitvoering van een bevoegd gegeven bevel"@nl .
+
+:Map-gevaarlijk-handelen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting , :Letseltoebrengend_Gedrag ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:gevaarlijk_handelen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:gevaarlijk_handelen ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:lichamelijk_letsel ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:lichamelijk_letsel ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] .
+
+:Map-gevaarlijk-handelen-sportsituatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting , :Letseltoebrengend_Gedrag ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:sportsituatie ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:gedraging_minder_snel_onrechtmatig_in_sportsituatie ;
+                            owl:onProperty b:zorgvuldigheidsnorm
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:gevaarlijk_handelen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:gevaarlijk_handelen ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:lichamelijk_letsel ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:lichamelijk_letsel ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:sportsituatie ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:sportsituatie ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
+
+:Map-gevaarzetting-algemeen-dader-orientatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:action ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:niet_opletten ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:niet_opletten ;
+                                                    owl:onProperty b:action
+                                                  ])
+                                      ] [ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:action ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:niet_voorkomen ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:niet_voorkomen ;
+                                                    owl:onProperty b:action
+                                                  ])
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:persoon ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:persoon ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:chemische_stof ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:gevaarlijke_situatie ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:chemische_stof ;
+                                        owl:onProperty b:object
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:gevaarlijke_situatie ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:lichamelijk_letsel ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade_aan_eigendom ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:lichamelijk_letsel ;
+                                        owl:onProperty b:result
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade_aan_eigendom ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] ;
+      skos:note "Indien iemand een gevaarlijke situatie laat ontstaan (of in stand houdt), met als gevolg dat bij een derde letselschade of zaakschade ontstaat, dan is er sprake van \"gevaarzetting\". Hierbij gelden een aantal criteria (zgn. kelderluikcriteria) die de mate van aansprakelijkheid bepalen."@nl ;
+      skos:prefLabel "Gevaarzetting (dader-orientatie)"@nl .
+
+:Map-gevaarzetting-algemeen-slachtoffer-orientatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf :TODO , :Gevaarzetting ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:overkomen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:overkomen ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:persoon ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:persoon ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:chemische_stof ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:gevaarlijke_situatie ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:chemische_stof ;
+                                        owl:onProperty b:object
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:gevaarlijke_situatie ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:lichamelijk_letsel ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade_aan_eigendom ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:lichamelijk_letsel ;
+                                        owl:onProperty b:result
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade_aan_eigendom ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:complementOf
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:laten_vallen ;
+                                      owl:onProperty b:action
+                                    ]
+                          ])
+              ] ;
+      skos:note "Indien iemand een gevaarlijke situatie laat ontstaan (of in stand houdt), met als gevolg dat bij een derde letselschade of zaakschade ontstaat, dan is er sprake van \"gevaarzetting\". Hierbij gelden een aantal criteria (zgn. kelderluikcriteria) die de mate van aansprakelijkheid bepalen."@nl ;
+      skos:prefLabel "Gevaarzetting (slachtoffer-orientatie)"@nl .
+
+:Map-gevaarzetting-sportvereniging
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:strengere_eisen_verantwoordelijkheid_sportvereniging ;
+                owl:onProperty b:zorgvuldigheidsnorm
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Map-gevaarzetting-algemeen-dader-orientatie [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:sportvereniging ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:location ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:sportfaciliteit ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:sportsituatie ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:sportvereniging ;
+                                        owl:onProperty b:actor
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:sportfaciliteit ;
+                                        owl:onProperty b:location
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:sportsituatie ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
+
+:Map-gevaarzetting-terreinbeheerder
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:bijzondere_zorgplicht_terreinbeheerders ;
+                owl:onProperty b:zorgvuldigheidsnorm
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Map-gevaarzetting-algemeen-dader-orientatie [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:terreinbeheerder ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:terreinbeheerder ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ])
+              ] .
+
+:Map-gevaarzetting-terreinbeheerder-waterwegbeheer
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:verantwoordelijkheid_overheid_als_waterwegbeheerder ;
+                owl:onProperty b:zorgvuldigheidsnorm
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Map-gevaarzetting-terreinbeheerder [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:waterwegbeheerder ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:waterwegbeheerder ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ])
+              ] .
+
+:Map-gevaarzetting-terreinbeheerder-wegbeheer
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Gevaarzetting ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:verantwoordelijkheid_overheid_als_wegbeheerder ;
+                owl:onProperty b:zorgvuldigheidsnorm
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Map-gevaarzetting-terreinbeheerder [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:actor ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:wegbeheerder ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:wegbeheerder ;
+                                                    owl:onProperty b:actor
+                                                  ])
+                                      ] [ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:location ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:weg ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:weg ;
+                                                    owl:onProperty b:location
+                                                  ])
+                                      ] [ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:object ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:slecht_wegdek ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:slecht_wegdek ;
+                                                    owl:onProperty b:object
+                                                  ])
+                                      ])
                           ])
               ] .
 
@@ -202,6 +643,45 @@
               ] ;
       skos:note "Een inbreuk op het leven (aantasting lichamelijke integriteit) is een onrechtmatige daad wegens schending van een persoonlijkheidsrecht"@nl ;
       skos:prefLabel "Inbreuk op het leven, of lichamelijke integriteit"@nl .
+
+:Map-inbreuk-meningsuiting
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:inbreuk_op_een_persoonlijkheidsrecht ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:inbreuk_op_meningsuiting ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:inbreuk_op_meningsuiting ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:overheidsfunctionaris ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:overheidsfunctionaris ;
+                                        owl:onProperty b:action
+                                      ])
+                          ])
+              ] ;
+      skos:note "Als iemand door een overheidsdienaar wordt belemmerd in het vrij uiten van een mening, is dit een inbreuk op een persoonlijkheidsrecht."^^xsd:string ;
+      skos:prefLabel "Inbreuk op de vrijheid van meningsuiting"^^xsd:string .
 
 :Map-inbreuk-octrooirecht
       rdf:type owl:Class ;
@@ -426,9 +906,23 @@
       skos:note "Als sprake is van overmacht kan dit als rechtvaardigheidsgrond gelden voor de daad. Hierdoor wordt hij in het algemeen niet als onrechtmatig aangemerkt"^^xsd:string ;
       skos:prefLabel "Overmacht als rechtvaardigingsgrond"^^xsd:string .
 
+:Map-overtreden-spelregels-sportsituatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:enkel_overtreden_spelregels_niet_onrechtmatig ;
+                owl:onProperty b:zorgvuldigheidsnorm
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Restriction ;
+                owl:hasValue lv:overtreden_spelregels ;
+                owl:onProperty b:situation
+              ] .
+
 :Map-overtreding
       rdf:type owl:Class ;
-      rdfs:subClassOf :Overtreding ;
+      rdfs:subClassOf :Overtreding_Wet ;
       rdfs:subClassOf
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
@@ -461,7 +955,7 @@
 
 :Map-overtreding-beide-partijen
       rdf:type owl:Class ;
-      rdfs:subClassOf :Overtreding ;
+      rdfs:subClassOf :Overtreding_Wet ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:wetsovertreding_door_eiser ;
@@ -469,9 +963,18 @@
               ] ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
-                owl:intersectionOf ([ rdf:type owl:Restriction ;
-                            owl:hasValue lv:overtreding ;
-                            owl:onProperty b:situation
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:overtreding ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:overtreding ;
+                                        owl:onProperty b:situation
+                                      ])
                           ] [ rdf:type owl:Restriction ;
                             owl:minQualifiedCardinality
                                     "2"^^xsd:nonNegativeInteger ;
@@ -532,10 +1035,24 @@
       skos:note "Indien een handeling verricht wordt om te kunnen voldoen aan regelgeving, dan geldt dit als rechtvaardigingsgrond voor de handeling. De handeling wordt dan veelal niet aangemerkt als onrechtmatig."^^xsd:string ;
       skos:prefLabel "Uitvoering voorschrift als rechtvaardigingsgrond"^^xsd:string .
 
-:Overtreding
+:Overtreding_Betamelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
+                owl:onProperty b:onrechtmatigheidsgrond
+              ] ;
+      skos:prefLabel "Strijdigheid met hetgeen in het maatschappelijk verkeer betaamt"^^xsd:string .
+
+:Overtreding_Wet
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping .
 
 :Situatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .
+
+:TODO
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping .
