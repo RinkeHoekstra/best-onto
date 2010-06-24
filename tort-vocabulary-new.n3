@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Jun 22 16:59:25 CEST 2010
+# Saved by TopBraid on Thu Jun 24 15:27:57 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -364,6 +364,12 @@
       skos:broader :schulduitsluitingsgrond ;
       skos:inScheme :tort-scheme .
 
+:gevaarlijk_handelen
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "gevaarlijk handelen"@nl .
+
 :gevaarlijke_stof
       rdf:type best:Concept , skos:Concept ;
       skos:broader :criteria_aansprakelijkheid_voor_stoffen ;
@@ -475,6 +481,7 @@
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "schenden overeenkomst"@nl ;
       skos:broader :inbreuk_op_een_relatief_vermogensrecht ;
+      skos:inScheme :tort-scheme ;
       skos:prefLabel "inbreuk overeenkomst"@nl .
 
 :inbreuk_privacy
@@ -931,16 +938,16 @@
 :werkgever
       rdf:type best:Concept , skos:Concept ;
       to:fingerprint
+              [ to:value "bedrijf"^^xsd:string ;
+                to:weight 80
+              ] ;
+      to:fingerprint
               [ to:value "organisatie"^^xsd:string ;
                 to:weight 60
               ] ;
       to:fingerprint
               [ to:value "werkgever"^^xsd:string ;
                 to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "bedrijf"^^xsd:string ;
-                to:weight 80
               ] ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
@@ -981,6 +988,11 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgvuldigheidsnorm ;
       skos:inScheme :tort-scheme .
+
+:zorgplicht_zorginrichting
+      rdf:type best:Concept ;
+      skos:broader :zorgvuldigheidsnorm ;
+      skos:prefLabel "zorgplicht zorginrichting"@nl .
 
 :zorgvuldigheidsnorm
       rdf:type best:Concept , skos:Concept ;
