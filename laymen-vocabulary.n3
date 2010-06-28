@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jun 24 17:01:43 CEST 2010
+# Saved by TopBraid on Mon Jun 28 12:10:12 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -1056,6 +1056,24 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "in het verkeer"@nl .
 
+:in_opdracht
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "de handeling was in opdracht van iets of iemand anders"@nl .
+
+:in_opdracht_van_bedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :in_opdracht ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "de handeling was in opdracht van een bedrijf"@nl .
+
+:in_opdracht_van_persoon
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :in_opdracht ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "de handeling was in opdracht van iemand anders (geen bedrijf)"@nl .
+
 :in_stand_houden
       rdf:type best:Concept , skos:Concept ;
       skos:broader :actie ;
@@ -1142,6 +1160,12 @@
       skos:broader :minderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "jongere"@nl .
+
+:jongere_16_of_ouder
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :minderjarige ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "jongere van 16 jaar of ouder"^^xsd:string .
 
 :kPN  skos:prefLabel "KPN"@nl .
 

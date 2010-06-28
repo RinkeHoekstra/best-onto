@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jun 24 15:27:57 CEST 2010
+# Saved by TopBraid on Mon Jun 28 10:59:53 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -216,6 +216,7 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
+      skos:prefLabel "bezitter roerende zaak"@nl ;
       skos:related :aansprakelijkheid_voor_producten , :aansprakelijkheid_voor_zaken .
 
 :bezitter_van_een_dier
@@ -649,6 +650,7 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;
+      skos:prefLabel "ouder of voogd"@nl ;
       skos:related :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar , :aansprakelijkheid_voor_kinderen .
 
 :overheid
@@ -938,16 +940,16 @@
 :werkgever
       rdf:type best:Concept , skos:Concept ;
       to:fingerprint
-              [ to:value "bedrijf"^^xsd:string ;
-                to:weight 80
-              ] ;
-      to:fingerprint
               [ to:value "organisatie"^^xsd:string ;
                 to:weight 60
               ] ;
       to:fingerprint
               [ to:value "werkgever"^^xsd:string ;
                 to:weight 100
+              ] ;
+      to:fingerprint
+              [ to:value "bedrijf"^^xsd:string ;
+                to:weight 80
               ] ;
       skos:broader :aansprakelijke_persoon ;
       skos:inScheme :tort-scheme ;

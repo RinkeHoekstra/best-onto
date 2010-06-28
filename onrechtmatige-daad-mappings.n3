@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Jun 24 17:17:20 CEST 2010
+# Saved by TopBraid on Mon Jun 28 13:53:21 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -25,6 +25,24 @@
 :     rdf:type owl:Ontology ;
       owl:imports <http://www.best-project.nl/owl/laymen-vocabulary.owl> , <http://www.best-project.nl/owl/bestmap.owl> , <http://www.best-project.nl/owl/merged-tort-vocabulary.owl> ;
       owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:Aansprakelijkheid_Personen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:aansprakelijkheid_voor_personen ;
+                owl:onProperty b:grond_toerekening_aan_dader
+              ] .
+
+:Aansprakelijkheid_Zaken
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:aansprakelijkheid_voor_zaken ;
+                owl:onProperty b:grond_toerekening_aan_dader
+              ] .
 
 :Gevaarzetting
       rdf:type owl:Class ;
@@ -55,7 +73,7 @@
 
 :Inbreuk
       rdf:type owl:Class ;
-      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf :Onrechtmatigheid ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:inbreuk_op_een_recht ;
@@ -79,6 +97,327 @@
 :Letseltoebrengend_Gedrag
       rdf:type owl:Class ;
       rdfs:subClassOf :Overtreding_Betamelijkheid .
+
+:Map-aansprakelijkheid-kind-onder-14
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Personen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ouder ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_kinderen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:kind_jonger_dan_14_jaar ;
+                            owl:onProperty b:schulduitsluiting
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:kind ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:kind ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] ;
+      skos:note "Als een kind onder de 14 schade veroorzaakt, wordt deze schade hem/haar niet aangerekend. De ouders zijn aansprakelijk voor het gedrag van het kind."@nl ;
+      skos:prefLabel "aansprakelijkheid voor schadeveroorzakend gedrag van kinderen onder de 14"@nl .
+
+:Map-aansprakelijkheid-kind-ouder-dan-16
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Schuldaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_kinderen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_mogelijkheid_beletten_gedraging_kind ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:kind ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:kind ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] ;
+      skos:note "Als een kind van 16 of ouder schade veroorzaakt, wordt deze schade hem/haar in principe direct aangerekend. De ouders zijn niet aansprakelijk voor het gedrag van het kind, er is dus geen sprake van risicoaansprakelijkheid"@nl ;
+      skos:prefLabel "aansprakelijkheid voor schadeveroorzakend gedrag van jongeren van 16 of ouder"@nl .
+
+:Map-aansprakelijkheid-kind-tussen-14-en-15
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Personen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:kind_van_veertien_of_vijftien_jaar ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ouder ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_kinderen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_mogelijkheid_beletten_gedraging_kind ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:kind ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:kind ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] ;
+      skos:note "Als een kind van 14 of 15 schade veroorzaakt, wordt deze schade hem/haar in principe niet aangerekend. De ouders zijn aansprakelijk voor het gedrag van het kind, tenzij ze niet in staat waren het gedrag van het kind te beletten"@nl ;
+      skos:prefLabel "aansprakelijkheid voor schadeveroorzakend gedrag van jongeren van 14 of 15"@nl .
+
+:Map-aansprakelijkheid-niet-ondergeschikten-met-opdracht
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Personen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:opdrachtgever ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_van_werkgever ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_functioneel_verband ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_zeggenschap_gedraging_werknemer ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:zelfstandige ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:zelfstandige ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:in_opdracht ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:in_opdracht ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-ondergeschikten
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Personen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:werkgever ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_van_werkgever ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_zeggenschap_gedraging_werknemer ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:werknemer ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:werknemer ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:in_opdracht ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:in_opdracht ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-ondergeschikten-natuurlijk-persoon
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Personen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:opdrachtgever ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:werkgever ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_van_werkgever ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:milder_regime_natuurlijk_persoon_als_werkgever ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:ontbreken_zeggenschap_gedraging_werknemer ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:werknemer ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:werknemer ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:situation ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:in_opdracht_van_persoon ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:in_opdracht_van_persoon ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
 
 :Map-bevoegd-bevel
       rdf:type owl:Class ;
@@ -954,7 +1293,7 @@
 
 :Map-overtreden-spelregels-sportsituatie
       rdf:type owl:Class ;
-      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf :Onrechtmatigheid ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:enkel_overtreden_spelregels_niet_onrechtmatig ;
@@ -1152,9 +1491,13 @@
       skos:note "Bij zuiver nalaten gaat het om gevaarzetting waarbij er bewust niet gehandeld wordt, ondanks kennis van de gevaren en dreiging van lichamelijk letsel"^^xsd:string ;
       skos:prefLabel "Zuiver nalaten"@nl .
 
+:Onrechtmatigheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .
+
 :Overtreding_Betamelijkheid
       rdf:type owl:Class ;
-      rdfs:subClassOf bm:Mapping ;
+      rdfs:subClassOf :Onrechtmatigheid ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:doen_of_nalaten_in_strijd_met_hetgeen_volgens_ongeschreven_recht_in_het_maatschappelijk_verkeer_betaamt ;
@@ -1164,7 +1507,21 @@
 
 :Overtreding_Wet
       rdf:type owl:Class ;
-      rdfs:subClassOf bm:Mapping .
+      rdfs:subClassOf :Onrechtmatigheid .
+
+:Risicoaansprakelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Toerekening ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:risicoaansprakelijkheid ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:toerekening_op_basis_van_specifieke_wettelijke_bepaling ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ])
+              ] .
 
 :Samenloop_van_Omstandigheden
       rdf:type owl:Class ;
@@ -1175,10 +1532,46 @@
                 owl:onProperty b:onrechtmatigheidsgrond
               ] .
 
+:Schadeveroorzakend_Gedrag
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Overtreding_Betamelijkheid ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:onProperty b:result ;
+                            owl:someValuesFrom
+                                    [ rdf:type owl:Restriction ;
+                                      owl:hasValue lv:schade ;
+                                      owl:onProperty skos:broaderTransitive
+                                    ]
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:schade ;
+                            owl:onProperty b:result
+                          ])
+              ] .
+
+:Schuldaansprakelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Toerekening ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:schuldaansprakelijkheid ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:toerekening_op_basis_van_schuld ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ])
+              ] .
+
 :Situatie
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping .
 
 :TODO
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .
+
+:Toerekening
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping .
