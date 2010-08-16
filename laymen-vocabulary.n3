@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Aug 16 15:29:20 CEST 2010
+# Saved by TopBraid on Mon Aug 16 15:38:42 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -2315,6 +2315,12 @@
       skos:broader :bij_dieren ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stal"@nl .
+
+:stankoverlast
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :overlast ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "stankoverlast"@nl .
 
 :stelen
       rdf:type best:Concept , skos:Concept ;

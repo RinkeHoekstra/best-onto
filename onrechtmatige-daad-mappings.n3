@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Aug 16 15:29:34 CEST 2010
+# Saved by TopBraid on Mon Aug 16 16:31:51 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -42,6 +42,26 @@
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:aansprakelijkheid_voor_boorgaten ;
                 owl:onProperty b:grond_toerekening_aan_dader
+              ] .
+
+:Aansprakelijkheid_Dieren
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:bezitter_van_een_dier ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_dieren ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:onberekenbaarheid_gedraging_van_het_dier ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:schade_aangericht_door_door_mens_gehouden_dier ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
               ] .
 
 :Aansprakelijkheid_Opstallen
@@ -1091,6 +1111,109 @@
                           ])
               ] .
 
+:Map-aansprakelijkheid-voor-dieren
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Dieren ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:gevaarlijk_handelen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:hinderen ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:inbreuk_op_leven ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:gevaarlijk_handelen ;
+                                        owl:onProperty b:action
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:hinderen ;
+                                        owl:onProperty b:action
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:inbreuk_op_leven ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:dier ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:dier ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-voor-dieren-bedrijf
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Dieren ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:gebruik_bij_uitoefening_in_bedrijfsverband ;
+                owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Map-aansprakelijkheid-voor-dieren [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:action ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:werken ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:werken ;
+                                                    owl:onProperty b:action
+                                                  ])
+                                      ] [ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:location ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:op_het_werk ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:op_het_werk ;
+                                                    owl:onProperty b:location
+                                                  ])
+                                      ])
+                          ])
+              ] .
+
 :Map-belang-benadeelde
       rdf:type owl:Class ;
       rdfs:subClassOf :Bevrijdende_Omstandigheden ;
@@ -1101,9 +1224,7 @@
               ] ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
-                owl:intersectionOf ([ rdf:type owl:Class ;
-                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
-                          ] [ rdf:type owl:Restriction ;
+                owl:intersectionOf (:Aansprakelijkheid_Stoffen [ rdf:type owl:Restriction ;
                             owl:hasValue lv:in_belang_benadeelde ;
                             owl:onProperty b:situation
                           ])
@@ -1689,6 +1810,21 @@
               ] ;
       skos:prefLabel "Hinder"@nl .
 
+:Map-hinder-verontreiniging-rechtvaardigingsgrond
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansprakelijkheid_zou_ontbreken ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Situatie [ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ])
+              ] .
+
 :Map-hinderen-zonder-rekening-te-houden-met-ander
       rdf:type owl:Class ;
       rdfs:comment "Indien hinder wordt veroorzaakt, maar er wordt geen poging ondernomen deze hinder te verhelpen kan sprake zijn van onrechtmatigheid."^^xsd:string ;
@@ -2146,6 +2282,24 @@
               ] ;
       skos:note "Indien bij het berokkenen van (lichamelijk) schade sprake is van zelfverdediging, kan dit gelden als een rechtvaardigingsgrond voor de schade veroorzakende handeling. "^^xsd:string ;
       skos:prefLabel "Noodweer als rechtvaardigingsgrond"^^xsd:string .
+
+:Map-opzet-van-derde
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:schade_veroorzaakt_door_gewapend_conflict_of_burgeroorlog ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:opzettelijk ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
 
 :Map-opzettelijke-inbreuk
       rdf:type owl:Class ;
