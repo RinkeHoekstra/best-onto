@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Aug 12 15:43:55 CEST 2010
+# Saved by TopBraid on Mon Aug 16 15:29:34 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -35,6 +35,32 @@
                 owl:onProperty b:aansprakelijke_persoon
               ] .
 
+:Aansprakelijkheid_Boorgaten
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:aansprakelijkheid_voor_boorgaten ;
+                owl:onProperty b:grond_toerekening_aan_dader
+              ] .
+
+:Aansprakelijkheid_Opstallen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:persoon_aansprakelijk_voor_opstal ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_opstallen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:gebrekkige_opstal ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] .
+
 :Aansprakelijkheid_Personen
       rdf:type owl:Class ;
       rdfs:subClassOf :Risicoaansprakelijkheid ;
@@ -51,6 +77,43 @@
               [ rdf:type owl:Restriction ;
                 owl:hasValue tv:producent_roerende_zaak ;
                 owl:onProperty b:aansprakelijke_persoon
+              ] .
+
+:Aansprakelijkheid_Stoffen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_stoffen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:bekendheid_gevaar_stof ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:bijzonder_gevaar_van_ernstige_aard ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:gevaarlijke_stof ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
+              ] .
+
+:Aansprakelijkheid_Stortplaatsen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Risicoaansprakelijkheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_voor_stortplaatsen ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:verjaringstermijn_twintig_jaar_na_sluiting ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:verontreiniging_lucht_water_of_bodem_door_gestortte_stoffen ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
               ] .
 
 :Aansprakelijkheid_Zaken
@@ -73,6 +136,10 @@
 :Beroepsaansprakelijkheid
       rdf:type owl:Class ;
       rdfs:subClassOf :Onrechtmatigheid .
+
+:Bevrijdende_Omstandigheden
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Toerekening .
 
 :Gevaarzetting
       rdf:type owl:Class ;
@@ -105,11 +172,6 @@
       rdf:type owl:Class ;
       rdfs:subClassOf :Overtreding_Betamelijkheid ;
       rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:hasValue tv:hinder ;
-                owl:onProperty b:onrechtmatigheidsgrond
-              ] ;
-      rdfs:subClassOf
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
                             owl:hasValue tv:algemeen_belang ;
@@ -121,6 +183,11 @@
                             owl:hasValue tv:wie_zat_er_het_eerst ;
                             owl:onProperty b:zorgvuldigheidsnorm
                           ])
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:hinder ;
+                owl:onProperty b:onrechtmatigheidsgrond
               ] ;
       skos:prefLabel "Hinder"@nl .
 
@@ -156,12 +223,129 @@
       rdf:type owl:Class ;
       rdfs:subClassOf :Overtreding_Betamelijkheid .
 
-:Map-aansprakelijkheid-chemische-stof
+:Map-aansprakelijkheid-boorgaten
       rdf:type owl:Class ;
-      rdfs:subClassOf :TODO , :Aansprakelijkheid_Zaken ;
+      rdfs:subClassOf :Aansprakelijkheid_Boorgaten ;
       rdfs:subClassOf
               [ rdf:type owl:Restriction ;
-                owl:hasValue tv:persoon_aansprakelijk_voor_stof ;
+                owl:hasValue tv:exploitant_boorgat ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:grondstoffen_delven ;
+                            owl:onProperty b:action
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-chemische-stof
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Stoffen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:gebruiker_gevaarlijke_stof ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:chemische_stof ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:chemische_stof ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-chemische-stof-bewaarder
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Stoffen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:bewaarder_gevaarlijke_stof ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:bewaren ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:beheren ;
+                                        owl:onProperty b:action
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:bewaren ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:chemische_stof ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:chemische_stof ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-chemische-stof-uitvoering-bedrijf-rechtspersoon
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Stoffen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:rechtspersoon_die_de_stof_in_uitoefening_van_zijn_taak_gebruikt ;
                 owl:onProperty b:aansprakelijke_persoon
               ] ;
       owl:equivalentClass
@@ -171,11 +355,11 @@
                                         owl:onProperty b:actor ;
                                         owl:someValuesFrom
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:hasValue lv:eigenaar ;
+                                                  owl:hasValue lv:bedrijf ;
                                                   owl:onProperty skos:broaderTransitive
                                                 ]
                                       ] [ rdf:type owl:Restriction ;
-                                        owl:hasValue lv:eigenaar ;
+                                        owl:hasValue lv:bedrijf ;
                                         owl:onProperty b:actor
                                       ])
                           ] [ rdf:type owl:Class ;
@@ -580,6 +764,94 @@
                           ])
               ] .
 
+:Map-aansprakelijkheid-opstal
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Opstallen ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:opstal ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:opstal ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-opstal-leiding
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Opstallen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:leidingbeheerder ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:leiding ;
+                            owl:onProperty b:object
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-opstal-openbare-weg
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Opstallen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:overheid ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:schade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:schade ;
+                                        owl:onProperty b:result
+                                      ])
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:wegdek ;
+                            owl:onProperty b:object
+                          ])
+              ] .
+
 :Map-aansprakelijkheid-producten
       rdf:type owl:Class ;
       rdfs:subClassOf :Aansprakelijkheid_Producten ;
@@ -660,9 +932,14 @@
       rdf:type owl:Class ;
       rdfs:subClassOf :Aansprakelijkhaid_Zaken_Algemeen ;
       rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:hasValue tv:gebruik_bij_uitoefening_in_bedrijfsverband ;
-                owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:aansprakelijkheid_in_bedrijfsverband ;
+                            owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:gebruik_bij_uitoefening_in_bedrijfsverband ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
+                          ])
               ] ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
@@ -701,6 +978,55 @@
                                       ] [ rdf:type owl:Restriction ;
                                         owl:hasValue lv:in_opdracht_van_bedrijf ;
                                         owl:onProperty b:actor
+                                      ])
+                          ])
+              ] .
+
+:Map-aansprakelijkheid-stortplaatsen
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Aansprakelijkheid_Stortplaatsen ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:exploitant_stortplaats ;
+                owl:onProperty b:aansprakelijke_persoon
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:action ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:bewaren ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:bewaren ;
+                                        owl:onProperty b:action
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:object ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:afval ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:afval ;
+                                        owl:onProperty b:object
+                                      ])
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:result ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:milieuschade ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:milieuschade ;
+                                        owl:onProperty b:result
                                       ])
                           ])
               ] .
@@ -765,6 +1091,24 @@
                           ])
               ] .
 
+:Map-belang-benadeelde
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:schade_gevolg_handeling_met_gevaarlijke_stof_in_het_belang_van_benadeelde ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:in_belang_benadeelde ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
+
 :Map-beroepsaansprakelijkheid
       rdf:type owl:Class ;
       rdfs:subClassOf :Beroepsaansprakelijkheid ;
@@ -802,6 +1146,29 @@
                           ])
               ] .
 
+:Map-bevel-of-dwingend-overheidsvoorschrift
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:schade_uitsluitend_gevolg_voldoening_bevel_of_dwingend_overheidsvoorschrift ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:in_opdracht_van_overheid ;
+                                        owl:onProperty b:situation
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:op_bevel ;
+                                        owl:onProperty b:situation
+                                      ])
+                          ])
+              ] .
+
 :Map-bevoegd-bevel
       rdf:type owl:Class ;
       rdfs:subClassOf :Situatie ;
@@ -826,6 +1193,24 @@
               ] ;
       skos:note "Bij uitvoering van een bevoegd gegeven bevel kan dit als rechtvaardigingsgrond voor de handeling gelden"@nl ;
       skos:prefLabel "Uitvoering van een bevoegd gegeven bevel"@nl .
+
+:Map-conflict-burgeroorlog-etc
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:schade_veroorzaakt_door_gewapend_conflict_of_burgeroorlog ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:oorlogssituatie ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
 
 :Map-gevaarlijk-handelen
       rdf:type owl:Class ;
@@ -1281,6 +1666,10 @@
                           ])
               ] .
 
+:Map-groepsaansprakelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf :TODO .
+
 :Map-hinder
       rdf:type owl:Class ;
       rdfs:subClassOf :Hinder ;
@@ -1664,6 +2053,24 @@
       skos:note "Een inbreuk op de privesfeer (een inbreuk op de privacy) is een onrechtmatige daad wegens schending van een persoonlijkheidsrecht"^^xsd:string ;
       skos:prefLabel "Inbreuk op de privesfeer"@nl .
 
+:Map-natuurramp
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Bevrijdende_Omstandigheden ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:schade_gevolg_natuurgebeuren_van_uitzonderlijke_onvermijdelijke_en_onweerstaanbare_aard ;
+                owl:onProperty b:bevrijdende_omstandigheid
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Class ;
+                            owl:unionOf (:Aansprakelijkheid_Boorgaten :Aansprakelijkheid_Stoffen :Aansprakelijkheid_Stortplaatsen)
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue lv:natuurramp ;
+                            owl:onProperty b:situation
+                          ])
+              ] .
+
 :Map-niet-nakomen-overeenkomst
       rdf:type owl:Class ;
       rdfs:subClassOf :Inbreuk ;
@@ -1860,6 +2267,10 @@
       skos:note "Indien beide partijen een overtreding hebben begaan wordt de overtreding door de gedaagde minder zwaar gewogen"@nl ;
       skos:prefLabel "Overtreding door beide partijen"^^xsd:string .
 
+:Map-rectificatie
+      rdf:type owl:Class ;
+      rdfs:subClassOf :TODO .
+
 :Map-samenloop-van-omstandigheden
       rdf:type owl:Class ;
       rdfs:subClassOf :Samenloop_van_Omstandigheden ;
@@ -1889,6 +2300,10 @@
                             owl:onProperty b:situation
                           ])
               ] .
+
+:Map-schade-aan-personen-of-zaken-risicoaansprakelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf :TODO .
 
 :Map-staking
       rdf:type owl:Class ;
@@ -2038,7 +2453,12 @@
 
 :Overtreding_Wet
       rdf:type owl:Class ;
-      rdfs:subClassOf :Onrechtmatigheid .
+      rdfs:subClassOf :Onrechtmatigheid ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:vermindering_op_basis_relativiteitsbeginsel ;
+                owl:onProperty b:vermindering_schadevergoeding
+              ] .
 
 :Risicoaansprakelijkheid
       rdf:type owl:Class ;
@@ -2051,6 +2471,9 @@
                           ] [ rdf:type owl:Restriction ;
                             owl:hasValue tv:toerekening_op_basis_van_specifieke_wettelijke_bepaling ;
                             owl:onProperty b:grond_toerekening_aan_dader
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:tenzij_formule ;
+                            owl:onProperty b:nadere_eisen_risicoaansprakelijkheid
                           ])
               ] .
 

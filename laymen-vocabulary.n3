@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Aug 12 15:17:35 CEST 2010
+# Saved by TopBraid on Mon Aug 16 15:29:20 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -123,6 +123,12 @@
       skos:broader :werken ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "afnemen"@nl .
+
+:afval
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :mogelijk_gevaarlijk_ding ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "afval"@nl .
 
 :afwijken
       rdf:type best:Concept , skos:Concept ;
@@ -367,6 +373,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "beveiligingsmedewerker"@nl .
 
+:bewaren
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :werken ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bewaren"@nl .
+
 :bewust_geen_maatregelen_treffen
       rdf:type best:Concept ;
       skos:broader :geen_maatregelen_treffen , :bewust_nalaten ;
@@ -566,6 +578,12 @@
       skos:broader :verkeersdeelnemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "chauffeur"@nl .
+
+:chemisch_afval
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :chemische_stof , :afval ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "chemisch afval"@nl .
 
 :chemische_stof
       rdf:type best:Concept , skos:Concept ;
@@ -921,6 +939,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gras"@nl .
 
+:grondstoffen_delven
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :werken ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "grondstoffen delven"@nl .
+
 :gym  rdf:type best:Concept , skos:Concept ;
       skos:broader :sporten ;
       skos:inScheme :laymen-scheme ;
@@ -1036,6 +1060,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "huurovereenkomst"@nl .
 
+:in_belang_benadeelde
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "in belang van benadeelde"@nl .
+
 :in_het_groen
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "groenomgeving"@nl ;
@@ -1061,6 +1091,12 @@
       skos:broader :in_opdracht ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "de handeling vond plaats in bedrijfsverband"@nl .
+
+:in_opdracht_van_overheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :in_opdracht ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "in opdracht van de overheid"@nl .
 
 :in_opdracht_van_persoon
       rdf:type best:Concept , skos:Concept ;
@@ -1519,6 +1555,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "namaken"@nl .
 
+:natuurramp
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :oncontroleerbare_situatie ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "natuurramp"@nl .
+
 :nemen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :algemene_actie ;
@@ -1607,6 +1649,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "omwonenden"@nl .
 
+:oncontroleerbare_situatie
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bijzondere_omstandigheid ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "oncontroleerbare situatie"@nl .
+
 :onderopdracht
       rdf:type best:Concept , skos:Concept ;
       skos:broader :opdracht ;
@@ -1638,6 +1686,18 @@
       skos:broader :chemische_stof ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ontvlambare stof"@nl .
+
+:oorlogssituatie
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :oncontroleerbare_situatie ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "oorlogssituatie"@nl .
+
+:op_bevel
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :in_opdracht ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "op bevel"@nl .
 
 :op_het_werk
       rdf:type best:Concept , skos:Concept ;
@@ -1703,12 +1763,18 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "opleidingscentrum"@nl .
 
+:opslaan
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bewaren ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "opslaan"@nl .
+
 :opstal
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "opstal object"@nl ;
+      skos:altLabel "opstal"@nl ;
       skos:broader :object ;
       skos:inScheme :laymen-scheme ;
-      skos:prefLabel "opstal"@nl .
+      skos:prefLabel "gebouw of bouwwerk (opstal)"@nl .
 
 :optiehandelsbedrijf
       rdf:type best:Concept , skos:Concept ;
@@ -2274,6 +2340,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "stompen"@nl .
 
+:storten
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :bewaren ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "storten"@nl .
+
 :stoten
       rdf:type best:Concept , skos:Concept ;
       skos:broader :gevaarlijk_handelen ;
@@ -2547,6 +2619,12 @@
       skos:broader :beschadigen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "vernietigen"@nl .
+
+:verontreinigde_grond
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :afval ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "verontreinigde grond"@nl .
 
 :verontreiniging
       rdf:type best:Concept , skos:Concept ;
