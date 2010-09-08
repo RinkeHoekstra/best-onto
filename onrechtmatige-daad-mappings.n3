@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Aug 16 16:31:51 CEST 2010
+# Saved by TopBraid on Tue Aug 17 12:15:01 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -34,6 +34,10 @@
                 owl:hasValue tv:bezitter_roerende_zaak ;
                 owl:onProperty b:aansprakelijke_persoon
               ] .
+
+:Aansprakelijkheid
+      rdf:type owl:Class ;
+      rdfs:subClassOf bm:Mapping .
 
 :Aansprakelijkheid_Boorgaten
       rdf:type owl:Class ;
@@ -2616,14 +2620,11 @@
 
 :Risicoaansprakelijkheid
       rdf:type owl:Class ;
-      rdfs:subClassOf :Toerekening ;
+      rdfs:subClassOf :Aansprakelijkheid ;
       rdfs:subClassOf
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
                             owl:hasValue tv:risicoaansprakelijkheid ;
-                            owl:onProperty b:grond_toerekening_aan_dader
-                          ] [ rdf:type owl:Restriction ;
-                            owl:hasValue tv:toerekening_op_basis_van_specifieke_wettelijke_bepaling ;
                             owl:onProperty b:grond_toerekening_aan_dader
                           ] [ rdf:type owl:Restriction ;
                             owl:hasValue tv:tenzij_formule ;
@@ -2660,7 +2661,7 @@
 
 :Schuldaansprakelijkheid
       rdf:type owl:Class ;
-      rdfs:subClassOf :Toerekening ;
+      rdfs:subClassOf :Aansprakelijkheid ;
       rdfs:subClassOf
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Restriction ;
