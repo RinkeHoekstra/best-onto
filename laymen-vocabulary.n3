@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Aug 16 15:38:42 CEST 2010
+# Saved by TopBraid on Thu Sep 23 16:06:20 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -905,7 +905,7 @@
 
 :gevaarlijke_situatie
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :object ;
+      skos:broader :bijzondere_omstandigheid , :object ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "gevaarlijke situatie"@nl .
 
@@ -2186,7 +2186,7 @@
 
 :slecht_wegdek
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :gevaarlijke_situatie , :verkeersobject ;
+      skos:broader :gevaarlijke_situatie , :wegdek ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "slecht wegdek"@nl .
 
@@ -2829,7 +2829,7 @@
 
 :wegdek
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :opstal ;
+      skos:broader :verkeersobject ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "wegdek"@nl .
 

@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Aug 17 12:15:01 CEST 2010
+# Saved by TopBraid on Thu Sep 23 16:06:18 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -870,9 +870,14 @@
                                         owl:hasValue lv:schade ;
                                         owl:onProperty b:result
                                       ])
-                          ] [ rdf:type owl:Restriction ;
-                            owl:hasValue lv:wegdek ;
-                            owl:onProperty b:object
+                          ] [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:slecht_wegdek ;
+                                        owl:onProperty b:object
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:slecht_wegdek ;
+                                        owl:onProperty b:situation
+                                      ])
                           ])
               ] .
 

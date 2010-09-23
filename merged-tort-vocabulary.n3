@@ -2056,6 +2056,11 @@ tv:gezamenlijke_exploitanten_boorgat
                 to:weight 100 ;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
+      to:fingerprint
+              [ to:value "gezamenlijke exploitanten mijnbouw"@nl ;
+                to:weight 100 ;
+                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+              ] ;
       skos:prefLabel "gezamenlijke exploitanten boorgat"@nl .
 
 tv:gezamenlijke_exploitanten_stortplaats
@@ -2069,12 +2074,14 @@ tv:gezamenlijke_exploitanten_stortplaats
 tv:groepsaansprakelijkheid
       mtv:same oldtv:groepsdeelnemer ;
       to:fingerprint
-              [ to:value "deelnemer van een groep"@nl ;
-                to:weight 50
+              [ to:value "deelnemer groep"@nl ;
+                to:weight 50;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "lid van een groep"@nl ;
-                to:weight 40
+              [ to:value "lid groep"@nl ;
+                to:weight 50;
+                to:distance 10
               ] ;
       to:fingerprint
               [ to:value "groepslid"@nl ;
@@ -2082,7 +2089,7 @@ tv:groepsaansprakelijkheid
               ] ;
       to:fingerprint
               [ to:value "groepsleden"@nl ;
-                to:weight 32
+                to:weight 50
               ] ;
       to:fingerprint
               [ to:value "groepsdeelnemers"@nl ;
@@ -2094,24 +2101,19 @@ tv:groepsaansprakelijkheid
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       to:fingerprint
-              [ to:value "groepsaansprakelijkheid"@nl ;
-                to:weight 50
+              [ to:value "deelnemers groep"@nl ;
+                to:weight 50;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "deelnemers van een groep"@nl ;
-                to:weight 50
+              [ to:value "leden groep"@nl ;
+                to:weight 40;
+                to:distance 10;
               ] ;
       to:fingerprint
-              [ to:value "leden van een groep"@nl ;
-                to:weight 40
-              ] ;
-      to:fingerprint
-              [ to:value "groepsdeelnemer"@nl ;
-                to:weight 81
-              ] ;
-      to:fingerprint
-              [ to:value "aansprakelijkheid van een groep"@nl ;
-                to:weight 100
+              [ to:value "aansprakelijkheid groep"@nl ;
+                to:weight 80;
+                to:distance 10
               ] ;
       skos:altLabel "groepsleden"@nl , "leden van een groep"@nl , "groepslid"@nl , "lid van een groep"@nl , "deelnemer van een groep"@nl , "aansprakelijkheid van een groep"@nl , "groepsaansprakelijkheid"@nl , "deelnemers van een groep"@nl , "groepsdeelnemer"@nl , "groepsdeelnemers"@nl ;
       skos:note "Als groepsdeelnemer wordt aangemerkt een ieder die deel uitmaakt van een groep. Degene die zich uit een groep heeft teruggetrokken zal in beginsel niet aansprakelijk zijn voor schade die na zijn terugtrekken is ontstaan."^^xsd:string ;
@@ -2119,8 +2121,9 @@ tv:groepsaansprakelijkheid
 
 tv:grond_toerekening_aan_dader
       to:fingerprint
-              [ to:value "grond toerekening aan dader"@nl ;
+              [ to:value "toerekening dader"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:prefLabel "grond toerekening aan dader"@nl .
@@ -2130,11 +2133,12 @@ tv:grond_vermindering_schadevergoedingsplicht
       to:fingerprint
               [ to:value "grond vermindering schadevergoedingsplicht"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       to:fingerprint
               [ to:value "schadevergoeding"@nl ;
-                to:weight "100" ;
+                to:weight 50 ;
                 skos:note "Fingerprint automatically generated from skos:altLabel"@en
               ] ;
       skos:altLabel "schadevergoeding"@nl ;
@@ -2154,8 +2158,9 @@ tv:grond_voor_onrechtmatigheid
                 skos:note "Fingerprint automatically generated from skos:altLabel"@en
               ] ;
       to:fingerprint
-              [ to:value "grond voor onrechtmatigheid"@nl ;
+              [ to:value "grond onrechtmatigheid"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "onrechtmatigheidscriterium"@nl , "onrechtmatigheid"@nl ;
@@ -2169,11 +2174,6 @@ tv:hinder
                 to:weight "100" ;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
-      to:fingerprint
-              [ to:value "hinder"@nl ;
-                to:weight 100 ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
-              ] ;
       skos:altLabel "hinder"@nl ;
       skos:note """Er kan aansprakelijkheid bestaan voor veroorzaakte hinder. Hierbij kan men denken aan het teweegbrengen van geluid, trillingen, stank, rook en gassen, het onthouden van lucht, licht of het ontnemen van steun. Om te bepalen of er sprake is van een hindersituatie zal de rechter voor zijn oordeel de aard, ernst en duur van de hinder en de daardoor toegebrachte schade in verband met de overige omstandigheden in aanmerking nemen. Onder de aard van de hinder wordt onder meer verstaan hinder veroorzaakt door geluid, stank, stof dan wel door belemmering van het uitzicht. 
 	De ernst van de hinder is een minimumvoorwaarde voor onrechtmatigheid en vereist dat de hinder voldoende ernstig is. De ernst moet bemeten worden naar de plaatselijke omstandigheden. 
@@ -2184,7 +2184,8 @@ tv:hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansp
       mtv:same oldtv:tenzij_hinder ;
       to:fingerprint
               [ to:value "tenzij hinder"@nl ;
-                to:weight "100" ;
+                to:weight 50 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       to:fingerprint
@@ -2192,20 +2193,32 @@ tv:hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansp
                 to:weight 100 ;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
+              to:fingerprint
+                      [ to:value "gevaarlijke stof"@nl ;
+                        to:weight 30 
+                      ] ;
+                      to:fingerprint
+                              [ to:value "verontreiniging"@nl ;
+                                to:weight 30;
+                              ], [to:value "andere gevolgen"; to:weight 10] ;
+                              to:fingerprint
+                                      [ to:value "hinder"@nl ;
+                                        to:weight 30 ;
+                                      ] , [ to:value "boorgat"@nl; to:weight 30], [to:value "stortplaats"@nl; to:weight 30]
       skos:altLabel "tenzij hinder"@nl ;
-      skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van hinder, verontreiniging of andere gevolgen waarvoor aansprakelijkheid voor eigen handelen, dat wil zeggen op grond van een onrechtmatige daad, zou hebben ontbroken."^^xsd:string ;
+      skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van hinder, verontreiniging of andere gevolgen waarvoor aansprakelijkheid voor eigen handelen, dat wil zeggen op grond van een onrechtmatige daad, zou hebben ontbroken."@nl ;
       skos:prefLabel "hinder verontreiniging of andere gevolgen op basis waarvan persoonlijke aansprakelijkheid zou ontbreken"@nl .
 
 tv:inbreuk_auteursrecht
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b46 , _:b47 , _:b48 , _:b49 , _:b50 , _:b51 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 ;
+      
       to:fingerprint
               [ to:value "inbreuk auteursrecht"@nl ;
                 to:weight 100 ;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "subjectieve rechten" , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "subjectief recht"@nl , "subjectief recht" , "behoorlijk gedrag"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken"@nl ;
-      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."@nl ;
       skos:prefLabel "inbreuk auteursrecht"@nl .
 
 tv:inbreuk_eigendomsrecht
@@ -2218,6 +2231,7 @@ tv:inbreuk_eigendomsrecht
       to:fingerprint
               [ to:value "inbreuk eigendomsrecht"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "eigendomsrecht"@nl ;
@@ -2225,9 +2239,10 @@ tv:inbreuk_eigendomsrecht
 
 tv:inbreuk_huisrecht
       to:fingerprint
-              [ rdf:type owl:Thing ;
+              [ 
                 to:value "inbreuk huisrecht"@nl ;
-                to:weight 100
+                to:weight 100;
+                to:distance 10
               ] .
 
 tv:inbreuk_lichamelijke_integriteit
@@ -2235,55 +2250,55 @@ tv:inbreuk_lichamelijke_integriteit
       to:fingerprint
               [ to:value "inbreuk lichamelijke integriteit"@nl ;
                 to:weight 100 ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "recht op lichamelijke integriteit"@nl ;
-                to:weight "100" ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+              [ to:value "recht lichamelijke integriteit"@nl ;
+                to:weight 100 ;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "recht op leven"@nl ;
-                to:weight "100" ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+              [ to:value "recht leven"@nl ;
+                to:weight 100 ;
+                to:distance 10
               ] ;
       skos:altLabel "recht op lichamelijke integriteit"@nl , "recht op leven"@nl ;
       skos:prefLabel "inbreuk lichamelijke integriteit"@nl .
 
 tv:inbreuk_merkenrecht
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b37 , _:b36 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b44 , _:b43 , _:b45 , _:b47 , _:b46 , _:b48 , _:b49 , _:b52 , _:b51 , _:b50 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b60 , _:b59 , _:b61 ;
+     
       to:fingerprint
               [ to:value "inbreuk merkenrecht"@nl ;
                 to:weight 100 ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+                to:distance 10
               ] ;
       skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "behoorlijk gedrag"@nl , "subjectief recht"@nl , "beperkt zakelijk recht"@nl , "grondrecht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken"@nl ;
-      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."@nl ;
       skos:prefLabel "inbreuk merkenrecht"@nl .
 
 tv:inbreuk_octrooirecht
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b37 , _:b36 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b47 , _:b46 , _:b48 , _:b49 , _:b52 , _:b50 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b60 , _:b59 , _:b61 ;
+      
       to:fingerprint
               [ to:value "inbreuk octrooirecht"@nl ;
                 to:weight 100 ;
-                skos:note "Fingerprint automatically generated from skos:prefLabel"@en
+                to:distance 10;
               ] ;
-      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "ernst"@nl , "aard en plaats"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "grondrecht"@nl , "behoorlijk gedrag"@nl , "beperkt zakelijk recht"@nl , "subjectief recht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "inbreuk maken"@nl , "onrechtmatigheid"@nl ;
-      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."@nl ;
       skos:prefLabel "inbreuk octrooirecht"@nl .
 
 tv:inbreuk_op_een_absoluut_vermogensrecht
       mtv:same oldtv:vermogensrecht ;
       to:fingerprint
               [ to:value "vermogensrecht"@nl ;
-                to:weight "100" ;
+                to:weight 70 ;
                 skos:note "Fingerprint automatically generated from skos:altLabel"@en
               ] ;
       to:fingerprint
-              [ to:value "inbreuk op een absoluut vermogensrecht"@nl ;
+              [ to:value "inbreuk absoluut vermogensrecht"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "vermogensrecht"@nl ;
@@ -2294,88 +2309,41 @@ tv:inbreuk_op_een_persoonlijkheidsrecht
       mtv:same oldtv:persoonlijkheidsrecht ;
       to:fingerprint
               [ to:value "persoonlijkheidsrecht"@nl ;
-                to:weight "100" ;
+                to:weight 80 ;
                 skos:note "Fingerprint automatically generated from skos:altLabel"@en
               ] ;
       to:fingerprint
-              [ to:value "inbreuk op een persoonlijkheidsrecht"@nl ;
+              [ to:value "inbreuk persoonlijkheidsrecht"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "persoonlijkheidsrecht"@nl ;
-      skos:note "Voorbeelden van persoonlijkheidsrechten zijn bijvoorbeeld een recht op goede naam, leven, lichamelijke integriteit, privacy of vrijheid. Op deze rechten kan een inbreuk worden gemaakt waardoor een verplichting tot betaling van schadevergoeding kan ontstaan."^^xsd:string ;
+      skos:note "Voorbeelden van persoonlijkheidsrechten zijn bijvoorbeeld een recht op goede naam, leven, lichamelijke integriteit, privacy of vrijheid. Op deze rechten kan een inbreuk worden gemaakt waardoor een verplichting tot betaling van schadevergoeding kan ontstaan."@nl ;
       skos:prefLabel "inbreuk op een persoonlijkheidsrecht"@nl .
 
 tv:inbreuk_op_een_recht
       mtv:same oldtv:subjectief_recht , oldtv:objectief_recht , oldtv:intensiteit_van_de_inbreuk , oldtv:inbreuk_op_een_recht , oldtv:inbreukcriterium ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b34 , _:b35 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b47 , _:b46 , _:b48 , _:b49 , _:b51 , _:b52 , _:b50 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 ;
       to:fingerprint
-              [ to:value "wet"@nl ;
-                to:weight 16
-              ] ;
-      to:fingerprint
-              [ to:value "vermogensrecht"@nl ;
-                to:weight 47
-              ] ;
-      to:fingerprint
-              [ to:value "inbreuk"@nl ;
-                to:weight 8
-              ] ;
-      to:fingerprint
-              [ to:value "intensiteit van de inbreuk"@nl ;
+              [ to:value "intensiteit inbreuk"@nl ;
                 to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "subjectief recht"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "recht op privacy"@nl ;
-                to:weight 32
-              ] ;
-      to:fingerprint
-              [ to:value "recht op leven"@nl ;
-                to:weight 48
-              ] ;
-      to:fingerprint
-              [ to:value "recht van pachter"@nl ;
-                to:weight 79
-              ] ;
-      to:fingerprint
-              [ to:value "persoonlijkheidsrecht"@nl ;
-                to:weight 70
+                to:distance 10
               ] ;
       to:fingerprint
               [ to:value "norm"@nl ;
-                to:weight 27
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "absoluut recht"@nl ;
                 to:weight 77
               ] ;
       to:fingerprint
-              [ to:value "belangen van partijen"@nl ;
-                to:weight 12
-              ] ;
-      to:fingerprint
-              [ to:value "belangenafweging"@nl ;
-                to:weight 15
-              ] ;
-      to:fingerprint
               [ to:value "beperkt recht"@nl ;
                 to:weight 64
               ] ;
       to:fingerprint
-              [ to:value "recht op een goede naam"@nl ;
-                to:weight 64
-              ] ;
-      to:fingerprint
-              [ to:value "recht op vrijheid"@nl ;
-                to:weight 35
-              ] ;
-      to:fingerprint
               [ to:value "inbreukcriterium"@nl ;
-                to:weight "100" ;
+                to:weight 100 ;
                 skos:note "Fingerprint automatically generated from skos:altLabel"@en
               ] ;
       to:fingerprint
@@ -2383,86 +2351,44 @@ tv:inbreuk_op_een_recht
                 to:weight 30
               ] ;
       to:fingerprint
-              [ to:value "inbreuk op een recht"@nl ;
+              [ to:value "inbreuk recht"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       to:fingerprint
               [ to:value "objectief recht"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "recht van huurder"@nl ;
-                to:weight 57
-              ] ;
-      to:fingerprint
-              [ to:value "rechtspraak"@nl ;
-                to:weight 14
+                to:weight 80
               ] ;
       to:fingerprint
               [ to:value "inbreuk"@nl ;
-                to:weight "100" ;
+                to:weight 80 ;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
-              ] ;
-      to:fingerprint
-              [ to:value "recht op voortbrengselen van de geest"@nl ;
-                to:weight 79
               ] ;
       to:fingerprint
               [ to:value "inbreukmakende gedraging"@nl ;
                 to:weight 40
               ] ;
       to:fingerprint
-              [ to:value "recht op lichamelijke integriteit"@nl ;
-                to:weight 79
-              ] ;
-      to:fingerprint
-              [ to:value "inbreuk op een recht"@nl ;
-                to:weight 30
-              ] ;
-      to:fingerprint
-              [ to:value "jurisprudentie"@nl ;
-                to:weight 14
-              ] ;
-      to:fingerprint
-              [ to:value "wetgeving"@nl ;
-                to:weight 17
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatigheid"@nl ;
-                to:weight 11
-              ] ;
-      to:fingerprint
               [ to:value "inbreuk maken"@nl ;
                 to:weight 10
               ] ;
-      to:fingerprint
-              [ to:value "eigendomsrecht"@nl ;
-                to:weight 19
-              ] ;
-      to:fingerprint
-              [ to:value "botsende belangen"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "recht van vruchtgebruik"@nl ;
-                to:weight 48
-              ] ;
-      skos:altLabel "onzorgvuldig handelen"@nl , "inbreuk op een recht"@nl , "recht op lichamelijke integriteit"@nl , "belangen van partijen"@nl , "inbreukcriterium"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend" , "inbreukmakend"@nl , "intensiteit van de inbreuk"@nl , "recht op een goede naam"@nl , "recht van vruchtgebruik"@nl , "ernst"@nl , "rechtspraak"@nl , "subjectieve rechten"@nl , "intensiteit van de inbreuk op de grondrechten"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "zodanige inbreuk"@nl , "zorgvuldigheid"@nl , "behoorlijk gedrag"@nl , "beperkt zakelijk recht"@nl , "ondervonden schade"@nl , "recht op privacy"@nl , "inbreuk op een subjectief recht"@nl , "onrechtmatigheid"@nl , "auteursrecht"@nl , "beperkt recht"@nl , "wet"@nl , "recht op vrijheid"@nl , "recht van huurder"@nl , "persoonlijkheidsrecht"@nl , "eigendomsrecht"@nl , "grondwet"@nl , "octrooirecht"@nl , "inbreuk"@nl , "aard en plaats"@nl , "objectief recht"@nl , "aantasting"@nl , "jurisprudentie"@nl , "absoluut recht"@nl , "botsende belangen"@nl , "huisrecht"@nl , "vermogensrecht"@nl , "recht van pachter"@nl , "absolute vermogensrechten"@nl , "recht op voortbrengselen van de geest"@nl , "recht op leven"@nl , "inbreukmakende gedraging"@nl , "verwijtbaar handelen"@nl , "aantasting van subjectieve rechten"@nl , "lichamelijke identiteit"@nl , "grondrecht"@nl , "subjectief recht"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "wetgeving"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "norm"@nl , "storing in zijn recht"@nl , "inbreuk maken"@nl ;
-      skos:note "Een persoon kan aansprakelijk zijn voor een onrechtmatige gedraging van hemzelf of van personen waarvoor hij verantwoordelijk is. Voor het ontstaan van aansprakelijkheid is onder meer vereist dat er sprake is van 'onrechtmatigheid'. Onrechtmatigheid heeft betrekking op een gedraging of handeling in strijd met de wet, met de maatschappelijke zorgvuldigheid of als er een inbreuk is gemaakt op een recht. De rechten waarop een inbreuk kan worden gemaakt zijn bijvoorbeeld, het recht op leven, privacy, eigendom, auteursrecht, rechten van de huurder of pachter, het recht op een goede naam pf het recht op vruchtgebruik. Er kan inbreuk op deze rechten worden gemaakt indien er in strijd wordt gehandeld met de exclusieve bevoegdheid van degene die een bepaald recht heeft of indien deze rechthebbende wordt belemmerd in zijn genot, beschikking of het gebruik van zijn rechten. Hiervan is sprake als ernst en duur van de hinder, omstandigheden van het geval, voorzorgsmaatregelen om de hinder te beperken of te voorkomen en maatschappelijke zorgvuldigheid."^^xsd:string , "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string , """Bij de beoordeling of een gedraging kan leiden tot aansprakelijkheid moet worden gekeken of er sprake is van een handelen in strijd met de wet, in strijd met de maatschappij opvattingen of dat er een inbreuk is gemaakt op een recht. In geval er sprake is van een inbreuk op een recht kunnen belangen van partijen botsen. Indien er sprake is van botsende rechten zal zowel een algemene beoordeling van de onderlinge rangorde van de ingeroepen grondrechten als
-	de intensiteit van de inbreuk op de grondrechten  in overweging worden genomen."""^^xsd:string , "Een persoon kan aansprakelijk zijn als er sprake is van een onrechtmatig handelen. Handelen is onrechtmatig als er gehandeld is in strijd met de wet, in strijd met hetgeen in de maatschappij als zorgvuldig wordt beschouwd of als er een inbreuk is gemaakt op een recht. Indien iemand een inbreuk heeft gemaakt op  het recht van een ander, moet dit een inbreuk zijn op een subjectief recht. Een subjectief recht is een persoonlijkheidsrecht (zoals het recht op een goede naam, op leven, op lichamelijk integriteit, op privacy of op vrijheid) of op een vermogensrecht ( bijvoorbeeld het recht op eigendom, voortbrengselen van de geest (intellectueel eigendom/auteursrecht) of op rechten van huurder, pachter of rechten van vruchtgebruik."^^xsd:string ;
+      skos:note "Een persoon kan aansprakelijk zijn voor een onrechtmatige gedraging van hemzelf of van personen waarvoor hij verantwoordelijk is. Voor het ontstaan van aansprakelijkheid is onder meer vereist dat er sprake is van 'onrechtmatigheid'. Onrechtmatigheid heeft betrekking op een gedraging of handeling in strijd met de wet, met de maatschappelijke zorgvuldigheid of als er een inbreuk is gemaakt op een recht. De rechten waarop een inbreuk kan worden gemaakt zijn bijvoorbeeld, het recht op leven, privacy, eigendom, auteursrecht, rechten van de huurder of pachter, het recht op een goede naam pf het recht op vruchtgebruik. Er kan inbreuk op deze rechten worden gemaakt indien er in strijd wordt gehandeld met de exclusieve bevoegdheid van degene die een bepaald recht heeft of indien deze rechthebbende wordt belemmerd in zijn genot, beschikking of het gebruik van zijn rechten. Hiervan is sprake als ernst en duur van de hinder, omstandigheden van het geval, voorzorgsmaatregelen om de hinder te beperken of te voorkomen en maatschappelijke zorgvuldigheid."@nl , "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."@nl , "Bij de beoordeling of een gedraging kan leiden tot aansprakelijkheid moet worden gekeken of er sprake is van een handelen in strijd met de wet, in strijd met de maatschappij opvattingen of dat er een inbreuk is gemaakt op een recht. In geval er sprake is van een inbreuk op een recht kunnen belangen van partijen botsen. Indien er sprake is van botsende rechten zal zowel een algemene beoordeling van de onderlinge rangorde van de ingeroepen grondrechten als
+	de intensiteit van de inbreuk op de grondrechten  in overweging worden genomen."@nl , "Een persoon kan aansprakelijk zijn als er sprake is van een onrechtmatig handelen. Handelen is onrechtmatig als er gehandeld is in strijd met de wet, in strijd met hetgeen in de maatschappij als zorgvuldig wordt beschouwd of als er een inbreuk is gemaakt op een recht. Indien iemand een inbreuk heeft gemaakt op  het recht van een ander, moet dit een inbreuk zijn op een subjectief recht. Een subjectief recht is een persoonlijkheidsrecht (zoals het recht op een goede naam, op leven, op lichamelijk integriteit, op privacy of op vrijheid) of op een vermogensrecht ( bijvoorbeeld het recht op eigendom, voortbrengselen van de geest (intellectueel eigendom/auteursrecht) of op rechten van huurder, pachter of rechten van vruchtgebruik."@nl ;
       skos:prefLabel "inbreuk op een recht"@nl .
 
 tv:inbreuk_privacy
       mtv:same oldtv:recht_op_privacy ;
       to:fingerprint
-              [ to:value "recht op privacy"@nl ;
-                to:weight "100" ;
+              [ to:value "recht oprivacy"@nl ;
+                to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       to:fingerprint
               [ to:value "inbreuk privacy"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
       skos:altLabel "recht op privacy"@nl ;
@@ -2470,19 +2396,19 @@ tv:inbreuk_privacy
 
 tv:inbreuk_recht_op_bijstand
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b35 , _:b34 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b46 , _:b47 , _:b48 , _:b49 , _:b51 , _:b50 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b60 , _:b59 , _:b61 ;
+      
       to:fingerprint
-              [ to:value "inbreuk recht op bijstand"@nl ;
+              [ to:value "inbreuk recht bijstand"@nl ;
                 to:weight 100 ;
+                to:distance 10;
                 skos:note "Fingerprint automatically generated from skos:prefLabel"@en
               ] ;
-      skos:altLabel "onzorgvuldig handelen"@nl , "auteursrecht"@nl , "inbreuk op een recht"@nl , "belangenafweging"@nl , "merkenrecht"@nl , "inbreukmakend"@nl , "persoonlijkheidsrecht"@nl , "grondwet"@nl , "eigendomsrecht"@nl , "octrooirecht"@nl , "aard en plaats"@nl , "ernst"@nl , "aantasting"@nl , "subjectieve rechten"@nl , "huisrecht"@nl , "verwijt treffen"@nl , "culpose inbreuk"@nl , "absolute vermogensrechten"@nl , "verwijtbaar handelen"@nl , "zodanige inbreuk"@nl , "aantasting van subjectieve rechten"@nl , "zorgvuldigheid"@nl , "lichamelijke identiteit"@nl , "beperkt zakelijk recht"@nl , "behoorlijk gedrag"@nl , "subjectief recht"@nl , "grondrecht"@nl , "ondervonden schade"@nl , "ongeschreven zorgvuldigheidsnorm"@nl , "inbreuk op een subjectief recht"@nl , "zorgvuldigheidsnorm"@nl , "opzettelijk"@nl , "storing in zijn recht"@nl , "onrechtmatigheid"@nl , "inbreuk maken"@nl , "inbreuk maken" ;
-      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."^^xsd:string ;
+      skos:note "Een persoon is aansprakelijk voor schade als gevolg van zijn handelen als dit handelen als onrechtmatig kan worden aangemerkt. Het maken van een inbreuk op een recht is een vorm van onrechtmatig handelen. Er is sprake van een inbreuk makende handeling als een ander dan de rechthebbende doet iets waartoe uitsluitend de rechthebbende bevoegd is of als een ander de rechthebbende belemmert of verhindert in de uitoefening van zijn bevoegheden. Hierbij spelen de ernst en duur van de hinder, de omstandigheden van het geval, de voorzorgsmaatregelen om de hinder te beperken dan wel voorkomen en hetgeen naar maatstaven van maatschappelijke zorguldigheid behoort een rol."@nl ;
       skos:prefLabel "inbreuk recht op bijstand"@nl .
 
 tv:inbreuk_recht_op_leefbaar_milieu
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b35 , _:b34 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b47 , _:b46 , _:b48 , _:b49 , _:b50 , _:b51 , _:b52 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 ;
+      
       to:fingerprint
               [ to:value "inbreuk recht op leefbaar milieu"@nl ;
                 to:weight 100 ;
@@ -2494,7 +2420,7 @@ tv:inbreuk_recht_op_leefbaar_milieu
 
 tv:inbreuk_recht_op_onderwijs
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b35 , _:b34 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b44 , _:b43 , _:b45 , _:b47 , _:b46 , _:b48 , _:b49 , _:b50 , _:b52 , _:b51 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b59 , _:b60 , _:b61 ;
+      
       to:fingerprint
               [ to:value "inbreuk recht op onderwijs"@nl ;
                 to:weight 100 ;
@@ -3335,7 +3261,7 @@ tv:openbare_weg
 
 tv:opzettelijke_inbreuk
       mtv:same oldtv:inbreuk_op_een_recht ;
-      to:fingerprint _:b31 , _:b32 , _:b33 , _:b35 , _:b34 , _:b36 , _:b37 , _:b38 , _:b39 , _:b40 , _:b41 , _:b42 , _:b43 , _:b44 , _:b45 , _:b46 , _:b47 , _:b48 , _:b49 , _:b51 , _:b52 , _:b50 , _:b53 , _:b54 , _:b55 , _:b56 , _:b57 , _:b58 , _:b60 , _:b59 , _:b61 ;
+      
       to:fingerprint
               [ to:value "opzettelijke inbreuk"@nl ;
                 to:weight 100 ;
