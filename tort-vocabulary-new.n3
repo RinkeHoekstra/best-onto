@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Jun 28 10:59:53 CEST 2010
+# Saved by TopBraid on Tue Aug 17 14:21:58 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -36,8 +36,10 @@
 
 :aansprakelijkheid_buiten_schuld
       rdf:type best:Concept , skos:Concept ;
+      skos:altLabel "kwalitatieve aansprakelijkheid"^^xsd:string ;
       skos:broader :aansprakelijkheid ;
-      skos:inScheme :tort-scheme .
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "aansprakelijkheid buiten schuld"@nl .
 
 :aansprakelijkheid_in_bedrijfsverband
       rdf:type best:Concept , skos:Concept ;
@@ -67,7 +69,8 @@
 :aansprakelijkheid_voor_eigen_gedrag
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijkheid ;
-      skos:inScheme :tort-scheme .
+      skos:inScheme :tort-scheme ;
+      skos:related :grond_toerekening_aan_dader .
 
 :aansprakelijkheid_voor_kinderen
       rdf:type best:Concept , skos:Concept ;
@@ -77,7 +80,7 @@
 
 :aansprakelijkheid_voor_kinderen_van_veertien_en_vijftien_jaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :schuldaansprakelijkheid ;
+      skos:broader :verwijtbaarheid ;
       skos:inScheme :tort-scheme ;
       skos:related :ontbreken_mogelijkheid_beletten_gedraging_kind .
 
@@ -194,7 +197,7 @@
 
 :bevrijdende_omstandigheden_risicoaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :toerekening_aan_dader ;
+      skos:broader :aansprakelijkheid_buiten_schuld ;
       skos:inScheme :tort-scheme .
 
 :bewaarder_gevaarlijke_stof
@@ -214,14 +217,14 @@
 
 :bezitter_roerende_zaak
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:prefLabel "bezitter roerende zaak"@nl ;
       skos:related :aansprakelijkheid_voor_producten , :aansprakelijkheid_voor_zaken .
 
 :bezitter_van_een_dier
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_dieren .
 
@@ -320,13 +323,13 @@
 
 :exploitant_boorgat
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_boorgaten .
 
 :exploitant_stortplaats
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_stortplaatsen .
 
@@ -558,7 +561,7 @@
 
 :nadere_eisen_risicoaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :toerekening_aan_dader ;
+      skos:broader :aansprakelijkheid_buiten_schuld ;
       skos:inScheme :tort-scheme .
 
 :noodweer
@@ -589,7 +592,7 @@
 
 :onderlinge_draagplicht
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :toerekening_aan_dader ;
+      skos:broader :aansprakelijkheid_buiten_schuld ;
       skos:inScheme :tort-scheme .
 
 :oneerlijke_concurrentie
@@ -631,7 +634,7 @@
 
 :opdrachtgever
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_niet_ondergeschikten .
 
@@ -664,15 +667,29 @@
       skos:broader :rechtvaardigingsgrond ;
       skos:inScheme :tort-scheme .
 
-:persoon_aansprakelijk_voor_opstal
+:persoon_aansprakelijk_buiten_schuld
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aansprakelijke_persoon ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "persoon aansprakelijk buiten schuld"@nl ;
+      skos:related :aansprakelijkheid_buiten_schuld .
+
+:persoon_aansprakelijk_door_schuld
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :aansprakelijke_persoon ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "persoon aansprakelijk door schuld"@nl ;
+      skos:related :schuldaansprakelijkheid .
+
+:persoon_aansprakelijk_voor_opstal
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_opstallen .
 
 :persoon_aansprakelijk_voor_stof
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :criteria_aansprakelijkheid_voor_stoffen .
 
@@ -689,7 +706,7 @@
 
 :producent_roerende_zaak
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_producten .
 
@@ -715,7 +732,7 @@
 
 :risicoaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :toerekening_op_basis_van_specifieke_wettelijke_bepaling , :aansprakelijkheid_buiten_schuld ;
+      skos:broader :aansprakelijkheid_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :nadere_eisen_risicoaansprakelijkheid .
 
@@ -757,9 +774,9 @@
 
 :schuldaansprakelijkheid
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :toerekening_op_basis_van_schuld , :aansprakelijkheid_voor_eigen_gedrag ;
+      skos:broader :aansprakelijkheid_voor_eigen_gedrag ;
       skos:inScheme :tort-scheme ;
-      skos:related :schulduitsluitingsgrond .
+      skos:related :schulduitsluitingsgrond , :toerekening_op_basis_van_schuld .
 
 :schulduitsluitingsgrond
       rdf:type best:Concept , skos:Concept ;
@@ -840,7 +857,7 @@
 
 :uitvoerder_bedrijf
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :gebruik_bij_uitoefening_in_bedrijfsverband , :aansprakelijkheid_in_bedrijfsverband .
 
@@ -897,7 +914,7 @@
 
 :vertegenwoordigde
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_voor_vertegenwoordigers .
 
@@ -911,6 +928,12 @@
       rdf:type best:Concept , skos:Concept ;
       skos:broader :nadere_eisen_risicoaansprakelijkheid ;
       skos:inScheme :tort-scheme .
+
+:verwijtbaarheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :aansprakelijkheid_buiten_schuld ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "verwijtbaarheid"@nl .
 
 :voorwaarden_aansprakelijkheid_zuiver_nalaten
       rdf:type best:Concept , skos:Concept ;
@@ -940,6 +963,10 @@
 :werkgever
       rdf:type best:Concept , skos:Concept ;
       to:fingerprint
+              [ to:value "bedrijf"^^xsd:string ;
+                to:weight 80
+              ] ;
+      to:fingerprint
               [ to:value "organisatie"^^xsd:string ;
                 to:weight 60
               ] ;
@@ -947,11 +974,7 @@
               [ to:value "werkgever"^^xsd:string ;
                 to:weight 100
               ] ;
-      to:fingerprint
-              [ to:value "bedrijf"^^xsd:string ;
-                to:weight 80
-              ] ;
-      skos:broader :aansprakelijke_persoon ;
+      skos:broader :persoon_aansprakelijk_buiten_schuld ;
       skos:inScheme :tort-scheme ;
       skos:related :aansprakelijkheid_van_werkgever .
 
