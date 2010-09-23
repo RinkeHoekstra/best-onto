@@ -1335,7 +1335,8 @@ tv:bijzonder_gevaar
 
       _:b29
             to:value "indeling verpakking kenmerken gevaarlijke stoffen"@nl ;
-            to:weight 78 ; to:distance 10.
+            to:weight 78 ; 
+            to:distance 10 .
 
       _:b14
             to:value "voor de voortplanting vergiftig"@nl ;
@@ -1343,14 +1344,16 @@ tv:bijzonder_gevaar
 
       _:b26
             to:value "chemische elementen verbindingen"@nl ;
-            to:weight 78; to:distance 10 .
+            to:weight 78; 
+            to:distance 10 .
 
       _:b3  to:value "zodanige eigenschappen"@nl ;
             to:weight 30 .
 
       _:b17
             to:value "criteria methoden"@nl ;
-            to:weight 78 ; to:distance 10.
+            to:weight 78 ; 
+            to:distance 10 .
 
       _:b1  to:value "richtlijn 67/548/EEG"@nl ;
             to:weight 78 .
@@ -1372,7 +1375,8 @@ tv:bijzonder_gevaar
 
             _:b27
                   to:value "verpakking sluiting"@nl ;
-                  to:weight 78 ; to:distance 10.
+                  to:weight 78 ; 
+                  to:distance 10 .
 
             _:b13
                   to:value "stoffen met een bijzonder gevaar van ernstige aard"@nl ;
@@ -1383,7 +1387,8 @@ tv:bijzonder_gevaar
                   to:weight 78 .
 
             _:b5  to:value "irriterend stof"@nl ;
-                  to:weight 78 ; to:distance 10.
+                  to:weight 78 ; 
+                  to:distance 10 .
 
 tv:bijzonder_gevaar_van_ernstige_aard
       mtv:same oldtv:stoffen_met_een_bijzonder_gevaar_van_ernstige_aard ;
