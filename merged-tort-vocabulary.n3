@@ -4559,7 +4559,11 @@ oldtv:zeggenschap_over_de_gedragingen
 oldtv:zorgvuldigheidsnorm
       mtv:same tv:zorgvuldigheidsnorm .
 
+tv:inbreuk_overeenkomst to:fingerprint [to:value "inbreuk overeenkomst"; to:weight 100; to:distance 10].
 
+tv:persoon_aansprakelijk_buiten_schuld to:fingerprint [to:value "persoon buiten schuld"; to:weight 100; to:distance 10], [to:value "persoon aansprakelijk"; to:weight 50; to:distance 10].
+
+tv:verwijtbaarheid to:fingerprint [to:value "verwijtbaarheid"; to:weight 100], [to:value "verwijtbaar"; to:weight 50].
 
 
 
