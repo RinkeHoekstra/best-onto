@@ -2131,7 +2131,7 @@ tv:hinder_verontreiniging_of_andere_gevolgen_op_basis_waarvan_persoonlijke_aansp
                               to:fingerprint
                                       [ to:value "hinder"@nl ;
                                         to:weight 30 ;
-                                      ] , [ to:value "boorgat"@nl; to:weight 30], [to:value "stortplaats"@nl; to:weight 30]
+                                      ] , [ to:value "boorgat"@nl; to:weight 30], [to:value "stortplaats"@nl; to:weight 30];
       skos:altLabel "tenzij hinder"@nl ;
       skos:note "Er bestaat geen aansprakelijkheid voor gevaarlijke stoffen, boorgaten of stortplaatsen indien de schade het gevolg is van hinder, verontreiniging of andere gevolgen waarvoor aansprakelijkheid voor eigen handelen, dat wil zeggen op grond van een onrechtmatige daad, zou hebben ontbroken."@nl ;
       skos:prefLabel "hinder verontreiniging of andere gevolgen op basis waarvan persoonlijke aansprakelijkheid zou ontbreken"@nl .
@@ -2246,7 +2246,7 @@ tv:inbreuk_op_een_recht
       mtv:same oldtv:subjectief_recht , oldtv:objectief_recht , oldtv:intensiteit_van_de_inbreuk , oldtv:inbreuk_op_een_recht , oldtv:inbreukcriterium ;
       to:fingerprint
               [ to:value "intensiteit inbreuk"@nl ;
-                to:weight 100
+                to:weight 100;
                 to:distance 10
               ] ;
       to:fingerprint
@@ -2632,7 +2632,7 @@ tv:onbevoegd_gegeven_ambtelijk_bevel
       mtv:same oldtv:onbevoegd_gegeven_ambtelijk_bevel ;
       to:fingerprint
               [ to:value "onbevoegd ambtelijk bevel"@nl ;
-                to:weight 100 
+                to:weight 100; 
                 to:distance 10
               ] ;
       skos:note "Er kan sprake zijn van een onbevoegd gegeven ambtelijk bevel. De aansprakelijkheid kan komen te ontvallen indien iemand er op af mocht gaan dat dit bevel bevoegd gegeven was."@nl ;
@@ -3504,288 +3504,206 @@ tv:toestemming_van_gelaedeerde
       skos:prefLabel "toestemming van gelaedeerde"@nl .
 
 tv:tot_onderhoud_verplicht_overheidslichaam
+    to:fingerprint
+            [ to:value "onderhoud verplicht overheidslichaam"@nl ;
+              to:weight 100;
+              to:distance 10
+            ] ;
       to:fingerprint
-              [ to:value "tot onderhoud verplicht overheidslichaam"@nl ;
-                to:weight 100 
+              [ to:value "onderhoud overheidslichaam"@nl ;
+                to:weight 80;
+                to:distance 10
+              ] ;
+      to:fingerprint
+              [ to:value "onderhoud overheid"@nl ;
+                to:weight 70;
+                to:distance 10
               ] ;
       skos:prefLabel "tot onderhoud verplicht overheidslichaam"@nl .
 
 tv:uitsluiting_bij_opzet_of_roekeloosheid
       to:fingerprint
-              [ to:value "uitsluiting bij opzet of roekeloosheid"@nl ;
-                to:weight 100 
+              [ to:value "uitsluiting opzet"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
+      to:fingerprint
+              [ to:value "uitsluiting roekeloosheid"@nl ;
+                to:weight 100;
+                to:distance 10 
+              ] ;
+      to:fingerprint
+              [ to:value "uitsluiting roekeloos"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "uitsluiting bij opzet of roekeloosheid"@nl .
 
 tv:uitstroming_gevolg_van_niet_beheersen_van_ondergrondse_krachten
       mtv:same oldtv:onbeheersbare_ondergrondse_natuurlijke_krachten , oldtv:ontstaansvoorwaarde_schade_mijnbouwwerk ;
       to:fingerprint
-              [ to:value "bodemverschuiving"@nl ;
-                to:weight 25
+              [ to:value "uitstroming ondergrondse kracht"@nl ;
+                to:weight 100;
+                to:distance 15
               ] ;
       to:fingerprint
-              [ to:value "niet beheersen ondergrondse natuurkrachten"@nl ;
-                to:weight 100
+              [ to:value "beheersen ondergrondse kracht"@nl ;
+                to:weight 100;
+                to:distance 15
               ] ;
-      to:fingerprint
-              [ to:value "exploitant"@nl ;
-                to:weight 6
-              ] ;
-      to:fingerprint
-              [ to:value "uitstroming van delfstoffen"@nl ;
-                to:weight 81
-              ] ;
-      to:fingerprint
-              [ to:value "onbeheersbaar"@nl ;
-                to:weight 26
-              ] ;
-      to:fingerprint
-              [ to:value "onbeheersbare ondergrondse natuurlijke krachten"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "mijnbouwwerk"@nl ;
-                to:weight 81
-              ] ;
-      to:fingerprint
-              [ to:value "uitstroming gevolg van niet beheersen van ondergrondse krachten"@nl ;
-                to:weight 100 
-              ] ;
-      to:fingerprint
-              [ to:value "exploitatie"@nl ;
-                to:weight 7
-              ] ;
-      to:fingerprint
-              [ to:value "delfstof"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "beweging van de bodem als gevolg van de aanleg of exploitatie van dat werk"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "schade"@nl ;
-                to:weight 2
-              ] ;
-      to:fingerprint
-              [ to:value "onbeheersbare natuurlijke krachten"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "door de aanleg of bij de exploitatie van het werk ontketend"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "ondergrondse natuurkrachten"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "bodemstijging"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "ondergrondse"@nl ;
-                to:weight 10
-              ] ;
-      to:fingerprint
-              [ to:value "als gevolg van de aanleg of bij exploitatie zijn ontketend"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "aardgas"@nl ;
-                to:weight 20
-              ] ;
-      to:fingerprint
-              [ to:value "beweging van de bodem"@nl ;
-                to:weight 29
-              ] ;
-      to:fingerprint
-              [ to:value "schadeveroorzakende gebeurtenis"@nl ;
-                to:weight 11
-              ] ;
-      to:fingerprint
-              [ to:value "delfstoffen"@nl ;
-                to:weight 16
-              ] ;
-      to:fingerprint
-              [ to:value "onstaansvoorwaarde schade mijnbouwwerk"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "bodemdaling"@nl ;
-                to:weight 20
-              ] ;
-      to:fingerprint
-              [ to:value "natuurlijke krachten"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "boorgat"@nl ;
-                to:weight 32
-              ] ;
-      to:fingerprint
-              [ to:value "mijnbouwwer"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "uitstroming"@nl ;
-                to:weight 12
-              ] ;
-      to:fingerprint
-              [ to:value "bodemtrilling"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "ondergrondse natuurkrachten"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "door de aanleg of bij de exploitatie van het werk zijn ontketend"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "aardolie"@nl ;
-                to:weight 16
-              ] ;
-      skos:altLabel "onstaansvoorwaarde schade mijnbouwwerk"@nl , "beweging van de bodem als gevolg van de aanleg of exploitatie van dat werk"@nl , "mijnbouwwerk"@nl , "niet beheersen ondergrondse natuurkrachten"@nl , "exploitant"@nl , "bodemstijging"@nl , "delfstoffen"@nl , "mijnbouwwer"@nl , "schadeveroorzakende gebeurtenis"@nl , "natuurlijke krachten"@nl , "beweging van de bodem"@nl , "delfstof"@nl , "boorgat"@nl , "onbeheersbare natuurlijke krachten"@nl , "bodemtrilling"@nl , "ondergrondse"@nl , "uitstroming van delfstoffen"@nl , "als gevolg van de aanleg of bij exploitatie zijn ontketend"@nl , "bodemdaling"@nl , "ondergrondse natuurkrachten"@nl , "door de aanleg of bij de exploitatie van het werk ontketend"@nl , "aardgas"@nl , "aardolie"@nl , "onbeheersbaar"@nl , "onbeheersbare ondergrondse natuurlijke krachten"@nl , "schade"@nl , "door de aanleg of bij de exploitatie van het werk zijn ontketend"@nl , "exploitatie"@nl , "uitstroming"@nl , "bodemverschuiving"@nl ;
       skos:note "De exploitant van een mijnbouwwerk kan aansprakelijkheid worden gesteld voor schade als gevolg van uitstroom van delfstoffen en schade als gevolg van bodemverschuiving. Bepalend voor de aansprakelijkheid bij uitstroom van delfstoffen is de schadeveroorzakende gebeurtenis, dat wil zeggen de ondergrondse natuurkrachten. De uitstroom zelf is niet van belang bij het bepalen van de aansprakelijke persoon. In geval van bodembeweging is het juist de gebeurtenis die heeft geleid tot de schade van belang voor het bepalen van de aansprakelijkheid. Daarbij speelt een rol of en wanneer de exploitant bekend is geworden met de schadeveroorzakende gebeurtenis."@nl ;
       skos:prefLabel "uitstroming gevolg van niet beheersen van ondergrondse krachten"@nl .
 
 tv:uitvoerder_bedrijf
       to:fingerprint
               [ to:value "uitvoerder bedrijf"@nl ;
-                to:weight 100 
+                to:weight 100;
+                to:distance 10
+              ] ;
+      to:fingerprint
+              [ to:value "uitvoeren bedrijf"@nl ;
+                to:weight 50;
+                to:distance 10
+              ] ;
+      to:fingerprint
+              [ to:value "uitvoerder"@nl ;
+                to:weight 30
               ] ;
       skos:prefLabel "uitvoerder bedrijf"@nl .
 
 tv:uitvoering_van_een_wettelijk_voorschrift
       mtv:same oldtv:wettelijk_voorschrift ;
-      to:fingerprint _:b69 , _:b70 ;
       to:fingerprint
-              [ to:value "uitvoering van een wettelijk voorschrift"@nl ;
-                to:weight 100 
+              [ to:value "uitvoering wettelijk voorschrift"@nl ;
+                to:weight 100;
+                to:distance 10 
               ] ;
+              to:fingerprint
+                      [ to:value "uitvoering wettelijk bevoegdheid"@nl ;
+                        to:weight 100;
+                        to:distance 10 
+                      ] ;
+                      to:fingerprint
+                              [ to:value "uitvoeren wettelijk voorschrift"@nl ;
+                                to:weight 100;
+                                to:distance 10 
+                              ] ;
+                              to:fingerprint
+                                      [ to:value "uitvoeren wettelijk bevoegdheid"@nl ;
+                                        to:weight 100;
+                                        to:distance 10 
+                                      ] ;
       skos:altLabel "wettelijk voorschrift"@nl , "wettelijke bevoegdheid"@nl ;
       skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Schadeveroorzakend handelen kan gerechtvaardigt zijn indien schade is ontstaan door het handelen op grond van een wettelijke verplichting."@nl ;
       skos:prefLabel "uitvoering van een wettelijk voorschrift"@nl .
 
 tv:verantwoordelijkheid_overheid_als_waterwegbeheerder
       mtv:same oldtv:overheid ;
-      to:fingerprint _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b79 , _:b80 , _:b81 , _:b82 ;
       to:fingerprint
-              [ to:value "verantwoordelijkheid overheid als waterwegbeheerder"@nl ;
-                to:weight 100 
+              [ to:value "overheid waterwegbeheer"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
-      skos:altLabel "provincie"@nl , "gemeente"@nl , "overheidsbestuurder"@nl , "waterschap"@nl , "provinciale staten"@nl , "college van burgemeester en wethouders"@nl , "gemeente bestuur"@nl , "overheid"@nl , "centrale overheid"@nl , "overheidscollege"@nl , "bestuursorgaan"@nl , "decentrale overheid"@nl ;
+      to:fingerprint
+              [ to:value "overheid waterwegbeheerder"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
+              to:fingerprint
+                      [ to:value "waterwegbeheerder"@nl ;
+                        to:weight 50
+                      ] ;
       skos:note "De overheid kan ook aansprakelijk zijn voor een onrechtmatige daad. De overheid is op grond van het civiel recht aansprakelijk voor een onrechtmatige daad als er geen publiekrechtelijke regeling om de aansprakelijkheid te beoordelen openstaat. Als hetzelfde resultaat (aansprakelijkheidstelling) kan worden verkregen op grond van een publiekrechtelijke regeling dan moet deze weg gevolgd worden. In laatste instantie staat de weg naar de civiele rechter open."@nl ;
       skos:prefLabel "verantwoordelijkheid overheid als waterwegbeheerder"@nl .
 
 tv:verantwoordelijkheid_overheid_als_wegbeheerder
       mtv:same oldtv:overheid ;
-      to:fingerprint _:b71 , _:b72 , _:b73 , _:b74 , _:b75 , _:b76 , _:b77 , _:b78 , _:b80 , _:b79 , _:b81 , _:b82 ;
       to:fingerprint
-              [ to:value "verantwoordelijkheid overheid als wegbeheerder"@nl ;
-                to:weight 100 
+              [ to:value "wegbeheerder"@nl ;
+                to:weight 50
               ] ;
-      skos:altLabel "provincie"@nl , "overheidsbestuurder"@nl , "gemeente"@nl , "waterschap"@nl , "provinciale staten"@nl , "college van burgemeester en wethouders"@nl , "gemeente bestuur"@nl , "overheid"@nl , "centrale overheid"@nl , "bestuursorgaan"@nl , "overheidscollege"@nl , "decentrale overheid"@nl ;
+      to:fingerprint
+              [ to:value "overheid wegbeheerder"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
+      to:fingerprint
+              [ to:value "overheid wegbeheer"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
       skos:note "De overheid kan ook aansprakelijk zijn voor een onrechtmatige daad. De overheid is op grond van het civiel recht aansprakelijk voor een onrechtmatige daad als er geen publiekrechtelijke regeling om de aansprakelijkheid te beoordelen openstaat. Als hetzelfde resultaat (aansprakelijkheidstelling) kan worden verkregen op grond van een publiekrechtelijke regeling dan moet deze weg gevolgd worden. In laatste instantie staat de weg naar de civiele rechter open."@nl ;
       skos:prefLabel "verantwoordelijkheid overheid als wegbeheerder"@nl .
 
 tv:verjaringstermijn_twintig_jaar_na_sluiting
       mtv:same oldtv:bekendwording_20_jaar_na_sluiting ;
       to:fingerprint
-              [ to:value "exploitant van een stortplaats"@nl ;
-                to:weight 20
+              [ to:value "verjaring 20 jaar"@nl ;
+                to:weight 70;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "bekendwording 20 jaar na sluiting"@nl ;
-                to:weight 100
+              [ to:value "bevrijdende verjaring"@nl ;
+                to:weight 70;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "bekendwording 20 jaar naar sluiting"@nl ;
-                to:weight 60
+              [ to:value "sluiting"@nl ;
+                to:weight 40
               ] ;
       to:fingerprint
-              [ to:value "stortplaats"@nl ;
-                to:weight 21
+              [ to:value "verjaring twintig jaar"@nl ;
+                to:weight 70;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "exploitant van een stortplaats"@nl ;
-                to:weight 20
+              [ to:value "verjaringstermijn twintig jaar"@nl ;
+                to:weight 80;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "stof"@nl ;
-                to:weight 5
+              [ to:value "verjaringstermijn 20 jaar"@nl ;
+                to:weight 80;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "20 jaar"@nl ;
-                to:weight 10
+              [ to:value "verjaring stortplaats"@nl ;
+                to:weight 100;
+                to:distance 15
               ] ;
-      to:fingerprint
-              [ to:value "bekend worden"@nl ;
-                to:weight 9
-              ] ;
-      to:fingerprint
-              [ to:value "na sluiting"@nl ;
-                to:weight 9
-              ] ;
-      to:fingerprint
-              [ to:value "verontreiniging"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "verjaringstermijn twintig jaar na sluiting"@nl ;
-                to:weight 100 
-              ] ;
-      to:fingerprint
-              [ to:value "bekendwording 20 jaar naar sluiting"@nl ;
-                to:weight 60
-              ] ;
-      to:fingerprint
-              [ to:value "bekend is geworden"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "stof"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "verontreiniging"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "stortplaats"@nl ;
-                to:weight 21
-              ] ;
-      to:fingerprint
-              [ to:value "bekend worden"@nl ;
-                to:weight 9
-              ] ;
-      to:fingerprint
-              [ to:value "20 jaar"@nl ;
-                to:weight 10
-              ] ;
-      to:fingerprint
-              [ to:value "bekend is geworden"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "bekendwording 20 jaar na sluiting"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "na sluiting"@nl ;
-                to:weight 9
-              ] ;
-      skos:altLabel "bekendwording 20 jaar na sluiting"@nl , "na sluiting"@nl , "20 jaar"@nl , "exploitant van een stortplaats"@nl , "verontreiniging"@nl , "bekend worden"@nl , "bekend is geworden"@nl , "bekendwording 20 jaar naar sluiting"@nl , "stof"@nl , "stortplaats"@nl ;
       skos:note "Er bestaat geen aansprakelijkheid bij bekendwording van de schade na meer dan 20 jaar na sluiting van de stortplaats."@nl ;
       skos:prefLabel "verjaringstermijn twintig jaar na sluiting"@nl .
 
 tv:verjaringstermijn_vijf_jaar_na_sluiting
-      to:fingerprint
-              [ to:value "verjaringstermijn vijf jaar na sluiting"@nl ;
-                to:weight 100 
-              ] ;
+    to:fingerprint
+            [ to:value "verjaring 5 jaar"@nl ;
+              to:weight 70;
+              to:distance 10
+            ] ;
+    to:fingerprint
+            [ to:value "bevrijdende verjaring"@nl ;
+              to:weight 70;
+              to:distance 10
+            ] ;
+    to:fingerprint
+            [ to:value "verjaring vijf jaar"@nl ;
+              to:weight 70;
+              to:distance 10
+            ] ;
+    to:fingerprint
+            [ to:value "verjaringstermijn vijf jaar"@nl ;
+              to:weight 80;
+              to:distance 10
+            ] ;
+    to:fingerprint
+            [ to:value "verjaringstermijn 5 jaar"@nl ;
+              to:weight 80;
+              to:distance 10
+            ] ;
+    to:fingerprint
+            [ to:value "sluiting"@nl ;
+              to:weight 40
+            ] ;
       skos:prefLabel "verjaringstermijn vijf jaar na sluiting"@nl .
 
 tv:verkeersaansprakelijkheid
@@ -3793,129 +3711,104 @@ tv:verkeersaansprakelijkheid
               [ to:value "verkeersaansprakelijkheid"@nl ;
                 to:weight 100 
               ] ;
+      to:fingerprint
+              [ to:value "aansprakelijk verkeer"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
       skos:prefLabel "verkeersaansprakelijkheid"@nl .
 
 tv:vermindering_op_basis_relativiteitsbeginsel
       mtv:same oldtv:relativiteit , oldtv:correctie_langemeijer ;
       to:fingerprint
               [ to:value "schutznorm"@nl ;
-                to:weight "100" 
+                to:weight 100 
               ] ;
       to:fingerprint
               [ to:value "relativiteit"@nl ;
-                to:weight "100" 
+                to:weight 100;
               ] ;
       to:fingerprint
               [ to:value "correctie langemeijer"@nl ;
-                to:weight "100" 
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "geschonden norm niet strekt tot bescherming tegen de schade" ;
-                to:weight "100" 
+              [ to:value "strekt bescherming" ;
+                to:weight 100;
+                to:distance 10 
               ] ;
       to:fingerprint
-              [ to:value "strekt niet tot bescherming" ;
-                to:weight "100" 
+              [ to:value "relativiteitsvereiste"@nl ;
+                to:weight 100
               ] ;
       to:fingerprint
-              [ to:value "strekt niet tot bescherming"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "norm die niet strekt tot bescherming tegen de schade"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "norm die niet strekt tot bescherming tegen schade"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "geschonden norm strekt tot bescherming tegen de schade" ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "geschonden norm niet strekt tot bescherming tegen de scha"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "geschonden norm strekt tot bescherming tegen de schade"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "relativiteitsvereisten"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "vermindering op basis relativiteitsbeginsel"@nl ;
+              [ to:value "relativiteitsbeginsel"@nl ;
                 to:weight 100 
               ] ;
-      skos:altLabel "strekt niet tot bescherming"@nl , "norm die niet strekt tot bescherming tegen de schade"@nl , "relativiteit"@nl , "correctie langemeijer"@nl , "schutznorm"@nl , "geschonden norm strekt tot bescherming tegen de schade"@nl , "norm die niet strekt tot bescherming tegen schade"@nl , "relativiteitsvereisten"@nl , "geschonden norm niet strekt tot bescherming tegen de schade"@nl ;
       skos:note "Indien de geschonden geschreven norm niet tot doel heeft de belangen van de benadeelde te beschermen, is het van belang of de veroorzaker onder de omstandigheden bedacht had moeten zijn op de belangen van de benadeelde, of er een ongeschreven norm ter bescherming tegen de veroorzaakte schade is. Dit wordt ook wel de correctie Langemeijer aangeduid."@nl , "Er kan pas aansprakelijkheid ontstaan als de norm die door deschadeveroorzaker is geschonden tot doel had de gedupeerde te beschermen tegen de schade zoals die in de gegeven omstandigheden is geleden."@nl ;
       skos:prefLabel "vermindering op basis relativiteitsbeginsel"@nl .
 
 tv:vermindering_risicoaansprakelijkheid_personen
       to:fingerprint
-              [ to:value "vermindering risicoaansprakelijkheid personen"@nl ;
-                to:weight 100 
+              [ to:value "vermindering risicoaansprakelijkheid persoon"@nl ;
+                to:weight 100;
+                to:distance 15
               ] ;
       skos:prefLabel "vermindering risicoaansprakelijkheid personen"@nl .
 
 tv:verontreiniging_lucht_water_of_bodem_door_gestortte_stoffen
       mtv:same oldtv:verontreiniging ;
       to:fingerprint
-              [ to:value "verontreiniging van water" ;
-                to:weight "100" 
+              [ to:value "verontreiniging water" ;
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "verontreiniging van lucht" ;
-                to:weight "100" 
+              [ to:value "verontreiniging lucht" ;
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "verontreiniging"@nl ;
-                to:weight "100" 
+              [ to:value "verontreiniging bodem"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
-      to:fingerprint
-              [ to:value "verontreiniging van bodem"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "verontreiniging lucht water of bodem door gestortte stoffen"@nl ;
-                to:weight 100 
-              ] ;
-      to:fingerprint
-              [ to:value "verontreiniging van water"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "verontreiniging van lucht"@nl ;
-                to:weight "100" 
-              ] ;
-      skos:altLabel "verontreiniging van bodem"@nl , "verontreiniging van water"@nl , "verontreiniging"@nl , "verontreiniging van lucht"@nl ;
       skos:note "Verontreiniging kan zich uiten in verontreiniging van water, lucht of bodem. Het is daarbij niet van belang of de verontreiniging veroorzaakt doordat de stoffen gevaarlijk zijn. Ook stoffen die niet of in mindere mate als gevaarlijk (kunnen) worden aangemerkt kunnen oorzaak zijn van verontreiniging van water, lucht of bodem."@nl ;
       skos:prefLabel "verontreiniging lucht water of bodem door gestortte stoffen"@nl .
 
 tv:verontschuldigbare_dwaling
       mtv:same oldtv:verontschuldigbare_dwaling ;
       to:fingerprint
-              [ to:value "schulduitsluitingsgrond"@nl ;
-                to:weight 40
-              ] ;
-      to:fingerprint
               [ to:value "verontschuldigbare dwaling"@nl ;
-                to:weight 100
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "dwaling omtrent de feiten"@nl ;
-                to:weight 50
+              [ to:value "verontschuldigbaar dwaling"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
-              [ to:value "rechtsdwaling"@nl ;
-                to:weight 40
+              [ to:value "dwaling feiten"@nl ;
+                to:weight 50;
+                to:distance 10
               ] ;
-      to:fingerprint
-              [ to:value "verontschuldigbare dwaling"@nl ;
-                to:weight 100 
-              ] ;
+              to:fingerprint
+                      [ to:value "dwaling bevoegdheid"@nl ;
+                        to:weight 50;
+                        to:distance 10
+                      ] ;
+                      to:fingerprint
+                              [ to:value "dwaling recht"@nl ;
+                                to:weight 50;
+                                to:distance 10
+                              ] ;
+                              to:fingerprint
+                                      [ to:value "dwaling juridisch kader"@nl ;
+                                        to:weight 50;
+                                        to:distance 10
+                                      ] ;
       skos:altLabel "schulduitsluitingsgrond"@nl , "rechtsdwaling"@nl , "verontschuldigbare dwaling"@nl , "dwaling omtrent de feiten"@nl ;
       skos:note "Verontschuldigbare dwaling betekent dat iemand kan dwalen ten aanzien van de feiten, bijvoorbeeld omtrent de bevoegdheid van iemand, of ten aanzien van het recht, omdat men bijvoorbeeld een bepaalde norm of wettelijke verplichting niet kende. Op grond van verontschuldigbare dwaling kan de aansprakelijkheid voor schade als gevolg van een bepaalde gedraging ontvallen."@nl ;
       skos:prefLabel "verontschuldigbare dwaling"@nl .
@@ -3923,178 +3816,83 @@ tv:verontschuldigbare_dwaling
 tv:vertegenwoordigde
       mtv:same oldtv:vertegenwoordiger , oldtv:vertegenwoordiging ;
       to:fingerprint
-              [ to:value "vertegenwoordiger"@nl ;
-                to:weight 21
-              ] ;
-      to:fingerprint
-              [ to:value "contract"@nl ;
-                to:weight 21
-              ] ;
-      to:fingerprint
-              [ to:value "opdracht"@nl ;
-                to:weight 8
-              ] ;
-      to:fingerprint
-              [ to:value "gedrag van een vertegenwoordiger"@nl ;
-                to:weight 16
-              ] ;
-      to:fingerprint
-              [ to:value "vertegenwoordiging"@nl ;
-                to:weight "100" 
-              ] ;
-      to:fingerprint
-              [ to:value "aansprakelijk"@nl ;
-                to:weight 15
-              ] ;
-      to:fingerprint
-              [ to:value "werkgever"@nl ;
-                to:weight 8
-              ] ;
-      to:fingerprint
-              [ to:value "bewindvoerder"@nl ;
-                to:weight 14
-              ] ;
-      to:fingerprint
-              [ to:value "aansprakelijkheid"@nl ;
-                to:weight 7
-              ] ;
-      to:fingerprint
-              [ to:value "contractueel vertegenwoordiger"@nl ;
-                to:weight 49
-              ] ;
-      to:fingerprint
-              [ to:value "als zijn daden te gelden"@nl ;
-                to:weight 49
-              ] ;
-      to:fingerprint
-              [ to:value "toekomende bevoegdheden"@nl ;
-                to:weight 47
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatige daad"@nl ;
-                to:weight 9
-              ] ;
-      to:fingerprint
-              [ to:value "gedragingen"@nl ;
-                to:weight 19
-              ] ;
-      to:fingerprint
-              [ to:value "fout"@nl ;
-                to:weight 21
-              ] ;
-      to:fingerprint
               [ to:value "vertegenwoordigde"@nl ;
-                to:weight 100 
-              ] ;
-      to:fingerprint
-              [ to:value "voogd"@nl ;
-                to:weight 48
-              ] ;
-      to:fingerprint
-              [ to:value "organen"@nl ;
-                to:weight 17
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatig handelen"@nl ;
-                to:weight 9
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatig"@nl ;
-                to:weight 6
-              ] ;
-      to:fingerprint
-              [ to:value "curator"@nl ;
-                to:weight 23
-              ] ;
-      to:fingerprint
-              [ to:value "contractuele vertegenwoordiger"@nl ;
                 to:weight 100
               ] ;
-      to:fingerprint
-              [ to:value "fout jegens een derde"@nl ;
-                to:weight 49
-              ] ;
-      to:fingerprint
-              [ to:value "bestuurder"@nl ;
-                to:weight 20
-              ] ;
-      to:fingerprint
-              [ to:value "vertegenwoordigen"@nl ;
-                to:weight 19
-              ] ;
-      to:fingerprint
-              [ to:value "overeenkomst"@nl ;
-                to:weight 12
-              ] ;
-      to:fingerprint
-              [ to:value "gedragingen van de vertegenwoordiger"@nl ;
-                to:weight 60
-              ] ;
-      to:fingerprint
-              [ to:value "bevoegdheid"@nl ;
-                to:weight 16
-              ] ;
-      to:fingerprint
-              [ to:value "vertegenwoordigde"@nl ;
-                to:weight 11
-              ] ;
-      skos:altLabel "aansprakelijk"@nl , "gedragingen van de vertegenwoordiger"@nl , "bevoegdheid"@nl , "bestuurder"@nl , "vertegenwoordigde"@nl , "onrechtmatige daad"@nl , "vertegenwoordiging"@nl , "opdracht"@nl , "toekomende bevoegdheden"@nl , "organen"@nl , "als zijn daden te gelden"@nl , "contractueel vertegenwoordiger"@nl , "vertegenwoordiger"@nl , "overeenkomst"@nl , "bewindvoerder"@nl , "gedrag van een vertegenwoordiger"@nl , "contract"@nl , "werkgever"@nl , "aansprakelijkheid"@nl , "fout"@nl , "gedragingen"@nl , "voogd"@nl , "contractuele vertegenwoordiger"@nl , "vertegenwoordigen"@nl , "onrechtmatig handelen"@nl , "onrechtmatig"@nl , "curator"@nl , "fout jegens een derde"@nl ;
       skos:prefLabel "vertegenwoordigde"@nl .
 
 tv:vervallen_vaststellen_rekenschap_belangen_van_benadeelde
       to:fingerprint
-              [ to:value "vervallen vaststellen rekenschap belangen van benadeelde"@nl ;
-                to:weight 100 
+              [ to:value "vervallen vaststellen rekenschap"@nl ;
+                to:weight 100;
+                to:distance 10;
+              ] ;
+      to:fingerprint
+              [ to:value "rekenschap belang benadeelde"@nl ;
+                to:weight 50;
+                to:distance 10;
+              ] ;
+      to:fingerprint
+              [ to:value "rekenschap belang slachtoffer"@nl ;
+                to:weight 50;
+                to:distance 10;
+              ] ;
+      to:fingerprint
+              [ to:value "vervallen rekenschap"@nl ;
+                to:weight 60;
+                to:distance 10;
               ] ;
       skos:prefLabel "vervallen vaststellen rekenschap belangen van benadeelde"@nl .
 
 tv:verweermiddel_aansprakelijkheid
       mtv:same oldtv:ontbreken_van_aansprakelijkheid ;
       to:fingerprint
-              [ to:value "uitgezonderd, uitzondering"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "ontbreekt de aansprakelijkheid"@nl ;
+              [ to:value "verweermiddel"@nl ;
                 to:weight 50
               ] ;
       to:fingerprint
               [ to:value "aansprakelijkheid ontbreekt"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "ontbreekt aansprakelijkheid"@nl ;
-                to:weight 50
+                to:weight 50;
+                to:distance 10
               ] ;
       to:fingerprint
               [ to:value "verweermiddel aansprakelijkheid"@nl ;
-                to:weight 100 
+                to:weight 100;
+                to:distance 10
               ] ;
-      to:fingerprint
-              [ to:value "ontbreken van aansprakelijkheid"@nl ;
-                to:weight 50
-              ] ;
-      skos:altLabel "aansprakelijkheid ontbreekt"@nl , "ontbreekt de aansprakelijkheid"@nl , "uitgezonderd, uitzondering"@nl , "ontbreekt aansprakelijkheid"@nl , "ontbreken van aansprakelijkheid"@nl ;
       skos:prefLabel "verweermiddel aansprakelijkheid"@nl .
 
 tv:voorwaarden_aansprakelijkheid_zuiver_nalaten
       to:fingerprint
-              [ to:value "voorwaarden aansprakelijkheid zuiver nalaten"@nl ;
-                to:weight 100 
+              [ to:value "voorwaard zuiver nalaten"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "voorwaarden aansprakelijkheid zuiver nalaten"@nl .
 
 tv:vordering_op_grond_van_onrechtvaardige_verrijking
       to:fingerprint
-              [ to:value "vordering op grond van onrechtvaardige verrijking"@nl ;
-                to:weight 100 
+              [ to:value "onrechtvaardig verrijking"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "vordering op grond van onrechtvaardige verrijking"@nl .
 
 tv:vuistregel_letseltoebrengend_gedrag_sportsituatie
       to:fingerprint
-              [ to:value "vuistregel letseltoebrengend gedrag sportsituatie"@nl ;
-                to:weight 100 
+              [ to:value "grove overtreding sport"@nl ;
+                to:weight 100;
+                to:distance 10;
+              ] ;
+      to:fingerprint
+              [ to:value "risico sport"@nl ;
+                to:weight 70;
+                to:distance 10;
+              ] ;
+      to:fingerprint
+              [ to:value "risico spel"@nl ;
+                to:weight 40;
+                to:distance 10;
               ] ;
       skos:note "De meeste sport en spel situaties worden gekenmerkt door een zekere mate van onoplettendheid en onvoorzichtig gedrag. Om deze reden geldt voor sport en spel situaties een hogere drempel voor aansprakelijkheid. Aansprakelijkheid ontstaan pas bij grove overtreding van de sport en spel regels omdat een zeker risico en een zekere overtreding van de regels nu eenmaal inherent is aan sport en spel situaties. De door sport of spel bestaande verhouding tussen deelnemers hoeft niet direct te veranderen op het moment dat het spel officieel ten einde is. Een korte tijd daarna kunnen de verwachtingen die partijen over en weer van elkaar hebben nog steeds door het spel zijn beïnvloedt.
 	In welke gevallen er sprake is van een sport en spel situatie, is niet in het algemeen te zeggen. De omstandigheden van het geval zijn bepalend, waarbij met name acht wordt geslagen op de onderlinge verhouding tussen partijen.  Daarnaast is de aard van de activiteit, het tijdsbestek waarin deze plaats heeft en de hoedanigheid van betrokken partijen van belang. Aangenomen wordt dat intrinsiek gevaarlijke activiteiten die niet of nauwelijks maatschappelijk zijn geaccepteerd en die ook niet door middel van stilzwijgende of uitdrukkelijke afspraken zijn gereguleerd, doorgaans geen sport- en spelsituatie kunnen opleveren. Hierbij kan men bijvoorbeeld denken aan het ‘spelen’ met explosieven of wapens."@nl ;
@@ -4103,16 +3901,9 @@ tv:vuistregel_letseltoebrengend_gedrag_sportsituatie
 tv:waarschijnlijkheid_dat_schade_zich_zal_voordoen
       mtv:same oldtv:mate_van_waarschijnlijkheid_schade , oldtv:mate_van_waarschijnlijkheid_dat_daaruit_schade_zou_ontstaan ;
       to:fingerprint
-              [ to:value "schade zal ontstaan"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "gedrag"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatigheid"@nl ;
-                to:weight 4
+              [ to:value "schade ontstaan"@nl ;
+                to:weight 50;
+                to:distance 10
               ] ;
       to:fingerprint
               [ to:value "zorgvuldig"@nl ;
@@ -4123,206 +3914,38 @@ tv:waarschijnlijkheid_dat_schade_zich_zal_voordoen
                 to:weight 50
               ] ;
       to:fingerprint
-              [ to:value "ongeval"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "betaamt"@nl ;
-                to:weight 11
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat schade ontstaat"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid schade"@nl ;
-                to:weight 35
-              ] ;
-      to:fingerprint
-              [ to:value "waarschijnlijkheid"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat schade ontstaat"@nl ;
-                to:weight 50
+              [ to:value "waarschijnlijkheid schade"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       to:fingerprint
               [ to:value "gevaarlijk"@nl ;
                 to:weight 50
               ] ;
       to:fingerprint
-              [ to:value "voorzorgsmaatregelen"@nl ;
-                to:weight 12
-              ] ;
-      to:fingerprint
-              [ to:value "betamelijkheid"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "waarschijnlijkheid dat schade zich zal voordoen"@nl ;
-                to:weight 100 
+              [ to:value "voorzorgsmaatregel"@nl ;
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "veiligheid"@nl ;
-                to:weight 14
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "risico"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat daaruit schade zou ontstaan"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "schade zal ontstaan"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "schade"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "veiligheidsmaatregelen"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "ontstaan"@nl ;
-                to:weight 50
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "voorzorg"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "ongevallen"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "gevaar"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "schade"@nl ;
-                to:weight 3
-              ] ;
-      to:fingerprint
-              [ to:value "ontstaat"@nl ;
-                to:weight 50
+                to:weight 30
               ] ;
       to:fingerprint
               [ to:value "ongeval"@nl ;
-                to:weight 19
-              ] ;
-      to:fingerprint
-              [ to:value "ongeval"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "gedrag"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "voorzorg"@nl ;
-                to:weight 25
-              ] ;
-      to:fingerprint
-              [ to:value "risico"@nl ;
-                to:weight 4
-              ] ;
-      to:fingerprint
-              [ to:value "zorgvuldig"@nl ;
-                to:weight 7
-              ] ;
-      to:fingerprint
-              [ to:value "ontstaan"@nl ;
-                to:weight 8
+                to:weight 20
               ] ;
       to:fingerprint
               [ to:value "gevaarscheppend"@nl ;
-                to:weight 50
+                to:weight 20
               ] ;
-      to:fingerprint
-              [ to:value "waarschijnlijkheid"@nl ;
-                to:weight 11
-              ] ;
-      to:fingerprint
-              [ to:value "omstandigheden"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "betamelijk"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "gevaar"@nl ;
-                to:weight 5
-              ] ;
-      to:fingerprint
-              [ to:value "waarschijnlijk"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "onrechtmatig"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "waarschuwing"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat daaruit schade zou ontstaan"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "waarschuwing"@nl ;
-                to:weight 14
-              ] ;
-      to:fingerprint
-              [ to:value "gevaarschepping"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "waarschuwingsplicht"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat daaruit schade zou ontstaan"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "voorzorgsmaatregelen"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "mate van waarschijnlijkheid dat"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "gevaarlijk"@nl ;
-                to:weight 11
-              ] ;
-      to:fingerprint
-              [ to:value "omstandigheden"@nl ;
-                to:weight 3
-              ] ;
-      to:fingerprint
-              [ to:value "gevaarschepping"@nl ;
-                to:weight 36
-              ] ;
-      to:fingerprint
-              [ to:value "veiligheid"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ to:value "betamelijk"@nl ;
-                to:weight 15
-              ] ;
-      skos:altLabel "ongevallen"@nl , "mate van waarschijnlijkheid dat de schade wordt veroorzaakt"@nl , "betaamt"@nl , "zorgvuldig"@nl , "omstandigheden"@nl , "mate van waarschijnlijkheid dat daaruit schade zou ontstaan"@nl , "waarschijnlijk"@nl , "waarschijnlijkheid"@nl , "schade zal ontstaan"@nl , "gevaar"@nl , "voorzorg"@nl , "veiligheid"@nl , "gevaarschepping"@nl , "voorzorgsmaatregelen"@nl , "betamelijkheid"@nl , "mate van waarschijnlijkheid dat"@nl , "gevaarlijk"@nl , "waarschuwingsplicht"@nl , "ontstaat"@nl , "waarschuwing"@nl , "gevaarscheppend"@nl , "ontstaan"@nl , "veiligheidsmaatregelen"@nl , "mate van waarschijnlijkheid dat schade ontstaat"@nl , "gedrag"@nl , "mate van waarschijnlijkheid dat schade wordt veroorzaakt"@nl , "ongeval"@nl , "zorgvuldigheid"@nl , "betamelijk"@nl , "schade"@nl , "onrechtmatig"@nl , "risico"@nl , "onrechtmatigheid"@nl , "mate van waarschijnlijkheid schade"@nl ;
       skos:note "De Hoge Raad heeft  een aantal factoren ontwikkeld om in het algemeen te beoordelen of er sprake is van een aansprakelijkheid als gevolg van schending van een zorgvuldigheidsnorm. Het betreft de volgende niet-limitatieve factoren: de kans dat anderen niet goed opletten, de kans dat daardoor ongevallen ontstaan, de ernst van de gevolgen die kunnen ontstaan, de mate waarin het nemen van veiligheidsmaatregelen bezwaarlijk is. De omstandigheden van het geval geven de uiteindelijke doorslag. Overigens is het niet zo dat het enkel creëren van een risico al onrechtmatigheid oplevert. Gevaarscheppend gedrag is slechts onrechtmatig indien de mate van waarschijnlijkheid van een ongeval als gevolg van dat gedrag zo groot is, dat de dader zich daarvan naar maatstaven van zorgvuldigheid had behoren te onthouden."@nl ;
       skos:prefLabel "waarschijnlijkheid dat schade zich zal voordoen"@nl .
 
@@ -4349,15 +3972,32 @@ tv:werknemer
 
 tv:wetsovertreding_als_factor_bij_beoordeling_van_betamelijkheid
       to:fingerprint
-              [ to:value "wetsovertreding als factor bij beoordeling van betamelijkheid"@nl ;
-                to:weight 100 
+              [ to:value "wet overtreding betamelijkheid"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
+      to:fingerprint
+              [ to:value "strijd wet betamelijkheid"@nl ;
+                to:weight 100;
+                to:distance 10
+              ] ;
+              to:fingerprint
+                      [ to:value "voorschrift betamelijkheid"@nl ;
+                        to:weight 70;
+                        to:distance 10
+                      ] ;
+                      to:fingerprint
+                              [ to:value "wet betamelijkheid"@nl ;
+                                to:weight 70;
+                                to:distance 10
+                              ] ;
       skos:prefLabel "wetsovertreding als factor bij beoordeling van betamelijkheid"@nl .
 
 tv:wetsovertreding_door_eiser
       to:fingerprint
-              [ to:value "wetsovertreding door eiser"@nl ;
-                to:weight 100 
+              [ to:value "overtreding door eiser"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "wetsovertreding door eiser"@nl .
 
@@ -4373,181 +4013,120 @@ tv:zaakwaarneming
               [ to:value "zaakwaarneming"@nl ;
                 to:weight 100 
               ] ;
+      to:fingerprint
+              [ to:value "zaakwaarnemen"@nl ;
+                to:weight 100 
+              ] ;
       skos:prefLabel "zaakwaarneming"@nl .
 
 tv:zijdelingse_betekenis_wettelijke_voorschriften
       mtv:same oldtv:wettelijk_voorschrift ;
-      to:fingerprint _:b69 , _:b70 ;
       to:fingerprint
               [ to:value "zijdelingse betekenis wettelijke voorschriften"@nl ;
-                to:weight 100 
+                to:weight 100;
+                to:distance 10
               ] ;
-      skos:altLabel "wettelijk voorschrift"@nl , "wettelijke bevoegdheid"@nl ;
-      skos:note "Aansprakelijkheid kan komen te ontvallen als er een rechtvaardigingsgrond aanwezig is. Dit betekent dat het handelen van de schadeveroorzaker onder de gegeven omstandigheden te rechtvaardigen was. Schadeveroorzakend handelen kan gerechtvaardigt zijn indien schade is ontstaan door het handelen op grond van een wettelijke verplichting."@nl ;
+              to:fingerprint
+                      [ to:value "wettelijk voorschrift"@nl ;
+                        to:weight 30;
+                        to:distance 10 
+                      ] ;
+                      to:fingerprint
+                              [ to:value "wettelijke bevoegdheid"@nl ;
+                                to:weight 30;
+                                to:distance 10
+                              ] ;
+                              to:fingerprint
+                                      [ to:value "zijdelingse betekenis"@nl ;
+                                        to:weight 30;
+                                        to:distance 10
+                                      ] ;
       skos:prefLabel "zijdelingse betekenis wettelijke voorschriften"@nl .
 
 tv:zorgplicht_beroepsbeoefenaar
       to:fingerprint
               [ to:value "zorgplicht beroepsbeoefenaar"@nl ;
-                to:weight 100 
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "zorgplicht beroepsbeoefenaar"@nl .
 
 tv:zorgplicht_zorginrichting
       to:fingerprint
-              [ rdf:type owl:Thing ;
-                to:value "behandeling"@nl ;
-                to:weight 30
+              [ to:value "zorgplicht zorginstelling"@nl ;
+                to:weight 100;
+                to:distance 10
               ] ;
-      to:fingerprint
-              [ rdf:type owl:Thing ;
-                to:value "psychisch gestoord"@nl ;
-                to:weight 50
-              ] ;
-      to:fingerprint
-              [ rdf:type owl:Thing ;
-                to:value "zorginstelling"@nl ;
-                to:weight 80
-              ] ;
-      to:fingerprint
-              [ rdf:type owl:Thing ;
-                to:value "zorginrichting"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ rdf:type owl:Thing ;
-                to:value "patient"@nl ;
-                to:weight 70
-              ] .
+              to:fingerprint
+                      [ to:value "zorgplicht zorginrichting"@nl ;
+                        to:weight 100;
+                        to:distance 10
+                      ] .
 
 tv:zorgvuldigheidsnorm
       mtv:same oldtv:verkeer_en_veiligheidsnorm , oldtv:zorgvuldigheidsnorm , oldtv:verkeer-_en_veiligheidsnormen ;
       to:fingerprint
-              [ to:value "verkeer- en veiligheidsnormen"@nl ;
-                to:weight 100
-              ] ;
-      to:fingerprint
-              [ to:value "sport en spel"@nl ;
-                to:weight 59
-              ] ;
-      to:fingerprint
-              [ to:value "norm ter bescherming tegen immateriele schade"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "gevaarzetting"@nl ;
-                to:weight 45
-              ] ;
-      to:fingerprint
               [ to:value "zorgvuldigheidsnorm"@nl ;
-                to:weight 62
-              ] ;
-      to:fingerprint
-              [ to:value "sport en spel"@nl ;
-                to:weight 59
-              ] ;
-      to:fingerprint
-              [ to:value "sportsituatie"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "verkeers- en veiligheidsnormen"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "betamelijkheidsnorm"@nl ;
-                to:weight 56
-              ] ;
-      to:fingerprint
-              [ to:value "verkeer- en veiligheidsnormen"@nl ;
                 to:weight 100
               ] ;
       to:fingerprint
-              [ to:value "ongelukkige samenloop van omstandigheden"@nl ;
-                to:weight 42
-              ] ;
-      to:fingerprint
-              [ to:value "gevaarzetting"@nl ;
-                to:weight 45
-              ] ;
-      to:fingerprint
-              [ to:value "leidingschade"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "spelsituatie"@nl ;
-                to:weight 49
-              ] ;
-      to:fingerprint
-              [ to:value "verkeers- en veiligheidsnormen"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "verkeer en veiligheidsnorm"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "sport - en spel"@nl ;
-                to:weight 59
-              ] ;
-      to:fingerprint
-              [ to:value "sportsituatie"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "verkeer en veiligheidsnorm"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "maatschappelijke betamelijkheid"@nl ;
-                to:weight 77
-              ] ;
-      to:fingerprint
-              [ to:value "spelsituatie"@nl ;
-                to:weight 49
-              ] ;
-      to:fingerprint
-              [ to:value "normen ter bescherming tegen zuivere vermogensschade"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "zorgvuldigheidsnorm"@nl ;
-                to:weight 100 
-              ] ;
-      to:fingerprint
-              [ to:value "norm ter bescherming tegen schade"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "sport - en spel"@nl ;
-                to:weight 59
-              ] ;
-      to:fingerprint
-              [ to:value "leidingschade"@nl ;
-                to:weight 96
-              ] ;
-      to:fingerprint
-              [ to:value "maatschappelijke zorgvuldigheid"@nl ;
-                to:weight 16
-              ] ;
-      to:fingerprint
-              [ to:value "verkeer- en veiligheidsnormen"@nl ;
+              [ to:value "zorgvuldigheid"@nl ;
                 to:weight 100
               ] ;
       to:fingerprint
-              [ to:value "ongelukkige samenloop van omstandigheden"@nl ;
-                to:weight 42
+              [ to:value "zorgvuldig"@nl ;
+                to:weight 100
               ] ;
-      skos:altLabel "verkeer- en veiligheidsnormen"@nl , "spelsituatie"@nl , "leidingschade"@nl , "verkeer en veiligheidsnorm"@nl , "normen ter bescherming tegen zuivere vermogensschade"@nl , "maatschappelijke betamelijkheid"@nl , "sport - en spel"@nl , "norm ter bescherming tegen immateriele schade"@nl , "ongelukkige samenloop van omstandigheden"@nl , "sportsituatie"@nl , "sport en spel"@nl , "verkeers- en veiligheidsnormen"@nl , "zorgvuldigheidsnorm"@nl , "gevaarzetting"@nl , "maatschappelijke zorgvuldigheid"@nl , "norm ter bescherming tegen schade"@nl , "betamelijkheidsnorm"@nl ;
       skos:note "Er is sprake van een schending van een verkeers- en veiligheidsnorm indien een situatie in het leven is geroepen waarop de ander niet bedacht hoeft te zijn. Een dergelijke situatie wordt ook wel aangeduid als gevaarzetting. Ook in geval van leidingschade, een ongelukkige samenloop van omstandigheden of een sport en spel situatie kan sprake zijn van schending van een verkeers- en veiligheidsnorm."@nl , "In de maatschappij zijn normen aan te wijzen welke betrekking hebben op het maatschappelijk zorgvuldig handelen. Dit kunnen normen zijn die beschermen tegen schade of verkeers- en veiligheidsnormen."@nl ;
       skos:prefLabel "zorgvuldigheidsnorm"@nl .
 
 tv:zuiver_nalaten
       to:fingerprint
               [ to:value "zuiver nalaten"@nl ;
-                to:weight 100 
+                to:weight 100;
+                to:distance 10
               ] ;
       skos:prefLabel "zuiver nalaten"@nl .
+
+tv:overheid
+to:fingerprint
+        [
+      to:value "overheidsbestuurder"@nl ;
+      to:weight 100
+      ],[
+      to:value "gemeente"@nl ;
+      to:weight 7
+        ],[
+to:value "provincie"@nl ;
+      to:weight 15
+        ],[
+to:value "overheidscollege"@nl ;
+      to:weight 43
+        ],[
+to:value "decentrale overheid"@nl ;
+      to:weight 66
+        ],[
+to:value "waterschap"@nl ;
+      to:weight 27
+        ],[
+to:value "bestuursorgaan"@nl ;
+      to:weight 16
+        ],[
+to:value "centrale overheid"@nl ;
+      to:weight 38
+        ],[
+to:value "provinciale staten"@nl ;
+      to:weight 13
+        ],[
+to:value "college van burgemeester en wethouders"@nl ;
+      to:weight 16
+        ],[
+to:value "overheid"@nl ;
+      to:weight 25
+        ],[
+to:value "gemeente"@nl ;
+      to:weight 33] .
+
 
 oldtv:aansprakelijkheid
       mtv:same tv:aansprakelijkheid .
@@ -4707,9 +4286,10 @@ oldtv:in_strijd_met_hetgeen_in_het_maatschappelijk_verkeer_betaamt
 
 oldtv:inbreuk_huisrecht
       to:fingerprint
-              [ rdf:type owl:Thing ;
+              [
                 to:value "inbreuk huisrecht"@nl ;
-                to:weight 100
+                to:weight 100;
+                to:distance 10
               ] .
 
 oldtv:inbreuk_op_een_recht
@@ -4981,63 +4561,8 @@ oldtv:zorgvuldigheidsnorm
 
 
 
-_:b78
-      to:value "overheidsbestuurder"@nl ;
-      to:weight 100 .
 
-_:b80
-      to:value "gemeente"@nl ;
-      to:weight 7 .
 
-_:b82
-      to:value "provincie"@nl ;
-      to:weight 15 .
-
-_:b81
-      to:value "overheidscollege"@nl ;
-      to:weight 43 .
-
-_:b73
-      to:value "decentrale overheid"@nl ;
-      to:weight 66 .
-
-_:b71
-      to:value "waterschap"@nl ;
-      to:weight 27 .
-
-_:b75
-      to:value "bestuursorgaan"@nl ;
-      to:weight 16 .
-
-_:b79
-      to:value "centrale overheid"@nl ;
-      to:weight 38 .
-
-_:b76
-      to:value "provinciale staten"@nl ;
-      to:weight 13 .
-
-_:b77
-      to:value "college van burgemeester en wethouders"@nl ;
-      to:weight 16 .
-
-_:b74
-      to:value "overheid"@nl ;
-      to:weight 25 .
-
-_:b72
-      to:value "gemeente bestuur"@nl ;
-      to:weight 33 .
-
-_:b70
-      to:value "wettelijk voorschrift"@nl ;
-      to:weight "100" ;
-      skos:note "Fingerprint automatically generated from skos:prefLabel"@en .
-
-_:b69
-      to:value "wettelijke bevoegdheid"@nl ;
-      to:weight "100" ;
-      skos:note "Fingerprint automatically generated from skos:altLabel"@en .
 
 
 
