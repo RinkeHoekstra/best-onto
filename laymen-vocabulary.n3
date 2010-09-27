@@ -1,4 +1,4 @@
-# Saved by TopBraid on Thu Sep 23 16:06:20 CEST 2010
+# Saved by TopBraid on Mon Sep 27 16:05:51 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -219,6 +219,11 @@
       skos:broader :weg ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "autoweg"@nl .
+
+:bal  rdf:type best:Concept , skos:Concept ;
+      skos:broader :speelgoed ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "bal"@nl .
 
 :balkon
       rdf:type best:Concept , skos:Concept ;
@@ -442,7 +447,7 @@
 :bijten
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "beet"@nl , "bijt" ;
-      skos:broader :gevaarlijk_handelen , :inbreuk_op_leven ;
+      skos:broader :beschadigen , :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bijten"@nl .
 
@@ -633,11 +638,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "contractbreuk"@nl .
 
-:dag  rdf:type best:Concept , skos:Concept ;
-      skos:broader :moment ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "dag"@nl .
-
 :dakgoot
       rdf:type best:Concept , skos:Concept ;
       skos:broader :opstal ;
@@ -712,12 +712,6 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "eend"@nl .
 
-:eerder
-      rdf:type best:Concept , skos:Concept ;
-      skos:broader :moment ;
-      skos:inScheme :laymen-scheme ;
-      skos:prefLabel "eerder"@nl .
-
 :effectenhandel
       rdf:type best:Concept , skos:Concept ;
       skos:broader :zorgplichtsituatie ;
@@ -753,6 +747,12 @@
       skos:broader :energiebedrijf ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "electriciteitsbedrijf"@nl .
+
+:emmer
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :speelgoed ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "emmer"@nl .
 
 :energiebedrijf
       rdf:type best:Concept , skos:Concept ;
@@ -1819,6 +1819,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "ouder"@nl .
 
+:overdag
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :moment ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "overdag"@nl .
+
 :overeenkomen
       rdf:type best:Concept , skos:Concept ;
       skos:broader :werken ;
@@ -2098,6 +2104,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "schade aan eigendom"@nl .
 
+:schade_aan_vervoermiddel
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :schade_aan_eigendom , :verkeersschade ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "schade aan vervoermiddel"@nl .
+
 :schenden
       rdf:type best:Concept , skos:Concept ;
       skos:broader :aantasten ;
@@ -2201,6 +2213,12 @@
       skos:broader :opstal ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "sluis"@nl .
+
+:snachts
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :moment ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "'s nachts"@nl .
 
 :snelweg
       rdf:type best:Concept , skos:Concept ;
@@ -2444,6 +2462,11 @@
       skos:broader :voertuig ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "tram"@nl .
+
+:trambaan
+      rdf:type best:Concept ;
+      skos:broader :weg ;
+      skos:prefLabel "trambaan"@nl .
 
 :trappen
       rdf:type best:Concept , skos:Concept ;
