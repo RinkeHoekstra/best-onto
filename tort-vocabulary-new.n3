@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Aug 17 14:21:58 CEST 2010
+# Saved by TopBraid on Tue Sep 28 16:18:32 CEST 2010
 # baseURI: http://www.best-project.nl/owl/tort-vocabulary-new.owl
 # imports: http://www.best-project.nl/owl/tort-ontology.owl
 
@@ -959,6 +959,12 @@
       skos:broader :terrein ;
       skos:inScheme :tort-scheme ;
       skos:related :verantwoordelijkheid_overheid_als_waterwegbeheerder .
+
+:wegbeheerder
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :overheid ;
+      skos:inScheme :tort-scheme ;
+      skos:prefLabel "wegbeheerder"@nl .
 
 :werkgever
       rdf:type best:Concept , skos:Concept ;
