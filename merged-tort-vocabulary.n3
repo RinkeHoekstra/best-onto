@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Sep 28 10:20:49 CEST 2010
+# Saved by TopBraid on Tue Sep 28 15:11:40 CEST 2010
 # baseURI: http://www.best-project.nl/owl/merged-tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-vocabulary.owl
 # imports: http://www.best-project.nl/owl/tort-vocabulary-new.owl
@@ -3942,6 +3942,13 @@ tv:waterweg
                 to:weight 100
               ] ;
       skos:prefLabel "waterweg"@nl .
+
+tv:wegbeheerder
+      to:fingerprint
+              [ rdf:type owl:Thing ;
+                to:value "wegbeheerder"^^xsd:string ;
+                to:weight 100
+              ] .
 
 tv:werkgever
       to:fingerprint

@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Sep 28 10:24:03 CEST 2010
+# Saved by TopBraid on Tue Sep 28 15:15:30 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -852,9 +852,17 @@
       rdf:type owl:Class ;
       rdfs:subClassOf :Aansprakelijkheid_Opstallen ;
       rdfs:subClassOf
-              [ rdf:type owl:Restriction ;
-                owl:hasValue tv:overheid ;
-                owl:onProperty b:aansprakelijke_persoon
+              [ rdf:type owl:Class ;
+                owl:intersectionOf ([ rdf:type owl:Restriction ;
+                            owl:hasValue tv:overheid ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:wegbeheerder ;
+                            owl:onProperty b:aansprakelijke_persoon
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:openbare_weg ;
+                            owl:onProperty b:onrechtmatigheidsgrond
+                          ])
               ] ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
