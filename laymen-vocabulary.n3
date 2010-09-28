@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Sep 28 10:09:16 CEST 2010
+# Saved by TopBraid on Tue Sep 28 15:49:23 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -726,9 +726,21 @@
 
 :eigenaar
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "eigenaar"@nl .
+
+:eigenaar_aannemingsbedrijf
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :eigenaar ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "eigenaar aannemingsbedrijf"@nl .
+
+:eigenaar_horecagelegenheid
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :eigenaar ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "eigenaar horecagelegenheid"@nl .
 
 :eiser
       rdf:type best:Concept , skos:Concept ;
@@ -1241,6 +1253,12 @@
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kapotmaken"@nl .
 
+:kapotte_afzetting
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :gevaarlijke_situatie ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "kapotte afzetting"@nl .
+
 :kat  rdf:type best:Concept , skos:Concept ;
       skos:broader :huisdier ;
       skos:inScheme :laymen-scheme ;
@@ -1262,6 +1280,18 @@
       skos:broader :vogel ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "kip"@nl .
+
+:klant
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :persoon ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "klant"@nl .
+
+:kleding
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :product ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "kleding"^^xsd:string .
 
 :klimmen
       rdf:type best:Concept , skos:Concept ;
@@ -2075,7 +2105,7 @@
       skos:prefLabel "rivier"@nl .
 
 :rol  rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "rol in zaak"@nl .
 
@@ -2189,6 +2219,12 @@
       skos:broader :sporten ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "skeeleren"@nl .
+
+:slaan
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :inbreuk_op_leven ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "slaan"@nl .
 
 :slachtoffer
       rdf:type best:Concept , skos:Concept ;
@@ -2878,7 +2914,7 @@
 :werknemer
       rdf:type best:Concept , skos:Concept ;
       skos:altLabel "beroepsbeoefenaar"@nl , "iemand die handelt vanuit zijn beroep of functie"@nl ;
-      skos:broader :persoon ;
+      skos:broader :persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werknemer"@nl .
 
@@ -2887,6 +2923,12 @@
       skos:broader :werknemer ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "werknemer in de bouw"@nl .
+
+:winkel_eigenaar
+      rdf:type best:Concept , skos:Concept ;
+      skos:broader :eigenaar ;
+      skos:inScheme :laymen-scheme ;
+      skos:prefLabel "winkel eigenaar"@nl .
 
 :woning
       rdf:type best:Concept , skos:Concept ;
@@ -2919,7 +2961,7 @@
 
 :zelfstandige
       rdf:type best:Concept , skos:Concept ;
-      skos:broader :persoon ;
+      skos:broader :persoon , :meerderjarige ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "zelfstandige"@nl .
 

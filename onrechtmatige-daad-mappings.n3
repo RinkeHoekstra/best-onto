@@ -1,4 +1,4 @@
-# Saved by TopBraid on Tue Sep 28 15:15:30 CEST 2010
+# Saved by TopBraid on Tue Sep 28 15:58:57 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -862,6 +862,9 @@
                           ] [ rdf:type owl:Restriction ;
                             owl:hasValue tv:openbare_weg ;
                             owl:onProperty b:onrechtmatigheidsgrond
+                          ] [ rdf:type owl:Restriction ;
+                            owl:hasValue tv:verantwoordelijkheid_overheid_als_wegbeheerder ;
+                            owl:onProperty b:zorgvuldigheidsnorm
                           ])
               ] ;
       owl:equivalentClass
@@ -895,15 +898,27 @@
       owl:equivalentClass
               [ rdf:type owl:Class ;
                 owl:intersectionOf ([ rdf:type owl:Class ;
-                            owl:unionOf ([ rdf:type owl:Restriction ;
+                            owl:unionOf ([ rdf:type owl:Class ;
+                                        owl:unionOf ([ rdf:type owl:Restriction ;
+                                                    owl:onProperty b:object ;
+                                                    owl:someValuesFrom
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:hasValue lv:slechte_verpakking ;
+                                                              owl:onProperty skos:broaderTransitive
+                                                            ]
+                                                  ] [ rdf:type owl:Restriction ;
+                                                    owl:hasValue lv:slechte_verpakking ;
+                                                    owl:onProperty b:object
+                                                  ])
+                                      ] [ rdf:type owl:Restriction ;
                                         owl:onProperty b:object ;
                                         owl:someValuesFrom
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:hasValue lv:product ;
+                                                  owl:hasValue lv:kapot_product ;
                                                   owl:onProperty skos:broaderTransitive
                                                 ]
                                       ] [ rdf:type owl:Restriction ;
-                                        owl:hasValue lv:product ;
+                                        owl:hasValue lv:kapot_product ;
                                         owl:onProperty b:object
                                       ])
                           ] [ rdf:type owl:Class ;
@@ -1962,6 +1977,31 @@
       skos:prefLabel "Inbreuk op een auteursrecht"@nl ;
       skos:scopeNote "Bij het kopieren van een product kan er sprake zijn van inbreuk op auteursrecht. Toerekening van de schade-veroorzakende daad is dan op basis van schuld: de dader is direct verantwoordelijk voor de handeling die tot de schade schade leidde."@nl .
 
+:Map-inbreuk-door-meerderjarige
+      rdf:type owl:Class ;
+      rdfs:subClassOf :Inbreuk ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue tv:toerekening_op_basis_van_schuld ;
+                owl:onProperty b:grond_toerekening_aan_dader
+              ] ;
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:intersectionOf (:Inbreuk [ rdf:type owl:Class ;
+                            owl:unionOf ([ rdf:type owl:Restriction ;
+                                        owl:onProperty b:actor ;
+                                        owl:someValuesFrom
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:hasValue lv:meerderjarige ;
+                                                  owl:onProperty skos:broaderTransitive
+                                                ]
+                                      ] [ rdf:type owl:Restriction ;
+                                        owl:hasValue lv:meerderjarige ;
+                                        owl:onProperty b:actor
+                                      ])
+                          ])
+              ] .
+
 :Map-inbreuk-eigendomsrecht
       rdf:type owl:Class ;
       rdfs:subClassOf :Inbreuk ;
@@ -2084,7 +2124,7 @@
               ] ;
       owl:equivalentClass
               [ rdf:type owl:Class ;
-                owl:intersectionOf ([ rdf:type owl:Class ;
+                owl:unionOf ([ rdf:type owl:Class ;
                             owl:unionOf ([ rdf:type owl:Restriction ;
                                         owl:onProperty b:action ;
                                         owl:someValuesFrom
@@ -2819,6 +2859,20 @@
       b:object lv:auto ;
       b:result lv:financiele_schade ;
       b:situation lv:slecht_wegdek .
+
+:g2c2
+      rdf:type owl:Thing ;
+      b:action lv:bijten ;
+      b:actor lv:hond ;
+      b:object lv:bal ;
+      b:result lv:schade .
+
+:g2c3
+      b:action lv:slaan ;
+      b:actor lv:eigenaar_horecagelegenheid ;
+      b:object lv:kleding ;
+      b:recipient lv:klant ;
+      b:result lv:financiele_schade .
 
 lv:duur
       skos:broader lv:bijzondere_omstandigheid .
