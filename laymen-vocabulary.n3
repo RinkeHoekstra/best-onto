@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Sep 27 16:05:51 CEST 2010
+# Saved by TopBraid on Tue Sep 28 10:09:16 CEST 2010
 # baseURI: http://www.best-project.nl/owl/laymen-vocabulary.owl
 # imports: http://www.w3.org/2004/02/skos/core
 # imports: http://www.best-project.nl/owl/laymen-ontology.owl
@@ -446,7 +446,7 @@
 
 :bijten
       rdf:type best:Concept , skos:Concept ;
-      skos:altLabel "beet"@nl , "bijt" ;
+      skos:altLabel "beet"@nl , "bijt"@nl ;
       skos:broader :beschadigen , :gevaarlijk_handelen ;
       skos:inScheme :laymen-scheme ;
       skos:prefLabel "bijten"@nl .

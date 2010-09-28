@@ -1,4 +1,4 @@
-# Saved by TopBraid on Mon Sep 27 16:04:27 CEST 2010
+# Saved by TopBraid on Tue Sep 28 10:24:03 CEST 2010
 # baseURI: http://linkeddata.few.vu.nl/rechtspraak/mapping/
 # imports: http://www.best-project.nl/owl/bestmap.owl
 # imports: http://www.best-project.nl/owl/laymen-vocabulary.owl
@@ -2803,6 +2803,14 @@
 :Toerekening
       rdf:type owl:Class ;
       rdfs:subClassOf bm:Mapping .
+
+:g2c1
+      rdf:type owl:Thing ;
+      b:action lv:rijden ;
+      b:actor lv:meerderjarige ;
+      b:object lv:auto ;
+      b:result lv:financiele_schade ;
+      b:situation lv:slecht_wegdek .
 
 lv:duur
       skos:broader lv:bijzondere_omstandigheid .
